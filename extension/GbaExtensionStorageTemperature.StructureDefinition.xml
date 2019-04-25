@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://example.org/fhir/StructureDefinition/GbaExtensionStorageTemperature" />
+  <name value="GbaExtensionStorageTemperature" />
+  <status value="draft" />
+  <fhirVersion value="3.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <contextType value="resource" />
+  <context value="Specimen" />
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <short value="Optional Extensions Element" />
+      <definition value="Optional Extension Element - found in all resources." />
+      <base>
+        <path value="Element" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <constraint>
+        <key value="ext-1" />
+        <severity value="error" />
+        <human value="Must have either extensions or value[x], not both" />
+        <expression value="extension.exists() != value.exists()" />
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://example.org/fhir/StructureDefinition/GbaExtensionStorageTemperature" />
+    </element>
+    <element id="Extension.value[x]:valueCodeableConcept">
+      <path value="Extension.valueCodeableConcept" />
+      <sliceName value="valueCodeableConcept" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
+    <element id="Extension.value[x]:valueCodeableConcept.coding.system">
+      <path value="Extension.valueCodeableConcept.coding.system" />
+      <max value="0" />
+    </element>
+    <element id="Extension.value[x]:valueCodeableConcept.coding.version">
+      <path value="Extension.valueCodeableConcept.coding.version" />
+      <max value="0" />
+    </element>
+    <element id="Extension.value[x]:valueCodeableConcept.coding.code">
+      <path value="Extension.valueCodeableConcept.coding.code" />
+      <code>
+        <code value="Degrees Celsius 2 to 10" />
+        <display value="Degrees Celsius 2 to 10" />
+      </code>
+      <code>
+        <code value="Degrees Celsius -18 to -35" />
+        <display value="Degrees Celsius -18 to -35" />
+      </code>
+      <code>
+        <code value="Degrees Celsius -60 to -85" />
+        <display value="Degrees Celsius -60 to -85" />
+      </code>
+      <code>
+        <code value="Gaseous nitrogen" />
+        <display value="Gaseous nitrogen" />
+      </code>
+      <code>
+        <code value="Liquid nitrogen" />
+        <display value="Liquid nitrogen" />
+      </code>
+      <code>
+        <code value="Other storage temperature" />
+        <display value="Other storage temperature" />
+      </code>
+    </element>
+    <element id="Extension.value[x]:valueCodeableConcept.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Extension.valueCodeableConcept.coding.display" />
+      <max value="0" />
+    </element>
+    <element id="Extension.value[x]:valueCodeableConcept.coding.userSelected">
+      <path value="Extension.valueCodeableConcept.coding.userSelected" />
+      <max value="0" />
+    </element>
+    <element id="Extension.value[x]:valueCodeableConcept.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Extension.valueCodeableConcept.text" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>
