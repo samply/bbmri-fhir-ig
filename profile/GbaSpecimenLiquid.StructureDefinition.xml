@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://example.org/fhir/StructureDefinition/GbaSpecimenLiquid" />
+  <name value="GbaSpecimenLiquid" />
+  <status value="draft" />
+  <fhirVersion value="3.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Specimen" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Specimen" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Specimen.extension">
+      <path value="Specimen.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Specimen.extension:longTermStorageTemperature">
+      <path value="Specimen.extension" />
+      <sliceName value="longTermStorageTemperature" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://example.org/fhir/StructureDefinition/GbaExtensionStorageTemperature" />
+      </type>
+    </element>
+    <element id="Specimen.extension:diagnosis">
+      <path value="Specimen.extension" />
+      <sliceName value="diagnosis" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://example.org/fhir/StructureDefinition/GbaExtensionDiagnosis" />
+      </type>
+    </element>
+    <element id="Specimen.identifier">
+      <path value="Specimen.identifier" />
+      <max value="0" />
+    </element>
+    <element id="Specimen.accessionIdentifier">
+      <path value="Specimen.accessionIdentifier" />
+      <max value="0" />
+    </element>
+    <element id="Specimen.status">
+      <path value="Specimen.status" />
+      <max value="0" />
+    </element>
+    <element id="Specimen.type.coding.system">
+      <path value="Specimen.type.coding.system" />
+      <max value="0" />
+    </element>
+    <element id="Specimen.type.coding.version">
+      <path value="Specimen.type.coding.version" />
+      <max value="0" />
+    </element>
+    <element id="Specimen.type.coding.code">
+      <path value="Specimen.type.coding.code" />
+      <code>
+        <code value="Liquid" />
+        <display value="Liquid" />
+      </code>
+      <code>
+        <code value="Whole blood" />
+        <display value="Whole blood" />
+      </code>
+      <code>
+        <code value="Blutplasma" />
+        <display value="Blutplasma" />
+      </code>
+      <code>
+        <code value="Blood serum" />
+        <display value="Blood serum" />
+      </code>
+      <code>
+        <code value="Peripheral blood cells (vital)" />
+        <display value="Peripheral blood cells (vital)" />
+      </code>
+      <code>
+        <code value="Buffy-Coat" />
+        <display value="Buffy-Coat" />
+      </code>
+      <code>
+        <code value="Bone marrow" />
+        <display value="Bone marrow" />
+      </code>
+      <code>
+        <code value="CSF/Liquor" />
+        <display value="CSF/Liquor" />
+      </code>
+      <code>
+        <code value="Ascites" />
+        <display value="Ascites" />
+      </code>
+      <code>
+        <code value="Urine" />
+        <display value="Urine" />
+      </code>
+      <code>
+        <code value="Saliva" />
+        <display value="Saliva" />
+      </code>
+      <code>
+        <code value="Stool/Faeces" />
+        <display value="Stool/Faeces" />
+      </code>
+      <code>
+        <code value="Other liquid biosample/storage" />
+        <display value="Other liquid biosample/storage" />
+      </code>
+    </element>
+    <element id="Specimen.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Specimen.type.coding.display" />
+      <max value="0" />
+    </element>
+    <element id="Specimen.type.coding.userSelected">
+      <path value="Specimen.type.coding.userSelected" />
+      <max value="0" />
+    </element>
+    <element id="Specimen.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Specimen.type.text" />
+      <max value="0" />
+    </element>
+    <element id="Specimen.subject">
+      <path value="Specimen.subject" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+      </type>
+    </element>
+    <element id="Specimen.subject.identifier">
+      <path value="Specimen.subject.identifier" />
+      <max value="0" />
+    </element>
+    <element id="Specimen.subject.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Specimen.subject.display" />
+      <max value="0" />
+    </element>
+    <element id="Specimen.receivedTime">
+      <path value="Specimen.receivedTime" />
+      <max value="0" />
+    </element>
+    <element id="Specimen.parent">
+      <path value="Specimen.parent" />
+      <max value="0" />
+    </element>
+    <element id="Specimen.request">
+      <path value="Specimen.request" />
+      <max value="0" />
+    </element>
+    <element id="Specimen.collection.extension">
+      <path value="Specimen.collection.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Specimen.collection.extension:fastingStatus">
+      <path value="Specimen.collection.extension" />
+      <sliceName value="fastingStatus" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://example.org/fhir/StructureDefinition/GbaExtensionFastingStatus" />
+      </type>
+    </element>
+    <element id="Specimen.collection.collector">
+      <path value="Specimen.collection.collector" />
+      <max value="0" />
+    </element>
+    <element id="Specimen.collection.collected[x]:collectedDateTime">
+      <path value="Specimen.collection.collectedDateTime" />
+      <sliceName value="collectedDateTime" />
+      <type>
+        <code value="dateTime" />
+      </type>
+    </element>
+    <element id="Specimen.collection.quantity">
+      <path value="Specimen.collection.quantity" />
+      <max value="0" />
+    </element>
+    <element id="Specimen.collection.method">
+      <path value="Specimen.collection.method" />
+      <max value="0" />
+    </element>
+    <element id="Specimen.collection.bodySite">
+      <path value="Specimen.collection.bodySite" />
+      <max value="0" />
+    </element>
+    <element id="Specimen.collection.bodySite.coding.system">
+      <path value="Specimen.collection.bodySite.coding.system" />
+      <fixedUri value="https://www.dimdi.de/dynamic/en/classifications/icd/icd-o-3/" />
+    </element>
+    <element id="Specimen.collection.bodySite.coding.version">
+      <path value="Specimen.collection.bodySite.coding.version" />
+      <max value="0" />
+    </element>
+    <element id="Specimen.collection.bodySite.coding.code">
+      <path value="Specimen.collection.bodySite.coding.code" />
+      <code>
+        <code value="Degrees Celsius 2 to 10" />
+        <display value="Degrees Celsius 2 to 10" />
+      </code>
+      <code>
+        <code value="Degrees Celsius -18 to -35" />
+        <display value="Degrees Celsius -18 to -35" />
+      </code>
+      <code>
+        <code value="Degrees Celsius -60 to -85" />
+        <display value="Degrees Celsius -60 to -85" />
+      </code>
+      <code>
+        <code value="Gaseous nitrogen" />
+        <display value="Gaseous nitrogen" />
+      </code>
+      <code>
+        <code value="Liquid nitrogen" />
+        <display value="Liquid nitrogen" />
+      </code>
+      <code>
+        <code value="Other storage temperature" />
+        <display value="Other storage temperature" />
+      </code>
+    </element>
+    <element id="Specimen.collection.bodySite.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Specimen.collection.bodySite.coding.display" />
+      <max value="0" />
+    </element>
+    <element id="Specimen.collection.bodySite.coding.userSelected">
+      <path value="Specimen.collection.bodySite.coding.userSelected" />
+      <max value="0" />
+    </element>
+    <element id="Specimen.collection.bodySite.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Specimen.collection.bodySite.text" />
+      <max value="0" />
+    </element>
+    <element id="Specimen.processing">
+      <path value="Specimen.processing" />
+      <max value="0" />
+    </element>
+    <element id="Specimen.container">
+      <path value="Specimen.container" />
+      <max value="0" />
+    </element>
+    <element id="Specimen.note">
+      <path value="Specimen.note" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>
