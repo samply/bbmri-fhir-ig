@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://example.org/fhir/StructureDefinition/GbaPatient" />
+  <url value="http://fhir.germanbiobanknode.de/fhir/StructureDefinition/GbaPatient" />
   <name value="GbaPatient" />
   <status value="draft" />
   <fhirVersion value="3.0.1" />

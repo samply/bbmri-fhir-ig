@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://fhir.germanbiobanknode.de/fhir/StructureDefinition/GbaCodeSystemFastingStatus" />
+  <name value="GbaCodeSystemFastingStatus" />
+  <status value="draft" />
+  <fhirVersion value="3.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="CodeSystem" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/CodeSystem" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="CodeSystem.url">
+      <path value="CodeSystem.url" />
+      <fixedUri value="http://fhir.germanbiobanknode.de/code-system/fasting-status" />
+    </element>
+    <element id="CodeSystem.identifier">
+      <path value="CodeSystem.identifier" />
+      <max value="0" />
+    </element>
+    <element id="CodeSystem.version">
+      <path value="CodeSystem.version" />
+      <fixedString value="1.0" />
+    </element>
+    <element id="CodeSystem.name">
+      <path value="CodeSystem.name" />
+      <fixedString value="Fasting Status" />
+    </element>
+    <element id="CodeSystem.title">
+      <path value="CodeSystem.title" />
+      <fixedString value="Fasting Status" />
+    </element>
+    <element id="CodeSystem.experimental">
+      <path value="CodeSystem.experimental" />
+      <max value="0" />
+    </element>
+    <element id="CodeSystem.date">
+      <path value="CodeSystem.date" />
+      <max value="0" />
+    </element>
+    <element id="CodeSystem.publisher">
+      <path value="CodeSystem.publisher" />
+      <max value="0" />
+      <fixedString value="GBA" />
+    </element>
+    <element id="CodeSystem.contact">
+      <path value="CodeSystem.contact" />
+      <max value="0" />
+    </element>
+    <element id="CodeSystem.description">
+      <path value="CodeSystem.description" />
+      <max value="0" />
+    </element>
+    <element id="CodeSystem.useContext">
+      <path value="CodeSystem.useContext" />
+      <max value="0" />
+    </element>
+    <element id="CodeSystem.jurisdiction">
+      <path value="CodeSystem.jurisdiction" />
+      <max value="0" />
+    </element>
+    <element id="CodeSystem.purpose">
+      <path value="CodeSystem.purpose" />
+      <max value="0" />
+    </element>
+    <element id="CodeSystem.copyright">
+      <path value="CodeSystem.copyright" />
+      <comment value="Systems are not required to have markdown support, and there is considerable variation in markdown syntax, so the text should be readable without markdown processing. The preferred markdown syntax is described here: http://daringfireball.net/projects/markdown/syntax (and tests here: http://daringfireball.net/projects/downloads/MarkdownTest_1.0.zip)&#xD;&#xA; Sometimes, the copyright differs between the code system and the codes that are included. The copyright statement should clearly differentiate between these when required.&#xD;&#xA; Sometimes, the copyright differs between the code system and the codes that are included. The copyright statement should clearly differentiate between these when required.&#xD;&#xA; Sometimes, the copyright differs between the code system and the codes that are included. The copyright statement should clearly differentiate between these when required." />
+      <max value="0" />
+    </element>
+    <element id="CodeSystem.caseSensitive">
+      <path value="CodeSystem.caseSensitive" />
+      <max value="0" />
+    </element>
+    <element id="CodeSystem.valueSet">
+      <path value="CodeSystem.valueSet" />
+      <max value="0" />
+    </element>
+    <element id="CodeSystem.hierarchyMeaning">
+      <path value="CodeSystem.hierarchyMeaning" />
+      <max value="0" />
+    </element>
+    <element id="CodeSystem.compositional">
+      <path value="CodeSystem.compositional" />
+      <max value="0" />
+    </element>
+    <element id="CodeSystem.versionNeeded">
+      <path value="CodeSystem.versionNeeded" />
+      <max value="0" />
+    </element>
+    <element id="CodeSystem.count">
+      <path value="CodeSystem.count" />
+      <max value="0" />
+    </element>
+    <element id="CodeSystem.filter">
+      <path value="CodeSystem.filter" />
+      <max value="0" />
+    </element>
+    <element id="CodeSystem.property">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
+        <valueString value="Property" />
+      </extension>
+      <path value="CodeSystem.property" />
+      <max value="0" />
+    </element>
+    <element id="CodeSystem.concept">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
+        <valueString value="ConceptDefinition" />
+      </extension>
+      <path value="CodeSystem.concept" />
+      <max value="0" />
+    </element>
+    <element id="CodeSystem.concept.code">
+      <path value="CodeSystem.concept.code" />
+      <fixedCode value="fasting-status" />
+    </element>
+    <element id="CodeSystem.concept.display">
+      <path value="CodeSystem.concept.display" />
+      <max value="0" />
+    </element>
+    <element id="CodeSystem.concept.definition">
+      <path value="CodeSystem.concept.definition" />
+      <max value="0" />
+    </element>
+    <element id="CodeSystem.concept.designation">
+      <path value="CodeSystem.concept.designation" />
+      <max value="0" />
+    </element>
+    <element id="CodeSystem.concept.property">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
+        <valueString value="ConceptProperty" />
+      </extension>
+      <path value="CodeSystem.concept.property" />
+      <max value="0" />
+    </element>
+    <element id="CodeSystem.concept.concept">
+      <path value="CodeSystem.concept.concept" />
+      <max value="0" />
+    </element>
+    <element id="CodeSystem.concept.concept.code">
+      <path value="CodeSystem.concept.concept.code" />
+      <code>
+        <code value="sober" />
+        <display value="Sober" />
+      </code>
+      <code>
+        <code value="not-sober" />
+        <display value="Not sober" />
+      </code>
+      <code>
+        <code value="not-given" />
+        <display value="Not given" />
+      </code>
+    </element>
+    <element id="CodeSystem.concept.concept.definition">
+      <path value="CodeSystem.concept.concept.definition" />
+      <max value="0" />
+    </element>
+    <element id="CodeSystem.concept.concept.designation">
+      <path value="CodeSystem.concept.concept.designation" />
+      <max value="0" />
+    </element>
+    <element id="CodeSystem.concept.concept.property">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
+        <valueString value="ConceptProperty" />
+      </extension>
+      <path value="CodeSystem.concept.concept.property" />
+      <max value="0" />
+    </element>
+    <element id="CodeSystem.concept.concept.concept">
+      <path value="CodeSystem.concept.concept.concept" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

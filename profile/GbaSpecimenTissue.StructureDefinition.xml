@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://example.org/fhir/StructureDefinition/GbaSpecimenTissue" />
+  <url value="http://fhir.germanbiobanknode.de/fhir/StructureDefinition/GbaSpecimenTissue" />
   <name value="GbaSpecimenTissue" />
   <status value="draft" />
   <fhirVersion value="3.0.1" />
@@ -25,7 +25,7 @@
       <sliceName value="longTermStorageTemperature" />
       <type>
         <code value="Extension" />
-        <profile value="http://example.org/fhir/StructureDefinition/GbaExtensionStorageTemperature" />
+        <profile value="http://fhir.germanbiobanknode.de/fhir/StructureDefinition/GbaExtensionStorageTemperature" />
       </type>
     </element>
     <element id="Specimen.extension:diagnosis">
@@ -33,7 +33,7 @@
       <sliceName value="diagnosis" />
       <type>
         <code value="Extension" />
-        <profile value="http://example.org/fhir/StructureDefinition/GbaExtensionDiagnosis" />
+        <profile value="http://fhir.germanbiobanknode.de/fhir/StructureDefinition/GbaExtensionDiagnosis" />
       </type>
     </element>
     <element id="Specimen.identifier">
@@ -50,7 +50,7 @@
     </element>
     <element id="Specimen.type.coding.system">
       <path value="Specimen.type.coding.system" />
-      <max value="0" />
+      <fixedUri value="http://fhir.germanbiobanknode.de/code-system/sample-type-derivative" />
     </element>
     <element id="Specimen.type.coding.version">
       <path value="Specimen.type.coding.version" />
@@ -78,6 +78,10 @@
         <code value="Other tissue storage" />
         <display value="Other tissue storage" />
       </code>
+      <binding>
+        <strength value="required" />
+        <valueSetUri value="http://fhir.germanbiobanknode.de/value-set/sample-type-tissue" />
+      </binding>
     </element>
     <element id="Specimen.type.coding.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
@@ -142,7 +146,7 @@
       <sliceName value="fastingStatus" />
       <type>
         <code value="Extension" />
-        <profile value="http://example.org/fhir/StructureDefinition/GbaExtensionFastingStatus" />
+        <profile value="http://fhir.germanbiobanknode.de/fhir/StructureDefinition/GbaExtensionFastingStatus" />
       </type>
     </element>
     <element id="Specimen.collection.collector">
@@ -198,7 +202,6 @@
         <code value="Other storage temperature" />
         <display value="Other storage temperature" />
       </code>
-
     </element>
     <element id="Specimen.collection.bodySite.coding.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">

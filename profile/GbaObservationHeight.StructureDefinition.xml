@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://example.org/fhir/StructureDefinition/GbaObservationHeight" />
+  <url value="http://fhir.germanbiobanknode.de/fhir/StructureDefinition/GbaObservationHeight" />
   <name value="GbaObservationHeight" />
   <status value="draft" />
   <fhirVersion value="3.0.1" />

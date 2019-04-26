@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://example.org/fhir/StructureDefinition/GbaExtensionFastingStatus" />
+  <url value="http://fhir.germanbiobanknode.de/fhir/StructureDefinition/GbaExtensionFastingStatus" />
   <name value="GbaExtensionFastingStatus" />
   <status value="draft" />
   <fhirVersion value="3.0.1" />
@@ -12,30 +12,9 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />
   <differential>
-    <element id="Extension">
-      <path value="Extension" />
-      <short value="Optional Extensions Element" />
-      <definition value="Optional Extension Element - found in all resources." />
-      <base>
-        <path value="Element" />
-        <min value="0" />
-        <max value="*" />
-      </base>
-      <constraint>
-        <key value="ext-1" />
-        <severity value="error" />
-        <human value="Must have either extensions or value[x], not both" />
-        <expression value="extension.exists() != value.exists()" />
-        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-      </constraint>
-      <mapping>
-        <identity value="rim" />
-        <map value="N/A" />
-      </mapping>
-    </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://example.org/fhir/StructureDefinition/GbaExtensionFastingStatus" />
+      <fixedUri value="http://fhir.germanbiobanknode.de/fhir/StructureDefinition/GbaExtensionFastingStatus" />
     </element>
     <element id="Extension.value[x]:valueCodeableConcept">
       <path value="Extension.valueCodeableConcept" />
@@ -46,7 +25,8 @@
     </element>
     <element id="Extension.value[x]:valueCodeableConcept.coding.system">
       <path value="Extension.valueCodeableConcept.coding.system" />
-      <max value="0" />
+      <min value="1" />
+      <fixedUri value="http://fhir.germanbiobanknode.de/code-system/fasting-status" />
     </element>
     <element id="Extension.value[x]:valueCodeableConcept.coding.version">
       <path value="Extension.valueCodeableConcept.coding.version" />
@@ -54,18 +34,10 @@
     </element>
     <element id="Extension.value[x]:valueCodeableConcept.coding.code">
       <path value="Extension.valueCodeableConcept.coding.code" />
-      <code>
-        <code value="Sober" />
-        <display value="Sober" />
-      </code>
-      <code>
-        <code value="Not sober" />
-        <display value="Not sober" />
-      </code>
-      <code>
-        <code value="Not given" />
-        <display value="Not given" />
-      </code>
+      <binding>
+        <strength value="required" />
+        <valueSetUri value="http://fhir.germanbiobanknode.de/value-set/fasting-status" />
+      </binding>
     </element>
     <element id="Extension.value[x]:valueCodeableConcept.coding.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://example.org/fhir/StructureDefinition/GbaExtensionStorageTemperature" />
+  <url value="http://fhir.germanbiobanknode.de/fhir/StructureDefinition/GbaExtensionStorageTemperature" />
   <name value="GbaExtensionStorageTemperature" />
   <status value="draft" />
   <fhirVersion value="3.0.1" />
@@ -12,30 +12,9 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />
   <differential>
-    <element id="Extension">
-      <path value="Extension" />
-      <short value="Optional Extensions Element" />
-      <definition value="Optional Extension Element - found in all resources." />
-      <base>
-        <path value="Element" />
-        <min value="0" />
-        <max value="*" />
-      </base>
-      <constraint>
-        <key value="ext-1" />
-        <severity value="error" />
-        <human value="Must have either extensions or value[x], not both" />
-        <expression value="extension.exists() != value.exists()" />
-        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-      </constraint>
-      <mapping>
-        <identity value="rim" />
-        <map value="N/A" />
-      </mapping>
-    </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://example.org/fhir/StructureDefinition/GbaExtensionStorageTemperature" />
+      <fixedUri value="http://fhir.germanbiobanknode.de/fhir/StructureDefinition/GbaExtensionStorageTemperature" />
     </element>
     <element id="Extension.value[x]:valueCodeableConcept">
       <path value="Extension.valueCodeableConcept" />
@@ -46,7 +25,7 @@
     </element>
     <element id="Extension.value[x]:valueCodeableConcept.coding.system">
       <path value="Extension.valueCodeableConcept.coding.system" />
-      <max value="0" />
+      <fixedUri value="http://fhir.germanbiobanknode.de/code-system/storage-temperature" />
     </element>
     <element id="Extension.value[x]:valueCodeableConcept.coding.version">
       <path value="Extension.valueCodeableConcept.coding.version" />
@@ -78,6 +57,10 @@
         <code value="Other storage temperature" />
         <display value="Other storage temperature" />
       </code>
+      <binding>
+        <strength value="required" />
+        <valueSetUri value="http://fhir.germanbiobanknode.de/value-set/storage-temperature" />
+      </binding>
     </element>
     <element id="Extension.value[x]:valueCodeableConcept.coding.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
