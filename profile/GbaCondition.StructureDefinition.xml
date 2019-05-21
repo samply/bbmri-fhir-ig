@@ -3,7 +3,7 @@
   <url value="http://fhir.germanbiobanknode.de/fhir/StructureDefinition/GbaCondition" />
   <name value="GbaCondition" />
   <status value="draft" />
-  <fhirVersion value="3.0.1" />
+  <fhirVersion value="4.0.0" />
   <kind value="resource" />
   <abstract value="false" />
   <type value="Condition" />
@@ -76,10 +76,6 @@
         <valueBoolean value="true" />
       </extension>
       <path value="Condition.subject.display" />
-      <max value="0" />
-    </element>
-    <element id="Condition.context">
-      <path value="Condition.context" />
       <max value="0" />
     </element>
     <element id="Condition.onset[x]">
