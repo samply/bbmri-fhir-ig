@@ -3,7 +3,7 @@
   <url value="http://fhir.germanbiobanknode.de/fhir/StructureDefinition/GbaCodeSystemSampleTypeLiquid" />
   <name value="GbaCodeSystemSampleTypeLiquid" />
   <status value="draft" />
-  <fhirVersion value="3.0.1" />
+  <fhirVersion value="4.0.0" />
   <kind value="resource" />
   <abstract value="false" />
   <type value="CodeSystem" />
