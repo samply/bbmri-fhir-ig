@@ -1,83 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://fhir.germanbiobanknode.de/fhir/StructureDefinition/GbaExtensionStorageTemperature" />
-  <name value="GbaExtensionStorageTemperature" />
+  <url value="http://fhir.germanbiobanknode.de/fhir/StructureDefinition/GbaExtensionStorageTemparature" />
+  <name value="GbaExtensionStorageTemparature" />
   <status value="draft" />
-  <fhirVersion value="3.0.1" />
+  <fhirVersion value="4.0.0" />
   <kind value="complex-type" />
   <abstract value="false" />
-  <contextType value="resource" />
-  <context value="Specimen" />
+  <context>
+    <type value="element" />
+    <expression value="Specimen" />
+  </context>
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />
   <differential>
-    <element id="Extension.url">
-      <path value="Extension.url" />
-      <fixedUri value="http://fhir.germanbiobanknode.de/fhir/StructureDefinition/GbaExtensionStorageTemperature" />
-    </element>
     <element id="Extension.value[x]:valueCodeableConcept">
-      <path value="Extension.valueCodeableConcept" />
+      <path value="Extension.value[x]" />
       <sliceName value="valueCodeableConcept" />
       <type>
         <code value="CodeableConcept" />
       </type>
     </element>
     <element id="Extension.value[x]:valueCodeableConcept.coding.system">
-      <path value="Extension.valueCodeableConcept.coding.system" />
+      <path value="Extension.value[x].coding.system" />
       <fixedUri value="http://fhir.germanbiobanknode.de/code-system/storage-temperature" />
     </element>
     <element id="Extension.value[x]:valueCodeableConcept.coding.version">
-      <path value="Extension.valueCodeableConcept.coding.version" />
+      <path value="Extension.value[x].coding.version" />
       <max value="0" />
     </element>
     <element id="Extension.value[x]:valueCodeableConcept.coding.code">
-      <path value="Extension.valueCodeableConcept.coding.code" />
-      <code>
-        <code value="Degrees Celsius 2 to 10" />
-        <display value="Degrees Celsius 2 to 10" />
-      </code>
-      <code>
-        <code value="Degrees Celsius -18 to -35" />
-        <display value="Degrees Celsius -18 to -35" />
-      </code>
-      <code>
-        <code value="Degrees Celsius -60 to -85" />
-        <display value="Degrees Celsius -60 to -85" />
-      </code>
-      <code>
-        <code value="Gaseous nitrogen" />
-        <display value="Gaseous nitrogen" />
-      </code>
-      <code>
-        <code value="Liquid nitrogen" />
-        <display value="Liquid nitrogen" />
-      </code>
-      <code>
-        <code value="Other storage temperature" />
-        <display value="Other storage temperature" />
-      </code>
+      <path value="Extension.value[x].coding.code" />
       <binding>
         <strength value="required" />
-        <valueSetUri value="http://fhir.germanbiobanknode.de/value-set/storage-temperature" />
+        <valueSet value="http://fhir.germanbiobanknode.de/value-set/storage-temperature" />
       </binding>
     </element>
     <element id="Extension.value[x]:valueCodeableConcept.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.valueCodeableConcept.coding.display" />
+      <path value="Extension.value[x].coding.display" />
       <max value="0" />
     </element>
     <element id="Extension.value[x]:valueCodeableConcept.coding.userSelected">
-      <path value="Extension.valueCodeableConcept.coding.userSelected" />
+      <path value="Extension.value[x].coding.userSelected" />
       <max value="0" />
     </element>
     <element id="Extension.value[x]:valueCodeableConcept.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.valueCodeableConcept.text" />
+      <path value="Extension.value[x].text" />
       <max value="0" />
     </element>
   </differential>

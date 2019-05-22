@@ -3,7 +3,7 @@
   <url value="http://fhir.germanbiobanknode.de/fhir/StructureDefinition/GbaObservationBmi" />
   <name value="GbaObservationBmi" />
   <status value="draft" />
-  <fhirVersion value="3.0.1" />
+  <fhirVersion value="4.0.0" />
   <kind value="resource" />
   <abstract value="false" />
   <type value="Observation" />
@@ -70,10 +70,6 @@
       <path value="Observation.subject.display" />
       <max value="0" />
     </element>
-    <element id="Observation.context">
-      <path value="Observation.context" />
-      <max value="0" />
-    </element>
     <element id="Observation.effective[x]:effectiveDateTime">
       <path value="Observation.effectiveDateTime" />
       <sliceName value="effectiveDateTime" />
@@ -123,10 +119,6 @@
       <path value="Observation.interpretation" />
       <max value="0" />
     </element>
-    <element id="Observation.comment">
-      <path value="Observation.comment" />
-      <max value="0" />
-    </element>
     <element id="Observation.bodySite">
       <path value="Observation.bodySite" />
       <max value="0" />
@@ -156,10 +148,6 @@
     </element>
     <element id="Observation.referenceRange">
       <path value="Observation.referenceRange" />
-      <max value="0" />
-    </element>
-    <element id="Observation.related">
-      <path value="Observation.related" />
       <max value="0" />
     </element>
     <element id="Observation.component">

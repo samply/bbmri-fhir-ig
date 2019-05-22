@@ -3,7 +3,7 @@
   <url value="http://fhir.germanbiobanknode.de/fhir/StructureDefinition/GbaSpecimenDerivative" />
   <name value="GbaSpecimenDerivative" />
   <status value="draft" />
-  <fhirVersion value="3.0.1" />
+  <fhirVersion value="4.0.0" />
   <kind value="resource" />
   <abstract value="false" />
   <type value="Specimen" />
@@ -48,9 +48,15 @@
       <path value="Specimen.status" />
       <max value="0" />
     </element>
-    <element id="Specimen.type.coding.system">
-      <path value="Specimen.type.coding.system" />
-      <fixedUri value="http://fhir.germanbiobanknode.de/code-system/sample-type-derivative" />
+    <element id="Specimen.type">
+      <path value="Specimen.type" />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="SpecimenType" />
+        </extension>
+        <strength value="required" />
+        <valueSet value="http://fhir.germanbiobanknode.de/value-set/sample-type-derivative" />
+      </binding>
     </element>
     <element id="Specimen.type.coding.version">
       <path value="Specimen.type.coding.version" />
@@ -74,10 +80,6 @@
         <code value="Other derivative" />
         <display value="Other derivative" />
       </code>
-      <binding>
-        <strength value="required" />
-        <valueSetUri value="http://fhir.germanbiobanknode.de/value-set/sample-type-derivative" />
-      </binding>
     </element>
     <element id="Specimen.type.coding.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">

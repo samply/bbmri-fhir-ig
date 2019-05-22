@@ -3,7 +3,7 @@
   <url value="http://fhir.germanbiobanknode.de/fhir/StructureDefinition/GbaObservationSmoker" />
   <name value="GbaObservationSmoker" />
   <status value="draft" />
-  <fhirVersion value="3.0.1" />
+  <fhirVersion value="4.0.0" />
   <kind value="resource" />
   <abstract value="false" />
   <type value="Observation" />
@@ -70,10 +70,6 @@
       <path value="Observation.subject.display" />
       <max value="0" />
     </element>
-    <element id="Observation.context">
-      <path value="Observation.context" />
-      <max value="0" />
-    </element>
     <element id="Observation.effective[x]:effectiveDateTime">
       <path value="Observation.effectiveDateTime" />
       <sliceName value="effectiveDateTime" />
@@ -89,65 +85,31 @@
       <path value="Observation.performer" />
       <max value="0" />
     </element>
+    <element id="Observation.value[x]">
+      <path value="Observation.value[x]" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://fhir.de/CodeSystem/raucherstatus" />
+      </binding>
+    </element>
     <element id="Observation.value[x]:valueCodeableConcept">
       <path value="Observation.valueCodeableConcept" />
       <sliceName value="valueCodeableConcept" />
+      <min value="1" />
       <type>
         <code value="CodeableConcept" />
-        <profile value="http://fhir.de/ValueSet/raucherstatus" />
       </type>
-    </element>
-    <element id="Observation.value[x]:valueCodeableConcept.coding.system">
-      <path value="Observation.valueCodeableConcept.coding.system" />
-      <fixedUri value="http://fhir.de/CodeSystem/raucherstatus" />
-    </element>
-    <element id="Observation.value[x]:valueCodeableConcept.coding.version">
-      <path value="Observation.valueCodeableConcept.coding.version" />
-      <max value="0" />
-    </element>
-    <element id="Observation.value[x]:valueCodeableConcept.coding.code">
-      <path value="Observation.valueCodeableConcept.coding.code" />
       <binding>
         <strength value="required" />
-        <valueSetUri value="http://fhir.de/ValueSet/raucherstatus" />
+        <valueSet value="http://fhir.de/ValueSet/raucherstatus" />
       </binding>
-    </element>
-    <element id="Observation.value[x]:valueCodeableConcept.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Observation.valueCodeableConcept.coding.display" />
-      <max value="0" />
     </element>
     <element id="Observation.value[x]:valueCodeableConcept.coding.userSelected">
       <path value="Observation.valueCodeableConcept.coding.userSelected" />
       <max value="0" />
     </element>
     <element id="Observation.value[x]:valueCodeableConcept.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
       <path value="Observation.valueCodeableConcept.text" />
-      <code>
-        <system value="http://fhir.de/ValueSet/raucherstatus" />
-        <code value="Smoker" />
-        <display value="Smoker" />
-      </code>
-      <code>
-        <system value="http://fhir.de/ValueSet/raucherstatus" />
-        <code value="Ex-smoker" />
-        <display value="Ex-smoker" />
-      </code>
-      <code>
-        <system value="http://fhir.de/ValueSet/raucherstatus" />
-        <code value="Non-smoker" />
-        <display value="Non-smoker" />
-      </code>
-      <code>
-        <system value="http://fhir.de/ValueSet/raucherstatus" />
-        <code value="Not given" />
-        <display value="Not given" />
-      </code>
       <max value="0" />
     </element>
     <element id="Observation.dataAbsentReason">
@@ -156,10 +118,6 @@
     </element>
     <element id="Observation.interpretation">
       <path value="Observation.interpretation" />
-      <max value="0" />
-    </element>
-    <element id="Observation.comment">
-      <path value="Observation.comment" />
       <max value="0" />
     </element>
     <element id="Observation.bodySite">
@@ -191,10 +149,6 @@
     </element>
     <element id="Observation.referenceRange">
       <path value="Observation.referenceRange" />
-      <max value="0" />
-    </element>
-    <element id="Observation.related">
-      <path value="Observation.related" />
       <max value="0" />
     </element>
     <element id="Observation.component">

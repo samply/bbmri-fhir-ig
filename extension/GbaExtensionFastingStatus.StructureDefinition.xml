@@ -3,58 +3,50 @@
   <url value="http://fhir.germanbiobanknode.de/fhir/StructureDefinition/GbaExtensionFastingStatus" />
   <name value="GbaExtensionFastingStatus" />
   <status value="draft" />
-  <fhirVersion value="3.0.1" />
+  <fhirVersion value="4.0.0" />
   <kind value="complex-type" />
   <abstract value="false" />
-  <contextType value="resource" />
-  <context value="Specimen.collection" />
+  <context>
+    <type value="element" />
+    <expression value="Specimen.collection" />
+  </context>
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />
   <differential>
-    <element id="Extension.url">
-      <path value="Extension.url" />
-      <fixedUri value="http://fhir.germanbiobanknode.de/fhir/StructureDefinition/GbaExtensionFastingStatus" />
-    </element>
     <element id="Extension.value[x]:valueCodeableConcept">
-      <path value="Extension.valueCodeableConcept" />
+      <path value="Extension.value[x]" />
       <sliceName value="valueCodeableConcept" />
       <type>
         <code value="CodeableConcept" />
       </type>
     </element>
     <element id="Extension.value[x]:valueCodeableConcept.coding.system">
-      <path value="Extension.valueCodeableConcept.coding.system" />
+      <path value="Extension.value[x].coding.system" />
       <min value="1" />
       <fixedUri value="http://fhir.germanbiobanknode.de/code-system/fasting-status" />
     </element>
     <element id="Extension.value[x]:valueCodeableConcept.coding.version">
-      <path value="Extension.valueCodeableConcept.coding.version" />
+      <path value="Extension.value[x].coding.version" />
       <max value="0" />
     </element>
     <element id="Extension.value[x]:valueCodeableConcept.coding.code">
-      <path value="Extension.valueCodeableConcept.coding.code" />
+      <path value="Extension.value[x].coding.code" />
       <binding>
         <strength value="required" />
-        <valueSetUri value="http://fhir.germanbiobanknode.de/value-set/fasting-status" />
+        <valueSet value="http://fhir.germanbiobanknode.de/code-system/fasting-status" />
       </binding>
     </element>
     <element id="Extension.value[x]:valueCodeableConcept.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.valueCodeableConcept.coding.display" />
+      <path value="Extension.value[x].coding.display" />
       <max value="0" />
     </element>
     <element id="Extension.value[x]:valueCodeableConcept.coding.userSelected">
-      <path value="Extension.valueCodeableConcept.coding.userSelected" />
+      <path value="Extension.value[x].coding.userSelected" />
       <max value="0" />
     </element>
     <element id="Extension.value[x]:valueCodeableConcept.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.valueCodeableConcept.text" />
+      <path value="Extension.value[x].text" />
       <max value="0" />
     </element>
   </differential>
