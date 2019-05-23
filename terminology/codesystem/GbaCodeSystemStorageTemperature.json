@@ -1,0 +1,35 @@
+{
+    "resourceType":"CodeSystem",
+    "id":"GbaCodeSystemStorageTemperature",
+    "url":"http://fhir.germanbiobanknode.de/fhir/codesystem/GbaCodeSystemStorageTemperature",
+    "name":"GbaCodeSystemStorageTemperature",
+    "title":"GbaCodeSystemStorageTemperature",
+    "status":"draft",
+    "caseSensitive":true,
+    "concept": [
+        {
+            "code":"plus-2-to-plus-10",
+            "display":"Degrees Celsius 2 to 10"
+        },
+        {
+            "code":"minus-18-to-minus-35",
+            "display":"Degrees Celsius -18 to -35"
+        },
+        {
+            "code":"minus-60-to-minus-85",
+            "display":"Degrees Celsius -60 to -85"
+        },
+        {
+            "code":"gaseous-nitrogen",
+            "display":"Gaseous nitrogen"
+        },
+        {
+            "code":"liquid-nitrogen",
+            "display":"Liquid nitrogen"
+        },
+        {
+            "code":"other",
+            "display":"Other storage temperature"
+        }
+    ]
+}
