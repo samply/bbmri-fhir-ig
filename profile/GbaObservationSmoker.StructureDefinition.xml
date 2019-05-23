@@ -93,7 +93,7 @@
       </binding>
     </element>
     <element id="Observation.value[x]:valueCodeableConcept">
-      <path value="Observation.valueCodeableConcept" />
+      <path value="Observation.value[x]" />
       <sliceName value="valueCodeableConcept" />
       <min value="1" />
       <type>
@@ -103,14 +103,6 @@
         <strength value="required" />
         <valueSet value="http://fhir.de/ValueSet/raucherstatus" />
       </binding>
-    </element>
-    <element id="Observation.value[x]:valueCodeableConcept.coding.userSelected">
-      <path value="Observation.valueCodeableConcept.coding.userSelected" />
-      <max value="0" />
-    </element>
-    <element id="Observation.value[x]:valueCodeableConcept.text">
-      <path value="Observation.valueCodeableConcept.text" />
-      <max value="0" />
     </element>
     <element id="Observation.dataAbsentReason">
       <path value="Observation.dataAbsentReason" />
