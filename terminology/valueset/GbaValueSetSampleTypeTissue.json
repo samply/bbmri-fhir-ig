@@ -1,22 +1,54 @@
 {
-    "resourceType":"ValueSet",
-    "id":"GbaValueSetSampleTypeTissue",
-    "url":"http://fhir.germanbiobanknode.de/fhir/valueset/GbaValueSetSampleTypeTissue",
-    "name":"GbaValueSetSampleTypeTissue",
-    "title":"GbaValueSetSampleTypeTissue",
-    "status":"draft",
-    "compose":{
-        "include": [
-				{
-                "system":"http://fhir.germanbiobanknode.de/fhir/CodeSystem/GbaSampleMaterialType",
-				"filter":[
-				{
-					"property":"parent",
-					"op":"is-a",
-					"value":"tissue"
-				}
-			]
-			}
-        ]
-    }
+   "resourceType":"ValueSet",
+   "id":"GbaValueSetSampleTypeTissue",
+   "url":"http://fhir.germanbiobanknode.de/fhir/valueset/GbaValueSetSampleTypeTissue",
+   "name":"GbaValueSetSampleTypeTissue",
+   "title":"GbaValueSetSampleTypeTissue",
+   "status":"draft",
+   "compose":{
+      "include":[
+         {
+            "system":"http://fhir.germanbiobanknode.de/fhir/CodeSystem/GbaSampleMaterialType",
+            "filter":[
+               {
+                  "property":"parent",
+                  "op":"is-a",
+                  "value":"tissue"
+               }
+            ]
+         }
+      ]
+   },
+   "expansion":{
+      "timestamp":"2019-05-23T17:00:00Z",
+      "contains":[
+         {
+			"system":"http://fhir.germanbiobanknode.de/fhir/CodeSystem/GbaSampleMaterialType",
+            "code":"tissue",
+            "display":"Tissue",
+            "contains":[
+               {
+				  "system":"http://fhir.germanbiobanknode.de/fhir/CodeSystem/GbaSampleMaterialType",
+                  "code":"tissue-formalin",
+                  "display":"Tissue formalin"
+               },
+               {
+			      "system":"http://fhir.germanbiobanknode.de/fhir/CodeSystem/GbaSampleMaterialType",
+                  "code":"tissue-frozen",
+                  "display":"Tissue frozen"
+               },
+               {
+				  "system":"http://fhir.germanbiobanknode.de/fhir/CodeSystem/GbaSampleMaterialType",
+                  "code":"tissue-paxgene-or-else",
+                  "display":"Tissue Paxgene or else"
+               },
+               {
+				  "system":"http://fhir.germanbiobanknode.de/fhir/CodeSystem/GbaSampleMaterialType",
+                  "code":"tissue-other",
+                  "display":"Other tissue storage"
+               }
+            ]
+         }
+      ]
+   }
 }
