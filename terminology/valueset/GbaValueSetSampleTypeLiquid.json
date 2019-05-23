@@ -1,0 +1,22 @@
+{
+    "resourceType":"ValueSet",
+    "id":"GbaValueSetSampleTypeLiquid",
+    "url":"http://fhir.germanbiobanknode.de/fhir/valueset/GbaValueSetSampleTypeLiquid",
+    "name":"GbaValueSetSampleTypeLiquid",
+    "title":"GbaValueSetSampleTypeLiquid",
+    "status":"draft",
+    "compose":{
+        "include": [
+				{
+                "system":"http://fhir.germanbiobanknode.de/fhir/CodeSystem/GbaSampleMaterialType",
+				"filter":[
+				{
+					"property":"parent",
+					"op":"is-a",
+					"value":"liquid"
+				}
+			]
+			}
+        ]
+    }
+}

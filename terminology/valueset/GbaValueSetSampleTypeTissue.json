@@ -1,0 +1,22 @@
+{
+    "resourceType":"ValueSet",
+    "id":"GbaValueSetSampleTypeTissue",
+    "url":"http://fhir.germanbiobanknode.de/fhir/valueset/GbaValueSetSampleTypeTissue",
+    "name":"GbaValueSetSampleTypeTissue",
+    "title":"GbaValueSetSampleTypeTissue",
+    "status":"draft",
+    "compose":{
+        "include": [
+				{
+                "system":"http://fhir.germanbiobanknode.de/fhir/CodeSystem/GbaSampleMaterialType",
+				"filter":[
+				{
+					"property":"parent",
+					"op":"is-a",
+					"value":"tissue"
+				}
+			]
+			}
+        ]
+    }
+}
