@@ -133,24 +133,6 @@
       <path value="Specimen.request" />
       <max value="0" />
     </element>
-    <element id="Specimen.collection.extension">
-      <path value="Specimen.collection.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Specimen.collection.extension:fastingStatus">
-      <path value="Specimen.collection.extension" />
-      <sliceName value="fastingStatus" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://fhir.germanbiobanknode.de/fhir/StructureDefinition/GbaExtensionFastingStatus" />
-      </type>
-    </element>
     <element id="Specimen.collection.collector">
       <path value="Specimen.collection.collector" />
       <max value="0" />
@@ -222,6 +204,18 @@
       </extension>
       <path value="Specimen.collection.bodySite.text" />
       <max value="0" />
+    </element>
+    <element id="Specimen.collection.fastingStatus[x]">
+      <path value="Specimen.collection.fastingStatusCodeableConcept" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="FastingStatus" />
+        </extension>
+        <strength value="required" />
+      </binding>
     </element>
     <element id="Specimen.processing">
       <path value="Specimen.processing" />
