@@ -15,31 +15,15 @@
   <derivation value="constraint" />
   <differential>
     <element id="Extension.value[x]:valueCodeableConcept">
-      <path value="Extension.value[x]" />
+      <path value="Extension.valueCodeableConcept" />
       <sliceName value="valueCodeableConcept" />
       <type>
         <code value="CodeableConcept" />
       </type>
-    </element>
-    <element id="Extension.value[x]:valueCodeableConcept.coding.system">
-      <path value="Extension.value[x].coding.system" />
-      <fixedUri value="http://hl7.org/fhir/sid/icd-10" />
-    </element>
-    <element id="Extension.value[x]:valueCodeableConcept.coding.version">
-      <path value="Extension.value[x].coding.version" />
-      <fixedString value="2016" />
-    </element>
-    <element id="Extension.value[x]:valueCodeableConcept.coding.display">
-      <path value="Extension.value[x].coding.display" />
-      <max value="0" />
-    </element>
-    <element id="Extension.value[x]:valueCodeableConcept.coding.userSelected">
-      <path value="Extension.value[x].coding.userSelected" />
-      <max value="0" />
-    </element>
-    <element id="Extension.value[x]:valueCodeableConcept.text">
-      <path value="Extension.value[x].text" />
-      <max value="0" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://fhir.germanbiobanknode.de/fhir/ValueSet/MiabisSampleContentDiagnosis" />
+      </binding>
     </element>
   </differential>
 </StructureDefinition>

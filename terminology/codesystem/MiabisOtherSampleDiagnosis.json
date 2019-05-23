@@ -1,0 +1,29 @@
+{
+  "resourceType": "CodeSystem",
+  "name": "MiabisOtherSampleDiagnosis",
+  "url": "http://fhir.germanbiobanknode.de/fhir/CodeSystem/MiabisOtherSampleDiagnosis",
+  "status": "draft",
+  "description": "Contains the additional (not contained in ICD-10) codes needed for coding the MIABIS Sample Diagnosis.",
+  "compositional": false,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "healthy",
+      "display": "Healthy",
+      "definition": "Sample contains healthy material"
+    },
+    {
+      "code": "unknown",
+      "display": "Unknown"
+    },
+    {
+      "code": "not-applicable",
+      "display": "Not applicable"
+    }
+  ],
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>MiabisOtherSampleDiagnosis</h2><tt>http://fhir.germanbiobanknode.de/fhir/CodeSystem/MiabisOtherSampleDiagnosis</tt><p>Contains the additional (not contained in ICD-10) codes needed for coding the MIABIS Sample Diagnosis.</p></div>"
+  },
+  "title": "MIABIS Other Sample Diagnosis"
+}
