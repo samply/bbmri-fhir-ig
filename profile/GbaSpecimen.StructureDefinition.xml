@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://fhir.germanbiobanknode.de/fhir/StructureDefinition/GbaSpecimenLiquid" />
-  <name value="GbaSpecimenLiquid" />
+  <url value="http://fhir.germanbiobanknode.de/fhir/StructureDefinition/GbaSpecimen" />
+  <name value="GbaSpecimenTissue" />
   <status value="draft" />
   <fhirVersion value="4.0.0" />
   <kind value="resource" />
@@ -55,7 +55,7 @@
           <valueString value="SpecimenType" />
         </extension>
         <strength value="required" />
-        <valueSet value="http://fhir.germanbiobanknode.de/value-set/sample-type-liquid" />
+        <valueSet value="http://fhir.germanbiobanknode.de/fhir/ValueSet/GbaValueSetSampleType" />
       </binding>
     </element>
     <element id="Specimen.type.coding.version">
@@ -65,56 +65,24 @@
     <element id="Specimen.type.coding.code">
       <path value="Specimen.type.coding.code" />
       <code>
-        <code value="Liquid" />
-        <display value="Liquid" />
+        <code value="Tissue" />
+        <display value="Tissue" />
       </code>
       <code>
-        <code value="Whole blood" />
-        <display value="Whole blood" />
+        <code value="Tissue formalin" />
+        <display value="Tissue formalin" />
       </code>
       <code>
-        <code value="Blutplasma" />
-        <display value="Blutplasma" />
+        <code value="Tissue frozen" />
+        <display value="Tissue frozen" />
       </code>
       <code>
-        <code value="Blood serum" />
-        <display value="Blood serum" />
+        <code value="Tissue Paxgene or else" />
+        <display value="Tissue Paxgene or else" />
       </code>
       <code>
-        <code value="Peripheral blood cells (vital)" />
-        <display value="Peripheral blood cells (vital)" />
-      </code>
-      <code>
-        <code value="Buffy-Coat" />
-        <display value="Buffy-Coat" />
-      </code>
-      <code>
-        <code value="Bone marrow" />
-        <display value="Bone marrow" />
-      </code>
-      <code>
-        <code value="CSF/Liquor" />
-        <display value="CSF/Liquor" />
-      </code>
-      <code>
-        <code value="Ascites" />
-        <display value="Ascites" />
-      </code>
-      <code>
-        <code value="Urine" />
-        <display value="Urine" />
-      </code>
-      <code>
-        <code value="Saliva" />
-        <display value="Saliva" />
-      </code>
-      <code>
-        <code value="Stool/Faeces" />
-        <display value="Stool/Faeces" />
-      </code>
-      <code>
-        <code value="Other liquid biosample/storage" />
-        <display value="Other liquid biosample/storage" />
+        <code value="Other tissue storage" />
+        <display value="Other tissue storage" />
       </code>
     </element>
     <element id="Specimen.type.coding.display">
@@ -184,10 +152,6 @@
       <path value="Specimen.collection.method" />
       <max value="0" />
     </element>
-    <element id="Specimen.collection.bodySite">
-      <path value="Specimen.collection.bodySite" />
-      <max value="0" />
-    </element>
     <element id="Specimen.collection.bodySite.coding.system">
       <path value="Specimen.collection.bodySite.coding.system" />
       <fixedUri value="https://www.dimdi.de/dynamic/en/classifications/icd/icd-o-3/" />
@@ -241,8 +205,9 @@
       <path value="Specimen.collection.bodySite.text" />
       <max value="0" />
     </element>
-    <element id="Specimen.collection.fastingStatus[x]">
-      <path value="Specimen.collection.fastingStatusCodeableConcept" />
+    <element id="Specimen.collection.fastingStatus[x]:fastingStatusCodeableConcept">
+      <path value="Specimen.collection.fastingStatus[x]" />
+      <sliceName value="fastingStatusCodeableConcept" />
       <type>
         <code value="CodeableConcept" />
       </type>

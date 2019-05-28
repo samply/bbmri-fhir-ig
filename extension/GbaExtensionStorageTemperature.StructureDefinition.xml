@@ -22,19 +22,12 @@
       </type>
       <binding>
         <strength value="required" />
-        <valueSet value="http://fhir.germanbiobanknode.de/value-set/storage-temperature" />
+        <valueSet value="http://fhir.germanbiobanknode.de/fhir/ValueSet/GbaValueSetStorageTemperature" />
       </binding>
     </element>
     <element id="Extension.value[x]:valueCodeableConcept.coding.version">
       <path value="Extension.valueCodeableConcept.coding.version" />
       <max value="0" />
-    </element>
-    <element id="Extension.value[x]:valueCodeableConcept.coding.code">
-      <path value="Extension.valueCodeableConcept.coding.code" />
-      <binding>
-        <strength value="required" />
-        <valueSet value="http://fhir.germanbiobanknode.de/value-set/storage-temperature" />
-      </binding>
     </element>
     <element id="Extension.value[x]:valueCodeableConcept.coding.display">
       <path value="Extension.valueCodeableConcept.coding.display" />

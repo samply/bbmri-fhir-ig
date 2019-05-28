@@ -13,9 +13,5 @@
       }
     ]
   },
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>MiabisSampleContentDiagnosis</h2><tt>http://fhir.germanbiobanknode.de/fhir/ValueSet/MiabisSampleContentDiagnosis</tt></div>"
-  },
   "title": "MIABIS sample content diagnosis"
 }
