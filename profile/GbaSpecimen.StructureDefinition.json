@@ -1,0 +1,268 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://fhir.germanbiobanknode.de/fhir/StructureDefinition/GbaSpecimen",
+  "name": "GbaSpecimenTissue",
+  "status": "draft",
+  "fhirVersion": "4.0.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Specimen",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Specimen",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Specimen.extension",
+        "path": "Specimen.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Specimen.extension:longTermStorageTemperature",
+        "path": "Specimen.extension",
+        "sliceName": "longTermStorageTemperature",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://fhir.germanbiobanknode.de/fhir/StructureDefinition/GbaExtensionStorageTemperature"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Specimen.extension:diagnosis",
+        "path": "Specimen.extension",
+        "sliceName": "diagnosis",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://fhir.germanbiobanknode.de/fhir/StructureDefinition/GbaExtensionDiagnosis"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Specimen.identifier",
+        "path": "Specimen.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.accessionIdentifier",
+        "path": "Specimen.accessionIdentifier",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.status",
+        "path": "Specimen.status",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.type",
+        "path": "Specimen.type",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://fhir.germanbiobanknode.de/fhir/ValueSet/GbaValueSetSampleType"
+        }
+      },
+      {
+        "id": "Specimen.type.coding.version",
+        "path": "Specimen.type.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.type.coding.code",
+        "path": "Specimen.type.coding.code",
+        "code": [
+          {
+            "code": "Tissue",
+            "display": "Tissue"
+          },
+          {
+            "code": "Tissue formalin",
+            "display": "Tissue formalin"
+          },
+          {
+            "code": "Tissue frozen",
+            "display": "Tissue frozen"
+          },
+          {
+            "code": "Tissue Paxgene or else",
+            "display": "Tissue Paxgene or else"
+          },
+          {
+            "code": "Other tissue storage",
+            "display": "Other tissue storage"
+          }
+        ]
+      },
+      {
+        "id": "Specimen.type.coding.display",
+        "path": "Specimen.type.coding.display",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.type.coding.userSelected",
+        "path": "Specimen.type.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.type.text",
+        "path": "Specimen.type.text",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.subject",
+        "path": "Specimen.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Specimen.subject.identifier",
+        "path": "Specimen.subject.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.subject.display",
+        "path": "Specimen.subject.display",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.receivedTime",
+        "path": "Specimen.receivedTime",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.parent",
+        "path": "Specimen.parent",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.request",
+        "path": "Specimen.request",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.collection.collector",
+        "path": "Specimen.collection.collector",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.collection.collected[x]",
+        "path": "Specimen.collection.collected[x]",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Specimen.collection.quantity",
+        "path": "Specimen.collection.quantity",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.collection.method",
+        "path": "Specimen.collection.method",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.collection.bodySite.coding.system",
+        "path": "Specimen.collection.bodySite.coding.system",
+        "fixedUri": "https://www.dimdi.de/dynamic/en/classifications/icd/icd-o-3/"
+      },
+      {
+        "id": "Specimen.collection.bodySite.coding.version",
+        "path": "Specimen.collection.bodySite.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.collection.bodySite.coding.code",
+        "path": "Specimen.collection.bodySite.coding.code",
+        "code": [
+          {
+            "code": "Degrees Celsius 2 to 10",
+            "display": "Degrees Celsius 2 to 10"
+          },
+          {
+            "code": "Degrees Celsius -18 to -35",
+            "display": "Degrees Celsius -18 to -35"
+          },
+          {
+            "code": "Degrees Celsius -60 to -85",
+            "display": "Degrees Celsius -60 to -85"
+          },
+          {
+            "code": "Gaseous nitrogen",
+            "display": "Gaseous nitrogen"
+          },
+          {
+            "code": "Liquid nitrogen",
+            "display": "Liquid nitrogen"
+          },
+          {
+            "code": "Other storage temperature",
+            "display": "Other storage temperature"
+          }
+        ]
+      },
+      {
+        "id": "Specimen.collection.bodySite.coding.display",
+        "path": "Specimen.collection.bodySite.coding.display",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.collection.bodySite.coding.userSelected",
+        "path": "Specimen.collection.bodySite.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.collection.bodySite.text",
+        "path": "Specimen.collection.bodySite.text",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.collection.fastingStatus[x]:fastingStatusCodeableConcept",
+        "path": "Specimen.collection.fastingStatus[x]",
+        "sliceName": "fastingStatusCodeableConcept",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required"
+        }
+      },
+      {
+        "id": "Specimen.processing",
+        "path": "Specimen.processing",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.container",
+        "path": "Specimen.container",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.note",
+        "path": "Specimen.note",
+        "max": "0"
+      }
+    ]
+  }
+}
