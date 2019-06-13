@@ -1,0 +1,123 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://fhir.germanbiobanknode.de/fhir/StructureDefinition/GbaCondition",
+  "name": "GbaCondition",
+  "status": "draft",
+  "fhirVersion": "4.0.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Condition",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Condition",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Condition.identifier",
+        "path": "Condition.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Condition.clinicalStatus",
+        "path": "Condition.clinicalStatus",
+        "max": "0"
+      },
+      {
+        "id": "Condition.verificationStatus",
+        "path": "Condition.verificationStatus",
+        "max": "0"
+      },
+      {
+        "id": "Condition.category",
+        "path": "Condition.category",
+        "max": "0"
+      },
+      {
+        "id": "Condition.severity",
+        "path": "Condition.severity",
+        "max": "0"
+      },
+      {
+        "id": "Condition.code.coding.system",
+        "path": "Condition.code.coding.system",
+        "fixedUri": "http://hl7.org/fhir/sid/icd-10"
+      },
+      {
+        "id": "Condition.code.coding.version",
+        "path": "Condition.code.coding.version",
+        "fixedString": "2016"
+      },
+      {
+        "id": "Condition.code.coding.display",
+        "path": "Condition.code.coding.display",
+        "max": "0"
+      },
+      {
+        "id": "Condition.code.coding.userSelected",
+        "path": "Condition.code.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Condition.code.text",
+        "path": "Condition.code.text",
+        "max": "0"
+      },
+      {
+        "id": "Condition.bodySite",
+        "path": "Condition.bodySite",
+        "max": "0"
+      },
+      {
+        "id": "Condition.subject",
+        "path": "Condition.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Condition.subject.identifier",
+        "path": "Condition.subject.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Condition.subject.display",
+        "path": "Condition.subject.display",
+        "max": "0"
+      },
+      {
+        "id": "Condition.onset[x]",
+        "path": "Condition.onset[x]",
+        "max": "0"
+      },
+      {
+        "id": "Condition.abatement[x]",
+        "path": "Condition.abatement[x]",
+        "max": "0"
+      },
+      {
+        "id": "Condition.asserter",
+        "path": "Condition.asserter",
+        "max": "0"
+      },
+      {
+        "id": "Condition.stage",
+        "path": "Condition.stage",
+        "max": "0"
+      },
+      {
+        "id": "Condition.evidence",
+        "path": "Condition.evidence",
+        "max": "0"
+      },
+      {
+        "id": "Condition.note",
+        "path": "Condition.note",
+        "max": "0"
+      }
+    ]
+  }
+}
