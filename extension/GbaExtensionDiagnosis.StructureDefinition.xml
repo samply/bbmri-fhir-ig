@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://fhir.germanbiobanknode.de/fhir/StructureDefinition/GbaExtensionDiagnosis" />
-  <name value="GbaExtensionDiagnosis" />
-  <status value="draft" />
-  <fhirVersion value="4.0.0" />
-  <kind value="complex-type" />
-  <abstract value="false" />
-  <context>
-    <type value="element" />
-    <expression value="Specimen" />
-  </context>
-  <type value="Extension" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
-  <derivation value="constraint" />
-  <differential>
-    <element id="Extension.value[x]:valueCodeableConcept">
-      <path value="Extension.valueCodeableConcept" />
-      <sliceName value="valueCodeableConcept" />
-      <type>
-        <code value="CodeableConcept" />
-      </type>
-      <binding>
-        <strength value="required" />
-        <valueSet value="http://fhir.germanbiobanknode.de/fhir/ValueSet/MiabisSampleContentDiagnosis" />
-      </binding>
-    </element>
-  </differential>
+    <url value="http://fhir.germanbiobanknode.de/fhir/StructureDefinition/GbaExtensionDiagnosis"/>
+    <name value="GbaExtensionDiagnosis"/>
+    <status value="draft"/>
+    <fhirVersion value="4.0.0"/>
+    <kind value="complex-type"/>
+    <abstract value="false"/>
+    <context>
+        <type value="element"/>
+        <expression value="Specimen"/>
+    </context>
+    <type value="Extension"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Extension.value[x]:valueCodeableConcept">
+            <path value="Extension.valueCodeableConcept"/>
+            <sliceName value="valueCodeableConcept"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+            <binding>
+                <strength value="required"/>
+                <valueSet value="http://fhir.germanbiobanknode.de/fhir/ValueSet/MiabisSampleContentDiagnosis"/>
+            </binding>
+        </element>
+    </differential>
 </StructureDefinition>
