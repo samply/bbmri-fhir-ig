@@ -7,6 +7,12 @@
   "hierarchyMeaning": "is-a",
   "compositional": false,
   "content": "complete",
+  "filter": {
+    "code": "parent",
+    "description": "Used to retrieve all subtypes of a material (and the specified type itself)",
+    "operator": "is-a",
+    "value": "Any code contained in this system"
+  },
   "concept": [
     {
       "code": "tissue",
@@ -106,11 +112,5 @@
         }
       ]
     }
-  ],
-  "filter": {
-    "code": "parent",
-    "description": "Used to retrieve all subtypes of a material (and the specified type itself)",
-    "operator": "is-a",
-    "value": "Any code contained in this system"
-  }
+  ]
 }
