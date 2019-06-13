@@ -3,7 +3,7 @@
   "name": "GbaSampleMaterialType",
   "url": "http://fhir.germanbiobanknode.de/fhir/CodeSystem/GbaSampleMaterialType",
   "status": "draft",
-  "description": "the type of material the sample consists of",
+  "description": "The type of material the sample consists of.",
   "hierarchyMeaning": "is-a",
   "compositional": false,
   "content": "complete",
