@@ -1,0 +1,15 @@
+{
+  "resourceType": "ValueSet",
+  "id": "GbaValueSetStorageTemperature",
+  "url": "http://fhir.germanbiobanknode.de/fhir/ValueSet/GbaValueSetStorageTemperature",
+  "name": "GbaValueSetStorageTemperature",
+  "title": "GbaValueSetStorageTemperature",
+  "status": "draft",
+  "compose": {
+    "include": [
+      {
+        "system": "http://fhir.germanbiobanknode.de/fhir/CodeSystem/GbaCodeSystemStorageTemperature"
+      }
+    ]
+  }
+}

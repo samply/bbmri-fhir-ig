@@ -1,0 +1,110 @@
+{
+  "resourceType": "CodeSystem",
+  "url": "http://fhir.germanbiobanknode.de/fhir/CodeSystem/GbaSampleMaterialType",
+  "name": "GbaSampleMaterialType",
+  "status": "draft",
+  "description": "The type of material the sample consists of.",
+  "hierarchyMeaning": "is-a",
+  "compositional": false,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "tissue",
+      "display": "Tissue",
+      "concept": [
+        {
+          "code": "tissue-formalin",
+          "display": "Tissue formalin"
+        },
+        {
+          "code": "tissue-frozen",
+          "display": "Tissue frozen"
+        },
+        {
+          "code": "tissue-paxgene-or-else",
+          "display": "Tissue Paxgene or else"
+        },
+        {
+          "code": "tissue-other",
+          "display": "Other tissue storage"
+        }
+      ]
+    },
+    {
+      "code": "liquid",
+      "display": "Liquid",
+      "concept": [
+        {
+          "code": "whole-blood",
+          "display": "Whole blood"
+        },
+        {
+          "code": "blood-plasma",
+          "display": "Blood plasma"
+        },
+        {
+          "code": "blood-serum",
+          "display": "Blood serum"
+        },
+        {
+          "code": "peripheral-blood-cells-vital",
+          "display": "Peripheral blood cells (vital)"
+        },
+        {
+          "code": "buffy-coat",
+          "display": "Buffy-Coat"
+        },
+        {
+          "code": "bone-marrow",
+          "display": "Bone marrow"
+        },
+        {
+          "code": "csf-liquor",
+          "display": "CSF/Liquor"
+        },
+        {
+          "code": "ascites",
+          "display": "Ascites"
+        },
+        {
+          "code": "urine",
+          "display": "Urine"
+        },
+        {
+          "code": "saliva",
+          "display": "Saliva"
+        },
+        {
+          "code": "stool-faeces",
+          "display": "Stool/Faeces"
+        },
+        {
+          "code": "liquid-other",
+          "display": "Other liquid biosample/storage"
+        }
+      ]
+    },
+    {
+      "code": "derivative",
+      "display": "Derivative",
+      "concept": [
+        {
+          "code": "dna",
+          "display": "DNA"
+        },
+        {
+          "code": "cf-dna",
+          "display": "cfDNA"
+        },
+        {
+          "code": "rna",
+          "display": "RNA"
+        },
+        {
+          "code": "derivative-other",
+          "display": "Other derivative"
+        }
+      ]
+    }
+  ]
+}
