@@ -75,8 +75,8 @@
           "display": "Saliva"
         },
         {
-          "code": "Stool/Faeces",
-          "display": "stool-faeces"
+          "code": "stool-faeces",
+          "display": "Stool/Faeces"
         },
         {
           "code": "liquid-other",
