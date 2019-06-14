@@ -140,9 +140,8 @@
         "fixedUri": "https://www.dimdi.de/dynamic/en/classifications/icd/icd-o-3/"
       },
       {
-        "id": "Specimen.collection.fastingStatus[x]:fastingStatusCodeableConcept",
+        "id": "Specimen.collection.fastingStatus[x]",
         "path": "Specimen.collection.fastingStatus[x]",
-        "sliceName": "fastingStatusCodeableConcept",
         "type": [
           {
             "code": "CodeableConcept"
