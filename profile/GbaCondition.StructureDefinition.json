@@ -73,7 +73,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Patient"
+              "http://fhir.germanbiobanknode.de/fhir/StructureDefinition/GbaPatient"
             ]
           }
         ]
