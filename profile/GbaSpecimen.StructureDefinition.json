@@ -140,56 +140,6 @@
         "fixedUri": "https://www.dimdi.de/dynamic/en/classifications/icd/icd-o-3/"
       },
       {
-        "id": "Specimen.collection.bodySite.coding.version",
-        "path": "Specimen.collection.bodySite.coding.version",
-        "max": "0"
-      },
-      {
-        "id": "Specimen.collection.bodySite.coding.code",
-        "path": "Specimen.collection.bodySite.coding.code",
-        "code": [
-          {
-            "code": "Degrees Celsius 2 to 10",
-            "display": "Degrees Celsius 2 to 10"
-          },
-          {
-            "code": "Degrees Celsius -18 to -35",
-            "display": "Degrees Celsius -18 to -35"
-          },
-          {
-            "code": "Degrees Celsius -60 to -85",
-            "display": "Degrees Celsius -60 to -85"
-          },
-          {
-            "code": "Gaseous nitrogen",
-            "display": "Gaseous nitrogen"
-          },
-          {
-            "code": "Liquid nitrogen",
-            "display": "Liquid nitrogen"
-          },
-          {
-            "code": "Other storage temperature",
-            "display": "Other storage temperature"
-          }
-        ]
-      },
-      {
-        "id": "Specimen.collection.bodySite.coding.display",
-        "path": "Specimen.collection.bodySite.coding.display",
-        "max": "0"
-      },
-      {
-        "id": "Specimen.collection.bodySite.coding.userSelected",
-        "path": "Specimen.collection.bodySite.coding.userSelected",
-        "max": "0"
-      },
-      {
-        "id": "Specimen.collection.bodySite.text",
-        "path": "Specimen.collection.bodySite.text",
-        "max": "0"
-      },
-      {
         "id": "Specimen.collection.fastingStatus[x]:fastingStatusCodeableConcept",
         "path": "Specimen.collection.fastingStatus[x]",
         "sliceName": "fastingStatusCodeableConcept",
