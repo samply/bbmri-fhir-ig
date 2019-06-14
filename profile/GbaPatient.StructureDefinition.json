@@ -32,11 +32,6 @@
         "max": "0"
       },
       {
-        "id": "Patient.gender",
-        "path": "Patient.gender",
-        "short": "Male | Female | Other/intersexual | Not given"
-      },
-      {
         "id": "Patient.deceased[x]",
         "path": "Patient.deceased[x]",
         "type": [
