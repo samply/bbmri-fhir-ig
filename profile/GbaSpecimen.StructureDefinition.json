@@ -74,52 +74,6 @@
         }
       },
       {
-        "id": "Specimen.type.coding.version",
-        "path": "Specimen.type.coding.version",
-        "max": "0"
-      },
-      {
-        "id": "Specimen.type.coding.code",
-        "path": "Specimen.type.coding.code",
-        "code": [
-          {
-            "code": "Tissue",
-            "display": "Tissue"
-          },
-          {
-            "code": "Tissue formalin",
-            "display": "Tissue formalin"
-          },
-          {
-            "code": "Tissue frozen",
-            "display": "Tissue frozen"
-          },
-          {
-            "code": "Tissue Paxgene or else",
-            "display": "Tissue Paxgene or else"
-          },
-          {
-            "code": "Other tissue storage",
-            "display": "Other tissue storage"
-          }
-        ]
-      },
-      {
-        "id": "Specimen.type.coding.display",
-        "path": "Specimen.type.coding.display",
-        "max": "0"
-      },
-      {
-        "id": "Specimen.type.coding.userSelected",
-        "path": "Specimen.type.coding.userSelected",
-        "max": "0"
-      },
-      {
-        "id": "Specimen.type.text",
-        "path": "Specimen.type.text",
-        "max": "0"
-      },
-      {
         "id": "Specimen.subject",
         "path": "Specimen.subject",
         "type": [
