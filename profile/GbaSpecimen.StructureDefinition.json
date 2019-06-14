@@ -1,0 +1,171 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://fhir.germanbiobanknode.de/fhir/StructureDefinition/GbaSpecimen",
+  "name": "GbaSpecimenTissue",
+  "status": "draft",
+  "fhirVersion": "4.0.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Specimen",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Specimen",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Specimen.extension",
+        "path": "Specimen.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Specimen.extension:longTermStorageTemperature",
+        "path": "Specimen.extension",
+        "sliceName": "longTermStorageTemperature",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://fhir.germanbiobanknode.de/fhir/StructureDefinition/GbaExtensionStorageTemperature"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Specimen.extension:diagnosis",
+        "path": "Specimen.extension",
+        "sliceName": "diagnosis",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://fhir.germanbiobanknode.de/fhir/StructureDefinition/GbaExtensionDiagnosis"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Specimen.identifier",
+        "path": "Specimen.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.accessionIdentifier",
+        "path": "Specimen.accessionIdentifier",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.status",
+        "path": "Specimen.status",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.type",
+        "path": "Specimen.type",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://fhir.germanbiobanknode.de/fhir/ValueSet/GbaValueSetSampleType"
+        }
+      },
+      {
+        "id": "Specimen.subject",
+        "path": "Specimen.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://fhir.germanbiobanknode.de/fhir/StructureDefinition/GbaPatient"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Specimen.subject.identifier",
+        "path": "Specimen.subject.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.subject.display",
+        "path": "Specimen.subject.display",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.receivedTime",
+        "path": "Specimen.receivedTime",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.parent",
+        "path": "Specimen.parent",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.request",
+        "path": "Specimen.request",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.collection.collector",
+        "path": "Specimen.collection.collector",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.collection.collected[x]",
+        "path": "Specimen.collection.collected[x]",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Specimen.collection.quantity",
+        "path": "Specimen.collection.quantity",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.collection.method",
+        "path": "Specimen.collection.method",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.collection.bodySite.coding.system",
+        "path": "Specimen.collection.bodySite.coding.system",
+        "fixedUri": "https://www.dimdi.de/dynamic/en/classifications/icd/icd-o-3/"
+      },
+      {
+        "id": "Specimen.collection.fastingStatus[x]",
+        "path": "Specimen.collection.fastingStatus[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required"
+        }
+      },
+      {
+        "id": "Specimen.processing",
+        "path": "Specimen.processing",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.container",
+        "path": "Specimen.container",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.note",
+        "path": "Specimen.note",
+        "max": "0"
+      }
+    ]
+  }
+}
