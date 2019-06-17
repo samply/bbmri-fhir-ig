@@ -1,0 +1,43 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://fhir.bbmri.de/fhir/StructureDefinition/JuridicalPersion",
+  "name": "JuridicalPersion",
+  "status": "draft",
+  "fhirVersion": "4.0.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Organization"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Juridical Person",
+        "definition": "Juridical Person that represents an Organization."
+      },
+	  {
+        "id":"Extension.url",
+        "path":"Extension.url",
+        "fixedUri":"https://fhir.bbmri.de/fhir/StructureDefinition/JuridicalPersion"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      }
+    ]
+  }
+}
