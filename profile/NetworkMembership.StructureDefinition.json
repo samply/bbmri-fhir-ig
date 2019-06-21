@@ -1,0 +1,91 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://fhir.bbmri.de/StructureDefinition/NetworkMembership",
+  "name": "NetworkMembership",
+  "status": "draft",
+  "fhirVersion": "4.0.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "OrganizationAffiliation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/OrganizationAffiliation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "OrganizationAffiliation.organization",
+        "path": "OrganizationAffiliation.organization",
+        "min": 1
+      },
+      {
+        "id": "OrganizationAffiliation.organization.identifier",
+        "path": "OrganizationAffiliation.organization.identifier",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "OrganizationAffiliation.organization.identifier:Bbmri-EricId",
+        "path": "OrganizationAffiliation.organization.identifier",
+        "sliceName": "Bbmri-EricId"
+      },
+      {
+        "id": "OrganizationAffiliation.organization.identifier:Bbmri-EricId.system",
+        "path": "OrganizationAffiliation.organization.identifier.system",
+        "fixedUri": "http://www.bbmri-eric.eu/"
+      },
+      {
+        "id": "OrganizationAffiliation.participatingOrganization",
+        "path": "OrganizationAffiliation.participatingOrganization",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.bbmri.de/StructureDefinition/Biobank"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "OrganizationAffiliation.network",
+        "path": "OrganizationAffiliation.network",
+        "max": "0"
+      },
+      {
+        "id": "OrganizationAffiliation.code",
+        "path": "OrganizationAffiliation.code",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "OrganizationAffiliation.code.coding",
+        "path": "OrganizationAffiliation.code.coding",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "OrganizationAffiliation.code.coding.system",
+        "path": "OrganizationAffiliation.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://hl7.org/fhir/organization-role"
+      },
+      {
+        "id": "OrganizationAffiliation.code.coding.code",
+        "path": "OrganizationAffiliation.code.coding.code",
+        "min": 1,
+        "fixedCode": "member"
+      },
+      {
+        "id": "OrganizationAffiliation.healthcareService",
+        "path": "OrganizationAffiliation.healthcareService",
+        "max": "0"
+      }
+    ]
+  }
+}
