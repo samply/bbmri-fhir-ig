@@ -1,9 +1,9 @@
 {
   "resourceType": "CodeSystem",
-  "id": "GbaCodeSystemStorageTemperature",
-  "url": "http://fhir.germanbiobanknode.de/fhir/CodeSystem/GbaCodeSystemStorageTemperature",
-  "name": "GbaCodeSystemStorageTemperature",
-  "title": "GbaCodeSystemStorageTemperature",
+  "id": "StorageTemperature",
+  "url": "https://fhir.bbmri.de/CodeSystem/StorageTemperature",
+  "name": "StorageTemperature",
+  "title": "Storage Temperature",
   "status": "draft",
   "concept": [
     {

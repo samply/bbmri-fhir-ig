@@ -1,0 +1,15 @@
+{
+  "resourceType": "ValueSet",
+  "id": "StorageTemperature",
+  "url": "https://fhir.bbmri.de/ValueSet/StorageTemperature",
+  "name": "StorageTemperature",
+  "title": "Storage Temperature",
+  "status": "draft",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.bbmri.de/CodeSystem/StorageTemperature"
+      }
+    ]
+  }
+}

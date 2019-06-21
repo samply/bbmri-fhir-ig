@@ -3,6 +3,7 @@
   "url": "https://fhir.bbmri.de/StructureDefinition/JuridicalPerson",
   "name": "JuridicalPerson",
   "status": "draft",
+  "description": "Name of the legal entity of the organization",
   "fhirVersion": "4.0.0",
   "kind": "complex-type",
   "abstract": false,
@@ -17,17 +18,6 @@
   "derivation": "constraint",
   "differential": {
     "element": [
-      {
-        "id": "Extension",
-        "path": "Extension",
-        "short": "Juridical Person",
-        "definition": "Juridical Person that represents an Organization."
-      },
-      {
-        "id": "Extension.url",
-        "path": "Extension.url",
-        "fixedUri": "https://fhir.bbmri.de/StructureDefinition/JuridicalPerson"
-      },
       {
         "id": "Extension.value[x]",
         "path": "Extension.value[x]",

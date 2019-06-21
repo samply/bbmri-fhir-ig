@@ -1,7 +1,8 @@
 {
   "resourceType": "CodeSystem",
-  "url": "http://fhir.germanbiobanknode.de/fhir/CodeSystem/GbaSampleMaterialType",
-  "name": "GbaSampleMaterialType",
+  "url": "https://fhir.bbmri.de/CodeSystem/SampleMaterialType",
+  "name": "SampleMaterialType",
+  "title": "Sample Material Type",
   "status": "draft",
   "description": "The type of material the sample consists of.",
   "hierarchyMeaning": "is-a",

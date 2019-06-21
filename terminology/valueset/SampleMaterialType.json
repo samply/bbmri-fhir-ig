@@ -1,0 +1,15 @@
+{
+  "resourceType": "ValueSet",
+  "id": "SampleMaterialType",
+  "url": "https://fhir.bbmri.de/ValueSet/SampleMaterialType",
+  "name": "SampleMaterialType",
+  "title": "Sample Material Type",
+  "status": "draft",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.bbmri.de/CodeSystem/SampleMaterialType"
+      }
+    ]
+  }
+}

@@ -1,9 +1,9 @@
 {
   "resourceType": "StructureDefinition",
-  "url": "https://fhir.bbmri.de/StructureDefinition/OrganizationDescription",
-  "name": "OrganizationDescription",
+  "url": "https://fhir.bbmri.de/StructureDefinition/QualityStandards",
+  "name": "QualityStandards",
   "status": "draft",
-  "description": "Description of the organization in English",
+  "description": "Organization quality assessment",
   "fhirVersion": "4.0.0",
   "kind": "complex-type",
   "abstract": false,
@@ -21,12 +21,15 @@
       {
         "id": "Extension.value[x]",
         "path": "Extension.value[x]",
-        "min": 1,
         "type": [
           {
-            "code": "string"
+            "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://fhir.bbmri.de/ValueSet/QualityStandards"
+        }
       }
     ]
   }

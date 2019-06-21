@@ -1,13 +1,13 @@
 {
   "resourceType": "StructureDefinition",
-  "url": "https://fhir.bbmri.de/StructureDefinition/bbmri-observation-bodyweight",
-  "name": "Bbmri-observation-bodyweight",
+  "url": "https://fhir.bbmri.de/StructureDefinition/Bmi",
+  "name": "Bmi",
   "status": "draft",
   "fhirVersion": "4.0.0",
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/bodyweight",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/bmi",
   "derivation": "constraint",
   "differential": {
     "element": [
@@ -18,7 +18,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://fhir.germanbiobanknode.de/fhir/StructureDefinition/GbaPatient"
+              "https://fhir.bbmri.de/StructureDefinition/Patient"
             ]
           }
         ]

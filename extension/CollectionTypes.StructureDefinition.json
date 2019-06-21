@@ -1,15 +1,16 @@
 {
   "resourceType": "StructureDefinition",
-  "url": "http://fhir.germanbiobanknode.de/fhir/StructureDefinition/GbaExtensionDiagnosis",
-  "name": "GbaExtensionDiagnosis",
+  "url": "https://fhir.bbmri.de/StructureDefinition/CollectionType",
+  "name": "CollectionType",
   "status": "draft",
+  "description": "The type of sample collections governed by the Organization.",
   "fhirVersion": "4.0.0",
   "kind": "complex-type",
   "abstract": false,
   "context": [
     {
       "type": "element",
-      "expression": "Specimen"
+      "expression": "Organization"
     }
   ],
   "type": "Extension",
@@ -20,6 +21,7 @@
       {
         "id": "Extension.value[x]",
         "path": "Extension.value[x]",
+        "min": 1,
         "type": [
           {
             "code": "CodeableConcept"
@@ -27,7 +29,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "http://fhir.germanbiobanknode.de/fhir/ValueSet/MiabisSampleContentDiagnosis"
+          "valueSet": "https://fhir.bbmri.de/ValueSet/CollectionTypes"
         }
       }
     ]

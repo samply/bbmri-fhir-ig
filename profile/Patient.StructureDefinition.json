@@ -1,8 +1,9 @@
 {
   "resourceType": "StructureDefinition",
-  "url": "http://fhir.germanbiobanknode.de/fhir/StructureDefinition/GbaPatient",
-  "name": "GbaPatient",
+  "url": "https://fhir.bbmri.de/StructureDefinition/Patient",
+  "name": "Patient",
   "status": "draft",
+  "description": "Resoure representing a sample donor",
   "fhirVersion": "4.0.0",
   "kind": "resource",
   "abstract": false,

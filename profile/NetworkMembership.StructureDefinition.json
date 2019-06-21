@@ -3,6 +3,7 @@
   "url": "https://fhir.bbmri.de/StructureDefinition/NetworkMembership",
   "name": "NetworkMembership",
   "status": "draft",
+  "description": "Resource representing the membership of a biobank in a biobank network",
   "fhirVersion": "4.0.0",
   "kind": "resource",
   "abstract": false,
@@ -17,25 +18,7 @@
         "min": 1
       },
       {
-        "id": "OrganizationAffiliation.organization.identifier",
-        "path": "OrganizationAffiliation.organization.identifier",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "system"
-            }
-          ],
-          "rules": "open"
-        }
-      },
-      {
-        "id": "OrganizationAffiliation.organization.identifier:Bbmri-EricId",
-        "path": "OrganizationAffiliation.organization.identifier",
-        "sliceName": "Bbmri-EricId"
-      },
-      {
-        "id": "OrganizationAffiliation.organization.identifier:Bbmri-EricId.system",
+        "id": "OrganizationAffiliation.organization.identifier.system",
         "path": "OrganizationAffiliation.organization.identifier.system",
         "fixedUri": "http://www.bbmri-eric.eu/"
       },

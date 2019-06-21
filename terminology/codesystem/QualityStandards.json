@@ -1,0 +1,40 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "QualityStandards",
+  "url": "https://fhir.bbmri.de/CodeSystem/QualityStandards",
+  "name": "QualityStandards",
+  "title": "Quality Standards",
+  "status": "draft",
+  "caseSensitive": false,
+  "content":"complete",
+  "concept": [
+    {
+      "code": "iso-15189",
+      "display": "ISO-15189"
+    },
+    {
+      "code": "iso-15190",
+      "display": "ISO-15190"
+    },
+    {
+      "code": "iso-17025",
+      "display": "ISO-17025"
+    },
+    {
+      "code": "iso-9001",
+      "display": "ISO-9001"
+    },
+    {
+      "code": "nfs96-900",
+      "display": "NFS96-900"
+    },
+    {
+      "code": "oecd-guidelines",
+      "display": "OECD Guidelines"
+    },
+    {
+      "code": "others",
+      "display": "Others"
+    }
+  ]
+}
