@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "url": "https://fhir.bbmri.de/fhir/StructureDefinition/Biobank",
+  "url": "https://fhir.bbmri.de/StructureDefinition/Biobank",
   "name": "Biobank",
   "status": "draft",
   "fhirVersion": "4.0.0",
@@ -34,7 +34,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://fhir.bbmri.de/fhir/StructureDefinition/organizationDescription"
+              "https://fhir.bbmri.de/StructureDefinition/OrganizationDescription"
             ]
           }
         ]
@@ -49,7 +49,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://fhir.bbmri.de/fhir/StructureDefinition/JuridicalPersion"
+              "https://fhir.bbmri.de/StructureDefinition/JuridicalPerson"
             ]
           }
         ]
