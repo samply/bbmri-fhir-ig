@@ -1,7 +1,10 @@
-﻿# Mappings
+﻿
+
+# Mappings
 This section descripes how the profiles defined in this guide relate to several other data models, mainly from other biobank-related projects. Items in *italic* imply slice names.
 
 ## BBMRI-ERIC  Directory
+The BBMRI-ERIC Directory can be found [here](https://directory.bbmri-eric.eu).
 
 ### Biobank
 The BBMRI-ERIC Directory *Biobank* entity corresponds to the *Biobank* profile from this guide.
@@ -23,7 +26,7 @@ The BBMRI-ERIC Directory *Biobank* entity corresponds to the *Biobank* profile f
 |network | *see section network* |
 
 ### Contact Information
-In FHIR, the contact information is included in the *Organization* resource, which is profiled as *Biobank* in this guide.
+In FHIR, the contact information is included in the [*Organization* resource][1], which is profiled as *Biobank* in this guide.
 
 | BBMRI-ERIC| Biobank.contact |
 |--|--|
@@ -36,16 +39,20 @@ In FHIR, the contact information is included in the *Organization* resource, whi
 |address | contact:*contact*.address.line |
 |zip | contact:*contact*.address.postalCode |
 |city | contact:*contact*.address.city |
-|country | contact:*contact*.address.county |
+|country | contact:*contact*.address.country |
+
+
 
 ### Collection
+
+
 ### Network
-
-
-
-
+This project does not contain a specific profile for biobank networks. While such networks could be represented as [*Organization* resources][1], it is outside the scope for this project.
+ To record a biobank's membership in a network, we use a profiled *OrganizationAffiliation*: *NetworkMembership*. There, the refernce to the network happens via its BBMRI Directory id since we do not have an actual FHIR resource. (For further information see section on *NetworkMembership*.)
 
 
 ## MIABIS
 
 TODO
+
+[1]:https://www.hl7.org/fhir/organization.html
