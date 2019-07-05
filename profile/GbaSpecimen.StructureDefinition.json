@@ -32,7 +32,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://fhir.germanbiobanknode.de/fhir/StructureDefinition/GbaExtensionStorageTemperature"
+              "http://fhir.germanbiobanknode.de/fhir/StructureDefinition/GbaExtensionStorageTemparature"
             ]
           }
         ]
