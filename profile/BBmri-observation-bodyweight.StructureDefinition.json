@@ -1,0 +1,42 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://fhir.bbmri.de/StructureDefinition/bbmri-observation-bodyweight",
+  "name": "Bbmri-observation-bodyweight",
+  "status": "draft",
+  "fhirVersion": "4.0.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/bodyweight",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.subject",
+        "path": "Observation.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://fhir.germanbiobanknode.de/fhir/StructureDefinition/GbaPatient"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.effective[x]",
+        "path": "Observation.effective[x]",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component",
+        "path": "Observation.component",
+        "max": "0"
+      }
+    ]
+  }
+}

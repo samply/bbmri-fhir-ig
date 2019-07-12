@@ -5,30 +5,33 @@
   "name": "GbaCodeSystemStorageTemperature",
   "title": "GbaCodeSystemStorageTemperature",
   "status": "draft",
-  "caseSensitive": true,
   "concept": [
     {
-      "code": "plus-2-to-plus-10",
+      "code": "temperature2to10",
       "display": "Degrees Celsius 2 to 10"
     },
     {
-      "code": "minus-18-to-minus-35",
+      "code": "temperature-18to-35",
       "display": "Degrees Celsius -18 to -35"
     },
     {
-      "code": "minus-60-to-minus-85",
+      "code": "temperature-60to-85",
       "display": "Degrees Celsius -60 to -85"
     },
     {
-      "code": "gaseous-nitrogen",
+      "code": "temperatureGN",
       "display": "Gaseous nitrogen"
     },
     {
-      "code": "liquid-nitrogen",
+      "code": "temperatureLN",
       "display": "Liquid nitrogen"
     },
+	{
+      "code": "temperatureRoom",
+      "display": "Room temperature"
+    },
     {
-      "code": "other",
+      "code": "temperatureOther",
       "display": "Other storage temperature"
     }
   ]
