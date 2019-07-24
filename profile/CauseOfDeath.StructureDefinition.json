@@ -1,0 +1,75 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://fhir.bbmri.de/StructureDefinition/CauseOfDeath",
+  "name": "CauseOfDeath",
+  "status": "draft",
+  "fhirVersion": "4.0.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation",
+        "path": "Observation",
+        "constraint": [
+          {
+            "key": "bbmri-de-cod-1",
+            "severity": "error",
+            "human": "Either dataAbsentReason or Observation.value[x] SHALL be present",
+            "expression": "dataAbsentReason.exists() or value.exists()"
+          }
+        ]
+      },
+      {
+        "id": "Observation.code.coding.system",
+        "path": "Observation.code.coding.system",
+        "fixedUri": "http://loinc.org"
+      },
+      {
+        "id": "Observation.code.coding.code",
+        "path": "Observation.code.coding.code",
+        "fixedCode": "68343-3"
+      },
+      {
+        "id": "Observation.code.coding.display",
+        "path": "Observation.code.coding.display",
+        "fixedString": "Primary cause of death"
+      },
+      {
+        "id": "Observation.subject",
+        "path": "Observation.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient",
+              "http://fhir.germanbiobanknode.de/fhir/StructureDefinition/GbaPatient"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "ICD-10 codes",
+          "valueSet": "http://hl7.org/fhir/sid/icd-10"
+        }
+      },
+      {
+        "id": "Observation.referenceRange",
+        "path": "Observation.referenceRange",
+        "max": "0"
+      }
+    ]
+  }
+}
