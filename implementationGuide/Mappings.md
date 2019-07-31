@@ -44,6 +44,7 @@ In FHIR, the contact information is included in the [*Organization* resource][1]
 
 ### Collection
 The BBMRI-ERIC Directory *Collection* entity corresponds to the *Collection* profile from this guide. Like *Biobank*, it is based on the *Organization* resource but has different constraints.
+
 | BBMRI-ERIC| Collection |
 |--|--|
 |id | identifier:*Bbmri-EricId*.value |
@@ -112,8 +113,8 @@ Corresponds to Collection profile
 The contact information can be stored in the *contact* fields of Collection or Biobank which already specify two slices for the *head* and the research *contact* with slices on telecom to model phone and mail contact points.
 We currently do not support the *researcher information* type.
 
-| Attribute Code| Attribute Name| FHIR |
-|--|--|--|--| 
+| Attribute Code| Attribute Name | FHIR |
+|--|--|--|
 | MIABIS-2.0-07-A| First name| name.given |
 | MIABIS-2.0-07-B| Last name| name.family |
 | MIABIS-2.0-07-C| Phone| telecom:*phone*.value |
@@ -128,7 +129,7 @@ We currently do not support the *researcher information* type.
 Corresponds to the specimen profile.
 
 | Attribute Code| Attribute Name| FHIR|
-|--|--|--|--|--|
+|--|--|--|
 | MIABIS-SAMPLE-01| Sample ID| *no internal IDs supported, identification via resource id* |
 | MIABIS-SAMPLE-02| Detailed material type| type (not yet mapped to MIABIS types) |
 | MIABIS-SAMPLE-03| Sample storage temperature| extension:*storageTemperature* |
@@ -145,8 +146,8 @@ Corresponds to the specimen profile.
 
 Corresponds to the Patient profile.
 
-| Attribute Code| Attribute Name| Allowed Values| Description| Constraints|
-|---|---|---|---|---|
+| Attribute Code| Attribute Name| FHIR |
+|---|---|---|
 | MIABIS-SAMPLEDONOR-01| Sample donor ID| no internal ids supported, use resource id |
 | MIABIS-SAMPLEDONOR-02| Sex| gender (WARNING: Per FHIR definition this is the *Administrative Gender* of the patient, which may or may not equal the value for biological sex. Biobanks may report values based on different aspects of sex/gender here, see https://www.hl7.org/fhir/patient.html#gender |
 | MIABIS-SAMPLEDONOR-03| Data categories| *calculated on-the-fly from bridgehead data* | 
