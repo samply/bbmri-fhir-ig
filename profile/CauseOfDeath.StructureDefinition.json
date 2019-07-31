@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "url": "http://fhir.bbmri.de/StructureDefinition/CauseOfDeath",
+  "url": "https://fhir.bbmri.de/StructureDefinition/CauseOfDeath",
   "name": "CauseOfDeath",
   "status": "draft",
   "fhirVersion": "4.0.0",
@@ -46,7 +46,7 @@
             "code": "Reference",
             "targetProfile": [
               "http://hl7.org/fhir/StructureDefinition/Patient",
-              "http://fhir.germanbiobanknode.de/fhir/StructureDefinition/GbaPatient"
+              "https://fhir.bbmri.de/StructureDefinition/Patient"
             ]
           }
         ]

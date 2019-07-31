@@ -1,15 +1,16 @@
 {
   "resourceType": "StructureDefinition",
-  "url": "http://fhir.germanbiobanknode.de/fhir/StructureDefinition/GbaExtensionStorageTemparature",
-  "name": "GbaExtensionStorageTemparature",
+  "url": "https://fhir.bbmri.de/StructureDefinition/DataCategory",
+  "name": "DataCategory",
   "status": "draft",
+  "description": "The categories of data that are available as part of the collection",
   "fhirVersion": "4.0.0",
   "kind": "complex-type",
   "abstract": false,
   "context": [
     {
       "type": "element",
-      "expression": "Specimen"
+      "expression": "Organization"
     }
   ],
   "type": "Extension",
@@ -20,6 +21,7 @@
       {
         "id": "Extension.value[x]",
         "path": "Extension.value[x]",
+        "min": 1,
         "type": [
           {
             "code": "CodeableConcept"
@@ -27,7 +29,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "http://fhir.germanbiobanknode.de/value-set/storage-temperature"
+          "valueSet": "https://fhir.bbmri.de/ValueSet/DataCategories"
         }
       }
     ]

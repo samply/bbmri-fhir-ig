@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
-  "url": "http://fhir.germanbiobanknode.de/fhir/StructureDefinition/GbaObservationSmoker",
-  "name": "GbaObservationSmoker",
+  "url": "https://fhir.bbmri.de/StructureDefinition/TobaccoUse",
+  "name": "TobaccoUse",
   "status": "draft",
   "fhirVersion": "4.0.0",
   "kind": "resource",
@@ -63,7 +63,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://fhir.germanbiobanknode.de/fhir/StructureDefinition/GbaPatient"
+              "https://fhir.bbmri.de/StructureDefinition/Patient"
             ]
           }
         ]

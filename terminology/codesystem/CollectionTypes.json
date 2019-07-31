@@ -1,0 +1,72 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "CollectionTypes",
+  "url": "https://fhir.bbmri.de/CodeSystem/CollectionTypes",
+  "name": "CollectionTypes",
+  "title": "Collection Types",
+  "status": "draft",
+  "caseSensitive": false,
+  "content":"complete",
+  "concept": [
+    {
+      "code": "SAMPLE",
+      "display": "Sample collection"
+    },
+    {
+      "code": "TWIN_STUDY",
+      "display": "Twin-study"
+    },
+    {
+      "code": "RD",
+      "display": "Rare disease collection"
+    },
+    {
+      "code": "NON_HUMAN",
+      "display": "Non-human"
+    },
+    {
+      "code": "BIRTH_COHORT",
+      "display": "Birth cohort"
+    },
+    {
+      "code": "CASE_CONTROL",
+      "display": "Case-Control"
+    },
+    {
+      "code": "COHORT",
+      "display": "Cohort"
+    },
+    {
+      "code": "CROSS_SECTIONAL",
+      "display": "Cross-Sectional"
+    },
+    {
+      "code": "DISEASE_SPECIFIC",
+      "display": "Disease specific"
+    },
+    {
+      "code": "HOSPITAL",
+      "display": "Hospital"
+    },
+    {
+      "code": "IMAGE",
+      "display": "Image collection"
+    },
+    {
+      "code": "LONGITUDINAL",
+      "display": "Longitudinal"
+    },
+    {
+      "code": "OTHER",
+      "display": "other"
+    },
+    {
+      "code": "POPULATION_BASED",
+      "display": "Population-based"
+    },
+    {
+      "code": "QUALITY_CONTROL",
+      "display": "Quality control"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "DataCategories",
+  "url": "https://fhir.bbmri.de/CodeSystem/DataCategories",
+  "name": "DataCategories",
+  "title": "Data Categories",
+  "status": "draft",
+  "caseSensitive": false,
+  "content":"complete",
+  "concept": [
+    {
+      "code": "BIOLOGICAL_SAMPLES",
+      "display": "Biological samples"
+    },
+    {
+      "code": "GENEALOGICAL_RECORDS",
+      "display": "Genealogical records"
+    },
+    {
+      "code": "IMAGING_DATA",
+      "display": "Imaging data"
+    },
+    {
+      "code": "MEDICAL_RECORDS",
+      "display": "Medical records"
+    },
+    {
+      "code": "NATIONAL_REGISTRIES",
+      "display": "National registries"
+    },
+    {
+      "code": "NAV",
+      "display": "Not available"
+    },
+    {
+      "code": "OTHER",
+      "display": "other"
+    },
+    {
+      "code": "PHYSIOLOGICAL_BIOCHEMICAL_MEASUREMENTS",
+      "display": "Physiological/Biochemical measurements"
+    },
+    {
+      "code": "SURVEY_DATA",
+      "display": "Survey data"
+    }
+  ]
+}

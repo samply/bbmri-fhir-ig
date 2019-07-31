@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
-  "url": "http://fhir.germanbiobanknode.de/fhir/StructureDefinition/GbaSpecimen",
-  "name": "GbaSpecimenTissue",
+  "url": "https://fhir.bbmri.de/StructureDefinition/Specimen",
+  "name": "Specimen",
   "status": "draft",
   "fhirVersion": "4.0.0",
   "kind": "resource",
@@ -25,14 +25,14 @@
         }
       },
       {
-        "id": "Specimen.extension:longTermStorageTemperature",
+        "id": "Specimen.extension:storageTemperature",
         "path": "Specimen.extension",
-        "sliceName": "longTermStorageTemperature",
+        "sliceName": "storageTemperature",
         "type": [
           {
             "code": "Extension",
             "profile": [
-              "http://fhir.germanbiobanknode.de/fhir/StructureDefinition/GbaExtensionStorageTemparature"
+              "https://fhir.bbmri.de/StructureDefinition/StorageTemparature"
             ]
           }
         ]
@@ -45,7 +45,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://fhir.germanbiobanknode.de/fhir/StructureDefinition/GbaExtensionDiagnosis"
+              "https://fhir.bbmri.de/StructureDefinition/SampleDiagnosis"
             ]
           }
         ]
@@ -70,7 +70,7 @@
         "path": "Specimen.type",
         "binding": {
           "strength": "required",
-          "valueSet": "http://fhir.germanbiobanknode.de/fhir/ValueSet/GbaValueSetSampleType"
+          "valueSet": "https://fhir.bbmri.de/ValueSet/SampleType"
         }
       },
       {
@@ -80,7 +80,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://fhir.germanbiobanknode.de/fhir/StructureDefinition/GbaPatient"
+              "https://fhir.bbmri.de/StructureDefinition/Patient"
             ]
           }
         ]

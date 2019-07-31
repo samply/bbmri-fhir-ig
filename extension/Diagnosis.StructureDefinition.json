@@ -1,16 +1,15 @@
 {
   "resourceType": "StructureDefinition",
-  "url": "https://fhir.bbmri.de/StructureDefinition/OrganizationDescription",
-  "name": "OrganizationDescription",
+  "url": "https://fhir.bbmri.de/StructureDefinition/SampleDiagnosis",
+  "name": "SampleDiagnosis",
   "status": "draft",
-  "description": "Description of the organization in English",
   "fhirVersion": "4.0.0",
   "kind": "complex-type",
   "abstract": false,
   "context": [
     {
       "type": "element",
-      "expression": "Organization"
+      "expression": "Specimen"
     }
   ],
   "type": "Extension",
@@ -21,12 +20,15 @@
       {
         "id": "Extension.value[x]",
         "path": "Extension.value[x]",
-        "min": 1,
         "type": [
           {
-            "code": "string"
+            "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://fhir.bbmri.de/ValueSet/SampleContentDiagnosis"
+        }
       }
     ]
   }

@@ -1,0 +1,17 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "ContactTypes",
+  "url": "https://fhir.bbmri.de/CodeSystem/ContactTypes",
+  "name": "ContactTypes",
+  "title": "Contact Types",
+  "status": "draft",
+  "caseSensitive": false,
+  "content":"complete",
+  "concept": [
+    {
+      "code": "RESEARCH",
+      "display": "Research",
+	  "definition":"Contact for researchers about sample and data requests"
+    }
+  ]
+}

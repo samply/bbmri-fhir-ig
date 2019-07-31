@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
-  "url": "http://fhir.germanbiobanknode.de/fhir/StructureDefinition/GbaCondition",
-  "name": "GbaCondition",
+  "url": "https://fhir.bbmri.de/StructureDefinition/Condition",
+  "name": "Condition",
   "status": "draft",
   "fhirVersion": "4.0.0",
   "kind": "resource",
@@ -73,7 +73,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://fhir.germanbiobanknode.de/fhir/StructureDefinition/GbaPatient"
+              "https://fhir.bbmri.de/StructureDefinition/Patient"
             ]
           }
         ]
@@ -91,12 +91,20 @@
       {
         "id": "Condition.onset[x]",
         "path": "Condition.onset[x]",
-        "max": "0"
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
       },
       {
         "id": "Condition.abatement[x]",
         "path": "Condition.abatement[x]",
-        "max": "0"
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
       },
       {
         "id": "Condition.asserter",

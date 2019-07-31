@@ -1,0 +1,15 @@
+{
+  "resourceType": "ValueSet",
+  "id": "DataCategories",
+  "url": "https://fhir.bbmri.de/ValueSet/DataCategories",
+  "name": "DataCategories",
+  "title": "Data Categories",
+  "status": "draft",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.bbmri.de/CodeSystem/DataCategories"
+      }
+    ]
+  }
+}
