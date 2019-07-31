@@ -27,6 +27,12 @@
         "max": "0"
       },
       {
+        "id": "Observation.code.coding",
+        "path": "Observation.code.coding",
+        "min": 1,
+        "max": "1"
+      },
+      {
         "id": "Observation.code.coding.system",
         "path": "Observation.code.coding.system",
         "fixedUri": "http://loinc.org"
@@ -59,6 +65,7 @@
       {
         "id": "Observation.subject",
         "path": "Observation.subject",
+        "min": 1,
         "type": [
           {
             "code": "Reference",
@@ -66,7 +73,8 @@
               "https://fhir.bbmri.de/StructureDefinition/Patient"
             ]
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Observation.subject.identifier",
@@ -85,7 +93,8 @@
           {
             "code": "dateTime"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Observation.issued",
@@ -105,6 +114,7 @@
             "code": "CodeableConcept"
           }
         ],
+        "mustSupport": true,
         "binding": {
           "strength": "required",
           "valueSet": "http://hl7.org/fhir/uv/ips/ValueSet/current-smoking-status-uv-ips"

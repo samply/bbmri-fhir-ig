@@ -37,6 +37,11 @@
         "max": "0"
       },
       {
+        "id": "Condition.code",
+        "path": "Condition.code",
+        "mustSupport": true
+      },
+      {
         "id": "Condition.code.coding.system",
         "path": "Condition.code.coding.system",
         "fixedUri": "http://hl7.org/fhir/sid/icd-10"
@@ -76,7 +81,8 @@
               "https://fhir.bbmri.de/StructureDefinition/Patient"
             ]
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Condition.subject.identifier",
@@ -89,13 +95,19 @@
         "max": "0"
       },
       {
+        "id": "Condition.encounter",
+        "path": "Condition.encounter",
+        "mustSupport": true
+      },
+      {
         "id": "Condition.onset[x]",
         "path": "Condition.onset[x]",
         "type": [
           {
             "code": "dateTime"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Condition.abatement[x]",

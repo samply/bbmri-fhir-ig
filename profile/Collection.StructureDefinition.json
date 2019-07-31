@@ -37,14 +37,14 @@
               "https://fhir.bbmri.de/StructureDefinition/OrganizationDescription"
             ]
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Organization.extension:collectionType",
         "path": "Organization.extension",
         "sliceName": "collectionType",
         "min": 1,
-        "max": "*",
         "type": [
           {
             "code": "Extension",
@@ -52,14 +52,14 @@
               "https://fhir.bbmri.de/StructureDefinition/CollectionType"
             ]
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Organization.extension:dataCategory",
         "path": "Organization.extension",
         "sliceName": "dataCategory",
         "min": 1,
-        "max": "*",
         "type": [
           {
             "code": "Extension",
@@ -67,7 +67,8 @@
               "https://fhir.bbmri.de/StructureDefinition/DataCategory"
             ]
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Organization.identifier",
@@ -88,12 +89,14 @@
         "path": "Organization.identifier",
         "sliceName": "Bbmri-EricId",
         "min": 1,
-        "max": "1"
+        "max": "1",
+        "mustSupport": true
       },
       {
         "id": "Organization.identifier:Bbmri-EricId.system",
         "path": "Organization.identifier.system",
-        "fixedUri": "http://www.bbmri-eric.eu/"
+        "fixedUri": "http://www.bbmri-eric.eu/",
+        "mustSupport": true
       },
       {
         "id": "Organization.identifier:Bbmri-EricId.value",
@@ -105,17 +108,20 @@
             "human": "Shall contain only the local collection id, should only consist of roman letters and numbers.",
             "expression": "matches('^([a-zA-Z\\\\d])+$')"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Organization.name",
         "path": "Organization.name",
-        "min": 1
+        "min": 1,
+        "mustSupport": true
       },
       {
         "id": "Organization.alias",
         "path": "Organization.alias",
-        "max": "1"
+        "max": "1",
+        "mustSupport": true
       },
       {
         "id": "Organization.telecom",
@@ -139,7 +145,8 @@
               "https://fhir.bbmri.de/StructureDefinition/Biobank"
             ]
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Organization.contact",
@@ -158,7 +165,14 @@
         "id": "Organization.contact:head",
         "path": "Organization.contact",
         "sliceName": "head",
-        "max": "1"
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Organization.contact:head.purpose",
+        "path": "Organization.contact.purpose",
+        "min": 1,
+        "mustSupport": true
       },
       {
         "id": "Organization.contact:head.purpose.coding.system",
@@ -173,19 +187,36 @@
       {
         "id": "Organization.contact:head.name.family",
         "path": "Organization.contact.name.family",
-        "min": 1
+        "mustSupport": true
       },
       {
         "id": "Organization.contact:head.name.given",
         "path": "Organization.contact.name.given",
-        "min": 1,
-        "max": "1"
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Organization.contact:head.name.prefix",
+        "path": "Organization.contact.name.prefix",
+        "mustSupport": true
+      },
+      {
+        "id": "Organization.contact:head.name.suffix",
+        "path": "Organization.contact.name.suffix",
+        "mustSupport": true
       },
       {
         "id": "Organization.contact:contact",
         "path": "Organization.contact",
         "sliceName": "contact",
-        "max": "1"
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Organization.contact:contact.purpose",
+        "path": "Organization.contact.purpose",
+        "min": 1,
+        "mustSupport": true
       },
       {
         "id": "Organization.contact:contact.purpose.coding.system",
@@ -196,6 +227,26 @@
         "id": "Organization.contact:contact.purpose.coding.code",
         "path": "Organization.contact.purpose.coding.code",
         "fixedCode": "RESEARCH"
+      },
+      {
+        "id": "Organization.contact:contact.name.family",
+        "path": "Organization.contact.name.family",
+        "mustSupport": true
+      },
+      {
+        "id": "Organization.contact:contact.name.given",
+        "path": "Organization.contact.name.given",
+        "mustSupport": true
+      },
+      {
+        "id": "Organization.contact:contact.name.prefix",
+        "path": "Organization.contact.name.prefix",
+        "mustSupport": true
+      },
+      {
+        "id": "Organization.contact:contact.name.suffix",
+        "path": "Organization.contact.name.suffix",
+        "mustSupport": true
       },
       {
         "id": "Organization.contact:contact.telecom",
@@ -214,12 +265,19 @@
       {
         "id": "Organization.contact:contact.telecom:phone",
         "path": "Organization.contact.telecom",
-        "sliceName": "phone"
+        "sliceName": "phone",
+        "mustSupport": true
       },
       {
         "id": "Organization.contact:contact.telecom:phone.system",
         "path": "Organization.contact.telecom.system",
-        "fixedCode": "phone"
+        "fixedCode": "phone",
+        "mustSupport": true
+      },
+      {
+        "id": "Organization.contact:contact.telecom:phone.value",
+        "path": "Organization.contact.telecom.value",
+        "mustSupport": true
       },
       {
         "id": "Organization.contact:contact.telecom:email",
@@ -231,22 +289,36 @@
       {
         "id": "Organization.contact:contact.telecom:email.system",
         "path": "Organization.contact.telecom.system",
-        "fixedCode": "email"
+        "fixedCode": "email",
+        "mustSupport": true
       },
       {
         "id": "Organization.contact:contact.telecom:email.value",
         "path": "Organization.contact.telecom.value",
-        "min": 1
+        "min": 1,
+        "mustSupport": true
       },
       {
         "id": "Organization.contact:contact.address.line",
         "path": "Organization.contact.address.line",
-        "max": "1"
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Organization.contact:contact.address.city",
+        "path": "Organization.contact.address.city",
+        "mustSupport": true
+      },
+      {
+        "id": "Organization.contact:contact.address.postalCode",
+        "path": "Organization.contact.address.postalCode",
+        "mustSupport": true
       },
       {
         "id": "Organization.contact:contact.address.country",
         "path": "Organization.contact.address.country",
-        "min": 1
+        "min": 1,
+        "mustSupport": true
       }
     ]
   }

@@ -35,7 +35,8 @@
               "https://fhir.bbmri.de/StructureDefinition/StorageTemparature"
             ]
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Specimen.extension:diagnosis",
@@ -48,7 +49,8 @@
               "https://fhir.bbmri.de/StructureDefinition/SampleDiagnosis"
             ]
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Specimen.identifier",
@@ -61,13 +63,9 @@
         "max": "0"
       },
       {
-        "id": "Specimen.status",
-        "path": "Specimen.status",
-        "max": "0"
-      },
-      {
         "id": "Specimen.type",
         "path": "Specimen.type",
+        "mustSupport": true,
         "binding": {
           "strength": "required",
           "valueSet": "https://fhir.bbmri.de/ValueSet/SampleType"
@@ -83,7 +81,8 @@
               "https://fhir.bbmri.de/StructureDefinition/Patient"
             ]
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Specimen.subject.identifier",
@@ -111,6 +110,11 @@
         "max": "0"
       },
       {
+        "id": "Specimen.collection",
+        "path": "Specimen.collection",
+        "mustSupport": true
+      },
+      {
         "id": "Specimen.collection.collector",
         "path": "Specimen.collection.collector",
         "max": "0"
@@ -122,7 +126,8 @@
           {
             "code": "dateTime"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Specimen.collection.quantity",
@@ -133,6 +138,11 @@
         "id": "Specimen.collection.method",
         "path": "Specimen.collection.method",
         "max": "0"
+      },
+      {
+        "id": "Specimen.collection.bodySite",
+        "path": "Specimen.collection.bodySite",
+        "mustSupport": true
       },
       {
         "id": "Specimen.collection.bodySite.coding.system",
@@ -147,6 +157,7 @@
             "code": "CodeableConcept"
           }
         ],
+        "mustSupport": true,
         "binding": {
           "strength": "required"
         }
