@@ -33,13 +33,24 @@
         "max": "0"
       },
       {
+        "id": "Patient.gender",
+        "path": "Patient.gender",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.birthDate",
+        "path": "Patient.birthDate",
+        "mustSupport": true
+      },
+      {
         "id": "Patient.deceased[x]",
         "path": "Patient.deceased[x]",
         "type": [
           {
             "code": "dateTime"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Patient.address",

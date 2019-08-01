@@ -5,6 +5,7 @@
   "name": "StorageTemperature",
   "title": "Storage Temperature",
   "status": "draft",
+  "content": "complete",
   "concept": [
     {
       "code": "temperature2to10",
