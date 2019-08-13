@@ -73,12 +73,13 @@
   "contact" : [
     {
       "purpose" : {
-        "coding" : [
-          {
-            "system" : "http://terminology.hl7.org/CodeSystem/contactentity-type",
-            "code" : "ADMIN"
-          }
-        ]
+        "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/contactentity-type",
+              "code": "ADMIN",
+              "display": "Administrative"
+            }
+          ]
       },
       "name" : {
         "family" : "Chef",
@@ -101,12 +102,14 @@
     },
     {
       "purpose" : {
-        "coding" : [
-          {
-            "system" : "https://fhir.bbmri.de/CodeSystem/ContactTypes",
-            "code" : "RESEARCH"
-          }
-        ]
+        "coding": [
+            {
+              "system": "https://fhir.bbmri.de/CodeSystem/ContactTypes",
+              "code": "RESEARCH",
+              "display": "Research"
+            }
+          ],
+          "text": "Contact for research inquiries."
       },
       "name" : {
         "family" : "Forschungsbeauftragter",

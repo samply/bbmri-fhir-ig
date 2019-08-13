@@ -1,33 +1,38 @@
 {
-  "resourceType": "StructureDefinition",
-  "url": "https://fhir.bbmri.de/StructureDefinition/StorageTemparature",
-  "name": "StorageTemparature",
-  "status": "draft",
-  "fhirVersion": "4.0.0",
-  "kind": "complex-type",
-  "abstract": false,
-  "context": [
+  "resourceType" : "StructureDefinition",
+  "url" : "https://fhir.bbmri.de/StructureDefinition/StorageTemparature",
+  "name" : "StorageTemparature",
+  "status" : "draft",
+  "fhirVersion" : "4.0.0",
+  "kind" : "complex-type",
+  "abstract" : false,
+  "context" : [
     {
-      "type": "element",
-      "expression": "Specimen"
+      "type" : "element",
+      "expression" : "Specimen"
     }
   ],
-  "type": "Extension",
-  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
-  "derivation": "constraint",
-  "differential": {
-    "element": [
+  "type" : "Extension",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation" : "constraint",
+  "differential" : {
+    "element" : [
       {
-        "id": "Extension.value[x]",
-        "path": "Extension.value[x]",
-        "type": [
+        "id" : "Extension.url",
+        "path" : "Extension.url",
+        "fixedUri" : "https://fhir.bbmri.de/StructureDefinition/StorageTemparature"
+      },
+      {
+        "id" : "Extension.value[x]",
+        "path" : "Extension.value[x]",
+        "type" : [
           {
-            "code": "CodeableConcept"
+            "code" : "CodeableConcept"
           }
         ],
-        "binding": {
-          "strength": "required",
-          "valueSet": "https://fhir.bbmri.de/ValueSet/StorageTemperature"
+        "binding" : {
+          "strength" : "required",
+          "valueSet" : "https://fhir.bbmri.de/ValueSet/StorageTemperature"
         }
       }
     ]

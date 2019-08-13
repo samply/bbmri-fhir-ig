@@ -18,6 +18,11 @@
   "derivation": "constraint",
   "differential": {
     "element": [
+	{
+        "id" : "Extension.url",
+        "path" : "Extension.url",
+        "fixedUri" : "https://fhir.bbmri.de/StructureDefinition/CollectionType"
+      },
       {
         "id": "Extension.value[x]",
         "path": "Extension.value[x]",

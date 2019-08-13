@@ -58,7 +58,7 @@
       "value" : "bbmri-eric:ID:de_12345:collection:vampir"
     }
   ],
-  "name" : "Venous and arterial blood from misc patients internal reserve ",
+  "name" : "Venous and arterial blood from misc patients internal reserve",
   "alias" : [
     "VAMPIR"
   ],
@@ -68,12 +68,13 @@
   "contact" : [
     {
       "purpose" : {
-        "coding" : [
-          {
-            "system" : "http://terminology.hl7.org/CodeSystem/contactentity-type",
-            "code" : "ADMIN"
-          }
-        ]
+        "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/contactentity-type",
+              "code": "ADMIN",
+              "display": "Administrative"
+            }
+          ]
       },
       "name" : {
         "family" : "Dracula",
