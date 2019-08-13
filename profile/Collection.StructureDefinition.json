@@ -155,7 +155,7 @@
           "discriminator": [
             {
               "type": "value",
-              "path": "purpose"
+              "path": "purpose.coding.code"
             }
           ],
           "rules": "open"
@@ -192,7 +192,6 @@
       {
         "id": "Organization.contact:head.name.given",
         "path": "Organization.contact.name.given",
-        "max": "1",
         "mustSupport": true
       },
       {
@@ -301,7 +300,6 @@
       {
         "id": "Organization.contact:contact.address.line",
         "path": "Organization.contact.address.line",
-        "max": "1",
         "mustSupport": true
       },
       {
