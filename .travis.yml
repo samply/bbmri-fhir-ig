@@ -1,0 +1,10 @@
+language: java
+before_script:
+- wget https://fhir.github.io/latest-ig-publisher/org.hl7.fhir.validator.jar -O validator.jar
+script:
+- mkdir target
+- cp extension/* target
+- cp profile/* target
+- cp terminology/codesystem/* target
+- cp terminology/valueset/* target
+- java -jar validator.jar -version 4.0.0 -ig target examples
