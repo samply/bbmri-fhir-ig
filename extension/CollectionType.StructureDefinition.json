@@ -34,7 +34,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://fhir.bbmri.de/ValueSet/CollectionTypes"
+          "valueSet": "https://fhir.bbmri.de/ValueSet/CollectionType"
         }
       }
     ]

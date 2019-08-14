@@ -1,9 +1,9 @@
 {
   "resourceType": "CodeSystem",
-  "id": "DataCategories",
-  "url": "https://fhir.bbmri.de/CodeSystem/DataCategories",
-  "name": "DataCategories",
-  "title": "Data Categories",
+  "id": "DataCategory",
+  "url": "https://fhir.bbmri.de/CodeSystem/DataCategory",
+  "name": "DataCategory",
+  "title": "Data Category",
   "status": "draft",
   "caseSensitive": false,
   "content":"complete",

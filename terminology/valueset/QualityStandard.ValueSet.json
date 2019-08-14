@@ -1,0 +1,15 @@
+{
+  "resourceType": "ValueSet",
+  "id": "QualityStandard",
+  "url": "https://fhir.bbmri.de/ValueSet/QualityStandard",
+  "name": "QualityStandard",
+  "title": "Quality Standard",
+  "status": "draft",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.bbmri.de/CodeSystem/QualityStandard"
+      }
+    ]
+  }
+}

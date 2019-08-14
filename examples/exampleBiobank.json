@@ -20,11 +20,11 @@
       "valueString" : "Klinikum Neustadt vertreten durch den Vorstand"
     },
     {
-      "url" : "https://fhir.bbmri.de/StructureDefinition/QualityStandards",
+      "url" : "https://fhir.bbmri.de/StructureDefinition/QualityStandard",
       "valueCodeableConcept" : {
         "coding" : [
           {
-            "system" : "https://fhir.bbmri.de/CodeSystem/QualityStandards",
+            "system" : "https://fhir.bbmri.de/CodeSystem/QualityStandard",
             "code" : "oecd-guidelines",
             "display" : "OECD Guidelines"
           }
@@ -32,11 +32,11 @@
       }
     },
     {
-      "url" : "https://fhir.bbmri.de/StructureDefinition/QualityStandards",
+      "url" : "https://fhir.bbmri.de/StructureDefinition/QualityStandard",
       "valueCodeableConcept" : {
         "coding" : [
           {
-            "system" : "https://fhir.bbmri.de/CodeSystem/QualityStandards",
+            "system" : "https://fhir.bbmri.de/CodeSystem/QualityStandard",
             "code" : "iso-15189",
             "display" : "ISO-15189"
           }
@@ -104,7 +104,7 @@
       "purpose" : {
         "coding": [
             {
-              "system": "https://fhir.bbmri.de/CodeSystem/ContactTypes",
+              "system": "https://fhir.bbmri.de/CodeSystem/ContactType",
               "code": "RESEARCH",
               "display": "Research"
             }

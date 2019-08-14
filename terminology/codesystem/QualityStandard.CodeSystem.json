@@ -1,9 +1,9 @@
 {
   "resourceType": "CodeSystem",
-  "id": "QualityStandards",
-  "url": "https://fhir.bbmri.de/CodeSystem/QualityStandards",
-  "name": "QualityStandards",
-  "title": "Quality Standards",
+  "id": "QualityStandard",
+  "url": "https://fhir.bbmri.de/CodeSystem/QualityStandard",
+  "name": "QualityStandard",
+  "title": "Quality Standard",
   "status": "draft",
   "caseSensitive": false,
   "content":"complete",
