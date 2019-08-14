@@ -1,0 +1,15 @@
+{
+  "resourceType": "ValueSet",
+  "id": "CollectionType",
+  "url": "https://fhir.bbmri.de/ValueSet/CollectionType",
+  "name": "CollectionType",
+  "title": "Collection Type",
+  "status": "draft",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.bbmri.de/CodeSystem/CollectionType"
+      }
+    ]
+  }
+}

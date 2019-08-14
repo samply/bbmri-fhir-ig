@@ -1,9 +1,9 @@
 {
   "resourceType": "CodeSystem",
-  "id": "ContactTypes",
-  "url": "https://fhir.bbmri.de/CodeSystem/ContactTypes",
-  "name": "ContactTypes",
-  "title": "Contact Types",
+  "id": "ContactType",
+  "url": "https://fhir.bbmri.de/CodeSystem/ContactType",
+  "name": "ContactType",
+  "title": "Contact Type",
   "status": "draft",
   "caseSensitive": false,
   "content":"complete",

@@ -220,7 +220,7 @@
       {
         "id": "Organization.contact:contact.purpose.coding.system",
         "path": "Organization.contact.purpose.coding.system",
-        "fixedUri": "https://fhir.bbmri.de/CodeSystem/ContactTypes"
+        "fixedUri": "https://fhir.bbmri.de/CodeSystem/ContactType"
       },
       {
         "id": "Organization.contact:contact.purpose.coding.code",

@@ -1,9 +1,9 @@
 {
   "resourceType": "CodeSystem",
-  "id": "CollectionTypes",
-  "url": "https://fhir.bbmri.de/CodeSystem/CollectionTypes",
-  "name": "CollectionTypes",
-  "title": "Collection Types",
+  "id": "CollectionType",
+  "url": "https://fhir.bbmri.de/CodeSystem/CollectionType",
+  "name": "CollectionType",
+  "title": "Collection Type",
   "status": "draft",
   "caseSensitive": false,
   "content":"complete",

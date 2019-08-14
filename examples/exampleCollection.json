@@ -20,7 +20,7 @@
       "valueCodeableConcept" : {
         "coding" : [
           {
-            "system" : "https://fhir.bbmri.de/CodeSystem/CollectionTypes",
+            "system" : "https://fhir.bbmri.de/CodeSystem/CollectionType",
             "code" : "HOSPITAL",
             "display" : "Hospital"
           }
@@ -32,7 +32,7 @@
       "valueCodeableConcept" : {
         "coding" : [
           {
-            "system" : "https://fhir.bbmri.de/CodeSystem/CollectionTypes",
+            "system" : "https://fhir.bbmri.de/CodeSystem/CollectionType",
             "code" : "SAMPLE",
             "display" : "Sample collection"
           }
@@ -44,7 +44,7 @@
       "valueCodeableConcept" : {
         "coding" : [
           {
-            "system" : "https://fhir.bbmri.de/CodeSystem/DataCategories",
+            "system" : "https://fhir.bbmri.de/CodeSystem/DataCategory",
             "code" : "BIOLOGICAL_SAMPLES",
             "display" : "Biological samples"
           }
