@@ -52,6 +52,21 @@
         ],
         "mustSupport": true
       },
+	  {
+	    "id": "Specimen.extension:custodian",
+        "path": "Specimen.extension",
+        "sliceName": "custodian",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.bbmri.de/StructureDefinition/Custodian"
+            ]
+          }
+        ],
+        "mustSupport": true
+	  },
       {
         "id": "Specimen.identifier",
         "path": "Specimen.identifier",
