@@ -1,0 +1,262 @@
+{
+  "entry": [
+    {
+      "fullUrl": "4bc9e333-9ba3-4234-97d9-c84a31edba63",
+      "request": {
+        "method": "PUT",
+        "url": "Patient/0"
+      },
+      "resource": {
+        "birthDate": "1989-11-18",
+        "gender": "male",
+        "id": "0",
+        "meta": {
+          "profile": [
+            "https://fhir.bbmri.de/StructureDefinition/Patient"
+          ]
+        },
+        "resourceType": "Patient"
+      }
+    },
+    {
+      "fullUrl": "7b41441d-218a-49ec-afc2-ddbc5420541d",
+      "request": {
+        "method": "PUT",
+        "url": "Observation/0-bmi"
+      },
+      "resource": {
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "vital-signs",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "39156-5",
+              "system": "http://loinc.org"
+            }
+          ]
+        },
+        "effectiveDateTime": "2005-06-17",
+        "id": "0-bmi",
+        "meta": {
+          "profile": [
+            "https://fhir.bbmri.de/StructureDefinition/Bmi"
+          ]
+        },
+        "resourceType": "Observation",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/0"
+        },
+        "valueQuantity": {
+          "code": "kg/m2",
+          "system": "http://unitsofmeasure.org",
+          "unit": "kg/m2",
+          "value": 36.68645245341373
+        }
+      }
+    },
+    {
+      "fullUrl": "421cf34c-b673-46e0-ab3c-0a2d11575adf",
+      "request": {
+        "method": "PUT",
+        "url": "Observation/0-body-height"
+      },
+      "resource": {
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "vital-signs",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "8302-2",
+              "system": "http://loinc.org"
+            }
+          ]
+        },
+        "effectiveDateTime": "2005-06-17",
+        "id": "0-body-height",
+        "meta": {
+          "profile": [
+            "https://fhir.bbmri.de/StructureDefinition/BodyHeight"
+          ]
+        },
+        "resourceType": "Observation",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/0"
+        },
+        "valueQuantity": {
+          "code": "cm",
+          "system": "http://unitsofmeasure.org",
+          "unit": "cm",
+          "value": 198.58090348834853
+        }
+      }
+    },
+    {
+      "fullUrl": "7709f509-fa2b-4045-8d5b-db9d2c4d9693",
+      "request": {
+        "method": "PUT",
+        "url": "Observation/0-body-weight"
+      },
+      "resource": {
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "vital-signs",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "29463-7",
+              "system": "http://loinc.org"
+            }
+          ]
+        },
+        "effectiveDateTime": "2005-06-17",
+        "id": "0-body-weight",
+        "meta": {
+          "profile": [
+            "https://fhir.bbmri.de/StructureDefinition/BodyWeight"
+          ]
+        },
+        "resourceType": "Observation",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/0"
+        },
+        "valueQuantity": {
+          "code": "kg",
+          "system": "http://unitsofmeasure.org",
+          "unit": "kg",
+          "value": 144.67073319145982
+        }
+      }
+    },
+    {
+      "fullUrl": "eb962177-e96d-42af-91a5-d248913c0a4b",
+      "request": {
+        "method": "PUT",
+        "url": "Observation/0-tobacco-use"
+      },
+      "resource": {
+        "code": {
+          "coding": [
+            {
+              "code": "72166-2",
+              "system": "http://loinc.org"
+            }
+          ]
+        },
+        "effectiveDateTime": "2005-06-17",
+        "id": "0-tobacco-use",
+        "meta": {
+          "profile": [
+            "https://fhir.bbmri.de/StructureDefinition/TobaccoUse"
+          ]
+        },
+        "resourceType": "Observation",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/0"
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "LA18977-1",
+              "system": "http://loinc.org"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "dd578714-929c-4127-b6be-013c415c4401",
+      "request": {
+        "method": "PUT",
+        "url": "Specimen/0-specimen"
+      },
+      "resource": {
+        "collection": {
+          "bodySite": {
+            "coding": [
+              {
+                "code": "C26.1",
+                "system": "https://www.who.int/classifications/icd/adaptations/oncology/en/"
+              }
+            ]
+          },
+          "collectedDateTime": "2005-06-17",
+          "fastingStatusCodeableConcept": {
+            "coding": [
+              {
+                "code": "NF",
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0916"
+              }
+            ]
+          }
+        },
+        "extension": [
+          {
+            "url": "https://fhir.bbmri.de/StructureDefinition/StorageTemperature",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "temperature2to10",
+                  "system": "https://fhir.bbmri.de/CodeSystem/StorageTemperature"
+                }
+              ]
+            }
+          },
+          {
+            "url": "https://fhir.bbmri.de/StructureDefinition/Custodian",
+            "valueReference": {
+              "reference": "Organization/collection-2"
+            }
+          }
+        ],
+        "id": "0-specimen",
+        "meta": {
+          "profile": [
+            "https://fhir.bbmri.de/StructureDefinition/Specimen"
+          ]
+        },
+        "resourceType": "Specimen",
+        "subject": {
+          "reference": "Patient/0"
+        },
+        "type": {
+          "coding": [
+            {
+              "code": "whole-blood",
+              "system": "https://fhir.bbmri.de/CodeSystem/SampleMaterialType"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "id": "53ef12a3-1e31-4fc1-adf6-9d30dc6c4784",
+  "resourceType": "Bundle",
+  "type": "transaction"
+}
