@@ -1,6 +1,6 @@
 {
   "resourceType" : "StructureDefinition",
-  "url" : "https://fhir.bbmri.de/StructureDefinition/StorageTemparature",
+  "url" : "https://fhir.bbmri.de/StructureDefinition/StorageTemperature",
   "name" : "StorageTemperature",
   "status" : "draft",
   "fhirVersion" : "4.0.0",
@@ -20,7 +20,7 @@
       {
         "id" : "Extension.url",
         "path" : "Extension.url",
-        "fixedUri" : "https://fhir.bbmri.de/StructureDefinition/StorageTemparature"
+        "fixedUri" : "https://fhir.bbmri.de/StructureDefinition/StorageTemperature"
       },
       {
         "id" : "Extension.value[x]",
