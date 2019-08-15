@@ -140,9 +140,12 @@
         "mustSupport": true
       },
       {
-        "id": "Specimen.collection.bodySite.coding.system",
-        "path": "Specimen.collection.bodySite.coding.system",
-        "fixedUri": "https://www.dimdi.de/dynamic/en/classifications/icd/icd-o-3/"
+        "id": "Specimen.collection.bodySite.coding",
+        "path": "Specimen.collection.bodySite.coding",
+        "patternCoding": {
+          "system": "https://www.who.int/classifications/icd/adaptations/oncology/en/",
+          "version": "3"
+        }
       },
       {
         "id": "Specimen.collection.fastingStatus[x]",
