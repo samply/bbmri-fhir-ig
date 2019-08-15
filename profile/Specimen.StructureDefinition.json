@@ -32,7 +32,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://fhir.bbmri.de/StructureDefinition/StorageTemparature"
+              "https://fhir.bbmri.de/StructureDefinition/StorageTemperature"
             ]
           }
         ],
