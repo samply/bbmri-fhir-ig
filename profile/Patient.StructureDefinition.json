@@ -13,11 +13,6 @@
   "differential": {
     "element": [
       {
-        "id": "Patient.identifier",
-        "path": "Patient.identifier",
-        "max": "0"
-      },
-      {
         "id": "Patient.active",
         "path": "Patient.active",
         "max": "0"
@@ -63,11 +58,6 @@
         "max": "0"
       },
       {
-        "id": "Patient.multipleBirth[x]",
-        "path": "Patient.multipleBirth[x]",
-        "max": "0"
-      },
-      {
         "id": "Patient.photo",
         "path": "Patient.photo",
         "max": "0"
@@ -85,16 +75,6 @@
       {
         "id": "Patient.generalPractitioner",
         "path": "Patient.generalPractitioner",
-        "max": "0"
-      },
-      {
-        "id": "Patient.managingOrganization",
-        "path": "Patient.managingOrganization",
-        "max": "0"
-      },
-      {
-        "id": "Patient.link",
-        "path": "Patient.link",
         "max": "0"
       }
     ]

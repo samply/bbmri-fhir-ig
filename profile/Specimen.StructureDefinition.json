@@ -68,16 +68,6 @@
         "mustSupport": true
 	  },
       {
-        "id": "Specimen.identifier",
-        "path": "Specimen.identifier",
-        "max": "0"
-      },
-      {
-        "id": "Specimen.accessionIdentifier",
-        "path": "Specimen.accessionIdentifier",
-        "max": "0"
-      },
-      {
         "id": "Specimen.type",
         "path": "Specimen.type",
         "mustSupport": true,
@@ -107,16 +97,6 @@
       {
         "id": "Specimen.subject.display",
         "path": "Specimen.subject.display",
-        "max": "0"
-      },
-      {
-        "id": "Specimen.receivedTime",
-        "path": "Specimen.receivedTime",
-        "max": "0"
-      },
-      {
-        "id": "Specimen.parent",
-        "path": "Specimen.parent",
         "max": "0"
       },
       {
@@ -176,21 +156,6 @@
         "binding": {
           "strength": "required"
         }
-      },
-      {
-        "id": "Specimen.processing",
-        "path": "Specimen.processing",
-        "max": "0"
-      },
-      {
-        "id": "Specimen.container",
-        "path": "Specimen.container",
-        "max": "0"
-      },
-      {
-        "id": "Specimen.note",
-        "path": "Specimen.note",
-        "max": "0"
       }
     ]
   }
