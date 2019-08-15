@@ -1,7 +1,7 @@
 {
   "resourceType" : "StructureDefinition",
   "url" : "https://fhir.bbmri.de/StructureDefinition/StorageTemparature",
-  "name" : "StorageTemparature",
+  "name" : "StorageTemperature",
   "status" : "draft",
   "fhirVersion" : "4.0.0",
   "kind" : "complex-type",
