@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/samply/bbmri-fhir-ig.svg?branch=master)](https://travis-ci.org/samply/bbmri-fhir-ig)
+
 # BBMRI FHIR® Implementation Guide
 
 [Profile Overview](https://github.com/samply/bbmri-fhir-ig/blob/master/implementationGuide/Overview.md)
