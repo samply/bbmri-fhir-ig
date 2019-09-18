@@ -141,7 +141,7 @@
         "binding": {
           "strength": "required",
           "description": "ICD-O topography codes",
-          "valueSet": "urn:oid:1.3.6.1.4.1.19376.1.3.11.36"
+          "valueSet": "http://art-decor.org/fhir/ValueSet/1.3.6.1.4.1.19376.1.3.11.36--20151113191623"
         }
       },
       {
