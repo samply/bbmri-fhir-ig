@@ -2,12 +2,12 @@
 
 # BBMRI FHIR® Implementation Guide
 
-[Profile Overview](https://github.com/samply/bbmri-fhir-ig/blob/master/implementationGuide/Overview.md)
+[Profile Overview](https://github.com/samply/bbmri-fhir-ig/blob/master/bbmri-ig/input/pagecontent/overview.md)
 
-![Overview profiles](https://github.com/samply/bbmri-fhir-ig/blob/master/implementationGuide/GBA-DatamodellFHIR_V05.png)
+![Overview profiles](https://github.com/samply/bbmri-fhir-ig/blob/master/bbmri-ig/input/images/GBA-DatamodellFHIR_V05.png)
 
-[Mappings to other projects](https://github.com/samply/bbmri-fhir-ig/blob/master/implementationGuide/Mappings.md)
+[Mappings to other projects](https://github.com/samply/bbmri-fhir-ig/blob/master/bbmri-ig/input/pagecontent/mappings.md)
 
-[Referenced Implementation Guides](https://github.com/samply/bbmri-fhir-ig/blob/master/implementationGuide/ReferencedIGS.md)
+[Referenced Implementation Guides](https://github.com/samply/bbmri-fhir-ig/blob/master/bbmri-ig/input/pagecontent/referencedIGs.md)
 
-[Validator Instructions](https://github.com/samply/bbmri-fhir-ig/blob/master/implementationGuide/Validation.md)
+[Validator Instructions](https://github.com/samply/bbmri-fhir-ig/blob/master/bbmri-ig/input/pagecontent/Validation.md)
