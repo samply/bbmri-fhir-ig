@@ -60,12 +60,12 @@
             "code": "CodeableConcept"
           }
         ],
-        "mustSupport": true,
-        "binding": {
-          "strength": "required",
-          "description": "ICD-10 codes",
-          "valueSet": "http://hl7.org/fhir/sid/icd-10"
-        }
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x].coding.system",
+        "path": "Observation.value[x].coding.system",
+        "fixedUri": "http://hl7.org/fhir/sid/icd-10"
       },
       {
         "id": "Observation.referenceRange",
