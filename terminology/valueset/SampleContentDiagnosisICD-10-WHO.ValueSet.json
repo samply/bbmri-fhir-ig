@@ -1,8 +1,8 @@
 {
   "resourceType": "ValueSet",
-  "url": "https://fhir.bbmri.de/ValueSet/SampleContentDiagnosis",
-  "name": "SampleContentDiagnosis",
-  "title": "sample content diagnosis",
+  "url": "https://fhir.bbmri.de/ValueSet/SampleContentDiagnosisICD-10-WHO",
+  "name": "SampleContentDiagnosisICD-10-WHO",
+  "title": "sample content diagnosis ICD-10-WHO",
   "status": "draft",
   "compose": {
     "include": [
