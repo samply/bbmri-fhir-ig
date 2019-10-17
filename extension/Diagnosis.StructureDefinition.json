@@ -17,10 +17,10 @@
   "derivation": "constraint",
   "differential": {
     "element": [
-	{
-        "id" : "Extension.url",
-        "path" : "Extension.url",
-        "fixedUri" : "https://fhir.bbmri.de/StructureDefinition/SampleDiagnosis"
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://fhir.bbmri.de/StructureDefinition/SampleDiagnosis"
       },
       {
         "id": "Extension.value[x]",
@@ -33,6 +33,53 @@
         "binding": {
           "strength": "required",
           "valueSet": "https://fhir.bbmri.de/ValueSet/SampleContentDiagnosis"
+        }
+      },
+      {
+        "id": "Extension.value[x].coding",
+        "path": "Extension.value[x].coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            },
+            {
+              "type": "value",
+              "path": "version"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Extension.value[x].coding:icd-10-who",
+        "path": "Extension.value[x].coding",
+        "sliceName": "icd-10-who",
+        "binding": {
+          "strength": "required",
+          "description": "Sample Content in ICD-10 WHO or unspecific",
+          "valueSet": "https://fhir.bbmri.de/ValueSet/SampleContentDiagnosisICD-10-WHO"
+        }
+      },
+      {
+        "id": "Extension.value[x].coding:icd-10-gm",
+        "path": "Extension.value[x].coding",
+        "sliceName": "icd-10-gm",
+        "binding": {
+          "strength": "required",
+          "description": "Sample Content in ICD-10 GM or unspecific",
+          "valueSet": "https://fhir.bbmri.de/ValueSet/SampleContentDiagnosisICD-10-GM"
+        }
+      },
+      {
+        "id": "Extension.value[x].coding:icd-9",
+        "path": "Extension.value[x].coding",
+        "sliceName": "icd-9",
+        "binding": {
+          "strength": "required",
+          "description": "Sample Content in ICD-9 or unspecific",
+          "valueSet": "https://fhir.bbmri.de/ValueSet/SampleContentDiagnosisICD-9"
         }
       }
     ]
