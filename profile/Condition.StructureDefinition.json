@@ -71,6 +71,7 @@
       {
         "id": "Condition.code.coding:icd-10-who.system",
         "path": "Condition.code.coding.system",
+        "min": 1,
         "fixedUri": "http://hl7.org/fhir/sid/icd-10"
       },
       {
@@ -81,6 +82,7 @@
       {
         "id": "Condition.code.coding:icd-9.system",
         "path": "Condition.code.coding.system",
+        "min": 1,
         "fixedUri": "http://hl7.org/fhir/sid/icd9"
       },
       {
