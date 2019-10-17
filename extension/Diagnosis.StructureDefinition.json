@@ -63,6 +63,16 @@
         }
       },
       {
+        "id": "Extension.value[x].coding:icd-10-who.system",
+        "path": "Extension.value[x].coding.system",
+        "min": 1
+      },
+      {
+        "id": "Extension.value[x].coding:icd-10-who.code",
+        "path": "Extension.value[x].coding.code",
+        "min": 1
+      },
+      {
         "id": "Extension.value[x].coding:icd-10-gm",
         "path": "Extension.value[x].coding",
         "sliceName": "icd-10-gm",
@@ -73,6 +83,16 @@
         }
       },
       {
+        "id": "Extension.value[x].coding:icd-10-gm.system",
+        "path": "Extension.value[x].coding.system",
+        "min": 1
+      },
+      {
+        "id": "Extension.value[x].coding:icd-10-gm.code",
+        "path": "Extension.value[x].coding.code",
+        "min": 1
+      },
+      {
         "id": "Extension.value[x].coding:icd-9",
         "path": "Extension.value[x].coding",
         "sliceName": "icd-9",
@@ -81,6 +101,16 @@
           "description": "Sample Content in ICD-9 or unspecific",
           "valueSet": "https://fhir.bbmri.de/ValueSet/SampleContentDiagnosisICD-9"
         }
+      },
+      {
+        "id": "Extension.value[x].coding:icd-9.system",
+        "path": "Extension.value[x].coding.system",
+        "min": 1
+      },
+      {
+        "id": "Extension.value[x].coding:icd-9.code",
+        "path": "Extension.value[x].coding.code",
+        "min": 1
       }
     ]
   }
