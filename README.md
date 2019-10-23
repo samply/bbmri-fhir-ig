@@ -9,3 +9,5 @@
 [Mappings to other projects](https://github.com/samply/bbmri-fhir-ig/blob/master/implementationGuide/Mappings.md)
 
 [Referenced Implementation Guides](https://github.com/samply/bbmri-fhir-ig/blob/master/implementationGuide/ReferencedIGS.md)
+
+[Validator Instructions](https://github.com/samply/bbmri-fhir-ig/blob/master/implementationGuide/Validation.md)
