@@ -1,8 +1,4 @@
 language: java
-before_script:
-- wget https://fhir.github.io/latest-ig-publisher/org.hl7.fhir.validator.jar -O validator.jar
-- wget http://hl7.org/fhir/uv/ips/2019Sep/validator.pack -O ips.pack
 script:
-- zip -j ig.zip extension/* profile/* terminology/codesystem/* terminology/valueset/*
-- unzip ig.zip -d target
-- java -jar validator.jar -version 4.0.1 -ig ips.pack -ig target examples
+- .\_updatePublisher.bat
+- .\_genonce.bat

@@ -6,7 +6,7 @@
          "https://fhir.bbmri.de/StructureDefinition/Specimen"
       ]
    },
-      "extension":[
+   "extension":[
       {
          "url":"https://fhir.bbmri.de/StructureDefinition/StorageTemperature",
          "valueCodeableConcept":{
@@ -22,6 +22,17 @@
          "url":"https://fhir.bbmri.de/StructureDefinition/Custodian",
          "valueReference":{
             "reference":"Organization/exampleCollection"
+         }
+      },
+      {
+         "url":"https://fhir.bbmri.de/StructureDefinition/SampleDiagnosis",
+         "valueCodeableConcept":{
+            "coding":[
+               {
+                  "code":"unknown",
+                  "system":"https://fhir.bbmri.de/CodeSystem/OtherSampleDiagnosis"
+               }
+            ]
          }
       }
    ],
