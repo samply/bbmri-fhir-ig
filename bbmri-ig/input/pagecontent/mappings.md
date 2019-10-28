@@ -1,12 +1,10 @@
 ﻿
-
-# Mappings
 This section describes how the profiles defined in this guide relate to several other data models, mainly from other biobank-related projects. Partial paths in *italic* imply slice names.
 
-## BBMRI-ERIC  Directory
+### BBMRI-ERIC  Directory
 The BBMRI-ERIC Directory can be found [here](https://directory.bbmri-eric.eu).
 
-### Biobank
+#### Biobank
 The BBMRI-ERIC Directory *Biobank* entity corresponds to the *Biobank* profile from this guide.
 
 | BBMRI-ERIC | Biobank Profile |
@@ -26,7 +24,7 @@ The BBMRI-ERIC Directory *Biobank* entity corresponds to the *Biobank* profile f
 |network | *see section network* |
 |quality | extension:*qualityStandards*.value |
 
-### Contact Information
+#### Contact Information
 In FHIR, the contact information is included in the [*Organization* resource][1], which is profiled as *Biobank* in this guide.
 
 | BBMRI-ERIC| Biobank.contact |
@@ -42,7 +40,7 @@ In FHIR, the contact information is included in the [*Organization* resource][1]
 |city | contact:*contact*.address.city |
 |country | contact:*contact*.address.country |
 
-### Collection
+#### Collection
 The BBMRI-ERIC Directory *Collection* entity corresponds to the *Collection* profile from this guide. Like *Biobank*, it is based on the *Organization* resource but has different constraints.
 
 | BBMRI-ERIC| Collection |
@@ -66,13 +64,13 @@ The BBMRI-ERIC Directory *Collection* entity corresponds to the *Collection* pro
 |number_of_donors | *calculated on-the-fly from bridgehead data* |
 
 
-### Network
+#### Network
 This project does not contain a specific profile for biobank networks. While such networks could be represented as [*Organization* resources][1], it is outside the scope for this project.
  To record a biobank's membership in a network, we use a profiled *OrganizationAffiliation*: *NetworkMembership*. There, the refernce to the network happens via its BBMRI Directory id since we do not have an actual FHIR resource.
 
-## [MIABIS](https://github.com/MIABIS/miabis/wiki)
+### [MIABIS](https://github.com/MIABIS/miabis/wiki)
 
-### Biobank
+#### Biobank
 
 The information for a MIABIS Biobank is found in the Biobank profile.
 
@@ -87,7 +85,7 @@ The information for a MIABIS Biobank is found in the Biobank profile.
 | MIABIS-2.0-07 | Contact Information | See section contact |
 | MIABIS-2.0-08 | Description | extension:*description*.value |
 
-### Collection
+#### Collection
 
 Corresponds to Collection profile
 
@@ -108,7 +106,7 @@ Corresponds to Collection profile
 | MIABIS-2.0-17| Disease| *not supported* |
 | MIABIS-2.0-07| Contact information| See section contact | 
 
-### Contact MIABIS-2.0-07
+#### Contact MIABIS-2.0-07
 
 The contact information can be stored in the *contact* fields of Collection or Biobank which already specify two slices for the *head* and the research *contact* with slices on telecom to model phone and mail contact points.
 We currently do not support the *researcher information* type.
@@ -124,7 +122,7 @@ We currently do not support the *researcher information* type.
 | MIABIS-2.0-07-G| City| address.city |
 | MIABIS-2.0-07-H| Country| address.country | 
 
-### Sample
+#### Sample
 
 Corresponds to the specimen profile.
 
@@ -142,7 +140,7 @@ Corresponds to the specimen profile.
 | MIABIS-10| Sample content diagnosis| extension:*diagnosis* |
 | MIABIS-11| Use restrictions| not yet supported |
 
-### Sample Donor
+#### Sample Donor
 
 Corresponds to the Patient profile.
 
@@ -153,7 +151,7 @@ Corresponds to the Patient profile.
 | MIABIS-SAMPLEDONOR-03| Data categories| *calculated on-the-fly from bridgehead data* | 
 | MIABIS-SAMPLEDONOR-04| Birth year| birthDate |
 
-### Study
+#### Study
 
 Not supported
 
