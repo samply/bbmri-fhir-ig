@@ -1,4 +1,6 @@
-language: java
+language: generic
 script:
-- .\_updatePublisher.bat
-- .\_genonce.bat
+- mkdir input-cache
+- wget https://fhir.github.io/latest-ig-publisher/org.hl7.fhir.publisher.jar -O input-cache/org.hl7.fhir.publisher.jar
+- JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF-8
+- java -jar input-cache/org.hl7.fhir.publisher.jar -ig ./ig.ini

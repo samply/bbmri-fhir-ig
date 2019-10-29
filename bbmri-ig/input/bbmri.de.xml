@@ -33,7 +33,7 @@
       -->
     </coding>
   </jurisdiction>
-  <packageId value="build.fhir.bbmri.de"/>
+  <packageId value="de.bbmri.fhir"/>
   <license value="CC-BY-SA-4.0"/>
   <!-- This is whatever FHIR version the IG artifacts are targeting (not the version of this file, which should always be 'current release') -->
   <fhirVersion value="4.0.0"/>
