@@ -1,7 +1,7 @@
 {
   "entry": [
     {
-      "fullUrl": "4bc9e333-9ba3-4234-97d9-c84a31edba63",
+      "fullUrl": "http://example.com/Patient/0",
       "request": {
         "method": "PUT",
         "url": "Patient/0"
@@ -19,7 +19,7 @@
       }
     },
     {
-      "fullUrl": "7b41441d-218a-49ec-afc2-ddbc5420541d",
+      "fullUrl": "http://example.com/Observation/0-bmi",
       "request": {
         "method": "PUT",
         "url": "Observation/0-bmi"
@@ -64,7 +64,7 @@
       }
     },
     {
-      "fullUrl": "421cf34c-b673-46e0-ab3c-0a2d11575adf",
+      "fullUrl": "http://example.com/Observation/0-body-height",
       "request": {
         "method": "PUT",
         "url": "Observation/0-body-height"
@@ -109,7 +109,7 @@
       }
     },
     {
-      "fullUrl": "7709f509-fa2b-4045-8d5b-db9d2c4d9693",
+      "fullUrl": "http://example.com/Observation/0-body-weight",
       "request": {
         "method": "PUT",
         "url": "Observation/0-body-weight"
@@ -154,7 +154,7 @@
       }
     },
     {
-      "fullUrl": "eb962177-e96d-42af-91a5-d248913c0a4b",
+      "fullUrl": "http://example.com/Observation/0-tobacco-use",
       "request": {
         "method": "PUT",
         "url": "Observation/0-tobacco-use"
@@ -191,7 +191,7 @@
       }
     },
     {
-      "fullUrl": "dd578714-929c-4127-b6be-013c415c4401",
+      "fullUrl": "http://example.com/Specimen/0-specimen",
       "request": {
         "method": "PUT",
         "url": "Specimen/0-specimen"
@@ -223,7 +223,7 @@
           {
             "url": "https://fhir.bbmri.de/StructureDefinition/Custodian",
             "valueReference": {
-              "reference": "Organization/collection-2"
+              "reference": "http://blaze.example.com/fhir/Organization/collection-2"
             }
           },
 		  {
