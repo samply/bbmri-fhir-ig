@@ -1,6 +1,6 @@
 language: ruby
 jdk: openjdk11
-rvm: 2.2
+rvm: 2.5
 before_install: gem install jekyll
 script:
 - mkdir input-cache
