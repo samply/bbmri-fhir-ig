@@ -1,6 +1,9 @@
-language: generic
+language: ruby
+jdk: openjdk11
+rvm: 2.2
+before_install: gem install jekyll
 script:
 - mkdir input-cache
 - wget https://fhir.github.io/latest-ig-publisher/org.hl7.fhir.publisher.jar -O input-cache/org.hl7.fhir.publisher.jar
 - JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF-8
-- java -jar input-cache/org.hl7.fhir.publisher.jar -ig bbmri-de/ig.ini
+- java -jar input-cache/org.hl7.fhir.publisher.jar -ig bbmri-ig/ig.ini
