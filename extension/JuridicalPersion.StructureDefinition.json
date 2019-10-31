@@ -4,7 +4,7 @@
   "name": "JuridicalPerson",
   "status": "draft",
   "description": "Name of the legal entity of the organization",
-  "fhirVersion": "4.0.0",
+  "fhirVersion": "4.0.1",
   "kind": "complex-type",
   "abstract": false,
   "context": [
