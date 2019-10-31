@@ -5,4 +5,4 @@ before_script:
 script:
 - zip -j ig.zip extension/* profile/* terminology/codesystem/* terminology/valueset/*
 - unzip ig.zip -d target
-- java -jar validator.jar -version 4.0.0 -ig ips.pack -ig target examples
+- java -jar validator.jar -version 4.1.0 -ig ips.pack -ig target examples

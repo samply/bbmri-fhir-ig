@@ -16,7 +16,7 @@ While there are [multiple ways](https://www.hl7.org/fhir/validation.html) to val
 
  **6. Run the validator.** 
  Assuming you re-named the original validator JAR to validator.jar, placed it in the same directory as the folder *bbmri.de* containing the profiles and the *IPS.pack*, and have your resources in a subfolder named resources, use the command
-  `java -jar validator.jar -version 4.0.0 -ig IPS.pack -ig bbmri.de resources`
+  `java -jar validator.jar -version 4.1.0 -ig IPS.pack -ig bbmri.de resources`
  
  **7.Look at the output log.** FAILURE indicates an error that has to be fixed, while WARNINGS indicate problems that are sometimes the result of concious decisions, like choosing an external code for a field with a preferred ValueSet binding.
   Other warnings may be caused by the validator failing to find a ValueSet or CodeSystem and therefore being unable to validate a certain code.
