@@ -35,7 +35,7 @@
   "packageId" : "de.bbmri.fhir",
   "license" : "CC-BY-SA-4.0",
   "fhirVersion" : [
-    "4.0.0"
+    "4.0.1"
   ],
   "definition" : {
     "page" : {
