@@ -4,7 +4,7 @@
   "name": "OrganizationDescription",
   "status": "draft",
   "description": "Description of the organization in English",
-  "fhirVersion": "4.0.0",
+  "fhirVersion": "4.0.1",
   "kind": "complex-type",
   "abstract": false,
   "context": [

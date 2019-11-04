@@ -4,7 +4,7 @@
   "name": "NetworkMembership",
   "status": "draft",
   "description": "Resource representing the membership of a biobank in a biobank network",
-  "fhirVersion": "4.0.0",
+  "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
   "type": "OrganizationAffiliation",

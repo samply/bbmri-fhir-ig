@@ -3,7 +3,7 @@
   "url": "https://fhir.bbmri.de/StructureDefinition/BodyHeight",
   "name": "BodyHeight",
   "status": "draft",
-  "fhirVersion": "4.0.0",
+  "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
   "type": "Observation",

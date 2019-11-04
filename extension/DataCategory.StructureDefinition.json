@@ -4,7 +4,7 @@
   "name": "DataCategory",
   "status": "draft",
   "description": "The categories of data that are available as part of the collection",
-  "fhirVersion": "4.0.0",
+  "fhirVersion": "4.0.1",
   "kind": "complex-type",
   "abstract": false,
   "context": [
