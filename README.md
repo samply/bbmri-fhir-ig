@@ -6,8 +6,10 @@
 
 ![Overview profiles](https://github.com/samply/bbmri-fhir-ig/blob/master/bbmri-ig/input/images/GBA-DatamodellFHIR_V05.png)
 
+[Validator Instructions](https://github.com/samply/bbmri-fhir-ig/blob/master/bbmri-ig/input/pagecontent/Validation.md)
+
+[Using References in Bundles](https://github.com/samply/bbmri-fhir-ig/blob/master/bbmri-ig/input/pagecontent/BundleReferences.md)
+
 [Mappings to other projects](https://github.com/samply/bbmri-fhir-ig/blob/master/bbmri-ig/input/pagecontent/mappings.md)
 
 [Referenced Implementation Guides](https://github.com/samply/bbmri-fhir-ig/blob/master/bbmri-ig/input/pagecontent/referencedIGs.md)
-
-[Validator Instructions](https://github.com/samply/bbmri-fhir-ig/blob/master/bbmri-ig/input/pagecontent/Validation.md)
