@@ -1,6 +1,6 @@
 {
    "resourceType":"Organization",
-   "id":"exampleCollection",
+   "id":"exampleCollectionRD",
    "meta":{
       "profile":[
          "https://fhir.bbmri.de/StructureDefinition/Collection"
@@ -13,11 +13,7 @@
    "extension":[
       {
          "url":"https://fhir.bbmri.de/StructureDefinition/OrganizationDescription",
-         "valueString":"The Collection consists of blood from patients at the Klinikum Neustadt."
-      },
-      {
-         "url":"https://fhir.bbmri.de/StructureDefinition/BioresourceReference",
-         "valueString":"ISBN 3-458-34803-4"
+         "valueString":"The Collection contains samples from patients with lycanthropy."
       },
       {
          "url":"https://fhir.bbmri.de/StructureDefinition/CollectionType",
@@ -25,36 +21,40 @@
             "coding":[
                {
                   "system":"https://fhir.bbmri.de/CodeSystem/CollectionType",
-                  "code":"HOSPITAL",
-                  "display":"Hospital"
+                  "code":"DISEASE_SPECIFIC",
+                  "display":"Disease specific"
                }
             ]
          }
       },
       {
-         "url":"https://fhir.bbmri.de/StructureDefinition/CollectionType",
-         "valueCodeableConcept":{
-            "coding":[
-               {
-                  "system":"https://fhir.bbmri.de/CodeSystem/CollectionType",
-                  "code":"SAMPLE",
-                  "display":"Sample collection"
-               }
-            ]
-         }
+        "url":"https://fhir.bbmri.de/StructureDefinition/CollectionType",
+        "valueCodeableConcept":{
+           "coding":[
+              {
+                 "system":"https://fhir.bbmri.de/CodeSystem/CollectionType",
+                 "code":"RD",
+                 "display":"Rare disease collection"
+              }
+           ]
+        }
+     },
+      {
+         "url":"https://fhir.bbmri.de/StructureDefinition/IdCard",
+         "valueUrl":"https://catalogue.rd-connect.eu/werewolf"
       },
       {
-         "url":"https://fhir.bbmri.de/StructureDefinition/DataCategory",
-         "valueCodeableConcept":{
-            "coding":[
-               {
-                  "system":"https://fhir.bbmri.de/CodeSystem/DataCategory",
-                  "code":"BIOLOGICAL_SAMPLES",
-                  "display":"Biological samples"
-               }
-            ]
-         }
-      },
+        "url":"https://fhir.bbmri.de/StructureDefinition/DataCategory",
+        "valueCodeableConcept":{
+           "coding":[
+              {
+                 "system":"https://fhir.bbmri.de/CodeSystem/DataCategory",
+                 "code":"BIOLOGICAL_SAMPLES",
+                 "display":"Biological samples"
+              }
+           ]
+        }
+     },
       {
          "url":"https://fhir.bbmri.de/StructureDefinition/AccessPolicy",
          "extension":[
@@ -83,12 +83,8 @@
                }
             },
             {
-               "url":"fee",
-               "valueBoolean":true
-            },
-            {
                "url":"description",
-               "valueString":"Access contract inluding data protection guidelines needs to be signed."
+               "valueString":"Acessing researchers must prove that security standards equivalent or stricter than local standards are adhered to."
             }
          ]
       }
@@ -96,12 +92,12 @@
    "identifier":[
       {
          "system":"http://www.bbmri-eric.eu/",
-         "value":"bbmri-eric:ID:de_12345:collection:vampir"
+         "value":"bbmri-eric:ID:de_54321:collection:werewolf"
       }
    ],
-   "name":"Venous and arterial blood from misc patients internal reserve",
+   "name":"WidE REsearch for Welfare On Lycantrophy Field",
    "alias":[
-      "VAMPIR"
+      "WEREWOLF"
    ],
    "partOf":{
       "reference":"Organization/exampleBiobank"
@@ -118,18 +114,18 @@
             ]
          },
          "name":{
-            "family":"Dracula",
+            "family":"Lupin",
             "given":[
-               "Vladimir"
+               "Remus"
             ],
             "prefix":[
-               "Graf"
+               "Prof."
             ]
          },
          "telecom":[
             {
-               "system":"fax",
-               "value":"0452 4624-66"
+               "system":"other",
+               "value":"Owl post to Hogwarts"
             }
          ]
       }

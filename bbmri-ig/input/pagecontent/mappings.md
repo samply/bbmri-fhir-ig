@@ -1,5 +1,4 @@
-﻿
-This section describes how the profiles defined in this guide relate to several other data models, mainly from other biobank-related projects. Partial paths in *italic* imply slice names.
+﻿This section describes how the profiles defined in this guide relate to several other data models, mainly from other biobank-related projects. Partial paths in *italic* imply slice names.
 
 ### BBMRI-ERIC  Directory
 The BBMRI-ERIC Directory can be found [here](https://directory.bbmri-eric.eu).
@@ -13,15 +12,27 @@ The BBMRI-ERIC Directory *Biobank* entity corresponds to the *Biobank* profile f
 |name | name |
 |acronym | alias |
 |description | extension:*description*.value |
+|bioresource_reference | extension:*bioresourceReference*.value |
 |url | telecom:*url*.value|
 |juridical_person | extension:*juridicalPerson*.value |
 |country | address.country |
+|it_support_available | extension:*itSupport*.extension:*itSupportAvailable*.value |
+|it_staff_size | extension:*itSupport*.extension:*itStaffSize*.value|
+|is_available | extension:*itSupport*.extension:*isAvailable*.value |
+|his_available | extension:*itSupport*.extension:*hisAvailable*.value
+|partner_charter_signed | extension:*partnerCharterSigned*.value |
 |head_title_before_name | contact:*head*.name.prefix |
 |head_firstname | contact:*head*.name.given |
 |head_lastname | contact:*head*.name.family |
 |head_title_after_name | contact:*head*.name.suffix |
+|head_role | contact:*head*.extension:*role*.value |
 |contact | *see section contact* |
+|latitude | address.extension:*geolocation*.extension:*latitude* |
+|longitude | address.extension:*geolocation*.extension:*longitude* |
 |network | *see section network* |
+|collaboration_commercial | extension:*collaboration*.extension:*commercial*.value|
+|collaboration_non_for_profit | extension:*collaboration*.extension:*nonForProfit*.value|
+|capabilities | extension:*capabilities*.value |
 |quality | extension:*qualityStandards*.value |
 
 #### Contact Information
@@ -51,22 +62,62 @@ The BBMRI-ERIC Directory *Collection* entity corresponds to the *Collection* pro
 |name | name |
 |acronym | alias |
 |description | extension.description.value |
+|bioresource_reference | extension:*bioresourceReference*.value |
+|parent_collection | *via OrganizationAffiliation(TODO)* |
+|network | *see section network* |
 |type | extension:*collectionType*.value |
 |data_categories | extension:*dataCategory*.value|
-|head_title_before_name | contact:*head*.name.prefix |
-|head_firstname | contact:*head*.name.given |
-|head_lastname | contact:*head*.name.family |
-|head_title_after_name | contact:*head*.name.suffix |
-|contact | *see section contact* |
+|quality | extension:*qualityStandards*.value |
 |order_of_magnitude | *calculated on-the-fly from bridgehead data* |
 |order_of_magnitude_donors | *calculated on-the-fly from bridgehead data* |
 |size | *calculated on-the-fly from bridgehead data* |
 |number_of_donors | *calculated on-the-fly from bridgehead data* |
+|timestamp | *calculated on-the-fly from bridgehead data* |
+|id_card | extension:*idCard*.value |
+|head_title_before_name | contact:*head*.name.prefix |
+|head_firstname | contact:*head*.name.given |
+|head_lastname | contact:*head*.name.family |
+|head_title_after_name | contact:*head*.name.suffix |
+|head_role | contact:*head*.extension:*role*.value |
+|contact | *see section contact* |
+|latitude | address.extension:*geolocation*.extension:*latitude* |
+|longitude | address.extension:*geolocation*.extension:*longitude* |
+|sex| *calculated on-the-fly from bridgehead data* |
+|diagnosis_available| *calculated on-the-fly from bridgehead data* |
+|age Low| *calculated on-the-fly from bridgehead data* | 
+|age High| *calculated on-the-fly from bridgehead data* | 
+|age Unit| *calculated on-the-fly from bridgehead data* | 
+|body_part_examined| *calculated on-the-fly from bridgehead data (once available)* | 
+|imaging_modality| *calculated on-the-fly from bridgehead data (once available)* | 
+|image_dataset_type| *calculated on-the-fly from bridgehead data (once available)* | 
+|materials| *calculated on-the-fly from bridgehead data* |
+|storage_temperature| *calculated on-the-fly from bridgehead data* |
+|sample_access_fee | extension:*accessPolicy*.extension:*fee*.value (when  extension:*accessPolicy*.extension:*resource*.value = "sample") |
+|sample_access_joint_project | extension:*accessPolicy*.extension:*jointProject*.value (when  extension:*accessPolicy*.extension:*resource*.value = "sample") |
+|sample_access_description | extension:*accessPolicy*.extension:*description*.value (when  extension:*accessPolicy*.extension:*resource*.value = "sample") |
+|sample_access_uri | extension:*accessPolicy*.extension:*uri*.value (when  extension:*accessPolicy*.extension:*resource*.value = "sample") |
+|data_access_fee | extension:*accessPolicy*.extension:*fee*.value (when  extension:*accessPolicy*.extension:*resource*.value = "data") |
+|data_access_joint_project | extension:*accessPolicy*.extension:*jointProject*.value (when  extension:*accessPolicy*.extension:*resource*.value = "data") |
+|data_access_description | extension:*accessPolicy*.extension:*description*.value (when  extension:*accessPolicy*.extension:*resource*.value = "data") |
+|data_access_uri | extension:*accessPolicy*.extension:*uri*.value (when  extension:*accessPolicy*.extension:*resource*.value = "data") |
+|image_access_fee | extension:*accessPolicy*.extension:*fee*.value (when  extension:*accessPolicy*.extension:*resource*.value = "image") |
+|image_access_joint_project | extension:*accessPolicy*.extension:*jointProject*.value (when  extension:*accessPolicy*.extension:*resource*.value = "image") |
+|image_access_description | extension:*accessPolicy*.extension:*description*.value (when  extension:*accessPolicy*.extension:*resource*.value = "image") |
+|image_access_uri | extension:*accessPolicy*.extension:*uri*.value (when  extension:*accessPolicy*.extension:*resource*.value = "image") |
+|collaboration_commercial | extension:*collaboration*.extension:*commercial*.value|
+|collaboration_non_for_profit | extension:*collaboration*.extension:*nonForProfit*.value|
+|sample_processing_sop | extension:*resourceManagement*.extension:*processingSop*.value (when  extension:*resourceManagement*.extension:*resource*.value = "sample") |
+|sample_transport_sop | extension:*resourceManagement*.extension:*transportSop*.value (when  extension:*resourceManagement*.extension:*resource*.value = "sample") |
+|sample_storage_sop | extension:*resourceManagement*.extension:*storageSop*.value (when  extension:*resourceManagement*.extension:*resource*.value = "sample") |
+|data_processing_sop | extension:*resourceManagement*.extension:*processingSop*.value (when  extension:*resourceManagement*.extension:*resource*.value = "data") |
+|data_transport_sop | extension:*resourceManagement*.extension:*transportSop*.value (when  extension:*resourceManagement*.extension:*resource*.value = "data") |
+|data_storage_sop | extension:*resourceManagement*.extension:*storageSop*.value (when  extension:*resourceManagement*.extension:*resource*.value = "data") |
+
 
 
 #### Network
 This project does not contain a specific profile for biobank networks. While such networks could be represented as [*Organization* resources][1], it is outside the scope for this project.
- To record a biobank's membership in a network, we use a profiled *OrganizationAffiliation*: *NetworkMembership*. There, the refernce to the network happens via its BBMRI Directory id since we do not have an actual FHIR resource.
+ To record a biobank's membership in a network, we use a profiled *OrganizationAffiliation*: *NetworkMembership*. There, the reference to the network happens via its BBMRI Directory id since we do not have an actual FHIR resource.
 
 ### [MIABIS](https://github.com/MIABIS/miabis/wiki)
 
