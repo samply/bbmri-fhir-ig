@@ -41,6 +41,22 @@
         "mustSupport": true
       },
       {
+        "id": "Organization.extension:bioresourceReference",
+        "path": "Organization.extension",
+        "sliceName": "bioresourceReference",
+        "short": "Bioresource reference",
+        "definition": "Reference to be cited when the biobank is used for research",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.bbmri.de/StructureDefinition/BioresourceReference"
+            ]
+          }
+        ]
+      },
+      {
         "id": "Organization.extension:juridicalPerson",
         "path": "Organization.extension",
         "sliceName": "juridicalPerson",
@@ -55,6 +71,61 @@
           }
         ],
         "mustSupport": true
+      },
+      {
+        "id": "Organization.extension:itSupport",
+        "path": "Organization.extension",
+        "sliceName": "itSupport",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.bbmri.de/StructureDefinition/ITSupport"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Organization.extension:partnerCharterSigned",
+        "path": "Organization.extension",
+        "sliceName": "partnerCharterSigned",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.bbmri.de/StructureDefinition/PartnerCharterSigned"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Organization.extension:collaboration",
+        "path": "Organization.extension",
+        "sliceName": "collaboration",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.bbmri.de/StructureDefinition/Collaboration"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Organization.extension:capabilities",
+        "path": "Organization.extension",
+        "sliceName": "capabilities",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.bbmri.de/StructureDefinition/Capabilities"
+            ]
+          }
+        ]
       },
       {
         "id": "Organization.extension:qualityStandard",
@@ -107,7 +178,8 @@
             "requirements": "Make sure valid BBMRI IDs are provided",
             "severity": "warning",
             "human": "<CC>_<local id>: SHALL contain valid ISO-3166-1 alpha 2 country code followed by _ followed by biobank ID of national registry (if present).",
-            "expression": "matches('^([a-z]){2}_([a-zA-Z\\\\d])+$')"
+            "expression": "matches('^([a-z]){2}_([a-zA-Z\\\\d])+$')",
+            "source": "Organization"
           }
         ],
         "mustSupport": true
@@ -161,6 +233,32 @@
         "min": 1
       },
       {
+        "id": "Organization.address.extension",
+        "path": "Organization.address.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Organization.address.extension:geolocation",
+        "path": "Organization.address.extension",
+        "sliceName": "geolocation",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/geolocation"
+            ]
+          }
+        ]
+      },
+      {
         "id": "Organization.address.country",
         "path": "Organization.address.country",
         "min": 1,
@@ -188,6 +286,35 @@
         "min": 1,
         "max": "1",
         "mustSupport": true
+      },
+      {
+        "id": "Organization.contact:head.extension",
+        "path": "Organization.contact.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Organization.contact:head.extension:headRole",
+        "path": "Organization.contact.extension",
+        "sliceName": "headRole",
+        "short": "Head role",
+        "definition": "Official role of the natural person in charge of the biobank: typically principal investigator or director",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.bbmri.de/StructureDefinition/ContactRole"
+            ]
+          }
+        ]
       },
       {
         "id": "Organization.contact:head.purpose",

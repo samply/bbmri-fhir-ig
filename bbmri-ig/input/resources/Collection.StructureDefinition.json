@@ -12,6 +12,19 @@
   "differential": {
     "element": [
       {
+        "id": "Organization",
+        "path": "Organization",
+        "constraint": [
+          {
+            "key": "rd-card",
+            "severity": "error",
+            "human": "If extension:idCard is present, there SHALL be at least one extension:collectionType where value is RD (Rare Disease).",
+            "expression": "extension.where(url = 'https://fhir.bbmri.de/StructureDefinition/IdCard').exists() implies extension.where(url='https://fhir.bbmri.de/StructureDefinition/CollectionType').where(value.coding.where(code = 'RD').where(system='https://fhir.bbmri.de/CodeSystem/CollectionType').exists()).exists()",
+            "source": "Organization"
+          }
+        ]
+      },
+      {
         "id": "Organization.extension",
         "path": "Organization.extension",
         "slicing": {
@@ -39,6 +52,36 @@
           }
         ],
         "mustSupport": true
+      },
+      {
+        "id": "Organization.extension:bioresourceReference",
+        "path": "Organization.extension",
+        "sliceName": "bioresourceReference",
+        "short": "Bioresource reference",
+        "definition": "Reference to be cited when the collection is used for research",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.bbmri.de/StructureDefinition/BioresourceReference"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Organization.extension:parentCollection",
+        "path": "Organization.extension",
+        "sliceName": "parentCollection",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.bbmri.de/StructureDefinition/ParentCollection"
+            ]
+          }
+        ]
       },
       {
         "id": "Organization.extension:collectionType",
@@ -69,6 +112,73 @@
           }
         ],
         "mustSupport": true
+      },
+      {
+        "id": "Organization.extension:quality",
+        "path": "Organization.extension",
+        "sliceName": "quality",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.bbmri.de/StructureDefinition/QualityStandard"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Organization.extension:idCard",
+        "path": "Organization.extension",
+        "sliceName": "idCard",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.bbmri.de/StructureDefinition/IdCard"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Organization.extension:accessPolicy",
+        "path": "Organization.extension",
+        "sliceName": "accessPolicy",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.bbmri.de/StructureDefinition/AccessPolicy"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Organization.extension:collaboration",
+        "path": "Organization.extension",
+        "sliceName": "collaboration",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.bbmri.de/StructureDefinition/Collaboration"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Organization.extension:resourceManagement",
+        "path": "Organization.extension",
+        "sliceName": "resourceManagement",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.bbmri.de/StructureDefinition/ResourceManagement"
+            ]
+          }
+        ]
       },
       {
         "id": "Organization.identifier",
@@ -106,7 +216,8 @@
             "key": "bbmri-id-local",
             "severity": "warning",
             "human": "Shall contain only the local collection id, should only consist of roman letters and numbers.",
-            "expression": "matches('^([a-zA-Z\\\\d])+$')"
+            "expression": "matches('^([a-zA-Z\\\\d])+$')",
+            "source": "Organization"
           }
         ],
         "mustSupport": true
@@ -127,6 +238,32 @@
         "id": "Organization.telecom",
         "path": "Organization.telecom",
         "max": "0"
+      },
+      {
+        "id": "Organization.address.extension",
+        "path": "Organization.address.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Organization.address.extension:geolocation",
+        "path": "Organization.address.extension",
+        "sliceName": "geolocation",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/geolocation"
+            ]
+          }
+        ]
       },
       {
         "id": "Organization.partOf",
@@ -167,6 +304,35 @@
         "sliceName": "head",
         "max": "1",
         "mustSupport": true
+      },
+      {
+        "id": "Organization.contact:head.extension",
+        "path": "Organization.contact.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Organization.contact:head.extension:headRole",
+        "path": "Organization.contact.extension",
+        "sliceName": "headRole",
+        "short": "Head role",
+        "definition": "Official role of the natural person in charge of the collection: typically principal investigator or director",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.bbmri.de/StructureDefinition/ContactRole"
+            ]
+          }
+        ]
       },
       {
         "id": "Organization.contact:head.purpose",

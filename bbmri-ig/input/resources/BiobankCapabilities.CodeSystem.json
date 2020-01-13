@@ -1,0 +1,55 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "BiobankCapabilities",
+  "url": "https://fhir.bbmri.de/CodeSystem/BiobankCapabilities",
+  "name": "BiobankCapabilities",
+  "title": "Biobank Capabilities",
+  "status": "draft",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "biomaterial-storage",
+      "display": "Biological material storage"
+    },
+    {
+      "code": "cell-culture",
+      "display": "Cell culture"
+    },
+    {
+      "code": "data-analytics",
+      "display": "Data analytics"
+    },
+    {
+      "code": "data-storage",
+      "display": "Data Storage"
+    },
+    {
+      "code": "digital-imaging",
+      "display": "Digital imaging"
+    },
+	{
+      "code": "immunohistochemistry-scoring",
+      "display": "Immunohistochemistry scoring"
+    },
+	{
+      "code": "immunohistochemistry-staining",
+      "display": "Immunohistochemistry staining"
+    },
+    {
+      "code": "nucleic-acid-extraction",
+      "display": "Nucleic acid extraction"
+    },
+    {
+      "code": "pathology-archive-access",
+      "display": "Access to the full pathology archive"
+    },
+	{
+      "code": "recontact",
+      "display": "Ability to recontact"
+    },
+    {
+      "code": "tma-creation",
+      "display": "Tissue micro array creation"
+    }
+  ]
+}

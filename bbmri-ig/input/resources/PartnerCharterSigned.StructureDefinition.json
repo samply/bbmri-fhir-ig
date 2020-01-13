@@ -1,0 +1,49 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://fhir.bbmri.de/StructureDefinition/PartnerCharterSigned",
+  "name": "PartnerCharterSigned",
+  "status": "draft",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Organization"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Partner charter signed",
+        "definition": "Indiciation if the biobank has signed the BBMRI-ERIC partner charter, either as a direct bilateral agreement or through a wider agreement such as a National Node partner charter or consortium agreement"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://fhir.bbmri.de/StructureDefinition/PartnerCharterSigned"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      }
+    ]
+  }
+}

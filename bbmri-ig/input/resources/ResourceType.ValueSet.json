@@ -1,0 +1,15 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ResourceType",
+  "url": "https://fhir.bbmri.de/ValueSet/ResourceType",
+  "name": "ResourceType",
+  "title": "Resource Type",
+  "status": "draft",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.bbmri.de/CodeSystem/ResourceType"
+      }
+    ]
+  }
+}

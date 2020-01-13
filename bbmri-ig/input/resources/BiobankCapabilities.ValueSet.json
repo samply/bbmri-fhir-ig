@@ -1,0 +1,15 @@
+{
+  "resourceType": "ValueSet",
+  "id": "BiobankCapabilities",
+  "url": "https://fhir.bbmri.de/ValueSet/BiobankCapabilities",
+  "name": "BiobankCapabilities",
+  "title": "Biobank Capabilities",
+  "status": "draft",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.bbmri.de/CodeSystem/BiobankCapabilities"
+      }
+    ]
+  }
+}

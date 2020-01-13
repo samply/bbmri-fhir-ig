@@ -31,7 +31,8 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://fhir.bbmri.de/StructureDefinition/Biobank"
+              "https://fhir.bbmri.de/StructureDefinition/Biobank",
+              "https://fhir.bbmri.de/StructureDefinition/Collection"
             ]
           }
         ],
