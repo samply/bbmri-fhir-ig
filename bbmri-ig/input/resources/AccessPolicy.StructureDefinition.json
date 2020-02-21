@@ -20,7 +20,7 @@
     }
   ],
   "contextInvariant": [
-    "extension.where(url = %extension.url).extension(url=\"resource\").value.coding.isDistinct()"
+    "extension.where(url = %extension.url).where(url=resource).value.coding.isDistinct()"
   ],
   "type": "Extension",
   "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
