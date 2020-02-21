@@ -235,11 +235,6 @@
         "mustSupport": true
       },
       {
-        "id": "Organization.telecom",
-        "path": "Organization.telecom",
-        "max": "0"
-      },
-      {
         "id": "Organization.address.extension",
         "path": "Organization.address.extension",
         "slicing": {
