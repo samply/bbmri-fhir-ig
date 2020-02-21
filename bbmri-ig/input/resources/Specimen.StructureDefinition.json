@@ -53,6 +53,28 @@
         "mustSupport": true
       },
       {
+        "id": "Specimen.extension:diagnosis.value[x].coding",
+        "path": "Specimen.extension.value[x].coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            },
+            {
+              "type": "value",
+              "path": "version"
+            },
+            {
+              "type": "value",
+              "path": "$this"
+            }
+          ],
+          "rules": "closed"
+        },
+        "min": 1
+      },
+      {
         "id": "Specimen.extension:custodian",
         "path": "Specimen.extension",
         "sliceName": "custodian",
@@ -90,29 +112,9 @@
         "mustSupport": true
       },
       {
-        "id": "Specimen.subject.identifier",
-        "path": "Specimen.subject.identifier",
-        "max": "0"
-      },
-      {
-        "id": "Specimen.subject.display",
-        "path": "Specimen.subject.display",
-        "max": "0"
-      },
-      {
-        "id": "Specimen.request",
-        "path": "Specimen.request",
-        "max": "0"
-      },
-      {
         "id": "Specimen.collection",
         "path": "Specimen.collection",
         "mustSupport": true
-      },
-      {
-        "id": "Specimen.collection.collector",
-        "path": "Specimen.collection.collector",
-        "max": "0"
       },
       {
         "id": "Specimen.collection.collected[x]",
@@ -123,16 +125,6 @@
           }
         ],
         "mustSupport": true
-      },
-      {
-        "id": "Specimen.collection.quantity",
-        "path": "Specimen.collection.quantity",
-        "max": "0"
-      },
-      {
-        "id": "Specimen.collection.method",
-        "path": "Specimen.collection.method",
-        "max": "0"
       },
       {
         "id": "Specimen.collection.bodySite",
