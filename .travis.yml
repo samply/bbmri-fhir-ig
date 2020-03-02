@@ -16,5 +16,5 @@ deploy:
   api_key: $GITHUB_TOKEN
   file: bbmri-ig/output/validator-de.bbmri.fhir.pack
   skip_cleanup: true
-on:
+  on:
     tags: true
