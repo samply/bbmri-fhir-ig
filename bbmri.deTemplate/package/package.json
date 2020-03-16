@@ -1,0 +1,9 @@
+{
+  "name":"de.bbmri.template",
+  "version": "0.0.1",
+  "type": "fhir.template",
+  "base": "fhir.base.template",
+   "dependencies":{
+      "fhir.base.template": "current"
+   }
+}
