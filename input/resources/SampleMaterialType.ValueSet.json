@@ -4,7 +4,7 @@
   "url": "https://fhir.bbmri.de/ValueSet/SampleMaterialType",
   "name": "SampleMaterialType",
   "title": "Sample Material Type",
-  "status": "draft",
+  "status": "active",
   "compose": {
     "include": [
       {

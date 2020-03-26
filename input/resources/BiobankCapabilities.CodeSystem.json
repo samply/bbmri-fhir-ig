@@ -4,7 +4,7 @@
   "url": "https://fhir.bbmri.de/CodeSystem/BiobankCapabilities",
   "name": "BiobankCapabilities",
   "title": "Biobank Capabilities",
-  "status": "draft",
+  "status": "active",
   "content": "complete",
   "concept": [
     {

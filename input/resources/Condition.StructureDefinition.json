@@ -2,7 +2,8 @@
   "resourceType": "StructureDefinition",
   "url": "https://fhir.bbmri.de/StructureDefinition/Condition",
   "name": "Condition",
-  "status": "draft",
+  "title": "Condition",
+  "status": "active",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -53,7 +54,7 @@
         "id": "Condition.code.coding:icd-9.system",
         "path": "Condition.code.coding.system",
         "min": 1,
-        "fixedUri": "http://hl7.org/fhir/sid/icd9"
+        "fixedUri": "http://hl7.org/fhir/sid/icd-9"
       },
       {
         "id": "Condition.code.coding:icd-10-gm",

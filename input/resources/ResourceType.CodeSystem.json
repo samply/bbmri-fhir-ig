@@ -4,7 +4,7 @@
   "url": "https://fhir.bbmri.de/CodeSystem/ResourceType",
   "name": "ResourceType",
   "title": "Resource Type",
-  "status": "draft",
+  "status": "active",
   "description": "Types of resources that may be governed by a biobank or its collections",
   "purpose": "This CodeSystem provides the different types of resources distinguished by the BBMRI-ERIC Directory",
   "content": "complete",

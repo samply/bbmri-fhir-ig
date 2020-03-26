@@ -2,7 +2,8 @@
   "resourceType": "StructureDefinition",
   "url": "https://fhir.bbmri.de/StructureDefinition/ContactRole",
   "name": "ContactRole",
-  "status": "draft",
+  "title": "Contact Role",
+  "status": "active",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -45,11 +46,11 @@
         ],
         "example": [
           {
-            "label": "Director",
+            "label": "Director Role",
             "valueString": "Director"
           },
           {
-            "label": "Principal Investigator",
+            "label": "Principal Investigator Role",
             "valueString": "Principal Investigator"
           }
         ]

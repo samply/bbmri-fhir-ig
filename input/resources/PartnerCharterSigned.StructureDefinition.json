@@ -2,7 +2,8 @@
   "resourceType": "StructureDefinition",
   "url": "https://fhir.bbmri.de/StructureDefinition/PartnerCharterSigned",
   "name": "PartnerCharterSigned",
-  "status": "draft",
+  "title": "Partner Charter Signed",
+  "status": "active",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

@@ -2,7 +2,8 @@
   "resourceType": "StructureDefinition",
   "url": "https://fhir.bbmri.de/StructureDefinition/ITSupport",
   "name": "ITSupport",
-  "status": "draft",
+  "title": "IT Support",
+  "status": "active",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

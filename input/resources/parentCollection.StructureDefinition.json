@@ -2,7 +2,8 @@
   "resourceType": "StructureDefinition",
   "url": "https://fhir.bbmri.de/StructureDefinition/ParentCollection",
   "name": "ParentCollection",
-  "status": "draft",
+  "title": "Parent Collection",
+  "status": "active",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

@@ -4,7 +4,7 @@
   "url": "https://fhir.bbmri.de/ValueSet/ResourceType",
   "name": "ResourceType",
   "title": "Resource Type",
-  "status": "draft",
+  "status": "active",
   "compose": {
     "include": [
       {

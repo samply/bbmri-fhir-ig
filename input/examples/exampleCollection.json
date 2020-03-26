@@ -8,7 +8,7 @@
    },
    "text":{
       "status":"generated",
-      "div":"<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: exampleCollection</p><p><b>meta</b>: </p><p><b>identifier</b>: bbmri-eric:ID:de_12345:collection:vampir</p><p><b>name</b>: Venous and arterial blood from misc patients internal reserve </p><p><b>alias</b>: VAMPIR</p><p><b>partOf</b>: <a href=\"Organization/exampleBiobank\">Organization/exampleBiobank</a></p></div>"
+      "div":"<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: exampleCollection</p><p><b>meta</b>: </p><p><b>identifier</b>: bbmri-eric:ID:DE_12345:collection:vampir</p><p><b>name</b>: Venous and arterial blood from misc patients internal reserve </p><p><b>alias</b>: VAMPIR</p><p><b>partOf</b>: <a href=\"Organization/exampleBiobank\">Organization/exampleBiobank</a></p></div>"
    },
    "extension":[
       {
@@ -96,7 +96,7 @@
    "identifier":[
       {
          "system":"http://www.bbmri-eric.eu/",
-         "value":"bbmri-eric:ID:de_12345:collection:vampir"
+         "value":"bbmri-eric:ID:DE_12345:collection:vampir"
       }
    ],
    "name":"Venous and arterial blood from misc patients internal reserve",

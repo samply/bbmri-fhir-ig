@@ -2,7 +2,8 @@
   "resourceType": "StructureDefinition",
   "url": "https://fhir.bbmri.de/StructureDefinition/AccessPolicy",
   "name": "AccessPolicy",
-  "status": "draft",
+  "title": "Access Policy",
+  "status": "active",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

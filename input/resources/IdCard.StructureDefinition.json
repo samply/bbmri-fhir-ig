@@ -2,7 +2,8 @@
   "resourceType": "StructureDefinition",
   "url": "https://fhir.bbmri.de/StructureDefinition/IdCard",
   "name": "IdCard",
-  "status": "draft",
+  "title": "ID Card",
+  "status": "active",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -49,8 +50,7 @@
             "key": "url-1",
             "severity": "error",
             "human": "SHALL begin with https://catalogue.rd-connect.eu/",
-            "expression": "startsWith('https://catalogue.rd-connect.eu/')",
-            "source": "Extension"
+            "expression": "startsWith('https://catalogue.rd-connect.eu/')"
           }
         ]
       }

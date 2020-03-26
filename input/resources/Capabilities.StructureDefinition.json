@@ -2,7 +2,8 @@
   "resourceType": "StructureDefinition",
   "url": "https://fhir.bbmri.de/StructureDefinition/Capabilities",
   "name": "Capabilities",
-  "status": "draft",
+  "title": "Capabilities",
+  "status": "active",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
