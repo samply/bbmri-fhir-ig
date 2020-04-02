@@ -1,6 +1,6 @@
 {
   "version": "0.1.0-beta",
   "fhirVersion": "[4.0.1]",
-  "date": "20200402150208",
+  "date": "20200402153100",
   "name": "de.bbmri.fhir"
 }
