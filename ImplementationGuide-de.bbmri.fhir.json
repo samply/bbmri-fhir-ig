@@ -11,7 +11,7 @@
   "title": "BBMRI.de Implementation Guide",
   "status": "draft",
   "experimental": true,
-  "date": "2020-04-02T14:50:58+00:00",
+  "date": "2020-04-02T15:02:34+00:00",
   "publisher": "BBMRI.de",
   "contact": [
     {
@@ -512,7 +512,8 @@
         ],
         "reference": {
           "reference": "StructureDefinition/Biobank"
-        }
+        },
+        "name": "Biobank"
       },
       {
         "extension": [

@@ -3,9 +3,9 @@
 
 err = 30, warn = 20, info = 2
 IG Publisher Version: v1.0.77-SNAPSHOT
-Generated Thu Apr 02 14:52:01 UTC 2020. FHIR version 4.0.1 for de.bbmri.fhir#0.1.0-beta (canonical = https://fhir.bbmri.de)
+Generated Thu Apr 02 15:03:39 UTC 2020. FHIR version 4.0.1 for de.bbmri.fhir#0.1.0-beta (canonical = https://fhir.bbmri.de)
 
- Build Errors : 48 / 47
+ Build Errors : 47 / 47
  /home/travis/build/samply/bbmri-fhir-ig/input/de.bbmri.fhir : 0 / 0
  /home/travis/build/samply/bbmri-fhir-ig/input/examples/exampleBiobank : 0 / 0
  /home/travis/build/samply/bbmri-fhir-ig/input/examples/exampleBmi : 0 / 0
@@ -80,7 +80,6 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Organization/exampleCollectionRD.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/0.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/0-bmi.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/Biobank.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/Biobank.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/BodyWeight.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/BodyWeight.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.

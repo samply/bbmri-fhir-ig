@@ -17,7 +17,7 @@
   fhir:CodeSystem.name [ fhir:value "ContactType"];
   fhir:CodeSystem.title [ fhir:value "Contact Type"];
   fhir:CodeSystem.status [ fhir:value "draft"];
-  fhir:CodeSystem.date [ fhir:value "2020-04-02T14:50:58+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2020-04-02T15:02:34+00:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "BBMRI.de"];
   fhir:CodeSystem.contact [
      fhir:index 0;

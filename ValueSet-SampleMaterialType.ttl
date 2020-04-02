@@ -17,7 +17,7 @@
   fhir:ValueSet.name [ fhir:value "SampleMaterialType"];
   fhir:ValueSet.title [ fhir:value "Sample Material Type"];
   fhir:ValueSet.status [ fhir:value "draft"];
-  fhir:ValueSet.date [ fhir:value "2020-04-02T14:50:58+00:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2020-04-02T15:02:34+00:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "BBMRI.de"];
   fhir:ValueSet.contact [
      fhir:index 0;
