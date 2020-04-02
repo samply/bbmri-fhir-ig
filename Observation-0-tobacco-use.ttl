@@ -1,0 +1,52 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.bbmri.de/Observation/0-tobacco-use> a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "0-tobacco-use"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://fhir.bbmri.de/StructureDefinition/TobaccoUse";
+       fhir:index 0;
+       fhir:link <https://fhir.bbmri.de/StructureDefinition/TobaccoUse>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 0-tobacco-use</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>code</b>: Tobacco smoking status <span style=\"background: LightGoldenRodYellow\">(Details : {LOINC code '72166-2' = 'Tobacco smoking status)</span></p><p><b>subject</b>: <a href=\"Patient-0.html\">Generated Summary: id: 0; gender: male; birthDate: 1989-11-18; deceased: Jan 27, 2009, 12:00:00 AM</a></p><p><b>effective</b>: Jun 17, 2005, 12:00:00 AM</p><p><b>value</b>: Current some day smoker <span style=\"background: LightGoldenRodYellow\">(Details : {LOINC code 'LA18977-1' = 'Current some day smoker)</span></p></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:72166-2;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "72166-2" ]
+     ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <https://fhir.bbmri.de/Patient/0>;
+     fhir:Reference.reference [ fhir:value "Patient/0" ]
+  ];
+  fhir:Observation.effectiveDateTime [ fhir:value "2005-06-17"^^xsd:date];
+  fhir:Observation.valueCodeableConcept [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:LA18977-1;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "LA18977-1" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir.bbmri.de/Observation/0-tobacco-use.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

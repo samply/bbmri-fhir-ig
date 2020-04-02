@@ -1,0 +1,71 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "QualityStandard",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Quality Standard</h2><p>This code system https://fhir.bbmri.de/CodeSystem/QualityStandard defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">iso-15189<a name=\"QualityStandard-iso-15189\"> </a></td><td>ISO-15189</td><td/></tr><tr><td style=\"white-space:nowrap\">iso-15190<a name=\"QualityStandard-iso-15190\"> </a></td><td>ISO-15190</td><td/></tr><tr><td style=\"white-space:nowrap\">iso-17025<a name=\"QualityStandard-iso-17025\"> </a></td><td>ISO-17025</td><td/></tr><tr><td style=\"white-space:nowrap\">iso-9001<a name=\"QualityStandard-iso-9001\"> </a></td><td>ISO-9001</td><td/></tr><tr><td style=\"white-space:nowrap\">nfs96-900<a name=\"QualityStandard-nfs96-900\"> </a></td><td>NFS96-900</td><td/></tr><tr><td style=\"white-space:nowrap\">oecd-guidelines<a name=\"QualityStandard-oecd-guidelines\"> </a></td><td>OECD Guidelines</td><td/></tr><tr><td style=\"white-space:nowrap\">others<a name=\"QualityStandard-others\"> </a></td><td>Others</td><td/></tr></table></div>"
+  },
+  "url": "https://fhir.bbmri.de/CodeSystem/QualityStandard",
+  "version": "0.1.0-beta",
+  "name": "QualityStandard",
+  "title": "Quality Standard",
+  "status": "draft",
+  "date": "2020-04-02T14:50:58+00:00",
+  "publisher": "BBMRI.de",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.bbmri.de"
+        },
+        {
+          "system": "email",
+          "value": "feedback@germanbiobanknode.de"
+        }
+      ]
+    }
+  ],
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
+  "caseSensitive": false,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "iso-15189",
+      "display": "ISO-15189"
+    },
+    {
+      "code": "iso-15190",
+      "display": "ISO-15190"
+    },
+    {
+      "code": "iso-17025",
+      "display": "ISO-17025"
+    },
+    {
+      "code": "iso-9001",
+      "display": "ISO-9001"
+    },
+    {
+      "code": "nfs96-900",
+      "display": "NFS96-900"
+    },
+    {
+      "code": "oecd-guidelines",
+      "display": "OECD Guidelines"
+    },
+    {
+      "code": "others",
+      "display": "Others"
+    }
+  ]
+}

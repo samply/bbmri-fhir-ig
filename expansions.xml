@@ -1,0 +1,1787 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="d049f174-a1a5-461d-b7c5-c351ab46da4b"/>
+  <meta>
+    <lastUpdated value="2020-04-02T14:50:58.019+00:00"/>
+  </meta>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="https://fhir.bbmri.de/ValueSet/SampleMaterialType"/>
+    <resource>
+      <ValueSet>
+        <id value="SampleMaterialType"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 33 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px"/>Expansion based on https://fhir.bbmri.de/CodeSystem/SampleMaterialType version 0.1.0-beta
+            <p>All codes from system 
+              <a href="CodeSystem-SampleMaterialType.html">
+                <code>https://fhir.bbmri.de/CodeSystem/SampleMaterialType</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td>
+                  <b>Lvl</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-whole-blood"> </a>0
+                </td>
+                <td style="white-space:nowrap">
+                  <a href="CodeSystem-SampleMaterialType.html#SampleMaterialType-whole-blood">whole-blood</a>
+                </td>
+                <td>Whole blood</td>
+                <td/>
+              </tr>
+              <tr>
+                <td>
+                  <a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-bone-marrow"> </a>0
+                </td>
+                <td style="white-space:nowrap">
+                  <a href="CodeSystem-SampleMaterialType.html#SampleMaterialType-bone-marrow">bone-marrow</a>
+                </td>
+                <td>Bone marrow</td>
+                <td/>
+              </tr>
+              <tr>
+                <td>
+                  <a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-buffy-coat"> </a>0
+                </td>
+                <td style="white-space:nowrap">
+                  <a href="CodeSystem-SampleMaterialType.html#SampleMaterialType-buffy-coat">buffy-coat</a>
+                </td>
+                <td>Buffy-Coat</td>
+                <td/>
+              </tr>
+              <tr>
+                <td>
+                  <a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-dried-whole-blood"> </a>0
+                </td>
+                <td style="white-space:nowrap">
+                  <a href="CodeSystem-SampleMaterialType.html#SampleMaterialType-dried-whole-blood">dried-whole-blood</a>
+                </td>
+                <td>Dried whole blood</td>
+                <td/>
+              </tr>
+              <tr>
+                <td>
+                  <a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-peripheral-blood-cells-vital"> </a>0
+                </td>
+                <td style="white-space:nowrap">
+                  <a href="CodeSystem-SampleMaterialType.html#SampleMaterialType-peripheral-blood-cells-vital">peripheral-blood-cells-vital</a>
+                </td>
+                <td>Peripheral blood mononuclear cells (PBMCs, viable)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td>
+                  <a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-blood-plasma"> </a>0
+                </td>
+                <td style="white-space:nowrap">
+                  <a href="CodeSystem-SampleMaterialType.html#SampleMaterialType-blood-plasma">blood-plasma</a>
+                </td>
+                <td>Plasma</td>
+                <td/>
+              </tr>
+              <tr>
+                <td>
+                  <a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-plasma-edta"> </a>1
+                </td>
+                <td style="white-space:nowrap">&#xA0;&#xA0;
+                  <a href="CodeSystem-SampleMaterialType.html#SampleMaterialType-plasma-edta">plasma-edta</a>
+                </td>
+                <td>Plasma, EDTA</td>
+                <td/>
+              </tr>
+              <tr>
+                <td>
+                  <a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-plasma-citrat"> </a>1
+                </td>
+                <td style="white-space:nowrap">&#xA0;&#xA0;
+                  <a href="CodeSystem-SampleMaterialType.html#SampleMaterialType-plasma-citrat">plasma-citrat</a>
+                </td>
+                <td>Plasma, Citrat</td>
+                <td/>
+              </tr>
+              <tr>
+                <td>
+                  <a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-plasma-heparin"> </a>1
+                </td>
+                <td style="white-space:nowrap">&#xA0;&#xA0;
+                  <a href="CodeSystem-SampleMaterialType.html#SampleMaterialType-plasma-heparin">plasma-heparin</a>
+                </td>
+                <td>Plasma, Heparin</td>
+                <td/>
+              </tr>
+              <tr>
+                <td>
+                  <a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-plasma-cell-free"> </a>1
+                </td>
+                <td style="white-space:nowrap">&#xA0;&#xA0;
+                  <a href="CodeSystem-SampleMaterialType.html#SampleMaterialType-plasma-cell-free">plasma-cell-free</a>
+                </td>
+                <td>Plasma, cell free</td>
+                <td/>
+              </tr>
+              <tr>
+                <td>
+                  <a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-plasma-other"> </a>1
+                </td>
+                <td style="white-space:nowrap">&#xA0;&#xA0;
+                  <a href="CodeSystem-SampleMaterialType.html#SampleMaterialType-plasma-other">plasma-other</a>
+                </td>
+                <td>Plasma, other</td>
+                <td/>
+              </tr>
+              <tr>
+                <td>
+                  <a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-blood-serum"> </a>0
+                </td>
+                <td style="white-space:nowrap">
+                  <a href="CodeSystem-SampleMaterialType.html#SampleMaterialType-blood-serum">blood-serum</a>
+                </td>
+                <td>Serum</td>
+                <td/>
+              </tr>
+              <tr>
+                <td>
+                  <a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-ascites"> </a>0
+                </td>
+                <td style="white-space:nowrap">
+                  <a href="CodeSystem-SampleMaterialType.html#SampleMaterialType-ascites">ascites</a>
+                </td>
+                <td>Ascites</td>
+                <td/>
+              </tr>
+              <tr>
+                <td>
+                  <a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-csf-liquor"> </a>0
+                </td>
+                <td style="white-space:nowrap">
+                  <a href="CodeSystem-SampleMaterialType.html#SampleMaterialType-csf-liquor">csf-liquor</a>
+                </td>
+                <td>CSF/Liquor</td>
+                <td/>
+              </tr>
+              <tr>
+                <td>
+                  <a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-saliva"> </a>0
+                </td>
+                <td style="white-space:nowrap">
+                  <a href="CodeSystem-SampleMaterialType.html#SampleMaterialType-saliva">saliva</a>
+                </td>
+                <td>Saliva</td>
+                <td/>
+              </tr>
+              <tr>
+                <td>
+                  <a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-stool-faeces"> </a>0
+                </td>
+                <td style="white-space:nowrap">
+                  <a href="CodeSystem-SampleMaterialType.html#SampleMaterialType-stool-faeces">stool-faeces</a>
+                </td>
+                <td>Stool/Faeces</td>
+                <td/>
+              </tr>
+              <tr>
+                <td>
+                  <a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-urine"> </a>0
+                </td>
+                <td style="white-space:nowrap">
+                  <a href="CodeSystem-SampleMaterialType.html#SampleMaterialType-urine">urine</a>
+                </td>
+                <td>Urine</td>
+                <td/>
+              </tr>
+              <tr>
+                <td>
+                  <a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-swab"> </a>0
+                </td>
+                <td style="white-space:nowrap">
+                  <a href="CodeSystem-SampleMaterialType.html#SampleMaterialType-swab">swab</a>
+                </td>
+                <td>Swab</td>
+                <td/>
+              </tr>
+              <tr>
+                <td>
+                  <a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-liquid-other"> </a>0
+                </td>
+                <td style="white-space:nowrap">
+                  <a href="CodeSystem-SampleMaterialType.html#SampleMaterialType-liquid-other">liquid-other</a>
+                </td>
+                <td>Other liquid biosample/storage</td>
+                <td/>
+              </tr>
+              <tr>
+                <td>
+                  <a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-tissue-ffpe"> </a>0
+                </td>
+                <td style="white-space:nowrap">
+                  <a href="CodeSystem-SampleMaterialType.html#SampleMaterialType-tissue-ffpe">tissue-ffpe</a>
+                </td>
+                <td>Tissue FFPE</td>
+                <td/>
+              </tr>
+              <tr>
+                <td>
+                  <a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-tumor-tissue-ffpe"> </a>1
+                </td>
+                <td style="white-space:nowrap">&#xA0;&#xA0;
+                  <a href="CodeSystem-SampleMaterialType.html#SampleMaterialType-tumor-tissue-ffpe">tumor-tissue-ffpe</a>
+                </td>
+                <td>Tumor tissue (FFPE)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td>
+                  <a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-normal-tissue-ffpe"> </a>1
+                </td>
+                <td style="white-space:nowrap">&#xA0;&#xA0;
+                  <a href="CodeSystem-SampleMaterialType.html#SampleMaterialType-normal-tissue-ffpe">normal-tissue-ffpe</a>
+                </td>
+                <td>Normal tissue (FFPE)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td>
+                  <a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-other-tissue-ffpe"> </a>1
+                </td>
+                <td style="white-space:nowrap">&#xA0;&#xA0;
+                  <a href="CodeSystem-SampleMaterialType.html#SampleMaterialType-other-tissue-ffpe">other-tissue-ffpe</a>
+                </td>
+                <td>Other tissue (FFPE)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td>
+                  <a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-tissue-frozen"> </a>0
+                </td>
+                <td style="white-space:nowrap">
+                  <a href="CodeSystem-SampleMaterialType.html#SampleMaterialType-tissue-frozen">tissue-frozen</a>
+                </td>
+                <td>Tissue frozen</td>
+                <td/>
+              </tr>
+              <tr>
+                <td>
+                  <a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-tumor-tissue-frozen"> </a>1
+                </td>
+                <td style="white-space:nowrap">&#xA0;&#xA0;
+                  <a href="CodeSystem-SampleMaterialType.html#SampleMaterialType-tumor-tissue-frozen">tumor-tissue-frozen</a>
+                </td>
+                <td>Tumor tissue (frozen)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td>
+                  <a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-normal-tissue-frozen"> </a>1
+                </td>
+                <td style="white-space:nowrap">&#xA0;&#xA0;
+                  <a href="CodeSystem-SampleMaterialType.html#SampleMaterialType-normal-tissue-frozen">normal-tissue-frozen</a>
+                </td>
+                <td>Normal tissue (frozen)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td>
+                  <a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-other-tissue-frozen"> </a>1
+                </td>
+                <td style="white-space:nowrap">&#xA0;&#xA0;
+                  <a href="CodeSystem-SampleMaterialType.html#SampleMaterialType-other-tissue-frozen">other-tissue-frozen</a>
+                </td>
+                <td>Other tissue (frozen)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td>
+                  <a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-tissue-other"> </a>0
+                </td>
+                <td style="white-space:nowrap">
+                  <a href="CodeSystem-SampleMaterialType.html#SampleMaterialType-tissue-other">tissue-other</a>
+                </td>
+                <td>Other tissue storage</td>
+                <td/>
+              </tr>
+              <tr>
+                <td>
+                  <a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-dna"> </a>0
+                </td>
+                <td style="white-space:nowrap">
+                  <a href="CodeSystem-SampleMaterialType.html#SampleMaterialType-dna">dna</a>
+                </td>
+                <td>DNA</td>
+                <td/>
+              </tr>
+              <tr>
+                <td>
+                  <a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-cf-dna"> </a>1
+                </td>
+                <td style="white-space:nowrap">&#xA0;&#xA0;
+                  <a href="CodeSystem-SampleMaterialType.html#SampleMaterialType-cf-dna">cf-dna</a>
+                </td>
+                <td>cfDNA</td>
+                <td/>
+              </tr>
+              <tr>
+                <td>
+                  <a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-g-dna"> </a>1
+                </td>
+                <td style="white-space:nowrap">&#xA0;&#xA0;
+                  <a href="CodeSystem-SampleMaterialType.html#SampleMaterialType-g-dna">g-dna</a>
+                </td>
+                <td>gDNA</td>
+                <td/>
+              </tr>
+              <tr>
+                <td>
+                  <a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-rna"> </a>0
+                </td>
+                <td style="white-space:nowrap">
+                  <a href="CodeSystem-SampleMaterialType.html#SampleMaterialType-rna">rna</a>
+                </td>
+                <td>RNA</td>
+                <td/>
+              </tr>
+              <tr>
+                <td>
+                  <a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-derivative-other"> </a>0
+                </td>
+                <td style="white-space:nowrap">
+                  <a href="CodeSystem-SampleMaterialType.html#SampleMaterialType-derivative-other">derivative-other</a>
+                </td>
+                <td>Other derivative</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://fhir.bbmri.de/ValueSet/SampleMaterialType"/>
+        <version value="0.1.0-beta"/>
+        <name value="SampleMaterialType"/>
+        <title value="Sample Material Type"/>
+        <status value="draft"/>
+        <date value="2020-04-02T14:50:58+00:00"/>
+        <publisher value="BBMRI.de"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="https://www.bbmri.de"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+            <value value="feedback@germanbiobanknode.de"/>
+          </telecom>
+        </contact>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:d3e4719d-d9d4-4eec-9da2-31e4ded8e3e4"/>
+          <timestamp value="2020-04-02T14:51:23+00:00"/>
+          <total value="33"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://fhir.bbmri.de/CodeSystem/SampleMaterialType|0.1.0-beta"/>
+          </parameter>
+          <contains>
+            <system value="https://fhir.bbmri.de/CodeSystem/SampleMaterialType"/>
+            <code value="whole-blood"/>
+            <display value="Whole blood"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.bbmri.de/CodeSystem/SampleMaterialType"/>
+            <code value="bone-marrow"/>
+            <display value="Bone marrow"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.bbmri.de/CodeSystem/SampleMaterialType"/>
+            <code value="buffy-coat"/>
+            <display value="Buffy-Coat"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.bbmri.de/CodeSystem/SampleMaterialType"/>
+            <code value="dried-whole-blood"/>
+            <display value="Dried whole blood"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.bbmri.de/CodeSystem/SampleMaterialType"/>
+            <code value="peripheral-blood-cells-vital"/>
+            <display value="Peripheral blood mononuclear cells (PBMCs, viable)"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.bbmri.de/CodeSystem/SampleMaterialType"/>
+            <code value="blood-plasma"/>
+            <display value="Plasma"/>
+            <contains>
+              <system value="https://fhir.bbmri.de/CodeSystem/SampleMaterialType"/>
+              <code value="plasma-edta"/>
+              <display value="Plasma, EDTA"/>
+            </contains>
+            <contains>
+              <system value="https://fhir.bbmri.de/CodeSystem/SampleMaterialType"/>
+              <code value="plasma-citrat"/>
+              <display value="Plasma, Citrat"/>
+            </contains>
+            <contains>
+              <system value="https://fhir.bbmri.de/CodeSystem/SampleMaterialType"/>
+              <code value="plasma-heparin"/>
+              <display value="Plasma, Heparin"/>
+            </contains>
+            <contains>
+              <system value="https://fhir.bbmri.de/CodeSystem/SampleMaterialType"/>
+              <code value="plasma-cell-free"/>
+              <display value="Plasma, cell free"/>
+            </contains>
+            <contains>
+              <system value="https://fhir.bbmri.de/CodeSystem/SampleMaterialType"/>
+              <code value="plasma-other"/>
+              <display value="Plasma, other"/>
+            </contains>
+          </contains>
+          <contains>
+            <system value="https://fhir.bbmri.de/CodeSystem/SampleMaterialType"/>
+            <code value="blood-serum"/>
+            <display value="Serum"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.bbmri.de/CodeSystem/SampleMaterialType"/>
+            <code value="ascites"/>
+            <display value="Ascites"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.bbmri.de/CodeSystem/SampleMaterialType"/>
+            <code value="csf-liquor"/>
+            <display value="CSF/Liquor"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.bbmri.de/CodeSystem/SampleMaterialType"/>
+            <code value="saliva"/>
+            <display value="Saliva"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.bbmri.de/CodeSystem/SampleMaterialType"/>
+            <code value="stool-faeces"/>
+            <display value="Stool/Faeces"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.bbmri.de/CodeSystem/SampleMaterialType"/>
+            <code value="urine"/>
+            <display value="Urine"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.bbmri.de/CodeSystem/SampleMaterialType"/>
+            <code value="swab"/>
+            <display value="Swab"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.bbmri.de/CodeSystem/SampleMaterialType"/>
+            <code value="liquid-other"/>
+            <display value="Other liquid biosample/storage"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.bbmri.de/CodeSystem/SampleMaterialType"/>
+            <code value="tissue-ffpe"/>
+            <display value="Tissue FFPE"/>
+            <contains>
+              <system value="https://fhir.bbmri.de/CodeSystem/SampleMaterialType"/>
+              <code value="tumor-tissue-ffpe"/>
+              <display value="Tumor tissue (FFPE)"/>
+            </contains>
+            <contains>
+              <system value="https://fhir.bbmri.de/CodeSystem/SampleMaterialType"/>
+              <code value="normal-tissue-ffpe"/>
+              <display value="Normal tissue (FFPE)"/>
+            </contains>
+            <contains>
+              <system value="https://fhir.bbmri.de/CodeSystem/SampleMaterialType"/>
+              <code value="other-tissue-ffpe"/>
+              <display value="Other tissue (FFPE)"/>
+            </contains>
+          </contains>
+          <contains>
+            <system value="https://fhir.bbmri.de/CodeSystem/SampleMaterialType"/>
+            <code value="tissue-frozen"/>
+            <display value="Tissue frozen"/>
+            <contains>
+              <system value="https://fhir.bbmri.de/CodeSystem/SampleMaterialType"/>
+              <code value="tumor-tissue-frozen"/>
+              <display value="Tumor tissue (frozen)"/>
+            </contains>
+            <contains>
+              <system value="https://fhir.bbmri.de/CodeSystem/SampleMaterialType"/>
+              <code value="normal-tissue-frozen"/>
+              <display value="Normal tissue (frozen)"/>
+            </contains>
+            <contains>
+              <system value="https://fhir.bbmri.de/CodeSystem/SampleMaterialType"/>
+              <code value="other-tissue-frozen"/>
+              <display value="Other tissue (frozen)"/>
+            </contains>
+          </contains>
+          <contains>
+            <system value="https://fhir.bbmri.de/CodeSystem/SampleMaterialType"/>
+            <code value="tissue-other"/>
+            <display value="Other tissue storage"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.bbmri.de/CodeSystem/SampleMaterialType"/>
+            <code value="dna"/>
+            <display value="DNA"/>
+            <contains>
+              <system value="https://fhir.bbmri.de/CodeSystem/SampleMaterialType"/>
+              <code value="cf-dna"/>
+              <display value="cfDNA"/>
+            </contains>
+            <contains>
+              <system value="https://fhir.bbmri.de/CodeSystem/SampleMaterialType"/>
+              <code value="g-dna"/>
+              <display value="gDNA"/>
+            </contains>
+          </contains>
+          <contains>
+            <system value="https://fhir.bbmri.de/CodeSystem/SampleMaterialType"/>
+            <code value="rna"/>
+            <display value="RNA"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.bbmri.de/CodeSystem/SampleMaterialType"/>
+            <code value="derivative-other"/>
+            <display value="Other derivative"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://fhir.bbmri.de/ValueSet/CollectionType"/>
+    <resource>
+      <ValueSet>
+        <id value="CollectionType"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 15 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px"/>Expansion based on https://fhir.bbmri.de/CodeSystem/CollectionType version 0.1.0-beta
+            <p>All codes from system 
+              <a href="CodeSystem-CollectionType.html">
+                <code>https://fhir.bbmri.de/CodeSystem/CollectionType</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.bbmri.de-CodeSystem-CollectionType-SAMPLE"> </a>
+                  <a href="CodeSystem-CollectionType.html#CollectionType-SAMPLE">SAMPLE</a>
+                </td>
+                <td>Sample collection</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.bbmri.de-CodeSystem-CollectionType-TWIN-STUDY"> </a>
+                  <a href="CodeSystem-CollectionType.html#CollectionType-TWIN_STUDY">TWIN_STUDY</a>
+                </td>
+                <td>Twin-study</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.bbmri.de-CodeSystem-CollectionType-RD"> </a>
+                  <a href="CodeSystem-CollectionType.html#CollectionType-RD">RD</a>
+                </td>
+                <td>Rare disease collection</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.bbmri.de-CodeSystem-CollectionType-NON-HUMAN"> </a>
+                  <a href="CodeSystem-CollectionType.html#CollectionType-NON_HUMAN">NON_HUMAN</a>
+                </td>
+                <td>Non-human</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.bbmri.de-CodeSystem-CollectionType-BIRTH-COHORT"> </a>
+                  <a href="CodeSystem-CollectionType.html#CollectionType-BIRTH_COHORT">BIRTH_COHORT</a>
+                </td>
+                <td>Birth cohort</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.bbmri.de-CodeSystem-CollectionType-CASE-CONTROL"> </a>
+                  <a href="CodeSystem-CollectionType.html#CollectionType-CASE_CONTROL">CASE_CONTROL</a>
+                </td>
+                <td>Case-Control</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.bbmri.de-CodeSystem-CollectionType-COHORT"> </a>
+                  <a href="CodeSystem-CollectionType.html#CollectionType-COHORT">COHORT</a>
+                </td>
+                <td>Cohort</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.bbmri.de-CodeSystem-CollectionType-CROSS-SECTIONAL"> </a>
+                  <a href="CodeSystem-CollectionType.html#CollectionType-CROSS_SECTIONAL">CROSS_SECTIONAL</a>
+                </td>
+                <td>Cross-Sectional</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.bbmri.de-CodeSystem-CollectionType-DISEASE-SPECIFIC"> </a>
+                  <a href="CodeSystem-CollectionType.html#CollectionType-DISEASE_SPECIFIC">DISEASE_SPECIFIC</a>
+                </td>
+                <td>Disease specific</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.bbmri.de-CodeSystem-CollectionType-HOSPITAL"> </a>
+                  <a href="CodeSystem-CollectionType.html#CollectionType-HOSPITAL">HOSPITAL</a>
+                </td>
+                <td>Hospital</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.bbmri.de-CodeSystem-CollectionType-IMAGE"> </a>
+                  <a href="CodeSystem-CollectionType.html#CollectionType-IMAGE">IMAGE</a>
+                </td>
+                <td>Image collection</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.bbmri.de-CodeSystem-CollectionType-LONGITUDINAL"> </a>
+                  <a href="CodeSystem-CollectionType.html#CollectionType-LONGITUDINAL">LONGITUDINAL</a>
+                </td>
+                <td>Longitudinal</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.bbmri.de-CodeSystem-CollectionType-OTHER"> </a>
+                  <a href="CodeSystem-CollectionType.html#CollectionType-OTHER">OTHER</a>
+                </td>
+                <td>other</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.bbmri.de-CodeSystem-CollectionType-POPULATION-BASED"> </a>
+                  <a href="CodeSystem-CollectionType.html#CollectionType-POPULATION_BASED">POPULATION_BASED</a>
+                </td>
+                <td>Population-based</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.bbmri.de-CodeSystem-CollectionType-QUALITY-CONTROL"> </a>
+                  <a href="CodeSystem-CollectionType.html#CollectionType-QUALITY_CONTROL">QUALITY_CONTROL</a>
+                </td>
+                <td>Quality control</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://fhir.bbmri.de/ValueSet/CollectionType"/>
+        <version value="0.1.0-beta"/>
+        <name value="CollectionType"/>
+        <title value="Collection Type"/>
+        <status value="draft"/>
+        <date value="2020-04-02T14:50:58+00:00"/>
+        <publisher value="BBMRI.de"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="https://www.bbmri.de"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+            <value value="feedback@germanbiobanknode.de"/>
+          </telecom>
+        </contact>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:8e2d2f60-6507-4ead-9b74-730a2f617348"/>
+          <timestamp value="2020-04-02T14:51:24+00:00"/>
+          <total value="15"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://fhir.bbmri.de/CodeSystem/CollectionType|0.1.0-beta"/>
+          </parameter>
+          <contains>
+            <system value="https://fhir.bbmri.de/CodeSystem/CollectionType"/>
+            <code value="SAMPLE"/>
+            <display value="Sample collection"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.bbmri.de/CodeSystem/CollectionType"/>
+            <code value="TWIN_STUDY"/>
+            <display value="Twin-study"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.bbmri.de/CodeSystem/CollectionType"/>
+            <code value="RD"/>
+            <display value="Rare disease collection"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.bbmri.de/CodeSystem/CollectionType"/>
+            <code value="NON_HUMAN"/>
+            <display value="Non-human"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.bbmri.de/CodeSystem/CollectionType"/>
+            <code value="BIRTH_COHORT"/>
+            <display value="Birth cohort"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.bbmri.de/CodeSystem/CollectionType"/>
+            <code value="CASE_CONTROL"/>
+            <display value="Case-Control"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.bbmri.de/CodeSystem/CollectionType"/>
+            <code value="COHORT"/>
+            <display value="Cohort"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.bbmri.de/CodeSystem/CollectionType"/>
+            <code value="CROSS_SECTIONAL"/>
+            <display value="Cross-Sectional"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.bbmri.de/CodeSystem/CollectionType"/>
+            <code value="DISEASE_SPECIFIC"/>
+            <display value="Disease specific"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.bbmri.de/CodeSystem/CollectionType"/>
+            <code value="HOSPITAL"/>
+            <display value="Hospital"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.bbmri.de/CodeSystem/CollectionType"/>
+            <code value="IMAGE"/>
+            <display value="Image collection"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.bbmri.de/CodeSystem/CollectionType"/>
+            <code value="LONGITUDINAL"/>
+            <display value="Longitudinal"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.bbmri.de/CodeSystem/CollectionType"/>
+            <code value="OTHER"/>
+            <display value="other"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.bbmri.de/CodeSystem/CollectionType"/>
+            <code value="POPULATION_BASED"/>
+            <display value="Population-based"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.bbmri.de/CodeSystem/CollectionType"/>
+            <code value="QUALITY_CONTROL"/>
+            <display value="Quality control"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://fhir.bbmri.de/ValueSet/ResourceType"/>
+    <resource>
+      <ValueSet>
+        <id value="ResourceType"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 3 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px"/>Expansion based on https://fhir.bbmri.de/CodeSystem/ResourceType version 0.1.0-beta
+            <p>All codes from system 
+              <a href="CodeSystem-ResourceType.html">
+                <code>https://fhir.bbmri.de/CodeSystem/ResourceType</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.bbmri.de-CodeSystem-ResourceType-samples"> </a>
+                  <a href="CodeSystem-ResourceType.html#ResourceType-samples">samples</a>
+                </td>
+                <td>Samples</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.bbmri.de-CodeSystem-ResourceType-data"> </a>
+                  <a href="CodeSystem-ResourceType.html#ResourceType-data">data</a>
+                </td>
+                <td>Data</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.bbmri.de-CodeSystem-ResourceType-images"> </a>
+                  <a href="CodeSystem-ResourceType.html#ResourceType-images">images</a>
+                </td>
+                <td>Images</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://fhir.bbmri.de/ValueSet/ResourceType"/>
+        <version value="0.1.0-beta"/>
+        <name value="ResourceType"/>
+        <title value="Resource Type"/>
+        <status value="draft"/>
+        <date value="2020-04-02T14:50:58+00:00"/>
+        <publisher value="BBMRI.de"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="https://www.bbmri.de"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+            <value value="feedback@germanbiobanknode.de"/>
+          </telecom>
+        </contact>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:9344fae7-90be-42ae-953a-365bee46bced"/>
+          <timestamp value="2020-04-02T14:51:25+00:00"/>
+          <total value="3"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://fhir.bbmri.de/CodeSystem/ResourceType|0.1.0-beta"/>
+          </parameter>
+          <contains>
+            <system value="https://fhir.bbmri.de/CodeSystem/ResourceType"/>
+            <code value="samples"/>
+            <display value="Samples"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.bbmri.de/CodeSystem/ResourceType"/>
+            <code value="data"/>
+            <display value="Data"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.bbmri.de/CodeSystem/ResourceType"/>
+            <code value="images"/>
+            <display value="Images"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://fhir.bbmri.de/ValueSet/OtherSampleDiagnosis"/>
+    <resource>
+      <ValueSet>
+        <id value="OtherSampleDiagnosis"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 4 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px"/>Expansion based on https://fhir.bbmri.de/CodeSystem/OtherSampleDiagnosis version 0.1.0-beta
+            <p>All codes from system 
+              <a href="CodeSystem-OtherSampleDiagnosis.html">
+                <code>https://fhir.bbmri.de/CodeSystem/OtherSampleDiagnosis</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.bbmri.de-CodeSystem-OtherSampleDiagnosis-healthy"> </a>
+                  <a href="CodeSystem-OtherSampleDiagnosis.html#OtherSampleDiagnosis-healthy">healthy</a>
+                </td>
+                <td>Healthy</td>
+                <td>Sample contains healthy material</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.bbmri.de-CodeSystem-OtherSampleDiagnosis-unknown"> </a>
+                  <a href="CodeSystem-OtherSampleDiagnosis.html#OtherSampleDiagnosis-unknown">unknown</a>
+                </td>
+                <td>Unknown</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.bbmri.de-CodeSystem-OtherSampleDiagnosis-not-applicable"> </a>
+                  <a href="CodeSystem-OtherSampleDiagnosis.html#OtherSampleDiagnosis-not-applicable">not-applicable</a>
+                </td>
+                <td>Not applicable</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.bbmri.de-CodeSystem-OtherSampleDiagnosis-unspecified-tumor"> </a>
+                  <a href="CodeSystem-OtherSampleDiagnosis.html#OtherSampleDiagnosis-unspecified-tumor">unspecified-tumor</a>
+                </td>
+                <td>Unspecified tumor</td>
+                <td>Sample contains tumor material, a specific diagnosis is not known</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://fhir.bbmri.de/ValueSet/OtherSampleDiagnosis"/>
+        <version value="0.1.0-beta"/>
+        <name value="OtherSampleDiagnosis"/>
+        <title value="other sample diagnosis"/>
+        <status value="draft"/>
+        <date value="2020-04-02T14:50:58+00:00"/>
+        <publisher value="BBMRI.de"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="https://www.bbmri.de"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+            <value value="feedback@germanbiobanknode.de"/>
+          </telecom>
+        </contact>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:2e1d74ba-caad-451e-8a03-afd96ec47590"/>
+          <timestamp value="2020-04-02T14:51:28+00:00"/>
+          <total value="4"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://fhir.bbmri.de/CodeSystem/OtherSampleDiagnosis|0.1.0-beta"/>
+          </parameter>
+          <contains>
+            <system value="https://fhir.bbmri.de/CodeSystem/OtherSampleDiagnosis"/>
+            <code value="healthy"/>
+            <display value="Healthy"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.bbmri.de/CodeSystem/OtherSampleDiagnosis"/>
+            <code value="unknown"/>
+            <display value="Unknown"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.bbmri.de/CodeSystem/OtherSampleDiagnosis"/>
+            <code value="not-applicable"/>
+            <display value="Not applicable"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.bbmri.de/CodeSystem/OtherSampleDiagnosis"/>
+            <code value="unspecified-tumor"/>
+            <display value="Unspecified tumor"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://fhir.bbmri.de/ValueSet/QualityStandard"/>
+    <resource>
+      <ValueSet>
+        <id value="QualityStandard"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 7 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px"/>Expansion based on https://fhir.bbmri.de/CodeSystem/QualityStandard version 0.1.0-beta
+            <p>All codes from system 
+              <a href="CodeSystem-QualityStandard.html">
+                <code>https://fhir.bbmri.de/CodeSystem/QualityStandard</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.bbmri.de-CodeSystem-QualityStandard-iso-15189"> </a>
+                  <a href="CodeSystem-QualityStandard.html#QualityStandard-iso-15189">iso-15189</a>
+                </td>
+                <td>ISO-15189</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.bbmri.de-CodeSystem-QualityStandard-iso-15190"> </a>
+                  <a href="CodeSystem-QualityStandard.html#QualityStandard-iso-15190">iso-15190</a>
+                </td>
+                <td>ISO-15190</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.bbmri.de-CodeSystem-QualityStandard-iso-17025"> </a>
+                  <a href="CodeSystem-QualityStandard.html#QualityStandard-iso-17025">iso-17025</a>
+                </td>
+                <td>ISO-17025</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.bbmri.de-CodeSystem-QualityStandard-iso-9001"> </a>
+                  <a href="CodeSystem-QualityStandard.html#QualityStandard-iso-9001">iso-9001</a>
+                </td>
+                <td>ISO-9001</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.bbmri.de-CodeSystem-QualityStandard-nfs96-900"> </a>
+                  <a href="CodeSystem-QualityStandard.html#QualityStandard-nfs96-900">nfs96-900</a>
+                </td>
+                <td>NFS96-900</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.bbmri.de-CodeSystem-QualityStandard-oecd-guidelines"> </a>
+                  <a href="CodeSystem-QualityStandard.html#QualityStandard-oecd-guidelines">oecd-guidelines</a>
+                </td>
+                <td>OECD Guidelines</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.bbmri.de-CodeSystem-QualityStandard-others"> </a>
+                  <a href="CodeSystem-QualityStandard.html#QualityStandard-others">others</a>
+                </td>
+                <td>Others</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://fhir.bbmri.de/ValueSet/QualityStandard"/>
+        <version value="0.1.0-beta"/>
+        <name value="QualityStandard"/>
+        <title value="Quality Standard"/>
+        <status value="draft"/>
+        <date value="2020-04-02T14:50:58+00:00"/>
+        <publisher value="BBMRI.de"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="https://www.bbmri.de"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+            <value value="feedback@germanbiobanknode.de"/>
+          </telecom>
+        </contact>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:d025ad21-4ff3-407a-bf3b-cba6db918f0a"/>
+          <timestamp value="2020-04-02T14:51:29+00:00"/>
+          <total value="7"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://fhir.bbmri.de/CodeSystem/QualityStandard|0.1.0-beta"/>
+          </parameter>
+          <contains>
+            <system value="https://fhir.bbmri.de/CodeSystem/QualityStandard"/>
+            <code value="iso-15189"/>
+            <display value="ISO-15189"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.bbmri.de/CodeSystem/QualityStandard"/>
+            <code value="iso-15190"/>
+            <display value="ISO-15190"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.bbmri.de/CodeSystem/QualityStandard"/>
+            <code value="iso-17025"/>
+            <display value="ISO-17025"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.bbmri.de/CodeSystem/QualityStandard"/>
+            <code value="iso-9001"/>
+            <display value="ISO-9001"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.bbmri.de/CodeSystem/QualityStandard"/>
+            <code value="nfs96-900"/>
+            <display value="NFS96-900"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.bbmri.de/CodeSystem/QualityStandard"/>
+            <code value="oecd-guidelines"/>
+            <display value="OECD Guidelines"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.bbmri.de/CodeSystem/QualityStandard"/>
+            <code value="others"/>
+            <display value="Others"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://fhir.bbmri.de/ValueSet/StorageTemperature"/>
+    <resource>
+      <ValueSet>
+        <id value="StorageTemperature"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 7 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px"/>Expansion based on https://fhir.bbmri.de/CodeSystem/StorageTemperature version 0.1.0-beta
+            <p>All codes from system 
+              <a href="CodeSystem-StorageTemperature.html">
+                <code>https://fhir.bbmri.de/CodeSystem/StorageTemperature</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.bbmri.de-CodeSystem-StorageTemperature-temperature2to10"> </a>
+                  <a href="CodeSystem-StorageTemperature.html#StorageTemperature-temperature2to10">temperature2to10</a>
+                </td>
+                <td>Degrees Celsius 2 to 10</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.bbmri.de-CodeSystem-StorageTemperature-temperature-18to-35"> </a>
+                  <a href="CodeSystem-StorageTemperature.html#StorageTemperature-temperature-18to-35">temperature-18to-35</a>
+                </td>
+                <td>Degrees Celsius -18 to -35</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.bbmri.de-CodeSystem-StorageTemperature-temperature-60to-85"> </a>
+                  <a href="CodeSystem-StorageTemperature.html#StorageTemperature-temperature-60to-85">temperature-60to-85</a>
+                </td>
+                <td>Degrees Celsius -60 to -85</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.bbmri.de-CodeSystem-StorageTemperature-temperatureGN"> </a>
+                  <a href="CodeSystem-StorageTemperature.html#StorageTemperature-temperatureGN">temperatureGN</a>
+                </td>
+                <td>Gaseous nitrogen</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.bbmri.de-CodeSystem-StorageTemperature-temperatureLN"> </a>
+                  <a href="CodeSystem-StorageTemperature.html#StorageTemperature-temperatureLN">temperatureLN</a>
+                </td>
+                <td>Liquid nitrogen</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.bbmri.de-CodeSystem-StorageTemperature-temperatureRoom"> </a>
+                  <a href="CodeSystem-StorageTemperature.html#StorageTemperature-temperatureRoom">temperatureRoom</a>
+                </td>
+                <td>Room temperature</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.bbmri.de-CodeSystem-StorageTemperature-temperatureOther"> </a>
+                  <a href="CodeSystem-StorageTemperature.html#StorageTemperature-temperatureOther">temperatureOther</a>
+                </td>
+                <td>Other storage temperature</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://fhir.bbmri.de/ValueSet/StorageTemperature"/>
+        <version value="0.1.0-beta"/>
+        <name value="StorageTemperature"/>
+        <title value="Storage Temperature"/>
+        <status value="draft"/>
+        <date value="2020-04-02T14:50:58+00:00"/>
+        <publisher value="BBMRI.de"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="https://www.bbmri.de"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+            <value value="feedback@germanbiobanknode.de"/>
+          </telecom>
+        </contact>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:6a25a643-4e2d-4bd3-8cff-c1388769e9db"/>
+          <timestamp value="2020-04-02T14:51:29+00:00"/>
+          <total value="7"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://fhir.bbmri.de/CodeSystem/StorageTemperature|0.1.0-beta"/>
+          </parameter>
+          <contains>
+            <system value="https://fhir.bbmri.de/CodeSystem/StorageTemperature"/>
+            <code value="temperature2to10"/>
+            <display value="Degrees Celsius 2 to 10"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.bbmri.de/CodeSystem/StorageTemperature"/>
+            <code value="temperature-18to-35"/>
+            <display value="Degrees Celsius -18 to -35"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.bbmri.de/CodeSystem/StorageTemperature"/>
+            <code value="temperature-60to-85"/>
+            <display value="Degrees Celsius -60 to -85"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.bbmri.de/CodeSystem/StorageTemperature"/>
+            <code value="temperatureGN"/>
+            <display value="Gaseous nitrogen"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.bbmri.de/CodeSystem/StorageTemperature"/>
+            <code value="temperatureLN"/>
+            <display value="Liquid nitrogen"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.bbmri.de/CodeSystem/StorageTemperature"/>
+            <code value="temperatureRoom"/>
+            <display value="Room temperature"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.bbmri.de/CodeSystem/StorageTemperature"/>
+            <code value="temperatureOther"/>
+            <display value="Other storage temperature"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://fhir.bbmri.de/ValueSet/BiobankCapabilities"/>
+    <resource>
+      <ValueSet>
+        <id value="BiobankCapabilities"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 11 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px"/>Expansion based on https://fhir.bbmri.de/CodeSystem/BiobankCapabilities version 0.1.0-beta
+            <p>All codes from system 
+              <a href="CodeSystem-BiobankCapabilities.html">
+                <code>https://fhir.bbmri.de/CodeSystem/BiobankCapabilities</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.bbmri.de-CodeSystem-BiobankCapabilities-biomaterial-storage"> </a>
+                  <a href="CodeSystem-BiobankCapabilities.html#BiobankCapabilities-biomaterial-storage">biomaterial-storage</a>
+                </td>
+                <td>Biological material storage</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.bbmri.de-CodeSystem-BiobankCapabilities-cell-culture"> </a>
+                  <a href="CodeSystem-BiobankCapabilities.html#BiobankCapabilities-cell-culture">cell-culture</a>
+                </td>
+                <td>Cell culture</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.bbmri.de-CodeSystem-BiobankCapabilities-data-analytics"> </a>
+                  <a href="CodeSystem-BiobankCapabilities.html#BiobankCapabilities-data-analytics">data-analytics</a>
+                </td>
+                <td>Data analytics</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.bbmri.de-CodeSystem-BiobankCapabilities-data-storage"> </a>
+                  <a href="CodeSystem-BiobankCapabilities.html#BiobankCapabilities-data-storage">data-storage</a>
+                </td>
+                <td>Data Storage</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.bbmri.de-CodeSystem-BiobankCapabilities-digital-imaging"> </a>
+                  <a href="CodeSystem-BiobankCapabilities.html#BiobankCapabilities-digital-imaging">digital-imaging</a>
+                </td>
+                <td>Digital imaging</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.bbmri.de-CodeSystem-BiobankCapabilities-immunohistochemistry-scoring"> </a>
+                  <a href="CodeSystem-BiobankCapabilities.html#BiobankCapabilities-immunohistochemistry-scoring">immunohistochemistry-scoring</a>
+                </td>
+                <td>Immunohistochemistry scoring</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.bbmri.de-CodeSystem-BiobankCapabilities-immunohistochemistry-staining"> </a>
+                  <a href="CodeSystem-BiobankCapabilities.html#BiobankCapabilities-immunohistochemistry-staining">immunohistochemistry-staining</a>
+                </td>
+                <td>Immunohistochemistry staining</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.bbmri.de-CodeSystem-BiobankCapabilities-nucleic-acid-extraction"> </a>
+                  <a href="CodeSystem-BiobankCapabilities.html#BiobankCapabilities-nucleic-acid-extraction">nucleic-acid-extraction</a>
+                </td>
+                <td>Nucleic acid extraction</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.bbmri.de-CodeSystem-BiobankCapabilities-pathology-archive-access"> </a>
+                  <a href="CodeSystem-BiobankCapabilities.html#BiobankCapabilities-pathology-archive-access">pathology-archive-access</a>
+                </td>
+                <td>Access to the full pathology archive</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.bbmri.de-CodeSystem-BiobankCapabilities-recontact"> </a>
+                  <a href="CodeSystem-BiobankCapabilities.html#BiobankCapabilities-recontact">recontact</a>
+                </td>
+                <td>Ability to recontact</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.bbmri.de-CodeSystem-BiobankCapabilities-tma-creation"> </a>
+                  <a href="CodeSystem-BiobankCapabilities.html#BiobankCapabilities-tma-creation">tma-creation</a>
+                </td>
+                <td>Tissue micro array creation</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://fhir.bbmri.de/ValueSet/BiobankCapabilities"/>
+        <version value="0.1.0-beta"/>
+        <name value="BiobankCapabilities"/>
+        <title value="Biobank Capabilities"/>
+        <status value="draft"/>
+        <date value="2020-04-02T14:50:58+00:00"/>
+        <publisher value="BBMRI.de"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="https://www.bbmri.de"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+            <value value="feedback@germanbiobanknode.de"/>
+          </telecom>
+        </contact>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:622b5741-403e-42dc-80ba-339974c598bb"/>
+          <timestamp value="2020-04-02T14:51:31+00:00"/>
+          <total value="11"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://fhir.bbmri.de/CodeSystem/BiobankCapabilities|0.1.0-beta"/>
+          </parameter>
+          <contains>
+            <system value="https://fhir.bbmri.de/CodeSystem/BiobankCapabilities"/>
+            <code value="biomaterial-storage"/>
+            <display value="Biological material storage"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.bbmri.de/CodeSystem/BiobankCapabilities"/>
+            <code value="cell-culture"/>
+            <display value="Cell culture"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.bbmri.de/CodeSystem/BiobankCapabilities"/>
+            <code value="data-analytics"/>
+            <display value="Data analytics"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.bbmri.de/CodeSystem/BiobankCapabilities"/>
+            <code value="data-storage"/>
+            <display value="Data Storage"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.bbmri.de/CodeSystem/BiobankCapabilities"/>
+            <code value="digital-imaging"/>
+            <display value="Digital imaging"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.bbmri.de/CodeSystem/BiobankCapabilities"/>
+            <code value="immunohistochemistry-scoring"/>
+            <display value="Immunohistochemistry scoring"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.bbmri.de/CodeSystem/BiobankCapabilities"/>
+            <code value="immunohistochemistry-staining"/>
+            <display value="Immunohistochemistry staining"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.bbmri.de/CodeSystem/BiobankCapabilities"/>
+            <code value="nucleic-acid-extraction"/>
+            <display value="Nucleic acid extraction"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.bbmri.de/CodeSystem/BiobankCapabilities"/>
+            <code value="pathology-archive-access"/>
+            <display value="Access to the full pathology archive"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.bbmri.de/CodeSystem/BiobankCapabilities"/>
+            <code value="recontact"/>
+            <display value="Ability to recontact"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.bbmri.de/CodeSystem/BiobankCapabilities"/>
+            <code value="tma-creation"/>
+            <display value="Tissue micro array creation"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://fhir.bbmri.de/ValueSet/DataCategory"/>
+    <resource>
+      <ValueSet>
+        <id value="DataCategory"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 9 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px"/>Expansion based on https://fhir.bbmri.de/CodeSystem/DataCategory version 0.1.0-beta
+            <p>All codes from system 
+              <a href="CodeSystem-DataCategory.html">
+                <code>https://fhir.bbmri.de/CodeSystem/DataCategory</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.bbmri.de-CodeSystem-DataCategory-BIOLOGICAL-SAMPLES"> </a>
+                  <a href="CodeSystem-DataCategory.html#DataCategory-BIOLOGICAL_SAMPLES">BIOLOGICAL_SAMPLES</a>
+                </td>
+                <td>Biological samples</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.bbmri.de-CodeSystem-DataCategory-GENEALOGICAL-RECORDS"> </a>
+                  <a href="CodeSystem-DataCategory.html#DataCategory-GENEALOGICAL_RECORDS">GENEALOGICAL_RECORDS</a>
+                </td>
+                <td>Genealogical records</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.bbmri.de-CodeSystem-DataCategory-IMAGING-DATA"> </a>
+                  <a href="CodeSystem-DataCategory.html#DataCategory-IMAGING_DATA">IMAGING_DATA</a>
+                </td>
+                <td>Imaging data</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.bbmri.de-CodeSystem-DataCategory-MEDICAL-RECORDS"> </a>
+                  <a href="CodeSystem-DataCategory.html#DataCategory-MEDICAL_RECORDS">MEDICAL_RECORDS</a>
+                </td>
+                <td>Medical records</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.bbmri.de-CodeSystem-DataCategory-NATIONAL-REGISTRIES"> </a>
+                  <a href="CodeSystem-DataCategory.html#DataCategory-NATIONAL_REGISTRIES">NATIONAL_REGISTRIES</a>
+                </td>
+                <td>National registries</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.bbmri.de-CodeSystem-DataCategory-NAV"> </a>
+                  <a href="CodeSystem-DataCategory.html#DataCategory-NAV">NAV</a>
+                </td>
+                <td>Not available</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.bbmri.de-CodeSystem-DataCategory-OTHER"> </a>
+                  <a href="CodeSystem-DataCategory.html#DataCategory-OTHER">OTHER</a>
+                </td>
+                <td>other</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.bbmri.de-CodeSystem-DataCategory-PHYSIOLOGICAL-BIOCHEMICAL-MEASUREMENTS"> </a>
+                  <a href="CodeSystem-DataCategory.html#DataCategory-PHYSIOLOGICAL_BIOCHEMICAL_MEASUREMENTS">PHYSIOLOGICAL_BIOCHEMICAL_MEASUREMENTS</a>
+                </td>
+                <td>Physiological/Biochemical measurements</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.bbmri.de-CodeSystem-DataCategory-SURVEY-DATA"> </a>
+                  <a href="CodeSystem-DataCategory.html#DataCategory-SURVEY_DATA">SURVEY_DATA</a>
+                </td>
+                <td>Survey data</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://fhir.bbmri.de/ValueSet/DataCategory"/>
+        <version value="0.1.0-beta"/>
+        <name value="DataCategory"/>
+        <title value="Data Category"/>
+        <status value="draft"/>
+        <date value="2020-04-02T14:50:58+00:00"/>
+        <publisher value="BBMRI.de"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="https://www.bbmri.de"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+            <value value="feedback@germanbiobanknode.de"/>
+          </telecom>
+        </contact>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:acc2309b-771b-4271-b56a-0acbd119531b"/>
+          <timestamp value="2020-04-02T14:51:32+00:00"/>
+          <total value="9"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://fhir.bbmri.de/CodeSystem/DataCategory|0.1.0-beta"/>
+          </parameter>
+          <contains>
+            <system value="https://fhir.bbmri.de/CodeSystem/DataCategory"/>
+            <code value="BIOLOGICAL_SAMPLES"/>
+            <display value="Biological samples"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.bbmri.de/CodeSystem/DataCategory"/>
+            <code value="GENEALOGICAL_RECORDS"/>
+            <display value="Genealogical records"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.bbmri.de/CodeSystem/DataCategory"/>
+            <code value="IMAGING_DATA"/>
+            <display value="Imaging data"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.bbmri.de/CodeSystem/DataCategory"/>
+            <code value="MEDICAL_RECORDS"/>
+            <display value="Medical records"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.bbmri.de/CodeSystem/DataCategory"/>
+            <code value="NATIONAL_REGISTRIES"/>
+            <display value="National registries"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.bbmri.de/CodeSystem/DataCategory"/>
+            <code value="NAV"/>
+            <display value="Not available"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.bbmri.de/CodeSystem/DataCategory"/>
+            <code value="OTHER"/>
+            <display value="other"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.bbmri.de/CodeSystem/DataCategory"/>
+            <code value="PHYSIOLOGICAL_BIOCHEMICAL_MEASUREMENTS"/>
+            <display value="Physiological/Biochemical measurements"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.bbmri.de/CodeSystem/DataCategory"/>
+            <code value="SURVEY_DATA"/>
+            <display value="Survey data"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+</Bundle>

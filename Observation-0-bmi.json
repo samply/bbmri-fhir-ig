@@ -1,0 +1,42 @@
+{
+  "resourceType": "Observation",
+  "id": "0-bmi",
+  "meta": {
+    "profile": [
+      "https://fhir.bbmri.de/StructureDefinition/Bmi"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 0-bmi</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/observation-category code 'vital-signs' = 'Vital Signs)</span></p><p><b>code</b>: Body mass index (BMI) [Ratio] <span style=\"background: LightGoldenRodYellow\">(Details : {LOINC code '39156-5' = 'Body mass index (BMI) [Ratio])</span></p><p><b>subject</b>: <a href=\"Patient-0.html\">Generated Summary: id: 0; gender: male; birthDate: 1989-11-18; deceased: Jan 27, 2009, 12:00:00 AM</a></p><p><b>effective</b>: Jun 17, 2005, 12:00:00 AM</p><p><b>value</b>: 36.68645245341373 kg/m2<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code kg/m2 = 'kg/m2')</span></p></div>"
+  },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "39156-5"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/0"
+  },
+  "effectiveDateTime": "2005-06-17",
+  "valueQuantity": {
+    "value": 36.68645245341373,
+    "unit": "kg/m2",
+    "system": "http://unitsofmeasure.org",
+    "code": "kg/m2"
+  }
+}

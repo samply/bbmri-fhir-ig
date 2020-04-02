@@ -1,0 +1,65 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.bbmri.de/CodeSystem/ResourceType> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "ResourceType"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Resource Type</h2><div><p>Types of resources that may be governed by a biobank or its collections</p>\n</div><p>This code system https://fhir.bbmri.de/CodeSystem/ResourceType defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">samples<a name=\"ResourceType-samples\"> </a></td><td>Samples</td><td/></tr><tr><td style=\"white-space:nowrap\">data<a name=\"ResourceType-data\"> </a></td><td>Data</td><td/></tr><tr><td style=\"white-space:nowrap\">images<a name=\"ResourceType-images\"> </a></td><td>Images</td><td/></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "https://fhir.bbmri.de/CodeSystem/ResourceType"];
+  fhir:CodeSystem.version [ fhir:value "0.1.0-beta"];
+  fhir:CodeSystem.name [ fhir:value "ResourceType"];
+  fhir:CodeSystem.title [ fhir:value "Resource Type"];
+  fhir:CodeSystem.status [ fhir:value "draft"];
+  fhir:CodeSystem.date [ fhir:value "2020-04-02T14:50:58+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "BBMRI.de"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://www.bbmri.de" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "feedback@germanbiobanknode.de" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "Types of resources that may be governed by a biobank or its collections"];
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
+       fhir:Coding.code [ fhir:value "001" ]
+     ]
+  ];
+  fhir:CodeSystem.purpose [ fhir:value "This CodeSystem provides the different types of resources distinguished by the BBMRI-ERIC Directory"];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "samples" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Samples" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "data" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Data" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "images" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Images" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir.bbmri.de/CodeSystem/ResourceType.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

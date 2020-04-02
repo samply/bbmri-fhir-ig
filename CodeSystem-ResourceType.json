@@ -1,0 +1,56 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "ResourceType",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Resource Type</h2><div><p>Types of resources that may be governed by a biobank or its collections</p>\n</div><p>This code system https://fhir.bbmri.de/CodeSystem/ResourceType defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">samples<a name=\"ResourceType-samples\"> </a></td><td>Samples</td><td/></tr><tr><td style=\"white-space:nowrap\">data<a name=\"ResourceType-data\"> </a></td><td>Data</td><td/></tr><tr><td style=\"white-space:nowrap\">images<a name=\"ResourceType-images\"> </a></td><td>Images</td><td/></tr></table></div>"
+  },
+  "url": "https://fhir.bbmri.de/CodeSystem/ResourceType",
+  "version": "0.1.0-beta",
+  "name": "ResourceType",
+  "title": "Resource Type",
+  "status": "draft",
+  "date": "2020-04-02T14:50:58+00:00",
+  "publisher": "BBMRI.de",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.bbmri.de"
+        },
+        {
+          "system": "email",
+          "value": "feedback@germanbiobanknode.de"
+        }
+      ]
+    }
+  ],
+  "description": "Types of resources that may be governed by a biobank or its collections",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
+  "purpose": "This CodeSystem provides the different types of resources distinguished by the BBMRI-ERIC Directory",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "samples",
+      "display": "Samples"
+    },
+    {
+      "code": "data",
+      "display": "Data"
+    },
+    {
+      "code": "images",
+      "display": "Images"
+    }
+  ]
+}

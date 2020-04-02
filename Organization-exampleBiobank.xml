@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="exampleBiobank"/>
+  <meta>
+    <profile value="https://fhir.bbmri.de/StructureDefinition/Biobank"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: exampleBiobank</p><p><b>meta</b>: </p><p><b>identifier</b>: bbmri-eric:ID:de_12345</p><p><b>name</b>: Zentrale Biobank Neustadt</p><p><b>alias</b>: ZBBN</p><p><b>telecom</b>: http://biobank.klinikum-neustadt.de</p><p><b>address</b>: Krankenhausstr. 12 Neustadt 12345 DE </p></div>
+  </text>
+  <extension url="https://fhir.bbmri.de/StructureDefinition/OrganizationDescription">
+    <valueString value="The Zentrale Biobank neustadt collects samples from patients at the Klinikum Neustadt."/>
+  </extension>
+  <extension url="https://fhir.bbmri.de/StructureDefinition/JuridicalPerson">
+    <valueString value="Klinikum Neustadt vertreten durch den Vorstand"/>
+  </extension>
+  <extension url="https://fhir.bbmri.de/StructureDefinition/QualityStandard">
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://fhir.bbmri.de/CodeSystem/QualityStandard"/>
+        <code value="oecd-guidelines"/>
+        <display value="OECD Guidelines"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="https://fhir.bbmri.de/StructureDefinition/QualityStandard">
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://fhir.bbmri.de/CodeSystem/QualityStandard"/>
+        <code value="iso-15189"/>
+        <display value="ISO-15189"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <identifier>
+    <system value="http://www.bbmri-eric.eu/"/>
+    <value value="bbmri-eric:ID:de_12345"/>
+  </identifier>
+  <name value="Zentrale Biobank Neustadt"/>
+  <alias value="ZBBN"/>
+  <telecom>
+    <system value="url"/>
+    <value value="http://biobank.klinikum-neustadt.de"/>
+  </telecom>
+  <address>
+    <line value="Krankenhausstr. 12"/>
+    <city value="Neustadt"/>
+    <postalCode value="12345"/>
+    <country value="DE"/>
+  </address>
+  <contact>
+    <extension url="https://fhir.bbmri.de/StructureDefinition/ContactRole">
+      <valueString value="Director"/>
+    </extension>
+    <purpose>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/contactentity-type"/>
+        <code value="ADMIN"/>
+        <display value="Administrative"/>
+      </coding>
+    </purpose>
+    <name>
+      <family value="Chef"/>
+      <given value="Claudia"/>
+      <given value="Celine"/>
+      <prefix value="Prof."/>
+      <prefix value="Dr."/>
+      <prefix value="Dr."/>
+    </name>
+    <telecom>
+      <system value="phone"/>
+      <value value="0452 4624-24"/>
+    </telecom>
+  </contact>
+  <contact>
+    <purpose>
+      <coding>
+        <system value="https://fhir.bbmri.de/CodeSystem/ContactType"/>
+        <code value="RESEARCH"/>
+        <display value="Research"/>
+      </coding>
+      <text value="Contact for research inquiries."/>
+    </purpose>
+    <name>
+      <family value="Forschungsbeauftragter"/>
+      <given value="Friedrich"/>
+      <prefix value="Freiherr"/>
+      <prefix value="Dr."/>
+      <suffix value="M.Sc."/>
+    </name>
+    <telecom>
+      <system value="phone"/>
+      <value value="0452 4624-28"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="forschungsanfragen@biobank.klinikum-neustadt.de"/>
+    </telecom>
+    <address>
+      <line value="Geb&#xE4;ude 24a"/>
+      <line value="Krankenhausstr. 12"/>
+      <city value="Neustadt"/>
+      <postalCode value="12345"/>
+      <country value="DE"/>
+    </address>
+  </contact>
+</Organization>

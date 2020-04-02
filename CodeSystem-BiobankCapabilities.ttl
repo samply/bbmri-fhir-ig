@@ -1,0 +1,95 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.bbmri.de/CodeSystem/BiobankCapabilities> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "BiobankCapabilities"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Biobank Capabilities</h2><p>This code system https://fhir.bbmri.de/CodeSystem/BiobankCapabilities defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">biomaterial-storage<a name=\"BiobankCapabilities-biomaterial-storage\"> </a></td><td>Biological material storage</td><td/></tr><tr><td style=\"white-space:nowrap\">cell-culture<a name=\"BiobankCapabilities-cell-culture\"> </a></td><td>Cell culture</td><td/></tr><tr><td style=\"white-space:nowrap\">data-analytics<a name=\"BiobankCapabilities-data-analytics\"> </a></td><td>Data analytics</td><td/></tr><tr><td style=\"white-space:nowrap\">data-storage<a name=\"BiobankCapabilities-data-storage\"> </a></td><td>Data Storage</td><td/></tr><tr><td style=\"white-space:nowrap\">digital-imaging<a name=\"BiobankCapabilities-digital-imaging\"> </a></td><td>Digital imaging</td><td/></tr><tr><td style=\"white-space:nowrap\">immunohistochemistry-scoring<a name=\"BiobankCapabilities-immunohistochemistry-scoring\"> </a></td><td>Immunohistochemistry scoring</td><td/></tr><tr><td style=\"white-space:nowrap\">immunohistochemistry-staining<a name=\"BiobankCapabilities-immunohistochemistry-staining\"> </a></td><td>Immunohistochemistry staining</td><td/></tr><tr><td style=\"white-space:nowrap\">nucleic-acid-extraction<a name=\"BiobankCapabilities-nucleic-acid-extraction\"> </a></td><td>Nucleic acid extraction</td><td/></tr><tr><td style=\"white-space:nowrap\">pathology-archive-access<a name=\"BiobankCapabilities-pathology-archive-access\"> </a></td><td>Access to the full pathology archive</td><td/></tr><tr><td style=\"white-space:nowrap\">recontact<a name=\"BiobankCapabilities-recontact\"> </a></td><td>Ability to recontact</td><td/></tr><tr><td style=\"white-space:nowrap\">tma-creation<a name=\"BiobankCapabilities-tma-creation\"> </a></td><td>Tissue micro array creation</td><td/></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "https://fhir.bbmri.de/CodeSystem/BiobankCapabilities"];
+  fhir:CodeSystem.version [ fhir:value "0.1.0-beta"];
+  fhir:CodeSystem.name [ fhir:value "BiobankCapabilities"];
+  fhir:CodeSystem.title [ fhir:value "Biobank Capabilities"];
+  fhir:CodeSystem.status [ fhir:value "draft"];
+  fhir:CodeSystem.date [ fhir:value "2020-04-02T14:50:58+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "BBMRI.de"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://www.bbmri.de" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "feedback@germanbiobanknode.de" ]
+     ]
+  ];
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
+       fhir:Coding.code [ fhir:value "001" ]
+     ]
+  ];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "biomaterial-storage" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Biological material storage" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "cell-culture" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Cell culture" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "data-analytics" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Data analytics" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "data-storage" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Data Storage" ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "digital-imaging" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Digital imaging" ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "immunohistochemistry-scoring" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Immunohistochemistry scoring" ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "immunohistochemistry-staining" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Immunohistochemistry staining" ]
+  ], [
+     fhir:index 7;
+     fhir:CodeSystem.concept.code [ fhir:value "nucleic-acid-extraction" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Nucleic acid extraction" ]
+  ], [
+     fhir:index 8;
+     fhir:CodeSystem.concept.code [ fhir:value "pathology-archive-access" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Access to the full pathology archive" ]
+  ], [
+     fhir:index 9;
+     fhir:CodeSystem.concept.code [ fhir:value "recontact" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ability to recontact" ]
+  ], [
+     fhir:index 10;
+     fhir:CodeSystem.concept.code [ fhir:value "tma-creation" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Tissue micro array creation" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir.bbmri.de/CodeSystem/BiobankCapabilities.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

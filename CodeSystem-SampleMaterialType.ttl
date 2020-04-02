@@ -1,0 +1,190 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.bbmri.de/CodeSystem/SampleMaterialType> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "SampleMaterialType"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Sample Material Type</h2><div><p>The type of material the sample consists of.</p>\n</div><p>This code system https://fhir.bbmri.de/CodeSystem/SampleMaterialType defines the following codes:</p><table class=\"codes\"><tr><td><b>Lvl</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>1</td><td style=\"white-space:nowrap\">whole-blood<a name=\"SampleMaterialType-whole-blood\"> </a></td><td>Whole blood</td><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">bone-marrow<a name=\"SampleMaterialType-bone-marrow\"> </a></td><td>Bone marrow</td><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">buffy-coat<a name=\"SampleMaterialType-buffy-coat\"> </a></td><td>Buffy-Coat</td><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">dried-whole-blood<a name=\"SampleMaterialType-dried-whole-blood\"> </a></td><td>Dried whole blood</td><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">peripheral-blood-cells-vital<a name=\"SampleMaterialType-peripheral-blood-cells-vital\"> </a></td><td>Peripheral blood mononuclear cells (PBMCs, viable)</td><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">blood-plasma<a name=\"SampleMaterialType-blood-plasma\"> </a></td><td>Plasma</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  plasma-edta<a name=\"SampleMaterialType-plasma-edta\"> </a></td><td>Plasma, EDTA</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  plasma-citrat<a name=\"SampleMaterialType-plasma-citrat\"> </a></td><td>Plasma, Citrat</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  plasma-heparin<a name=\"SampleMaterialType-plasma-heparin\"> </a></td><td>Plasma, Heparin</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  plasma-cell-free<a name=\"SampleMaterialType-plasma-cell-free\"> </a></td><td>Plasma, cell free</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  plasma-other<a name=\"SampleMaterialType-plasma-other\"> </a></td><td>Plasma, other</td><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">blood-serum<a name=\"SampleMaterialType-blood-serum\"> </a></td><td>Serum</td><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">ascites<a name=\"SampleMaterialType-ascites\"> </a></td><td>Ascites</td><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">csf-liquor<a name=\"SampleMaterialType-csf-liquor\"> </a></td><td>CSF/Liquor</td><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">saliva<a name=\"SampleMaterialType-saliva\"> </a></td><td>Saliva</td><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">stool-faeces<a name=\"SampleMaterialType-stool-faeces\"> </a></td><td>Stool/Faeces</td><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">urine<a name=\"SampleMaterialType-urine\"> </a></td><td>Urine</td><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">swab<a name=\"SampleMaterialType-swab\"> </a></td><td>Swab</td><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">liquid-other<a name=\"SampleMaterialType-liquid-other\"> </a></td><td>Other liquid biosample/storage</td><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">tissue-ffpe<a name=\"SampleMaterialType-tissue-ffpe\"> </a></td><td>Tissue FFPE</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  tumor-tissue-ffpe<a name=\"SampleMaterialType-tumor-tissue-ffpe\"> </a></td><td>Tumor tissue (FFPE)</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  normal-tissue-ffpe<a name=\"SampleMaterialType-normal-tissue-ffpe\"> </a></td><td>Normal tissue (FFPE)</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  other-tissue-ffpe<a name=\"SampleMaterialType-other-tissue-ffpe\"> </a></td><td>Other tissue (FFPE)</td><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">tissue-frozen<a name=\"SampleMaterialType-tissue-frozen\"> </a></td><td>Tissue frozen</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  tumor-tissue-frozen<a name=\"SampleMaterialType-tumor-tissue-frozen\"> </a></td><td>Tumor tissue (frozen)</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  normal-tissue-frozen<a name=\"SampleMaterialType-normal-tissue-frozen\"> </a></td><td>Normal tissue (frozen)</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  other-tissue-frozen<a name=\"SampleMaterialType-other-tissue-frozen\"> </a></td><td>Other tissue (frozen)</td><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">tissue-other<a name=\"SampleMaterialType-tissue-other\"> </a></td><td>Other tissue storage</td><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">dna<a name=\"SampleMaterialType-dna\"> </a></td><td>DNA</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  cf-dna<a name=\"SampleMaterialType-cf-dna\"> </a></td><td>cfDNA</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  g-dna<a name=\"SampleMaterialType-g-dna\"> </a></td><td>gDNA</td><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">rna<a name=\"SampleMaterialType-rna\"> </a></td><td>RNA</td><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">derivative-other<a name=\"SampleMaterialType-derivative-other\"> </a></td><td>Other derivative</td><td/></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "https://fhir.bbmri.de/CodeSystem/SampleMaterialType"];
+  fhir:CodeSystem.version [ fhir:value "0.1.0-beta"];
+  fhir:CodeSystem.name [ fhir:value "SampleMaterialType"];
+  fhir:CodeSystem.title [ fhir:value "Sample Material Type"];
+  fhir:CodeSystem.status [ fhir:value "draft"];
+  fhir:CodeSystem.date [ fhir:value "2020-04-02T14:50:58+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "BBMRI.de"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://www.bbmri.de" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "feedback@germanbiobanknode.de" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "The type of material the sample consists of."];
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
+       fhir:Coding.code [ fhir:value "001" ]
+     ]
+  ];
+  fhir:CodeSystem.hierarchyMeaning [ fhir:value "is-a"];
+  fhir:CodeSystem.compositional [ fhir:value "false"^^xsd:boolean];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "whole-blood" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Whole blood" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "bone-marrow" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Bone marrow" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "buffy-coat" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Buffy-Coat" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "dried-whole-blood" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Dried whole blood" ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "peripheral-blood-cells-vital" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Peripheral blood mononuclear cells (PBMCs, viable)" ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "blood-plasma" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Plasma" ];
+     fhir:CodeSystem.concept.concept [
+       fhir:index 0;
+       fhir:CodeSystem.concept.code [ fhir:value "plasma-edta" ];
+       fhir:CodeSystem.concept.display [ fhir:value "Plasma, EDTA" ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.code [ fhir:value "plasma-citrat" ];
+       fhir:CodeSystem.concept.display [ fhir:value "Plasma, Citrat" ]
+     ], [
+       fhir:index 2;
+       fhir:CodeSystem.concept.code [ fhir:value "plasma-heparin" ];
+       fhir:CodeSystem.concept.display [ fhir:value "Plasma, Heparin" ]
+     ], [
+       fhir:index 3;
+       fhir:CodeSystem.concept.code [ fhir:value "plasma-cell-free" ];
+       fhir:CodeSystem.concept.display [ fhir:value "Plasma, cell free" ]
+     ], [
+       fhir:index 4;
+       fhir:CodeSystem.concept.code [ fhir:value "plasma-other" ];
+       fhir:CodeSystem.concept.display [ fhir:value "Plasma, other" ]
+     ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "blood-serum" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Serum" ]
+  ], [
+     fhir:index 7;
+     fhir:CodeSystem.concept.code [ fhir:value "ascites" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ascites" ]
+  ], [
+     fhir:index 8;
+     fhir:CodeSystem.concept.code [ fhir:value "csf-liquor" ];
+     fhir:CodeSystem.concept.display [ fhir:value "CSF/Liquor" ]
+  ], [
+     fhir:index 9;
+     fhir:CodeSystem.concept.code [ fhir:value "saliva" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Saliva" ]
+  ], [
+     fhir:index 10;
+     fhir:CodeSystem.concept.code [ fhir:value "stool-faeces" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Stool/Faeces" ]
+  ], [
+     fhir:index 11;
+     fhir:CodeSystem.concept.code [ fhir:value "urine" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Urine" ]
+  ], [
+     fhir:index 12;
+     fhir:CodeSystem.concept.code [ fhir:value "swab" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Swab" ]
+  ], [
+     fhir:index 13;
+     fhir:CodeSystem.concept.code [ fhir:value "liquid-other" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Other liquid biosample/storage" ]
+  ], [
+     fhir:index 14;
+     fhir:CodeSystem.concept.code [ fhir:value "tissue-ffpe" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Tissue FFPE" ];
+     fhir:CodeSystem.concept.concept [
+       fhir:index 0;
+       fhir:CodeSystem.concept.code [ fhir:value "tumor-tissue-ffpe" ];
+       fhir:CodeSystem.concept.display [ fhir:value "Tumor tissue (FFPE)" ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.code [ fhir:value "normal-tissue-ffpe" ];
+       fhir:CodeSystem.concept.display [ fhir:value "Normal tissue (FFPE)" ]
+     ], [
+       fhir:index 2;
+       fhir:CodeSystem.concept.code [ fhir:value "other-tissue-ffpe" ];
+       fhir:CodeSystem.concept.display [ fhir:value "Other tissue (FFPE)" ]
+     ]
+  ], [
+     fhir:index 15;
+     fhir:CodeSystem.concept.code [ fhir:value "tissue-frozen" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Tissue frozen" ];
+     fhir:CodeSystem.concept.concept [
+       fhir:index 0;
+       fhir:CodeSystem.concept.code [ fhir:value "tumor-tissue-frozen" ];
+       fhir:CodeSystem.concept.display [ fhir:value "Tumor tissue (frozen)" ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.code [ fhir:value "normal-tissue-frozen" ];
+       fhir:CodeSystem.concept.display [ fhir:value "Normal tissue (frozen)" ]
+     ], [
+       fhir:index 2;
+       fhir:CodeSystem.concept.code [ fhir:value "other-tissue-frozen" ];
+       fhir:CodeSystem.concept.display [ fhir:value "Other tissue (frozen)" ]
+     ]
+  ], [
+     fhir:index 16;
+     fhir:CodeSystem.concept.code [ fhir:value "tissue-other" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Other tissue storage" ]
+  ], [
+     fhir:index 17;
+     fhir:CodeSystem.concept.code [ fhir:value "dna" ];
+     fhir:CodeSystem.concept.display [ fhir:value "DNA" ];
+     fhir:CodeSystem.concept.concept [
+       fhir:index 0;
+       fhir:CodeSystem.concept.code [ fhir:value "cf-dna" ];
+       fhir:CodeSystem.concept.display [ fhir:value "cfDNA" ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.code [ fhir:value "g-dna" ];
+       fhir:CodeSystem.concept.display [ fhir:value "gDNA" ]
+     ]
+  ], [
+     fhir:index 18;
+     fhir:CodeSystem.concept.code [ fhir:value "rna" ];
+     fhir:CodeSystem.concept.display [ fhir:value "RNA" ]
+  ], [
+     fhir:index 19;
+     fhir:CodeSystem.concept.code [ fhir:value "derivative-other" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Other derivative" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir.bbmri.de/CodeSystem/SampleMaterialType.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

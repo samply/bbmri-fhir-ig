@@ -1,0 +1,80 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.bbmri.de/CodeSystem/QualityStandard> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "QualityStandard"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Quality Standard</h2><p>This code system https://fhir.bbmri.de/CodeSystem/QualityStandard defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">iso-15189<a name=\"QualityStandard-iso-15189\"> </a></td><td>ISO-15189</td><td/></tr><tr><td style=\"white-space:nowrap\">iso-15190<a name=\"QualityStandard-iso-15190\"> </a></td><td>ISO-15190</td><td/></tr><tr><td style=\"white-space:nowrap\">iso-17025<a name=\"QualityStandard-iso-17025\"> </a></td><td>ISO-17025</td><td/></tr><tr><td style=\"white-space:nowrap\">iso-9001<a name=\"QualityStandard-iso-9001\"> </a></td><td>ISO-9001</td><td/></tr><tr><td style=\"white-space:nowrap\">nfs96-900<a name=\"QualityStandard-nfs96-900\"> </a></td><td>NFS96-900</td><td/></tr><tr><td style=\"white-space:nowrap\">oecd-guidelines<a name=\"QualityStandard-oecd-guidelines\"> </a></td><td>OECD Guidelines</td><td/></tr><tr><td style=\"white-space:nowrap\">others<a name=\"QualityStandard-others\"> </a></td><td>Others</td><td/></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "https://fhir.bbmri.de/CodeSystem/QualityStandard"];
+  fhir:CodeSystem.version [ fhir:value "0.1.0-beta"];
+  fhir:CodeSystem.name [ fhir:value "QualityStandard"];
+  fhir:CodeSystem.title [ fhir:value "Quality Standard"];
+  fhir:CodeSystem.status [ fhir:value "draft"];
+  fhir:CodeSystem.date [ fhir:value "2020-04-02T14:50:58+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "BBMRI.de"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://www.bbmri.de" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "feedback@germanbiobanknode.de" ]
+     ]
+  ];
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
+       fhir:Coding.code [ fhir:value "001" ]
+     ]
+  ];
+  fhir:CodeSystem.caseSensitive [ fhir:value "false"^^xsd:boolean];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "iso-15189" ];
+     fhir:CodeSystem.concept.display [ fhir:value "ISO-15189" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "iso-15190" ];
+     fhir:CodeSystem.concept.display [ fhir:value "ISO-15190" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "iso-17025" ];
+     fhir:CodeSystem.concept.display [ fhir:value "ISO-17025" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "iso-9001" ];
+     fhir:CodeSystem.concept.display [ fhir:value "ISO-9001" ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "nfs96-900" ];
+     fhir:CodeSystem.concept.display [ fhir:value "NFS96-900" ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "oecd-guidelines" ];
+     fhir:CodeSystem.concept.display [ fhir:value "OECD Guidelines" ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "others" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Others" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir.bbmri.de/CodeSystem/QualityStandard.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

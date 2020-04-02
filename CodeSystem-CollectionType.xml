@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="CollectionType"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>Collection Type</h2><p>This code system https://fhir.bbmri.de/CodeSystem/CollectionType defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">SAMPLE<a name="CollectionType-SAMPLE"> </a></td><td>Sample collection</td><td/></tr><tr><td style="white-space:nowrap">TWIN_STUDY<a name="CollectionType-TWIN_STUDY"> </a></td><td>Twin-study</td><td/></tr><tr><td style="white-space:nowrap">RD<a name="CollectionType-RD"> </a></td><td>Rare disease collection</td><td/></tr><tr><td style="white-space:nowrap">NON_HUMAN<a name="CollectionType-NON_HUMAN"> </a></td><td>Non-human</td><td/></tr><tr><td style="white-space:nowrap">BIRTH_COHORT<a name="CollectionType-BIRTH_COHORT"> </a></td><td>Birth cohort</td><td/></tr><tr><td style="white-space:nowrap">CASE_CONTROL<a name="CollectionType-CASE_CONTROL"> </a></td><td>Case-Control</td><td/></tr><tr><td style="white-space:nowrap">COHORT<a name="CollectionType-COHORT"> </a></td><td>Cohort</td><td/></tr><tr><td style="white-space:nowrap">CROSS_SECTIONAL<a name="CollectionType-CROSS_SECTIONAL"> </a></td><td>Cross-Sectional</td><td/></tr><tr><td style="white-space:nowrap">DISEASE_SPECIFIC<a name="CollectionType-DISEASE_SPECIFIC"> </a></td><td>Disease specific</td><td/></tr><tr><td style="white-space:nowrap">HOSPITAL<a name="CollectionType-HOSPITAL"> </a></td><td>Hospital</td><td/></tr><tr><td style="white-space:nowrap">IMAGE<a name="CollectionType-IMAGE"> </a></td><td>Image collection</td><td/></tr><tr><td style="white-space:nowrap">LONGITUDINAL<a name="CollectionType-LONGITUDINAL"> </a></td><td>Longitudinal</td><td/></tr><tr><td style="white-space:nowrap">OTHER<a name="CollectionType-OTHER"> </a></td><td>other</td><td/></tr><tr><td style="white-space:nowrap">POPULATION_BASED<a name="CollectionType-POPULATION_BASED"> </a></td><td>Population-based</td><td/></tr><tr><td style="white-space:nowrap">QUALITY_CONTROL<a name="CollectionType-QUALITY_CONTROL"> </a></td><td>Quality control</td><td/></tr></table></div>
+  </text>
+  <url value="https://fhir.bbmri.de/CodeSystem/CollectionType"/>
+  <version value="0.1.0-beta"/>
+  <name value="CollectionType"/>
+  <title value="Collection Type"/>
+  <status value="draft"/>
+  <date value="2020-04-02T14:50:58+00:00"/>
+  <publisher value="BBMRI.de"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.bbmri.de"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="feedback@germanbiobanknode.de"/>
+    </telecom>
+  </contact>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <concept>
+    <code value="SAMPLE"/>
+    <display value="Sample collection"/>
+  </concept>
+  <concept>
+    <code value="TWIN_STUDY"/>
+    <display value="Twin-study"/>
+  </concept>
+  <concept>
+    <code value="RD"/>
+    <display value="Rare disease collection"/>
+  </concept>
+  <concept>
+    <code value="NON_HUMAN"/>
+    <display value="Non-human"/>
+  </concept>
+  <concept>
+    <code value="BIRTH_COHORT"/>
+    <display value="Birth cohort"/>
+  </concept>
+  <concept>
+    <code value="CASE_CONTROL"/>
+    <display value="Case-Control"/>
+  </concept>
+  <concept>
+    <code value="COHORT"/>
+    <display value="Cohort"/>
+  </concept>
+  <concept>
+    <code value="CROSS_SECTIONAL"/>
+    <display value="Cross-Sectional"/>
+  </concept>
+  <concept>
+    <code value="DISEASE_SPECIFIC"/>
+    <display value="Disease specific"/>
+  </concept>
+  <concept>
+    <code value="HOSPITAL"/>
+    <display value="Hospital"/>
+  </concept>
+  <concept>
+    <code value="IMAGE"/>
+    <display value="Image collection"/>
+  </concept>
+  <concept>
+    <code value="LONGITUDINAL"/>
+    <display value="Longitudinal"/>
+  </concept>
+  <concept>
+    <code value="OTHER"/>
+    <display value="other"/>
+  </concept>
+  <concept>
+    <code value="POPULATION_BASED"/>
+    <display value="Population-based"/>
+  </concept>
+  <concept>
+    <code value="QUALITY_CONTROL"/>
+    <display value="Quality control"/>
+  </concept>
+</CodeSystem>

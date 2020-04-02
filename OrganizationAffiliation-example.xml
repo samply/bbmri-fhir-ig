@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<OrganizationAffiliation xmlns="http://hl7.org/fhir">
+  <id value="example"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example</p><p><b>organization</b>: German Biobank Alliance</p><p><b>participatingOrganization</b>: <a href="Organization/exampleBiobank">Organization/exampleBiobank</a></p><p><b>code</b>: member <span style="background: LightGoldenRodYellow ">(Details : {http://terminology.hl7.org/CodeSystem/organization-role code "member" := "member)</span></p></div>
+  </text>
+  <organization>
+    <identifier>
+      <system value="http://www.bbmri-eric.eu/"/>
+      <value value="bbmri-eric:networkID:de_GBA"/>
+    </identifier>
+    <display value="German Biobank Alliance"/>
+  </organization>
+  <participatingOrganization>
+    <reference value="Organization/exampleBiobank"/>
+  </participatingOrganization>
+  <code>
+    <coding>
+      <system value="http://hl7.org/fhir/organization-role"/>
+      <code value="member"/>
+    </coding>
+  </code>
+</OrganizationAffiliation>

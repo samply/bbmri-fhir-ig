@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ContactType"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>Contact Type</h2><p>This code system https://fhir.bbmri.de/CodeSystem/ContactType defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">RESEARCH<a name="ContactType-RESEARCH"> </a></td><td>Research</td><td>Contact for researchers about sample and data requests</td></tr></table></div>
+  </text>
+  <url value="https://fhir.bbmri.de/CodeSystem/ContactType"/>
+  <version value="0.1.0-beta"/>
+  <name value="ContactType"/>
+  <title value="Contact Type"/>
+  <status value="draft"/>
+  <date value="2020-04-02T14:50:58+00:00"/>
+  <publisher value="BBMRI.de"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.bbmri.de"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="feedback@germanbiobanknode.de"/>
+    </telecom>
+  </contact>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <concept>
+    <code value="RESEARCH"/>
+    <display value="Research"/>
+    <definition value="Contact for researchers about sample and data requests"/>
+  </concept>
+</CodeSystem>

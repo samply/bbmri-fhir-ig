@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ResourceType"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>Resource Type</h2><div><p>Types of resources that may be governed by a biobank or its collections</p>
+</div><p>This code system https://fhir.bbmri.de/CodeSystem/ResourceType defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">samples<a name="ResourceType-samples"> </a></td><td>Samples</td><td/></tr><tr><td style="white-space:nowrap">data<a name="ResourceType-data"> </a></td><td>Data</td><td/></tr><tr><td style="white-space:nowrap">images<a name="ResourceType-images"> </a></td><td>Images</td><td/></tr></table></div>
+  </text>
+  <url value="https://fhir.bbmri.de/CodeSystem/ResourceType"/>
+  <version value="0.1.0-beta"/>
+  <name value="ResourceType"/>
+  <title value="Resource Type"/>
+  <status value="draft"/>
+  <date value="2020-04-02T14:50:58+00:00"/>
+  <publisher value="BBMRI.de"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.bbmri.de"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="feedback@germanbiobanknode.de"/>
+    </telecom>
+  </contact>
+  <description value="Types of resources that may be governed by a biobank or its collections"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <purpose value="This CodeSystem provides the different types of resources distinguished by the BBMRI-ERIC Directory"/>
+  <content value="complete"/>
+  <concept>
+    <code value="samples"/>
+    <display value="Samples"/>
+  </concept>
+  <concept>
+    <code value="data"/>
+    <display value="Data"/>
+  </concept>
+  <concept>
+    <code value="images"/>
+    <display value="Images"/>
+  </concept>
+</CodeSystem>

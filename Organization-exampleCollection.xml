@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="exampleCollection"/>
+  <meta>
+    <profile value="https://fhir.bbmri.de/StructureDefinition/Collection"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: exampleCollection</p><p><b>meta</b>: </p><p><b>identifier</b>: bbmri-eric:ID:de_12345:collection:vampir</p><p><b>name</b>: Venous and arterial blood from misc patients internal reserve </p><p><b>alias</b>: VAMPIR</p><p><b>partOf</b>: <a href="Organization/exampleBiobank">Organization/exampleBiobank</a></p></div>
+  </text>
+  <extension url="https://fhir.bbmri.de/StructureDefinition/OrganizationDescription">
+    <valueString value="The Collection consists of blood from patients at the Klinikum Neustadt."/>
+  </extension>
+  <extension url="https://fhir.bbmri.de/StructureDefinition/BioresourceReference">
+    <valueString value="ISBN 3-458-34803-4"/>
+  </extension>
+  <extension url="https://fhir.bbmri.de/StructureDefinition/CollectionType">
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://fhir.bbmri.de/CodeSystem/CollectionType"/>
+        <code value="HOSPITAL"/>
+        <display value="Hospital"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="https://fhir.bbmri.de/StructureDefinition/CollectionType">
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://fhir.bbmri.de/CodeSystem/CollectionType"/>
+        <code value="SAMPLE"/>
+        <display value="Sample collection"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="https://fhir.bbmri.de/StructureDefinition/DataCategory">
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://fhir.bbmri.de/CodeSystem/DataCategory"/>
+        <code value="BIOLOGICAL_SAMPLES"/>
+        <display value="Biological samples"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="https://fhir.bbmri.de/StructureDefinition/AccessPolicy">
+    <extension url="resource">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://fhir.bbmri.de/CodeSystem/ResourceType"/>
+          <code value="samples"/>
+          <display value="Samples"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="resource">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://fhir.bbmri.de/CodeSystem/ResourceType"/>
+          <code value="data"/>
+          <display value="Data"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="fee">
+      <valueBoolean value="true"/>
+    </extension>
+    <extension url="description">
+      <valueString value="Access contract inluding data protection guidelines needs to be signed."/>
+    </extension>
+  </extension>
+  <identifier>
+    <system value="http://www.bbmri-eric.eu/"/>
+    <value value="bbmri-eric:ID:de_12345:collection:vampir"/>
+  </identifier>
+  <name value="Venous and arterial blood from misc patients internal reserve"/>
+  <alias value="VAMPIR"/>
+  <partOf>
+    <reference value="Organization/exampleBiobank"/>
+  </partOf>
+  <contact>
+    <purpose>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/contactentity-type"/>
+        <code value="ADMIN"/>
+        <display value="Administrative"/>
+      </coding>
+    </purpose>
+    <name>
+      <family value="Dracula"/>
+      <given value="Vladimir"/>
+      <prefix value="Graf"/>
+    </name>
+    <telecom>
+      <system value="fax"/>
+      <value value="0452 4624-66"/>
+    </telecom>
+  </contact>
+</Organization>

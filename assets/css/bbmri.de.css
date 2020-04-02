@@ -1,0 +1,64 @@
+#segment-footer > .container {
+  background-color: #6F8795;
+}
+
+#segment-breadcrumb {
+color: #6F8795;
+}
+
+.navbar-inverse {
+  background-color: #6F8795;
+color: #F8F9F9;
+
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+  background-color: #304757;
+}
+
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+    background-color: #304757;
+color:
+    #ffffff;
+}
+
+.nav-tabs > .active > a,
+.nav-tabs > .active > a:hover,
+.nav-tabs > .active > a:focus {
+  color: #939fad;
+}
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+background-image: linear-gradient(to bottom, #304757 0%, #304757 100%);
+}
+
+#ig-status {
+    margin-top: 20px;
+    line-height: 25px;
+    color: #6F8795;
+    text-align: center;
+}
+
+#buffer {
+ width: 205px;
+height: 80px;
+  float: right;
+  margin-top: 16px;
+}
+
+#gba-nav {
+  width: 205px;
+  line-height: 50px;
+  float: left;
+  margin-top: 16px;
+  color: #939fad;
+}
+#gba-nav a {
+  color: inherit;
+}
+#gba-logo {
+  float: left;
+  margin-left: 6px;
+  margin-right: 6px;
+  margin-bottom: 8px;
+}

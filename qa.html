@@ -1,0 +1,1055 @@
+﻿<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- broken links = 95, errors = 15, warn = 10, info = 1 -->
+<head>
+  <title>BBMRI_DE_IG : Validation Results</title>
+  <link href="fhir.css" rel="stylesheet"/>
+  <style>
+    span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
+  </style>
+  <script>
+    function flip(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Reasoning') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Reasoning';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Reasoning';
+      }
+    }
+  </script>
+</head>
+<body style="margin: 20px; background-color: #ffffff">
+ <h1>Validation Results for BBMRI_DE_IG</h1>
+ <p>Generated Thu Apr 02 14:52:01 UTC 2020, FHIR version 4.0.1 for de.bbmri.fhir#0.1.0-beta (canonical = <a href="https://fhir.bbmri.de">https://fhir.bbmri.de</a> (<a href="https://fhir.bbmri.de/history.html">history</a>))</p>
+<p>IG Publisher Version: v1.0.77-SNAPSHOT</p>
+<p><a href="#suppressed">5 Suppressed Errors</a></p>
+ <p>HL7 Publication check:</p> <ul><li>n/a - not an HL7.org or FHIR.org implementation guide</li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Information messages &amp; Warnings</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>48</b></td><td><b>47</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_travis_build_samply_bbmri-fhir-ig_input_de.bbmri.fhir"><b>/home/travis/build/samply/bbmri-fhir-ig/input/de.bbmri.fhir</b></a></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_travis_build_samply_bbmri-fhir-ig_input_examples_exampleBiobank"><b>/home/travis/build/samply/bbmri-fhir-ig/input/examples/exampleBiobank</b></a></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_travis_build_samply_bbmri-fhir-ig_input_examples_exampleBmi"><b>/home/travis/build/samply/bbmri-fhir-ig/input/examples/exampleBmi</b></a></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_travis_build_samply_bbmri-fhir-ig_input_examples_exampleBodyHeight"><b>/home/travis/build/samply/bbmri-fhir-ig/input/examples/exampleBodyHeight</b></a></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_travis_build_samply_bbmri-fhir-ig_input_examples_exampleBodyWeight"><b>/home/travis/build/samply/bbmri-fhir-ig/input/examples/exampleBodyWeight</b></a></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_travis_build_samply_bbmri-fhir-ig_input_examples_exampleCollection"><b>/home/travis/build/samply/bbmri-fhir-ig/input/examples/exampleCollection</b></a></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_travis_build_samply_bbmri-fhir-ig_input_examples_exampleCollectionRD"><b>/home/travis/build/samply/bbmri-fhir-ig/input/examples/exampleCollectionRD</b></a></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_travis_build_samply_bbmri-fhir-ig_input_examples_exampleNetworkMembership"><b>/home/travis/build/samply/bbmri-fhir-ig/input/examples/exampleNetworkMembership</b></a></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_travis_build_samply_bbmri-fhir-ig_input_examples_examplePatient"><b>/home/travis/build/samply/bbmri-fhir-ig/input/examples/examplePatient</b></a></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_travis_build_samply_bbmri-fhir-ig_input_examples_exampleSpecimen"><b>/home/travis/build/samply/bbmri-fhir-ig/input/examples/exampleSpecimen</b></a></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_travis_build_samply_bbmri-fhir-ig_input_examples_exampleTobaccoUse"><b>/home/travis/build/samply/bbmri-fhir-ig/input/examples/exampleTobaccoUse</b></a></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_travis_build_samply_bbmri-fhir-ig_input_examples_transaction-0"><b>/home/travis/build/samply/bbmri-fhir-ig/input/examples/transaction-0</b></a></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_travis_build_samply_bbmri-fhir-ig_input_resources_AccessPolicy.StructureDefinition"><b>/home/travis/build/samply/bbmri-fhir-ig/input/resources/AccessPolicy.StructureDefinition</b></a></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_travis_build_samply_bbmri-fhir-ig_input_resources_Biobank.StructureDefinition"><b>/home/travis/build/samply/bbmri-fhir-ig/input/resources/Biobank.StructureDefinition</b></a></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_travis_build_samply_bbmri-fhir-ig_input_resources_BiobankCapabilities.CodeSystem"><b>/home/travis/build/samply/bbmri-fhir-ig/input/resources/BiobankCapabilities.CodeSystem</b></a></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_travis_build_samply_bbmri-fhir-ig_input_resources_BiobankCapabilities.ValueSet"><b>/home/travis/build/samply/bbmri-fhir-ig/input/resources/BiobankCapabilities.ValueSet</b></a></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_travis_build_samply_bbmri-fhir-ig_input_resources_Bmi.StructureDefinition"><b>/home/travis/build/samply/bbmri-fhir-ig/input/resources/Bmi.StructureDefinition</b></a></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_travis_build_samply_bbmri-fhir-ig_input_resources_BodyHeight.StructureDefinition"><b>/home/travis/build/samply/bbmri-fhir-ig/input/resources/BodyHeight.StructureDefinition</b></a></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_travis_build_samply_bbmri-fhir-ig_input_resources_BodyWeight.StructureDefinition"><b>/home/travis/build/samply/bbmri-fhir-ig/input/resources/BodyWeight.StructureDefinition</b></a></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_travis_build_samply_bbmri-fhir-ig_input_resources_Capabilities.StructureDefinition"><b>/home/travis/build/samply/bbmri-fhir-ig/input/resources/Capabilities.StructureDefinition</b></a></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_travis_build_samply_bbmri-fhir-ig_input_resources_CauseOfDeath.StructureDefinition"><b>/home/travis/build/samply/bbmri-fhir-ig/input/resources/CauseOfDeath.StructureDefinition</b></a></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_travis_build_samply_bbmri-fhir-ig_input_resources_Collaboration.StructureDefinition"><b>/home/travis/build/samply/bbmri-fhir-ig/input/resources/Collaboration.StructureDefinition</b></a></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_travis_build_samply_bbmri-fhir-ig_input_resources_Collection.StructureDefinition"><b>/home/travis/build/samply/bbmri-fhir-ig/input/resources/Collection.StructureDefinition</b></a></td><td><b>2</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_travis_build_samply_bbmri-fhir-ig_input_resources_CollectionType.CodeSystem"><b>/home/travis/build/samply/bbmri-fhir-ig/input/resources/CollectionType.CodeSystem</b></a></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_travis_build_samply_bbmri-fhir-ig_input_resources_CollectionType.StructureDefinition"><b>/home/travis/build/samply/bbmri-fhir-ig/input/resources/CollectionType.StructureDefinition</b></a></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_travis_build_samply_bbmri-fhir-ig_input_resources_CollectionType.ValueSet"><b>/home/travis/build/samply/bbmri-fhir-ig/input/resources/CollectionType.ValueSet</b></a></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_travis_build_samply_bbmri-fhir-ig_input_resources_Condition.StructureDefinition"><b>/home/travis/build/samply/bbmri-fhir-ig/input/resources/Condition.StructureDefinition</b></a></td><td><b>3</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_travis_build_samply_bbmri-fhir-ig_input_resources_ContactRole.StructureDefinition"><b>/home/travis/build/samply/bbmri-fhir-ig/input/resources/ContactRole.StructureDefinition</b></a></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_travis_build_samply_bbmri-fhir-ig_input_resources_ContactType.CodeSystem"><b>/home/travis/build/samply/bbmri-fhir-ig/input/resources/ContactType.CodeSystem</b></a></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_travis_build_samply_bbmri-fhir-ig_input_resources_Custodian.StructureDefinition"><b>/home/travis/build/samply/bbmri-fhir-ig/input/resources/Custodian.StructureDefinition</b></a></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_travis_build_samply_bbmri-fhir-ig_input_resources_DataCategory.CodeSystem"><b>/home/travis/build/samply/bbmri-fhir-ig/input/resources/DataCategory.CodeSystem</b></a></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_travis_build_samply_bbmri-fhir-ig_input_resources_DataCategory.StructureDefinition"><b>/home/travis/build/samply/bbmri-fhir-ig/input/resources/DataCategory.StructureDefinition</b></a></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_travis_build_samply_bbmri-fhir-ig_input_resources_DataCategory.ValueSet"><b>/home/travis/build/samply/bbmri-fhir-ig/input/resources/DataCategory.ValueSet</b></a></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_travis_build_samply_bbmri-fhir-ig_input_resources_Diagnosis.StructureDefinition"><b>/home/travis/build/samply/bbmri-fhir-ig/input/resources/Diagnosis.StructureDefinition</b></a></td><td><b>3</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_travis_build_samply_bbmri-fhir-ig_input_resources_ITSupport.StructureDefinition"><b>/home/travis/build/samply/bbmri-fhir-ig/input/resources/ITSupport.StructureDefinition</b></a></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_travis_build_samply_bbmri-fhir-ig_input_resources_IdCard.StructureDefinition"><b>/home/travis/build/samply/bbmri-fhir-ig/input/resources/IdCard.StructureDefinition</b></a></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_travis_build_samply_bbmri-fhir-ig_input_resources_JuridicalPersion.StructureDefinition"><b>/home/travis/build/samply/bbmri-fhir-ig/input/resources/JuridicalPersion.StructureDefinition</b></a></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_travis_build_samply_bbmri-fhir-ig_input_resources_NetworkMembership.StructureDefinition"><b>/home/travis/build/samply/bbmri-fhir-ig/input/resources/NetworkMembership.StructureDefinition</b></a></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_travis_build_samply_bbmri-fhir-ig_input_resources_OrganizationDescription.StructureDefinition"><b>/home/travis/build/samply/bbmri-fhir-ig/input/resources/OrganizationDescription.StructureDefinition</b></a></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_travis_build_samply_bbmri-fhir-ig_input_resources_OtherSampleDiagnosis.CodeSystem"><b>/home/travis/build/samply/bbmri-fhir-ig/input/resources/OtherSampleDiagnosis.CodeSystem</b></a></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_travis_build_samply_bbmri-fhir-ig_input_resources_OtherSampleDiagnosis.ValueSet"><b>/home/travis/build/samply/bbmri-fhir-ig/input/resources/OtherSampleDiagnosis.ValueSet</b></a></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_travis_build_samply_bbmri-fhir-ig_input_resources_PartnerCharterSigned.StructureDefinition"><b>/home/travis/build/samply/bbmri-fhir-ig/input/resources/PartnerCharterSigned.StructureDefinition</b></a></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_travis_build_samply_bbmri-fhir-ig_input_resources_Patient.StructureDefinition"><b>/home/travis/build/samply/bbmri-fhir-ig/input/resources/Patient.StructureDefinition</b></a></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_travis_build_samply_bbmri-fhir-ig_input_resources_QualityStandard.CodeSystem"><b>/home/travis/build/samply/bbmri-fhir-ig/input/resources/QualityStandard.CodeSystem</b></a></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_travis_build_samply_bbmri-fhir-ig_input_resources_QualityStandard.StructureDefinition"><b>/home/travis/build/samply/bbmri-fhir-ig/input/resources/QualityStandard.StructureDefinition</b></a></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_travis_build_samply_bbmri-fhir-ig_input_resources_QualityStandard.ValueSet"><b>/home/travis/build/samply/bbmri-fhir-ig/input/resources/QualityStandard.ValueSet</b></a></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_travis_build_samply_bbmri-fhir-ig_input_resources_ResourceManagement.StructureDefinition"><b>/home/travis/build/samply/bbmri-fhir-ig/input/resources/ResourceManagement.StructureDefinition</b></a></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_travis_build_samply_bbmri-fhir-ig_input_resources_ResourceType.CodeSystem"><b>/home/travis/build/samply/bbmri-fhir-ig/input/resources/ResourceType.CodeSystem</b></a></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_travis_build_samply_bbmri-fhir-ig_input_resources_ResourceType.ValueSet"><b>/home/travis/build/samply/bbmri-fhir-ig/input/resources/ResourceType.ValueSet</b></a></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_travis_build_samply_bbmri-fhir-ig_input_resources_SampleMaterialType.CodeSystem"><b>/home/travis/build/samply/bbmri-fhir-ig/input/resources/SampleMaterialType.CodeSystem</b></a></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_travis_build_samply_bbmri-fhir-ig_input_resources_SampleMaterialType.ValueSet"><b>/home/travis/build/samply/bbmri-fhir-ig/input/resources/SampleMaterialType.ValueSet</b></a></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_travis_build_samply_bbmri-fhir-ig_input_resources_Specimen.StructureDefinition"><b>/home/travis/build/samply/bbmri-fhir-ig/input/resources/Specimen.StructureDefinition</b></a></td><td><b>3</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_travis_build_samply_bbmri-fhir-ig_input_resources_StorageTemperature.CodeSystem"><b>/home/travis/build/samply/bbmri-fhir-ig/input/resources/StorageTemperature.CodeSystem</b></a></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_travis_build_samply_bbmri-fhir-ig_input_resources_StorageTemperature.StructureDefinition"><b>/home/travis/build/samply/bbmri-fhir-ig/input/resources/StorageTemperature.StructureDefinition</b></a></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_travis_build_samply_bbmri-fhir-ig_input_resources_StorageTemperature.ValueSet"><b>/home/travis/build/samply/bbmri-fhir-ig/input/resources/StorageTemperature.ValueSet</b></a></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_travis_build_samply_bbmri-fhir-ig_input_resources_TobaccoUse.StructureDefinition"><b>/home/travis/build/samply/bbmri-fhir-ig/input/resources/TobaccoUse.StructureDefinition</b></a></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_travis_build_samply_bbmri-fhir-ig_input_resources_bioresourceReference.StructureDefinition"><b>/home/travis/build/samply/bbmri-fhir-ig/input/resources/bioresourceReference.StructureDefinition</b></a></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_travis_build_samply_bbmri-fhir-ig_input_resources_parentCollection.StructureDefinition"><b>/home/travis/build/samply/bbmri-fhir-ig/input/resources/parentCollection.StructureDefinition</b></a></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="internal"> </a>
+<h2><a href="">n/a</a></h2>
+ <table class="grid">
+   <tr style="background-color: #ffcccc">
+     <td><b>ImplementationGuide.definition.parameter[20].value</b></td><td><b>error</b></td><td><b>Supressed messages file is not using the new format (see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>??</b></td><td><b>error</b></td><td><b>The reference http://fhir.de/StructureDefinition/CodingICD10GM could not be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/53ef12a3-1e31-4fc1-adf6-9d30dc6c4784.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource Organization/exampleCollection.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource Specimen/0-specimen.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td><b>Unable to find ImplementationGuide.definition.resource.name for the resource OrganizationAffiliation/example.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource OrganizationAffiliation/example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource Observation/0-body-weight.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource Organization/exampleBiobank.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource Observation/0-tobacco-use.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource Observation/0-body-height.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource Organization/exampleCollectionRD.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource Patient/0.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource Observation/0-bmi.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td><b>Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/Biobank.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/Biobank.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td><b>Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/BodyWeight.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/BodyWeight.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td><b>Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/BioresourceReference.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/BioresourceReference.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td><b>Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/NetworkMembership.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td><b>Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/OrganizationDescription.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/ContactType.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td><b>Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/BodyHeight.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/BodyHeight.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td><b>Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/Bmi.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/Bmi.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/SampleMaterialType.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td><b>Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/CollectionType.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/CollectionType.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td><b>Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/Custodian.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/Custodian.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td><b>Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/TobaccoUse.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/TobaccoUse.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/ResourceType.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td><b>Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/Specimen.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/Specimen.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/DataCategory.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/QualityStandard.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td><b>Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/Collection.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/Collection.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td><b>Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/Collaboration.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/Collaboration.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/StorageTemperature.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/OtherSampleDiagnosis.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td><b>Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/QualityStandard.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td><b>Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/PartnerCharterSigned.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/PartnerCharterSigned.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td><b>Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/CauseOfDeath.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/CauseOfDeath.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td><b>Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/Capabilities.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/Capabilities.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/QualityStandard.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/StorageTemperature.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td><b>Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/Patient.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td><b>Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/DataCategory.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td><b>Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/SampleDiagnosis.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/SampleDiagnosis.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td><b>Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/AccessPolicy.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/AccessPolicy.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td><b>Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/StorageTemperature.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/StorageTemperature.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/BiobankCapabilities.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/BiobankCapabilities.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td><b>Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/JuridicalPerson.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td><b>Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/ParentCollection.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/ParentCollection.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td><b>Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/Condition.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/Condition.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/CollectionType.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td><b>Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/ContactRole.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/ContactRole.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td><b>Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/ITSupport.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/ITSupport.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td><b>Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/ResourceManagement.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/ResourceManagement.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td><b>Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/IdCard.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/IdCard.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/DataCategory.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Organization-exampleCollection.html#ae5799e9-50b3-4c6d-a261-a1fc869b8293">Organization-exampleCollection.html#/html/body/div/div/div/div/div/div/p/a at Line 161, column 340</a></b></td><td><b>error</b></td><td><b>The link 'Organization/exampleBiobank' for &quot;Organization/exampleBiobank&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Organization-exampleCollectionRD.html#70f66273-31a0-49f0-aef4-59be8d7d5bd4">Organization-exampleCollectionRD.html#/html/body/div/div/div/div/div/div/p/a at Line 161, column 340</a></b></td><td><b>error</b></td><td><b>The link 'Organization/exampleBiobank' for &quot;Organization/exampleBiobank&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="OrganizationAffiliation-example.html#0b63b2f4-ebaa-43e0-9418-75815513cf34">OrganizationAffiliation-example.html#/html/body/div/div/div/div/div/div/p/a at Line 161, column 205</a></b></td><td><b>error</b></td><td><b>The link 'Organization/exampleBiobank' for &quot;Organization/exampleBiobank&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-Biobank.html#0d8f4210-15db-4f15-ad9b-325b4e7e45db">StructureDefinition-Biobank.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 287, column 941</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-Biobank-definitions.html#Organization.contact.purpose.coding' for &quot;coding&quot; cannot be resolved (valid targets: 162 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-Biobank.html#478b97d1-b637-401d-8555-732211795bae">StructureDefinition-Biobank.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 787, column 941</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-Biobank-definitions.html#Organization.contact.purpose.coding' for &quot;coding&quot; cannot be resolved (valid targets: 162 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-Collection.html#c04e9799-a600-4fe1-8b0e-1af48b7f55a9">StructureDefinition-Collection.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 293, column 941</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-Collection-definitions.html#Organization.contact.purpose.coding' for &quot;coding&quot; cannot be resolved (valid targets: 156 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-Collection.html#3e3e22ef-438f-4a7b-9a62-fd4cbada58db">StructureDefinition-Collection.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 303, column 934</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-Collection-definitions.html#Organization.contact.purpose.coding' for &quot;coding&quot; cannot be resolved (valid targets: 156 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-Collection.html#27673fe1-8bb2-4409-be22-9860ab72dc55">StructureDefinition-Collection.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 791, column 941</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-Collection-definitions.html#Organization.contact.purpose.coding' for &quot;coding&quot; cannot be resolved (valid targets: 156 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-Collection.html#0c095af5-ce90-4565-9927-177646652fb5">StructureDefinition-Collection.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 801, column 934</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-Collection-definitions.html#Organization.contact.purpose.coding' for &quot;coding&quot; cannot be resolved (valid targets: 156 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-Condition.html#99663849-34cc-4b79-8a2a-e8a376a59b74">StructureDefinition-Condition.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 253, column 1552</a></b></td><td><b>error</b></td><td><b>The link 'unknown.html' for &quot;??&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-Condition.html#a524c777-f54d-40a0-81af-7b04f9d29c9b">StructureDefinition-Condition.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 302, column 1767</a></b></td><td><b>error</b></td><td><b>The link 'unknown.html' for &quot;??&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-Condition.html#99d79788-306f-4721-8e83-ba80c7de5e81">StructureDefinition-Condition.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 474, column 1552</a></b></td><td><b>error</b></td><td><b>The link 'unknown.html' for &quot;??&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-Condition.html#5f9b80bf-41e0-4bce-885c-24d7c979a579">StructureDefinition-Condition.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 523, column 1767</a></b></td><td><b>error</b></td><td><b>The link 'unknown.html' for &quot;??&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-Specimen.html#f66272e8-f52c-4398-8ba0-6c4839390565">StructureDefinition-Specimen.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 260, column 752</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-Specimen-definitions.html#Specimen.extension.value[x]' for &quot;value[x]&quot; cannot be resolved (valid targets: 196 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-Specimen.html#f59b76fd-8c9e-4502-87a3-cc37659a63ba">StructureDefinition-Specimen.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 603, column 752</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-Specimen-definitions.html#Specimen.extension.value[x]' for &quot;value[x]&quot; cannot be resolved (valid targets: 196 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="index.html#5a6a6a91-ef15-476f-9e57-31f4e79aca78">index.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 168, column 11</a></b></td><td><b>error</b></td><td><b>The link 'background.html' for &quot;Background&quot; cannot be resolved</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_travis_build_samply_bbmri-fhir-ig_input_de.bbmri.fhir"> </a>
+<h2><a href="ImplementationGuide-de.bbmri.fhir.html">/home/travis/build/samply/bbmri-fhir-ig/input/de.bbmri.fhir.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_travis_build_samply_bbmri-fhir-ig_input_examples_exampleBiobank"> </a>
+<h2><a href="Organization-exampleBiobank.html">/home/travis/build/samply/bbmri-fhir-ig/input/examples/exampleBiobank.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_travis_build_samply_bbmri-fhir-ig_input_examples_exampleBmi"> </a>
+<h2><a href="Observation-0-bmi.html">/home/travis/build/samply/bbmri-fhir-ig/input/examples/exampleBmi.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_travis_build_samply_bbmri-fhir-ig_input_examples_exampleBodyHeight"> </a>
+<h2><a href="Observation-0-body-height.html">/home/travis/build/samply/bbmri-fhir-ig/input/examples/exampleBodyHeight.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_travis_build_samply_bbmri-fhir-ig_input_examples_exampleBodyWeight"> </a>
+<h2><a href="Observation-0-body-weight.html">/home/travis/build/samply/bbmri-fhir-ig/input/examples/exampleBodyWeight.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_travis_build_samply_bbmri-fhir-ig_input_examples_exampleCollection"> </a>
+<h2><a href="Organization-exampleCollection.html">/home/travis/build/samply/bbmri-fhir-ig/input/examples/exampleCollection.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_travis_build_samply_bbmri-fhir-ig_input_examples_exampleCollectionRD"> </a>
+<h2><a href="Organization-exampleCollectionRD.html">/home/travis/build/samply/bbmri-fhir-ig/input/examples/exampleCollectionRD.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_travis_build_samply_bbmri-fhir-ig_input_examples_exampleNetworkMembership"> </a>
+<h2><a href="OrganizationAffiliation-example.html">/home/travis/build/samply/bbmri-fhir-ig/input/examples/exampleNetworkMembership.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_travis_build_samply_bbmri-fhir-ig_input_examples_examplePatient"> </a>
+<h2><a href="Patient-0.html">/home/travis/build/samply/bbmri-fhir-ig/input/examples/examplePatient.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_travis_build_samply_bbmri-fhir-ig_input_examples_exampleSpecimen"> </a>
+<h2><a href="Specimen-0-specimen.html">/home/travis/build/samply/bbmri-fhir-ig/input/examples/exampleSpecimen.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Specimen/0-specimen: Specimen.collection.bodySite.coding[0]</b></td><td><b>information</b></td><td><b>Code System URI &quot;urn:oid:1.3.6.1.4.1.19376.1.3.11.36&quot; is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_travis_build_samply_bbmri-fhir-ig_input_examples_exampleTobaccoUse"> </a>
+<h2><a href="Observation-0-tobacco-use.html">/home/travis/build/samply/bbmri-fhir-ig/input/examples/exampleTobaccoUse.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_travis_build_samply_bbmri-fhir-ig_input_examples_transaction-0"> </a>
+<h2><a href="Bundle-53ef12a3-1e31-4fc1-adf6-9d30dc6c4784.html">/home/travis/build/samply/bbmri-fhir-ig/input/examples/transaction-0.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle/53ef12a3-1e31-4fc1-adf6-9d30dc6c4784: Bundle.entry[5].resource.extension[1].value.ofType(Reference)</b></td><td><b>error</b></td><td><b>Unable to resolve resource &quot;http://blaze.example.com/fhir/Organization/collection-2&quot;</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_travis_build_samply_bbmri-fhir-ig_input_resources_AccessPolicy.StructureDefinition"> </a>
+<h2><a href="StructureDefinition-AccessPolicy.html">/home/travis/build/samply/bbmri-fhir-ig/input/resources/AccessPolicy.StructureDefinition.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_travis_build_samply_bbmri-fhir-ig_input_resources_Biobank.StructureDefinition"> </a>
+<h2><a href="StructureDefinition-Biobank.html">/home/travis/build/samply/bbmri-fhir-ig/input/resources/Biobank.StructureDefinition.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition/Biobank: StructureDefinition.differential.element[13].constraint[0].source</b></td><td><b>error</b></td><td><b>Canonical URLs must be absolute URLs if they are not fragment references (Organization) </b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_travis_build_samply_bbmri-fhir-ig_input_resources_BiobankCapabilities.CodeSystem"> </a>
+<h2><a href="CodeSystem-BiobankCapabilities.html">/home/travis/build/samply/bbmri-fhir-ig/input/resources/BiobankCapabilities.CodeSystem.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_travis_build_samply_bbmri-fhir-ig_input_resources_BiobankCapabilities.ValueSet"> </a>
+<h2><a href="ValueSet-BiobankCapabilities.html">/home/travis/build/samply/bbmri-fhir-ig/input/resources/BiobankCapabilities.ValueSet.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_travis_build_samply_bbmri-fhir-ig_input_resources_Bmi.StructureDefinition"> </a>
+<h2><a href="StructureDefinition-Bmi.html">/home/travis/build/samply/bbmri-fhir-ig/input/resources/Bmi.StructureDefinition.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_travis_build_samply_bbmri-fhir-ig_input_resources_BodyHeight.StructureDefinition"> </a>
+<h2><a href="StructureDefinition-BodyHeight.html">/home/travis/build/samply/bbmri-fhir-ig/input/resources/BodyHeight.StructureDefinition.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_travis_build_samply_bbmri-fhir-ig_input_resources_BodyWeight.StructureDefinition"> </a>
+<h2><a href="StructureDefinition-BodyWeight.html">/home/travis/build/samply/bbmri-fhir-ig/input/resources/BodyWeight.StructureDefinition.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_travis_build_samply_bbmri-fhir-ig_input_resources_Capabilities.StructureDefinition"> </a>
+<h2><a href="StructureDefinition-Capabilities.html">/home/travis/build/samply/bbmri-fhir-ig/input/resources/Capabilities.StructureDefinition.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>https://fhir.bbmri.de/StructureDefinition/Capabilities</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this extension</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_travis_build_samply_bbmri-fhir-ig_input_resources_CauseOfDeath.StructureDefinition"> </a>
+<h2><a href="StructureDefinition-CauseOfDeath.html">/home/travis/build/samply/bbmri-fhir-ig/input/resources/CauseOfDeath.StructureDefinition.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>https://fhir.bbmri.de/StructureDefinition/CauseOfDeath</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_travis_build_samply_bbmri-fhir-ig_input_resources_Collaboration.StructureDefinition"> </a>
+<h2><a href="StructureDefinition-Collaboration.html">/home/travis/build/samply/bbmri-fhir-ig/input/resources/Collaboration.StructureDefinition.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>https://fhir.bbmri.de/StructureDefinition/Collaboration</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this extension</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_travis_build_samply_bbmri-fhir-ig_input_resources_Collection.StructureDefinition"> </a>
+<h2><a href="StructureDefinition-Collection.html">/home/travis/build/samply/bbmri-fhir-ig/input/resources/Collection.StructureDefinition.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition/Collection: StructureDefinition.differential.element[0].constraint[0].source</b></td><td><b>error</b></td><td><b>Canonical URLs must be absolute URLs if they are not fragment references (Organization) </b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition/Collection: StructureDefinition.differential.element[15].constraint[0].source</b></td><td><b>error</b></td><td><b>Canonical URLs must be absolute URLs if they are not fragment references (Organization) </b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_travis_build_samply_bbmri-fhir-ig_input_resources_CollectionType.CodeSystem"> </a>
+<h2><a href="CodeSystem-CollectionType.html">/home/travis/build/samply/bbmri-fhir-ig/input/resources/CollectionType.CodeSystem.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_travis_build_samply_bbmri-fhir-ig_input_resources_CollectionType.StructureDefinition"> </a>
+<h2><a href="StructureDefinition-CollectionType.html">/home/travis/build/samply/bbmri-fhir-ig/input/resources/CollectionType.StructureDefinition.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_travis_build_samply_bbmri-fhir-ig_input_resources_CollectionType.ValueSet"> </a>
+<h2><a href="ValueSet-CollectionType.html">/home/travis/build/samply/bbmri-fhir-ig/input/resources/CollectionType.ValueSet.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_travis_build_samply_bbmri-fhir-ig_input_resources_Condition.StructureDefinition"> </a>
+<h2><a href="StructureDefinition-Condition.html">/home/travis/build/samply/bbmri-fhir-ig/input/resources/Condition.StructureDefinition.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>https://fhir.bbmri.de/StructureDefinition/Condition#Condition.code.coding:icd-10-gm</b></td><td><b>warning</b></td><td><b>The type of profile http://fhir.de/StructureDefinition/CodingICD10GM cannot be checked as the profile is not known</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition/Condition: StructureDefinition.snapshot.element[29].fixed.ofType(uri)</b></td><td><b>error</b></td><td><b>URL value &quot;http://hl7.org/fhir/sid/icd-9&quot; does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition/Condition: StructureDefinition.differential.element[0]</b></td><td><b>error</b></td><td><b>Duplicate id value 'Condition'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition/Condition: StructureDefinition.differential.element[6].fixed.ofType(uri)</b></td><td><b>error</b></td><td><b>URL value &quot;http://hl7.org/fhir/sid/icd-9&quot; does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>https://fhir.bbmri.de/StructureDefinition/Condition</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_travis_build_samply_bbmri-fhir-ig_input_resources_ContactRole.StructureDefinition"> </a>
+<h2><a href="StructureDefinition-ContactRole.html">/home/travis/build/samply/bbmri-fhir-ig/input/resources/ContactRole.StructureDefinition.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_travis_build_samply_bbmri-fhir-ig_input_resources_ContactType.CodeSystem"> </a>
+<h2><a href="CodeSystem-ContactType.html">/home/travis/build/samply/bbmri-fhir-ig/input/resources/ContactType.CodeSystem.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_travis_build_samply_bbmri-fhir-ig_input_resources_Custodian.StructureDefinition"> </a>
+<h2><a href="StructureDefinition-Custodian.html">/home/travis/build/samply/bbmri-fhir-ig/input/resources/Custodian.StructureDefinition.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_travis_build_samply_bbmri-fhir-ig_input_resources_DataCategory.CodeSystem"> </a>
+<h2><a href="CodeSystem-DataCategory.html">/home/travis/build/samply/bbmri-fhir-ig/input/resources/DataCategory.CodeSystem.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_travis_build_samply_bbmri-fhir-ig_input_resources_DataCategory.StructureDefinition"> </a>
+<h2><a href="StructureDefinition-DataCategory.html">/home/travis/build/samply/bbmri-fhir-ig/input/resources/DataCategory.StructureDefinition.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_travis_build_samply_bbmri-fhir-ig_input_resources_DataCategory.ValueSet"> </a>
+<h2><a href="ValueSet-DataCategory.html">/home/travis/build/samply/bbmri-fhir-ig/input/resources/DataCategory.ValueSet.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_travis_build_samply_bbmri-fhir-ig_input_resources_Diagnosis.StructureDefinition"> </a>
+<h2><a href="StructureDefinition-SampleDiagnosis.html">/home/travis/build/samply/bbmri-fhir-ig/input/resources/Diagnosis.StructureDefinition.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition/SampleDiagnosis: StructureDefinition.snapshot.element[27].fixed.ofType(uri)</b></td><td><b>error</b></td><td><b>URL value &quot;http://hl7.org/fhir/sid/icd-9&quot; does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition/SampleDiagnosis: StructureDefinition.differential.element[3].constraint[0].source</b></td><td><b>error</b></td><td><b>Canonical URLs must be absolute URLs if they are not fragment references (Extension) </b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition/SampleDiagnosis: StructureDefinition.differential.element[11].fixed.ofType(uri)</b></td><td><b>error</b></td><td><b>URL value &quot;http://hl7.org/fhir/sid/icd-9&quot; does not resolve</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_travis_build_samply_bbmri-fhir-ig_input_resources_ITSupport.StructureDefinition"> </a>
+<h2><a href="StructureDefinition-ITSupport.html">/home/travis/build/samply/bbmri-fhir-ig/input/resources/ITSupport.StructureDefinition.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>https://fhir.bbmri.de/StructureDefinition/ITSupport</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this extension</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_travis_build_samply_bbmri-fhir-ig_input_resources_IdCard.StructureDefinition"> </a>
+<h2><a href="StructureDefinition-IdCard.html">/home/travis/build/samply/bbmri-fhir-ig/input/resources/IdCard.StructureDefinition.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition/IdCard: StructureDefinition.differential.element[2].constraint[0].source</b></td><td><b>error</b></td><td><b>Canonical URLs must be absolute URLs if they are not fragment references (Extension) </b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_travis_build_samply_bbmri-fhir-ig_input_resources_JuridicalPersion.StructureDefinition"> </a>
+<h2><a href="StructureDefinition-JuridicalPerson.html">/home/travis/build/samply/bbmri-fhir-ig/input/resources/JuridicalPersion.StructureDefinition.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_travis_build_samply_bbmri-fhir-ig_input_resources_NetworkMembership.StructureDefinition"> </a>
+<h2><a href="StructureDefinition-NetworkMembership.html">/home/travis/build/samply/bbmri-fhir-ig/input/resources/NetworkMembership.StructureDefinition.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>https://fhir.bbmri.de/StructureDefinition/NetworkMembership</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_travis_build_samply_bbmri-fhir-ig_input_resources_OrganizationDescription.StructureDefinition"> </a>
+<h2><a href="StructureDefinition-OrganizationDescription.html">/home/travis/build/samply/bbmri-fhir-ig/input/resources/OrganizationDescription.StructureDefinition.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_travis_build_samply_bbmri-fhir-ig_input_resources_OtherSampleDiagnosis.CodeSystem"> </a>
+<h2><a href="CodeSystem-OtherSampleDiagnosis.html">/home/travis/build/samply/bbmri-fhir-ig/input/resources/OtherSampleDiagnosis.CodeSystem.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_travis_build_samply_bbmri-fhir-ig_input_resources_OtherSampleDiagnosis.ValueSet"> </a>
+<h2><a href="ValueSet-OtherSampleDiagnosis.html">/home/travis/build/samply/bbmri-fhir-ig/input/resources/OtherSampleDiagnosis.ValueSet.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_travis_build_samply_bbmri-fhir-ig_input_resources_PartnerCharterSigned.StructureDefinition"> </a>
+<h2><a href="StructureDefinition-PartnerCharterSigned.html">/home/travis/build/samply/bbmri-fhir-ig/input/resources/PartnerCharterSigned.StructureDefinition.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>https://fhir.bbmri.de/StructureDefinition/PartnerCharterSigned</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this extension</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_travis_build_samply_bbmri-fhir-ig_input_resources_Patient.StructureDefinition"> </a>
+<h2><a href="StructureDefinition-Patient.html">/home/travis/build/samply/bbmri-fhir-ig/input/resources/Patient.StructureDefinition.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition/Patient: StructureDefinition.differential.element[0]</b></td><td><b>error</b></td><td><b>Duplicate id value 'Patient'</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_travis_build_samply_bbmri-fhir-ig_input_resources_QualityStandard.CodeSystem"> </a>
+<h2><a href="CodeSystem-QualityStandard.html">/home/travis/build/samply/bbmri-fhir-ig/input/resources/QualityStandard.CodeSystem.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_travis_build_samply_bbmri-fhir-ig_input_resources_QualityStandard.StructureDefinition"> </a>
+<h2><a href="StructureDefinition-QualityStandard.html">/home/travis/build/samply/bbmri-fhir-ig/input/resources/QualityStandard.StructureDefinition.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_travis_build_samply_bbmri-fhir-ig_input_resources_QualityStandard.ValueSet"> </a>
+<h2><a href="ValueSet-QualityStandard.html">/home/travis/build/samply/bbmri-fhir-ig/input/resources/QualityStandard.ValueSet.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_travis_build_samply_bbmri-fhir-ig_input_resources_ResourceManagement.StructureDefinition"> </a>
+<h2><a href="StructureDefinition-ResourceManagement.html">/home/travis/build/samply/bbmri-fhir-ig/input/resources/ResourceManagement.StructureDefinition.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>https://fhir.bbmri.de/StructureDefinition/ResourceManagement</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this extension</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_travis_build_samply_bbmri-fhir-ig_input_resources_ResourceType.CodeSystem"> </a>
+<h2><a href="CodeSystem-ResourceType.html">/home/travis/build/samply/bbmri-fhir-ig/input/resources/ResourceType.CodeSystem.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_travis_build_samply_bbmri-fhir-ig_input_resources_ResourceType.ValueSet"> </a>
+<h2><a href="ValueSet-ResourceType.html">/home/travis/build/samply/bbmri-fhir-ig/input/resources/ResourceType.ValueSet.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_travis_build_samply_bbmri-fhir-ig_input_resources_SampleMaterialType.CodeSystem"> </a>
+<h2><a href="CodeSystem-SampleMaterialType.html">/home/travis/build/samply/bbmri-fhir-ig/input/resources/SampleMaterialType.CodeSystem.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_travis_build_samply_bbmri-fhir-ig_input_resources_SampleMaterialType.ValueSet"> </a>
+<h2><a href="ValueSet-SampleMaterialType.html">/home/travis/build/samply/bbmri-fhir-ig/input/resources/SampleMaterialType.ValueSet.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_travis_build_samply_bbmri-fhir-ig_input_resources_Specimen.StructureDefinition"> </a>
+<h2><a href="StructureDefinition-Specimen.html">/home/travis/build/samply/bbmri-fhir-ig/input/resources/Specimen.StructureDefinition.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.differential.element[10].min</b></td><td><b>error</b></td><td><b>Error parsing JSON: the primitive value must be a number</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition/Specimen: StructureDefinition.snapshot.element[36].fixed.ofType(uri)</b></td><td><b>error</b></td><td><b>URL value &quot;http://hl7.org/fhir/sid/icd-9&quot; does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition/Specimen: StructureDefinition.differential.element[0]</b></td><td><b>error</b></td><td><b>Duplicate id value 'Specimen'</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_travis_build_samply_bbmri-fhir-ig_input_resources_StorageTemperature.CodeSystem"> </a>
+<h2><a href="CodeSystem-StorageTemperature.html">/home/travis/build/samply/bbmri-fhir-ig/input/resources/StorageTemperature.CodeSystem.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_travis_build_samply_bbmri-fhir-ig_input_resources_StorageTemperature.StructureDefinition"> </a>
+<h2><a href="StructureDefinition-StorageTemperature.html">/home/travis/build/samply/bbmri-fhir-ig/input/resources/StorageTemperature.StructureDefinition.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_travis_build_samply_bbmri-fhir-ig_input_resources_StorageTemperature.ValueSet"> </a>
+<h2><a href="ValueSet-StorageTemperature.html">/home/travis/build/samply/bbmri-fhir-ig/input/resources/StorageTemperature.ValueSet.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_travis_build_samply_bbmri-fhir-ig_input_resources_TobaccoUse.StructureDefinition"> </a>
+<h2><a href="StructureDefinition-TobaccoUse.html">/home/travis/build/samply/bbmri-fhir-ig/input/resources/TobaccoUse.StructureDefinition.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_travis_build_samply_bbmri-fhir-ig_input_resources_bioresourceReference.StructureDefinition"> </a>
+<h2><a href="StructureDefinition-BioresourceReference.html">/home/travis/build/samply/bbmri-fhir-ig/input/resources/bioresourceReference.StructureDefinition.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_travis_build_samply_bbmri-fhir-ig_input_resources_parentCollection.StructureDefinition"> </a>
+<h2><a href="StructureDefinition-ParentCollection.html">/home/travis/build/samply/bbmri-fhir-ig/input/resources/parentCollection.StructureDefinition.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>https://fhir.bbmri.de/StructureDefinition/ParentCollection</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this extension</b></td>
+   </tr>
+</table>
+<a name="suppressed"> </a>
+<p><b>Suppressed Error Messages</b></p>
+<p><b>??</b></p><ul>
+ <li>WARNING: http://hl7.org/fhir/uv/myig/StructureDefinition/somepatientprofile: Profiles SHOULD state their own version</li>
+ <li>WARNING: http://hl7.org/fhir/uv/myig/StructureDefinition/ext-myExtension: Profiles SHOULD state their own version</li>
+ <li>// (And include comments like this justifying why)</li>
+ <li>// We define the version on a global basis, so don't need it on the individual source definitions</li>
+ <li>// Add warning and/or information messages here after you've confirmed that they aren't really a problem</li>
+</ul>
+</body>
+</html>

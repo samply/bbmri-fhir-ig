@@ -1,0 +1,929 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>DE.BBMRI.FHIR\Mappings - FHIR v4.0.1</title>
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+     
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet"/>
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+  
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/bbmri.de.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+  
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body>
+
+    <style type="text/css">h2{--heading-prefix:"4"}
+    h3,h4,h5,h6{--heading-prefix:"4"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        
+	<div id="gba-nav">
+	  <a id="gba-logo" no-external="true" href="http://www.bbmri.de">
+	    <img height="80" alt="GBA Logo" src="assets/images/GBN_CMYK_schwarz.png"/>
+	  </a>
+	</div>
+	<div id="buffer">
+	</div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">BBMRI.de Implementation Guide</span><br/>0.1.0-beta - CI Build</p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+    
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+    
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li><a href="index.html">IG Home</a></li>
+  <li><a href="toc.html">Table of Contents</a></li>
+  <li><a href="overview.html">Profile Overview</a></li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">References<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="mappings.html">Mappings</a>
+      </li>
+	  <li>
+        <a href="referencedIGs.html">Referenced IGs</a>
+      </li>
+    </ul>
+  </li>
+  <li><a href="artifacts.html">Artifact Index</a></li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a target="_blank" href="http://hl7.org/fhir/R4/index.html">FHIR Spec <img src="external.png" style="text-align: baseline"/></a>
+      </li>
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+    </ul>
+  </li>
+</ul>      
+
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->  
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Mappings</b></li>
+        </ul>  
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+    
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">BBMRI.de Implementation Guide - Local Development build (v0.1.0-beta). See the <a href="https://fhir.bbmri.de/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Mappings</h2>
+  
+  
+  
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#bbmri-eric--directory" id="markdown-toc-bbmri-eric--directory">BBMRI-ERIC  Directory</a></li>
+  <li><a href="#miabis" id="markdown-toc-miabis">MIABIS</a></li>
+</ul>
+
+</div>
+<p>This section describes how the profiles defined in this guide relate to several other data models, mainly from other biobank-related projects. Partial paths in <em>italic</em> imply slice names.</p>
+
+<h3 id="bbmri-eric--directory">BBMRI-ERIC  Directory</h3>
+<p>The BBMRI-ERIC Directory can be found <a href="https://directory.bbmri-eric.eu">here</a>.</p>
+
+<h4 id="biobank">Biobank</h4>
+<p>The BBMRI-ERIC Directory <em>Biobank</em> entity corresponds to the <em>Biobank</em> profile from this guide.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>BBMRI-ERIC</th>
+      <th>Biobank Profile</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>id</td>
+      <td>identifier:<em>Bbmri-EricId</em>.value</td>
+    </tr>
+    <tr>
+      <td>name</td>
+      <td>name</td>
+    </tr>
+    <tr>
+      <td>acronym</td>
+      <td>alias</td>
+    </tr>
+    <tr>
+      <td>description</td>
+      <td>extension:<em>description</em>.value</td>
+    </tr>
+    <tr>
+      <td>bioresource_reference</td>
+      <td>extension:<em>bioresourceReference</em>.value</td>
+    </tr>
+    <tr>
+      <td>url</td>
+      <td>telecom:<em>url</em>.value</td>
+    </tr>
+    <tr>
+      <td>juridical_person</td>
+      <td>extension:<em>juridicalPerson</em>.value</td>
+    </tr>
+    <tr>
+      <td>country</td>
+      <td>address.country</td>
+    </tr>
+    <tr>
+      <td>it_support_available</td>
+      <td>extension:<em>itSupport</em>.extension:<em>itSupportAvailable</em>.value</td>
+    </tr>
+    <tr>
+      <td>it_staff_size</td>
+      <td>extension:<em>itSupport</em>.extension:<em>itStaffSize</em>.value</td>
+    </tr>
+    <tr>
+      <td>is_available</td>
+      <td>extension:<em>itSupport</em>.extension:<em>isAvailable</em>.value</td>
+    </tr>
+    <tr>
+      <td>his_available</td>
+      <td>extension:<em>itSupport</em>.extension:<em>hisAvailable</em>.value</td>
+    </tr>
+    <tr>
+      <td>partner_charter_signed</td>
+      <td>extension:<em>partnerCharterSigned</em>.value</td>
+    </tr>
+    <tr>
+      <td>head_title_before_name</td>
+      <td>contact:<em>head</em>.name.prefix</td>
+    </tr>
+    <tr>
+      <td>head_firstname</td>
+      <td>contact:<em>head</em>.name.given</td>
+    </tr>
+    <tr>
+      <td>head_lastname</td>
+      <td>contact:<em>head</em>.name.family</td>
+    </tr>
+    <tr>
+      <td>head_title_after_name</td>
+      <td>contact:<em>head</em>.name.suffix</td>
+    </tr>
+    <tr>
+      <td>head_role</td>
+      <td>contact:<em>head</em>.extension:<em>role</em>.value</td>
+    </tr>
+    <tr>
+      <td>contact</td>
+      <td><em>see section contact</em></td>
+    </tr>
+    <tr>
+      <td>latitude</td>
+      <td>address.extension:<em>geolocation</em>.extension:<em>latitude</em></td>
+    </tr>
+    <tr>
+      <td>longitude</td>
+      <td>address.extension:<em>geolocation</em>.extension:<em>longitude</em></td>
+    </tr>
+    <tr>
+      <td>network</td>
+      <td><em>see section network</em></td>
+    </tr>
+    <tr>
+      <td>collaboration_commercial</td>
+      <td>extension:<em>collaboration</em>.extension:<em>commercial</em>.value</td>
+    </tr>
+    <tr>
+      <td>collaboration_non_for_profit</td>
+      <td>extension:<em>collaboration</em>.extension:<em>nonForProfit</em>.value</td>
+    </tr>
+    <tr>
+      <td>capabilities</td>
+      <td>extension:<em>capabilities</em>.value</td>
+    </tr>
+    <tr>
+      <td>quality</td>
+      <td>extension:<em>qualityStandards</em>.value</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="contact-information">Contact Information</h4>
+<p>In FHIR, the contact information is included in the <a href="https://www.hl7.org/fhir/organization.html"><em>Organization</em> resource</a>, which is profiled as <em>Biobank</em> in this guide.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>BBMRI-ERIC</th>
+      <th>Biobank.contact</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>title_before_name</td>
+      <td>prefix</td>
+    </tr>
+    <tr>
+      <td>first_name</td>
+      <td>given</td>
+    </tr>
+    <tr>
+      <td>last_name</td>
+      <td>family</td>
+    </tr>
+    <tr>
+      <td>title_after_name</td>
+      <td>suffix</td>
+    </tr>
+    <tr>
+      <td>phone</td>
+      <td>contact:<em>contact</em>.telecom:<em>phone</em>.value</td>
+    </tr>
+    <tr>
+      <td>email</td>
+      <td>contact:<em>contact</em>.telecom:<em>email</em>.value</td>
+    </tr>
+    <tr>
+      <td>address</td>
+      <td>contact:<em>contact</em>.address.line</td>
+    </tr>
+    <tr>
+      <td>zip</td>
+      <td>contact:<em>contact</em>.address.postalCode</td>
+    </tr>
+    <tr>
+      <td>city</td>
+      <td>contact:<em>contact</em>.address.city</td>
+    </tr>
+    <tr>
+      <td>country</td>
+      <td>contact:<em>contact</em>.address.country</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="collection">Collection</h4>
+<p>The BBMRI-ERIC Directory <em>Collection</em> entity corresponds to the <em>Collection</em> profile from this guide. Like <em>Biobank</em>, it is based on the <em>Organization</em> resource but has different constraints.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>BBMRI-ERIC</th>
+      <th>Collection</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>id</td>
+      <td>identifier:<em>Bbmri-EricId</em>.value</td>
+    </tr>
+    <tr>
+      <td>country</td>
+      <td>contact:<em>contact</em>.address.country <em>(If not present, biobank country is used)</em></td>
+    </tr>
+    <tr>
+      <td>biobank</td>
+      <td>partOf</td>
+    </tr>
+    <tr>
+      <td>name</td>
+      <td>name</td>
+    </tr>
+    <tr>
+      <td>acronym</td>
+      <td>alias</td>
+    </tr>
+    <tr>
+      <td>description</td>
+      <td>extension.description.value</td>
+    </tr>
+    <tr>
+      <td>bioresource_reference</td>
+      <td>extension:<em>bioresourceReference</em>.value</td>
+    </tr>
+    <tr>
+      <td>parent_collection</td>
+      <td><em>via OrganizationAffiliation(TODO)</em></td>
+    </tr>
+    <tr>
+      <td>network</td>
+      <td><em>see section network</em></td>
+    </tr>
+    <tr>
+      <td>type</td>
+      <td>extension:<em>collectionType</em>.value</td>
+    </tr>
+    <tr>
+      <td>data_categories</td>
+      <td>extension:<em>dataCategory</em>.value</td>
+    </tr>
+    <tr>
+      <td>quality</td>
+      <td>extension:<em>qualityStandards</em>.value</td>
+    </tr>
+    <tr>
+      <td>order_of_magnitude</td>
+      <td><em>calculated on-the-fly from bridgehead data</em></td>
+    </tr>
+    <tr>
+      <td>order_of_magnitude_donors</td>
+      <td><em>calculated on-the-fly from bridgehead data</em></td>
+    </tr>
+    <tr>
+      <td>size</td>
+      <td><em>calculated on-the-fly from bridgehead data</em></td>
+    </tr>
+    <tr>
+      <td>number_of_donors</td>
+      <td><em>calculated on-the-fly from bridgehead data</em></td>
+    </tr>
+    <tr>
+      <td>timestamp</td>
+      <td><em>calculated on-the-fly from bridgehead data</em></td>
+    </tr>
+    <tr>
+      <td>id_card</td>
+      <td>extension:<em>idCard</em>.value</td>
+    </tr>
+    <tr>
+      <td>head_title_before_name</td>
+      <td>contact:<em>head</em>.name.prefix</td>
+    </tr>
+    <tr>
+      <td>head_firstname</td>
+      <td>contact:<em>head</em>.name.given</td>
+    </tr>
+    <tr>
+      <td>head_lastname</td>
+      <td>contact:<em>head</em>.name.family</td>
+    </tr>
+    <tr>
+      <td>head_title_after_name</td>
+      <td>contact:<em>head</em>.name.suffix</td>
+    </tr>
+    <tr>
+      <td>head_role</td>
+      <td>contact:<em>head</em>.extension:<em>role</em>.value</td>
+    </tr>
+    <tr>
+      <td>contact</td>
+      <td><em>see section contact</em></td>
+    </tr>
+    <tr>
+      <td>latitude</td>
+      <td>address.extension:<em>geolocation</em>.extension:<em>latitude</em></td>
+    </tr>
+    <tr>
+      <td>longitude</td>
+      <td>address.extension:<em>geolocation</em>.extension:<em>longitude</em></td>
+    </tr>
+    <tr>
+      <td>sex</td>
+      <td><em>calculated on-the-fly from bridgehead data</em></td>
+    </tr>
+    <tr>
+      <td>diagnosis_available</td>
+      <td><em>calculated on-the-fly from bridgehead data</em></td>
+    </tr>
+    <tr>
+      <td>age Low</td>
+      <td><em>calculated on-the-fly from bridgehead data</em></td>
+    </tr>
+    <tr>
+      <td>age High</td>
+      <td><em>calculated on-the-fly from bridgehead data</em></td>
+    </tr>
+    <tr>
+      <td>age Unit</td>
+      <td><em>calculated on-the-fly from bridgehead data</em></td>
+    </tr>
+    <tr>
+      <td>body_part_examined</td>
+      <td><em>calculated on-the-fly from bridgehead data (once available)</em></td>
+    </tr>
+    <tr>
+      <td>imaging_modality</td>
+      <td><em>calculated on-the-fly from bridgehead data (once available)</em></td>
+    </tr>
+    <tr>
+      <td>image_dataset_type</td>
+      <td><em>calculated on-the-fly from bridgehead data (once available)</em></td>
+    </tr>
+    <tr>
+      <td>materials</td>
+      <td><em>calculated on-the-fly from bridgehead data</em></td>
+    </tr>
+    <tr>
+      <td>storage_temperature</td>
+      <td><em>calculated on-the-fly from bridgehead data</em></td>
+    </tr>
+    <tr>
+      <td>sample_access_fee</td>
+      <td>extension:<em>accessPolicy</em>.extension:<em>fee</em>.value (when  extension:<em>accessPolicy</em>.extension:<em>resource</em>.value = “sample”)</td>
+    </tr>
+    <tr>
+      <td>sample_access_joint_project</td>
+      <td>extension:<em>accessPolicy</em>.extension:<em>jointProject</em>.value (when  extension:<em>accessPolicy</em>.extension:<em>resource</em>.value = “sample”)</td>
+    </tr>
+    <tr>
+      <td>sample_access_description</td>
+      <td>extension:<em>accessPolicy</em>.extension:<em>description</em>.value (when  extension:<em>accessPolicy</em>.extension:<em>resource</em>.value = “sample”)</td>
+    </tr>
+    <tr>
+      <td>sample_access_uri</td>
+      <td>extension:<em>accessPolicy</em>.extension:<em>uri</em>.value (when  extension:<em>accessPolicy</em>.extension:<em>resource</em>.value = “sample”)</td>
+    </tr>
+    <tr>
+      <td>data_access_fee</td>
+      <td>extension:<em>accessPolicy</em>.extension:<em>fee</em>.value (when  extension:<em>accessPolicy</em>.extension:<em>resource</em>.value = “data”)</td>
+    </tr>
+    <tr>
+      <td>data_access_joint_project</td>
+      <td>extension:<em>accessPolicy</em>.extension:<em>jointProject</em>.value (when  extension:<em>accessPolicy</em>.extension:<em>resource</em>.value = “data”)</td>
+    </tr>
+    <tr>
+      <td>data_access_description</td>
+      <td>extension:<em>accessPolicy</em>.extension:<em>description</em>.value (when  extension:<em>accessPolicy</em>.extension:<em>resource</em>.value = “data”)</td>
+    </tr>
+    <tr>
+      <td>data_access_uri</td>
+      <td>extension:<em>accessPolicy</em>.extension:<em>uri</em>.value (when  extension:<em>accessPolicy</em>.extension:<em>resource</em>.value = “data”)</td>
+    </tr>
+    <tr>
+      <td>image_access_fee</td>
+      <td>extension:<em>accessPolicy</em>.extension:<em>fee</em>.value (when  extension:<em>accessPolicy</em>.extension:<em>resource</em>.value = “image”)</td>
+    </tr>
+    <tr>
+      <td>image_access_joint_project</td>
+      <td>extension:<em>accessPolicy</em>.extension:<em>jointProject</em>.value (when  extension:<em>accessPolicy</em>.extension:<em>resource</em>.value = “image”)</td>
+    </tr>
+    <tr>
+      <td>image_access_description</td>
+      <td>extension:<em>accessPolicy</em>.extension:<em>description</em>.value (when  extension:<em>accessPolicy</em>.extension:<em>resource</em>.value = “image”)</td>
+    </tr>
+    <tr>
+      <td>image_access_uri</td>
+      <td>extension:<em>accessPolicy</em>.extension:<em>uri</em>.value (when  extension:<em>accessPolicy</em>.extension:<em>resource</em>.value = “image”)</td>
+    </tr>
+    <tr>
+      <td>collaboration_commercial</td>
+      <td>extension:<em>collaboration</em>.extension:<em>commercial</em>.value</td>
+    </tr>
+    <tr>
+      <td>collaboration_non_for_profit</td>
+      <td>extension:<em>collaboration</em>.extension:<em>nonForProfit</em>.value</td>
+    </tr>
+    <tr>
+      <td>sample_processing_sop</td>
+      <td>extension:<em>resourceManagement</em>.extension:<em>processingSop</em>.value (when  extension:<em>resourceManagement</em>.extension:<em>resource</em>.value = “sample”)</td>
+    </tr>
+    <tr>
+      <td>sample_transport_sop</td>
+      <td>extension:<em>resourceManagement</em>.extension:<em>transportSop</em>.value (when  extension:<em>resourceManagement</em>.extension:<em>resource</em>.value = “sample”)</td>
+    </tr>
+    <tr>
+      <td>sample_storage_sop</td>
+      <td>extension:<em>resourceManagement</em>.extension:<em>storageSop</em>.value (when  extension:<em>resourceManagement</em>.extension:<em>resource</em>.value = “sample”)</td>
+    </tr>
+    <tr>
+      <td>data_processing_sop</td>
+      <td>extension:<em>resourceManagement</em>.extension:<em>processingSop</em>.value (when  extension:<em>resourceManagement</em>.extension:<em>resource</em>.value = “data”)</td>
+    </tr>
+    <tr>
+      <td>data_transport_sop</td>
+      <td>extension:<em>resourceManagement</em>.extension:<em>transportSop</em>.value (when  extension:<em>resourceManagement</em>.extension:<em>resource</em>.value = “data”)</td>
+    </tr>
+    <tr>
+      <td>data_storage_sop</td>
+      <td>extension:<em>resourceManagement</em>.extension:<em>storageSop</em>.value (when  extension:<em>resourceManagement</em>.extension:<em>resource</em>.value = “data”)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="network">Network</h4>
+<p>This project does not contain a specific profile for biobank networks. While such networks could be represented as <a href="https://www.hl7.org/fhir/organization.html"><em>Organization</em> resources</a>, it is outside the scope for this project.
+ To record a biobank’s membership in a network, we use a profiled <em>OrganizationAffiliation</em>: <em>NetworkMembership</em>. There, the reference to the network happens via its BBMRI Directory id since we do not have an actual FHIR resource.</p>
+
+<h3 id="miabis"><a href="https://github.com/MIABIS/miabis/wiki">MIABIS</a></h3>
+
+<h4 id="biobank-1">Biobank</h4>
+
+<p>The information for a MIABIS Biobank is found in the Biobank profile.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>MIABIS Attribute Code</th>
+      <th>Name</th>
+      <th>FHIR</th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MIABIS-2.0-01</td>
+      <td>ID</td>
+      <td>identifier</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>MIABIS-2.0-02</td>
+      <td>Acronym</td>
+      <td>alias</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>MIABIS-2.0-03</td>
+      <td>Name</td>
+      <td>Text</td>
+      <td>name</td>
+    </tr>
+    <tr>
+      <td>MIABIS-2.0-04</td>
+      <td>URL</td>
+      <td>Text</td>
+      <td>telecom:<em>url</em>.value</td>
+    </tr>
+    <tr>
+      <td>MIABIS-2.0-05</td>
+      <td>Juristic Person</td>
+      <td>extension:<em>juridicalPerson</em>.value</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>MIABIS-2.0-06</td>
+      <td>Country</td>
+      <td>address.country</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>MIABIS-2.0-07</td>
+      <td>Contact Information</td>
+      <td>See section contact</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>MIABIS-2.0-08</td>
+      <td>Description</td>
+      <td>extension:<em>description</em>.value</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="collection-1">Collection</h4>
+
+<p>Corresponds to Collection profile</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>MIABIS Attribute Code</th>
+      <th>Name</th>
+      <th>FHIR</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MIABIS-2.0-01</td>
+      <td>ID</td>
+      <td>identifier</td>
+    </tr>
+    <tr>
+      <td>MIABIS-2.0-02</td>
+      <td>Acronym</td>
+      <td>alias</td>
+    </tr>
+    <tr>
+      <td>MIABIS-2.0-03</td>
+      <td>Name</td>
+      <td>name</td>
+    </tr>
+    <tr>
+      <td>MIABIS-2.0-08</td>
+      <td>Description</td>
+      <td>extension.description.value</td>
+    </tr>
+    <tr>
+      <td>MIABIS-2.0-09</td>
+      <td>Sex</td>
+      <td><em>calculated on-the-fly from bridgehead data</em></td>
+    </tr>
+    <tr>
+      <td>MIABIS-2.0-10</td>
+      <td>Age Low</td>
+      <td><em>calculated on-the-fly from bridgehead data</em></td>
+    </tr>
+    <tr>
+      <td>MIABIS-2.0-11</td>
+      <td>Age High</td>
+      <td><em>calculated on-the-fly from bridgehead data</em></td>
+    </tr>
+    <tr>
+      <td>MIABIS-2.0-12</td>
+      <td>Age Unit</td>
+      <td><em>calculated on-the-fly from bridgehead data</em></td>
+    </tr>
+    <tr>
+      <td>MIABIS-2.0-13</td>
+      <td>Data categories</td>
+      <td>extension:<em>dataCategory</em></td>
+    </tr>
+    <tr>
+      <td>MIABIS-2.0-14</td>
+      <td>Material type</td>
+      <td><em>calculated on-the-fly from bridgehead data</em></td>
+    </tr>
+    <tr>
+      <td>MIABIS-2.0-15</td>
+      <td>Storage temperature</td>
+      <td><em>calculated on-the-fly from bridgehead data</em></td>
+    </tr>
+    <tr>
+      <td>MIABIS-2.0-16</td>
+      <td>Collection type</td>
+      <td>extension:<em>collectionType</em>.value</td>
+    </tr>
+    <tr>
+      <td>MIABIS-2.0-17</td>
+      <td>Disease</td>
+      <td><em>not supported</em></td>
+    </tr>
+    <tr>
+      <td>MIABIS-2.0-07</td>
+      <td>Contact information</td>
+      <td>See section contact</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="contact-miabis-20-07">Contact MIABIS-2.0-07</h4>
+
+<p>The contact information can be stored in the <em>contact</em> fields of Collection or Biobank which already specify two slices for the <em>head</em> and the research <em>contact</em> with slices on telecom to model phone and mail contact points.
+We currently do not support the <em>researcher information</em> type.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Attribute Code</th>
+      <th>Attribute Name</th>
+      <th>FHIR</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MIABIS-2.0-07-A</td>
+      <td>First name</td>
+      <td>name.given</td>
+    </tr>
+    <tr>
+      <td>MIABIS-2.0-07-B</td>
+      <td>Last name</td>
+      <td>name.family</td>
+    </tr>
+    <tr>
+      <td>MIABIS-2.0-07-C</td>
+      <td>Phone</td>
+      <td>telecom:<em>phone</em>.value</td>
+    </tr>
+    <tr>
+      <td>MIABIS-2.0-07-D</td>
+      <td>Email</td>
+      <td>telecom:<em>email</em>.value</td>
+    </tr>
+    <tr>
+      <td>MIABIS-2.0-07-E</td>
+      <td>Address</td>
+      <td>address.line</td>
+    </tr>
+    <tr>
+      <td>MIABIS-2.0-07-F</td>
+      <td>ZIP</td>
+      <td>address.postalCode</td>
+    </tr>
+    <tr>
+      <td>MIABIS-2.0-07-G</td>
+      <td>City</td>
+      <td>address.city</td>
+    </tr>
+    <tr>
+      <td>MIABIS-2.0-07-H</td>
+      <td>Country</td>
+      <td>address.country</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="sample">Sample</h4>
+
+<p>Corresponds to the specimen profile.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Attribute Code</th>
+      <th>Attribute Name</th>
+      <th>FHIR</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MIABIS-SAMPLE-01</td>
+      <td>Sample ID</td>
+      <td><em>no internal IDs supported, identification via resource id</em></td>
+    </tr>
+    <tr>
+      <td>MIABIS-SAMPLE-02</td>
+      <td>Detailed material type</td>
+      <td>type (not yet mapped to MIABIS types)</td>
+    </tr>
+    <tr>
+      <td>MIABIS-SAMPLE-03</td>
+      <td>Sample storage temperature</td>
+      <td>extension:<em>storageTemperature</em></td>
+    </tr>
+    <tr>
+      <td>MIABIS-SAMPLE-04</td>
+      <td>Sample creation date and time</td>
+      <td>collection.collectedDateTime</td>
+    </tr>
+    <tr>
+      <td>MIABIS-SAMPLE-05</td>
+      <td>Anatomical site ontology</td>
+      <td>collection.bodySite.coding.system</td>
+    </tr>
+    <tr>
+      <td>MIABIS-SAMPLE-06</td>
+      <td>Anatomical site ontology version</td>
+      <td>collection.bodySite.coding.version</td>
+    </tr>
+    <tr>
+      <td>MIABIS-SAMPLE-07</td>
+      <td>Anatomical site ontology code</td>
+      <td>collection.bodySite.coding.code</td>
+    </tr>
+    <tr>
+      <td>MIABIS-SAMPLE-08</td>
+      <td>Anatomical site ontology description</td>
+      <td>collection.bodySite.coding.display</td>
+    </tr>
+    <tr>
+      <td>MIABIS-SAMPLE-09</td>
+      <td>Anatomical site free text</td>
+      <td>collection.bodySite.text</td>
+    </tr>
+    <tr>
+      <td>MIABIS-10</td>
+      <td>Sample content diagnosis</td>
+      <td>extension:<em>diagnosis</em></td>
+    </tr>
+    <tr>
+      <td>MIABIS-11</td>
+      <td>Use restrictions</td>
+      <td>not yet supported</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="sample-donor">Sample Donor</h4>
+
+<p>Corresponds to the Patient profile.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Attribute Code</th>
+      <th>Attribute Name</th>
+      <th>FHIR</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MIABIS-SAMPLEDONOR-01</td>
+      <td>Sample donor ID</td>
+      <td>no internal ids supported, use resource id</td>
+    </tr>
+    <tr>
+      <td>MIABIS-SAMPLEDONOR-02</td>
+      <td>Sex</td>
+      <td>gender (WARNING: Per FHIR definition this is the <em>Administrative Gender</em> of the patient, which may or may not equal the value for biological sex. Biobanks may report values based on different aspects of sex/gender here, see https://www.hl7.org/fhir/patient.html#gender</td>
+    </tr>
+    <tr>
+      <td>MIABIS-SAMPLEDONOR-03</td>
+      <td>Data categories</td>
+      <td><em>calculated on-the-fly from bridgehead data</em></td>
+    </tr>
+    <tr>
+      <td>MIABIS-SAMPLEDONOR-04</td>
+      <td>Birth year</td>
+      <td>birthDate</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="study">Study</h4>
+
+<p>Not supported</p>
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="https://www.bbmri.de">BBMRI.de</a>.  Package de.bbmri.fhir#0.1.0-beta based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Apr 2, 2020 14:50+0000">2020-04-02</span>
+          <br/>
+          <span style="color: #FFFF77">
+                      Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
+                 <a style="color: #81BEF7" href="qa.html">QA Report</a>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>

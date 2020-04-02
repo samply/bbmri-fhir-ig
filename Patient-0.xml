@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="0"/>
+  <meta>
+    <profile value="https://fhir.bbmri.de/StructureDefinition/Patient"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 0</p><p><b>meta</b>: </p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1989-11-18</p><p><b>deceased</b>: Jan 27, 2009, 12:00:00 AM</p></div>
+  </text>
+  <gender value="male"/>
+  <birthDate value="1989-11-18"/>
+  <deceasedDateTime value="2009-01-27"/>
+</Patient>

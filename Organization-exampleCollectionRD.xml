@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="exampleCollectionRD"/>
+  <meta>
+    <profile value="https://fhir.bbmri.de/StructureDefinition/Collection"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: exampleCollection</p><p><b>meta</b>: </p><p><b>identifier</b>: bbmri-eric:ID:de_12345:collection:vampir</p><p><b>name</b>: Venous and arterial blood from misc patients internal reserve </p><p><b>alias</b>: VAMPIR</p><p><b>partOf</b>: <a href="Organization/exampleBiobank">Organization/exampleBiobank</a></p></div>
+  </text>
+  <extension url="https://fhir.bbmri.de/StructureDefinition/OrganizationDescription">
+    <valueString value="The Collection contains samples from patients with lycanthropy."/>
+  </extension>
+  <extension url="https://fhir.bbmri.de/StructureDefinition/CollectionType">
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://fhir.bbmri.de/CodeSystem/CollectionType"/>
+        <code value="DISEASE_SPECIFIC"/>
+        <display value="Disease specific"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="https://fhir.bbmri.de/StructureDefinition/CollectionType">
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://fhir.bbmri.de/CodeSystem/CollectionType"/>
+        <code value="RD"/>
+        <display value="Rare disease collection"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="https://fhir.bbmri.de/StructureDefinition/IdCard">
+    <valueUrl value="https://catalogue.rd-connect.eu/werewolf"/>
+  </extension>
+  <extension url="https://fhir.bbmri.de/StructureDefinition/DataCategory">
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://fhir.bbmri.de/CodeSystem/DataCategory"/>
+        <code value="BIOLOGICAL_SAMPLES"/>
+        <display value="Biological samples"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="https://fhir.bbmri.de/StructureDefinition/AccessPolicy">
+    <extension url="resource">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://fhir.bbmri.de/CodeSystem/ResourceType"/>
+          <code value="samples"/>
+          <display value="Samples"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="resource">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://fhir.bbmri.de/CodeSystem/ResourceType"/>
+          <code value="data"/>
+          <display value="Data"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="description">
+      <valueString value="Acessing researchers must prove that security standards equivalent or stricter than local standards are adhered to."/>
+    </extension>
+  </extension>
+  <identifier>
+    <system value="http://www.bbmri-eric.eu/"/>
+    <value value="bbmri-eric:ID:de_54321:collection:werewolf"/>
+  </identifier>
+  <name value="WidE REsearch for Welfare On Lycantrophy Field"/>
+  <alias value="WEREWOLF"/>
+  <partOf>
+    <reference value="Organization/exampleBiobank"/>
+  </partOf>
+  <contact>
+    <purpose>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/contactentity-type"/>
+        <code value="ADMIN"/>
+        <display value="Administrative"/>
+      </coding>
+    </purpose>
+    <name>
+      <family value="Lupin"/>
+      <given value="Remus"/>
+      <prefix value="Prof."/>
+    </name>
+    <telecom>
+      <system value="other"/>
+      <value value="Owl post to Hogwarts"/>
+    </telecom>
+  </contact>
+</Organization>

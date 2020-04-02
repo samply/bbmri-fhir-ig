@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="StorageTemperature"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>Storage Temperature</h2><ul><li>Include all codes defined in <a href="CodeSystem-StorageTemperature.html"><code>https://fhir.bbmri.de/CodeSystem/StorageTemperature</code></a></li></ul></div>
+  </text>
+  <url value="https://fhir.bbmri.de/ValueSet/StorageTemperature"/>
+  <version value="0.1.0-beta"/>
+  <name value="StorageTemperature"/>
+  <title value="Storage Temperature"/>
+  <status value="draft"/>
+  <date value="2020-04-02T14:50:58+00:00"/>
+  <publisher value="BBMRI.de"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.bbmri.de"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="feedback@germanbiobanknode.de"/>
+    </telecom>
+  </contact>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://fhir.bbmri.de/CodeSystem/StorageTemperature"/>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,310 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.bbmri.de/Bundle/53ef12a3-1e31-4fc1-adf6-9d30dc6c4784> a fhir:Bundle;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "53ef12a3-1e31-4fc1-adf6-9d30dc6c4784"];
+  fhir:Bundle.type [ fhir:value "transaction"];
+  fhir:Bundle.entry [
+     fhir:index 0;
+     fhir:Bundle.entry.fullUrl [ fhir:value "http://example.com/Patient/0" ];
+     fhir:Bundle.entry.resource <http://example.com/Patient/0>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "PUT" ];
+       fhir:Bundle.entry.request.url [ fhir:value "Patient/0" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Bundle.entry.fullUrl [ fhir:value "http://example.com/Observation/0-bmi" ];
+     fhir:Bundle.entry.resource <http://example.com/Observation/0-bmi>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "PUT" ];
+       fhir:Bundle.entry.request.url [ fhir:value "Observation/0-bmi" ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:Bundle.entry.fullUrl [ fhir:value "http://example.com/Observation/0-body-height" ];
+     fhir:Bundle.entry.resource <http://example.com/Observation/0-body-height>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "PUT" ];
+       fhir:Bundle.entry.request.url [ fhir:value "Observation/0-body-height" ]
+     ]
+  ], [
+     fhir:index 3;
+     fhir:Bundle.entry.fullUrl [ fhir:value "http://example.com/Observation/0-body-weight" ];
+     fhir:Bundle.entry.resource <http://example.com/Observation/0-body-weight>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "PUT" ];
+       fhir:Bundle.entry.request.url [ fhir:value "Observation/0-body-weight" ]
+     ]
+  ], [
+     fhir:index 4;
+     fhir:Bundle.entry.fullUrl [ fhir:value "http://example.com/Observation/0-tobacco-use" ];
+     fhir:Bundle.entry.resource <http://example.com/Observation/0-tobacco-use>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "PUT" ];
+       fhir:Bundle.entry.request.url [ fhir:value "Observation/0-tobacco-use" ]
+     ]
+  ], [
+     fhir:index 5;
+     fhir:Bundle.entry.fullUrl [ fhir:value "http://example.com/Specimen/0-specimen" ];
+     fhir:Bundle.entry.resource <http://example.com/Specimen/0-specimen>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "PUT" ];
+       fhir:Bundle.entry.request.url [ fhir:value "Specimen/0-specimen" ]
+     ]
+  ] .
+
+<http://example.com/Patient/0> a fhir:Patient;
+  fhir:Resource.id [ fhir:value "0"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://fhir.bbmri.de/StructureDefinition/Patient";
+       fhir:index 0;
+       fhir:link <https://fhir.bbmri.de/StructureDefinition/Patient>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 0</p><p><b>meta</b>: </p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1989-11-18</p></div>"
+  ];
+  fhir:Patient.gender [ fhir:value "male"];
+  fhir:Patient.birthDate [ fhir:value "1989-11-18"^^xsd:date] .
+
+<http://example.com/Observation/0-bmi> a fhir:Observation;
+  fhir:Resource.id [ fhir:value "0-bmi"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://fhir.bbmri.de/StructureDefinition/Bmi";
+       fhir:index 0;
+       fhir:link <https://fhir.bbmri.de/StructureDefinition/Bmi>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 0-bmi</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/observation-category code 'vital-signs' = 'Vital Signs)</span></p><p><b>code</b>: Body mass index (BMI) [Ratio] <span style=\"background: LightGoldenRodYellow\">(Details : {LOINC code '39156-5' = 'Body mass index (BMI) [Ratio])</span></p><p><b>subject</b>: <a href=\"#backboneelement_0\">Generated Summary: unknown resource entry</a></p><p><b>effective</b>: Jun 17, 2005, 12:00:00 AM</p><p><b>value</b>: 36.68645245341373 kg/m2<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code kg/m2 = 'kg/m2')</span></p></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ];
+       fhir:Coding.code [ fhir:value "vital-signs" ]
+     ]
+  ];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:39156-5;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "39156-5" ]
+     ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <https://fhir.bbmri.de/Patient/0>;
+     fhir:Reference.reference [ fhir:value "Patient/0" ]
+  ];
+  fhir:Observation.effectiveDateTime [ fhir:value "2005-06-17"^^xsd:date];
+  fhir:Observation.valueQuantity [
+     fhir:Quantity.value [ fhir:value "36.68645245341373"^^xsd:decimal ];
+     fhir:Quantity.unit [ fhir:value "kg/m2" ];
+     fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+     fhir:Quantity.code [ fhir:value "kg/m2" ]
+  ] .
+
+<http://example.com/Observation/0-body-height> a fhir:Observation;
+  fhir:Resource.id [ fhir:value "0-body-height"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://fhir.bbmri.de/StructureDefinition/BodyHeight";
+       fhir:index 0;
+       fhir:link <https://fhir.bbmri.de/StructureDefinition/BodyHeight>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 0-body-height</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/observation-category code 'vital-signs' = 'Vital Signs)</span></p><p><b>code</b>: Body height <span style=\"background: LightGoldenRodYellow\">(Details : {LOINC code '8302-2' = 'Body height)</span></p><p><b>subject</b>: <a href=\"#backboneelement_0\">Generated Summary: unknown resource entry</a></p><p><b>effective</b>: Jun 17, 2005, 12:00:00 AM</p><p><b>value</b>: 198.58090348834853 cm<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code cm = 'cm')</span></p></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ];
+       fhir:Coding.code [ fhir:value "vital-signs" ]
+     ]
+  ];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:8302-2;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "8302-2" ]
+     ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <https://fhir.bbmri.de/Patient/0>;
+     fhir:Reference.reference [ fhir:value "Patient/0" ]
+  ];
+  fhir:Observation.effectiveDateTime [ fhir:value "2005-06-17"^^xsd:date];
+  fhir:Observation.valueQuantity [
+     fhir:Quantity.value [ fhir:value "198.58090348834853"^^xsd:decimal ];
+     fhir:Quantity.unit [ fhir:value "cm" ];
+     fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+     fhir:Quantity.code [ fhir:value "cm" ]
+  ] .
+
+<http://example.com/Observation/0-body-weight> a fhir:Observation;
+  fhir:Resource.id [ fhir:value "0-body-weight"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://fhir.bbmri.de/StructureDefinition/BodyWeight";
+       fhir:index 0;
+       fhir:link <https://fhir.bbmri.de/StructureDefinition/BodyWeight>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 0-body-weight</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/observation-category code 'vital-signs' = 'Vital Signs)</span></p><p><b>code</b>: Body weight <span style=\"background: LightGoldenRodYellow\">(Details : {LOINC code '29463-7' = 'Body weight)</span></p><p><b>subject</b>: <a href=\"#backboneelement_0\">Generated Summary: unknown resource entry</a></p><p><b>effective</b>: Jun 17, 2005, 12:00:00 AM</p><p><b>value</b>: 144.67073319145982 kg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code kg = 'kg')</span></p></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ];
+       fhir:Coding.code [ fhir:value "vital-signs" ]
+     ]
+  ];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:29463-7;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "29463-7" ]
+     ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <https://fhir.bbmri.de/Patient/0>;
+     fhir:Reference.reference [ fhir:value "Patient/0" ]
+  ];
+  fhir:Observation.effectiveDateTime [ fhir:value "2005-06-17"^^xsd:date];
+  fhir:Observation.valueQuantity [
+     fhir:Quantity.value [ fhir:value "144.67073319145982"^^xsd:decimal ];
+     fhir:Quantity.unit [ fhir:value "kg" ];
+     fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+     fhir:Quantity.code [ fhir:value "kg" ]
+  ] .
+
+<http://example.com/Observation/0-tobacco-use> a fhir:Observation;
+  fhir:Resource.id [ fhir:value "0-tobacco-use"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://fhir.bbmri.de/StructureDefinition/TobaccoUse";
+       fhir:index 0;
+       fhir:link <https://fhir.bbmri.de/StructureDefinition/TobaccoUse>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 0-tobacco-use</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>code</b>: Tobacco smoking status <span style=\"background: LightGoldenRodYellow\">(Details : {LOINC code '72166-2' = 'Tobacco smoking status)</span></p><p><b>subject</b>: <a href=\"#backboneelement_0\">Generated Summary: unknown resource entry</a></p><p><b>effective</b>: Jun 17, 2005, 12:00:00 AM</p><p><b>value</b>: Current some day smoker <span style=\"background: LightGoldenRodYellow\">(Details : {LOINC code 'LA18977-1' = 'Current some day smoker)</span></p></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:72166-2;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "72166-2" ]
+     ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <https://fhir.bbmri.de/Patient/0>;
+     fhir:Reference.reference [ fhir:value "Patient/0" ]
+  ];
+  fhir:Observation.effectiveDateTime [ fhir:value "2005-06-17"^^xsd:date];
+  fhir:Observation.valueCodeableConcept [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:LA18977-1;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "LA18977-1" ]
+     ]
+  ] .
+
+<http://example.com/Specimen/0-specimen> a fhir:Specimen;
+  fhir:Resource.id [ fhir:value "0-specimen"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://fhir.bbmri.de/StructureDefinition/Specimen";
+       fhir:index 0;
+       fhir:link <https://fhir.bbmri.de/StructureDefinition/Specimen>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 0-specimen</p><p><b>meta</b>: </p><p><b>type</b>: Whole blood <span style=\"background: LightGoldenRodYellow\">(Details : {https://fhir.bbmri.de/CodeSystem/SampleMaterialType code 'whole-blood' = 'Whole blood)</span></p><p><b>subject</b>: <a href=\"#backboneelement_0\">Generated Summary: unknown resource entry</a></p><h3>Collections</h3><table class=\"grid\"><tr><td>-</td><td><b>Collected[x]</b></td><td><b>FastingStatus[x]</b></td></tr><tr><td>*</td><td>Jun 17, 2005, 12:00:00 AM</td><td>The patient indicated they did not fast prior to the procedure. <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/v2-0916 code 'NF' = 'The patient indicated they did not fast prior to the procedure.)</span></td></tr></table></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "https://fhir.bbmri.de/StructureDefinition/StorageTemperature" ];
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://fhir.bbmri.de/CodeSystem/StorageTemperature" ];
+         fhir:Coding.code [ fhir:value "temperature2to10" ]
+       ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Extension.url [ fhir:value "https://fhir.bbmri.de/StructureDefinition/Custodian" ];
+     fhir:Extension.valueReference [
+       fhir:link <http://blaze.example.com/fhir/Organization/collection-2>;
+       fhir:Reference.reference [ fhir:value "http://blaze.example.com/fhir/Organization/collection-2" ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:Extension.url [ fhir:value "https://fhir.bbmri.de/StructureDefinition/SampleDiagnosis" ];
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://fhir.bbmri.de/CodeSystem/OtherSampleDiagnosis" ];
+         fhir:Coding.code [ fhir:value "unknown" ]
+       ]
+     ]
+  ];
+  fhir:Specimen.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://fhir.bbmri.de/CodeSystem/SampleMaterialType" ];
+       fhir:Coding.code [ fhir:value "whole-blood" ]
+     ]
+  ];
+  fhir:Specimen.subject [
+     fhir:link <https://fhir.bbmri.de/Patient/0>;
+     fhir:Reference.reference [ fhir:value "Patient/0" ]
+  ];
+  fhir:Specimen.collection [
+     fhir:Specimen.collection.collectedDateTime [ fhir:value "2005-06-17"^^xsd:date ];
+     fhir:Specimen.collection.fastingStatusCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0916" ];
+         fhir:Coding.code [ fhir:value "NF" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir.bbmri.de/Bundle/53ef12a3-1e31-4fc1-adf6-9d30dc6c4784.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
