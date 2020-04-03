@@ -2,7 +2,8 @@
   "resourceType": "StructureDefinition",
   "url": "https://fhir.bbmri.de/StructureDefinition/BioresourceReference",
   "name": "BioresourceReference",
-  "status": "draft",
+  "title": "Bioresource Reference",
+  "status": "active",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

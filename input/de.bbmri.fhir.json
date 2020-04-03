@@ -2,18 +2,18 @@
    "resourceType":"ImplementationGuide",
    "id":"de.bbmri.fhir",
    "url":"https://fhir.bbmri.de/ImplementationGuide/de.bbmri.fhir",
-   "version":"0.1.0-beta",
+   "version":"1.0.0",
    "name":"BBMRI_DE_IG",
-   "title":"BBMRI.de Implementation Guide",
-   "status":"draft",
-   "experimental":true,
+   "title":"BBMRI.de/GBA Implementation Guide",
+   "status":"active",
+   "experimental":false,
    "publisher":"BBMRI.de",
    "contact":[
       {
          "telecom":[
             {
                "system":"url",
-               "value":"bbmri.de"
+               "value":"https://www.bbmri.de"
             
 },
             {
@@ -28,26 +28,19 @@
    
 ],
    "description":"Profiles for the GBA/BBMRI.de project",
-   "jurisdiction":[
-      {
-         "coding":[
-            {
-               "system":"http://unstats.un.org/unsd/methods/m49/m49.htm",
-               "code":"001"
-            
-}
-         
-]
-      
-}
-   
-],
    "packageId":"de.bbmri.fhir",
    "license":"CC-BY-SA-4.0",
    "fhirVersion":[
       "4.0.1"
    
 ],
+	"dependsOn":[
+		{
+			"uri":"http://hl7.org/fhir/uv/ips/ImplementationGuide/hl7.fhir.uv.ips",
+			"packageId":"hl7.fhir.uv.ips",
+			"version":"0.3.0"
+		}
+	],
    "definition":{
       "page":{
          "nameUrl":"toc.html",
@@ -108,7 +101,7 @@
 },
       {
          "code":"releaselabel",
-         "value":"CI Build"
+         "value":"Release"
       
 }
    

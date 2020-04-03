@@ -12,9 +12,10 @@ script:
 - java -jar input-cache/org.hl7.fhir.publisher.jar -ig ig.ini
 - java -jar validator.jar -version 4.0.1 -ig ips.pack -ig output/validator-de.bbmri.fhir.pack input/examples
 deploy:
-  provider: releases
-  api_key: $GITHUB_TOKEN
-  file: output/validator-de.bbmri.fhir.pack
+  provider: pages
   skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  keep_history: true
+  local_dir: output
   on:
-    tags: true
+    branch: master

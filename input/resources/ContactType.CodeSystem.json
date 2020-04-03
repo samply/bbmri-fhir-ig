@@ -4,7 +4,7 @@
   "url": "https://fhir.bbmri.de/CodeSystem/ContactType",
   "name": "ContactType",
   "title": "Contact Type",
-  "status": "draft",
+  "status": "active",
   "caseSensitive": false,
   "content":"complete",
   "concept": [

@@ -4,7 +4,7 @@
   "url": "https://fhir.bbmri.de/CodeSystem/QualityStandard",
   "name": "QualityStandard",
   "title": "Quality Standard",
-  "status": "draft",
+  "status": "active",
   "caseSensitive": false,
   "content":"complete",
   "concept": [

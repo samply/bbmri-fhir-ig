@@ -4,7 +4,7 @@
   "url": "https://fhir.bbmri.de/CodeSystem/CollectionType",
   "name": "CollectionType",
   "title": "Collection Type",
-  "status": "draft",
+  "status": "active",
   "caseSensitive": false,
   "content":"complete",
   "concept": [

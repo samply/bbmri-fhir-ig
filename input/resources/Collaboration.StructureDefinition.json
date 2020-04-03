@@ -2,7 +2,8 @@
   "resourceType": "StructureDefinition",
   "url": "https://fhir.bbmri.de/StructureDefinition/Collaboration",
   "name": "Collaboration",
-  "status": "draft",
+  "title": "Collaboration",
+  "status": "active",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

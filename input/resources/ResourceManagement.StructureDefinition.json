@@ -2,7 +2,8 @@
   "resourceType": "StructureDefinition",
   "url": "https://fhir.bbmri.de/StructureDefinition/ResourceManagement",
   "name": "ResourceManagement",
-  "status": "draft",
+  "title": "Resource Management",
+  "status": "active",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

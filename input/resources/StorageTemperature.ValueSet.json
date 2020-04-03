@@ -4,7 +4,7 @@
   "url": "https://fhir.bbmri.de/ValueSet/StorageTemperature",
   "name": "StorageTemperature",
   "title": "Storage Temperature",
-  "status": "draft",
+  "status": "active",
   "compose": {
     "include": [
       {

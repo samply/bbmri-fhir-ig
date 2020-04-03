@@ -2,7 +2,8 @@
   "resourceType": "StructureDefinition",
   "url": "https://fhir.bbmri.de/StructureDefinition/Biobank",
   "name": "Biobank",
-  "status": "draft",
+  "title": "Biobank",
+  "status": "active",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -177,9 +178,8 @@
             "key": "bbmri-id-1",
             "requirements": "Make sure valid BBMRI IDs are provided",
             "severity": "warning",
-            "human": "<CC>_<local id>: SHALL contain valid ISO-3166-1 alpha 2 country code followed by _ followed by biobank ID of national registry (if present).",
-            "expression": "matches('^([a-z]){2}_([a-zA-Z\\\\d])+$')",
-            "source": "Organization"
+            "human": "bbmri-eric:ID:<CC>_<local id>: SHALL contain the bbmri-eric prefix followed by valid ISO-3166-1 alpha 2 country code followed by _ followed by biobank ID of national registry (if present).",
+            "expression": "matches('^bbmri-eric:ID:([A-Z]){2}_([a-zA-Z0-9])+$')"
           }
         ],
         "mustSupport": true

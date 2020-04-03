@@ -3,7 +3,7 @@
   "url": "https://fhir.bbmri.de/CodeSystem/OtherSampleDiagnosis",
   "name": "OtherSampleDiagnosis",
   "title": "Other Sample Diagnosis",
-  "status": "draft",
+  "status": "active",
   "description": "Contains the additional (not contained in ICD-10) codes needed for coding the MIABIS Sample Diagnosis plus a non-MIABIS code for indicating tumor material without a specific diagnosis.",
   "compositional": false,
   "content": "complete",
