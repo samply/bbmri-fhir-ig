@@ -10,7 +10,7 @@
   "name": "Biobank",
   "title": "Biobank",
   "status": "draft",
-  "date": "2020-04-03T07:11:33+00:00",
+  "date": "2020-04-03T08:03:12+00:00",
   "publisher": "BBMRI.de",
   "contact": [
     {
@@ -1268,7 +1268,7 @@
             "requirements": "Make sure valid BBMRI IDs are provided",
             "severity": "warning",
             "human": "bbmri-eric:ID:<CC>_<local id>: SHALL contain the bbmri-eric prefix followed by valid ISO-3166-1 alpha 2 country code followed by _ followed by biobank ID of national registry (if present).",
-            "expression": "matches('^bbmri-eric:ID:([A-Z]){2}_([a-zA-Z\\\\d])+$')"
+            "expression": "matches('^bbmri-eric:ID:([A-Z]){2}_([a-zA-Z0-9])+$')"
           }
         ],
         "mustSupport": true,
@@ -7482,7 +7482,7 @@
             "requirements": "Make sure valid BBMRI IDs are provided",
             "severity": "warning",
             "human": "bbmri-eric:ID:<CC>_<local id>: SHALL contain the bbmri-eric prefix followed by valid ISO-3166-1 alpha 2 country code followed by _ followed by biobank ID of national registry (if present).",
-            "expression": "matches('^bbmri-eric:ID:([A-Z]){2}_([a-zA-Z\\\\d])+$')"
+            "expression": "matches('^bbmri-eric:ID:([A-Z]){2}_([a-zA-Z0-9])+$')"
           }
         ],
         "mustSupport": true

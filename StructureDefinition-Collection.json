@@ -10,7 +10,7 @@
   "name": "Collection",
   "title": "Collection",
   "status": "draft",
-  "date": "2020-04-03T07:11:33+00:00",
+  "date": "2020-04-03T08:03:12+00:00",
   "publisher": "BBMRI.de",
   "contact": [
     {
@@ -1361,7 +1361,7 @@
             "key": "bbmri-id-local",
             "severity": "warning",
             "human": "Shall contain the biobank ID followed by the local collection id.",
-            "expression": "matches('^bbmri-eric:ID:([A-Z]){2}_([a-zA-Z\\\\d])+:collection:([a-zA-Z\\\\d])+$')"
+            "expression": "matches('^bbmri-eric:ID:([A-Z]){2}_([a-zA-Z0-9])+:collection:([a-zA-Z0-9])+$')"
           }
         ],
         "mustSupport": true,
@@ -7189,7 +7189,7 @@
             "key": "bbmri-id-local",
             "severity": "warning",
             "human": "Shall contain the biobank ID followed by the local collection id.",
-            "expression": "matches('^bbmri-eric:ID:([A-Z]){2}_([a-zA-Z\\\\d])+:collection:([a-zA-Z\\\\d])+$')"
+            "expression": "matches('^bbmri-eric:ID:([A-Z]){2}_([a-zA-Z0-9])+:collection:([a-zA-Z0-9])+$')"
           }
         ],
         "mustSupport": true

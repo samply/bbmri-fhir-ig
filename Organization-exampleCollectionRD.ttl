@@ -94,7 +94,7 @@
   fhir:Organization.identifier [
      fhir:index 0;
      fhir:Identifier.system [ fhir:value "http://www.bbmri-eric.eu/" ];
-     fhir:Identifier.value [ fhir:value "bbmri-eric:ID:de_54321:collection:werewolf" ]
+     fhir:Identifier.value [ fhir:value "bbmri-eric:ID:DE_54321:collection:werewolf" ]
   ];
   fhir:Organization.name [ fhir:value "WidE REsearch for Welfare On Lycantrophy Field"];
   fhir:Organization.alias [

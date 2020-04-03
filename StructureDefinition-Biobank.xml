@@ -69,7 +69,7 @@
   <name value="Biobank"/>
   <title value="Biobank"/>
   <status value="draft"/>
-  <date value="2020-04-03T07:11:33+00:00"/>
+  <date value="2020-04-03T08:03:12+00:00"/>
   <publisher value="BBMRI.de"/>
   <contact>
     <telecom>
@@ -1094,7 +1094,7 @@
         <requirements value="Make sure valid BBMRI IDs are provided"/>
         <severity value="warning"/>
         <human value="bbmri-eric:ID:&lt;CC&gt;_&lt;local id&gt;: SHALL contain the bbmri-eric prefix followed by valid ISO-3166-1 alpha 2 country code followed by _ followed by biobank ID of national registry (if present)."/>
-        <expression value="matches(&#39;^bbmri-eric:ID:([A-Z]){2}_([a-zA-Z\\d])+$&#39;)"/>
+        <expression value="matches(&#39;^bbmri-eric:ID:([A-Z]){2}_([a-zA-Z0-9])+$&#39;)"/>
       </constraint>
       <mustSupport value="true"/>
       <isModifier value="false"/>
@@ -6145,7 +6145,7 @@
         <requirements value="Make sure valid BBMRI IDs are provided"/>
         <severity value="warning"/>
         <human value="bbmri-eric:ID:&lt;CC&gt;_&lt;local id&gt;: SHALL contain the bbmri-eric prefix followed by valid ISO-3166-1 alpha 2 country code followed by _ followed by biobank ID of national registry (if present)."/>
-        <expression value="matches(&#39;^bbmri-eric:ID:([A-Z]){2}_([a-zA-Z\\d])+$&#39;)"/>
+        <expression value="matches(&#39;^bbmri-eric:ID:([A-Z]){2}_([a-zA-Z0-9])+$&#39;)"/>
       </constraint>
       <mustSupport value="true"/>
     </element>

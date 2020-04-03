@@ -67,7 +67,7 @@
   <name value="Collection"/>
   <title value="Collection"/>
   <status value="draft"/>
-  <date value="2020-04-03T07:11:33+00:00"/>
+  <date value="2020-04-03T08:03:12+00:00"/>
   <publisher value="BBMRI.de"/>
   <contact>
     <telecom>
@@ -1167,7 +1167,7 @@
         <key value="bbmri-id-local"/>
         <severity value="warning"/>
         <human value="Shall contain the biobank ID followed by the local collection id."/>
-        <expression value="matches(&#39;^bbmri-eric:ID:([A-Z]){2}_([a-zA-Z\\d])+:collection:([a-zA-Z\\d])+$&#39;)"/>
+        <expression value="matches(&#39;^bbmri-eric:ID:([A-Z]){2}_([a-zA-Z0-9])+:collection:([a-zA-Z0-9])+$&#39;)"/>
       </constraint>
       <mustSupport value="true"/>
       <isModifier value="false"/>
@@ -5895,7 +5895,7 @@
         <key value="bbmri-id-local"/>
         <severity value="warning"/>
         <human value="Shall contain the biobank ID followed by the local collection id."/>
-        <expression value="matches(&#39;^bbmri-eric:ID:([A-Z]){2}_([a-zA-Z\\d])+:collection:([a-zA-Z\\d])+$&#39;)"/>
+        <expression value="matches(&#39;^bbmri-eric:ID:([A-Z]){2}_([a-zA-Z0-9])+:collection:([a-zA-Z0-9])+$&#39;)"/>
       </constraint>
       <mustSupport value="true"/>
     </element>

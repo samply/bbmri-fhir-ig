@@ -47,7 +47,7 @@
   "identifier": [
     {
       "system": "http://www.bbmri-eric.eu/",
-      "value": "bbmri-eric:ID:de_12345"
+      "value": "bbmri-eric:ID:DE_12345"
     }
   ],
   "name": "Zentrale Biobank Neustadt",

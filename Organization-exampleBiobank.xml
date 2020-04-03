@@ -34,7 +34,7 @@
   </extension>
   <identifier>
     <system value="http://www.bbmri-eric.eu/"/>
-    <value value="bbmri-eric:ID:de_12345"/>
+    <value value="bbmri-eric:ID:DE_12345"/>
   </identifier>
   <name value="Zentrale Biobank Neustadt"/>
   <alias value="ZBBN"/>

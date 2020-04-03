@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "Collection"];
   fhir:StructureDefinition.title [ fhir:value "Collection"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2020-04-03T07:11:33+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2020-04-03T08:03:12+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "BBMRI.de"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -1481,7 +1481,7 @@
          fhir:ElementDefinition.constraint.key [ fhir:value "bbmri-id-local" ];
          fhir:ElementDefinition.constraint.severity [ fhir:value "warning" ];
          fhir:ElementDefinition.constraint.human [ fhir:value "Shall contain the biobank ID followed by the local collection id." ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "matches('^bbmri-eric:ID:([A-Z]){2}_([a-zA-Z\\\\d])+:collection:([a-zA-Z\\\\d])+$')" ]
+         fhir:ElementDefinition.constraint.expression [ fhir:value "matches('^bbmri-eric:ID:([A-Z]){2}_([a-zA-Z0-9])+:collection:([a-zA-Z0-9])+$')" ]
        ];
        fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
@@ -7423,7 +7423,7 @@
          fhir:ElementDefinition.constraint.key [ fhir:value "bbmri-id-local" ];
          fhir:ElementDefinition.constraint.severity [ fhir:value "warning" ];
          fhir:ElementDefinition.constraint.human [ fhir:value "Shall contain the biobank ID followed by the local collection id." ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "matches('^bbmri-eric:ID:([A-Z]){2}_([a-zA-Z\\\\d])+:collection:([a-zA-Z\\\\d])+$')" ]
+         fhir:ElementDefinition.constraint.expression [ fhir:value "matches('^bbmri-eric:ID:([A-Z]){2}_([a-zA-Z0-9])+:collection:([a-zA-Z0-9])+$')" ]
        ];
        fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
      ], [

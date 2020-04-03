@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "Biobank"];
   fhir:StructureDefinition.title [ fhir:value "Biobank"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2020-04-03T07:11:33+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2020-04-03T08:03:12+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "BBMRI.de"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -1374,7 +1374,7 @@
          fhir:ElementDefinition.constraint.requirements [ fhir:value "Make sure valid BBMRI IDs are provided" ];
          fhir:ElementDefinition.constraint.severity [ fhir:value "warning" ];
          fhir:ElementDefinition.constraint.human [ fhir:value "bbmri-eric:ID:<CC>_<local id>: SHALL contain the bbmri-eric prefix followed by valid ISO-3166-1 alpha 2 country code followed by _ followed by biobank ID of national registry (if present)." ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "matches('^bbmri-eric:ID:([A-Z]){2}_([a-zA-Z\\\\d])+$')" ]
+         fhir:ElementDefinition.constraint.expression [ fhir:value "matches('^bbmri-eric:ID:([A-Z]){2}_([a-zA-Z0-9])+$')" ]
        ];
        fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
@@ -7718,7 +7718,7 @@
          fhir:ElementDefinition.constraint.requirements [ fhir:value "Make sure valid BBMRI IDs are provided" ];
          fhir:ElementDefinition.constraint.severity [ fhir:value "warning" ];
          fhir:ElementDefinition.constraint.human [ fhir:value "bbmri-eric:ID:<CC>_<local id>: SHALL contain the bbmri-eric prefix followed by valid ISO-3166-1 alpha 2 country code followed by _ followed by biobank ID of national registry (if present)." ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "matches('^bbmri-eric:ID:([A-Z]){2}_([a-zA-Z\\\\d])+$')" ]
+         fhir:ElementDefinition.constraint.expression [ fhir:value "matches('^bbmri-eric:ID:([A-Z]){2}_([a-zA-Z0-9])+$')" ]
        ];
        fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
      ], [
