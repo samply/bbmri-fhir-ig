@@ -9,11 +9,11 @@
 <tr><td colspan="5" class="hierarchy"><br/><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
   </text>
   <url value="https://fhir.bbmri.de/StructureDefinition/ParentCollection"/>
-  <version value="0.1.0-beta"/>
+  <version value="1.0.0"/>
   <name value="ParentCollection"/>
   <title value="Parent Collection"/>
-  <status value="draft"/>
-  <date value="2020-04-03T08:03:12+00:00"/>
+  <status value="active"/>
+  <date value="2020-04-03T15:15:11+00:00"/>
   <publisher value="BBMRI.de"/>
   <contact>
     <telecom>
@@ -25,12 +25,6 @@
       <value value="feedback@germanbiobanknode.de"/>
     </telecom>
   </contact>
-  <jurisdiction>
-    <coding>
-      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-      <code value="001"/>
-    </coding>
-  </jurisdiction>
   <fhirVersion value="4.0.1"/>
   <mapping>
     <identity value="rim"/>

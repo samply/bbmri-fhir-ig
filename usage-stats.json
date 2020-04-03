@@ -1,8 +1,7 @@
 {
   "package": "de.bbmri.fhir",
-  "version": "0.1.0-beta",
+  "version": "1.0.0",
   "fhirVersion": "4.0.1",
-  "jurisdiction": "001",
   "extensions": [
     {
       "url": "https://fhir.bbmri.de/StructureDefinition/AccessPolicy",

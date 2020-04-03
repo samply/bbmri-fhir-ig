@@ -7,11 +7,11 @@
 </div><p>This code system https://fhir.bbmri.de/CodeSystem/ResourceType defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">samples<a name="ResourceType-samples"> </a></td><td>Samples</td><td/></tr><tr><td style="white-space:nowrap">data<a name="ResourceType-data"> </a></td><td>Data</td><td/></tr><tr><td style="white-space:nowrap">images<a name="ResourceType-images"> </a></td><td>Images</td><td/></tr></table></div>
   </text>
   <url value="https://fhir.bbmri.de/CodeSystem/ResourceType"/>
-  <version value="0.1.0-beta"/>
+  <version value="1.0.0"/>
   <name value="ResourceType"/>
   <title value="Resource Type"/>
-  <status value="draft"/>
-  <date value="2020-04-03T08:03:12+00:00"/>
+  <status value="active"/>
+  <date value="2020-04-03T15:15:11+00:00"/>
   <publisher value="BBMRI.de"/>
   <contact>
     <telecom>
@@ -24,12 +24,6 @@
     </telecom>
   </contact>
   <description value="Types of resources that may be governed by a biobank or its collections"/>
-  <jurisdiction>
-    <coding>
-      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-      <code value="001"/>
-    </coding>
-  </jurisdiction>
   <purpose value="This CodeSystem provides the different types of resources distinguished by the BBMRI-ERIC Directory"/>
   <content value="complete"/>
   <concept>

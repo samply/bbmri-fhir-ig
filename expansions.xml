@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="53043f13-be28-42bd-8a24-64135710e7d7"/>
+  <id value="d137c35d-d598-4464-9763-2ffb22982485"/>
   <meta>
-    <lastUpdated value="2020-04-03T08:03:12.880+00:00"/>
+    <lastUpdated value="2020-04-03T15:15:11.180+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -15,7 +15,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 33 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px"/>Expansion based on https://fhir.bbmri.de/CodeSystem/SampleMaterialType version 0.1.0-beta
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px"/>Expansion based on https://fhir.bbmri.de/CodeSystem/SampleMaterialType version 1.0.0
             <p>All codes from system 
               <a href="CodeSystem-SampleMaterialType.html">
                 <code>https://fhir.bbmri.de/CodeSystem/SampleMaterialType</code>
@@ -370,11 +370,11 @@
           </div>
         </text>
         <url value="https://fhir.bbmri.de/ValueSet/SampleMaterialType"/>
-        <version value="0.1.0-beta"/>
+        <version value="1.0.0"/>
         <name value="SampleMaterialType"/>
         <title value="Sample Material Type"/>
-        <status value="draft"/>
-        <date value="2020-04-03T08:03:12+00:00"/>
+        <status value="active"/>
+        <date value="2020-04-03T15:15:11+00:00"/>
         <publisher value="BBMRI.de"/>
         <contact>
           <telecom>
@@ -386,15 +386,9 @@
             <value value="feedback@germanbiobanknode.de"/>
           </telecom>
         </contact>
-        <jurisdiction>
-          <coding>
-            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-            <code value="001"/>
-          </coding>
-        </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:de2b8990-e5ac-4639-85d8-29b9475180fa"/>
-          <timestamp value="2020-04-03T08:03:34+00:00"/>
+          <identifier value="urn:uuid:bc6ed341-0961-4b7c-a492-336127955c13"/>
+          <timestamp value="2020-04-03T15:15:33+00:00"/>
           <total value="33"/>
           <parameter>
             <name value="excludeNested"/>
@@ -402,7 +396,7 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="https://fhir.bbmri.de/CodeSystem/SampleMaterialType|0.1.0-beta"/>
+            <valueUri value="https://fhir.bbmri.de/CodeSystem/SampleMaterialType|1.0.0"/>
           </parameter>
           <contains>
             <system value="https://fhir.bbmri.de/CodeSystem/SampleMaterialType"/>
@@ -582,7 +576,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 15 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px"/>Expansion based on https://fhir.bbmri.de/CodeSystem/CollectionType version 0.1.0-beta
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px"/>Expansion based on https://fhir.bbmri.de/CodeSystem/CollectionType version 1.0.0
             <p>All codes from system 
               <a href="CodeSystem-CollectionType.html">
                 <code>https://fhir.bbmri.de/CodeSystem/CollectionType</code>
@@ -724,11 +718,11 @@
           </div>
         </text>
         <url value="https://fhir.bbmri.de/ValueSet/CollectionType"/>
-        <version value="0.1.0-beta"/>
+        <version value="1.0.0"/>
         <name value="CollectionType"/>
         <title value="Collection Type"/>
-        <status value="draft"/>
-        <date value="2020-04-03T08:03:12+00:00"/>
+        <status value="active"/>
+        <date value="2020-04-03T15:15:11+00:00"/>
         <publisher value="BBMRI.de"/>
         <contact>
           <telecom>
@@ -740,15 +734,9 @@
             <value value="feedback@germanbiobanknode.de"/>
           </telecom>
         </contact>
-        <jurisdiction>
-          <coding>
-            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-            <code value="001"/>
-          </coding>
-        </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:d9bdc1d8-4451-40e9-acf1-6c626d414369"/>
-          <timestamp value="2020-04-03T08:03:34+00:00"/>
+          <identifier value="urn:uuid:2791e0ac-6519-4bab-a203-426c8d84d401"/>
+          <timestamp value="2020-04-03T15:15:33+00:00"/>
           <total value="15"/>
           <parameter>
             <name value="excludeNested"/>
@@ -756,7 +744,7 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="https://fhir.bbmri.de/CodeSystem/CollectionType|0.1.0-beta"/>
+            <valueUri value="https://fhir.bbmri.de/CodeSystem/CollectionType|1.0.0"/>
           </parameter>
           <contains>
             <system value="https://fhir.bbmri.de/CodeSystem/CollectionType"/>
@@ -846,7 +834,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 3 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px"/>Expansion based on https://fhir.bbmri.de/CodeSystem/ResourceType version 0.1.0-beta
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px"/>Expansion based on https://fhir.bbmri.de/CodeSystem/ResourceType version 1.0.0
             <p>All codes from system 
               <a href="CodeSystem-ResourceType.html">
                 <code>https://fhir.bbmri.de/CodeSystem/ResourceType</code>
@@ -892,11 +880,11 @@
           </div>
         </text>
         <url value="https://fhir.bbmri.de/ValueSet/ResourceType"/>
-        <version value="0.1.0-beta"/>
+        <version value="1.0.0"/>
         <name value="ResourceType"/>
         <title value="Resource Type"/>
-        <status value="draft"/>
-        <date value="2020-04-03T08:03:12+00:00"/>
+        <status value="active"/>
+        <date value="2020-04-03T15:15:11+00:00"/>
         <publisher value="BBMRI.de"/>
         <contact>
           <telecom>
@@ -908,15 +896,9 @@
             <value value="feedback@germanbiobanknode.de"/>
           </telecom>
         </contact>
-        <jurisdiction>
-          <coding>
-            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-            <code value="001"/>
-          </coding>
-        </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:c9d37f58-fd06-4f3a-bc8d-d148aeef7af7"/>
-          <timestamp value="2020-04-03T08:03:36+00:00"/>
+          <identifier value="urn:uuid:4f807db7-6425-4628-a8be-00df69b1cf13"/>
+          <timestamp value="2020-04-03T15:15:35+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -924,7 +906,7 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="https://fhir.bbmri.de/CodeSystem/ResourceType|0.1.0-beta"/>
+            <valueUri value="https://fhir.bbmri.de/CodeSystem/ResourceType|1.0.0"/>
           </parameter>
           <contains>
             <system value="https://fhir.bbmri.de/CodeSystem/ResourceType"/>
@@ -954,7 +936,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 4 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px"/>Expansion based on https://fhir.bbmri.de/CodeSystem/OtherSampleDiagnosis version 0.1.0-beta
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px"/>Expansion based on https://fhir.bbmri.de/CodeSystem/OtherSampleDiagnosis version 1.0.0
             <p>All codes from system 
               <a href="CodeSystem-OtherSampleDiagnosis.html">
                 <code>https://fhir.bbmri.de/CodeSystem/OtherSampleDiagnosis</code>
@@ -1008,11 +990,11 @@
           </div>
         </text>
         <url value="https://fhir.bbmri.de/ValueSet/OtherSampleDiagnosis"/>
-        <version value="0.1.0-beta"/>
+        <version value="1.0.0"/>
         <name value="OtherSampleDiagnosis"/>
         <title value="other sample diagnosis"/>
-        <status value="draft"/>
-        <date value="2020-04-03T08:03:12+00:00"/>
+        <status value="active"/>
+        <date value="2020-04-03T15:15:11+00:00"/>
         <publisher value="BBMRI.de"/>
         <contact>
           <telecom>
@@ -1024,15 +1006,9 @@
             <value value="feedback@germanbiobanknode.de"/>
           </telecom>
         </contact>
-        <jurisdiction>
-          <coding>
-            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-            <code value="001"/>
-          </coding>
-        </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:9a148645-eb62-4dd4-b0c6-349fca703924"/>
-          <timestamp value="2020-04-03T08:03:39+00:00"/>
+          <identifier value="urn:uuid:9c228b3d-01a1-45c4-9282-61ae44bad48c"/>
+          <timestamp value="2020-04-03T15:15:38+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1040,7 +1016,7 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="https://fhir.bbmri.de/CodeSystem/OtherSampleDiagnosis|0.1.0-beta"/>
+            <valueUri value="https://fhir.bbmri.de/CodeSystem/OtherSampleDiagnosis|1.0.0"/>
           </parameter>
           <contains>
             <system value="https://fhir.bbmri.de/CodeSystem/OtherSampleDiagnosis"/>
@@ -1075,7 +1051,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 7 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px"/>Expansion based on https://fhir.bbmri.de/CodeSystem/QualityStandard version 0.1.0-beta
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px"/>Expansion based on https://fhir.bbmri.de/CodeSystem/QualityStandard version 1.0.0
             <p>All codes from system 
               <a href="CodeSystem-QualityStandard.html">
                 <code>https://fhir.bbmri.de/CodeSystem/QualityStandard</code>
@@ -1153,11 +1129,11 @@
           </div>
         </text>
         <url value="https://fhir.bbmri.de/ValueSet/QualityStandard"/>
-        <version value="0.1.0-beta"/>
+        <version value="1.0.0"/>
         <name value="QualityStandard"/>
         <title value="Quality Standard"/>
-        <status value="draft"/>
-        <date value="2020-04-03T08:03:12+00:00"/>
+        <status value="active"/>
+        <date value="2020-04-03T15:15:11+00:00"/>
         <publisher value="BBMRI.de"/>
         <contact>
           <telecom>
@@ -1169,15 +1145,9 @@
             <value value="feedback@germanbiobanknode.de"/>
           </telecom>
         </contact>
-        <jurisdiction>
-          <coding>
-            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-            <code value="001"/>
-          </coding>
-        </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:ce070090-553d-41d8-9d3a-9f38bfd29bc8"/>
-          <timestamp value="2020-04-03T08:03:40+00:00"/>
+          <identifier value="urn:uuid:6c30321b-16c8-45a4-b9c9-fea750d4fc4a"/>
+          <timestamp value="2020-04-03T15:15:39+00:00"/>
           <total value="7"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1185,7 +1155,7 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="https://fhir.bbmri.de/CodeSystem/QualityStandard|0.1.0-beta"/>
+            <valueUri value="https://fhir.bbmri.de/CodeSystem/QualityStandard|1.0.0"/>
           </parameter>
           <contains>
             <system value="https://fhir.bbmri.de/CodeSystem/QualityStandard"/>
@@ -1235,7 +1205,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 7 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px"/>Expansion based on https://fhir.bbmri.de/CodeSystem/StorageTemperature version 0.1.0-beta
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px"/>Expansion based on https://fhir.bbmri.de/CodeSystem/StorageTemperature version 1.0.0
             <p>All codes from system 
               <a href="CodeSystem-StorageTemperature.html">
                 <code>https://fhir.bbmri.de/CodeSystem/StorageTemperature</code>
@@ -1313,11 +1283,11 @@
           </div>
         </text>
         <url value="https://fhir.bbmri.de/ValueSet/StorageTemperature"/>
-        <version value="0.1.0-beta"/>
+        <version value="1.0.0"/>
         <name value="StorageTemperature"/>
         <title value="Storage Temperature"/>
-        <status value="draft"/>
-        <date value="2020-04-03T08:03:12+00:00"/>
+        <status value="active"/>
+        <date value="2020-04-03T15:15:11+00:00"/>
         <publisher value="BBMRI.de"/>
         <contact>
           <telecom>
@@ -1329,15 +1299,9 @@
             <value value="feedback@germanbiobanknode.de"/>
           </telecom>
         </contact>
-        <jurisdiction>
-          <coding>
-            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-            <code value="001"/>
-          </coding>
-        </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:b49624a5-4786-4b91-b46e-a7160b6237d2"/>
-          <timestamp value="2020-04-03T08:03:40+00:00"/>
+          <identifier value="urn:uuid:96771bf1-809f-4f16-bb59-91dac2a46c2b"/>
+          <timestamp value="2020-04-03T15:15:39+00:00"/>
           <total value="7"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1345,7 +1309,7 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="https://fhir.bbmri.de/CodeSystem/StorageTemperature|0.1.0-beta"/>
+            <valueUri value="https://fhir.bbmri.de/CodeSystem/StorageTemperature|1.0.0"/>
           </parameter>
           <contains>
             <system value="https://fhir.bbmri.de/CodeSystem/StorageTemperature"/>
@@ -1395,7 +1359,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 11 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px"/>Expansion based on https://fhir.bbmri.de/CodeSystem/BiobankCapabilities version 0.1.0-beta
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px"/>Expansion based on https://fhir.bbmri.de/CodeSystem/BiobankCapabilities version 1.0.0
             <p>All codes from system 
               <a href="CodeSystem-BiobankCapabilities.html">
                 <code>https://fhir.bbmri.de/CodeSystem/BiobankCapabilities</code>
@@ -1505,11 +1469,11 @@
           </div>
         </text>
         <url value="https://fhir.bbmri.de/ValueSet/BiobankCapabilities"/>
-        <version value="0.1.0-beta"/>
+        <version value="1.0.0"/>
         <name value="BiobankCapabilities"/>
         <title value="Biobank Capabilities"/>
-        <status value="draft"/>
-        <date value="2020-04-03T08:03:12+00:00"/>
+        <status value="active"/>
+        <date value="2020-04-03T15:15:11+00:00"/>
         <publisher value="BBMRI.de"/>
         <contact>
           <telecom>
@@ -1521,15 +1485,9 @@
             <value value="feedback@germanbiobanknode.de"/>
           </telecom>
         </contact>
-        <jurisdiction>
-          <coding>
-            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-            <code value="001"/>
-          </coding>
-        </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:37790033-0139-4186-9f94-673bb162dc6f"/>
-          <timestamp value="2020-04-03T08:03:41+00:00"/>
+          <identifier value="urn:uuid:0d2c9025-f2c8-45d1-b9b8-dd84d53b8140"/>
+          <timestamp value="2020-04-03T15:15:40+00:00"/>
           <total value="11"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1537,7 +1495,7 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="https://fhir.bbmri.de/CodeSystem/BiobankCapabilities|0.1.0-beta"/>
+            <valueUri value="https://fhir.bbmri.de/CodeSystem/BiobankCapabilities|1.0.0"/>
           </parameter>
           <contains>
             <system value="https://fhir.bbmri.de/CodeSystem/BiobankCapabilities"/>
@@ -1607,7 +1565,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 9 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px"/>Expansion based on https://fhir.bbmri.de/CodeSystem/DataCategory version 0.1.0-beta
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px"/>Expansion based on https://fhir.bbmri.de/CodeSystem/DataCategory version 1.0.0
             <p>All codes from system 
               <a href="CodeSystem-DataCategory.html">
                 <code>https://fhir.bbmri.de/CodeSystem/DataCategory</code>
@@ -1701,11 +1659,11 @@
           </div>
         </text>
         <url value="https://fhir.bbmri.de/ValueSet/DataCategory"/>
-        <version value="0.1.0-beta"/>
+        <version value="1.0.0"/>
         <name value="DataCategory"/>
         <title value="Data Category"/>
-        <status value="draft"/>
-        <date value="2020-04-03T08:03:12+00:00"/>
+        <status value="active"/>
+        <date value="2020-04-03T15:15:11+00:00"/>
         <publisher value="BBMRI.de"/>
         <contact>
           <telecom>
@@ -1717,15 +1675,9 @@
             <value value="feedback@germanbiobanknode.de"/>
           </telecom>
         </contact>
-        <jurisdiction>
-          <coding>
-            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-            <code value="001"/>
-          </coding>
-        </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:ef8d116f-ed65-4c0e-87b9-52a2b8975c59"/>
-          <timestamp value="2020-04-03T08:03:43+00:00"/>
+          <identifier value="urn:uuid:20d1488f-defc-4e55-9051-7c6378534353"/>
+          <timestamp value="2020-04-03T15:15:42+00:00"/>
           <total value="9"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1733,7 +1685,7 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="https://fhir.bbmri.de/CodeSystem/DataCategory|0.1.0-beta"/>
+            <valueUri value="https://fhir.bbmri.de/CodeSystem/DataCategory|1.0.0"/>
           </parameter>
           <contains>
             <system value="https://fhir.bbmri.de/CodeSystem/DataCategory"/>

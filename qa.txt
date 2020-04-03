@@ -3,7 +3,7 @@
 
 err = 18, warn = 20, info = 2
 IG Publisher Version: v1.0.77-SNAPSHOT
-Generated Fri Apr 03 08:04:10 UTC 2020. FHIR version 4.0.1 for de.bbmri.fhir#0.1.0-beta (canonical = https://fhir.bbmri.de)
+Generated Fri Apr 03 15:16:11 UTC 2020. FHIR version 4.0.1 for de.bbmri.fhir#1.0.0 (canonical = https://fhir.bbmri.de)
 
  Build Errors : 19 / 47
  /home/travis/build/samply/bbmri-fhir-ig/input/de.bbmri.fhir : 0 / 0

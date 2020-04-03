@@ -13,11 +13,11 @@
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Biobank Capabilities</h2><p>This code system https://fhir.bbmri.de/CodeSystem/BiobankCapabilities defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">biomaterial-storage<a name=\"BiobankCapabilities-biomaterial-storage\"> </a></td><td>Biological material storage</td><td/></tr><tr><td style=\"white-space:nowrap\">cell-culture<a name=\"BiobankCapabilities-cell-culture\"> </a></td><td>Cell culture</td><td/></tr><tr><td style=\"white-space:nowrap\">data-analytics<a name=\"BiobankCapabilities-data-analytics\"> </a></td><td>Data analytics</td><td/></tr><tr><td style=\"white-space:nowrap\">data-storage<a name=\"BiobankCapabilities-data-storage\"> </a></td><td>Data Storage</td><td/></tr><tr><td style=\"white-space:nowrap\">digital-imaging<a name=\"BiobankCapabilities-digital-imaging\"> </a></td><td>Digital imaging</td><td/></tr><tr><td style=\"white-space:nowrap\">immunohistochemistry-scoring<a name=\"BiobankCapabilities-immunohistochemistry-scoring\"> </a></td><td>Immunohistochemistry scoring</td><td/></tr><tr><td style=\"white-space:nowrap\">immunohistochemistry-staining<a name=\"BiobankCapabilities-immunohistochemistry-staining\"> </a></td><td>Immunohistochemistry staining</td><td/></tr><tr><td style=\"white-space:nowrap\">nucleic-acid-extraction<a name=\"BiobankCapabilities-nucleic-acid-extraction\"> </a></td><td>Nucleic acid extraction</td><td/></tr><tr><td style=\"white-space:nowrap\">pathology-archive-access<a name=\"BiobankCapabilities-pathology-archive-access\"> </a></td><td>Access to the full pathology archive</td><td/></tr><tr><td style=\"white-space:nowrap\">recontact<a name=\"BiobankCapabilities-recontact\"> </a></td><td>Ability to recontact</td><td/></tr><tr><td style=\"white-space:nowrap\">tma-creation<a name=\"BiobankCapabilities-tma-creation\"> </a></td><td>Tissue micro array creation</td><td/></tr></table></div>"
   ];
   fhir:CodeSystem.url [ fhir:value "https://fhir.bbmri.de/CodeSystem/BiobankCapabilities"];
-  fhir:CodeSystem.version [ fhir:value "0.1.0-beta"];
+  fhir:CodeSystem.version [ fhir:value "1.0.0"];
   fhir:CodeSystem.name [ fhir:value "BiobankCapabilities"];
   fhir:CodeSystem.title [ fhir:value "Biobank Capabilities"];
-  fhir:CodeSystem.status [ fhir:value "draft"];
-  fhir:CodeSystem.date [ fhir:value "2020-04-03T08:03:12+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2020-04-03T15:15:11+00:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "BBMRI.de"];
   fhir:CodeSystem.contact [
      fhir:index 0;
@@ -29,14 +29,6 @@
        fhir:index 1;
        fhir:ContactPoint.system [ fhir:value "email" ];
        fhir:ContactPoint.value [ fhir:value "feedback@germanbiobanknode.de" ]
-     ]
-  ];
-  fhir:CodeSystem.jurisdiction [
-     fhir:index 0;
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
-       fhir:Coding.code [ fhir:value "001" ]
      ]
   ];
   fhir:CodeSystem.content [ fhir:value "complete"];

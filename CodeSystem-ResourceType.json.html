@@ -52,7 +52,7 @@
 	</div>
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">BBMRI.de Implementation Guide</span><br/>0.1.0-beta - CI Build</p>
+          <p><span style="font-size:12pt;font-weight:bold">BBMRI.de/GBA Implementation Guide</span><br/>1.0.0 - Release</p>
         </div>
       </div> <!-- /container -->
     </div>  <!-- /segment-header -->
@@ -125,7 +125,7 @@
         <div class="row">
           <div class="inner-wrapper">
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">BBMRI.de Implementation Guide - Local Development build (v0.1.0-beta). See the <a href="https://fhir.bbmri.de/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">BBMRI.de/GBA Implementation Guide - Local Development build (v1.0.0). See the <a href="https://fhir.bbmri.de/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <a name="root"> </a>
   <h2 id="root">Resource Type - JSON Representation</h2>
   <p>
@@ -150,11 +150,11 @@
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;h2&gt;Resource Type&lt;/h2&gt;&lt;div&gt;&lt;p&gt;Types of resources that may be governed by a biobank or its collections&lt;/p&gt;\n&lt;/div&gt;&lt;p&gt;This code system https://fhir.bbmri.de/CodeSystem/ResourceType defines the following codes:&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;samples&lt;a name=\&quot;ResourceType-samples\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Samples&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;data&lt;a name=\&quot;ResourceType-data\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Data&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;images&lt;a name=\&quot;ResourceType-images\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Images&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
   },
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.url">url</a>" : "https://fhir.bbmri.de/CodeSystem/ResourceType",
-  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">version</a>" : "0.1.0-beta",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">version</a>" : "1.0.0",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.name">name</a>" : "ResourceType",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.title">title</a>" : "Resource Type",
-  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.status">status</a>" : "draft",
-  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">date</a>" : "2020-04-03T08:03:12+00:00",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.status">status</a>" : "active",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">date</a>" : "2020-04-03T15:15:11+00:00",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.publisher">publisher</a>" : "BBMRI.de",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.contact">contact</a>" : [
     {
@@ -171,16 +171,6 @@
     }
   ],
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.description">description</a>" : "Types of resources that may be governed by a biobank or its collections",
-  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.jurisdiction">jurisdiction</a>" : [
-    {
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
-        {
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "001"
-        }
-      ]
-    }
-  ],
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.purpose">purpose</a>" : "This CodeSystem provides the different types of resources distinguished by the BBMRI-ERIC Directory",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.content">content</a>" : "complete",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>" : [
@@ -213,7 +203,7 @@
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="https://www.bbmri.de">BBMRI.de</a>.  Package de.bbmri.fhir#0.1.0-beta based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Apr 3, 2020 08:03+0000">2020-04-03</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="https://www.bbmri.de">BBMRI.de</a>.  Package de.bbmri.fhir#1.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Apr 3, 2020 15:15+0000">2020-04-03</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

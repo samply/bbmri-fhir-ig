@@ -6,11 +6,11 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>Biobank Capabilities</h2><ul><li>Include all codes defined in <a href="CodeSystem-BiobankCapabilities.html"><code>https://fhir.bbmri.de/CodeSystem/BiobankCapabilities</code></a></li></ul></div>
   </text>
   <url value="https://fhir.bbmri.de/ValueSet/BiobankCapabilities"/>
-  <version value="0.1.0-beta"/>
+  <version value="1.0.0"/>
   <name value="BiobankCapabilities"/>
   <title value="Biobank Capabilities"/>
-  <status value="draft"/>
-  <date value="2020-04-03T08:03:12+00:00"/>
+  <status value="active"/>
+  <date value="2020-04-03T15:15:11+00:00"/>
   <publisher value="BBMRI.de"/>
   <contact>
     <telecom>
@@ -22,12 +22,6 @@
       <value value="feedback@germanbiobanknode.de"/>
     </telecom>
   </contact>
-  <jurisdiction>
-    <coding>
-      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-      <code value="001"/>
-    </coding>
-  </jurisdiction>
   <compose>
     <include>
       <system value="https://fhir.bbmri.de/CodeSystem/BiobankCapabilities"/>

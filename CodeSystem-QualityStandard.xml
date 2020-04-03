@@ -6,11 +6,11 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>Quality Standard</h2><p>This code system https://fhir.bbmri.de/CodeSystem/QualityStandard defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">iso-15189<a name="QualityStandard-iso-15189"> </a></td><td>ISO-15189</td><td/></tr><tr><td style="white-space:nowrap">iso-15190<a name="QualityStandard-iso-15190"> </a></td><td>ISO-15190</td><td/></tr><tr><td style="white-space:nowrap">iso-17025<a name="QualityStandard-iso-17025"> </a></td><td>ISO-17025</td><td/></tr><tr><td style="white-space:nowrap">iso-9001<a name="QualityStandard-iso-9001"> </a></td><td>ISO-9001</td><td/></tr><tr><td style="white-space:nowrap">nfs96-900<a name="QualityStandard-nfs96-900"> </a></td><td>NFS96-900</td><td/></tr><tr><td style="white-space:nowrap">oecd-guidelines<a name="QualityStandard-oecd-guidelines"> </a></td><td>OECD Guidelines</td><td/></tr><tr><td style="white-space:nowrap">others<a name="QualityStandard-others"> </a></td><td>Others</td><td/></tr></table></div>
   </text>
   <url value="https://fhir.bbmri.de/CodeSystem/QualityStandard"/>
-  <version value="0.1.0-beta"/>
+  <version value="1.0.0"/>
   <name value="QualityStandard"/>
   <title value="Quality Standard"/>
-  <status value="draft"/>
-  <date value="2020-04-03T08:03:12+00:00"/>
+  <status value="active"/>
+  <date value="2020-04-03T15:15:11+00:00"/>
   <publisher value="BBMRI.de"/>
   <contact>
     <telecom>
@@ -22,12 +22,6 @@
       <value value="feedback@germanbiobanknode.de"/>
     </telecom>
   </contact>
-  <jurisdiction>
-    <coding>
-      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-      <code value="001"/>
-    </coding>
-  </jurisdiction>
   <caseSensitive value="false"/>
   <content value="complete"/>
   <concept>

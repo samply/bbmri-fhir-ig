@@ -7,12 +7,12 @@
 </div></div>
   </text>
   <url value="https://fhir.bbmri.de/ImplementationGuide/de.bbmri.fhir"/>
-  <version value="0.1.0-beta"/>
+  <version value="1.0.0"/>
   <name value="BBMRI_DE_IG"/>
-  <title value="BBMRI.de Implementation Guide"/>
-  <status value="draft"/>
-  <experimental value="true"/>
-  <date value="2020-04-03T08:03:12+00:00"/>
+  <title value="BBMRI.de/GBA Implementation Guide"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2020-04-03T15:15:11+00:00"/>
   <publisher value="BBMRI.de"/>
   <contact>
     <telecom>
@@ -25,12 +25,6 @@
     </telecom>
   </contact>
   <description value="Profiles for the GBA/BBMRI.de project"/>
-  <jurisdiction>
-    <coding>
-      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-      <code value="001"/>
-    </coding>
-  </jurisdiction>
   <packageId value="de.bbmri.fhir"/>
   <license value="CC-BY-SA-4.0"/>
   <fhirVersion value="4.0.1"/>
@@ -53,7 +47,7 @@
         <valueString value="releaselabel"/>
       </extension>
       <extension url="value">
-        <valueString value="CI Build"/>
+        <valueString value="Release"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">

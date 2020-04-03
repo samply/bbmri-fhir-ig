@@ -6,12 +6,12 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>BBMRI_DE_IG</h2><p>The official URL for this implementation guide is: </p><pre>https://fhir.bbmri.de/ImplementationGuide/de.bbmri.fhir</pre><div><p>Profiles for the GBA/BBMRI.de project</p>\n</div></div>"
   },
   "url": "https://fhir.bbmri.de/ImplementationGuide/de.bbmri.fhir",
-  "version": "0.1.0-beta",
+  "version": "1.0.0",
   "name": "BBMRI_DE_IG",
-  "title": "BBMRI.de Implementation Guide",
-  "status": "draft",
-  "experimental": true,
-  "date": "2020-04-03T08:03:12+00:00",
+  "title": "BBMRI.de/GBA Implementation Guide",
+  "status": "active",
+  "experimental": false,
+  "date": "2020-04-03T15:15:11+00:00",
   "publisher": "BBMRI.de",
   "contact": [
     {
@@ -28,16 +28,6 @@
     }
   ],
   "description": "Profiles for the GBA/BBMRI.de project",
-  "jurisdiction": [
-    {
-      "coding": [
-        {
-          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "code": "001"
-        }
-      ]
-    }
-  ],
   "packageId": "de.bbmri.fhir",
   "license": "CC-BY-SA-4.0",
   "fhirVersion": [
@@ -73,7 +63,7 @@
           },
           {
             "url": "value",
-            "valueString": "CI Build"
+            "valueString": "Release"
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"

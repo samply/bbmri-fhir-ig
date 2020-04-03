@@ -7,11 +7,11 @@
 </div><p>This code system https://fhir.bbmri.de/CodeSystem/OtherSampleDiagnosis defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">healthy<a name="OtherSampleDiagnosis-healthy"> </a></td><td>Healthy</td><td>Sample contains healthy material</td></tr><tr><td style="white-space:nowrap">unknown<a name="OtherSampleDiagnosis-unknown"> </a></td><td>Unknown</td><td/></tr><tr><td style="white-space:nowrap">not-applicable<a name="OtherSampleDiagnosis-not-applicable"> </a></td><td>Not applicable</td><td/></tr><tr><td style="white-space:nowrap">unspecified-tumor<a name="OtherSampleDiagnosis-unspecified-tumor"> </a></td><td>Unspecified tumor</td><td>Sample contains tumor material, a specific diagnosis is not known</td></tr></table></div>
   </text>
   <url value="https://fhir.bbmri.de/CodeSystem/OtherSampleDiagnosis"/>
-  <version value="0.1.0-beta"/>
+  <version value="1.0.0"/>
   <name value="OtherSampleDiagnosis"/>
   <title value="Other Sample Diagnosis"/>
-  <status value="draft"/>
-  <date value="2020-04-03T08:03:12+00:00"/>
+  <status value="active"/>
+  <date value="2020-04-03T15:15:11+00:00"/>
   <publisher value="BBMRI.de"/>
   <contact>
     <telecom>
@@ -24,12 +24,6 @@
     </telecom>
   </contact>
   <description value="Contains the additional (not contained in ICD-10) codes needed for coding the MIABIS Sample Diagnosis plus a non-MIABIS code for indicating tumor material without a specific diagnosis."/>
-  <jurisdiction>
-    <coding>
-      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-      <code value="001"/>
-    </coding>
-  </jurisdiction>
   <compositional value="false"/>
   <content value="complete"/>
   <concept>

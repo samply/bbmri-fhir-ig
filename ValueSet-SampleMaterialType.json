@@ -6,11 +6,11 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Sample Material Type</h2><ul><li>Include all codes defined in <a href=\"CodeSystem-SampleMaterialType.html\"><code>https://fhir.bbmri.de/CodeSystem/SampleMaterialType</code></a></li></ul></div>"
   },
   "url": "https://fhir.bbmri.de/ValueSet/SampleMaterialType",
-  "version": "0.1.0-beta",
+  "version": "1.0.0",
   "name": "SampleMaterialType",
   "title": "Sample Material Type",
-  "status": "draft",
-  "date": "2020-04-03T08:03:12+00:00",
+  "status": "active",
+  "date": "2020-04-03T15:15:11+00:00",
   "publisher": "BBMRI.de",
   "contact": [
     {
@@ -22,16 +22,6 @@
         {
           "system": "email",
           "value": "feedback@germanbiobanknode.de"
-        }
-      ]
-    }
-  ],
-  "jurisdiction": [
-    {
-      "coding": [
-        {
-          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "code": "001"
         }
       ]
     }

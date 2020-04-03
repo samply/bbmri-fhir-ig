@@ -6,11 +6,11 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Data Category</h2><p>This code system https://fhir.bbmri.de/CodeSystem/DataCategory defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">BIOLOGICAL_SAMPLES<a name=\"DataCategory-BIOLOGICAL_SAMPLES\"> </a></td><td>Biological samples</td><td/></tr><tr><td style=\"white-space:nowrap\">GENEALOGICAL_RECORDS<a name=\"DataCategory-GENEALOGICAL_RECORDS\"> </a></td><td>Genealogical records</td><td/></tr><tr><td style=\"white-space:nowrap\">IMAGING_DATA<a name=\"DataCategory-IMAGING_DATA\"> </a></td><td>Imaging data</td><td/></tr><tr><td style=\"white-space:nowrap\">MEDICAL_RECORDS<a name=\"DataCategory-MEDICAL_RECORDS\"> </a></td><td>Medical records</td><td/></tr><tr><td style=\"white-space:nowrap\">NATIONAL_REGISTRIES<a name=\"DataCategory-NATIONAL_REGISTRIES\"> </a></td><td>National registries</td><td/></tr><tr><td style=\"white-space:nowrap\">NAV<a name=\"DataCategory-NAV\"> </a></td><td>Not available</td><td/></tr><tr><td style=\"white-space:nowrap\">OTHER<a name=\"DataCategory-OTHER\"> </a></td><td>other</td><td/></tr><tr><td style=\"white-space:nowrap\">PHYSIOLOGICAL_BIOCHEMICAL_MEASUREMENTS<a name=\"DataCategory-PHYSIOLOGICAL_BIOCHEMICAL_MEASUREMENTS\"> </a></td><td>Physiological/Biochemical measurements</td><td/></tr><tr><td style=\"white-space:nowrap\">SURVEY_DATA<a name=\"DataCategory-SURVEY_DATA\"> </a></td><td>Survey data</td><td/></tr></table></div>"
   },
   "url": "https://fhir.bbmri.de/CodeSystem/DataCategory",
-  "version": "0.1.0-beta",
+  "version": "1.0.0",
   "name": "DataCategory",
   "title": "Data Category",
-  "status": "draft",
-  "date": "2020-04-03T08:03:12+00:00",
+  "status": "active",
+  "date": "2020-04-03T15:15:11+00:00",
   "publisher": "BBMRI.de",
   "contact": [
     {
@@ -22,16 +22,6 @@
         {
           "system": "email",
           "value": "feedback@germanbiobanknode.de"
-        }
-      ]
-    }
-  ],
-  "jurisdiction": [
-    {
-      "coding": [
-        {
-          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "code": "001"
         }
       ]
     }
