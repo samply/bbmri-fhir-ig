@@ -3,7 +3,7 @@
 
 err = 18, warn = 26, info = 2
 IG Publisher Version: v1.0.77-SNAPSHOT
-Generated Fri Apr 03 06:48:31 UTC 2020. FHIR version 4.0.1 for de.bbmri.fhir#0.1.0-beta (canonical = https://fhir.bbmri.de)
+Generated Fri Apr 03 07:12:32 UTC 2020. FHIR version 4.0.1 for de.bbmri.fhir#0.1.0-beta (canonical = https://fhir.bbmri.de)
 
  Build Errors : 19 / 47
  /home/travis/build/samply/bbmri-fhir-ig/input/de.bbmri.fhir : 0 / 0
@@ -134,14 +134,14 @@ ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Specim
 ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/index.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 168, column 11: The link 'background.html' for "Background" cannot be resolved
 == /home/travis/build/samply/bbmri-fhir-ig/input/de.bbmri.fhir.json ==
 == /home/travis/build/samply/bbmri-fhir-ig/input/examples/exampleBiobank.json ==
-WARNING: Organization/exampleBiobank: Organization.identifier[0].value: bbmri-id-1: <CC>_<local id>: SHALL contain valid ISO-3166-1 alpha 2 country code followed by _ followed by biobank ID of national registry (if present). [matches('^([a-z]){2}_([a-zA-Z\\d])+$')]
+WARNING: Organization/exampleBiobank: Organization.identifier[0].value: bbmri-id-1: bbmri-eric:ID:<CC>_<local id>: SHALL contain the bbmri-eric prefix followed by valid ISO-3166-1 alpha 2 country code followed by _ followed by biobank ID of national registry (if present). [matches('^bbmri-eric:ID:([A-Z]){2}_([a-zA-Z\\d])+$')]
 == /home/travis/build/samply/bbmri-fhir-ig/input/examples/exampleBmi.json ==
 == /home/travis/build/samply/bbmri-fhir-ig/input/examples/exampleBodyHeight.json ==
 == /home/travis/build/samply/bbmri-fhir-ig/input/examples/exampleBodyWeight.json ==
 == /home/travis/build/samply/bbmri-fhir-ig/input/examples/exampleCollection.json ==
-WARNING: Organization/exampleCollection: Organization.identifier[0].value: bbmri-id-local: Shall contain only the local collection id, should only consist of roman letters and numbers. [matches('^([a-zA-Z\\d])+$')]
+WARNING: Organization/exampleCollection: Organization.identifier[0].value: bbmri-id-local: Shall contain the biobank ID followed by the local collection id. [matches('^bbmri-eric:ID:([A-Z]){2}_([a-zA-Z\\d])+:collection:([a-zA-Z\\d])+$')]
 == /home/travis/build/samply/bbmri-fhir-ig/input/examples/exampleCollectionRD.json ==
-WARNING: Organization/exampleCollectionRD: Organization.identifier[0].value: bbmri-id-local: Shall contain only the local collection id, should only consist of roman letters and numbers. [matches('^([a-zA-Z\\d])+$')]
+WARNING: Organization/exampleCollectionRD: Organization.identifier[0].value: bbmri-id-local: Shall contain the biobank ID followed by the local collection id. [matches('^bbmri-eric:ID:([A-Z]){2}_([a-zA-Z\\d])+:collection:([a-zA-Z\\d])+$')]
 == /home/travis/build/samply/bbmri-fhir-ig/input/examples/exampleNetworkMembership.json ==
 == /home/travis/build/samply/bbmri-fhir-ig/input/examples/examplePatient.json ==
 == /home/travis/build/samply/bbmri-fhir-ig/input/examples/exampleSpecimen.json ==

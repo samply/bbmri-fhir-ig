@@ -17,7 +17,7 @@
   fhir:CodeSystem.name [ fhir:value "SampleMaterialType"];
   fhir:CodeSystem.title [ fhir:value "Sample Material Type"];
   fhir:CodeSystem.status [ fhir:value "draft"];
-  fhir:CodeSystem.date [ fhir:value "2020-04-03T06:47:31+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2020-04-03T07:11:33+00:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "BBMRI.de"];
   fhir:CodeSystem.contact [
      fhir:index 0;

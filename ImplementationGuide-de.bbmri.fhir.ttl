@@ -18,7 +18,7 @@
   fhir:ImplementationGuide.title [ fhir:value "BBMRI.de Implementation Guide"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
   fhir:ImplementationGuide.experimental [ fhir:value "true"^^xsd:boolean];
-  fhir:ImplementationGuide.date [ fhir:value "2020-04-03T06:47:31+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2020-04-03T07:11:33+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "BBMRI.de"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
