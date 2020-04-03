@@ -11,8 +11,9 @@
   <url value="https://fhir.bbmri.de/StructureDefinition/BodyWeight"/>
   <version value="0.1.0-beta"/>
   <name value="BodyWeight"/>
+  <title value="Body Weight"/>
   <status value="draft"/>
-  <date value="2020-04-03T06:03:09+00:00"/>
+  <date value="2020-04-03T06:47:31+00:00"/>
   <publisher value="BBMRI.de"/>
   <contact>
     <telecom>

@@ -15,8 +15,9 @@
   fhir:StructureDefinition.url [ fhir:value "https://fhir.bbmri.de/StructureDefinition/AccessPolicy"];
   fhir:StructureDefinition.version [ fhir:value "0.1.0-beta"];
   fhir:StructureDefinition.name [ fhir:value "AccessPolicy"];
+  fhir:StructureDefinition.title [ fhir:value "Access Policy"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2020-04-03T06:03:09+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2020-04-03T06:47:31+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "BBMRI.de"];
   fhir:StructureDefinition.contact [
      fhir:index 0;

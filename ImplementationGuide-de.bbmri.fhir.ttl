@@ -18,7 +18,7 @@
   fhir:ImplementationGuide.title [ fhir:value "BBMRI.de Implementation Guide"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
   fhir:ImplementationGuide.experimental [ fhir:value "true"^^xsd:boolean];
-  fhir:ImplementationGuide.date [ fhir:value "2020-04-03T06:03:09+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2020-04-03T06:47:31+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "BBMRI.de"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -543,7 +543,8 @@
        fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <https://fhir.bbmri.de/StructureDefinition/BodyWeight>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/BodyWeight" ]
-       ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Body Weight" ]
      ], [
        fhir:index 13;
        fhir:Element.extension [
@@ -558,7 +559,8 @@
        fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <https://fhir.bbmri.de/StructureDefinition/BioresourceReference>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/BioresourceReference" ]
-       ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Bioresource Reference" ]
      ], [
        fhir:index 14;
        fhir:Element.extension [
@@ -574,6 +576,7 @@
          fhir:link <https://fhir.bbmri.de/StructureDefinition/NetworkMembership>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/NetworkMembership" ]
        ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Network Membership" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Resource representing the membership of a biobank in a biobank network" ]
      ], [
        fhir:index 15;
@@ -590,6 +593,7 @@
          fhir:link <https://fhir.bbmri.de/StructureDefinition/OrganizationDescription>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/OrganizationDescription" ]
        ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Organization Description" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Description of the organization in English" ]
      ], [
        fhir:index 16;
@@ -621,7 +625,8 @@
        fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <https://fhir.bbmri.de/StructureDefinition/BodyHeight>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/BodyHeight" ]
-       ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Body Height" ]
      ], [
        fhir:index 18;
        fhir:Element.extension [
@@ -636,7 +641,8 @@
        fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <https://fhir.bbmri.de/StructureDefinition/Bmi>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/Bmi" ]
-       ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BMI" ]
      ], [
        fhir:index 19;
        fhir:Element.extension [
@@ -668,6 +674,7 @@
          fhir:link <https://fhir.bbmri.de/StructureDefinition/CollectionType>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/CollectionType" ]
        ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Collection Type" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The type of sample collections governed by the Organization." ]
      ], [
        fhir:index 21;
@@ -699,7 +706,8 @@
        fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <https://fhir.bbmri.de/StructureDefinition/Custodian>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/Custodian" ]
-       ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Custodian" ]
      ], [
        fhir:index 23;
        fhir:Element.extension [
@@ -714,7 +722,8 @@
        fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <https://fhir.bbmri.de/StructureDefinition/TobaccoUse>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/TobaccoUse" ]
-       ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Tobacco Use" ]
      ], [
        fhir:index 24;
        fhir:Element.extension [
@@ -826,7 +835,8 @@
        fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <https://fhir.bbmri.de/StructureDefinition/Collaboration>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/Collaboration" ]
-       ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Collaboration" ]
      ], [
        fhir:index 31;
        fhir:Element.extension [
@@ -874,6 +884,7 @@
          fhir:link <https://fhir.bbmri.de/StructureDefinition/QualityStandard>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/QualityStandard" ]
        ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Quality Standard" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Organization quality assessment" ]
      ], [
        fhir:index 34;
@@ -889,7 +900,8 @@
        fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <https://fhir.bbmri.de/StructureDefinition/PartnerCharterSigned>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/PartnerCharterSigned" ]
-       ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Partner Charter Signed" ]
      ], [
        fhir:index 35;
        fhir:Element.extension [
@@ -904,7 +916,8 @@
        fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <https://fhir.bbmri.de/StructureDefinition/CauseOfDeath>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/CauseOfDeath" ]
-       ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Cause of Death" ]
      ], [
        fhir:index 36;
        fhir:Element.extension [
@@ -919,7 +932,8 @@
        fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <https://fhir.bbmri.de/StructureDefinition/Capabilities>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/Capabilities" ]
-       ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Capabilities" ]
      ], [
        fhir:index 37;
        fhir:Element.extension [
@@ -1001,6 +1015,7 @@
          fhir:link <https://fhir.bbmri.de/StructureDefinition/DataCategory>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/DataCategory" ]
        ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Data Category" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The categories of data that are available as part of the collection" ]
      ], [
        fhir:index 42;
@@ -1032,7 +1047,8 @@
        fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <https://fhir.bbmri.de/StructureDefinition/AccessPolicy>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/AccessPolicy" ]
-       ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Access Policy" ]
      ], [
        fhir:index 44;
        fhir:Element.extension [
@@ -1047,7 +1063,8 @@
        fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <https://fhir.bbmri.de/StructureDefinition/StorageTemperature>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/StorageTemperature" ]
-       ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Storage Temperature" ]
      ], [
        fhir:index 45;
        fhir:Element.extension [
@@ -1112,6 +1129,7 @@
          fhir:link <https://fhir.bbmri.de/StructureDefinition/JuridicalPerson>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/JuridicalPerson" ]
        ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Juridical Person" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Name of the legal entity of the organization" ]
      ], [
        fhir:index 49;
@@ -1127,7 +1145,8 @@
        fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <https://fhir.bbmri.de/StructureDefinition/ParentCollection>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ParentCollection" ]
-       ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Parent Collection" ]
      ], [
        fhir:index 50;
        fhir:Element.extension [
@@ -1174,7 +1193,8 @@
        fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <https://fhir.bbmri.de/StructureDefinition/ContactRole>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ContactRole" ]
-       ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Contact Role" ]
      ], [
        fhir:index 53;
        fhir:Element.extension [
@@ -1189,7 +1209,8 @@
        fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <https://fhir.bbmri.de/StructureDefinition/ITSupport>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ITSupport" ]
-       ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "IT Support" ]
      ], [
        fhir:index 54;
        fhir:Element.extension [
@@ -1204,7 +1225,8 @@
        fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <https://fhir.bbmri.de/StructureDefinition/ResourceManagement>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ResourceManagement" ]
-       ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Resource Management" ]
      ], [
        fhir:index 55;
        fhir:Element.extension [

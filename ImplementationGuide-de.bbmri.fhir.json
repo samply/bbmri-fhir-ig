@@ -11,7 +11,7 @@
   "title": "BBMRI.de Implementation Guide",
   "status": "draft",
   "experimental": true,
-  "date": "2020-04-03T06:03:09+00:00",
+  "date": "2020-04-03T06:47:31+00:00",
   "publisher": "BBMRI.de",
   "contact": [
     {
@@ -528,7 +528,8 @@
         ],
         "reference": {
           "reference": "StructureDefinition/BodyWeight"
-        }
+        },
+        "name": "Body Weight"
       },
       {
         "extension": [
@@ -543,7 +544,8 @@
         ],
         "reference": {
           "reference": "StructureDefinition/BioresourceReference"
-        }
+        },
+        "name": "Bioresource Reference"
       },
       {
         "extension": [
@@ -559,6 +561,7 @@
         "reference": {
           "reference": "StructureDefinition/NetworkMembership"
         },
+        "name": "Network Membership",
         "description": "Resource representing the membership of a biobank in a biobank network"
       },
       {
@@ -575,6 +578,7 @@
         "reference": {
           "reference": "StructureDefinition/OrganizationDescription"
         },
+        "name": "Organization Description",
         "description": "Description of the organization in English"
       },
       {
@@ -606,7 +610,8 @@
         ],
         "reference": {
           "reference": "StructureDefinition/BodyHeight"
-        }
+        },
+        "name": "Body Height"
       },
       {
         "extension": [
@@ -621,7 +626,8 @@
         ],
         "reference": {
           "reference": "StructureDefinition/Bmi"
-        }
+        },
+        "name": "BMI"
       },
       {
         "extension": [
@@ -653,6 +659,7 @@
         "reference": {
           "reference": "StructureDefinition/CollectionType"
         },
+        "name": "Collection Type",
         "description": "The type of sample collections governed by the Organization."
       },
       {
@@ -684,7 +691,8 @@
         ],
         "reference": {
           "reference": "StructureDefinition/Custodian"
-        }
+        },
+        "name": "Custodian"
       },
       {
         "extension": [
@@ -699,7 +707,8 @@
         ],
         "reference": {
           "reference": "StructureDefinition/TobaccoUse"
-        }
+        },
+        "name": "Tobacco Use"
       },
       {
         "extension": [
@@ -811,7 +820,8 @@
         ],
         "reference": {
           "reference": "StructureDefinition/Collaboration"
-        }
+        },
+        "name": "Collaboration"
       },
       {
         "extension": [
@@ -859,6 +869,7 @@
         "reference": {
           "reference": "StructureDefinition/QualityStandard"
         },
+        "name": "Quality Standard",
         "description": "Organization quality assessment"
       },
       {
@@ -874,7 +885,8 @@
         ],
         "reference": {
           "reference": "StructureDefinition/PartnerCharterSigned"
-        }
+        },
+        "name": "Partner Charter Signed"
       },
       {
         "extension": [
@@ -889,7 +901,8 @@
         ],
         "reference": {
           "reference": "StructureDefinition/CauseOfDeath"
-        }
+        },
+        "name": "Cause of Death"
       },
       {
         "extension": [
@@ -904,7 +917,8 @@
         ],
         "reference": {
           "reference": "StructureDefinition/Capabilities"
-        }
+        },
+        "name": "Capabilities"
       },
       {
         "extension": [
@@ -986,6 +1000,7 @@
         "reference": {
           "reference": "StructureDefinition/DataCategory"
         },
+        "name": "Data Category",
         "description": "The categories of data that are available as part of the collection"
       },
       {
@@ -1017,7 +1032,8 @@
         ],
         "reference": {
           "reference": "StructureDefinition/AccessPolicy"
-        }
+        },
+        "name": "Access Policy"
       },
       {
         "extension": [
@@ -1032,7 +1048,8 @@
         ],
         "reference": {
           "reference": "StructureDefinition/StorageTemperature"
-        }
+        },
+        "name": "Storage Temperature"
       },
       {
         "extension": [
@@ -1097,6 +1114,7 @@
         "reference": {
           "reference": "StructureDefinition/JuridicalPerson"
         },
+        "name": "Juridical Person",
         "description": "Name of the legal entity of the organization"
       },
       {
@@ -1112,7 +1130,8 @@
         ],
         "reference": {
           "reference": "StructureDefinition/ParentCollection"
-        }
+        },
+        "name": "Parent Collection"
       },
       {
         "extension": [
@@ -1159,7 +1178,8 @@
         ],
         "reference": {
           "reference": "StructureDefinition/ContactRole"
-        }
+        },
+        "name": "Contact Role"
       },
       {
         "extension": [
@@ -1174,7 +1194,8 @@
         ],
         "reference": {
           "reference": "StructureDefinition/ITSupport"
-        }
+        },
+        "name": "IT Support"
       },
       {
         "extension": [
@@ -1189,7 +1210,8 @@
         ],
         "reference": {
           "reference": "StructureDefinition/ResourceManagement"
-        }
+        },
+        "name": "Resource Management"
       },
       {
         "extension": [

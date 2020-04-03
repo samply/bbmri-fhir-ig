@@ -13,8 +13,9 @@ persistent identifier">value[x]</a><a name="Extension.value_x_"> </a></td><td st
   <url value="https://fhir.bbmri.de/StructureDefinition/BioresourceReference"/>
   <version value="0.1.0-beta"/>
   <name value="BioresourceReference"/>
+  <title value="Bioresource Reference"/>
   <status value="draft"/>
-  <date value="2020-04-03T06:03:09+00:00"/>
+  <date value="2020-04-03T06:47:31+00:00"/>
   <publisher value="BBMRI.de"/>
   <contact>
     <telecom>

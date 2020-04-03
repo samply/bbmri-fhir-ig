@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="7eaf6808-c5f6-49a5-948e-31891b46e5e3"/>
+  <id value="588e1faf-5754-40c7-a239-95533917ae95"/>
   <meta>
-    <lastUpdated value="2020-04-03T06:03:09.166+00:00"/>
+    <lastUpdated value="2020-04-03T06:47:31.252+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -374,7 +374,7 @@
         <name value="SampleMaterialType"/>
         <title value="Sample Material Type"/>
         <status value="draft"/>
-        <date value="2020-04-03T06:03:09+00:00"/>
+        <date value="2020-04-03T06:47:31+00:00"/>
         <publisher value="BBMRI.de"/>
         <contact>
           <telecom>
@@ -393,8 +393,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:c4502bae-9dad-4c41-be9c-8a59de1489b8"/>
-          <timestamp value="2020-04-03T06:03:32+00:00"/>
+          <identifier value="urn:uuid:8213a991-87f1-4047-9b74-10bbc5b4d7de"/>
+          <timestamp value="2020-04-03T06:47:54+00:00"/>
           <total value="33"/>
           <parameter>
             <name value="excludeNested"/>
@@ -728,7 +728,7 @@
         <name value="CollectionType"/>
         <title value="Collection Type"/>
         <status value="draft"/>
-        <date value="2020-04-03T06:03:09+00:00"/>
+        <date value="2020-04-03T06:47:31+00:00"/>
         <publisher value="BBMRI.de"/>
         <contact>
           <telecom>
@@ -747,8 +747,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:499a89ae-6d0a-4127-b6bc-68dfe4242ed3"/>
-          <timestamp value="2020-04-03T06:03:32+00:00"/>
+          <identifier value="urn:uuid:507041d5-8589-4ff1-bf88-a8213420a048"/>
+          <timestamp value="2020-04-03T06:47:55+00:00"/>
           <total value="15"/>
           <parameter>
             <name value="excludeNested"/>
@@ -896,7 +896,7 @@
         <name value="ResourceType"/>
         <title value="Resource Type"/>
         <status value="draft"/>
-        <date value="2020-04-03T06:03:09+00:00"/>
+        <date value="2020-04-03T06:47:31+00:00"/>
         <publisher value="BBMRI.de"/>
         <contact>
           <telecom>
@@ -915,8 +915,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:c3d9554d-f79b-4908-9749-b56352fb12b5"/>
-          <timestamp value="2020-04-03T06:03:33+00:00"/>
+          <identifier value="urn:uuid:122e6aa4-1ed9-4f60-bfd8-6ef8a0e89663"/>
+          <timestamp value="2020-04-03T06:47:56+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1012,7 +1012,7 @@
         <name value="OtherSampleDiagnosis"/>
         <title value="other sample diagnosis"/>
         <status value="draft"/>
-        <date value="2020-04-03T06:03:09+00:00"/>
+        <date value="2020-04-03T06:47:31+00:00"/>
         <publisher value="BBMRI.de"/>
         <contact>
           <telecom>
@@ -1031,8 +1031,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:45f6a973-bf3d-49b3-b093-4af682229b55"/>
-          <timestamp value="2020-04-03T06:03:37+00:00"/>
+          <identifier value="urn:uuid:43332508-86ea-4135-ac93-e6f2ce1b3418"/>
+          <timestamp value="2020-04-03T06:47:59+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1157,7 +1157,7 @@
         <name value="QualityStandard"/>
         <title value="Quality Standard"/>
         <status value="draft"/>
-        <date value="2020-04-03T06:03:09+00:00"/>
+        <date value="2020-04-03T06:47:31+00:00"/>
         <publisher value="BBMRI.de"/>
         <contact>
           <telecom>
@@ -1176,8 +1176,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:c5851f08-e3f1-4c57-a394-f98b7a8d7130"/>
-          <timestamp value="2020-04-03T06:03:38+00:00"/>
+          <identifier value="urn:uuid:238eebff-7306-47b6-8418-9468ff360b18"/>
+          <timestamp value="2020-04-03T06:48:00+00:00"/>
           <total value="7"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1317,7 +1317,7 @@
         <name value="StorageTemperature"/>
         <title value="Storage Temperature"/>
         <status value="draft"/>
-        <date value="2020-04-03T06:03:09+00:00"/>
+        <date value="2020-04-03T06:47:31+00:00"/>
         <publisher value="BBMRI.de"/>
         <contact>
           <telecom>
@@ -1336,8 +1336,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:fee99506-4566-41b3-9052-6d7be0c4ff18"/>
-          <timestamp value="2020-04-03T06:03:38+00:00"/>
+          <identifier value="urn:uuid:1f492e02-9074-4502-b4c0-9bb0ffb3adcd"/>
+          <timestamp value="2020-04-03T06:48:00+00:00"/>
           <total value="7"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1509,7 +1509,7 @@
         <name value="BiobankCapabilities"/>
         <title value="Biobank Capabilities"/>
         <status value="draft"/>
-        <date value="2020-04-03T06:03:09+00:00"/>
+        <date value="2020-04-03T06:47:31+00:00"/>
         <publisher value="BBMRI.de"/>
         <contact>
           <telecom>
@@ -1528,8 +1528,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:f027f2a6-3dcd-47f9-a905-cb9a2e58d44a"/>
-          <timestamp value="2020-04-03T06:03:39+00:00"/>
+          <identifier value="urn:uuid:eb3aafec-352b-446b-aa7f-e3d88ec531b5"/>
+          <timestamp value="2020-04-03T06:48:01+00:00"/>
           <total value="11"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1705,7 +1705,7 @@
         <name value="DataCategory"/>
         <title value="Data Category"/>
         <status value="draft"/>
-        <date value="2020-04-03T06:03:09+00:00"/>
+        <date value="2020-04-03T06:47:31+00:00"/>
         <publisher value="BBMRI.de"/>
         <contact>
           <telecom>
@@ -1724,8 +1724,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:3e2c84d1-ba06-4e71-8177-5828eec9c3c5"/>
-          <timestamp value="2020-04-03T06:03:41+00:00"/>
+          <identifier value="urn:uuid:e52b1859-2b6d-4ebf-975b-7d6469ff5834"/>
+          <timestamp value="2020-04-03T06:48:03+00:00"/>
           <total value="9"/>
           <parameter>
             <name value="excludeNested"/>

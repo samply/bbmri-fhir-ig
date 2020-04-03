@@ -12,7 +12,7 @@
   <title value="BBMRI.de Implementation Guide"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2020-04-03T06:03:09+00:00"/>
+  <date value="2020-04-03T06:47:31+00:00"/>
   <publisher value="BBMRI.de"/>
   <contact>
     <telecom>
@@ -363,6 +363,7 @@
       <reference>
         <reference value="StructureDefinition/BodyWeight"/>
       </reference>
+      <name value="Body Weight"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -374,6 +375,7 @@
       <reference>
         <reference value="StructureDefinition/BioresourceReference"/>
       </reference>
+      <name value="Bioresource Reference"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -385,6 +387,7 @@
       <reference>
         <reference value="StructureDefinition/NetworkMembership"/>
       </reference>
+      <name value="Network Membership"/>
       <description value="Resource representing the membership of a biobank in a biobank network"/>
     </resource>
     <resource>
@@ -397,6 +400,7 @@
       <reference>
         <reference value="StructureDefinition/OrganizationDescription"/>
       </reference>
+      <name value="Organization Description"/>
       <description value="Description of the organization in English"/>
     </resource>
     <resource>
@@ -421,6 +425,7 @@
       <reference>
         <reference value="StructureDefinition/BodyHeight"/>
       </reference>
+      <name value="Body Height"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -432,6 +437,7 @@
       <reference>
         <reference value="StructureDefinition/Bmi"/>
       </reference>
+      <name value="BMI"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -455,6 +461,7 @@
       <reference>
         <reference value="StructureDefinition/CollectionType"/>
       </reference>
+      <name value="Collection Type"/>
       <description value="The type of sample collections governed by the Organization."/>
     </resource>
     <resource>
@@ -479,6 +486,7 @@
       <reference>
         <reference value="StructureDefinition/Custodian"/>
       </reference>
+      <name value="Custodian"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -490,6 +498,7 @@
       <reference>
         <reference value="StructureDefinition/TobaccoUse"/>
       </reference>
+      <name value="Tobacco Use"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -574,6 +583,7 @@
       <reference>
         <reference value="StructureDefinition/Collaboration"/>
       </reference>
+      <name value="Collaboration"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -609,6 +619,7 @@
       <reference>
         <reference value="StructureDefinition/QualityStandard"/>
       </reference>
+      <name value="Quality Standard"/>
       <description value="Organization quality assessment"/>
     </resource>
     <resource>
@@ -621,6 +632,7 @@
       <reference>
         <reference value="StructureDefinition/PartnerCharterSigned"/>
       </reference>
+      <name value="Partner Charter Signed"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -632,6 +644,7 @@
       <reference>
         <reference value="StructureDefinition/CauseOfDeath"/>
       </reference>
+      <name value="Cause of Death"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -643,6 +656,7 @@
       <reference>
         <reference value="StructureDefinition/Capabilities"/>
       </reference>
+      <name value="Capabilities"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -704,6 +718,7 @@
       <reference>
         <reference value="StructureDefinition/DataCategory"/>
       </reference>
+      <name value="Data Category"/>
       <description value="The categories of data that are available as part of the collection"/>
     </resource>
     <resource>
@@ -728,6 +743,7 @@
       <reference>
         <reference value="StructureDefinition/AccessPolicy"/>
       </reference>
+      <name value="Access Policy"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -739,6 +755,7 @@
       <reference>
         <reference value="StructureDefinition/StorageTemperature"/>
       </reference>
+      <name value="Storage Temperature"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -787,6 +804,7 @@
       <reference>
         <reference value="StructureDefinition/JuridicalPerson"/>
       </reference>
+      <name value="Juridical Person"/>
       <description value="Name of the legal entity of the organization"/>
     </resource>
     <resource>
@@ -799,6 +817,7 @@
       <reference>
         <reference value="StructureDefinition/ParentCollection"/>
       </reference>
+      <name value="Parent Collection"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -834,6 +853,7 @@
       <reference>
         <reference value="StructureDefinition/ContactRole"/>
       </reference>
+      <name value="Contact Role"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -845,6 +865,7 @@
       <reference>
         <reference value="StructureDefinition/ITSupport"/>
       </reference>
+      <name value="IT Support"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -856,6 +877,7 @@
       <reference>
         <reference value="StructureDefinition/ResourceManagement"/>
       </reference>
+      <name value="Resource Management"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

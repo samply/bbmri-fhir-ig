@@ -8,8 +8,9 @@
   "url": "https://fhir.bbmri.de/StructureDefinition/PartnerCharterSigned",
   "version": "0.1.0-beta",
   "name": "PartnerCharterSigned",
+  "title": "Partner Charter Signed",
   "status": "draft",
-  "date": "2020-04-03T06:03:09+00:00",
+  "date": "2020-04-03T06:47:31+00:00",
   "publisher": "BBMRI.de",
   "contact": [
     {

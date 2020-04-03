@@ -6,7 +6,7 @@
   "extensions": [
     {
       "url": "https://fhir.bbmri.de/StructureDefinition/AccessPolicy",
-      "title": "AccessPolicy",
+      "title": "Access Policy",
       "types": [
         "base64Binary",
         "boolean",
@@ -317,7 +317,7 @@
     },
     {
       "url": "https://fhir.bbmri.de/StructureDefinition/BioresourceReference",
-      "title": "BioresourceReference",
+      "title": "Bioresource Reference",
       "types": [
         "string"
       ]
@@ -489,14 +489,14 @@
     },
     {
       "url": "https://fhir.bbmri.de/StructureDefinition/CollectionType",
-      "title": "CollectionType",
+      "title": "Collection Type",
       "types": [
         "CodeableConcept"
       ]
     },
     {
       "url": "https://fhir.bbmri.de/StructureDefinition/ContactRole",
-      "title": "ContactRole",
+      "title": "Contact Role",
       "types": [
         "string"
       ]
@@ -510,14 +510,14 @@
     },
     {
       "url": "https://fhir.bbmri.de/StructureDefinition/DataCategory",
-      "title": "DataCategory",
+      "title": "Data Category",
       "types": [
         "CodeableConcept"
       ]
     },
     {
       "url": "https://fhir.bbmri.de/StructureDefinition/ITSupport",
-      "title": "ITSupport",
+      "title": "IT Support",
       "types": [
         "base64Binary",
         "boolean",
@@ -784,42 +784,42 @@
     },
     {
       "url": "https://fhir.bbmri.de/StructureDefinition/JuridicalPerson",
-      "title": "JuridicalPerson",
+      "title": "Juridical Person",
       "types": [
         "string"
       ]
     },
     {
       "url": "https://fhir.bbmri.de/StructureDefinition/OrganizationDescription",
-      "title": "OrganizationDescription",
+      "title": "Organization Description",
       "types": [
         "string"
       ]
     },
     {
       "url": "https://fhir.bbmri.de/StructureDefinition/ParentCollection",
-      "title": "ParentCollection",
+      "title": "Parent Collection",
       "types": [
         "Reference"
       ]
     },
     {
       "url": "https://fhir.bbmri.de/StructureDefinition/PartnerCharterSigned",
-      "title": "PartnerCharterSigned",
+      "title": "Partner Charter Signed",
       "types": [
         "boolean"
       ]
     },
     {
       "url": "https://fhir.bbmri.de/StructureDefinition/QualityStandard",
-      "title": "QualityStandard",
+      "title": "Quality Standard",
       "types": [
         "CodeableConcept"
       ]
     },
     {
       "url": "https://fhir.bbmri.de/StructureDefinition/ResourceManagement",
-      "title": "ResourceManagement",
+      "title": "Resource Management",
       "types": [
         "base64Binary",
         "boolean",
@@ -1122,7 +1122,7 @@
     },
     {
       "url": "https://fhir.bbmri.de/StructureDefinition/StorageTemperature",
-      "title": "StorageTemperature",
+      "title": "Storage Temperature",
       "types": [
         "CodeableConcept"
       ]
@@ -1138,7 +1138,7 @@
     "Observation": [
       {
         "url": "https://fhir.bbmri.de/StructureDefinition/TobaccoUse",
-        "title": "TobaccoUse"
+        "title": "Tobacco Use"
       }
     ],
     "Condition": [
@@ -1150,7 +1150,7 @@
     "OrganizationAffiliation": [
       {
         "url": "https://fhir.bbmri.de/StructureDefinition/NetworkMembership",
-        "title": "NetworkMembership"
+        "title": "Network Membership"
       }
     ],
     "Patient": [
