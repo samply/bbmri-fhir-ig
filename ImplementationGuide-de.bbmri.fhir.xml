@@ -12,7 +12,7 @@
   <title value="BBMRI.de Implementation Guide"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2020-04-02T15:31:29+00:00"/>
+  <date value="2020-04-03T06:03:09+00:00"/>
   <publisher value="BBMRI.de"/>
   <contact>
     <telecom>
@@ -526,6 +526,7 @@
       <reference>
         <reference value="StructureDefinition/Specimen"/>
       </reference>
+      <name value="Specimen"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -561,6 +562,7 @@
       <reference>
         <reference value="StructureDefinition/Collection"/>
       </reference>
+      <name value="Collection"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -689,6 +691,7 @@
       <reference>
         <reference value="StructureDefinition/Patient"/>
       </reference>
+      <name value="Patient"/>
       <description value="Resoure representing a sample donor"/>
     </resource>
     <resource>
@@ -713,6 +716,7 @@
       <reference>
         <reference value="StructureDefinition/SampleDiagnosis"/>
       </reference>
+      <name value="Sample Diagnosis"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -806,6 +810,7 @@
       <reference>
         <reference value="StructureDefinition/Condition"/>
       </reference>
+      <name value="Condition"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -862,6 +867,7 @@
       <reference>
         <reference value="StructureDefinition/IdCard"/>
       </reference>
+      <name value="ID Card"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

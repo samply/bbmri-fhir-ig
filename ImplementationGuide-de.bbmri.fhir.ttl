@@ -18,7 +18,7 @@
   fhir:ImplementationGuide.title [ fhir:value "BBMRI.de Implementation Guide"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
   fhir:ImplementationGuide.experimental [ fhir:value "true"^^xsd:boolean];
-  fhir:ImplementationGuide.date [ fhir:value "2020-04-02T15:31:29+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2020-04-03T06:03:09+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "BBMRI.de"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -762,7 +762,8 @@
        fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <https://fhir.bbmri.de/StructureDefinition/Specimen>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/Specimen" ]
-       ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Specimen" ]
      ], [
        fhir:index 27;
        fhir:Element.extension [
@@ -809,7 +810,8 @@
        fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <https://fhir.bbmri.de/StructureDefinition/Collection>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/Collection" ]
-       ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Collection" ]
      ], [
        fhir:index 30;
        fhir:Element.extension [
@@ -982,6 +984,7 @@
          fhir:link <https://fhir.bbmri.de/StructureDefinition/Patient>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/Patient" ]
        ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Patient" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Resoure representing a sample donor" ]
      ], [
        fhir:index 41;
@@ -1013,7 +1016,8 @@
        fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <https://fhir.bbmri.de/StructureDefinition/SampleDiagnosis>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/SampleDiagnosis" ]
-       ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Sample Diagnosis" ]
      ], [
        fhir:index 43;
        fhir:Element.extension [
@@ -1138,7 +1142,8 @@
        fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <https://fhir.bbmri.de/StructureDefinition/Condition>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/Condition" ]
-       ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Condition" ]
      ], [
        fhir:index 51;
        fhir:Element.extension [
@@ -1214,7 +1219,8 @@
        fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <https://fhir.bbmri.de/StructureDefinition/IdCard>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/IdCard" ]
-       ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ID Card" ]
      ], [
        fhir:index 56;
        fhir:Element.extension [

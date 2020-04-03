@@ -15,8 +15,9 @@
   fhir:StructureDefinition.url [ fhir:value "https://fhir.bbmri.de/StructureDefinition/Specimen"];
   fhir:StructureDefinition.version [ fhir:value "0.1.0-beta"];
   fhir:StructureDefinition.name [ fhir:value "Specimen"];
+  fhir:StructureDefinition.title [ fhir:value "Specimen"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2020-04-02T15:31:29+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2020-04-03T06:03:09+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "BBMRI.de"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -873,8 +874,8 @@
          fhir:ElementDefinition.constraint.human [ fhir:value "When slice no-icd is present, the other slices must not be present" ];
          fhir:ElementDefinition.constraint.expression [ fhir:value "no-icd.exists().not() or (icd-10-who.exists() or icd-10-gm.exists() or icd-9.exists()).not()" ];
          fhir:ElementDefinition.constraint.source [
-           fhir:value "http://hl7.org/fhir/StructureDefinition/Extension";
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Specimen";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Specimen>
          ]
        ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];

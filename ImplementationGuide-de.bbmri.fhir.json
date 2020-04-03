@@ -11,7 +11,7 @@
   "title": "BBMRI.de Implementation Guide",
   "status": "draft",
   "experimental": true,
-  "date": "2020-04-02T15:31:29+00:00",
+  "date": "2020-04-03T06:03:09+00:00",
   "publisher": "BBMRI.de",
   "contact": [
     {
@@ -747,7 +747,8 @@
         ],
         "reference": {
           "reference": "StructureDefinition/Specimen"
-        }
+        },
+        "name": "Specimen"
       },
       {
         "extension": [
@@ -794,7 +795,8 @@
         ],
         "reference": {
           "reference": "StructureDefinition/Collection"
-        }
+        },
+        "name": "Collection"
       },
       {
         "extension": [
@@ -967,6 +969,7 @@
         "reference": {
           "reference": "StructureDefinition/Patient"
         },
+        "name": "Patient",
         "description": "Resoure representing a sample donor"
       },
       {
@@ -998,7 +1001,8 @@
         ],
         "reference": {
           "reference": "StructureDefinition/SampleDiagnosis"
-        }
+        },
+        "name": "Sample Diagnosis"
       },
       {
         "extension": [
@@ -1123,7 +1127,8 @@
         ],
         "reference": {
           "reference": "StructureDefinition/Condition"
-        }
+        },
+        "name": "Condition"
       },
       {
         "extension": [
@@ -1199,7 +1204,8 @@
         ],
         "reference": {
           "reference": "StructureDefinition/IdCard"
-        }
+        },
+        "name": "ID Card"
       },
       {
         "extension": [

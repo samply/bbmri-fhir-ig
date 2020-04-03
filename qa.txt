@@ -1,25 +1,25 @@
 ﻿BBMRI_DE_IG : Validation Results
 =========================================
 
-err = 30, warn = 20, info = 2
+err = 18, warn = 26, info = 2
 IG Publisher Version: v1.0.77-SNAPSHOT
-Generated Thu Apr 02 15:32:31 UTC 2020. FHIR version 4.0.1 for de.bbmri.fhir#0.1.0-beta (canonical = https://fhir.bbmri.de)
+Generated Fri Apr 03 06:04:07 UTC 2020. FHIR version 4.0.1 for de.bbmri.fhir#0.1.0-beta (canonical = https://fhir.bbmri.de)
 
- Build Errors : 47 / 47
+ Build Errors : 41 / 47
  /home/travis/build/samply/bbmri-fhir-ig/input/de.bbmri.fhir : 0 / 0
- /home/travis/build/samply/bbmri-fhir-ig/input/examples/exampleBiobank : 0 / 0
+ /home/travis/build/samply/bbmri-fhir-ig/input/examples/exampleBiobank : 0 / 1
  /home/travis/build/samply/bbmri-fhir-ig/input/examples/exampleBmi : 0 / 0
  /home/travis/build/samply/bbmri-fhir-ig/input/examples/exampleBodyHeight : 0 / 0
  /home/travis/build/samply/bbmri-fhir-ig/input/examples/exampleBodyWeight : 0 / 0
- /home/travis/build/samply/bbmri-fhir-ig/input/examples/exampleCollection : 0 / 0
- /home/travis/build/samply/bbmri-fhir-ig/input/examples/exampleCollectionRD : 0 / 0
+ /home/travis/build/samply/bbmri-fhir-ig/input/examples/exampleCollection : 0 / 1
+ /home/travis/build/samply/bbmri-fhir-ig/input/examples/exampleCollectionRD : 0 / 1
  /home/travis/build/samply/bbmri-fhir-ig/input/examples/exampleNetworkMembership : 0 / 0
  /home/travis/build/samply/bbmri-fhir-ig/input/examples/examplePatient : 0 / 0
  /home/travis/build/samply/bbmri-fhir-ig/input/examples/exampleSpecimen : 0 / 1
  /home/travis/build/samply/bbmri-fhir-ig/input/examples/exampleTobaccoUse : 0 / 0
  /home/travis/build/samply/bbmri-fhir-ig/input/examples/transaction-0 : 1 / 0
  /home/travis/build/samply/bbmri-fhir-ig/input/resources/AccessPolicy.StructureDefinition : 0 / 0
- /home/travis/build/samply/bbmri-fhir-ig/input/resources/Biobank.StructureDefinition : 1 / 0
+ /home/travis/build/samply/bbmri-fhir-ig/input/resources/Biobank.StructureDefinition : 0 / 0
  /home/travis/build/samply/bbmri-fhir-ig/input/resources/BiobankCapabilities.CodeSystem : 0 / 0
  /home/travis/build/samply/bbmri-fhir-ig/input/resources/BiobankCapabilities.ValueSet : 0 / 0
  /home/travis/build/samply/bbmri-fhir-ig/input/resources/Bmi.StructureDefinition : 0 / 0
@@ -28,7 +28,7 @@ Generated Thu Apr 02 15:32:31 UTC 2020. FHIR version 4.0.1 for de.bbmri.fhir#0.1
  /home/travis/build/samply/bbmri-fhir-ig/input/resources/Capabilities.StructureDefinition : 0 / 1
  /home/travis/build/samply/bbmri-fhir-ig/input/resources/CauseOfDeath.StructureDefinition : 0 / 1
  /home/travis/build/samply/bbmri-fhir-ig/input/resources/Collaboration.StructureDefinition : 0 / 1
- /home/travis/build/samply/bbmri-fhir-ig/input/resources/Collection.StructureDefinition : 2 / 0
+ /home/travis/build/samply/bbmri-fhir-ig/input/resources/Collection.StructureDefinition : 0 / 0
  /home/travis/build/samply/bbmri-fhir-ig/input/resources/CollectionType.CodeSystem : 0 / 0
  /home/travis/build/samply/bbmri-fhir-ig/input/resources/CollectionType.StructureDefinition : 0 / 0
  /home/travis/build/samply/bbmri-fhir-ig/input/resources/CollectionType.ValueSet : 0 / 0
@@ -39,9 +39,9 @@ Generated Thu Apr 02 15:32:31 UTC 2020. FHIR version 4.0.1 for de.bbmri.fhir#0.1
  /home/travis/build/samply/bbmri-fhir-ig/input/resources/DataCategory.CodeSystem : 0 / 0
  /home/travis/build/samply/bbmri-fhir-ig/input/resources/DataCategory.StructureDefinition : 0 / 0
  /home/travis/build/samply/bbmri-fhir-ig/input/resources/DataCategory.ValueSet : 0 / 0
- /home/travis/build/samply/bbmri-fhir-ig/input/resources/Diagnosis.StructureDefinition : 3 / 0
+ /home/travis/build/samply/bbmri-fhir-ig/input/resources/Diagnosis.StructureDefinition : 2 / 0
  /home/travis/build/samply/bbmri-fhir-ig/input/resources/ITSupport.StructureDefinition : 0 / 1
- /home/travis/build/samply/bbmri-fhir-ig/input/resources/IdCard.StructureDefinition : 1 / 0
+ /home/travis/build/samply/bbmri-fhir-ig/input/resources/IdCard.StructureDefinition : 0 / 0
  /home/travis/build/samply/bbmri-fhir-ig/input/resources/JuridicalPersion.StructureDefinition : 0 / 0
  /home/travis/build/samply/bbmri-fhir-ig/input/resources/NetworkMembership.StructureDefinition : 0 / 1
  /home/travis/build/samply/bbmri-fhir-ig/input/resources/OrganizationDescription.StructureDefinition : 0 / 0
@@ -57,7 +57,7 @@ Generated Thu Apr 02 15:32:31 UTC 2020. FHIR version 4.0.1 for de.bbmri.fhir#0.1
  /home/travis/build/samply/bbmri-fhir-ig/input/resources/ResourceType.ValueSet : 0 / 0
  /home/travis/build/samply/bbmri-fhir-ig/input/resources/SampleMaterialType.CodeSystem : 0 / 0
  /home/travis/build/samply/bbmri-fhir-ig/input/resources/SampleMaterialType.ValueSet : 0 / 0
- /home/travis/build/samply/bbmri-fhir-ig/input/resources/Specimen.StructureDefinition : 3 / 0
+ /home/travis/build/samply/bbmri-fhir-ig/input/resources/Specimen.StructureDefinition : 2 / 0
  /home/travis/build/samply/bbmri-fhir-ig/input/resources/StorageTemperature.CodeSystem : 0 / 0
  /home/travis/build/samply/bbmri-fhir-ig/input/resources/StorageTemperature.StructureDefinition : 0 / 0
  /home/travis/build/samply/bbmri-fhir-ig/input/resources/StorageTemperature.ValueSet : 0 / 0
@@ -100,11 +100,9 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/TobaccoUse.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/TobaccoUse.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/ResourceType.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/Specimen.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/Specimen.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/DataCategory.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/QualityStandard.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/Collection.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/Collection.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/Collaboration.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/Collaboration.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
@@ -119,9 +117,7 @@ ERROR: Unable to find ImplementationGuide.definition.resource.name for the resou
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/Capabilities.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/QualityStandard.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/StorageTemperature.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/Patient.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/DataCategory.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/SampleDiagnosis.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/SampleDiagnosis.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/AccessPolicy.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/AccessPolicy.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
@@ -132,7 +128,6 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/JuridicalPerson.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/ParentCollection.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/ParentCollection.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/Condition.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/Condition.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/CollectionType.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/ContactRole.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
@@ -141,7 +136,6 @@ ERROR: Unable to find ImplementationGuide.definition.resource.name for the resou
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/ITSupport.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/ResourceManagement.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/ResourceManagement.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/IdCard.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/IdCard.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/DataCategory.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/Organization-exampleCollection.html#/html/body/div/div/div/div/div/div/p/a at Line 161, column 340: The link 'Organization/exampleBiobank' for "Organization/exampleBiobank" cannot be resolved
@@ -162,11 +156,14 @@ ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Specim
 ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/index.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 168, column 11: The link 'background.html' for "Background" cannot be resolved
 == /home/travis/build/samply/bbmri-fhir-ig/input/de.bbmri.fhir.json ==
 == /home/travis/build/samply/bbmri-fhir-ig/input/examples/exampleBiobank.json ==
+WARNING: Organization/exampleBiobank: Organization.identifier[0].value: bbmri-id-1: <CC>_<local id>: SHALL contain valid ISO-3166-1 alpha 2 country code followed by _ followed by biobank ID of national registry (if present). [matches('^([a-z]){2}_([a-zA-Z\\d])+$')]
 == /home/travis/build/samply/bbmri-fhir-ig/input/examples/exampleBmi.json ==
 == /home/travis/build/samply/bbmri-fhir-ig/input/examples/exampleBodyHeight.json ==
 == /home/travis/build/samply/bbmri-fhir-ig/input/examples/exampleBodyWeight.json ==
 == /home/travis/build/samply/bbmri-fhir-ig/input/examples/exampleCollection.json ==
+WARNING: Organization/exampleCollection: Organization.identifier[0].value: bbmri-id-local: Shall contain only the local collection id, should only consist of roman letters and numbers. [matches('^([a-zA-Z\\d])+$')]
 == /home/travis/build/samply/bbmri-fhir-ig/input/examples/exampleCollectionRD.json ==
+WARNING: Organization/exampleCollectionRD: Organization.identifier[0].value: bbmri-id-local: Shall contain only the local collection id, should only consist of roman letters and numbers. [matches('^([a-zA-Z\\d])+$')]
 == /home/travis/build/samply/bbmri-fhir-ig/input/examples/exampleNetworkMembership.json ==
 == /home/travis/build/samply/bbmri-fhir-ig/input/examples/examplePatient.json ==
 == /home/travis/build/samply/bbmri-fhir-ig/input/examples/exampleSpecimen.json ==
@@ -176,7 +173,6 @@ INFORMATION: Specimen/0-specimen: Specimen.collection.bodySite.coding[0]: Code S
 ERROR: Bundle/53ef12a3-1e31-4fc1-adf6-9d30dc6c4784: Bundle.entry[5].resource.extension[1].value.ofType(Reference): Unable to resolve resource "http://blaze.example.com/fhir/Organization/collection-2"
 == /home/travis/build/samply/bbmri-fhir-ig/input/resources/AccessPolicy.StructureDefinition.json ==
 == /home/travis/build/samply/bbmri-fhir-ig/input/resources/Biobank.StructureDefinition.json ==
-ERROR: StructureDefinition/Biobank: StructureDefinition.differential.element[13].constraint[0].source: Canonical URLs must be absolute URLs if they are not fragment references (Organization) 
 == /home/travis/build/samply/bbmri-fhir-ig/input/resources/BiobankCapabilities.CodeSystem.json ==
 == /home/travis/build/samply/bbmri-fhir-ig/input/resources/BiobankCapabilities.ValueSet.json ==
 == /home/travis/build/samply/bbmri-fhir-ig/input/resources/Bmi.StructureDefinition.json ==
@@ -189,8 +185,6 @@ WARNING: https://fhir.bbmri.de/StructureDefinition/CauseOfDeath: The Implementat
 == /home/travis/build/samply/bbmri-fhir-ig/input/resources/Collaboration.StructureDefinition.json ==
 WARNING: https://fhir.bbmri.de/StructureDefinition/Collaboration: The Implementation Guide contains no examples for this extension
 == /home/travis/build/samply/bbmri-fhir-ig/input/resources/Collection.StructureDefinition.json ==
-ERROR: StructureDefinition/Collection: StructureDefinition.differential.element[0].constraint[0].source: Canonical URLs must be absolute URLs if they are not fragment references (Organization) 
-ERROR: StructureDefinition/Collection: StructureDefinition.differential.element[15].constraint[0].source: Canonical URLs must be absolute URLs if they are not fragment references (Organization) 
 == /home/travis/build/samply/bbmri-fhir-ig/input/resources/CollectionType.CodeSystem.json ==
 == /home/travis/build/samply/bbmri-fhir-ig/input/resources/CollectionType.StructureDefinition.json ==
 == /home/travis/build/samply/bbmri-fhir-ig/input/resources/CollectionType.ValueSet.json ==
@@ -208,12 +202,10 @@ WARNING: https://fhir.bbmri.de/StructureDefinition/Condition: The Implementation
 == /home/travis/build/samply/bbmri-fhir-ig/input/resources/DataCategory.ValueSet.json ==
 == /home/travis/build/samply/bbmri-fhir-ig/input/resources/Diagnosis.StructureDefinition.json ==
 ERROR: StructureDefinition/SampleDiagnosis: StructureDefinition.snapshot.element[27].fixed.ofType(uri): URL value "http://hl7.org/fhir/sid/icd-9" does not resolve
-ERROR: StructureDefinition/SampleDiagnosis: StructureDefinition.differential.element[3].constraint[0].source: Canonical URLs must be absolute URLs if they are not fragment references (Extension) 
 ERROR: StructureDefinition/SampleDiagnosis: StructureDefinition.differential.element[11].fixed.ofType(uri): URL value "http://hl7.org/fhir/sid/icd-9" does not resolve
 == /home/travis/build/samply/bbmri-fhir-ig/input/resources/ITSupport.StructureDefinition.json ==
 WARNING: https://fhir.bbmri.de/StructureDefinition/ITSupport: The Implementation Guide contains no examples for this extension
 == /home/travis/build/samply/bbmri-fhir-ig/input/resources/IdCard.StructureDefinition.json ==
-ERROR: StructureDefinition/IdCard: StructureDefinition.differential.element[2].constraint[0].source: Canonical URLs must be absolute URLs if they are not fragment references (Extension) 
 == /home/travis/build/samply/bbmri-fhir-ig/input/resources/JuridicalPersion.StructureDefinition.json ==
 == /home/travis/build/samply/bbmri-fhir-ig/input/resources/NetworkMembership.StructureDefinition.json ==
 WARNING: https://fhir.bbmri.de/StructureDefinition/NetworkMembership: The Implementation Guide contains no examples for this profile
@@ -234,7 +226,6 @@ WARNING: https://fhir.bbmri.de/StructureDefinition/ResourceManagement: The Imple
 == /home/travis/build/samply/bbmri-fhir-ig/input/resources/SampleMaterialType.CodeSystem.json ==
 == /home/travis/build/samply/bbmri-fhir-ig/input/resources/SampleMaterialType.ValueSet.json ==
 == /home/travis/build/samply/bbmri-fhir-ig/input/resources/Specimen.StructureDefinition.json ==
-ERROR: StructureDefinition.differential.element[10].min: Error parsing JSON: the primitive value must be a number
 ERROR: StructureDefinition/Specimen: StructureDefinition.snapshot.element[36].fixed.ofType(uri): URL value "http://hl7.org/fhir/sid/icd-9" does not resolve
 ERROR: StructureDefinition/Specimen: StructureDefinition.differential.element[0]: Duplicate id value 'Specimen'
 == /home/travis/build/samply/bbmri-fhir-ig/input/resources/StorageTemperature.CodeSystem.json ==

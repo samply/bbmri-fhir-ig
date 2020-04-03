@@ -24,8 +24,9 @@
   <url value="https://fhir.bbmri.de/StructureDefinition/Specimen"/>
   <version value="0.1.0-beta"/>
   <name value="Specimen"/>
+  <title value="Specimen"/>
   <status value="draft"/>
-  <date value="2020-04-02T15:31:29+00:00"/>
+  <date value="2020-04-03T06:03:09+00:00"/>
   <publisher value="BBMRI.de"/>
   <contact>
     <telecom>
@@ -679,7 +680,7 @@
         <severity value="error"/>
         <human value="When slice no-icd is present, the other slices must not be present"/>
         <expression value="no-icd.exists().not() or (icd-10-who.exists() or icd-10-gm.exists() or icd-9.exists()).not()"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Specimen"/>
       </constraint>
       <isModifier value="false"/>
       <isSummary value="true"/>

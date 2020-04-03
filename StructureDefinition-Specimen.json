@@ -8,8 +8,9 @@
   "url": "https://fhir.bbmri.de/StructureDefinition/Specimen",
   "version": "0.1.0-beta",
   "name": "Specimen",
+  "title": "Specimen",
   "status": "draft",
-  "date": "2020-04-02T15:31:29+00:00",
+  "date": "2020-04-03T06:03:09+00:00",
   "publisher": "BBMRI.de",
   "contact": [
     {
@@ -819,7 +820,7 @@
             "severity": "error",
             "human": "When slice no-icd is present, the other slices must not be present",
             "expression": "no-icd.exists().not() or (icd-10-who.exists() or icd-10-gm.exists() or icd-9.exists()).not()",
-            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
+            "source": "http://hl7.org/fhir/StructureDefinition/Specimen"
           }
         ],
         "isModifier": false,

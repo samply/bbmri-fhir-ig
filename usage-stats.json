@@ -777,7 +777,7 @@
     },
     {
       "url": "https://fhir.bbmri.de/StructureDefinition/IdCard",
-      "title": "IdCard",
+      "title": "ID Card",
       "types": [
         "url"
       ]
@@ -1079,7 +1079,7 @@
     },
     {
       "url": "https://fhir.bbmri.de/StructureDefinition/SampleDiagnosis",
-      "title": "SampleDiagnosis",
+      "title": "Sample Diagnosis",
       "types": [
         "CodeableConcept",
         "string",
