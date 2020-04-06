@@ -1,137 +1,137 @@
 {
-   "resourceType":"Organization",
-   "id":"exampleCollection",
-   "meta":{
-      "profile":[
-         "https://fhir.bbmri.de/StructureDefinition/Collection"
+  "resourceType": "Organization",
+  "id": "exampleCollection",
+  "meta": {
+    "profile": [
+      "https://fhir.bbmri.de/StructureDefinition/Collection"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: exampleCollection</p><p><b>meta</b>: </p><p><b>identifier</b>: bbmri-eric:ID:DE_12345:collection:vampir</p><p><b>name</b>: Venous and arterial blood from misc patients internal reserve </p><p><b>alias</b>: VAMPIR</p><p><b>partOf</b>: <a href=\"Organization/exampleBiobank\">Organization/exampleBiobank</a></p></div>"
+  },
+  "extension": [
+    {
+      "url": "https://fhir.bbmri.de/StructureDefinition/OrganizationDescription",
+      "valueString": "The Collection consists of blood from patients at the Klinikum Neustadt."
+    },
+    {
+      "url": "https://fhir.bbmri.de/StructureDefinition/BioresourceReference",
+      "valueString": "ISBN 3-458-34803-4"
+    },
+    {
+      "url": "https://fhir.bbmri.de/StructureDefinition/CollectionType",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "https://fhir.bbmri.de/CodeSystem/CollectionType",
+            "code": "HOSPITAL",
+            "display": "Hospital"
+          }
+        ]
+      }
+    },
+    {
+      "url": "https://fhir.bbmri.de/StructureDefinition/CollectionType",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "https://fhir.bbmri.de/CodeSystem/CollectionType",
+            "code": "SAMPLE",
+            "display": "Sample collection"
+          }
+        ]
+      }
+    },
+    {
+      "url": "https://fhir.bbmri.de/StructureDefinition/DataCategory",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "https://fhir.bbmri.de/CodeSystem/DataCategory",
+            "code": "BIOLOGICAL_SAMPLES",
+            "display": "Biological samples"
+          }
+        ]
+      }
+    },
+    {
+      "url": "https://fhir.bbmri.de/StructureDefinition/AccessPolicy",
+      "extension": [
+        {
+          "url": "resource",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "https://fhir.bbmri.de/CodeSystem/ResourceType",
+                "code": "samples",
+                "display": "Samples"
+              }
+            ]
+          }
+        },
+        {
+          "url": "resource",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "https://fhir.bbmri.de/CodeSystem/ResourceType",
+                "code": "data",
+                "display": "Data"
+              }
+            ]
+          }
+        },
+        {
+          "url": "fee",
+          "valueBoolean": true
+        },
+        {
+          "url": "description",
+          "valueString": "Access contract inluding data protection guidelines needs to be signed."
+        }
       ]
-   },
-   "text":{
-      "status":"generated",
-      "div":"<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: exampleCollection</p><p><b>meta</b>: </p><p><b>identifier</b>: bbmri-eric:ID:DE_12345:collection:vampir</p><p><b>name</b>: Venous and arterial blood from misc patients internal reserve </p><p><b>alias</b>: VAMPIR</p><p><b>partOf</b>: <a href=\"Organization/exampleBiobank\">Organization/exampleBiobank</a></p></div>"
-   },
-   "extension":[
-      {
-         "url":"https://fhir.bbmri.de/StructureDefinition/OrganizationDescription",
-         "valueString":"The Collection consists of blood from patients at the Klinikum Neustadt."
+    }
+  ],
+  "identifier": [
+    {
+      "system": "http://www.bbmri-eric.eu/",
+      "value": "bbmri-eric:ID:DE_12345:collection:vampir"
+    }
+  ],
+  "name": "Venous and arterial blood from misc patients internal reserve",
+  "alias": [
+    "VAMPIR"
+  ],
+  "partOf": {
+    "reference": "Organization/exampleBiobank"
+  },
+  "contact": [
+    {
+      "purpose": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/contactentity-type",
+            "code": "ADMIN",
+            "display": "Administrative"
+          }
+        ]
       },
-      {
-         "url":"https://fhir.bbmri.de/StructureDefinition/BioresourceReference",
-         "valueString":"ISBN 3-458-34803-4"
+      "name": {
+        "family": "Dracula",
+        "given": [
+          "Vladimir"
+        ],
+        "prefix": [
+          "Graf"
+        ]
       },
-      {
-         "url":"https://fhir.bbmri.de/StructureDefinition/CollectionType",
-         "valueCodeableConcept":{
-            "coding":[
-               {
-                  "system":"https://fhir.bbmri.de/CodeSystem/CollectionType",
-                  "code":"HOSPITAL",
-                  "display":"Hospital"
-               }
-            ]
-         }
-      },
-      {
-         "url":"https://fhir.bbmri.de/StructureDefinition/CollectionType",
-         "valueCodeableConcept":{
-            "coding":[
-               {
-                  "system":"https://fhir.bbmri.de/CodeSystem/CollectionType",
-                  "code":"SAMPLE",
-                  "display":"Sample collection"
-               }
-            ]
-         }
-      },
-      {
-         "url":"https://fhir.bbmri.de/StructureDefinition/DataCategory",
-         "valueCodeableConcept":{
-            "coding":[
-               {
-                  "system":"https://fhir.bbmri.de/CodeSystem/DataCategory",
-                  "code":"BIOLOGICAL_SAMPLES",
-                  "display":"Biological samples"
-               }
-            ]
-         }
-      },
-      {
-         "url":"https://fhir.bbmri.de/StructureDefinition/AccessPolicy",
-         "extension":[
-            {
-               "url":"resource",
-               "valueCodeableConcept":{
-                  "coding":[
-                     {
-                        "system":"https://fhir.bbmri.de/CodeSystem/ResourceType",
-                        "code":"samples",
-                        "display":"Samples"
-                     }
-                  ]
-               }
-            },
-            {
-               "url":"resource",
-               "valueCodeableConcept":{
-                  "coding":[
-                     {
-                        "system":"https://fhir.bbmri.de/CodeSystem/ResourceType",
-                        "code":"data",
-                        "display":"Data"
-                     }
-                  ]
-               }
-            },
-            {
-               "url":"fee",
-               "valueBoolean":true
-            },
-            {
-               "url":"description",
-               "valueString":"Access contract inluding data protection guidelines needs to be signed."
-            }
-         ]
-      }
-   ],
-   "identifier":[
-      {
-         "system":"http://www.bbmri-eric.eu/",
-         "value":"bbmri-eric:ID:DE_12345:collection:vampir"
-      }
-   ],
-   "name":"Venous and arterial blood from misc patients internal reserve",
-   "alias":[
-      "VAMPIR"
-   ],
-   "partOf":{
-      "reference":"Organization/exampleBiobank"
-   },
-   "contact":[
-      {
-         "purpose":{
-            "coding":[
-               {
-                  "system":"http://terminology.hl7.org/CodeSystem/contactentity-type",
-                  "code":"ADMIN",
-                  "display":"Administrative"
-               }
-            ]
-         },
-         "name":{
-            "family":"Dracula",
-            "given":[
-               "Vladimir"
-            ],
-            "prefix":[
-               "Graf"
-            ]
-         },
-         "telecom":[
-            {
-               "system":"fax",
-               "value":"0452 4624-66"
-            }
-         ]
-      }
-   ]
+      "telecom": [
+        {
+          "system": "fax",
+          "value": "0452 4624-66"
+        }
+      ]
+    }
+  ]
 }
