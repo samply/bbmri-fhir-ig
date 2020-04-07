@@ -18,10 +18,10 @@
   "derivation": "constraint",
   "differential": {
     "element": [
-	{
-        "id" : "Extension.url",
-        "path" : "Extension.url",
-        "fixedUri" : "https://fhir.bbmri.de/StructureDefinition/Custodian"
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://fhir.bbmri.de/StructureDefinition/Custodian"
       },
       {
         "id": "Extension.value[x]",

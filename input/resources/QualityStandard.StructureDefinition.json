@@ -19,10 +19,10 @@
   "derivation": "constraint",
   "differential": {
     "element": [
-	{
-        "id" : "Extension.url",
-        "path" : "Extension.url",
-        "fixedUri" : "https://fhir.bbmri.de/StructureDefinition/QualityStandard"
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://fhir.bbmri.de/StructureDefinition/QualityStandard"
       },
       {
         "id": "Extension.value[x]",

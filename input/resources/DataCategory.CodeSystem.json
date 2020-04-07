@@ -6,7 +6,7 @@
   "title": "Data Category",
   "status": "active",
   "caseSensitive": false,
-  "content":"complete",
+  "content": "complete",
   "concept": [
     {
       "code": "BIOLOGICAL_SAMPLES",

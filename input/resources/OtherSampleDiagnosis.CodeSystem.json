@@ -21,10 +21,10 @@
       "code": "not-applicable",
       "display": "Not applicable"
     },
-	{
+    {
       "code": "unspecified-tumor",
       "display": "Unspecified tumor",
-	  "definition": "Sample contains tumor material, a specific diagnosis is not known"
+      "definition": "Sample contains tumor material, a specific diagnosis is not known"
     }
   ]
 }

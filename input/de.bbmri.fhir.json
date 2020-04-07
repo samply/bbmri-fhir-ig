@@ -1,111 +1,92 @@
 {
-   "resourceType":"ImplementationGuide",
-   "id":"de.bbmri.fhir",
-   "url":"https://fhir.bbmri.de/ImplementationGuide/de.bbmri.fhir",
-   "version":"1.0.0",
-   "name":"BBMRI_DE_IG",
-   "title":"BBMRI.de/GBA Implementation Guide",
-   "status":"active",
-   "experimental":false,
-   "publisher":"BBMRI.de",
-   "contact":[
+  "resourceType": "ImplementationGuide",
+  "id": "de.bbmri.fhir",
+  "url": "https://fhir.bbmri.de/ImplementationGuide/de.bbmri.fhir",
+  "version": "1.0.0",
+  "name": "BBMRI_DE_IG",
+  "title": "BBMRI.de/GBA Implementation Guide",
+  "status": "active",
+  "experimental": false,
+  "publisher": "BBMRI.de",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.bbmri.de"
+        },
+        {
+          "system": "email",
+          "value": "feedback@germanbiobanknode.de"
+        }
+      ]
+    }
+  ],
+  "description": "Profiles for the GBA/BBMRI.de project",
+  "packageId": "de.bbmri.fhir",
+  "license": "CC-BY-SA-4.0",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "dependsOn": [
+    {
+      "uri": "http://hl7.org/fhir/uv/ips/ImplementationGuide/hl7.fhir.uv.ips",
+      "packageId": "hl7.fhir.uv.ips",
+      "version": "0.3.0"
+    }
+  ],
+  "definition": {
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "MyIG Home Page",
+          "generation": "html"
+        },
+        {
+          "nameUrl": "overview.html",
+          "title": "Overview",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "spec.html",
+          "title": "Detailed Specification",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "mappings.html",
+          "title": "Mappings",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "referencedIGs.html",
+          "title": "Referenced IGs",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "downloads.html",
+          "title": "Useful Downloads",
+          "generation": "html"
+        },
+        {
+          "nameUrl": "changes.html",
+          "title": "IG Change History",
+          "generation": "html"
+        }
+      ]
+    },
+    "parameter": [
       {
-         "telecom":[
-            {
-               "system":"url",
-               "value":"https://www.bbmri.de"
-            
-},
-            {
-               "system":"email",
-               "value":"feedback@germanbiobanknode.de"
-            
-}
-         
-]
-      
-}
-   
-],
-   "description":"Profiles for the GBA/BBMRI.de project",
-   "packageId":"de.bbmri.fhir",
-   "license":"CC-BY-SA-4.0",
-   "fhirVersion":[
-      "4.0.1"
-   
-],
-	"dependsOn":[
-		{
-			"uri":"http://hl7.org/fhir/uv/ips/ImplementationGuide/hl7.fhir.uv.ips",
-			"packageId":"hl7.fhir.uv.ips",
-			"version":"0.3.0"
-		}
-	],
-   "definition":{
-      "page":{
-         "nameUrl":"toc.html",
-         "title":"Table of Contents",
-         "generation":"html",
-         "page":[
-            {
-               "nameUrl":"index.html",
-               "title":"MyIG Home Page",
-               "generation":"html"
-            
-},
-            {
-               "nameUrl":"overview.html",
-               "title":"Overview",
-               "generation":"markdown"
-            
-},
-            {
-               "nameUrl":"spec.html",
-               "title":"Detailed Specification",
-               "generation":"markdown"
-            
-},
-            {
-               "nameUrl":"mappings.html",
-               "title":"Mappings",
-               "generation":"markdown"
-            
-},
-            {
-               "nameUrl":"referencedIGs.html",
-               "title":"Referenced IGs",
-               "generation":"markdown"
-            
-},
-            {
-               "nameUrl":"downloads.html",
-               "title":"Useful Downloads",
-               "generation":"html"
-            
-},
-            {
-               "nameUrl":"changes.html",
-               "title":"IG Change History",
-               "generation":"html"
-            
-}
-         
-]
-      
-},
-"parameter":[
+        "code": "copyrightyear",
+        "value": "2020+"
+      },
       {
-         "code":"copyrightyear",
-         "value":"2020+"
-      
-},
-      {
-         "code":"releaselabel",
-         "value":"Release"
-      
-}
-   
-]
-   
-}
+        "code": "releaselabel",
+        "value": "Release"
+      }
+    ]
+  }
 }

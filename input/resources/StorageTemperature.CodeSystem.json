@@ -27,7 +27,7 @@
       "code": "temperatureLN",
       "display": "Liquid nitrogen"
     },
-	{
+    {
       "code": "temperatureRoom",
       "display": "Room temperature"
     },
