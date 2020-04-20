@@ -8,7 +8,7 @@
       </b>
     </a>
     <ul class="dropdown-menu">
-	<li>
+	  <li>
         <a href="background.html">Overview</a>
       </li>
       <li>
@@ -17,8 +17,11 @@
 	  <li>
         <a href="referencedIGs.html">Referenced IGs</a>
       </li>
-    <li>
+      <li>
         <a href="etlTalent.html">Build ETL with TOS</a>
+      </li>
+      <li>
+        <a href="qualityMeasures.html">Quality Measures</a>
       </li>
     </ul>
   </li>
@@ -46,4 +49,4 @@
       </li>
     </ul>
   </li>
-</ul>      
+</ul>
