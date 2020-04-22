@@ -2,14 +2,4 @@
 
 # BBMRI FHIR® Implementation Guide
 
-[Profile Overview](https://github.com/samply/bbmri-fhir-ig/blob/master/bbmri-ig/input/pagecontent/overview.md)
-
-![Overview profiles](https://github.com/samply/bbmri-fhir-ig/blob/master/bbmri-ig/input/images/GBA-DatamodellFHIR_V05.png)
-
-[Validator Instructions](https://github.com/samply/bbmri-fhir-ig/blob/master/bbmri-ig/input/pagecontent/Validation.md)
-
-[Using References in Bundles](https://github.com/samply/bbmri-fhir-ig/blob/master/bbmri-ig/input/pagecontent/BundleReferences.md)
-
-[Mappings to other projects](https://github.com/samply/bbmri-fhir-ig/blob/master/bbmri-ig/input/pagecontent/mappings.md)
-
-[Referenced Implementation Guides](https://github.com/samply/bbmri-fhir-ig/blob/master/bbmri-ig/input/pagecontent/referencedIGs.md)
+This is the repository for the BBMRI.de/GBA sources. The latest release build can be found here: https://samply.github.io/bbmri-fhir-ig/

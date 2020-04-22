@@ -43,12 +43,17 @@
       "page": [
         {
           "nameUrl": "index.html",
-          "title": "MyIG Home Page",
-          "generation": "html"
+          "title": "BBMRI.de/GBA IG",
+          "generation": "markdown"
         },
         {
           "nameUrl": "overview.html",
           "title": "Overview",
+          "generation": "markdown"
+        },
+		{
+          "nameUrl": "background.html",
+          "title": "Background",
           "generation": "markdown"
         },
         {
@@ -64,6 +69,11 @@
         {
           "nameUrl": "referencedIGs.html",
           "title": "Referenced IGs",
+          "generation": "markdown"
+        },
+		{
+          "nameUrl": "support.html",
+          "title": "Support",
           "generation": "markdown"
         },
         {
