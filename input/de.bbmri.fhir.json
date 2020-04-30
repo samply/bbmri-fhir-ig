@@ -57,6 +57,11 @@
           "generation": "markdown"
         },
         {
+          "nameUrl": "howtoJoin.html",
+          "title": "How to join the Sample Locator",
+          "generation": "markdown"
+        },
+        {
           "nameUrl": "spec.html",
           "title": "Detailed Specification",
           "generation": "markdown"
@@ -74,6 +79,11 @@
 		{
           "nameUrl": "support.html",
           "title": "Support",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "etlTalent.html",
+          "title": "Build ETL with Talent Open Studio and Hapi FHIR API to fill the Blaze Store",
           "generation": "markdown"
         },
         {
