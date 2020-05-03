@@ -6,7 +6,7 @@ before_script:
 - wget -q https://storage.googleapis.com/ig-build/org.hl7.fhir.validator.jar -O validator.jar
 script:
 - mkdir input-cache
-- wget -q https://fhir.github.io/latest-ig-publisher/org.hl7.fhir.publisher.jar -O input-cache/org.hl7.fhir.publisher.jar
+- wget -q https://storage.googleapis.com/ig-build/org.hl7.fhir.publisher.jar -O input-cache/org.hl7.fhir.publisher.jar
 - JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF-8
 - java -jar input-cache/org.hl7.fhir.publisher.jar -ig ig.ini
 - java -jar validator.jar -ig output/validator-de.bbmri.fhir.pack -version 4.0.1 input/examples
