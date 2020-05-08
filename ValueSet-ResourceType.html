@@ -38,8 +38,8 @@
   </head>
   <body>
 
-    <style type="text/css">h2{--heading-prefix:"8.32"}
-    h3,h4,h5,h6{--heading-prefix:"8.32"}</style>
+    <style type="text/css">h2{--heading-prefix:"11.32"}
+    h3,h4,h5,h6{--heading-prefix:"11.32"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         
@@ -52,7 +52,7 @@
 	</div>
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">BBMRI.de/GBA Implementation Guide</span><br/>1.0.0 - Release</p>
+          <p><span style="font-size:12pt;font-weight:bold">BBMRI.de/GBA Implementation Guide</span><br/>1.0.1 - Release</p>
         </div>
       </div> <!-- /container -->
     </div>  <!-- /segment-header -->
@@ -76,30 +76,47 @@
   <li><a href="index.html">IG Home</a></li>
   <li><a href="toc.html">Table of Contents</a></li>
   <li><a href="overview.html">Profile Overview</a></li>
+  <li><a href="howtoJoin.html">How to Join the Sample Locator</a></li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">References<b class="caret">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Background<b class="caret">
       </b>
     </a>
     <ul class="dropdown-menu">
+	<li>
+        <a href="background.html">Overview</a>
+      </li>
       <li>
         <a href="mappings.html">Mappings</a>
       </li>
 	  <li>
         <a href="referencedIGs.html">Referenced IGs</a>
       </li>
+    <li>
+        <a href="etlTalent.html">Build ETL with TOS</a>
+      </li>
     </ul>
   </li>
-  <li><a href="artifacts.html">Artifact Index</a></li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support<b class="caret">
       </b>
     </a>
     <ul class="dropdown-menu">
-      <li>
-        <a target="_blank" href="http://hl7.org/fhir/R4/index.html">FHIR Spec <img src="external.png" style="text-align: baseline"/></a>
+	<li>
+        <a href="support.html">Instructions</a>
       </li>
       <li>
         <a href="downloads.html">Downloads</a>
+      </li>
+    </ul>
+  </li>
+  <li><a href="artifacts.html">Artifact Index</a></li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Links<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a target="_blank" href="http://hl7.org/fhir/R4/index.html">FHIR Spec <img src="external.png" style="text-align: baseline"/></a>
       </li>
     </ul>
   </li>
@@ -125,7 +142,7 @@
         <div class="row">
           <div class="inner-wrapper">
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">BBMRI.de/GBA Implementation Guide - Local Development build (v1.0.0). See the <a href="https://fhir.bbmri.de/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">BBMRI.de/GBA Implementation Guide - Local Development build (v1.0.1). See the <a href="https://fhir.bbmri.de/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <a name="root"> </a>
   <h2 id="root">Resource Type</h2>
   <p>
@@ -133,7 +150,7 @@
   </p>
   <table class="grid">
  <tbody><tr><td>Defining URL:</td><td>https://fhir.bbmri.de/ValueSet/ResourceType</td></tr>
- <tr><td>Version:</td><td>1.0.0</td></tr>
+ <tr><td>Version:</td><td>1.0.1</td></tr>
  <tr><td>Name:</td><td>ResourceType</td></tr>
  <tr><td>Status:</td><td>Active</td></tr>
  <tr><td>Title:</td><td>Resource Type</td></tr>
@@ -158,14 +175,14 @@
   <a name="definition"> </a>
   <h3 id="definition">Content Logical Definition</h3>
 
-  <h3>Definition</h3>
+  <h3>Logical Definition (CLD)</h3>
 <div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-ResourceType.html"><code>https://fhir.bbmri.de/CodeSystem/ResourceType</code></a></li></ul></div>
   
   <p>&#160;</p>
   <a name="expansion"> </a>
   <h3 id="expansion">Expansion</h3>
 
-  <div xmlns="http://www.w3.org/1999/xhtml"><p>This value set contains 3 concepts</p><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px"/>Expansion based on https://fhir.bbmri.de/CodeSystem/ResourceType version 1.0.0<p>All codes from system <a href="CodeSystem-ResourceType.html"><code>https://fhir.bbmri.de/CodeSystem/ResourceType</code></a></p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap"><a name="https---fhir.bbmri.de-CodeSystem-ResourceType-samples"> </a><a href="CodeSystem-ResourceType.html#ResourceType-samples">samples</a></td><td>Samples</td><td/></tr><tr><td style="white-space:nowrap"><a name="https---fhir.bbmri.de-CodeSystem-ResourceType-data"> </a><a href="CodeSystem-ResourceType.html#ResourceType-data">data</a></td><td>Data</td><td/></tr><tr><td style="white-space:nowrap"><a name="https---fhir.bbmri.de-CodeSystem-ResourceType-images"> </a><a href="CodeSystem-ResourceType.html#ResourceType-images">images</a></td><td>Images</td><td/></tr></table></div>
+  <div xmlns="http://www.w3.org/1999/xhtml"><p>This value set contains 3 concepts</p><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on <a href="CodeSystem-ResourceType.html">Resource Type v1.0.1 (CodeSystem)</a></p><p>All codes from system <a href="CodeSystem-ResourceType.html"><code>https://fhir.bbmri.de/CodeSystem/ResourceType</code></a></p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap"><a name="https---fhir.bbmri.de-CodeSystem-ResourceType-samples"> </a><a href="CodeSystem-ResourceType.html#ResourceType-samples">samples</a></td><td>Samples</td><td/></tr><tr><td style="white-space:nowrap"><a name="https---fhir.bbmri.de-CodeSystem-ResourceType-data"> </a><a href="CodeSystem-ResourceType.html#ResourceType-data">data</a></td><td>Data</td><td/></tr><tr><td style="white-space:nowrap"><a name="https---fhir.bbmri.de-CodeSystem-ResourceType-images"> </a><a href="CodeSystem-ResourceType.html#ResourceType-images">images</a></td><td>Images</td><td/></tr></table></div>
 
   <hr/>
   <p>
@@ -201,6 +218,7 @@
 
   
   
+  
 </div>
         </div>  <!-- /inner-wrapper -->
       </div>  <!-- /row -->
@@ -212,7 +230,7 @@
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="https://www.bbmri.de">BBMRI.de</a>.  Package de.bbmri.fhir#1.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Apr 3, 2020 15:15+0000">2020-04-03</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="https://www.bbmri.de">BBMRI.de</a>.  Package de.bbmri.fhir#1.0.1 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, May 8, 2020 11:20+0000">2020-05-08</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

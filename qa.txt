@@ -1,9 +1,9 @@
 ﻿BBMRI_DE_IG : Validation Results
 =========================================
 
-err = 18, warn = 20, info = 2
-IG Publisher Version: v1.0.77-SNAPSHOT
-Generated Fri Apr 03 15:16:11 UTC 2020. FHIR version 4.0.1 for de.bbmri.fhir#1.0.0 (canonical = https://fhir.bbmri.de)
+err = 0, warn = 10, info = 1
+IG Publisher Version: v1.0.90-SNAPSHOT
+Generated Fri May 08 11:21:17 UTC 2020. FHIR version 4.0.1 for de.bbmri.fhir#1.0.1 (canonical = https://fhir.bbmri.de)
 
  Build Errors : 19 / 47
  /home/travis/build/samply/bbmri-fhir-ig/input/de.bbmri.fhir : 0 / 0
@@ -32,7 +32,7 @@ Generated Fri Apr 03 15:16:11 UTC 2020. FHIR version 4.0.1 for de.bbmri.fhir#1.0
  /home/travis/build/samply/bbmri-fhir-ig/input/resources/CollectionType.CodeSystem : 0 / 0
  /home/travis/build/samply/bbmri-fhir-ig/input/resources/CollectionType.StructureDefinition : 0 / 0
  /home/travis/build/samply/bbmri-fhir-ig/input/resources/CollectionType.ValueSet : 0 / 0
- /home/travis/build/samply/bbmri-fhir-ig/input/resources/Condition.StructureDefinition : 3 / 2
+ /home/travis/build/samply/bbmri-fhir-ig/input/resources/Condition.StructureDefinition : 2 / 2
  /home/travis/build/samply/bbmri-fhir-ig/input/resources/ContactRole.StructureDefinition : 0 / 0
  /home/travis/build/samply/bbmri-fhir-ig/input/resources/ContactType.CodeSystem : 0 / 0
  /home/travis/build/samply/bbmri-fhir-ig/input/resources/Custodian.StructureDefinition : 0 / 0
@@ -48,7 +48,7 @@ Generated Fri Apr 03 15:16:11 UTC 2020. FHIR version 4.0.1 for de.bbmri.fhir#1.0
  /home/travis/build/samply/bbmri-fhir-ig/input/resources/OtherSampleDiagnosis.CodeSystem : 0 / 0
  /home/travis/build/samply/bbmri-fhir-ig/input/resources/OtherSampleDiagnosis.ValueSet : 0 / 0
  /home/travis/build/samply/bbmri-fhir-ig/input/resources/PartnerCharterSigned.StructureDefinition : 0 / 1
- /home/travis/build/samply/bbmri-fhir-ig/input/resources/Patient.StructureDefinition : 1 / 0
+ /home/travis/build/samply/bbmri-fhir-ig/input/resources/Patient.StructureDefinition : 0 / 0
  /home/travis/build/samply/bbmri-fhir-ig/input/resources/QualityStandard.CodeSystem : 0 / 0
  /home/travis/build/samply/bbmri-fhir-ig/input/resources/QualityStandard.StructureDefinition : 0 / 0
  /home/travis/build/samply/bbmri-fhir-ig/input/resources/QualityStandard.ValueSet : 0 / 0
@@ -57,7 +57,7 @@ Generated Fri Apr 03 15:16:11 UTC 2020. FHIR version 4.0.1 for de.bbmri.fhir#1.0
  /home/travis/build/samply/bbmri-fhir-ig/input/resources/ResourceType.ValueSet : 0 / 0
  /home/travis/build/samply/bbmri-fhir-ig/input/resources/SampleMaterialType.CodeSystem : 0 / 0
  /home/travis/build/samply/bbmri-fhir-ig/input/resources/SampleMaterialType.ValueSet : 0 / 0
- /home/travis/build/samply/bbmri-fhir-ig/input/resources/Specimen.StructureDefinition : 2 / 0
+ /home/travis/build/samply/bbmri-fhir-ig/input/resources/Specimen.StructureDefinition : 1 / 0
  /home/travis/build/samply/bbmri-fhir-ig/input/resources/StorageTemperature.CodeSystem : 0 / 0
  /home/travis/build/samply/bbmri-fhir-ig/input/resources/StorageTemperature.StructureDefinition : 0 / 0
  /home/travis/build/samply/bbmri-fhir-ig/input/resources/StorageTemperature.ValueSet : 0 / 0
@@ -66,8 +66,8 @@ Generated Fri Apr 03 15:16:11 UTC 2020. FHIR version 4.0.1 for de.bbmri.fhir#1.0
  /home/travis/build/samply/bbmri-fhir-ig/input/resources/parentCollection.StructureDefinition : 0 / 1
 </table>
 == n/a ==
-ERROR: ImplementationGuide.definition.parameter[20].value: Supressed messages file is not using the new format (see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters)
-ERROR: ??: The reference http://fhir.de/StructureDefinition/CodingICD10GM could not be resolved
+ERROR: ImplementationGuide.definition.parameter[21].value: Supressed messages file is not using the new format (see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters)
+ERROR: ?pkp-1?: The reference http://fhir.de/StructureDefinition/CodingICD10GM could not be resolved
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/53ef12a3-1e31-4fc1-adf6-9d30dc6c4784.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Organization/exampleCollection.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Specimen/0-specimen.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
@@ -116,22 +116,22 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/ResourceManagement.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/IdCard.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/DataCategory.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/Organization-exampleCollection.html#/html/body/div/div/div/div/div/div/p/a at Line 161, column 340: The link 'Organization/exampleBiobank' for "Organization/exampleBiobank" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/Organization-exampleCollectionRD.html#/html/body/div/div/div/div/div/div/p/a at Line 161, column 340: The link 'Organization/exampleBiobank' for "Organization/exampleBiobank" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/OrganizationAffiliation-example.html#/html/body/div/div/div/div/div/div/p/a at Line 161, column 205: The link 'Organization/exampleBiobank' for "Organization/exampleBiobank" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Biobank.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 287, column 941: The link 'StructureDefinition-Biobank-definitions.html#Organization.contact.purpose.coding' for "coding" cannot be resolved (valid targets: 162 targets)
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Biobank.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 787, column 941: The link 'StructureDefinition-Biobank-definitions.html#Organization.contact.purpose.coding' for "coding" cannot be resolved (valid targets: 162 targets)
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Collection.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 293, column 941: The link 'StructureDefinition-Collection-definitions.html#Organization.contact.purpose.coding' for "coding" cannot be resolved (valid targets: 156 targets)
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Collection.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 303, column 934: The link 'StructureDefinition-Collection-definitions.html#Organization.contact.purpose.coding' for "coding" cannot be resolved (valid targets: 156 targets)
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Collection.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 791, column 941: The link 'StructureDefinition-Collection-definitions.html#Organization.contact.purpose.coding' for "coding" cannot be resolved (valid targets: 156 targets)
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Collection.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 801, column 934: The link 'StructureDefinition-Collection-definitions.html#Organization.contact.purpose.coding' for "coding" cannot be resolved (valid targets: 156 targets)
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Condition.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 253, column 1552: The link 'unknown.html' for "??" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Condition.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 302, column 1767: The link 'unknown.html' for "??" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Condition.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 474, column 1552: The link 'unknown.html' for "??" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Condition.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 523, column 1767: The link 'unknown.html' for "??" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Specimen.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 260, column 752: The link 'StructureDefinition-Specimen-definitions.html#Specimen.extension.value[x]' for "value[x]" cannot be resolved (valid targets: 196 targets)
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Specimen.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 603, column 752: The link 'StructureDefinition-Specimen-definitions.html#Specimen.extension.value[x]' for "value[x]" cannot be resolved (valid targets: 196 targets)
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/index.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 168, column 11: The link 'background.html' for "Background" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/Organization-exampleCollection.html#/html/body/div/div/div/div/div/div/p/a at Line 178, column 340: The link 'Organization/exampleBiobank' for "Organization/exampleBiobank" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/Organization-exampleCollectionRD.html#/html/body/div/div/div/div/div/div/p/a at Line 178, column 340: The link 'Organization/exampleBiobank' for "Organization/exampleBiobank" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/OrganizationAffiliation-example.html#/html/body/div/div/div/div/div/div/p/a at Line 178, column 205: The link 'Organization/exampleBiobank' for "Organization/exampleBiobank" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Biobank.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 304, column 941: The link 'StructureDefinition-Biobank-definitions.html#Organization.contact.purpose.coding' for "coding" cannot be resolved (valid targets: 162 targets)
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Biobank.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 804, column 941: The link 'StructureDefinition-Biobank-definitions.html#Organization.contact.purpose.coding' for "coding" cannot be resolved (valid targets: 162 targets)
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Collection.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 310, column 941: The link 'StructureDefinition-Collection-definitions.html#Organization.contact.purpose.coding' for "coding" cannot be resolved (valid targets: 156 targets)
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Collection.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 320, column 934: The link 'StructureDefinition-Collection-definitions.html#Organization.contact.purpose.coding' for "coding" cannot be resolved (valid targets: 156 targets)
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Collection.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 808, column 941: The link 'StructureDefinition-Collection-definitions.html#Organization.contact.purpose.coding' for "coding" cannot be resolved (valid targets: 156 targets)
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Collection.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 818, column 934: The link 'StructureDefinition-Collection-definitions.html#Organization.contact.purpose.coding' for "coding" cannot be resolved (valid targets: 156 targets)
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Condition.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 270, column 1552: The link 'unknown.html' for "?pkp-2?" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Condition.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 319, column 1767: The link 'unknown.html' for "?pkp-2?" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Condition.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 491, column 1552: The link 'unknown.html' for "?pkp-2?" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Condition.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 540, column 1767: The link 'unknown.html' for "?pkp-2?" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Specimen.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 277, column 752: The link 'StructureDefinition-Specimen-definitions.html#Specimen.extension.value[x]' for "value[x]" cannot be resolved (valid targets: 196 targets)
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Specimen.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 620, column 752: The link 'StructureDefinition-Specimen-definitions.html#Specimen.extension.value[x]' for "value[x]" cannot be resolved (valid targets: 196 targets)
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/support.html#/html/body/div/div/div/div/div/p/a at Line 184, column 159: The link 'http://hl7.org/fhir/uv/ips/2019Sep/validator.pack' for "here" cannot be resolved
 == /home/travis/build/samply/bbmri-fhir-ig/input/de.bbmri.fhir.json ==
 == /home/travis/build/samply/bbmri-fhir-ig/input/examples/exampleBiobank.json ==
 == /home/travis/build/samply/bbmri-fhir-ig/input/examples/exampleBmi.json ==
@@ -145,7 +145,6 @@ ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/index.html#/html/body/div/
 INFORMATION: Specimen/0-specimen: Specimen.collection.bodySite.coding[0]: Code System URI "urn:oid:1.3.6.1.4.1.19376.1.3.11.36" is unknown so the code cannot be validated
 == /home/travis/build/samply/bbmri-fhir-ig/input/examples/exampleTobaccoUse.json ==
 == /home/travis/build/samply/bbmri-fhir-ig/input/examples/transaction-0.json ==
-ERROR: Bundle/53ef12a3-1e31-4fc1-adf6-9d30dc6c4784: Bundle.entry[5].resource.extension[1].value.ofType(Reference): Unable to resolve resource "http://blaze.example.com/fhir/Organization/collection-2"
 == /home/travis/build/samply/bbmri-fhir-ig/input/resources/AccessPolicy.StructureDefinition.json ==
 == /home/travis/build/samply/bbmri-fhir-ig/input/resources/Biobank.StructureDefinition.json ==
 == /home/travis/build/samply/bbmri-fhir-ig/input/resources/BiobankCapabilities.CodeSystem.json ==
@@ -165,9 +164,6 @@ WARNING: https://fhir.bbmri.de/StructureDefinition/Collaboration: The Implementa
 == /home/travis/build/samply/bbmri-fhir-ig/input/resources/CollectionType.ValueSet.json ==
 == /home/travis/build/samply/bbmri-fhir-ig/input/resources/Condition.StructureDefinition.json ==
 WARNING: https://fhir.bbmri.de/StructureDefinition/Condition#Condition.code.coding:icd-10-gm: The type of profile http://fhir.de/StructureDefinition/CodingICD10GM cannot be checked as the profile is not known
-ERROR: StructureDefinition/Condition: StructureDefinition.snapshot.element[29].fixed.ofType(uri): URL value "http://hl7.org/fhir/sid/icd-9" does not resolve
-ERROR: StructureDefinition/Condition: StructureDefinition.differential.element[0]: Duplicate id value 'Condition'
-ERROR: StructureDefinition/Condition: StructureDefinition.differential.element[6].fixed.ofType(uri): URL value "http://hl7.org/fhir/sid/icd-9" does not resolve
 WARNING: https://fhir.bbmri.de/StructureDefinition/Condition: The Implementation Guide contains no examples for this profile
 == /home/travis/build/samply/bbmri-fhir-ig/input/resources/ContactRole.StructureDefinition.json ==
 == /home/travis/build/samply/bbmri-fhir-ig/input/resources/ContactType.CodeSystem.json ==
@@ -176,8 +172,6 @@ WARNING: https://fhir.bbmri.de/StructureDefinition/Condition: The Implementation
 == /home/travis/build/samply/bbmri-fhir-ig/input/resources/DataCategory.StructureDefinition.json ==
 == /home/travis/build/samply/bbmri-fhir-ig/input/resources/DataCategory.ValueSet.json ==
 == /home/travis/build/samply/bbmri-fhir-ig/input/resources/Diagnosis.StructureDefinition.json ==
-ERROR: StructureDefinition/SampleDiagnosis: StructureDefinition.snapshot.element[27].fixed.ofType(uri): URL value "http://hl7.org/fhir/sid/icd-9" does not resolve
-ERROR: StructureDefinition/SampleDiagnosis: StructureDefinition.differential.element[11].fixed.ofType(uri): URL value "http://hl7.org/fhir/sid/icd-9" does not resolve
 == /home/travis/build/samply/bbmri-fhir-ig/input/resources/ITSupport.StructureDefinition.json ==
 WARNING: https://fhir.bbmri.de/StructureDefinition/ITSupport: The Implementation Guide contains no examples for this extension
 == /home/travis/build/samply/bbmri-fhir-ig/input/resources/IdCard.StructureDefinition.json ==
@@ -190,7 +184,6 @@ WARNING: https://fhir.bbmri.de/StructureDefinition/NetworkMembership: The Implem
 == /home/travis/build/samply/bbmri-fhir-ig/input/resources/PartnerCharterSigned.StructureDefinition.json ==
 WARNING: https://fhir.bbmri.de/StructureDefinition/PartnerCharterSigned: The Implementation Guide contains no examples for this extension
 == /home/travis/build/samply/bbmri-fhir-ig/input/resources/Patient.StructureDefinition.json ==
-ERROR: StructureDefinition/Patient: StructureDefinition.differential.element[0]: Duplicate id value 'Patient'
 == /home/travis/build/samply/bbmri-fhir-ig/input/resources/QualityStandard.CodeSystem.json ==
 == /home/travis/build/samply/bbmri-fhir-ig/input/resources/QualityStandard.StructureDefinition.json ==
 == /home/travis/build/samply/bbmri-fhir-ig/input/resources/QualityStandard.ValueSet.json ==
@@ -201,8 +194,6 @@ WARNING: https://fhir.bbmri.de/StructureDefinition/ResourceManagement: The Imple
 == /home/travis/build/samply/bbmri-fhir-ig/input/resources/SampleMaterialType.CodeSystem.json ==
 == /home/travis/build/samply/bbmri-fhir-ig/input/resources/SampleMaterialType.ValueSet.json ==
 == /home/travis/build/samply/bbmri-fhir-ig/input/resources/Specimen.StructureDefinition.json ==
-ERROR: StructureDefinition/Specimen: StructureDefinition.snapshot.element[36].fixed.ofType(uri): URL value "http://hl7.org/fhir/sid/icd-9" does not resolve
-ERROR: StructureDefinition/Specimen: StructureDefinition.differential.element[0]: Duplicate id value 'Specimen'
 == /home/travis/build/samply/bbmri-fhir-ig/input/resources/StorageTemperature.CodeSystem.json ==
 == /home/travis/build/samply/bbmri-fhir-ig/input/resources/StorageTemperature.StructureDefinition.json ==
 == /home/travis/build/samply/bbmri-fhir-ig/input/resources/StorageTemperature.ValueSet.json ==

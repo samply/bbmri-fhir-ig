@@ -6,11 +6,11 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Collection Type</h2><p>This code system https://fhir.bbmri.de/CodeSystem/CollectionType defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">SAMPLE<a name=\"CollectionType-SAMPLE\"> </a></td><td>Sample collection</td><td/></tr><tr><td style=\"white-space:nowrap\">TWIN_STUDY<a name=\"CollectionType-TWIN_STUDY\"> </a></td><td>Twin-study</td><td/></tr><tr><td style=\"white-space:nowrap\">RD<a name=\"CollectionType-RD\"> </a></td><td>Rare disease collection</td><td/></tr><tr><td style=\"white-space:nowrap\">NON_HUMAN<a name=\"CollectionType-NON_HUMAN\"> </a></td><td>Non-human</td><td/></tr><tr><td style=\"white-space:nowrap\">BIRTH_COHORT<a name=\"CollectionType-BIRTH_COHORT\"> </a></td><td>Birth cohort</td><td/></tr><tr><td style=\"white-space:nowrap\">CASE_CONTROL<a name=\"CollectionType-CASE_CONTROL\"> </a></td><td>Case-Control</td><td/></tr><tr><td style=\"white-space:nowrap\">COHORT<a name=\"CollectionType-COHORT\"> </a></td><td>Cohort</td><td/></tr><tr><td style=\"white-space:nowrap\">CROSS_SECTIONAL<a name=\"CollectionType-CROSS_SECTIONAL\"> </a></td><td>Cross-Sectional</td><td/></tr><tr><td style=\"white-space:nowrap\">DISEASE_SPECIFIC<a name=\"CollectionType-DISEASE_SPECIFIC\"> </a></td><td>Disease specific</td><td/></tr><tr><td style=\"white-space:nowrap\">HOSPITAL<a name=\"CollectionType-HOSPITAL\"> </a></td><td>Hospital</td><td/></tr><tr><td style=\"white-space:nowrap\">IMAGE<a name=\"CollectionType-IMAGE\"> </a></td><td>Image collection</td><td/></tr><tr><td style=\"white-space:nowrap\">LONGITUDINAL<a name=\"CollectionType-LONGITUDINAL\"> </a></td><td>Longitudinal</td><td/></tr><tr><td style=\"white-space:nowrap\">OTHER<a name=\"CollectionType-OTHER\"> </a></td><td>other</td><td/></tr><tr><td style=\"white-space:nowrap\">POPULATION_BASED<a name=\"CollectionType-POPULATION_BASED\"> </a></td><td>Population-based</td><td/></tr><tr><td style=\"white-space:nowrap\">QUALITY_CONTROL<a name=\"CollectionType-QUALITY_CONTROL\"> </a></td><td>Quality control</td><td/></tr></table></div>"
   },
   "url": "https://fhir.bbmri.de/CodeSystem/CollectionType",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "name": "CollectionType",
   "title": "Collection Type",
   "status": "active",
-  "date": "2020-04-03T15:15:11+00:00",
+  "date": "2020-05-08T11:20:22+00:00",
   "publisher": "BBMRI.de",
   "contact": [
     {

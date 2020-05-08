@@ -6,11 +6,11 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Resource Type</h2><div><p>Types of resources that may be governed by a biobank or its collections</p>\n</div><p>This code system https://fhir.bbmri.de/CodeSystem/ResourceType defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">samples<a name=\"ResourceType-samples\"> </a></td><td>Samples</td><td/></tr><tr><td style=\"white-space:nowrap\">data<a name=\"ResourceType-data\"> </a></td><td>Data</td><td/></tr><tr><td style=\"white-space:nowrap\">images<a name=\"ResourceType-images\"> </a></td><td>Images</td><td/></tr></table></div>"
   },
   "url": "https://fhir.bbmri.de/CodeSystem/ResourceType",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "name": "ResourceType",
   "title": "Resource Type",
   "status": "active",
-  "date": "2020-04-03T15:15:11+00:00",
+  "date": "2020-05-08T11:20:22+00:00",
   "publisher": "BBMRI.de",
   "contact": [
     {

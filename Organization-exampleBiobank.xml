@@ -6,7 +6,7 @@
     <profile value="https://fhir.bbmri.de/StructureDefinition/Biobank"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: exampleBiobank</p><p><b>meta</b>: </p><p><b>identifier</b>: bbmri-eric:ID:de_12345</p><p><b>name</b>: Zentrale Biobank Neustadt</p><p><b>alias</b>: ZBBN</p><p><b>telecom</b>: http://biobank.klinikum-neustadt.de</p><p><b>address</b>: Krankenhausstr. 12 Neustadt 12345 DE </p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: exampleBiobank</p><p><b>meta</b>: </p><p><b>identifier</b>: bbmri-eric:ID:DE_12345</p><p><b>name</b>: Zentrale Biobank Neustadt</p><p><b>alias</b>: ZBBN</p><p><b>telecom</b>: http://biobank.klinikum-neustadt.de</p><p><b>address</b>: Krankenhausstr. 12 Neustadt 12345 DE </p></div>
   </text>
   <extension url="https://fhir.bbmri.de/StructureDefinition/OrganizationDescription">
     <valueString value="The Zentrale Biobank neustadt collects samples from patients at the Klinikum Neustadt."/>

@@ -6,11 +6,11 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>Data Category</h2><ul><li>Include all codes defined in <a href="CodeSystem-DataCategory.html"><code>https://fhir.bbmri.de/CodeSystem/DataCategory</code></a></li></ul></div>
   </text>
   <url value="https://fhir.bbmri.de/ValueSet/DataCategory"/>
-  <version value="1.0.0"/>
+  <version value="1.0.1"/>
   <name value="DataCategory"/>
   <title value="Data Category"/>
   <status value="active"/>
-  <date value="2020-04-03T15:15:11+00:00"/>
+  <date value="2020-05-08T11:20:22+00:00"/>
   <publisher value="BBMRI.de"/>
   <contact>
     <telecom>

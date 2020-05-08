@@ -17,7 +17,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: exampleBiobank</p><p><b>meta</b>: </p><p><b>identifier</b>: bbmri-eric:ID:de_12345</p><p><b>name</b>: Zentrale Biobank Neustadt</p><p><b>alias</b>: ZBBN</p><p><b>telecom</b>: http://biobank.klinikum-neustadt.de</p><p><b>address</b>: Krankenhausstr. 12 Neustadt 12345 DE </p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: exampleBiobank</p><p><b>meta</b>: </p><p><b>identifier</b>: bbmri-eric:ID:DE_12345</p><p><b>name</b>: Zentrale Biobank Neustadt</p><p><b>alias</b>: ZBBN</p><p><b>telecom</b>: http://biobank.klinikum-neustadt.de</p><p><b>address</b>: Krankenhausstr. 12 Neustadt 12345 DE </p></div>"
   ];
   fhir:DomainResource.extension [
      fhir:index 0;

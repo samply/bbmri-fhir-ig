@@ -7,12 +7,12 @@
 </div></div>
   </text>
   <url value="https://fhir.bbmri.de/ImplementationGuide/de.bbmri.fhir"/>
-  <version value="1.0.0"/>
+  <version value="1.0.1"/>
   <name value="BBMRI_DE_IG"/>
   <title value="BBMRI.de/GBA Implementation Guide"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2020-04-03T15:15:11+00:00"/>
+  <date value="2020-05-08T11:20:22+00:00"/>
   <publisher value="BBMRI.de"/>
   <contact>
     <telecom>
@@ -903,8 +903,8 @@
       <generation value="html"/>
       <page>
         <nameUrl value="index.html"/>
-        <title value="MyIG Home Page"/>
-        <generation value="html"/>
+        <title value="BBMRI.de/GBA IG"/>
+        <generation value="markdown"/>
       </page>
       <page>
         <nameUrl value="overview.html"/>
@@ -912,8 +912,13 @@
         <generation value="markdown"/>
       </page>
       <page>
-        <nameUrl value="spec.html"/>
-        <title value="Detailed Specification"/>
+        <nameUrl value="background.html"/>
+        <title value="Background"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="howtoJoin.html"/>
+        <title value="How to join the Sample Locator"/>
         <generation value="markdown"/>
       </page>
       <page>
@@ -924,6 +929,16 @@
       <page>
         <nameUrl value="referencedIGs.html"/>
         <title value="Referenced IGs"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="support.html"/>
+        <title value="Support"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="etlTalent.html"/>
+        <title value="Build ETL with Talent Open Studio and Hapi FHIR API to fill the Blaze Store"/>
         <generation value="markdown"/>
       </page>
       <page>
@@ -972,6 +987,10 @@
     <parameter>
       <code value="path-resource"/>
       <value value="input/maps"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/testing"/>
     </parameter>
     <parameter>
       <code value="path-pages"/>
