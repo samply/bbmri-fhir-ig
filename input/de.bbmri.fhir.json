@@ -62,11 +62,6 @@
           "generation": "markdown"
         },
         {
-          "nameUrl": "spec.html",
-          "title": "Detailed Specification",
-          "generation": "markdown"
-        },
-        {
           "nameUrl": "mappings.html",
           "title": "Mappings",
           "generation": "markdown"
