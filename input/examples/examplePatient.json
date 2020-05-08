@@ -1,12 +1,12 @@
 {
-   "resourceType":"Patient",
-   "id":"0",
-   "meta":{
-      "profile":[
-         "https://fhir.bbmri.de/StructureDefinition/Patient"
-      ]
-   },
-   "gender":"male",
-   "birthDate":"1989-11-18",
-   "deceasedDateTime": "2009-01-27"
+  "resourceType": "Patient",
+  "id": "0",
+  "meta": {
+    "profile": [
+      "https://fhir.bbmri.de/StructureDefinition/Patient"
+    ]
+  },
+  "gender": "male",
+  "birthDate": "1989-11-18",
+  "deceasedDateTime": "2009-01-27"
 }

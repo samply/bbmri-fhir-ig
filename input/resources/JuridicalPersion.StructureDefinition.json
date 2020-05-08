@@ -19,10 +19,10 @@
   "derivation": "constraint",
   "differential": {
     "element": [
-	{
-        "id" : "Extension.url",
-        "path" : "Extension.url",
-        "fixedUri" : "https://fhir.bbmri.de/StructureDefinition/JuridicalPerson"
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://fhir.bbmri.de/StructureDefinition/JuridicalPerson"
       },
       {
         "id": "Extension.value[x]",

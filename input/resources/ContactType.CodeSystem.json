@@ -6,12 +6,12 @@
   "title": "Contact Type",
   "status": "active",
   "caseSensitive": false,
-  "content":"complete",
+  "content": "complete",
   "concept": [
     {
       "code": "RESEARCH",
       "display": "Research",
-	  "definition":"Contact for researchers about sample and data requests"
+      "definition": "Contact for researchers about sample and data requests"
     }
   ]
 }

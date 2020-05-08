@@ -226,17 +226,17 @@
               "reference": "http://blaze.example.com/fhir/Organization/collection-2"
             }
           },
-		  {
-			"url":"https://fhir.bbmri.de/StructureDefinition/SampleDiagnosis",
-			"valueCodeableConcept":{
-				"coding":[
-				{
-					"code":"unknown",
-					"system":"https://fhir.bbmri.de/CodeSystem/OtherSampleDiagnosis"
-				}
-				]
-         }
-      }
+          {
+            "url": "https://fhir.bbmri.de/StructureDefinition/SampleDiagnosis",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "unknown",
+                  "system": "https://fhir.bbmri.de/CodeSystem/OtherSampleDiagnosis"
+                }
+              ]
+            }
+          }
         ],
         "id": "0-specimen",
         "meta": {

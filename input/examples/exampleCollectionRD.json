@@ -1,133 +1,133 @@
 {
-   "resourceType":"Organization",
-   "id":"exampleCollectionRD",
-   "meta":{
-      "profile":[
-         "https://fhir.bbmri.de/StructureDefinition/Collection"
+  "resourceType": "Organization",
+  "id": "exampleCollectionRD",
+  "meta": {
+    "profile": [
+      "https://fhir.bbmri.de/StructureDefinition/Collection"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: exampleCollection</p><p><b>meta</b>: </p><p><b>identifier</b>: bbmri-eric:ID:de_12345:collection:vampir</p><p><b>name</b>: Venous and arterial blood from misc patients internal reserve </p><p><b>alias</b>: VAMPIR</p><p><b>partOf</b>: <a href=\"Organization/exampleBiobank\">Organization/exampleBiobank</a></p></div>"
+  },
+  "extension": [
+    {
+      "url": "https://fhir.bbmri.de/StructureDefinition/OrganizationDescription",
+      "valueString": "The Collection contains samples from patients with lycanthropy."
+    },
+    {
+      "url": "https://fhir.bbmri.de/StructureDefinition/CollectionType",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "https://fhir.bbmri.de/CodeSystem/CollectionType",
+            "code": "DISEASE_SPECIFIC",
+            "display": "Disease specific"
+          }
+        ]
+      }
+    },
+    {
+      "url": "https://fhir.bbmri.de/StructureDefinition/CollectionType",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "https://fhir.bbmri.de/CodeSystem/CollectionType",
+            "code": "RD",
+            "display": "Rare disease collection"
+          }
+        ]
+      }
+    },
+    {
+      "url": "https://fhir.bbmri.de/StructureDefinition/IdCard",
+      "valueUrl": "https://catalogue.rd-connect.eu/werewolf"
+    },
+    {
+      "url": "https://fhir.bbmri.de/StructureDefinition/DataCategory",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "https://fhir.bbmri.de/CodeSystem/DataCategory",
+            "code": "BIOLOGICAL_SAMPLES",
+            "display": "Biological samples"
+          }
+        ]
+      }
+    },
+    {
+      "url": "https://fhir.bbmri.de/StructureDefinition/AccessPolicy",
+      "extension": [
+        {
+          "url": "resource",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "https://fhir.bbmri.de/CodeSystem/ResourceType",
+                "code": "samples",
+                "display": "Samples"
+              }
+            ]
+          }
+        },
+        {
+          "url": "resource",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "https://fhir.bbmri.de/CodeSystem/ResourceType",
+                "code": "data",
+                "display": "Data"
+              }
+            ]
+          }
+        },
+        {
+          "url": "description",
+          "valueString": "Acessing researchers must prove that security standards equivalent or stricter than local standards are adhered to."
+        }
       ]
-   },
-   "text":{
-      "status":"generated",
-      "div":"<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: exampleCollection</p><p><b>meta</b>: </p><p><b>identifier</b>: bbmri-eric:ID:de_12345:collection:vampir</p><p><b>name</b>: Venous and arterial blood from misc patients internal reserve </p><p><b>alias</b>: VAMPIR</p><p><b>partOf</b>: <a href=\"Organization/exampleBiobank\">Organization/exampleBiobank</a></p></div>"
-   },
-   "extension":[
-      {
-         "url":"https://fhir.bbmri.de/StructureDefinition/OrganizationDescription",
-         "valueString":"The Collection contains samples from patients with lycanthropy."
+    }
+  ],
+  "identifier": [
+    {
+      "system": "http://www.bbmri-eric.eu/",
+      "value": "bbmri-eric:ID:DE_54321:collection:werewolf"
+    }
+  ],
+  "name": "WidE REsearch for Welfare On Lycantrophy Field",
+  "alias": [
+    "WEREWOLF"
+  ],
+  "partOf": {
+    "reference": "Organization/exampleBiobank"
+  },
+  "contact": [
+    {
+      "purpose": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/contactentity-type",
+            "code": "ADMIN",
+            "display": "Administrative"
+          }
+        ]
       },
-      {
-         "url":"https://fhir.bbmri.de/StructureDefinition/CollectionType",
-         "valueCodeableConcept":{
-            "coding":[
-               {
-                  "system":"https://fhir.bbmri.de/CodeSystem/CollectionType",
-                  "code":"DISEASE_SPECIFIC",
-                  "display":"Disease specific"
-               }
-            ]
-         }
+      "name": {
+        "family": "Lupin",
+        "given": [
+          "Remus"
+        ],
+        "prefix": [
+          "Prof."
+        ]
       },
-      {
-        "url":"https://fhir.bbmri.de/StructureDefinition/CollectionType",
-        "valueCodeableConcept":{
-           "coding":[
-              {
-                 "system":"https://fhir.bbmri.de/CodeSystem/CollectionType",
-                 "code":"RD",
-                 "display":"Rare disease collection"
-              }
-           ]
+      "telecom": [
+        {
+          "system": "other",
+          "value": "Owl post to Hogwarts"
         }
-     },
-      {
-         "url":"https://fhir.bbmri.de/StructureDefinition/IdCard",
-         "valueUrl":"https://catalogue.rd-connect.eu/werewolf"
-      },
-      {
-        "url":"https://fhir.bbmri.de/StructureDefinition/DataCategory",
-        "valueCodeableConcept":{
-           "coding":[
-              {
-                 "system":"https://fhir.bbmri.de/CodeSystem/DataCategory",
-                 "code":"BIOLOGICAL_SAMPLES",
-                 "display":"Biological samples"
-              }
-           ]
-        }
-     },
-      {
-         "url":"https://fhir.bbmri.de/StructureDefinition/AccessPolicy",
-         "extension":[
-            {
-               "url":"resource",
-               "valueCodeableConcept":{
-                  "coding":[
-                     {
-                        "system":"https://fhir.bbmri.de/CodeSystem/ResourceType",
-                        "code":"samples",
-                        "display":"Samples"
-                     }
-                  ]
-               }
-            },
-            {
-               "url":"resource",
-               "valueCodeableConcept":{
-                  "coding":[
-                     {
-                        "system":"https://fhir.bbmri.de/CodeSystem/ResourceType",
-                        "code":"data",
-                        "display":"Data"
-                     }
-                  ]
-               }
-            },
-            {
-               "url":"description",
-               "valueString":"Acessing researchers must prove that security standards equivalent or stricter than local standards are adhered to."
-            }
-         ]
-      }
-   ],
-   "identifier":[
-      {
-         "system":"http://www.bbmri-eric.eu/",
-         "value":"bbmri-eric:ID:DE_54321:collection:werewolf"
-      }
-   ],
-   "name":"WidE REsearch for Welfare On Lycantrophy Field",
-   "alias":[
-      "WEREWOLF"
-   ],
-   "partOf":{
-      "reference":"Organization/exampleBiobank"
-   },
-   "contact":[
-      {
-         "purpose":{
-            "coding":[
-               {
-                  "system":"http://terminology.hl7.org/CodeSystem/contactentity-type",
-                  "code":"ADMIN",
-                  "display":"Administrative"
-               }
-            ]
-         },
-         "name":{
-            "family":"Lupin",
-            "given":[
-               "Remus"
-            ],
-            "prefix":[
-               "Prof."
-            ]
-         },
-         "telecom":[
-            {
-               "system":"other",
-               "value":"Owl post to Hogwarts"
-            }
-         ]
-      }
-   ]
+      ]
+    }
+  ]
 }

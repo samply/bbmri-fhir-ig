@@ -27,11 +27,11 @@
       "code": "digital-imaging",
       "display": "Digital imaging"
     },
-	{
+    {
       "code": "immunohistochemistry-scoring",
       "display": "Immunohistochemistry scoring"
     },
-	{
+    {
       "code": "immunohistochemistry-staining",
       "display": "Immunohistochemistry staining"
     },
@@ -43,7 +43,7 @@
       "code": "pathology-archive-access",
       "display": "Access to the full pathology archive"
     },
-	{
+    {
       "code": "recontact",
       "display": "Ability to recontact"
     },
