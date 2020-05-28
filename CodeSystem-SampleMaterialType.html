@@ -38,8 +38,8 @@
   </head>
   <body>
 
-    <style type="text/css">h2{--heading-prefix:"11.45"}
-    h3,h4,h5,h6{--heading-prefix:"11.45"}</style>
+    <style type="text/css">h2{--heading-prefix:"12.45"}
+    h3,h4,h5,h6{--heading-prefix:"12.45"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         
@@ -52,7 +52,7 @@
 	</div>
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">BBMRI.de/GBA Implementation Guide</span><br/>1.0.1 - Release</p>
+          <p><span style="font-size:12pt;font-weight:bold">BBMRI.de/GBA Implementation Guide</span><br/>1.1.0 - Release</p>
         </div>
       </div> <!-- /container -->
     </div>  <!-- /segment-header -->
@@ -82,7 +82,7 @@
       </b>
     </a>
     <ul class="dropdown-menu">
-	<li>
+	  <li>
         <a href="background.html">Overview</a>
       </li>
       <li>
@@ -91,8 +91,11 @@
 	  <li>
         <a href="referencedIGs.html">Referenced IGs</a>
       </li>
-    <li>
+      <li>
         <a href="etlTalent.html">Build ETL with TOS</a>
+      </li>
+      <li>
+        <a href="qualityMeasures.html">Quality Measures</a>
       </li>
     </ul>
   </li>
@@ -120,7 +123,7 @@
       </li>
     </ul>
   </li>
-</ul>      
+</ul>
 
             </div>  <!-- /.nav-collapse -->
           </div>  <!-- /.container -->
@@ -142,9 +145,9 @@
         <div class="row">
           <div class="inner-wrapper">
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">BBMRI.de/GBA Implementation Guide - Local Development build (v1.0.1). See the <a href="https://fhir.bbmri.de/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">BBMRI.de/GBA Implementation Guide - Local Development build (v1.1.0). See the <a href="https://fhir.bbmri.de/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <a name="root"> </a>
-  <h2 id="root">Sample Material Type</h2>
+  <h2 id="root">CodeSystem: Sample Material Type</h2>
   
   
   <p>
@@ -153,7 +156,7 @@
 
   <table class="grid">
  <tbody><tr><td>Defining URL:</td><td>https://fhir.bbmri.de/CodeSystem/SampleMaterialType</td></tr>
- <tr><td>Version:</td><td>1.0.1</td></tr>
+ <tr><td>Version:</td><td>1.1.0</td></tr>
  <tr><td>Name:</td><td>SampleMaterialType</td></tr>
  <tr><td>Title:</td><td>Sample Material Type</td></tr>
  <tr><td>Status:</td><td>Active</td></tr>
@@ -176,8 +179,7 @@
 </ul>
 
 
-  <div xmlns="http://www.w3.org/1999/xhtml"><h2>Sample Material Type</h2><div><p>The type of material the sample consists of.</p>
-</div><p>This code system https://fhir.bbmri.de/CodeSystem/SampleMaterialType defines the following codes:</p><table class="codes"><tr><td><b>Lvl</b></td><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>1</td><td style="white-space:nowrap">whole-blood<a name="SampleMaterialType-whole-blood"> </a></td><td>Whole blood</td><td></td></tr><tr><td>1</td><td style="white-space:nowrap">bone-marrow<a name="SampleMaterialType-bone-marrow"> </a></td><td>Bone marrow</td><td></td></tr><tr><td>1</td><td style="white-space:nowrap">buffy-coat<a name="SampleMaterialType-buffy-coat"> </a></td><td>Buffy-Coat</td><td></td></tr><tr><td>1</td><td style="white-space:nowrap">dried-whole-blood<a name="SampleMaterialType-dried-whole-blood"> </a></td><td>Dried whole blood</td><td></td></tr><tr><td>1</td><td style="white-space:nowrap">peripheral-blood-cells-vital<a name="SampleMaterialType-peripheral-blood-cells-vital"> </a></td><td>Peripheral blood mononuclear cells (PBMCs, viable)</td><td></td></tr><tr><td>1</td><td style="white-space:nowrap">blood-plasma<a name="SampleMaterialType-blood-plasma"> </a></td><td>Plasma</td><td></td></tr><tr><td>2</td><td style="white-space:nowrap">&nbsp;&nbsp;plasma-edta<a name="SampleMaterialType-plasma-edta"> </a></td><td>Plasma, EDTA</td><td></td></tr><tr><td>2</td><td style="white-space:nowrap">&nbsp;&nbsp;plasma-citrat<a name="SampleMaterialType-plasma-citrat"> </a></td><td>Plasma, Citrat</td><td></td></tr><tr><td>2</td><td style="white-space:nowrap">&nbsp;&nbsp;plasma-heparin<a name="SampleMaterialType-plasma-heparin"> </a></td><td>Plasma, Heparin</td><td></td></tr><tr><td>2</td><td style="white-space:nowrap">&nbsp;&nbsp;plasma-cell-free<a name="SampleMaterialType-plasma-cell-free"> </a></td><td>Plasma, cell free</td><td></td></tr><tr><td>2</td><td style="white-space:nowrap">&nbsp;&nbsp;plasma-other<a name="SampleMaterialType-plasma-other"> </a></td><td>Plasma, other</td><td></td></tr><tr><td>1</td><td style="white-space:nowrap">blood-serum<a name="SampleMaterialType-blood-serum"> </a></td><td>Serum</td><td></td></tr><tr><td>1</td><td style="white-space:nowrap">ascites<a name="SampleMaterialType-ascites"> </a></td><td>Ascites</td><td></td></tr><tr><td>1</td><td style="white-space:nowrap">csf-liquor<a name="SampleMaterialType-csf-liquor"> </a></td><td>CSF/Liquor</td><td></td></tr><tr><td>1</td><td style="white-space:nowrap">saliva<a name="SampleMaterialType-saliva"> </a></td><td>Saliva</td><td></td></tr><tr><td>1</td><td style="white-space:nowrap">stool-faeces<a name="SampleMaterialType-stool-faeces"> </a></td><td>Stool/Faeces</td><td></td></tr><tr><td>1</td><td style="white-space:nowrap">urine<a name="SampleMaterialType-urine"> </a></td><td>Urine</td><td></td></tr><tr><td>1</td><td style="white-space:nowrap">swab<a name="SampleMaterialType-swab"> </a></td><td>Swab</td><td></td></tr><tr><td>1</td><td style="white-space:nowrap">liquid-other<a name="SampleMaterialType-liquid-other"> </a></td><td>Other liquid biosample/storage</td><td></td></tr><tr><td>1</td><td style="white-space:nowrap">tissue-ffpe<a name="SampleMaterialType-tissue-ffpe"> </a></td><td>Tissue FFPE</td><td></td></tr><tr><td>2</td><td style="white-space:nowrap">&nbsp;&nbsp;tumor-tissue-ffpe<a name="SampleMaterialType-tumor-tissue-ffpe"> </a></td><td>Tumor tissue (FFPE)</td><td></td></tr><tr><td>2</td><td style="white-space:nowrap">&nbsp;&nbsp;normal-tissue-ffpe<a name="SampleMaterialType-normal-tissue-ffpe"> </a></td><td>Normal tissue (FFPE)</td><td></td></tr><tr><td>2</td><td style="white-space:nowrap">&nbsp;&nbsp;other-tissue-ffpe<a name="SampleMaterialType-other-tissue-ffpe"> </a></td><td>Other tissue (FFPE)</td><td></td></tr><tr><td>1</td><td style="white-space:nowrap">tissue-frozen<a name="SampleMaterialType-tissue-frozen"> </a></td><td>Tissue frozen</td><td></td></tr><tr><td>2</td><td style="white-space:nowrap">&nbsp;&nbsp;tumor-tissue-frozen<a name="SampleMaterialType-tumor-tissue-frozen"> </a></td><td>Tumor tissue (frozen)</td><td></td></tr><tr><td>2</td><td style="white-space:nowrap">&nbsp;&nbsp;normal-tissue-frozen<a name="SampleMaterialType-normal-tissue-frozen"> </a></td><td>Normal tissue (frozen)</td><td></td></tr><tr><td>2</td><td style="white-space:nowrap">&nbsp;&nbsp;other-tissue-frozen<a name="SampleMaterialType-other-tissue-frozen"> </a></td><td>Other tissue (frozen)</td><td></td></tr><tr><td>1</td><td style="white-space:nowrap">tissue-other<a name="SampleMaterialType-tissue-other"> </a></td><td>Other tissue storage</td><td></td></tr><tr><td>1</td><td style="white-space:nowrap">dna<a name="SampleMaterialType-dna"> </a></td><td>DNA</td><td></td></tr><tr><td>2</td><td style="white-space:nowrap">&nbsp;&nbsp;cf-dna<a name="SampleMaterialType-cf-dna"> </a></td><td>cfDNA</td><td></td></tr><tr><td>2</td><td style="white-space:nowrap">&nbsp;&nbsp;g-dna<a name="SampleMaterialType-g-dna"> </a></td><td>gDNA</td><td></td></tr><tr><td>1</td><td style="white-space:nowrap">rna<a name="SampleMaterialType-rna"> </a></td><td>RNA</td><td></td></tr><tr><td>1</td><td style="white-space:nowrap">derivative-other<a name="SampleMaterialType-derivative-other"> </a></td><td>Other derivative</td><td></td></tr></table></div>
+  <div xmlns="http://www.w3.org/1999/xhtml"><p>This code system https://fhir.bbmri.de/CodeSystem/SampleMaterialType defines the following codes:</p><table class="codes"><tr><td><b>Lvl</b></td><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>1</td><td style="white-space:nowrap">whole-blood<a name="SampleMaterialType-whole-blood"> </a></td><td>Whole blood</td><td></td></tr><tr><td>1</td><td style="white-space:nowrap">bone-marrow<a name="SampleMaterialType-bone-marrow"> </a></td><td>Bone marrow</td><td></td></tr><tr><td>1</td><td style="white-space:nowrap">buffy-coat<a name="SampleMaterialType-buffy-coat"> </a></td><td>Buffy-Coat</td><td></td></tr><tr><td>1</td><td style="white-space:nowrap">dried-whole-blood<a name="SampleMaterialType-dried-whole-blood"> </a></td><td>Dried whole blood</td><td></td></tr><tr><td>1</td><td style="white-space:nowrap">peripheral-blood-cells-vital<a name="SampleMaterialType-peripheral-blood-cells-vital"> </a></td><td>Peripheral blood mononuclear cells (PBMCs, viable)</td><td></td></tr><tr><td>1</td><td style="white-space:nowrap">blood-plasma<a name="SampleMaterialType-blood-plasma"> </a></td><td>Plasma</td><td></td></tr><tr><td>2</td><td style="white-space:nowrap">&nbsp;&nbsp;plasma-edta<a name="SampleMaterialType-plasma-edta"> </a></td><td>Plasma, EDTA</td><td></td></tr><tr><td>2</td><td style="white-space:nowrap">&nbsp;&nbsp;plasma-citrat<a name="SampleMaterialType-plasma-citrat"> </a></td><td>Plasma, Citrat</td><td></td></tr><tr><td>2</td><td style="white-space:nowrap">&nbsp;&nbsp;plasma-heparin<a name="SampleMaterialType-plasma-heparin"> </a></td><td>Plasma, Heparin</td><td></td></tr><tr><td>2</td><td style="white-space:nowrap">&nbsp;&nbsp;plasma-cell-free<a name="SampleMaterialType-plasma-cell-free"> </a></td><td>Plasma, cell free</td><td></td></tr><tr><td>2</td><td style="white-space:nowrap">&nbsp;&nbsp;plasma-other<a name="SampleMaterialType-plasma-other"> </a></td><td>Plasma, other</td><td></td></tr><tr><td>1</td><td style="white-space:nowrap">blood-serum<a name="SampleMaterialType-blood-serum"> </a></td><td>Serum</td><td></td></tr><tr><td>1</td><td style="white-space:nowrap">ascites<a name="SampleMaterialType-ascites"> </a></td><td>Ascites</td><td></td></tr><tr><td>1</td><td style="white-space:nowrap">csf-liquor<a name="SampleMaterialType-csf-liquor"> </a></td><td>CSF/Liquor</td><td></td></tr><tr><td>1</td><td style="white-space:nowrap">saliva<a name="SampleMaterialType-saliva"> </a></td><td>Saliva</td><td></td></tr><tr><td>1</td><td style="white-space:nowrap">stool-faeces<a name="SampleMaterialType-stool-faeces"> </a></td><td>Stool/Faeces</td><td></td></tr><tr><td>1</td><td style="white-space:nowrap">urine<a name="SampleMaterialType-urine"> </a></td><td>Urine</td><td></td></tr><tr><td>1</td><td style="white-space:nowrap">swab<a name="SampleMaterialType-swab"> </a></td><td>Swab</td><td></td></tr><tr><td>1</td><td style="white-space:nowrap">liquid-other<a name="SampleMaterialType-liquid-other"> </a></td><td>Other liquid biosample/storage</td><td></td></tr><tr><td>1</td><td style="white-space:nowrap">tissue-ffpe<a name="SampleMaterialType-tissue-ffpe"> </a></td><td>Tissue FFPE</td><td></td></tr><tr><td>2</td><td style="white-space:nowrap">&nbsp;&nbsp;tumor-tissue-ffpe<a name="SampleMaterialType-tumor-tissue-ffpe"> </a></td><td>Tumor tissue (FFPE)</td><td></td></tr><tr><td>2</td><td style="white-space:nowrap">&nbsp;&nbsp;normal-tissue-ffpe<a name="SampleMaterialType-normal-tissue-ffpe"> </a></td><td>Normal tissue (FFPE)</td><td></td></tr><tr><td>2</td><td style="white-space:nowrap">&nbsp;&nbsp;other-tissue-ffpe<a name="SampleMaterialType-other-tissue-ffpe"> </a></td><td>Other tissue (FFPE)</td><td></td></tr><tr><td>1</td><td style="white-space:nowrap">tissue-frozen<a name="SampleMaterialType-tissue-frozen"> </a></td><td>Tissue frozen</td><td></td></tr><tr><td>2</td><td style="white-space:nowrap">&nbsp;&nbsp;tumor-tissue-frozen<a name="SampleMaterialType-tumor-tissue-frozen"> </a></td><td>Tumor tissue (frozen)</td><td></td></tr><tr><td>2</td><td style="white-space:nowrap">&nbsp;&nbsp;normal-tissue-frozen<a name="SampleMaterialType-normal-tissue-frozen"> </a></td><td>Normal tissue (frozen)</td><td></td></tr><tr><td>2</td><td style="white-space:nowrap">&nbsp;&nbsp;other-tissue-frozen<a name="SampleMaterialType-other-tissue-frozen"> </a></td><td>Other tissue (frozen)</td><td></td></tr><tr><td>1</td><td style="white-space:nowrap">tissue-other<a name="SampleMaterialType-tissue-other"> </a></td><td>Other tissue storage</td><td></td></tr><tr><td>1</td><td style="white-space:nowrap">dna<a name="SampleMaterialType-dna"> </a></td><td>DNA</td><td></td></tr><tr><td>2</td><td style="white-space:nowrap">&nbsp;&nbsp;cf-dna<a name="SampleMaterialType-cf-dna"> </a></td><td>cfDNA</td><td></td></tr><tr><td>2</td><td style="white-space:nowrap">&nbsp;&nbsp;g-dna<a name="SampleMaterialType-g-dna"> </a></td><td>gDNA</td><td></td></tr><tr><td>1</td><td style="white-space:nowrap">rna<a name="SampleMaterialType-rna"> </a></td><td>RNA</td><td></td></tr><tr><td>1</td><td style="white-space:nowrap">derivative-other<a name="SampleMaterialType-derivative-other"> </a></td><td>Other derivative</td><td></td></tr></table></div>
 
   
   
@@ -188,16 +190,26 @@
     </div>  <!-- /container -->
   </div>  <!-- /segment-content -->
 
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
 
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="https://www.bbmri.de">BBMRI.de</a>.  Package de.bbmri.fhir#1.0.1 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, May 8, 2020 11:20+0000">2020-05-08</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="https://www.bbmri.de">BBMRI.de</a>.  Package de.bbmri.fhir#1.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, May 28, 2020 14:12+0000">2020-05-28</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
                  <a style="color: #81BEF7" href="qa.html">QA Report</a>
+| <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Lizenzvertrag" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
           </span>
         </p>
       </div>  <!-- /inner-wrapper -->
@@ -213,7 +225,6 @@
   <!-- Bootstrap core JavaScript
   ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
-  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
   <script type="text/javascript" src="assets/js/respond.min.js"> </script>
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>

@@ -10,14 +10,14 @@
   fhir:Resource.id [ fhir:value "DataCategory"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Data Category</h2><ul><li>Include all codes defined in <a href=\"CodeSystem-DataCategory.html\"><code>https://fhir.bbmri.de/CodeSystem/DataCategory</code></a></li></ul></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"http://hl7.org/fhir/R4/CodeSystem-DataCategory.html\"><code>https://fhir.bbmri.de/CodeSystem/DataCategory</code></a></li></ul></div>"
   ];
   fhir:ValueSet.url [ fhir:value "https://fhir.bbmri.de/ValueSet/DataCategory"];
-  fhir:ValueSet.version [ fhir:value "1.0.1"];
+  fhir:ValueSet.version [ fhir:value "1.1.0"];
   fhir:ValueSet.name [ fhir:value "DataCategory"];
   fhir:ValueSet.title [ fhir:value "Data Category"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2020-05-08T11:20:22+00:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2020-05-28T14:12:37+00:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "BBMRI.de"];
   fhir:ValueSet.contact [
      fhir:index 0;

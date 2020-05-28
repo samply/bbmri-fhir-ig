@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>DE.BBMRI.FHIR\Specimen Quality Reports - TTL Representation - FHIR v4.0.1</title>
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+     
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet"/>
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+  
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/bbmri.de.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+  
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body>
+
+    <style type="text/css">h2{--heading-prefix:"12.60"}
+    h3,h4,h5,h6{--heading-prefix:"12.60"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        
+	<div id="gba-nav">
+	  <a id="gba-logo" no-external="true" href="http://www.bbmri.de">
+	    <img height="80" alt="GBA Logo" src="assets/images/GBN_CMYK_schwarz.png"/>
+	  </a>
+	</div>
+	<div id="buffer">
+	</div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">BBMRI.de/GBA Implementation Guide</span><br/>1.1.0 - Release</p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+    
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+    
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li><a href="index.html">IG Home</a></li>
+  <li><a href="toc.html">Table of Contents</a></li>
+  <li><a href="overview.html">Profile Overview</a></li>
+  <li><a href="howtoJoin.html">How to Join the Sample Locator</a></li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Background<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
+	  <li>
+        <a href="background.html">Overview</a>
+      </li>
+      <li>
+        <a href="mappings.html">Mappings</a>
+      </li>
+	  <li>
+        <a href="referencedIGs.html">Referenced IGs</a>
+      </li>
+      <li>
+        <a href="etlTalent.html">Build ETL with TOS</a>
+      </li>
+      <li>
+        <a href="qualityMeasures.html">Quality Measures</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
+	<li>
+        <a href="support.html">Instructions</a>
+      </li>
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+    </ul>
+  </li>
+  <li><a href="artifacts.html">Artifact Index</a></li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Links<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a target="_blank" href="http://hl7.org/fhir/R4/index.html">FHIR Spec <img src="external.png" style="text-align: baseline"/></a>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->  
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Specimen Quality Reports</b></li>
+        </ul>  
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+    
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">BBMRI.de/GBA Implementation Guide - Local Development build (v1.1.0). See the <a href="https://fhir.bbmri.de/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <a name="root"> </a>
+
+
+  <h2 id="root">: Specimen Quality Reports - TTL Representation</h2>
+  <p>
+    <a href="Library-SpecimenQualityReports.html">(back to description)</a>
+  </p>
+  <p>
+    <a href="Library-SpecimenQualityReports.ttl">Raw ttl</a>
+  </p>
+  
+  
+  
+  <p>
+    <b>Source view</b>
+  </p>
+  
+  <pre class="rdf">
+@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+# - resource -------------------------------------------------------------------
+
+ a fhir:Library;
+  <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot;
+  <a href="http://hl7.org/fhir/R4/library.html#Library.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;SpecimenQualityReports&quot;];
+  <a href="http://hl7.org/fhir/R4/library.html#Library.text">fhir:DomainResource.text</a> [
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: SpecimenQualityReports&lt;/p&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;: &lt;a href=\&quot;https://fhir.bbmri.de/Library/SpecimenQualityReports\&quot;&gt;https://fhir.bbmri.de/Library/SpecimenQualityReports&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;version&lt;/b&gt;: 1.1.0&lt;/p&gt;&lt;p&gt;&lt;b&gt;title&lt;/b&gt;: Specimen Quality Reports&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/library-type logic-library}\&quot;&gt;Logic Library&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;span title=\&quot;Codes: {http://hl7.org/fhir/resource-types Specimen}\&quot;&gt;Specimen&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;date&lt;/b&gt;: May 28, 2020, 2:12:37 PM&lt;/p&gt;&lt;p&gt;&lt;b&gt;publisher&lt;/b&gt;: BBMRI.de&lt;/p&gt;&lt;p&gt;&lt;b&gt;contact&lt;/b&gt;: https://www.bbmri.de,feedback@germanbiobanknode.de&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: This library contains various expressions used in different specimen related quality reports.&lt;/p&gt;&lt;p&gt;&lt;b&gt;content&lt;/b&gt;: , &lt;/p&gt;&lt;/div&gt;&quot;
+  ];
+  <a href="http://hl7.org/fhir/R4/library.html#Library.url">fhir:Library.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://fhir.bbmri.de/Library/SpecimenQualityReports&quot;];
+  <a href="http://hl7.org/fhir/R4/library.html#Library.version">fhir:Library.version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;1.1.0&quot;];
+  <a href="http://hl7.org/fhir/R4/library.html#Library.title">fhir:Library.title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Specimen Quality Reports&quot;];
+  <a href="http://hl7.org/fhir/R4/library.html#Library.status">fhir:Library.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;active&quot;];
+  <a href="http://hl7.org/fhir/R4/library.html#Library.type">fhir:Library.type</a> [
+     <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://terminology.hl7.org/CodeSystem/library-type&quot; ];
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;logic-library&quot; ]     ]
+  ];
+  <a href="http://hl7.org/fhir/R4/library.html#Library.subject[x]">fhir:Library.subjectCodeableConcept</a> [
+     <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/resource-types&quot; ];
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;Specimen&quot; ]     ]
+  ];
+  <a href="http://hl7.org/fhir/R4/library.html#Library.date">fhir:Library.date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2020-05-28T14:12:37+00:00&quot;^^xsd:dateTime];
+  <a href="http://hl7.org/fhir/R4/library.html#Library.publisher">fhir:Library.publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;BBMRI.de&quot;];
+  <a href="http://hl7.org/fhir/R4/library.html#Library.contact">fhir:Library.contact</a> [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+     <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">fhir:ContactDetail.telecom</a> [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">fhir:ContactPoint.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;url&quot; ];
+       <a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">fhir:ContactPoint.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;https://www.bbmri.de&quot; ]     ], [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">fhir:ContactPoint.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;email&quot; ];
+       <a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">fhir:ContactPoint.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;feedback@germanbiobanknode.de&quot; ]     ]
+  ];
+  <a href="http://hl7.org/fhir/R4/library.html#Library.description">fhir:Library.description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:value</a> &quot;This library contains various expressions used in different specimen related quality reports.&quot;];
+  <a href="http://hl7.org/fhir/R4/library.html#Library.content">fhir:Library.content</a> [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Attachment#Attachment.contentType">fhir:Attachment.contentType</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;text/cql&quot; ];
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Attachment#Attachment.data">fhir:Attachment.data</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#base64Binary">fhir:value</a> &quot;bGlicmFyeSBSZXRyaWV2ZQp1c2luZyBGSElSIHZlcnNpb24gJzQuMC4wJwppbmNsdWRlIEZISVJIZWxwZXJzIHZlcnNpb24gJzQuMC4wJwoKY29udGV4dCBTcGVjaW1lbgoKZGVmaW5lIEluSW5pdGlhbFBvcHVsYXRpb246CiAgdHJ1ZQoKZGVmaW5lIEZpcnN0U2FtcGxlTWF0ZXJpYWxUeXBlOgogIEZpcnN0KGZyb20gU3BlY2ltZW4udHlwZS5jb2RpbmcgQwogICAgd2hlcmUgQy5zeXN0ZW0gPSAnaHR0cHM6Ly9maGlyLmJibXJpLmRlL0NvZGVTeXN0ZW0vU2FtcGxlTWF0ZXJpYWxUeXBlJwogICAgcmV0dXJuIEMuY29kZSkKCmRlZmluZSBOdW1iZXJPZlNhbXBsZU1hdGVyaWFsVHlwZXM6CiAgQ291bnQoZnJvbSBTcGVjaW1lbi50eXBlLmNvZGluZyBDCiAgICB3aGVyZSBDLnN5c3RlbSA9ICdodHRwczovL2ZoaXIuYmJtcmkuZGUvQ29kZVN5c3RlbS9TYW1wbGVNYXRlcmlhbFR5cGUnCiAgICByZXR1cm4gQy5jb2RlKQoKZGVmaW5lIENvbGxlY3RlZFllYXI6CiAgeWVhciBmcm9tIEZISVJIZWxwZXJzLlRvRGF0ZVRpbWUoU3BlY2ltZW4uY29sbGVjdGlvbi5jb2xsZWN0ZWQpCgpkZWZpbmUgQ29sbGVjdGVkTW9udGg6CiAgbW9udGggZnJvbSBGSElSSGVscGVycy5Ub0RhdGVUaW1lKFNwZWNpbWVuLmNvbGxlY3Rpb24uY29sbGVjdGVkKQoKZGVmaW5lIENvbGxlY3RlZERheToKICBkYXkgZnJvbSBGSElSSGVscGVycy5Ub0RhdGVUaW1lKFNwZWNpbWVuLmNvbGxlY3Rpb24uY29sbGVjdGVkKQoKZGVmaW5lIENvbGxlY3RlZEhvdXI6CiAgaG91ciBmcm9tIEZISVJIZWxwZXJzLlRvRGF0ZVRpbWUoU3BlY2ltZW4uY29sbGVjdGlvbi5jb2xsZWN0ZWQpCgpkZWZpbmUgU3RvcmFnZVRlbXBlcmF0dXJlQ29kaW5nczoKICBmbGF0dGVuCiAgICBmcm9tIFNwZWNpbWVuLmV4dGVuc2lvbiBFCiAgICAgIHdoZXJlIEUudXJsID0gJ2h0dHBzOi8vZmhpci5iYm1yaS5kZS9TdHJ1Y3R1cmVEZWZpbml0aW9uL1N0b3JhZ2VUZW1wZXJhdHVyZScKICAgICAgcmV0dXJuIEUudmFsdWUuY29kaW5nCgpkZWZpbmUgU3RvcmFnZVRlbXBlcmF0dXJlQ29kZXM6CiAgQ29tYmluZShmcm9tIFN0b3JhZ2VUZW1wZXJhdHVyZUNvZGluZ3MgQwogICAgd2hlcmUgQy5zeXN0ZW0gPSAnaHR0cHM6Ly9maGlyLmJibXJpLmRlL0NvZGVTeXN0ZW0vU3RvcmFnZVRlbXBlcmF0dXJlJwogICAgcmV0dXJuIEMuY29kZSwgJywgJykKCmRlZmluZSBOdW1iZXJPZlN0b3JhZ2VUZW1wZXJhdHVyZUNvZGVzOgogIENvdW50KGZyb20gU3RvcmFnZVRlbXBlcmF0dXJlQ29kaW5ncyBDCiAgICB3aGVyZSBDLnN5c3RlbSA9ICdodHRwczovL2ZoaXIuYmJtcmkuZGUvQ29kZVN5c3RlbS9TdG9yYWdlVGVtcGVyYXR1cmUnKQoKZGVmaW5lIFNhbXBsZURpYWdub3Npc0NvZGluZ3M6CiAgZmxhdHRlbgogICAgZnJvbSBTcGVjaW1lbi5leHRlbnNpb24gRQogICAgd2hlcmUgRS51cmwgPSAnaHR0cHM6Ly9maGlyLmJibXJpLmRlL1N0cnVjdHVyZURlZmluaXRpb24vU2FtcGxlRGlhZ25vc2lzJwogICAgcmV0dXJuIEUudmFsdWUuY29kaW5nCgpkZWZpbmUgU2FtcGxlRGlhZ25vc2lzSUNEMTBDb2RlczoKICBDb21iaW5lKGZyb20gU2FtcGxlRGlhZ25vc2lzQ29kaW5ncyBDCiAgICB3aGVyZSBDLnN5c3RlbSA9ICdodHRwOi8vaGw3Lm9yZy9maGlyL3NpZC9pY2QtMTAnCiAgICByZXR1cm4gQy5jb2RlLCAnLCAnKQoKZGVmaW5lIE51bWJlck9mU2FtcGxlRGlhZ25vc2VzSUNEMTBDb2RlczoKICBDb3VudChmcm9tIFNhbXBsZURpYWdub3Npc0NvZGluZ3MgQwogICAgd2hlcmUgQy5zeXN0ZW0gPSAnaHR0cDovL2hsNy5vcmcvZmhpci9zaWQvaWNkLTEwJykKCmRlZmluZSBTYW1wbGVEaWFnbm9zaXNJQ0QxMEdNQ29kZXM6CiAgQ29tYmluZShmcm9tIFNhbXBsZURpYWdub3Npc0NvZGluZ3MgQwogICAgd2hlcmUgQy5zeXN0ZW0gPSAnaHR0cDovL2ZoaXIuZGUvQ29kZVN5c3RlbS9kaW1kaS9pY2QtMTAtZ20nCiAgICByZXR1cm4gQy5jb2RlLCAnLCAnKQoKZGVmaW5lIE51bWJlck9mU2FtcGxlRGlhZ25vc2VzSUNEMTBHTUNvZGVzOgogIENvdW50KGZyb20gU2FtcGxlRGlhZ25vc2lzQ29kaW5ncyBDCiAgICB3aGVyZSBDLnN5c3RlbSA9ICdodHRwOi8vZmhpci5kZS9Db2RlU3lzdGVtL2RpbWRpL2ljZC0xMC1nbScpCgpkZWZpbmUgQm9keVNpdGVDb2RlczoKICBDb21iaW5lKGZyb20gU3BlY2ltZW4uY29sbGVjdGlvbi5ib2R5U2l0ZS5jb2RpbmcgQwogICAgd2hlcmUgQy5zeXN0ZW0gPSAndXJuOm9pZDoxLjMuNi4xLjQuMS4xOTM3Ni4xLjMuMTEuMzYnCiAgICByZXR1cm4gQy5jb2RlLCAnLCAnKQoKZGVmaW5lIE51bWJlck9mQm9keVNpdGVDb2RlczoKICBDb3VudChmcm9tIFNwZWNpbWVuLmNvbGxlY3Rpb24uYm9keVNpdGUuY29kaW5nIEMKICAgIHdoZXJlIEMuc3lzdGVtID0gJ3VybjpvaWQ6MS4zLjYuMS40LjEuMTkzNzYuMS4zLjExLjM2JykK&quot;^^xsd:base64Binary ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1;
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Attachment#Attachment.contentType">fhir:Attachment.contentType</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;application/elm+xml&quot; ]
+  ].
+
+# - ontology header ------------------------------------------------------------
+
+ a owl:Ontology;
+  owl:imports fhir:fhir.ttl.
+
+</pre>
+
+
+
+  
+  
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="https://www.bbmri.de">BBMRI.de</a>.  Package de.bbmri.fhir#1.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, May 28, 2020 14:12+0000">2020-05-28</span>
+          <br/>
+          <span style="color: #FFFF77">
+                      Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
+                 <a style="color: #81BEF7" href="qa.html">QA Report</a>
+| <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Lizenzvertrag" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>

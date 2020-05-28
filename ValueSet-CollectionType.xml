@@ -3,14 +3,14 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="CollectionType"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>Collection Type</h2><ul><li>Include all codes defined in <a href="CodeSystem-CollectionType.html"><code>https://fhir.bbmri.de/CodeSystem/CollectionType</code></a></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="http://hl7.org/fhir/R4/CodeSystem-CollectionType.html"><code>https://fhir.bbmri.de/CodeSystem/CollectionType</code></a></li></ul></div>
   </text>
   <url value="https://fhir.bbmri.de/ValueSet/CollectionType"/>
-  <version value="1.0.1"/>
+  <version value="1.1.0"/>
   <name value="CollectionType"/>
   <title value="Collection Type"/>
   <status value="active"/>
-  <date value="2020-05-08T11:20:22+00:00"/>
+  <date value="2020-05-28T14:12:37+00:00"/>
   <publisher value="BBMRI.de"/>
   <contact>
     <telecom>

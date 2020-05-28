@@ -1,0 +1,54 @@
+{
+  "resourceType": "Library",
+  "id": "SpecimenQualityReports",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>id</b>: SpecimenQualityReports</p><p><b>url</b>: <a href=\"https://fhir.bbmri.de/Library/SpecimenQualityReports\">https://fhir.bbmri.de/Library/SpecimenQualityReports</a></p><p><b>version</b>: 1.1.0</p><p><b>title</b>: Specimen Quality Reports</p><p><b>status</b>: active</p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/library-type logic-library}\">Logic Library</span></p><p><b>subject</b>: <span title=\"Codes: {http://hl7.org/fhir/resource-types Specimen}\">Specimen</span></p><p><b>date</b>: May 28, 2020, 2:12:37 PM</p><p><b>publisher</b>: BBMRI.de</p><p><b>contact</b>: https://www.bbmri.de,feedback@germanbiobanknode.de</p><p><b>description</b>: This library contains various expressions used in different specimen related quality reports.</p><p><b>content</b>: , </p></div>"
+  },
+  "url": "https://fhir.bbmri.de/Library/SpecimenQualityReports",
+  "version": "1.1.0",
+  "title": "Specimen Quality Reports",
+  "status": "active",
+  "type": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/library-type",
+        "code": "logic-library"
+      }
+    ]
+  },
+  "subjectCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/resource-types",
+        "code": "Specimen"
+      }
+    ]
+  },
+  "date": "2020-05-28T14:12:37+00:00",
+  "publisher": "BBMRI.de",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.bbmri.de"
+        },
+        {
+          "system": "email",
+          "value": "feedback@germanbiobanknode.de"
+        }
+      ]
+    }
+  ],
+  "description": "This library contains various expressions used in different specimen related quality reports.",
+  "content": [
+    {
+      "contentType": "text/cql",
+      "data": "bGlicmFyeSBSZXRyaWV2ZQp1c2luZyBGSElSIHZlcnNpb24gJzQuMC4wJwppbmNsdWRlIEZISVJIZWxwZXJzIHZlcnNpb24gJzQuMC4wJwoKY29udGV4dCBTcGVjaW1lbgoKZGVmaW5lIEluSW5pdGlhbFBvcHVsYXRpb246CiAgdHJ1ZQoKZGVmaW5lIEZpcnN0U2FtcGxlTWF0ZXJpYWxUeXBlOgogIEZpcnN0KGZyb20gU3BlY2ltZW4udHlwZS5jb2RpbmcgQwogICAgd2hlcmUgQy5zeXN0ZW0gPSAnaHR0cHM6Ly9maGlyLmJibXJpLmRlL0NvZGVTeXN0ZW0vU2FtcGxlTWF0ZXJpYWxUeXBlJwogICAgcmV0dXJuIEMuY29kZSkKCmRlZmluZSBOdW1iZXJPZlNhbXBsZU1hdGVyaWFsVHlwZXM6CiAgQ291bnQoZnJvbSBTcGVjaW1lbi50eXBlLmNvZGluZyBDCiAgICB3aGVyZSBDLnN5c3RlbSA9ICdodHRwczovL2ZoaXIuYmJtcmkuZGUvQ29kZVN5c3RlbS9TYW1wbGVNYXRlcmlhbFR5cGUnCiAgICByZXR1cm4gQy5jb2RlKQoKZGVmaW5lIENvbGxlY3RlZFllYXI6CiAgeWVhciBmcm9tIEZISVJIZWxwZXJzLlRvRGF0ZVRpbWUoU3BlY2ltZW4uY29sbGVjdGlvbi5jb2xsZWN0ZWQpCgpkZWZpbmUgQ29sbGVjdGVkTW9udGg6CiAgbW9udGggZnJvbSBGSElSSGVscGVycy5Ub0RhdGVUaW1lKFNwZWNpbWVuLmNvbGxlY3Rpb24uY29sbGVjdGVkKQoKZGVmaW5lIENvbGxlY3RlZERheToKICBkYXkgZnJvbSBGSElSSGVscGVycy5Ub0RhdGVUaW1lKFNwZWNpbWVuLmNvbGxlY3Rpb24uY29sbGVjdGVkKQoKZGVmaW5lIENvbGxlY3RlZEhvdXI6CiAgaG91ciBmcm9tIEZISVJIZWxwZXJzLlRvRGF0ZVRpbWUoU3BlY2ltZW4uY29sbGVjdGlvbi5jb2xsZWN0ZWQpCgpkZWZpbmUgU3RvcmFnZVRlbXBlcmF0dXJlQ29kaW5nczoKICBmbGF0dGVuCiAgICBmcm9tIFNwZWNpbWVuLmV4dGVuc2lvbiBFCiAgICAgIHdoZXJlIEUudXJsID0gJ2h0dHBzOi8vZmhpci5iYm1yaS5kZS9TdHJ1Y3R1cmVEZWZpbml0aW9uL1N0b3JhZ2VUZW1wZXJhdHVyZScKICAgICAgcmV0dXJuIEUudmFsdWUuY29kaW5nCgpkZWZpbmUgU3RvcmFnZVRlbXBlcmF0dXJlQ29kZXM6CiAgQ29tYmluZShmcm9tIFN0b3JhZ2VUZW1wZXJhdHVyZUNvZGluZ3MgQwogICAgd2hlcmUgQy5zeXN0ZW0gPSAnaHR0cHM6Ly9maGlyLmJibXJpLmRlL0NvZGVTeXN0ZW0vU3RvcmFnZVRlbXBlcmF0dXJlJwogICAgcmV0dXJuIEMuY29kZSwgJywgJykKCmRlZmluZSBOdW1iZXJPZlN0b3JhZ2VUZW1wZXJhdHVyZUNvZGVzOgogIENvdW50KGZyb20gU3RvcmFnZVRlbXBlcmF0dXJlQ29kaW5ncyBDCiAgICB3aGVyZSBDLnN5c3RlbSA9ICdodHRwczovL2ZoaXIuYmJtcmkuZGUvQ29kZVN5c3RlbS9TdG9yYWdlVGVtcGVyYXR1cmUnKQoKZGVmaW5lIFNhbXBsZURpYWdub3Npc0NvZGluZ3M6CiAgZmxhdHRlbgogICAgZnJvbSBTcGVjaW1lbi5leHRlbnNpb24gRQogICAgd2hlcmUgRS51cmwgPSAnaHR0cHM6Ly9maGlyLmJibXJpLmRlL1N0cnVjdHVyZURlZmluaXRpb24vU2FtcGxlRGlhZ25vc2lzJwogICAgcmV0dXJuIEUudmFsdWUuY29kaW5nCgpkZWZpbmUgU2FtcGxlRGlhZ25vc2lzSUNEMTBDb2RlczoKICBDb21iaW5lKGZyb20gU2FtcGxlRGlhZ25vc2lzQ29kaW5ncyBDCiAgICB3aGVyZSBDLnN5c3RlbSA9ICdodHRwOi8vaGw3Lm9yZy9maGlyL3NpZC9pY2QtMTAnCiAgICByZXR1cm4gQy5jb2RlLCAnLCAnKQoKZGVmaW5lIE51bWJlck9mU2FtcGxlRGlhZ25vc2VzSUNEMTBDb2RlczoKICBDb3VudChmcm9tIFNhbXBsZURpYWdub3Npc0NvZGluZ3MgQwogICAgd2hlcmUgQy5zeXN0ZW0gPSAnaHR0cDovL2hsNy5vcmcvZmhpci9zaWQvaWNkLTEwJykKCmRlZmluZSBTYW1wbGVEaWFnbm9zaXNJQ0QxMEdNQ29kZXM6CiAgQ29tYmluZShmcm9tIFNhbXBsZURpYWdub3Npc0NvZGluZ3MgQwogICAgd2hlcmUgQy5zeXN0ZW0gPSAnaHR0cDovL2ZoaXIuZGUvQ29kZVN5c3RlbS9kaW1kaS9pY2QtMTAtZ20nCiAgICByZXR1cm4gQy5jb2RlLCAnLCAnKQoKZGVmaW5lIE51bWJlck9mU2FtcGxlRGlhZ25vc2VzSUNEMTBHTUNvZGVzOgogIENvdW50KGZyb20gU2FtcGxlRGlhZ25vc2lzQ29kaW5ncyBDCiAgICB3aGVyZSBDLnN5c3RlbSA9ICdodHRwOi8vZmhpci5kZS9Db2RlU3lzdGVtL2RpbWRpL2ljZC0xMC1nbScpCgpkZWZpbmUgQm9keVNpdGVDb2RlczoKICBDb21iaW5lKGZyb20gU3BlY2ltZW4uY29sbGVjdGlvbi5ib2R5U2l0ZS5jb2RpbmcgQwogICAgd2hlcmUgQy5zeXN0ZW0gPSAndXJuOm9pZDoxLjMuNi4xLjQuMS4xOTM3Ni4xLjMuMTEuMzYnCiAgICByZXR1cm4gQy5jb2RlLCAnLCAnKQoKZGVmaW5lIE51bWJlck9mQm9keVNpdGVDb2RlczoKICBDb3VudChmcm9tIFNwZWNpbWVuLmNvbGxlY3Rpb24uYm9keVNpdGUuY29kaW5nIEMKICAgIHdoZXJlIEMuc3lzdGVtID0gJ3VybjpvaWQ6MS4zLjYuMS40LjEuMTkzNzYuMS4zLjExLjM2JykK"
+    },
+    {
+      "contentType": "application/elm+xml"
+    }
+  ]
+}

@@ -52,7 +52,7 @@
 	</div>
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">BBMRI.de/GBA Implementation Guide</span><br/>1.0.1 - Release</p>
+          <p><span style="font-size:12pt;font-weight:bold">BBMRI.de/GBA Implementation Guide</span><br/>1.1.0 - Release</p>
         </div>
       </div>   <!-- /container -->
     </div>    <!-- /segment-header -->
@@ -82,7 +82,7 @@
       </b>
     </a>
     <ul class="dropdown-menu">
-	<li>
+	  <li>
         <a href="background.html">Overview</a>
       </li>
       <li>
@@ -91,8 +91,11 @@
 	  <li>
         <a href="referencedIGs.html">Referenced IGs</a>
       </li>
-    <li>
+      <li>
         <a href="etlTalent.html">Build ETL with TOS</a>
+      </li>
+      <li>
+        <a href="qualityMeasures.html">Quality Measures</a>
       </li>
     </ul>
   </li>
@@ -120,7 +123,7 @@
       </li>
     </ul>
   </li>
-</ul>      
+</ul>
 
             </div>    <!-- /.nav-collapse -->
           </div>    <!-- /.container -->
@@ -149,7 +152,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">BBMRI.de/GBA Implementation Guide - Local Development build (v1.0.1). See the <a href="https://fhir.bbmri.de/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+    <!-- ReleaseHeader --><p id="publish-box">BBMRI.de/GBA Implementation Guide - Local Development build (v1.1.0). See the <a href="https://fhir.bbmri.de/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   <h2>Support</h2>
   
   
@@ -181,13 +184,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p><strong>B2.2 Unzip the profiles.</strong> In this example, we assume the resulting folder is called <em>bbmri.de</em>.</p>
 
-<p><a name="bc503952-c674-46ca-9fd2-be7ec2f54426">​</a><strong>4. Download the dependencies.</strong> The BBMRI.de IG depends on some items from the International Patient Summary, so download the package from <a href="http://hl7.org/fhir/uv/ips/2019Sep/validator.pack">here</a> and save it e.g. as <em>IPS.pack</em> next to the BBMRI.de validator pack / folder with the BBMRI.de profiles. If you are using ICD-10-GM Codings in your Conditions, you also need <a href="https://simplifier.net/basisprofil-de-r4/codingicd10gm">this</a> profile from the Deutsche Basisprofile. The JSON File can just be added to the BBMRI.de folder or saved next to the validator pack.</p>
+<p><a name="cf63505e-8ece-4f55-8877-c53cdce361e2">​</a><strong>4. Download the dependencies.</strong> The BBMRI.de IG depends on some items from the International Patient Summary, so download the package from <a href="http://hl7.org/fhir/uv/ips/2019Sep/validator.pack">here</a> and save it e.g. as <em>IPS.pack</em> next to the BBMRI.de validator pack / folder with the BBMRI.de profiles. If you are using ICD-10-GM Codings in your Conditions, you also need <a href="https://simplifier.net/basisprofil-de-r4/codingicd10gm">this</a> profile from the Deutsche Basisprofile. The JSON File can just be added to the BBMRI.de folder or saved next to the validator pack.</p>
 
 <p><strong>5. Move the resources you want to validate into one single, flat directory.</strong> Every resource should be its own, meaningfully named JSON file. Files in subfolders will not be validated (this feature might be added in future validator releases).</p>
 
-<p><strong>A6. Run the validator using the validator pack.</strong> Assuming you re-named the original validator JAR to <em>validator.jar</em>, placed it in the same directory as the <em>BBMRI.de.pack</em>, the <em>IPS.pack</em> and optionally the <em>CodingICD10GM.json</em> file, and have your resources in a subfolder named <em>resources</em>, use the command <code class="highlighter-rouge">java -jar validator.jar -version 4.0.1 -ig IPS.pack -ig bbmri.de.pack -ig CodingICD10GM.json resources</code>.</p>
+<p><strong>A6. Run the validator using the validator pack.</strong> Assuming you re-named the original validator JAR to <em>validator.jar</em>, placed it in the same directory as the <em>BBMRI.de.pack</em>, the <em>IPS.pack</em> and optionally the <em>CodingICD10GM.json</em> file, and have your resources in a subfolder named <em>resources</em>, use the command <code class="language-plaintext highlighter-rouge">java -jar validator.jar -version 4.0.1 -ig IPS.pack -ig bbmri.de.pack -ig CodingICD10GM.json resources</code>.</p>
 
-<p><strong>B6. Run the validator using JSON profiles.</strong> Assuming you re-named the original validator JAR to <em>validator.jar</em>, placed it in the same directory as the folder bbmri.de containing the profiles and the <em>IPS.pack</em>, and have your resources in a subfolder named <em>resources</em>, use the command <code class="highlighter-rouge">java -jar validator.jar -version 4.0.0 -ig IPS.pack -ig bbmri.de resources</code>.</p>
+<p><strong>B6. Run the validator using JSON profiles.</strong> Assuming you re-named the original validator JAR to <em>validator.jar</em>, placed it in the same directory as the folder bbmri.de containing the profiles and the <em>IPS.pack</em>, and have your resources in a subfolder named <em>resources</em>, use the command <code class="language-plaintext highlighter-rouge">java -jar validator.jar -version 4.0.0 -ig IPS.pack -ig bbmri.de resources</code>.</p>
 
 <p><strong>7. Look at the output log.</strong> FAILURE indicates an error that has to be fixed, while WARNINGS indicate problems that are sometimes the result of conscious decisions, like choosing an external code for a field with a preferred ValueSet binding. Other warnings may be caused by the validator failing to find a ValueSet or CodeSystem and therefore being unable to validate a certain code. Still, warnings should always be examined to assure that their causes are intended features or validator faults and not implementer oversights.</p>
 
@@ -223,16 +226,26 @@ External references on the other hand need to be absolute, resolveable URLs.</p>
     </div>    <!-- /container -->
   </div>    <!-- /segment-content -->
 
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
 
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
   <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="https://www.bbmri.de">BBMRI.de</a>.  Package de.bbmri.fhir#1.0.1 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, May 8, 2020 11:20+0000">2020-05-08</span>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="https://www.bbmri.de">BBMRI.de</a>.  Package de.bbmri.fhir#1.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, May 28, 2020 14:12+0000">2020-05-28</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
                  <a style="color: #81BEF7" href="qa.html">QA Report</a>
+| <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" alt="Creative Commons Lizenzvertrag" style="border-width:0"/></a>
           </span>
         </p>
       </div>    <!-- /inner-wrapper -->
@@ -248,7 +261,6 @@ External references on the other hand need to be absolute, resolveable URLs.</p>
     <!-- Bootstrap core JavaScript
   ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
   <script src="assets/js/respond.min.js" type="text/javascript"> </script>
   <script src="assets/js/anchor.min.js" type="text/javascript"> </script>

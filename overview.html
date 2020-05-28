@@ -52,7 +52,7 @@
 	</div>
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">BBMRI.de/GBA Implementation Guide</span><br/>1.0.1 - Release</p>
+          <p><span style="font-size:12pt;font-weight:bold">BBMRI.de/GBA Implementation Guide</span><br/>1.1.0 - Release</p>
         </div>
       </div> <!-- /container -->
     </div>  <!-- /segment-header -->
@@ -82,7 +82,7 @@
       </b>
     </a>
     <ul class="dropdown-menu">
-	<li>
+	  <li>
         <a href="background.html">Overview</a>
       </li>
       <li>
@@ -91,8 +91,11 @@
 	  <li>
         <a href="referencedIGs.html">Referenced IGs</a>
       </li>
-    <li>
+      <li>
         <a href="etlTalent.html">Build ETL with TOS</a>
+      </li>
+      <li>
+        <a href="qualityMeasures.html">Quality Measures</a>
       </li>
     </ul>
   </li>
@@ -120,7 +123,7 @@
       </li>
     </ul>
   </li>
-</ul>      
+</ul>
 
             </div>  <!-- /.nav-collapse -->
           </div>  <!-- /.container -->
@@ -149,7 +152,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">BBMRI.de/GBA Implementation Guide - Local Development build (v1.0.1). See the <a href="https://fhir.bbmri.de/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">BBMRI.de/GBA Implementation Guide - Local Development build (v1.1.0). See the <a href="https://fhir.bbmri.de/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Overview</h2>
   
   
@@ -173,31 +176,31 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p><img src="GBA-DatamodellFHIR_V05.png" alt="Overview profiles" /></p>
 
-<h3 id="biobank">Biobank</h3>
+<h3 id="biobank"><a href="StructureDefinition-Biobank.html">Biobank</a></h3>
 <p>A Biobank. Designed to contain all information necessary to populate a BBMRI Directory biobank entry, see Mappings page. Note that two contact slices exist, one for the biobank head (which only requires a name and no actual contact information) and one for the actual endpoint researches should contact for inquiries about data and samples (which requires an email address and a county, but does not require a name, although it should be provided where available).</p>
 
-<h3 id="collection">Collection</h3>
+<h3 id="collection"><a href="StructureDefinition-Collection.html">Collection</a></h3>
 <p>A Collection within a Biobank. Designed to contain all information necessary to populate a BBMRI Directory collection entry, see Mappings page. The contact is structured as described in the Biobank section.</p>
 
-<h3 id="networkmembership">NetworkMembership</h3>
+<h3 id="networkmembership"><a href="StructureDefinition-NetworkMembership.html">NetworkMembership</a></h3>
 <p>Used to describe a Biobank’s membership in a Biobank Network (used to fill the BBMRI directory). The biobank is the <em>participatingOrganization</em> and should be referenced as a FHIR resource, the <em>organization</em> is the network and can be referenced without creating a FHIR resource by using its BBMRI ID in the <em>reference.identifier</em> field.</p>
 
-<h3 id="patient">Patient</h3>
+<h3 id="patient"><a href="StructureDefinition-Patient.html">Patient</a></h3>
 <p>The birth date may be truncated to year in order to provide anonymity. While gender is defined in FHIR as the administrative gender, in some contexts this may contain/be read as the biological sex. Since most Biobanks only store a single value anyway, we do not differentiate between aspects of sex/gender, for more information see https://www.hl7.org/fhir/patient.html#gender. For deceased patients, <em>deceased</em> shall contain the date and time of death, although the precision may vary, e.g. only a date may be provided.</p>
 
-<h3 id="causeofdeath">CauseOfDeath</h3>
+<h3 id="causeofdeath"><a href="StructureDefinition-CauseOfDeath.html">CauseOfDeath</a></h3>
 <p>This resource captures the ICD-10 coded cause of death for deceased patients.</p>
 
-<h3 id="tobaccouse">TobaccoUse</h3>
+<h3 id="tobaccouse"><a href="StructureDefinition-TobaccoUse.html">TobaccoUse</a></h3>
 <p>TobaccoUse captures the smoking status of a patient at a given time. While the time of observation should be provided in <em>effective</em>, this field may be empty if no such information is available, although this highly reduces the value of this information since it can no longer be sufficiently linked to a specific sample.</p>
 
-<h3 id="condition">Condition</h3>
+<h3 id="condition"><a href="StructureDefinition-Condition.html">Condition</a></h3>
 <p>Contains an ICD-10 coded diagnosis for a patient. If possible, the onset date should be documented in <em>onset</em>. If only the system entry time is provided, it should be stored in <em>recordedDate</em> and will be used as a substitute. Systems may also populate the <em>abatement</em> field which will allow researches advanced temporal queries in future releases.</p>
 
-<h3 id="bmi-bodyheight-and-bodyweight">BMI, BodyHeight and BodyWeight</h3>
+<h3 id="bmi-bodyheight-and-bodyweight"><a href="StructureDefinition-Bmi.html">BMI</a>, <a href="StructureDefinition-BodyHeight.html">BodyHeight</a> and <a href="StructureDefinition-BodyWeight.html">BodyWeight</a></h3>
 <p>BodyHeight and BodyWeight may be used to calculate the appropriate value for BMI, although currently no validation of this calculation takes place. While the time of observation should be provided in <em>effective</em>, this field may be empty if no such information is available, although this highly reduces the value of this information since it can no longer be sufficiently linked to a specific sample.</p>
 
-<h3 id="specimen">Specimen</h3>
+<h3 id="specimen"><a href="StructureDefinition-Specimen.html">Specimen</a></h3>
 <p>Contains information related to a sample.</p>
 
 
@@ -207,16 +210,26 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     </div>  <!-- /container -->
   </div>  <!-- /segment-content -->
 
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
 
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="https://www.bbmri.de">BBMRI.de</a>.  Package de.bbmri.fhir#1.0.1 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, May 8, 2020 11:20+0000">2020-05-08</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="https://www.bbmri.de">BBMRI.de</a>.  Package de.bbmri.fhir#1.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, May 28, 2020 14:12+0000">2020-05-28</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
                  <a style="color: #81BEF7" href="qa.html">QA Report</a>
+| <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Lizenzvertrag" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
           </span>
         </p>
       </div>  <!-- /inner-wrapper -->
@@ -232,7 +245,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <!-- Bootstrap core JavaScript
   ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
-  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
   <script type="text/javascript" src="assets/js/respond.min.js"> </script>
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>

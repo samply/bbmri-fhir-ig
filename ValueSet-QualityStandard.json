@@ -3,14 +3,14 @@
   "id": "QualityStandard",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Quality Standard</h2><ul><li>Include all codes defined in <a href=\"CodeSystem-QualityStandard.html\"><code>https://fhir.bbmri.de/CodeSystem/QualityStandard</code></a></li></ul></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"http://hl7.org/fhir/R4/CodeSystem-QualityStandard.html\"><code>https://fhir.bbmri.de/CodeSystem/QualityStandard</code></a></li></ul></div>"
   },
   "url": "https://fhir.bbmri.de/ValueSet/QualityStandard",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "name": "QualityStandard",
   "title": "Quality Standard",
   "status": "active",
-  "date": "2020-05-08T11:20:22+00:00",
+  "date": "2020-05-28T14:12:37+00:00",
   "publisher": "BBMRI.de",
   "contact": [
     {

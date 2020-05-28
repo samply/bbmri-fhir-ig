@@ -10,14 +10,14 @@
   fhir:Resource.id [ fhir:value "StorageTemperature"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Storage Temperature</h2><p>This code system https://fhir.bbmri.de/CodeSystem/StorageTemperature defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">temperature2to10<a name=\"StorageTemperature-temperature2to10\"> </a></td><td>Degrees Celsius 2 to 10</td><td/></tr><tr><td style=\"white-space:nowrap\">temperature-18to-35<a name=\"StorageTemperature-temperature-18to-35\"> </a></td><td>Degrees Celsius -18 to -35</td><td/></tr><tr><td style=\"white-space:nowrap\">temperature-60to-85<a name=\"StorageTemperature-temperature-60to-85\"> </a></td><td>Degrees Celsius -60 to -85</td><td/></tr><tr><td style=\"white-space:nowrap\">temperatureGN<a name=\"StorageTemperature-temperatureGN\"> </a></td><td>Gaseous nitrogen</td><td/></tr><tr><td style=\"white-space:nowrap\">temperatureLN<a name=\"StorageTemperature-temperatureLN\"> </a></td><td>Liquid nitrogen</td><td/></tr><tr><td style=\"white-space:nowrap\">temperatureRoom<a name=\"StorageTemperature-temperatureRoom\"> </a></td><td>Room temperature</td><td/></tr><tr><td style=\"white-space:nowrap\">temperatureOther<a name=\"StorageTemperature-temperatureOther\"> </a></td><td>Other storage temperature</td><td/></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://fhir.bbmri.de/CodeSystem/StorageTemperature defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">temperature2to10<a name=\"StorageTemperature-temperature2to10\"> </a></td><td>Degrees Celsius 2 to 10</td><td/></tr><tr><td style=\"white-space:nowrap\">temperature-18to-35<a name=\"StorageTemperature-temperature-18to-35\"> </a></td><td>Degrees Celsius -18 to -35</td><td/></tr><tr><td style=\"white-space:nowrap\">temperature-60to-85<a name=\"StorageTemperature-temperature-60to-85\"> </a></td><td>Degrees Celsius -60 to -85</td><td/></tr><tr><td style=\"white-space:nowrap\">temperatureGN<a name=\"StorageTemperature-temperatureGN\"> </a></td><td>Gaseous nitrogen</td><td/></tr><tr><td style=\"white-space:nowrap\">temperatureLN<a name=\"StorageTemperature-temperatureLN\"> </a></td><td>Liquid nitrogen</td><td/></tr><tr><td style=\"white-space:nowrap\">temperatureRoom<a name=\"StorageTemperature-temperatureRoom\"> </a></td><td>Room temperature</td><td/></tr><tr><td style=\"white-space:nowrap\">temperatureOther<a name=\"StorageTemperature-temperatureOther\"> </a></td><td>Other storage temperature</td><td/></tr></table></div>"
   ];
   fhir:CodeSystem.url [ fhir:value "https://fhir.bbmri.de/CodeSystem/StorageTemperature"];
-  fhir:CodeSystem.version [ fhir:value "1.0.1"];
+  fhir:CodeSystem.version [ fhir:value "1.1.0"];
   fhir:CodeSystem.name [ fhir:value "StorageTemperature"];
   fhir:CodeSystem.title [ fhir:value "Storage Temperature"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2020-05-08T11:20:22+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2020-05-28T14:12:37+00:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "BBMRI.de"];
   fhir:CodeSystem.contact [
      fhir:index 0;

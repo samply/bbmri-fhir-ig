@@ -1,0 +1,196 @@
+{
+  "resourceType": "Measure",
+  "id": "SpecimenQualityReports",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>id</b>: SpecimenQualityReports</p><p><b>url</b>: <a href=\"https://fhir.bbmri.de/Measure/SpecimenQualityReports\">https://fhir.bbmri.de/Measure/SpecimenQualityReports</a></p><p><b>version</b>: 1.1.0</p><p><b>title</b>: Specimen Quality Reports</p><p><b>status</b>: draft</p><p><b>subject</b>: <span title=\"Codes: {http://hl7.org/fhir/resource-types Specimen}\">Specimen</span></p><p><b>date</b>: May 28, 2020, 2:12:37 PM</p><p><b>publisher</b>: BBMRI.de</p><p><b>contact</b>: https://www.bbmri.de,feedback@germanbiobanknode.de</p><p><b>description</b>: This measure contains various specimen related stratifiers to help to evaluate data quality.</p><p><b>library</b>: <a href=\"https://fhir.bbmri.de/Library/SpecimenQualityReports\">https://fhir.bbmri.de/Library/SpecimenQualityReports</a></p><p><b>scoring</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-scoring cohort}\">Cohort</span></p><blockquote><p><b>group</b></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Criteria</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-population initial-population}\">Initial Population</span></td><td></td></tr></table><blockquote><p><b>stratifier</b></p><p><b>code</b>: <span title=\"Codes: \">FirstSampleMaterialType</span></p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>stratifier</b></p><p><b>code</b>: <span title=\"Codes: \">NumberOfSampleMaterialTypes</span></p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>stratifier</b></p><p><b>code</b>: <span title=\"Codes: \">CollectedYear</span></p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>stratifier</b></p><p><b>code</b>: <span title=\"Codes: \">CollectedMonth</span></p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>stratifier</b></p><p><b>code</b>: <span title=\"Codes: \">CollectedDay</span></p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>stratifier</b></p><p><b>code</b>: <span title=\"Codes: \">CollectedHour</span></p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>stratifier</b></p><p><b>code</b>: <span title=\"Codes: \">StorageTemperatureCodes</span></p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>stratifier</b></p><p><b>code</b>: <span title=\"Codes: \">NumberOfStorageTemperatureCodes</span></p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>stratifier</b></p><p><b>code</b>: <span title=\"Codes: \">SampleDiagnosisICD10Codes</span></p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>stratifier</b></p><p><b>code</b>: <span title=\"Codes: \">NumberOfSampleDiagnosesICD10Codes</span></p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>stratifier</b></p><p><b>code</b>: <span title=\"Codes: \">SampleDiagnosisICD10GMCodes</span></p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>stratifier</b></p><p><b>code</b>: <span title=\"Codes: \">NumberOfSampleDiagnosesICD10GMCodes</span></p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>stratifier</b></p><p><b>code</b>: <span title=\"Codes: \">BodySiteCodes</span></p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>stratifier</b></p><p><b>code</b>: <span title=\"Codes: \">NumberOfBodySiteCodes</span></p><p><b>criteria</b>: </p></blockquote></blockquote></div>"
+  },
+  "url": "https://fhir.bbmri.de/Measure/SpecimenQualityReports",
+  "version": "1.1.0",
+  "title": "Specimen Quality Reports",
+  "status": "draft",
+  "subjectCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/resource-types",
+        "code": "Specimen"
+      }
+    ]
+  },
+  "date": "2020-05-28T14:12:37+00:00",
+  "publisher": "BBMRI.de",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.bbmri.de"
+        },
+        {
+          "system": "email",
+          "value": "feedback@germanbiobanknode.de"
+        }
+      ]
+    }
+  ],
+  "description": "This measure contains various specimen related stratifiers to help to evaluate data quality.",
+  "library": [
+    "https://fhir.bbmri.de/Library/SpecimenQualityReports"
+  ],
+  "scoring": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/measure-scoring",
+        "code": "cohort"
+      }
+    ]
+  },
+  "group": [
+    {
+      "population": [
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                "code": "initial-population"
+              }
+            ]
+          },
+          "criteria": {
+            "language": "text/cql",
+            "expression": "InInitialPopulation"
+          }
+        }
+      ],
+      "stratifier": [
+        {
+          "code": {
+            "text": "FirstSampleMaterialType"
+          },
+          "criteria": {
+            "language": "text/cql",
+            "expression": "FirstSampleMaterialType"
+          }
+        },
+        {
+          "code": {
+            "text": "NumberOfSampleMaterialTypes"
+          },
+          "criteria": {
+            "language": "text/cql",
+            "expression": "NumberOfSampleMaterialTypes"
+          }
+        },
+        {
+          "code": {
+            "text": "CollectedYear"
+          },
+          "criteria": {
+            "language": "text/cql",
+            "expression": "CollectedYear"
+          }
+        },
+        {
+          "code": {
+            "text": "CollectedMonth"
+          },
+          "criteria": {
+            "language": "text/cql",
+            "expression": "CollectedMonth"
+          }
+        },
+        {
+          "code": {
+            "text": "CollectedDay"
+          },
+          "criteria": {
+            "language": "text/cql",
+            "expression": "CollectedDay"
+          }
+        },
+        {
+          "code": {
+            "text": "CollectedHour"
+          },
+          "criteria": {
+            "language": "text/cql",
+            "expression": "CollectedHour"
+          }
+        },
+        {
+          "code": {
+            "text": "StorageTemperatureCodes"
+          },
+          "criteria": {
+            "language": "text/cql",
+            "expression": "StorageTemperatureCodes"
+          }
+        },
+        {
+          "code": {
+            "text": "NumberOfStorageTemperatureCodes"
+          },
+          "criteria": {
+            "language": "text/cql",
+            "expression": "NumberOfStorageTemperatureCodes"
+          }
+        },
+        {
+          "code": {
+            "text": "SampleDiagnosisICD10Codes"
+          },
+          "criteria": {
+            "language": "text/cql",
+            "expression": "SampleDiagnosisICD10Codes"
+          }
+        },
+        {
+          "code": {
+            "text": "NumberOfSampleDiagnosesICD10Codes"
+          },
+          "criteria": {
+            "language": "text/cql",
+            "expression": "NumberOfSampleDiagnosesICD10Codes"
+          }
+        },
+        {
+          "code": {
+            "text": "SampleDiagnosisICD10GMCodes"
+          },
+          "criteria": {
+            "language": "text/cql",
+            "expression": "SampleDiagnosisICD10GMCodes"
+          }
+        },
+        {
+          "code": {
+            "text": "NumberOfSampleDiagnosesICD10GMCodes"
+          },
+          "criteria": {
+            "language": "text/cql",
+            "expression": "NumberOfSampleDiagnosesICD10GMCodes"
+          }
+        },
+        {
+          "code": {
+            "text": "BodySiteCodes"
+          },
+          "criteria": {
+            "language": "text/cql",
+            "expression": "BodySiteCodes"
+          }
+        },
+        {
+          "code": {
+            "text": "NumberOfBodySiteCodes"
+          },
+          "criteria": {
+            "language": "text/cql",
+            "expression": "NumberOfBodySiteCodes"
+          }
+        }
+      ]
+    }
+  ]
+}

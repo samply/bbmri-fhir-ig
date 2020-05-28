@@ -52,7 +52,7 @@
 	</div>
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">BBMRI.de/GBA Implementation Guide</span><br/>1.0.1 - Release</p>
+          <p><span style="font-size:12pt;font-weight:bold">BBMRI.de/GBA Implementation Guide</span><br/>1.1.0 - Release</p>
         </div>
       </div> <!-- /container -->
     </div>  <!-- /segment-header -->
@@ -82,7 +82,7 @@
       </b>
     </a>
     <ul class="dropdown-menu">
-	<li>
+	  <li>
         <a href="background.html">Overview</a>
       </li>
       <li>
@@ -91,8 +91,11 @@
 	  <li>
         <a href="referencedIGs.html">Referenced IGs</a>
       </li>
-    <li>
+      <li>
         <a href="etlTalent.html">Build ETL with TOS</a>
+      </li>
+      <li>
+        <a href="qualityMeasures.html">Quality Measures</a>
       </li>
     </ul>
   </li>
@@ -120,7 +123,7 @@
       </li>
     </ul>
   </li>
-</ul>      
+</ul>
 
             </div>  <!-- /.nav-collapse -->
           </div>  <!-- /.container -->
@@ -149,7 +152,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">BBMRI.de/GBA Implementation Guide - Local Development build (v1.0.1). See the <a href="https://fhir.bbmri.de/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">BBMRI.de/GBA Implementation Guide - Local Development build (v1.1.0). See the <a href="https://fhir.bbmri.de/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Build ETL with Talent Open Studio and Hapi FHIR API to fill the Blaze Store</h2>
   
   
@@ -157,22 +160,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <div class="markdown-toc">
 <ul id="markdown-toc">
   <li><a href="#step-by-step-instructions" id="markdown-toc-step-by-step-instructions">Step-by-step instructions:</a></li>
-  <li><a href="#in-details" id="markdown-toc-in-details">In details:</a>    <ul>
-      <li><a href="#create-a-new-wrapper-object-in-a-java_row-componente-and-store-it-in-the-globalmap" id="markdown-toc-create-a-new-wrapper-object-in-a-java_row-componente-and-store-it-in-the-globalmap">Create a new wrapper-object in a Java_Row componente and store it in the globalMap:</a></li>
-      <li><a href="#you-can-use-the-object-in-other-java-row-components-to-run-methodes" id="markdown-toc-you-can-use-the-object-in-other-java-row-components-to-run-methodes">You can use the object in other Java-Row components to run methodes:</a></li>
-      <li><a href="#create-a-new-bundle-in-the-tos-routine" id="markdown-toc-create-a-new-bundle-in-the-tos-routine">Create a new Bundle in the TOS Routine:</a></li>
-      <li><a href="#create-patient-and-placing-the-patient-in-the-bundle" id="markdown-toc-create-patient-and-placing-the-patient-in-the-bundle">Create patient and placing the patient in the bundle:</a></li>
-      <li><a href="#create-and-assign-the-diagnosis-ressources" id="markdown-toc-create-and-assign-the-diagnosis-ressources">Create and assign the diagnosis ressources:</a></li>
-      <li><a href="#upload-bundles" id="markdown-toc-upload-bundles">Upload bundles:</a></li>
-    </ul>
-  </li>
+  <li><a href="#in-details" id="markdown-toc-in-details">In details:</a></li>
+  <li><a href="#upload-bundles" id="markdown-toc-upload-bundles">Upload bundles:</a></li>
   <li><a href="#appendix" id="markdown-toc-appendix">Appendix:</a></li>
 </ul>
 
 </div>
 <p>This section describes how to build an ETL-process and fill the Blaze Store with Talend Open Studio for Data Integration and Hapi FHIR Api. This instructions were <a href="https://wiki.verbis.dkfz.de/pages/viewpage.action?pageId=76351392">originally</a> writen and tested by Marko Wegehaupt from Wuerzburg in november 2019.</p>
 
-<h2 id="step-by-step-instructions">Step-by-step instructions:</h2>
+<h3 id="step-by-step-instructions">Step-by-step instructions:</h3>
 <ol>
   <li>
     <p>A new routine must be created in <a href="https://www.talend.com/products/talend-open-studio/">Talend Open Studio for Data Integration</a>. In this manual it is called FHIR_API_Wrapper. click on „Edit libraries of the Routines“ and import the following libraries from <a href="https://github.com/jamesagnew/hapi-fhir/releases">hapi-fhir-4.0.0-standard-distribution</a> to solve imports.
@@ -182,30 +178,30 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>In a final step upload the generated Bundles to the Blaze Store.</li>
 </ol>
 
-<h2 id="in-details">In details:</h2>
+<h3 id="in-details">In details:</h3>
 
-<h3 id="create-a-new-wrapper-object-in-a-java_row-componente-and-store-it-in-the-globalmap">Create a new wrapper-object in a Java_Row componente and store it in the globalMap:</h3>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Boolean returnCode;
+<h4 id="create-a-new-wrapper-object-in-a-java_row-componente-and-store-it-in-the-globalmap">Create a new wrapper-object in a Java_Row componente and store it in the globalMap:</h4>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Boolean returnCode;
 FHIR_API_Wrapper temp;
 globalMap.put("FHIR", temp=new FHIR_API_Wrapper());
 </code></pre></div></div>
 
-<h3 id="you-can-use-the-object-in-other-java-row-components-to-run-methodes">You can use the object in other Java-Row components to run methodes:</h3>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>returnCode = ((FHIR_API_Wrapper) globalMap.get("FHIR")).doPatient(toJava1.cPatId, toJava1.cBirthDate, toJava1.cDeceased, toJava1.cGender, toJava1.sourceFlag, toJava1.lastRowFlag);
+<h4 id="you-can-use-the-object-in-other-java-row-components-to-run-methodes">You can use the object in other Java-Row components to run methodes:</h4>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>returnCode = ((FHIR_API_Wrapper) globalMap.get("FHIR")).doPatient(toJava1.cPatId, toJava1.cBirthDate, toJava1.cDeceased, toJava1.cGender, toJava1.sourceFlag, toJava1.lastRowFlag);
 or
 returnCode = ((FHIR_API_Wrapper) globalMap.get("FHIR")).addEncounterToPatient(patFall.cPatId, patFall.FallNr, patFall.RecId,patFall.anfang, patFall.ende, "p70");
 </code></pre></div></div>
 
-<h3 id="create-a-new-bundle-in-the-tos-routine">Create a new Bundle in the TOS Routine:</h3>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle = new Bundle();
+<h4 id="create-a-new-bundle-in-the-tos-routine">Create a new Bundle in the TOS Routine:</h4>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle = new Bundle();
 bundleCounter++;
 bundle.setType(Bundle.BundleType.TRANSACTION);
 bundle.setId(String.valueOf(bundleCounter));
 bdlMap.put(String.valueOf(bundleCounter), bundle);
 </code></pre></div></div>
 
-<h3 id="create-patient-and-placing-the-patient-in-the-bundle">Create patient and placing the patient in the bundle:</h3>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Patient patient = new Patient();
+<h4 id="create-patient-and-placing-the-patient-in-the-bundle">Create patient and placing the patient in the bundle:</h4>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Patient patient = new Patient();
 IdDt patRand=IdDt.newRandomUuid();
 patient.setId(cPatId); // argument from method call
 patientRandMap.put(cPatId,patRand.getValueAsString());
@@ -242,8 +238,8 @@ bundle.addEntry()
 patientToBundle.put(patient.getId(), bundle.getId());
 </code></pre></div></div>
 
-<h3 id="create-and-assign-the-diagnosis-ressources">Create and assign the diagnosis ressources:</h3>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Condition condition = new Condition();
+<h4 id="create-and-assign-the-diagnosis-ressources">Create and assign the diagnosis ressources:</h4>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Condition condition = new Condition();
 condition
    .getCode()
    .addCoding()
@@ -278,7 +274,7 @@ System.err.println("condition added.");
 </code></pre></div></div>
 
 <h3 id="upload-bundles">Upload bundles:</h3>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>FhirContext ctx = FhirContext.forR4();
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>FhirContext ctx = FhirContext.forR4();
 
 // Create a client and PUT the transaction to the server
 IGenericClient client = ctx.newRestfulGenericClient("http://FHIRSERVER:8080/fhir");
@@ -301,8 +297,8 @@ for (Bundle bdlIt : bdlMap.values()) {
 
 <p><img src="TOS_FHIR_03_Flow2.png" alt="TOS Flow2" /></p>
 
-<h2 id="appendix">Appendix:</h2>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@ResourceDef(name="Specimen", profile="https://fhir.bbmri.de/StructureDefinition/Specimen")
+<h3 id="appendix">Appendix:</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@ResourceDef(name="Specimen", profile="https://fhir.bbmri.de/StructureDefinition/Specimen")
 
 public class GBASpecimen extends Specimen {
 
@@ -404,16 +400,26 @@ return FhirVersionEnum.R4;
     </div>  <!-- /container -->
   </div>  <!-- /segment-content -->
 
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
 
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="https://www.bbmri.de">BBMRI.de</a>.  Package de.bbmri.fhir#1.0.1 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, May 8, 2020 11:20+0000">2020-05-08</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="https://www.bbmri.de">BBMRI.de</a>.  Package de.bbmri.fhir#1.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, May 28, 2020 14:12+0000">2020-05-28</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
                  <a style="color: #81BEF7" href="qa.html">QA Report</a>
+| <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Lizenzvertrag" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
           </span>
         </p>
       </div>  <!-- /inner-wrapper -->
@@ -429,7 +435,6 @@ return FhirVersionEnum.R4;
   <!-- Bootstrap core JavaScript
   ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
-  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
   <script type="text/javascript" src="assets/js/respond.min.js"> </script>
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>

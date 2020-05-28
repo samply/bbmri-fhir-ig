@@ -71,7 +71,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 0</p><p><b>meta</b>: </p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1989-11-18</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p></div>"
   ];
   fhir:Patient.gender [ fhir:value "male"];
   fhir:Patient.birthDate [ fhir:value "1989-11-18"^^xsd:date] .
@@ -87,7 +87,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 0-bmi</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/observation-category code 'vital-signs' = 'Vital Signs)</span></p><p><b>code</b>: Body mass index (BMI) [Ratio] <span style=\"background: LightGoldenRodYellow\">(Details : {LOINC code '39156-5' = 'Body mass index (BMI) [Ratio])</span></p><p><b>subject</b>: <a href=\"#backboneelement_0\">Generated Summary: unknown resource entry</a></p><p><b>effective</b>: Jun 17, 2005, 12:00:00 AM</p><p><b>value</b>: 36.68645245341373 kg/m2<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code kg/m2 = 'kg/m2')</span></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p></div>"
   ];
   fhir:Observation.status [ fhir:value "final"];
   fhir:Observation.category [
@@ -129,7 +129,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 0-body-height</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/observation-category code 'vital-signs' = 'Vital Signs)</span></p><p><b>code</b>: Body height <span style=\"background: LightGoldenRodYellow\">(Details : {LOINC code '8302-2' = 'Body height)</span></p><p><b>subject</b>: <a href=\"#backboneelement_0\">Generated Summary: unknown resource entry</a></p><p><b>effective</b>: Jun 17, 2005, 12:00:00 AM</p><p><b>value</b>: 198.58090348834853 cm<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code cm = 'cm')</span></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p></div>"
   ];
   fhir:Observation.status [ fhir:value "final"];
   fhir:Observation.category [
@@ -171,7 +171,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 0-body-weight</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/observation-category code 'vital-signs' = 'Vital Signs)</span></p><p><b>code</b>: Body weight <span style=\"background: LightGoldenRodYellow\">(Details : {LOINC code '29463-7' = 'Body weight)</span></p><p><b>subject</b>: <a href=\"#backboneelement_0\">Generated Summary: unknown resource entry</a></p><p><b>effective</b>: Jun 17, 2005, 12:00:00 AM</p><p><b>value</b>: 144.67073319145982 kg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code kg = 'kg')</span></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p></div>"
   ];
   fhir:Observation.status [ fhir:value "final"];
   fhir:Observation.category [
@@ -213,7 +213,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 0-tobacco-use</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>code</b>: Tobacco smoking status <span style=\"background: LightGoldenRodYellow\">(Details : {LOINC code '72166-2' = 'Tobacco smoking status)</span></p><p><b>subject</b>: <a href=\"#backboneelement_0\">Generated Summary: unknown resource entry</a></p><p><b>effective</b>: Jun 17, 2005, 12:00:00 AM</p><p><b>value</b>: Current some day smoker <span style=\"background: LightGoldenRodYellow\">(Details : {LOINC code 'LA18977-1' = 'Current some day smoker)</span></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p></div>"
   ];
   fhir:Observation.status [ fhir:value "final"];
   fhir:Observation.code [
@@ -249,7 +249,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 0-specimen</p><p><b>meta</b>: </p><p><b>type</b>: Whole blood <span style=\"background: LightGoldenRodYellow\">(Details : {https://fhir.bbmri.de/CodeSystem/SampleMaterialType code 'whole-blood' = 'Whole blood)</span></p><p><b>subject</b>: <a href=\"#backboneelement_0\">Generated Summary: unknown resource entry</a></p><h3>Collections</h3><table class=\"grid\"><tr><td>-</td><td><b>Collected[x]</b></td><td><b>FastingStatus[x]</b></td></tr><tr><td>*</td><td>Jun 17, 2005, 12:00:00 AM</td><td>The patient indicated they did not fast prior to the procedure. <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/v2-0916 code 'NF' = 'The patient indicated they did not fast prior to the procedure.)</span></td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p></div>"
   ];
   fhir:DomainResource.extension [
      fhir:index 0;

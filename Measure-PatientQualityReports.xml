@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Measure xmlns="http://hl7.org/fhir">
+  <id value="PatientQualityReports"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>id</b>: PatientQualityReports</p><p><b>url</b>: <a href="https://fhir.bbmri.de/Measure/PatientQualityReports">https://fhir.bbmri.de/Measure/PatientQualityReports</a></p><p><b>version</b>: 1.1.0</p><p><b>title</b>: Patient Quality Reports</p><p><b>status</b>: active</p><p><b>subject</b>: <span title="Codes: {http://hl7.org/fhir/resource-types Patient}">Patient</span></p><p><b>date</b>: May 28, 2020, 2:12:37 PM</p><p><b>publisher</b>: BBMRI.de</p><p><b>contact</b>: https://www.bbmri.de,feedback@germanbiobanknode.de</p><p><b>description</b>: This measure contains various patient related stratifiers to help to evaluate data quality.</p><p><b>library</b>: <a href="https://fhir.bbmri.de/Library/PatientQualityReports">https://fhir.bbmri.de/Library/PatientQualityReports</a></p><p><b>scoring</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/measure-scoring cohort}">Cohort</span></p><blockquote><p><b>group</b></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Criteria</b></td></tr><tr><td>*</td><td><span title="Codes: {http://terminology.hl7.org/CodeSystem/measure-population initial-population}">Initial Population</span></td><td></td></tr></table><blockquote><p><b>stratifier</b></p><p><b>code</b>: <span title="Codes: ">Gender</span></p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>stratifier</b></p><p><b>code</b>: <span title="Codes: ">AgeClass</span></p><p><b>criteria</b>: </p></blockquote></blockquote></div>
+  </text>
+  <url value="https://fhir.bbmri.de/Measure/PatientQualityReports"/>
+  <version value="1.1.0"/>
+  <title value="Patient Quality Reports"/>
+  <status value="active"/>
+  <subjectCodeableConcept>
+    <coding>
+      <system value="http://hl7.org/fhir/resource-types"/>
+      <code value="Patient"/>
+    </coding>
+  </subjectCodeableConcept>
+  <date value="2020-05-28T14:12:37+00:00"/>
+  <publisher value="BBMRI.de"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.bbmri.de"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="feedback@germanbiobanknode.de"/>
+    </telecom>
+  </contact>
+  <description value="This measure contains various patient related stratifiers to help to evaluate data quality."/>
+  <library value="https://fhir.bbmri.de/Library/PatientQualityReports"/>
+  <scoring>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/measure-scoring"/>
+      <code value="cohort"/>
+    </coding>
+  </scoring>
+  <group>
+    <population>
+      <code>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+          <code value="initial-population"/>
+        </coding>
+      </code>
+      <criteria>
+        <language value="text/cql"/>
+        <expression value="InInitialPopulation"/>
+      </criteria>
+    </population>
+    <stratifier>
+      <code>
+        <text value="Gender"/>
+      </code>
+      <criteria>
+        <language value="text/cql"/>
+        <expression value="Gender"/>
+      </criteria>
+    </stratifier>
+    <stratifier>
+      <code>
+        <text value="AgeClass"/>
+      </code>
+      <criteria>
+        <language value="text/cql"/>
+        <expression value="AgeClass"/>
+      </criteria>
+    </stratifier>
+  </group>
+</Measure>

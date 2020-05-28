@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Library xmlns="http://hl7.org/fhir">
+  <id value="PatientQualityReports"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>id</b>: PatientQualityReports</p><p><b>url</b>: <a href="https://fhir.bbmri.de/Library/PatientQualityReports">https://fhir.bbmri.de/Library/PatientQualityReports</a></p><p><b>version</b>: 1.1.0</p><p><b>title</b>: Patient Quality Reports</p><p><b>status</b>: active</p><p><b>type</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/library-type logic-library}">Logic Library</span></p><p><b>subject</b>: <span title="Codes: {http://hl7.org/fhir/resource-types Patient}">Patient</span></p><p><b>date</b>: May 28, 2020, 2:12:37 PM</p><p><b>publisher</b>: BBMRI.de</p><p><b>contact</b>: https://www.bbmri.de,feedback@germanbiobanknode.de</p><p><b>description</b>: This library contains various expressions used in different patient related quality reports.</p><p><b>relatedArtifact</b>: , </p><p><b>content</b>: , </p></div>
+  </text>
+  <url value="https://fhir.bbmri.de/Library/PatientQualityReports"/>
+  <version value="1.1.0"/>
+  <title value="Patient Quality Reports"/>
+  <status value="active"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/library-type"/>
+      <code value="logic-library"/>
+    </coding>
+  </type>
+  <subjectCodeableConcept>
+    <coding>
+      <system value="http://hl7.org/fhir/resource-types"/>
+      <code value="Patient"/>
+    </coding>
+  </subjectCodeableConcept>
+  <date value="2020-05-28T14:12:37+00:00"/>
+  <publisher value="BBMRI.de"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.bbmri.de"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="feedback@germanbiobanknode.de"/>
+    </telecom>
+  </contact>
+  <description value="This library contains various expressions used in different patient related quality reports."/>
+  <relatedArtifact>
+    <type value="depends-on"/>
+    <resource value="http://hl7.org/fhir/Library/FHIR-ModelInfo|4.0.0"/>
+  </relatedArtifact>
+  <relatedArtifact>
+    <type value="depends-on"/>
+    <resource value="http://hl7.org/fhir/Library/FHIRHelpers|4.0.0"/>
+  </relatedArtifact>
+  <content>
+    <contentType value="text/cql"/>
+    <data value="bGlicmFyeSBSZXRyaWV2ZQp1c2luZyBGSElSIHZlcnNpb24gJzQuMC4wJwppbmNsdWRlIEZISVJIZWxwZXJzIHZlcnNpb24gJzQuMC4wJwoKY29udGV4dCBQYXRpZW50CgpkZWZpbmUgSW5Jbml0aWFsUG9wdWxhdGlvbjoKICB0cnVlCgpkZWZpbmUgQWdlQ2xhc3M6CiAgKEFnZUluWWVhcnMoKSBkaXYgMTApICogMTAKCmRlZmluZSBHZW5kZXI6CiAgUGF0aWVudC5nZW5kZXIK"/>
+  </content>
+  <content>
+    <contentType value="application/elm+xml"/>
+    <data value="PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPGxpYnJhcnkgeG1sbnM9InVybjpobDctb3JnOmVsbTpyMSIgeG1sbnM6dD0idXJuOmhsNy1vcmc6ZWxtLXR5cGVzOnIxIiB4bWxuczp4c2k9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hLWluc3RhbmNlIiB4bWxuczp4c2Q9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hIiB4bWxuczpmaGlyPSJodHRwOi8vaGw3Lm9yZy9maGlyIiB4bWxuczpxZG00Mz0idXJuOmhlYWx0aGl0LWdvdjpxZG06djRfMyIgeG1sbnM6cWRtNTM9InVybjpoZWFsdGhpdC1nb3Y6cWRtOnY1XzMiIHhtbG5zOmE9InVybjpobDctb3JnOmNxbC1hbm5vdGF0aW9uczpyMSI+CiAgIDxhbm5vdGF0aW9uIHRyYW5zbGF0b3JPcHRpb25zPSJFbmFibGVBbm5vdGF0aW9ucyxFbmFibGVMb2NhdG9ycyxEaXNhYmxlTGlzdERlbW90aW9uLERpc2FibGVMaXN0UHJvbW90aW9uIiB4c2k6dHlwZT0iYTpDcWxUb0VsbUluZm8iLz4KICAgPGlkZW50aWZpZXIgaWQ9IlJldHJpZXZlIiBzeXN0ZW09Imh0dHBzOi8vZmhpci5iYm1yaS5kZSIvPgogICA8c2NoZW1hSWRlbnRpZmllciBpZD0idXJuOmhsNy1vcmc6ZWxtIiB2ZXJzaW9uPSJyMSIvPgogICA8dXNpbmdzPgogICAgICA8ZGVmIGxvY2FsSWRlbnRpZmllcj0iU3lzdGVtIiB1cmk9InVybjpobDctb3JnOmVsbS10eXBlczpyMSIvPgogICAgICA8ZGVmIGxvY2FsSWQ9IjEiIGxvY2F0b3I9IjI6MS0yOjI2IiBsb2NhbElkZW50aWZpZXI9IkZISVIiIHVyaT0iaHR0cDovL2hsNy5vcmcvZmhpciIgdmVyc2lvbj0iNC4wLjAiLz4KICAgPC91c2luZ3M+CiAgIDxpbmNsdWRlcz4KICAgICAgPGRlZiBsb2NhbElkPSIyIiBsb2NhdG9yPSIzOjEtMzozNSIgbG9jYWxJZGVudGlmaWVyPSJGSElSSGVscGVycyIgcGF0aD0iaHR0cDovL2hsNy5vcmcvZmhpci9GSElSSGVscGVycyIgdmVyc2lvbj0iNC4wLjAiLz4KICAgPC9pbmNsdWRlcz4KICAgPHN0YXRlbWVudHM+CiAgICAgIDxkZWYgbG9jYXRvcj0iNToxLTU6MTUiIG5hbWU9IlBhdGllbnQiIGNvbnRleHQ9IlBhdGllbnQiPgogICAgICAgICA8ZXhwcmVzc2lvbiB4c2k6dHlwZT0iU2luZ2xldG9uRnJvbSI+CiAgICAgICAgICAgIDxvcGVyYW5kIGxvY2F0b3I9IjU6MS01OjE1IiBkYXRhVHlwZT0iZmhpcjpQYXRpZW50IiB4c2k6dHlwZT0iUmV0cmlldmUiLz4KICAgICAgICAgPC9leHByZXNzaW9uPgogICAgICA8L2RlZj4KICAgICAgPGRlZiBsb2NhbElkPSI0IiBsb2NhdG9yPSI3OjEtODo2IiBuYW1lPSJJbkluaXRpYWxQb3B1bGF0aW9uIiBjb250ZXh0PSJQYXRpZW50IiBhY2Nlc3NMZXZlbD0iUHVibGljIj4KICAgICAgICAgPGFubm90YXRpb24geHNpOnR5cGU9ImE6QW5ub3RhdGlvbiI+CiAgICAgICAgICAgIDxhOnMgcj0iNCI+CiAgICAgICAgICAgICAgIDxhOnMgcj0iMyI+ZGVmaW5lIEluSW5pdGlhbFBvcHVsYXRpb246CiAgdHJ1ZTwvYTpzPgogICAgICAgICAgICA8L2E6cz4KICAgICAgICAgPC9hbm5vdGF0aW9uPgogICAgICAgICA8ZXhwcmVzc2lvbiBsb2NhbElkPSIzIiBsb2NhdG9yPSI4OjMtODo2IiB2YWx1ZVR5cGU9InQ6Qm9vbGVhbiIgdmFsdWU9InRydWUiIHhzaTp0eXBlPSJMaXRlcmFsIi8+CiAgICAgIDwvZGVmPgogICAgICA8ZGVmIGxvY2FsSWQ9IjEwIiBsb2NhdG9yPSIxMDoxLTExOjI4IiBuYW1lPSJBZ2VDbGFzcyIgY29udGV4dD0iUGF0aWVudCIgYWNjZXNzTGV2ZWw9IlB1YmxpYyI+CiAgICAgICAgIDxhbm5vdGF0aW9uIHhzaTp0eXBlPSJhOkFubm90YXRpb24iPgogICAgICAgICAgICA8YTpzIHI9IjEwIj4KICAgICAgICAgICAgICAgPGE6cz5kZWZpbmUgQWdlQ2xhc3M6CiAgPC9hOnM+CiAgICAgICAgICAgICAgIDxhOnMgcj0iOSI+CiAgICAgICAgICAgICAgICAgIDxhOnMgcj0iNyI+CiAgICAgICAgICAgICAgICAgICAgIDxhOnM+KDwvYTpzPgogICAgICAgICAgICAgICAgICAgICA8YTpzIHI9IjciPgogICAgICAgICAgICAgICAgICAgICAgICA8YTpzIHI9IjUiPgogICAgICAgICAgICAgICAgICAgICAgICAgICA8YTpzPkFnZUluWWVhcnMoKTwvYTpzPgogICAgICAgICAgICAgICAgICAgICAgICA8L2E6cz4KICAgICAgICAgICAgICAgICAgICAgICAgPGE6cyByPSI2Ij4gZGl2IDEwPC9hOnM+CiAgICAgICAgICAgICAgICAgICAgIDwvYTpzPgogICAgICAgICAgICAgICAgICAgICA8YTpzPik8L2E6cz4KICAgICAgICAgICAgICAgICAgPC9hOnM+CiAgICAgICAgICAgICAgICAgIDxhOnMgcj0iOCI+ICogMTA8L2E6cz4KICAgICAgICAgICAgICAgPC9hOnM+CiAgICAgICAgICAgIDwvYTpzPgogICAgICAgICA8L2Fubm90YXRpb24+CiAgICAgICAgIDxleHByZXNzaW9uIGxvY2FsSWQ9IjkiIGxvY2F0b3I9IjExOjMtMTE6MjgiIHhzaTp0eXBlPSJNdWx0aXBseSI+CiAgICAgICAgICAgIDxvcGVyYW5kIGxvY2FsSWQ9IjciIGxvY2F0b3I9IjExOjMtMTE6MjMiIHhzaTp0eXBlPSJUcnVuY2F0ZWREaXZpZGUiPgogICAgICAgICAgICAgICA8b3BlcmFuZCBsb2NhbElkPSI1IiBsb2NhdG9yPSIxMTo0LTExOjE1IiBwcmVjaXNpb249IlllYXIiIHhzaTp0eXBlPSJDYWxjdWxhdGVBZ2UiPgogICAgICAgICAgICAgICAgICA8b3BlcmFuZCBwYXRoPSJiaXJ0aERhdGUudmFsdWUiIHhzaTp0eXBlPSJQcm9wZXJ0eSI+CiAgICAgICAgICAgICAgICAgICAgIDxzb3VyY2UgbmFtZT0iUGF0aWVudCIgeHNpOnR5cGU9IkV4cHJlc3Npb25SZWYiLz4KICAgICAgICAgICAgICAgICAgPC9vcGVyYW5kPgogICAgICAgICAgICAgICA8L29wZXJhbmQ+CiAgICAgICAgICAgICAgIDxvcGVyYW5kIGxvY2FsSWQ9IjYiIGxvY2F0b3I9IjExOjIxLTExOjIyIiB2YWx1ZVR5cGU9InQ6SW50ZWdlciIgdmFsdWU9IjEwIiB4c2k6dHlwZT0iTGl0ZXJhbCIvPgogICAgICAgICAgICA8L29wZXJhbmQ+CiAgICAgICAgICAgIDxvcGVyYW5kIGxvY2FsSWQ9IjgiIGxvY2F0b3I9IjExOjI3LTExOjI4IiB2YWx1ZVR5cGU9InQ6SW50ZWdlciIgdmFsdWU9IjEwIiB4c2k6dHlwZT0iTGl0ZXJhbCIvPgogICAgICAgICA8L2V4cHJlc3Npb24+CiAgICAgIDwvZGVmPgogICAgICA8ZGVmIGxvY2FsSWQ9IjEzIiBsb2NhdG9yPSIxMzoxLTE0OjE2IiBuYW1lPSJHZW5kZXIiIGNvbnRleHQ9IlBhdGllbnQiIGFjY2Vzc0xldmVsPSJQdWJsaWMiPgogICAgICAgICA8YW5ub3RhdGlvbiB4c2k6dHlwZT0iYTpBbm5vdGF0aW9uIj4KICAgICAgICAgICAgPGE6cyByPSIxMyI+CiAgICAgICAgICAgICAgIDxhOnM+ZGVmaW5lIEdlbmRlcjoKICA8L2E6cz4KICAgICAgICAgICAgICAgPGE6cyByPSIxMiI+CiAgICAgICAgICAgICAgICAgIDxhOnMgcj0iMTEiPgogICAgICAgICAgICAgICAgICAgICA8YTpzPlBhdGllbnQ8L2E6cz4KICAgICAgICAgICAgICAgICAgPC9hOnM+CiAgICAgICAgICAgICAgICAgIDxhOnM+LjwvYTpzPgogICAgICAgICAgICAgICAgICA8YTpzIHI9IjEyIj4KICAgICAgICAgICAgICAgICAgICAgPGE6cz5nZW5kZXI8L2E6cz4KICAgICAgICAgICAgICAgICAgPC9hOnM+CiAgICAgICAgICAgICAgIDwvYTpzPgogICAgICAgICAgICA8L2E6cz4KICAgICAgICAgPC9hbm5vdGF0aW9uPgogICAgICAgICA8ZXhwcmVzc2lvbiBsb2NhbElkPSIxMiIgbG9jYXRvcj0iMTQ6My0xNDoxNiIgcGF0aD0iZ2VuZGVyIiB4c2k6dHlwZT0iUHJvcGVydHkiPgogICAgICAgICAgICA8c291cmNlIGxvY2FsSWQ9IjExIiBsb2NhdG9yPSIxNDozLTE0OjkiIG5hbWU9IlBhdGllbnQiIHhzaTp0eXBlPSJFeHByZXNzaW9uUmVmIi8+CiAgICAgICAgIDwvZXhwcmVzc2lvbj4KICAgICAgPC9kZWY+CiAgIDwvc3RhdGVtZW50cz4KPC9saWJyYXJ5Pgo="/>
+  </content>
+</Library>

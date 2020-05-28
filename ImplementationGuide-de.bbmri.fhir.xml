@@ -3,16 +3,16 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="de.bbmri.fhir"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>BBMRI_DE_IG</h2><p>The official URL for this implementation guide is: </p><pre>https://fhir.bbmri.de/ImplementationGuide/de.bbmri.fhir</pre><div><p>Profiles for the GBA/BBMRI.de project</p>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>BBMRI_DE_IG</h2><p>The official URL for this implementation guide is: </p><pre>https://fhir.bbmri.de/ImplementationGuide/de.bbmri.fhir</pre><div><p>Profiles for the GBA/BBMRI.de project</p>
 </div></div>
   </text>
   <url value="https://fhir.bbmri.de/ImplementationGuide/de.bbmri.fhir"/>
-  <version value="1.0.1"/>
+  <version value="1.1.0"/>
   <name value="BBMRI_DE_IG"/>
   <title value="BBMRI.de/GBA Implementation Guide"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2020-05-08T11:20:22+00:00"/>
+  <date value="2020-05-28T14:12:37+00:00"/>
   <publisher value="BBMRI.de"/>
   <contact>
     <telecom>
@@ -31,7 +31,12 @@
   <dependsOn>
     <uri value="http://hl7.org/fhir/uv/ips/ImplementationGuide/hl7.fhir.uv.ips"/>
     <packageId value="hl7.fhir.uv.ips"/>
-    <version value="0.3.0"/>
+    <version value="1.0.0"/>
+  </dependsOn>
+  <dependsOn>
+    <uri value="https://simplifier.net/guide/basisprofil-de-r4"/>
+    <packageId value="de.basisprofil.r4"/>
+    <version value="0.9.6"/>
   </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -48,6 +53,14 @@
       </extension>
       <extension url="value">
         <valueString value="Release"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-binary"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/other"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -484,6 +497,19 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Measure"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Measure-SpecimenQualityReports.html"/>
+      </extension>
+      <reference>
+        <reference value="Measure/SpecimenQualityReports"/>
+      </reference>
+      <name value="Specimen Quality Reports"/>
+      <description value="This measure contains various specimen related stratifiers to help to evaluate data quality."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
@@ -518,6 +544,19 @@
         <reference value="ValueSet/ResourceType"/>
       </reference>
       <name value="Resource Type"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Measure"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Measure-PatientQualityReports.html"/>
+      </extension>
+      <reference>
+        <reference value="Measure/PatientQualityReports"/>
+      </reference>
+      <name value="Patient Quality Reports"/>
+      <description value="This measure contains various patient related stratifiers to help to evaluate data quality."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -651,6 +690,19 @@
         <reference value="StructureDefinition/Capabilities"/>
       </reference>
       <name value="Capabilities"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Library"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Library-SpecimenQualityReports.html"/>
+      </extension>
+      <reference>
+        <reference value="Library/SpecimenQualityReports"/>
+      </reference>
+      <name value="Specimen Quality Reports"/>
+      <description value="This library contains various expressions used in different specimen related quality reports."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -827,6 +879,19 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Library"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Library-PatientQualityReports.html"/>
+      </extension>
+      <reference>
+        <reference value="Library/PatientQualityReports"/>
+      </reference>
+      <name value="Patient Quality Reports"/>
+      <description value="This library contains various expressions used in different patient related quality reports."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CodeSystem"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
@@ -939,6 +1004,11 @@
       <page>
         <nameUrl value="etlTalent.html"/>
         <title value="Build ETL with Talent Open Studio and Hapi FHIR API to fill the Blaze Store"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="qualityMeasures.html"/>
+        <title value="Quality Measures"/>
         <generation value="markdown"/>
       </page>
       <page>
