@@ -82,6 +82,11 @@
           "generation": "markdown"
         },
         {
+          "nameUrl": "qualityMeasures.html",
+          "title": "Quality Measures",
+          "generation": "markdown"
+        },
+        {
           "nameUrl": "downloads.html",
           "title": "Useful Downloads",
           "generation": "html"
@@ -101,6 +106,10 @@
       {
         "code": "releaselabel",
         "value": "Release"
+      },
+	  {
+        "code": "path-binary",
+        "value": "input/other"
       }
     ]
   }
