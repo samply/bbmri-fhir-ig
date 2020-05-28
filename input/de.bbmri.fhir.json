@@ -32,7 +32,12 @@
     {
       "uri": "http://hl7.org/fhir/uv/ips/ImplementationGuide/hl7.fhir.uv.ips",
       "packageId": "hl7.fhir.uv.ips",
-      "version": "0.3.0"
+      "version": "1.0.0"
+    },
+    {
+      "uri": "https://simplifier.net/guide/basisprofil-de-r4",
+      "packageId": "de.basisprofil.r4",
+      "version": "0.9.6"
     }
   ],
   "definition": {
