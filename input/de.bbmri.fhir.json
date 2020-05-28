@@ -2,7 +2,7 @@
   "resourceType": "ImplementationGuide",
   "id": "de.bbmri.fhir",
   "url": "https://fhir.bbmri.de/ImplementationGuide/de.bbmri.fhir",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "name": "BBMRI_DE_IG",
   "title": "BBMRI.de/GBA Implementation Guide",
   "status": "active",
@@ -32,7 +32,12 @@
     {
       "uri": "http://hl7.org/fhir/uv/ips/ImplementationGuide/hl7.fhir.uv.ips",
       "packageId": "hl7.fhir.uv.ips",
-      "version": "0.3.0"
+      "version": "1.0.0"
+    },
+    {
+      "uri": "https://simplifier.net/guide/basisprofil-de-r4",
+      "packageId": "de.basisprofil.r4",
+      "version": "0.9.6"
     }
   ],
   "definition": {
@@ -82,6 +87,11 @@
           "generation": "markdown"
         },
         {
+          "nameUrl": "qualityMeasures.html",
+          "title": "Quality Measures",
+          "generation": "markdown"
+        },
+        {
           "nameUrl": "downloads.html",
           "title": "Useful Downloads",
           "generation": "html"
@@ -101,6 +111,10 @@
       {
         "code": "releaselabel",
         "value": "Release"
+      },
+	  {
+        "code": "path-binary",
+        "value": "input/other"
       }
     ]
   }

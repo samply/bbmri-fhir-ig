@@ -1,32 +1,32 @@
 This section describes how to build an ETL-process and fill the Blaze Store with Talend Open Studio for Data Integration and Hapi FHIR Api. This instructions were [originally](https://wiki.verbis.dkfz.de/pages/viewpage.action?pageId=76351392) writen and tested by Marko Wegehaupt from Wuerzburg in november 2019.
 
-## Step-by-step instructions:
+### Step-by-step instructions:
 1. A new routine must be created in [Talend Open Studio for Data Integration](https://www.talend.com/products/talend-open-studio/). In this manual it is called FHIR_API_Wrapper. click on „Edit libraries of the Routines“ and import the following libraries from [hapi-fhir-4.0.0-standard-distribution](https://github.com/jamesagnew/hapi-fhir/releases) to solve imports.
 ![TOS import external libs](TOS_FHIR_01_libraries.png "Import external libs in TOS")
 
 2. Use JavaRow to create a FHIR_API_Wrapper Object in TOS and run methodes on it to produce FHIR Resources.
 3. In a final step upload the generated Bundles to the Blaze Store.
 
-## In details:
+### In details:
 
-### Create a new wrapper-object in a Java_Row componente and store it in the globalMap:
+#### Create a new wrapper-object in a Java_Row componente and store it in the globalMap:
     Boolean returnCode;
     FHIR_API_Wrapper temp;
     globalMap.put("FHIR", temp=new FHIR_API_Wrapper());
 
-### You can use the object in other Java-Row components to run methodes:
+#### You can use the object in other Java-Row components to run methodes:
     returnCode = ((FHIR_API_Wrapper) globalMap.get("FHIR")).doPatient(toJava1.cPatId, toJava1.cBirthDate, toJava1.cDeceased, toJava1.cGender, toJava1.sourceFlag, toJava1.lastRowFlag);
     or
     returnCode = ((FHIR_API_Wrapper) globalMap.get("FHIR")).addEncounterToPatient(patFall.cPatId, patFall.FallNr, patFall.RecId,patFall.anfang, patFall.ende, "p70");
 
-### Create a new Bundle in the TOS Routine:
+#### Create a new Bundle in the TOS Routine:
     bundle = new Bundle();
     bundleCounter++;
     bundle.setType(Bundle.BundleType.TRANSACTION);
     bundle.setId(String.valueOf(bundleCounter));
     bdlMap.put(String.valueOf(bundleCounter), bundle);
 
-### Create patient and placing the patient in the bundle:
+#### Create patient and placing the patient in the bundle:
     Patient patient = new Patient();
     IdDt patRand=IdDt.newRandomUuid();
     patient.setId(cPatId); // argument from method call
@@ -63,7 +63,7 @@ This section describes how to build an ETL-process and fill the Blaze Store with
 
     patientToBundle.put(patient.getId(), bundle.getId());
 
-### Create and assign the diagnosis ressources:
+#### Create and assign the diagnosis ressources:
     Condition condition = new Condition();
     condition
        .getCode()
@@ -120,7 +120,7 @@ This section describes how to build an ETL-process and fill the Blaze Store with
 
 ![TOS Flow2](TOS_FHIR_03_Flow2.png)
 
-## Appendix:
+### Appendix:
     @ResourceDef(name="Specimen", profile="https://fhir.bbmri.de/StructureDefinition/Specimen")
 
 	public class GBASpecimen extends Specimen {
