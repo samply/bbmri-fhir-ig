@@ -2,7 +2,7 @@
   "resourceType": "ImplementationGuide",
   "id": "de.bbmri.fhir",
   "url": "https://fhir.bbmri.de/ImplementationGuide/de.bbmri.fhir",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "name": "BBMRI_DE_IG",
   "title": "BBMRI.de/GBA Implementation Guide",
   "status": "active",
