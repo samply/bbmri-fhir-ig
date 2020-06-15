@@ -1,4 +1,4 @@
-##Validation
+## Validation
 
 While there are [multiple ways](https://www.hl7.org/fhir/validation.html) to validate FHIR resources, we recommend using the Validator JAR. The full documentation for the JAR can be found [here](https://wiki.hl7.org/index.php?title=Using_the_FHIR_Validator). The following section gives step-by-step instructions for validating a resource against the BBMRI.de ImplementationGuide using the validator JAR.
 
