@@ -1,0 +1,53 @@
+# ╭─────────────────────────────ImplementationGuide-de.bbmri.fhir.json─────────────────────────────╮
+# │  The properties below are used to create the ImplementationGuide resource. For a list of       │
+# │  supported properties, see:                                                                    │
+# │  http://build.fhir.org/ig/HL7/fhir-shorthand/branches/beta/sushi.html#ig-development           │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+id: de.bbmri.fhir
+canonical: https://fhir.bbmri.de/ImplementationGuide/de.bbmri.fhir
+version: 1.1.0
+name: BBMRI_DE_IG
+title: BBMRI.de/GBA Implementation Guide
+status: active
+publisher:
+    name: bbmri.de
+    url: bbmri.de
+    email: feedback@germanbiobanknode.de
+description: Profiles for the BBMRI.de / GBA biobanking project.
+license: CC-BY-SA-4.0
+fhirVersion: 4.0.1
+dependencies:
+  hl7.fhir.uv.ips: 0.3.0
+  de.basisprofil.r4:
+    uri: https://simplifier.net/packages/de.basisprofil.r4/0.9.6/files/129540
+    version: 0.9.6
+parameters:
+  show-inherited-invariants: false
+copyrightYear: 2020+
+releaseLabel: CI Build
+path-binary: input/other
+
+# ╭─────────────────────────────────────────────ig.ini─────────────────────────────────────────────╮
+# │  To use a provided ig-data/ig.ini file, delete the "template" property below.                  │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+template: ./bbmri.deTemplate
+
+# ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
+# │  To use a provided ig-data/input/includes/menu.xml file, delete the "menu" property below.     │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+menu:
+  IG Home: index.html
+  Table of Contents: toc.html
+  Artifact Index: artifacts.html
+  Profile Overview: overview.html
+  How to Join the Sample Locator: howtoJoin.html
+  Background:
+    Overview: background.html
+    Mappings: mappings.html
+    Referenced IGs: referencedIGs.html
+    Build ETL with TOS: etlTalent.html
+    Quality Measures: qualityMeasures.html
+  Support:
+    Instructions: support.html
+    Downloads: downloads.html
+    FHIR Spec: new-tab external http://hl7.org/fhir/R4/index.html

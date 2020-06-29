@@ -1,0 +1,41 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "Custodian",
+  "url": "https://fhir.bbmri.de/StructureDefinition/Custodian",
+  "name": "Custodian",
+  "title": "Custodian",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Specimen"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://fhir.bbmri.de/StructureDefinition/Custodian"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.bbmri.de/StructureDefinition/Collection"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

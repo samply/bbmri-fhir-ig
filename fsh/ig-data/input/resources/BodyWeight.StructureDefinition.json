@@ -1,0 +1,39 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "BodyWeight",
+  "url": "https://fhir.bbmri.de/StructureDefinition/BodyWeight",
+  "name": "BodyWeight",
+  "title": "Body Weight",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/bodyweight",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.subject",
+        "path": "Observation.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.bbmri.de/StructureDefinition/Patient"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.effective[x]",
+        "path": "Observation.effective[x]",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      }
+    ]
+  }
+}
