@@ -41,7 +41,7 @@ We provide an **step-by-step installation guide** in the Bridgehead Deployment r
 
 * An instruction how to build an ETL-process with Talend Open Studio for Data Integration and Hapi FHIR API can be found [here](etlTalent.html).
 
-* The official HL7 FHIR® Validator can be found [here](https://www.hl7.org/fhir/validation.html#jar).
+* An instruction how to validate your FHIR® resources can be found [here](support.html).
 
 #### Store documentations and tools:
 
