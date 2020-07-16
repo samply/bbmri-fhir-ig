@@ -59,6 +59,15 @@
             "language": "text/cql",
             "expression": "AgeClass"
           }
+        },
+        {
+          "code": {
+            "text": "HasCovid19"
+          },
+          "criteria": {
+            "language": "text/cql",
+            "expression": "HasCovid19"
+          }
         }
       ]
     }
