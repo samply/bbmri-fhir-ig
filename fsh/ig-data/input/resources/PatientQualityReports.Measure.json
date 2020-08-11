@@ -1,0 +1,76 @@
+{
+  "resourceType": "Measure",
+  "id": "PatientQualityReports",
+  "url": "https://fhir.bbmri.de/Measure/PatientQualityReports",
+  "title": "Patient Quality Reports",
+  "status": "active",
+  "subjectCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/resource-types",
+        "code": "Patient"
+      }
+    ]
+  },
+  "description": "This measure contains various patient related stratifiers to help to evaluate data quality.",
+  "library": [
+    "https://fhir.bbmri.de/Library/PatientQualityReports"
+  ],
+  "scoring": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/measure-scoring",
+        "code": "cohort"
+      }
+    ]
+  },
+  "group": [
+    {
+      "population": [
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                "code": "initial-population"
+              }
+            ]
+          },
+          "criteria": {
+            "language": "text/cql",
+            "expression": "InInitialPopulation"
+          }
+        }
+      ],
+      "stratifier": [
+        {
+          "code": {
+            "text": "Gender"
+          },
+          "criteria": {
+            "language": "text/cql",
+            "expression": "Gender"
+          }
+        },
+        {
+          "code": {
+            "text": "AgeClass"
+          },
+          "criteria": {
+            "language": "text/cql",
+            "expression": "AgeClass"
+          }
+        },
+        {
+          "code": {
+            "text": "HasCovid19"
+          },
+          "criteria": {
+            "language": "text/cql",
+            "expression": "HasCovid19"
+          }
+        }
+      ]
+    }
+  ]
+}

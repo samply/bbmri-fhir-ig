@@ -1,0 +1,40 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "JuridicalPerson",
+  "url": "https://fhir.bbmri.de/StructureDefinition/JuridicalPerson",
+  "name": "JuridicalPerson",
+  "title": "Juridical Person",
+  "status": "active",
+  "description": "Name of the legal entity of the organization",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Organization"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://fhir.bbmri.de/StructureDefinition/JuridicalPerson"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      }
+    ]
+  }
+}
