@@ -54,11 +54,65 @@
         },
         {
           "code": {
-            "text": "AgeClass"
+            "text": "AgeBuckets"
           },
           "criteria": {
             "language": "text/cql",
-            "expression": "AgeClass"
+            "expression": "AgeBuckets"
+          }
+        },
+        {
+          "code": {
+            "text": "ConditionBuckets"
+          },
+          "criteria": {
+            "language": "text/cql",
+            "expression": "ConditionBuckets"
+          }
+        },
+        {
+          "code": {
+            "text": "BodyHeightObservationBuckets"
+          },
+          "criteria": {
+            "language": "text/cql",
+            "expression": "BodyHeightObservationBuckets"
+          }
+        },
+        {
+          "code": {
+            "text": "BodyWeightObservationBuckets"
+          },
+          "criteria": {
+            "language": "text/cql",
+            "expression": "BodyWeightObservationBuckets"
+          }
+        },
+        {
+          "code": {
+            "text": "BmiObservationBuckets"
+          },
+          "criteria": {
+            "language": "text/cql",
+            "expression": "BmiObservationBuckets"
+          }
+        },
+        {
+          "code": {
+            "text": "TobaccoUseObservationBuckets"
+          },
+          "criteria": {
+            "language": "text/cql",
+            "expression": "TobaccoUseObservationBuckets"
+          }
+        },
+        {
+          "code": {
+            "text": "SpecimenBuckets"
+          },
+          "criteria": {
+            "language": "text/cql",
+            "expression": "SpecimenBuckets"
           }
         },
         {
