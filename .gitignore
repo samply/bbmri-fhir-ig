@@ -1,5 +1,8 @@
 /input-cache/*
 /input/*
+/output/*
+/temp/*
+/template/*
 
 build/input/*
 SUSHI-GENERATED-FILES.md

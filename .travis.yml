@@ -11,7 +11,7 @@ before_script:
 script:
 - sushi .
 - mkdir input-cache
-- wget -q https://github.com/HL7/fhir-ig-publisher/releases/download/1.1.0/publisher.jar -O input-cache/publisher.jar
+- wget -q https://github.com/HL7/fhir-ig-publisher/releases/download/1.1.14/publisher.jar -O input-cache/publisher.jar
 - JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF-8
 - java -jar input-cache/publisher.jar -ig ig.ini
 - java -jar validator.jar -ig output/validator-de.bbmri.fhir.pack -version 4.0.1 input/examples
