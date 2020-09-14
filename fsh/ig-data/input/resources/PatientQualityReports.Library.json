@@ -1,6 +1,7 @@
 {
   "resourceType": "Library",
   "id": "PatientQualityReports",
+  "name": "PatientQualityReports",
   "url": "https://fhir.bbmri.de/Library/PatientQualityReports",
   "title": "Patient Quality Reports",
   "status": "active",

@@ -1,6 +1,7 @@
 {
   "resourceType": "Library",
   "id": "SpecimenQualityReports",
+  "name": "SpecimenQualityReports",
   "url": "https://fhir.bbmri.de/Library/SpecimenQualityReports",
   "title": "Specimen Quality Reports",
   "status": "active",

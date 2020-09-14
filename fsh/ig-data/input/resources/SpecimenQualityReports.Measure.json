@@ -1,6 +1,7 @@
 {
   "resourceType": "Measure",
   "id": "SpecimenQualityReports",
+  "name": "SpecimenQualityReports",
   "url": "https://fhir.bbmri.de/Measure/SpecimenQualityReports",
   "title": "Specimen Quality Reports",
   "subjectCodeableConcept": {
