@@ -1,9 +1,6 @@
-/profile/BaseProfiles
-/*.zip
-/*.jar
-/input/images/Thumbs.db
 /input-cache/*
-temp
-template
-output
+/input/*
 
+build/input/*
+SUSHI-GENERATED-FILES.md
+ig.ini

@@ -1,0 +1,44 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "CollectionType",
+  "url": "https://fhir.bbmri.de/StructureDefinition/CollectionType",
+  "name": "CollectionType",
+  "title": "Collection Type",
+  "status": "active",
+  "description": "The type of sample collections governed by the Organization.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Organization"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://fhir.bbmri.de/StructureDefinition/CollectionType"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://fhir.bbmri.de/ValueSet/CollectionType"
+        }
+      }
+    ]
+  }
+}

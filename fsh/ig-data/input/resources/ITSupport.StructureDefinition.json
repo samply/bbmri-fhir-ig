@@ -1,0 +1,148 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ITSupport",
+  "url": "https://fhir.bbmri.de/StructureDefinition/ITSupport",
+  "name": "ITSupport",
+  "title": "IT Support",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Organization"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "IT Support",
+        "definition": "Information about the available IT support in the biobank."
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Extension.extension:itSupportAvailable",
+        "path": "Extension.extension",
+        "sliceName": "itSupportAvailable",
+        "short": "IT support available",
+        "definition": "Indication if the biobank has dedicated IT support",
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:itSupportAvailable.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "itSupportAvailable"
+      },
+      {
+        "id": "Extension.extension:itSupportAvailable.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:itStaffSize",
+        "path": "Extension.extension",
+        "sliceName": "itStaffSize",
+        "short": "IT staff size",
+        "definition": "Size of the IT staff of the biobank",
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:itStaffSize.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "itStaffSize"
+      },
+      {
+        "id": "Extension.extension:itStaffSize.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "positiveInt"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:isAvailable",
+        "path": "Extension.extension",
+        "sliceName": "isAvailable",
+        "short": "IS available",
+        "definition": "Indication if the biobank has an internal information management system for tracking biobank processes",
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:isAvailable.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "isAvailable"
+      },
+      {
+        "id": "Extension.extension:isAvailable.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:hisAvailable",
+        "path": "Extension.extension",
+        "sliceName": "hisAvailable",
+        "short": "HIS available",
+        "definition": "Indication if the biobank has a connection to a hospital information system (HIS)",
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:hisAvailable.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "hisAvailable"
+      },
+      {
+        "id": "Extension.extension:hisAvailable.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://fhir.bbmri.de/StructureDefinition/ITSupport"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}
