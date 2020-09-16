@@ -1,15 +1,20 @@
 language: ruby
 jdk: openjdk11
 rvm: 2.5
+node_js:
+  - node
 install:
 - gem install jekyll
+- npm install -g fsh-sushi@0.16.0
 before_script:
 - wget -q https://storage.googleapis.com/ig-build/org.hl7.fhir.validator.jar -O validator.jar
 script:
+- sushi .
+- cp -a fsh/ig-data/input/other input/other
 - mkdir input-cache
-- wget -q https://storage.googleapis.com/ig-build/org.hl7.fhir.publisher.jar -O input-cache/org.hl7.fhir.publisher.jar
+- wget -q https://github.com/HL7/fhir-ig-publisher/releases/download/1.1.20/publisher.jar -O input-cache/publisher.jar
 - JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF-8
-- java -jar input-cache/org.hl7.fhir.publisher.jar -ig ig.ini
+- java -jar input-cache/publisher.jar -ig ig.ini
 - java -jar validator.jar -ig output/validator-de.bbmri.fhir.pack -version 4.0.1 input/examples
 cache:
 - bundler

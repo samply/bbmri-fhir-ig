@@ -1,0 +1,15 @@
+{
+  "resourceType": "ValueSet",
+  "id": "OtherSampleDiagnosis",
+  "url": "https://fhir.bbmri.de/ValueSet/OtherSampleDiagnosis",
+  "name": "OtherSampleDiagnosis",
+  "title": "other sample diagnosis",
+  "status": "active",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.bbmri.de/CodeSystem/OtherSampleDiagnosis"
+      }
+    ]
+  }
+}

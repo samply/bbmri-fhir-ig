@@ -1,0 +1,43 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "QualityStandard",
+  "url": "https://fhir.bbmri.de/StructureDefinition/QualityStandard",
+  "name": "QualityStandard",
+  "title": "Quality Standard",
+  "status": "active",
+  "description": "Organization quality assessment",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Organization"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://fhir.bbmri.de/StructureDefinition/QualityStandard"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://fhir.bbmri.de/ValueSet/QualityStandard"
+        }
+      }
+    ]
+  }
+}
