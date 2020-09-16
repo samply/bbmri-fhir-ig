@@ -194,8 +194,8 @@ Territory","",0,1,"","","Y","string {[]} {[]}
 ","XAD.6","AD.part[parttype = CNT]","./Country"
 "Organization.address.period","","","",0,1,"","","Y","Period {[]} {[]}
 ","Time period when address was/is in use","Time period when address was/is in use.","","Allows addresses to be placed in historical context.","","","","","<valuePeriod xmlns=""http://hl7.org/fhir"">
-  <start value=""2010-03-23T00:00:00+00:00""/>
-  <end value=""2010-07-01T00:00:00+00:00""/>
+  <start value=""2010-03-23""/>
+  <end value=""2010-07-01""/>
 </valuePeriod>","","",,,,,"",,,,"Address.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","XAD.12 / XAD.13 + XAD.14","./usablePeriod[type=""IVL<TS>""]","./StartDate and ./EndDate"
 "Organization.partOf","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]}
@@ -510,8 +510,8 @@ Territory","",0,1,"","","Y","string {[]} {[]}
 ","XAD.6","AD.part[parttype = CNT]","./Country"
 "Organization.contact.address.period","","","",0,1,"","","Y","Period {[]} {[]}
 ","Time period when address was/is in use","Time period when address was/is in use.","","Allows addresses to be placed in historical context.","","","","","<valuePeriod xmlns=""http://hl7.org/fhir"">
-  <start value=""2010-03-23T00:00:00+00:00""/>
-  <end value=""2010-07-01T00:00:00+00:00""/>
+  <start value=""2010-03-23""/>
+  <end value=""2010-07-01""/>
 </valuePeriod>","","",,,,,"",,,,"Address.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","XAD.12 / XAD.13 + XAD.14","./usablePeriod[type=""IVL<TS>""]","./StartDate and ./EndDate"
 "Organization.endpoint","","","",0,*,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Endpoint]]}

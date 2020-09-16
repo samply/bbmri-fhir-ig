@@ -10,21 +10,22 @@
   fhir:Resource.id [ fhir:value "ResourceType"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"http://hl7.org/fhir/R4/CodeSystem-ResourceType.html\"><code>https://fhir.bbmri.de/CodeSystem/ResourceType</code></a></li></ul></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-ResourceType.html\"><code>https://fhir.bbmri.de/CodeSystem/ResourceType</code></a></li></ul></div>"
   ];
   fhir:ValueSet.url [ fhir:value "https://fhir.bbmri.de/ValueSet/ResourceType"];
-  fhir:ValueSet.version [ fhir:value "1.1.0"];
+  fhir:ValueSet.version [ fhir:value "1.2.0"];
   fhir:ValueSet.name [ fhir:value "ResourceType"];
   fhir:ValueSet.title [ fhir:value "Resource Type"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2020-05-28T14:12:37+00:00"^^xsd:dateTime];
-  fhir:ValueSet.publisher [ fhir:value "BBMRI.de"];
+  fhir:ValueSet.date [ fhir:value "2020-09-16T11:11:35+00:00"^^xsd:dateTime];
+  fhir:ValueSet.publisher [ fhir:value "bbmri.de"];
   fhir:ValueSet.contact [
      fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "bbmri.de" ];
      fhir:ContactDetail.telecom [
        fhir:index 0;
        fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "https://www.bbmri.de" ]
+       fhir:ContactPoint.value [ fhir:value "bbmri.de" ]
      ], [
        fhir:index 1;
        fhir:ContactPoint.system [ fhir:value "email" ];

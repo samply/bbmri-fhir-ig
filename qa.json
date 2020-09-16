@@ -1,12 +1,12 @@
 {
-  "url": "https://fhir.bbmri.de/ImplementationGuide/de.bbmri.fhir",
+  "url": "https://fhir.bbmri.de/ImplementationGuide/de.bbmri.fhir/ImplementationGuide/de.bbmri.fhir",
   "name": "BBMRI_DE_IG",
   "package-id": "de.bbmri.fhir",
-  "ig-ver": "1.1.0",
-  "date": "Thu, 28 May, 2020 14:12:37 +0000",
-  "errs": 4,
-  "warnings": 61,
-  "hints": 1,
+  "ig-ver": "1.2.0",
+  "date": "Wed, 16 Sep, 2020 11:11:35 +0000",
+  "errs": 18,
+  "warnings": 59,
+  "hints": 3,
   "version": "4.0.1",
-  "tool": "4.4.0 (3)"
+  "tool": "4.5.0 (3)"
 }

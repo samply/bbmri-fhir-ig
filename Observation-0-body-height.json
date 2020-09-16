@@ -8,7 +8,7 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>id</b>: 0-body-height</p><p><b>meta</b>: </p><p></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 8302-2}\">Body height</span></p><p><b>subject</b>: <a href=\"Patient-0.html\">Generated Summary: id: 0; gender: male; birthDate: 1989-11-18; deceased: Jan 27, 2009, 12:00:00 AM</a></p><p><b>effective</b>: Jun 17, 2005, 12:00:00 AM</p><p><b>value</b>: 198.58 cm</p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><h3>Ids</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><h3>Meta</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 8302-2}\">Body height</span></p><p><b>subject</b>: <a href=\"Patient-0.html\">Generated Summary: gender: male; birthDate: 1989-11-18; deceased: 2009-01-27</a></p><p><b>effective</b>: 2005-06-17</p><p><b>value</b>: 198.58 cm</p></div>"
   },
   "status": "final",
   "category": [

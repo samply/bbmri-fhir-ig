@@ -1,339 +1,683 @@
 ﻿BBMRI_DE_IG : Validation Results
 =========================================
 
-err = 4, warn = 61, info = 1
-IG Publisher Version: v1.0.97-SNAPSHOT
-Generated Thu May 28 14:13:40 UTC 2020. FHIR version 4.0.1 for de.bbmri.fhir#1.1.0 (canonical = https://fhir.bbmri.de)
+err = 18, warn = 59, info = 3
+IG Publisher Version: 1.1.20 Out of date - current version is 1.1.23
+Generated Wed Sep 16 11:13:18 UTC 2020. FHIR version 4.0.1 for de.bbmri.fhir#1.2.0 (canonical = https://fhir.bbmri.de)
 
- Build Errors : 114 / 48
- /home/travis/build/samply/bbmri-fhir-ig/input/de.bbmri.fhir : 0 / 0
- /home/travis/build/samply/bbmri-fhir-ig/input/examples/exampleBiobank : 0 / 0
- /home/travis/build/samply/bbmri-fhir-ig/input/examples/exampleBmi : 0 / 0
- /home/travis/build/samply/bbmri-fhir-ig/input/examples/exampleBodyHeight : 0 / 0
- /home/travis/build/samply/bbmri-fhir-ig/input/examples/exampleBodyWeight : 0 / 0
- /home/travis/build/samply/bbmri-fhir-ig/input/examples/exampleCollection : 0 / 0
- /home/travis/build/samply/bbmri-fhir-ig/input/examples/exampleCollectionRD : 0 / 0
- /home/travis/build/samply/bbmri-fhir-ig/input/examples/exampleNetworkMembership : 0 / 0
- /home/travis/build/samply/bbmri-fhir-ig/input/examples/examplePatient : 0 / 0
- /home/travis/build/samply/bbmri-fhir-ig/input/examples/exampleSpecimen : 0 / 1
- /home/travis/build/samply/bbmri-fhir-ig/input/examples/exampleTobaccoUse : 0 / 0
- /home/travis/build/samply/bbmri-fhir-ig/input/examples/transaction-0 : 1 / 0
- /home/travis/build/samply/bbmri-fhir-ig/input/resources/AccessPolicy.StructureDefinition : 0 / 0
- /home/travis/build/samply/bbmri-fhir-ig/input/resources/Biobank.StructureDefinition : 0 / 0
- /home/travis/build/samply/bbmri-fhir-ig/input/resources/BiobankCapabilities.CodeSystem : 0 / 0
- /home/travis/build/samply/bbmri-fhir-ig/input/resources/BiobankCapabilities.ValueSet : 0 / 0
- /home/travis/build/samply/bbmri-fhir-ig/input/resources/Bmi.StructureDefinition : 0 / 0
- /home/travis/build/samply/bbmri-fhir-ig/input/resources/BodyHeight.StructureDefinition : 0 / 0
- /home/travis/build/samply/bbmri-fhir-ig/input/resources/BodyWeight.StructureDefinition : 0 / 0
- /home/travis/build/samply/bbmri-fhir-ig/input/resources/Capabilities.StructureDefinition : 0 / 1
- /home/travis/build/samply/bbmri-fhir-ig/input/resources/CauseOfDeath.StructureDefinition : 0 / 1
- /home/travis/build/samply/bbmri-fhir-ig/input/resources/Collaboration.StructureDefinition : 0 / 1
- /home/travis/build/samply/bbmri-fhir-ig/input/resources/Collection.StructureDefinition : 0 / 0
- /home/travis/build/samply/bbmri-fhir-ig/input/resources/CollectionType.CodeSystem : 0 / 0
- /home/travis/build/samply/bbmri-fhir-ig/input/resources/CollectionType.StructureDefinition : 0 / 0
- /home/travis/build/samply/bbmri-fhir-ig/input/resources/CollectionType.ValueSet : 0 / 0
- /home/travis/build/samply/bbmri-fhir-ig/input/resources/Condition.StructureDefinition : 2 / 1
- /home/travis/build/samply/bbmri-fhir-ig/input/resources/ContactRole.StructureDefinition : 0 / 0
- /home/travis/build/samply/bbmri-fhir-ig/input/resources/ContactType.CodeSystem : 0 / 0
- /home/travis/build/samply/bbmri-fhir-ig/input/resources/Custodian.StructureDefinition : 0 / 0
- /home/travis/build/samply/bbmri-fhir-ig/input/resources/DataCategory.CodeSystem : 0 / 0
- /home/travis/build/samply/bbmri-fhir-ig/input/resources/DataCategory.StructureDefinition : 0 / 0
- /home/travis/build/samply/bbmri-fhir-ig/input/resources/DataCategory.ValueSet : 0 / 0
- /home/travis/build/samply/bbmri-fhir-ig/input/resources/Diagnosis.StructureDefinition : 2 / 0
- /home/travis/build/samply/bbmri-fhir-ig/input/resources/ITSupport.StructureDefinition : 0 / 1
- /home/travis/build/samply/bbmri-fhir-ig/input/resources/IdCard.StructureDefinition : 0 / 0
- /home/travis/build/samply/bbmri-fhir-ig/input/resources/JuridicalPersion.StructureDefinition : 0 / 0
- /home/travis/build/samply/bbmri-fhir-ig/input/resources/NetworkMembership.StructureDefinition : 0 / 1
- /home/travis/build/samply/bbmri-fhir-ig/input/resources/OrganizationDescription.StructureDefinition : 0 / 0
- /home/travis/build/samply/bbmri-fhir-ig/input/resources/OtherSampleDiagnosis.CodeSystem : 0 / 0
- /home/travis/build/samply/bbmri-fhir-ig/input/resources/OtherSampleDiagnosis.ValueSet : 0 / 0
- /home/travis/build/samply/bbmri-fhir-ig/input/resources/PartnerCharterSigned.StructureDefinition : 0 / 1
- /home/travis/build/samply/bbmri-fhir-ig/input/resources/Patient.StructureDefinition : 0 / 0
- /home/travis/build/samply/bbmri-fhir-ig/input/resources/PatientQualityReports.Library : 2 / 1
- /home/travis/build/samply/bbmri-fhir-ig/input/resources/PatientQualityReports.Measure : 0 / 1
- /home/travis/build/samply/bbmri-fhir-ig/input/resources/QualityStandard.CodeSystem : 0 / 0
- /home/travis/build/samply/bbmri-fhir-ig/input/resources/QualityStandard.StructureDefinition : 0 / 0
- /home/travis/build/samply/bbmri-fhir-ig/input/resources/QualityStandard.ValueSet : 0 / 0
- /home/travis/build/samply/bbmri-fhir-ig/input/resources/ResourceManagement.StructureDefinition : 0 / 1
- /home/travis/build/samply/bbmri-fhir-ig/input/resources/ResourceType.CodeSystem : 0 / 0
- /home/travis/build/samply/bbmri-fhir-ig/input/resources/ResourceType.ValueSet : 0 / 0
- /home/travis/build/samply/bbmri-fhir-ig/input/resources/SampleMaterialType.CodeSystem : 0 / 0
- /home/travis/build/samply/bbmri-fhir-ig/input/resources/SampleMaterialType.ValueSet : 0 / 0
- /home/travis/build/samply/bbmri-fhir-ig/input/resources/Specimen.StructureDefinition : 1 / 0
- /home/travis/build/samply/bbmri-fhir-ig/input/resources/SpecimenQualityReports.Library : 18 / 1
- /home/travis/build/samply/bbmri-fhir-ig/input/resources/SpecimenQualityReports.Measure : 0 / 1
- /home/travis/build/samply/bbmri-fhir-ig/input/resources/StorageTemperature.CodeSystem : 0 / 0
- /home/travis/build/samply/bbmri-fhir-ig/input/resources/StorageTemperature.StructureDefinition : 0 / 0
- /home/travis/build/samply/bbmri-fhir-ig/input/resources/StorageTemperature.ValueSet : 0 / 0
- /home/travis/build/samply/bbmri-fhir-ig/input/resources/TobaccoUse.StructureDefinition : 0 / 0
- /home/travis/build/samply/bbmri-fhir-ig/input/resources/bioresourceReference.StructureDefinition : 0 / 0
- /home/travis/build/samply/bbmri-fhir-ig/input/resources/parentCollection.StructureDefinition : 0 / 1
+ Build Errors : 397 / 47 / 0
+ /home/travis/build/samply/bbmri-fhir-ig/input/ImplementationGuide-de.bbmri.fhir : 2 / 0 / 1
+ /home/travis/build/samply/bbmri-fhir-ig/input/examples/Bundle-53ef12a3-1e31-4fc1-adf6-9d30dc6c4784 : 1 / 1 / 12
+ /home/travis/build/samply/bbmri-fhir-ig/input/examples/Observation-0-bmi : 0 / 0 / 1
+ /home/travis/build/samply/bbmri-fhir-ig/input/examples/Observation-0-body-height : 0 / 0 / 1
+ /home/travis/build/samply/bbmri-fhir-ig/input/examples/Observation-0-body-weight : 0 / 0 / 1
+ /home/travis/build/samply/bbmri-fhir-ig/input/examples/Observation-0-tobacco-use : 0 / 1 / 1
+ /home/travis/build/samply/bbmri-fhir-ig/input/examples/Organization-exampleBiobank : 1 / 0 / 1
+ /home/travis/build/samply/bbmri-fhir-ig/input/examples/Organization-exampleCollection : 1 / 0 / 1
+ /home/travis/build/samply/bbmri-fhir-ig/input/examples/Organization-exampleCollectionRD : 1 / 0 / 1
+ /home/travis/build/samply/bbmri-fhir-ig/input/examples/OrganizationAffiliation-example : 1 / 0 / 1
+ /home/travis/build/samply/bbmri-fhir-ig/input/examples/Patient-0 : 0 / 0 / 1
+ /home/travis/build/samply/bbmri-fhir-ig/input/examples/Specimen-0-specimen : 0 / 0 / 2
+ /home/travis/build/samply/bbmri-fhir-ig/input/profiles/StructureDefinition-TobaccoUse : 0 / 1 / 1
+ /home/travis/build/samply/bbmri-fhir-ig/input/resources/CodeSystem-BiobankCapabilities : 0 / 0 / 1
+ /home/travis/build/samply/bbmri-fhir-ig/input/resources/CodeSystem-CollectionType : 0 / 0 / 1
+ /home/travis/build/samply/bbmri-fhir-ig/input/resources/CodeSystem-ContactType : 0 / 0 / 1
+ /home/travis/build/samply/bbmri-fhir-ig/input/resources/CodeSystem-DataCategory : 0 / 0 / 1
+ /home/travis/build/samply/bbmri-fhir-ig/input/resources/CodeSystem-OtherSampleDiagnosis : 0 / 0 / 1
+ /home/travis/build/samply/bbmri-fhir-ig/input/resources/CodeSystem-QualityStandard : 0 / 0 / 1
+ /home/travis/build/samply/bbmri-fhir-ig/input/resources/CodeSystem-ResourceType : 0 / 0 / 1
+ /home/travis/build/samply/bbmri-fhir-ig/input/resources/CodeSystem-SampleMaterialType : 0 / 0 / 1
+ /home/travis/build/samply/bbmri-fhir-ig/input/resources/CodeSystem-StorageTemperature : 0 / 0 / 1
+ /home/travis/build/samply/bbmri-fhir-ig/input/resources/Library-PatientQualityReports : 3 / 0 / 1
+ /home/travis/build/samply/bbmri-fhir-ig/input/resources/Library-SpecimenQualityReports : 2 / 0 / 1
+ /home/travis/build/samply/bbmri-fhir-ig/input/resources/Measure-PatientQualityReports : 0 / 0 / 1
+ /home/travis/build/samply/bbmri-fhir-ig/input/resources/Measure-SpecimenQualityReports : 0 / 0 / 1
+ /home/travis/build/samply/bbmri-fhir-ig/input/resources/StructureDefinition-AccessPolicy : 0 / 0 / 1
+ /home/travis/build/samply/bbmri-fhir-ig/input/resources/StructureDefinition-Biobank : 0 / 0 / 3
+ /home/travis/build/samply/bbmri-fhir-ig/input/resources/StructureDefinition-BioresourceReference : 0 / 0 / 1
+ /home/travis/build/samply/bbmri-fhir-ig/input/resources/StructureDefinition-Bmi : 0 / 0 / 1
+ /home/travis/build/samply/bbmri-fhir-ig/input/resources/StructureDefinition-BodyHeight : 0 / 0 / 1
+ /home/travis/build/samply/bbmri-fhir-ig/input/resources/StructureDefinition-BodyWeight : 0 / 0 / 1
+ /home/travis/build/samply/bbmri-fhir-ig/input/resources/StructureDefinition-Capabilities : 0 / 1 / 1
+ /home/travis/build/samply/bbmri-fhir-ig/input/resources/StructureDefinition-CauseOfDeath : 0 / 1 / 1
+ /home/travis/build/samply/bbmri-fhir-ig/input/resources/StructureDefinition-Collaboration : 0 / 1 / 1
+ /home/travis/build/samply/bbmri-fhir-ig/input/resources/StructureDefinition-Collection : 0 / 0 / 1
+ /home/travis/build/samply/bbmri-fhir-ig/input/resources/StructureDefinition-CollectionType : 0 / 0 / 1
+ /home/travis/build/samply/bbmri-fhir-ig/input/resources/StructureDefinition-Condition : 2 / 1 / 1
+ /home/travis/build/samply/bbmri-fhir-ig/input/resources/StructureDefinition-ContactRole : 0 / 0 / 1
+ /home/travis/build/samply/bbmri-fhir-ig/input/resources/StructureDefinition-Custodian : 0 / 0 / 1
+ /home/travis/build/samply/bbmri-fhir-ig/input/resources/StructureDefinition-DataCategory : 0 / 0 / 1
+ /home/travis/build/samply/bbmri-fhir-ig/input/resources/StructureDefinition-ITSupport : 0 / 1 / 1
+ /home/travis/build/samply/bbmri-fhir-ig/input/resources/StructureDefinition-IdCard : 0 / 0 / 1
+ /home/travis/build/samply/bbmri-fhir-ig/input/resources/StructureDefinition-JuridicalPerson : 0 / 0 / 1
+ /home/travis/build/samply/bbmri-fhir-ig/input/resources/StructureDefinition-NetworkMembership : 0 / 1 / 1
+ /home/travis/build/samply/bbmri-fhir-ig/input/resources/StructureDefinition-OrganizationDescription : 0 / 0 / 1
+ /home/travis/build/samply/bbmri-fhir-ig/input/resources/StructureDefinition-ParentCollection : 0 / 1 / 1
+ /home/travis/build/samply/bbmri-fhir-ig/input/resources/StructureDefinition-PartnerCharterSigned : 0 / 1 / 1
+ /home/travis/build/samply/bbmri-fhir-ig/input/resources/StructureDefinition-Patient : 0 / 0 / 1
+ /home/travis/build/samply/bbmri-fhir-ig/input/resources/StructureDefinition-QualityStandard : 0 / 0 / 1
+ /home/travis/build/samply/bbmri-fhir-ig/input/resources/StructureDefinition-ResourceManagement : 0 / 1 / 1
+ /home/travis/build/samply/bbmri-fhir-ig/input/resources/StructureDefinition-SampleDiagnosis : 2 / 0 / 1
+ /home/travis/build/samply/bbmri-fhir-ig/input/resources/StructureDefinition-Specimen : 1 / 0 / 1
+ /home/travis/build/samply/bbmri-fhir-ig/input/resources/StructureDefinition-StorageTemperature : 0 / 0 / 1
+ /home/travis/build/samply/bbmri-fhir-ig/input/resources/ValueSet-BiobankCapabilities : 0 / 0 / 1
+ /home/travis/build/samply/bbmri-fhir-ig/input/resources/ValueSet-CollectionType : 0 / 0 / 1
+ /home/travis/build/samply/bbmri-fhir-ig/input/resources/ValueSet-DataCategory : 0 / 0 / 1
+ /home/travis/build/samply/bbmri-fhir-ig/input/resources/ValueSet-OtherSampleDiagnosis : 0 / 0 / 1
+ /home/travis/build/samply/bbmri-fhir-ig/input/resources/ValueSet-QualityStandard : 0 / 0 / 1
+ /home/travis/build/samply/bbmri-fhir-ig/input/resources/ValueSet-ResourceType : 0 / 0 / 1
+ /home/travis/build/samply/bbmri-fhir-ig/input/resources/ValueSet-SampleMaterialType : 0 / 0 / 1
+ /home/travis/build/samply/bbmri-fhir-ig/input/resources/ValueSet-StorageTemperature : 0 / 0 / 1
 </table>
 == n/a ==
-ERROR: ImplementationGuide.definition.parameter[22].value: Supressed messages file is not using the new format (see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters)
 WARNING: ImplementationGuide.dependency[1].url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/53ef12a3-1e31-4fc1-adf6-9d30dc6c4784.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Organization/exampleCollection.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Specimen/0-specimen.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource OrganizationAffiliation/example.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource OrganizationAffiliation/example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/0-body-weight.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Organization/exampleBiobank.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/0-tobacco-use.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/0-body-height.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Organization/exampleCollectionRD.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/0.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/0-bmi.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/Biobank.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/BodyWeight.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/BioresourceReference.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/ContactType.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/BodyHeight.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/Bmi.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/SampleMaterialType.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/CollectionType.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/Custodian.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/TobaccoUse.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/ResourceType.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/Specimen.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/DataCategory.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/QualityStandard.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/Collection.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/Collaboration.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/StorageTemperature.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/OtherSampleDiagnosis.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/PartnerCharterSigned.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/CauseOfDeath.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/Capabilities.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/QualityStandard.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/StorageTemperature.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/SampleDiagnosis.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: ?pkp-1?: The reference http://fhir.de/StructureDefinition/CodingICD10GM could not be resolved
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/AccessPolicy.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/StorageTemperature.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/Biobank.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/BiobankCapabilities.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/BiobankCapabilities.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/ParentCollection.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/Condition.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/Bmi.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/BodyHeight.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/BodyWeight.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/Capabilities.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/CauseOfDeath.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/Collaboration.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/Collection.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/CollectionType.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/CollectionType.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/Condition.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/ContactRole.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/ITSupport.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/ResourceManagement.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/IdCard.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/ContactType.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/Custodian.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/DataCategory.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/DataCategory.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Condition-definitions.html: unable to parse character reference 'canonical=http://fhir.de/StructureDefinition/CodingICD10GM" title="[CanonicalType[http://fhir.de/StructureDefinition/CodingICD10GM]]">CodingICD10GM</a>)</td></tr>
-  <tr><td>Requirements</td><td><p>Allows for alternative encodings within a code system, and translations to other code systems.</p>
-</td></tr>
-  <tr><td>Comments</td><td><p>Codes may be defined very casually in enumerations or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.</p>
-</td></tr>
-  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt'' (last text = '(' at line 538 column 142
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Condition.html: unable to parse character reference 'canonical=http://fhir.de/StructureDefinition/CodingICD10GM">http://fhir.de/StructureDefinition/CodingICD10GM</a></li>
-<li><a href="StructureDefinition-Patient.html">https://fhir.bbmri.de/StructureDefinition/Patient</a></li>
-
-</ul>
-
-<p><b>Slices</b></p>
-<p>This structure defines the following <a href="http://hl7.org/fhir/R4/profiling.html#slices">Slices</a>:</p>
-<ul>
-<li>The element Condition.code.coding is sliced based on the values of value:system, value:version</li>
-
-</ul>
-
-
-        </div>
-      </div>
-    </div>
-    <a name="tabs-diff"> </a>
-    <div id="tabs-diff">
-      <div id="tbl-diff">
-        <p>This structure is derived from <a href="http://hl7.org/fhir/R4/condition.html">Condition</a>
-        </p>
-        <div id="tbl-diff-inner">
-          <table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid'' (last text = '
-' at line 268 column 94
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/Organization-exampleCollection.html#/html/body/div/div/div/div/div/div/p/a at Line 183, column 340: The link 'Organization/exampleBiobank' for "Organization/exampleBiobank" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/Organization-exampleCollectionRD.html#/html/body/div/div/div/div/div/div/p/a at Line 183, column 340: The link 'Organization/exampleBiobank' for "Organization/exampleBiobank" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/OrganizationAffiliation-example.html#/html/body/div/div/div/div/div/div/p/a at Line 183, column 205: The link 'Organization/exampleBiobank' for "Organization/exampleBiobank" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-BiobankCapabilities.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 180, column 82: The link 'http://hl7.org/fhir/R4/CodeSystem-BiobankCapabilities.html' for "https://fhir.bbmri.de/CodeSystem/BiobankCapabilities" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-BiobankCapabilities.html#/html/body/div/div/div/div/div/div/p/a at Line 186, column 323: The link 'http://hl7.org/fhir/R4/CodeSystem-BiobankCapabilities.html' for "https://fhir.bbmri.de/CodeSystem/BiobankCapabilities" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-BiobankCapabilities.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 186, column 714: The link 'http://hl7.org/fhir/R4/CodeSystem-BiobankCapabilities.html#BiobankCapabilities-biomaterial-storage' for "biomaterial-storage" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-BiobankCapabilities.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 186, column 1013: The link 'http://hl7.org/fhir/R4/CodeSystem-BiobankCapabilities.html#BiobankCapabilities-cell-culture' for "cell-culture" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-BiobankCapabilities.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 186, column 1285: The link 'http://hl7.org/fhir/R4/CodeSystem-BiobankCapabilities.html#BiobankCapabilities-data-analytics' for "data-analytics" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-BiobankCapabilities.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 186, column 1561: The link 'http://hl7.org/fhir/R4/CodeSystem-BiobankCapabilities.html#BiobankCapabilities-data-storage' for "data-storage" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-BiobankCapabilities.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 186, column 1834: The link 'http://hl7.org/fhir/R4/CodeSystem-BiobankCapabilities.html#BiobankCapabilities-digital-imaging' for "digital-imaging" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-BiobankCapabilities.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 186, column 2129: The link 'http://hl7.org/fhir/R4/CodeSystem-BiobankCapabilities.html#BiobankCapabilities-immunohistochemistry-scoring' for "immunohistochemistry-scoring" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-BiobankCapabilities.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 186, column 2464: The link 'http://hl7.org/fhir/R4/CodeSystem-BiobankCapabilities.html#BiobankCapabilities-immunohistochemistry-staining' for "immunohistochemistry-staining" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-BiobankCapabilities.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 186, column 2796: The link 'http://hl7.org/fhir/R4/CodeSystem-BiobankCapabilities.html#BiobankCapabilities-nucleic-acid-extraction' for "nucleic-acid-extraction" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-BiobankCapabilities.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 186, column 3111: The link 'http://hl7.org/fhir/R4/CodeSystem-BiobankCapabilities.html#BiobankCapabilities-pathology-archive-access' for "pathology-archive-access" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-BiobankCapabilities.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 186, column 3426: The link 'http://hl7.org/fhir/R4/CodeSystem-BiobankCapabilities.html#BiobankCapabilities-recontact' for "recontact" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-BiobankCapabilities.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 186, column 3698: The link 'http://hl7.org/fhir/R4/CodeSystem-BiobankCapabilities.html#BiobankCapabilities-tma-creation' for "tma-creation" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-CollectionType.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 180, column 82: The link 'http://hl7.org/fhir/R4/CodeSystem-CollectionType.html' for "https://fhir.bbmri.de/CodeSystem/CollectionType" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-CollectionType.html#/html/body/div/div/div/div/div/div/p/a at Line 186, column 313: The link 'http://hl7.org/fhir/R4/CodeSystem-CollectionType.html' for "https://fhir.bbmri.de/CodeSystem/CollectionType" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-CollectionType.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 186, column 676: The link 'http://hl7.org/fhir/R4/CodeSystem-CollectionType.html#CollectionType-SAMPLE' for "SAMPLE" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-CollectionType.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 186, column 922: The link 'http://hl7.org/fhir/R4/CodeSystem-CollectionType.html#CollectionType-TWIN_STUDY' for "TWIN_STUDY" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-CollectionType.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 186, column 1161: The link 'http://hl7.org/fhir/R4/CodeSystem-CollectionType.html#CollectionType-RD' for "RD" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-CollectionType.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 186, column 1404: The link 'http://hl7.org/fhir/R4/CodeSystem-CollectionType.html#CollectionType-NON_HUMAN' for "NON_HUMAN" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-CollectionType.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 186, column 1650: The link 'http://hl7.org/fhir/R4/CodeSystem-CollectionType.html#CollectionType-BIRTH_COHORT' for "BIRTH_COHORT" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-CollectionType.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 186, column 1905: The link 'http://hl7.org/fhir/R4/CodeSystem-CollectionType.html#CollectionType-CASE_CONTROL' for "CASE_CONTROL" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-CollectionType.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 186, column 2154: The link 'http://hl7.org/fhir/R4/CodeSystem-CollectionType.html#CollectionType-COHORT' for "COHORT" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-CollectionType.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 186, column 2394: The link 'http://hl7.org/fhir/R4/CodeSystem-CollectionType.html#CollectionType-CROSS_SECTIONAL' for "CROSS_SECTIONAL" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-CollectionType.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 186, column 2662: The link 'http://hl7.org/fhir/R4/CodeSystem-CollectionType.html#CollectionType-DISEASE_SPECIFIC' for "DISEASE_SPECIFIC" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-CollectionType.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 186, column 2925: The link 'http://hl7.org/fhir/R4/CodeSystem-CollectionType.html#CollectionType-HOSPITAL' for "HOSPITAL" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-CollectionType.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 186, column 3161: The link 'http://hl7.org/fhir/R4/CodeSystem-CollectionType.html#CollectionType-IMAGE' for "IMAGE" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-CollectionType.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 186, column 3406: The link 'http://hl7.org/fhir/R4/CodeSystem-CollectionType.html#CollectionType-LONGITUDINAL' for "LONGITUDINAL" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-CollectionType.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 186, column 3654: The link 'http://hl7.org/fhir/R4/CodeSystem-CollectionType.html#CollectionType-OTHER' for "OTHER" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-CollectionType.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 186, column 3892: The link 'http://hl7.org/fhir/R4/CodeSystem-CollectionType.html#CollectionType-POPULATION_BASED' for "POPULATION_BASED" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-CollectionType.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 186, column 4162: The link 'http://hl7.org/fhir/R4/CodeSystem-CollectionType.html#CollectionType-QUALITY_CONTROL' for "QUALITY_CONTROL" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-DataCategory.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 180, column 82: The link 'http://hl7.org/fhir/R4/CodeSystem-DataCategory.html' for "https://fhir.bbmri.de/CodeSystem/DataCategory" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-DataCategory.html#/html/body/div/div/div/div/div/div/p/a at Line 186, column 308: The link 'http://hl7.org/fhir/R4/CodeSystem-DataCategory.html' for "https://fhir.bbmri.de/CodeSystem/DataCategory" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-DataCategory.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 186, column 677: The link 'http://hl7.org/fhir/R4/CodeSystem-DataCategory.html#DataCategory-BIOLOGICAL_SAMPLES' for "BIOLOGICAL_SAMPLES" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-DataCategory.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 186, column 952: The link 'http://hl7.org/fhir/R4/CodeSystem-DataCategory.html#DataCategory-GENEALOGICAL_RECORDS' for "GENEALOGICAL_RECORDS" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-DataCategory.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 186, column 1225: The link 'http://hl7.org/fhir/R4/CodeSystem-DataCategory.html#DataCategory-IMAGING_DATA' for "IMAGING_DATA" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-DataCategory.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 186, column 1477: The link 'http://hl7.org/fhir/R4/CodeSystem-DataCategory.html#DataCategory-MEDICAL_RECORDS' for "MEDICAL_RECORDS" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-DataCategory.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 186, column 1742: The link 'http://hl7.org/fhir/R4/CodeSystem-DataCategory.html#DataCategory-NATIONAL_REGISTRIES' for "NATIONAL_REGISTRIES" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-DataCategory.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 186, column 2003: The link 'http://hl7.org/fhir/R4/CodeSystem-DataCategory.html#DataCategory-NAV' for "NAV" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-DataCategory.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 186, column 2228: The link 'http://hl7.org/fhir/R4/CodeSystem-DataCategory.html#DataCategory-OTHER' for "OTHER" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-DataCategory.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 186, column 2482: The link 'http://hl7.org/fhir/R4/CodeSystem-DataCategory.html#DataCategory-PHYSIOLOGICAL_BIOCHEMICAL_MEASUREMENTS' for "PHYSIOLOGICAL_BIOCHEMICAL_MEASUREMENTS" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-DataCategory.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 186, column 2808: The link 'http://hl7.org/fhir/R4/CodeSystem-DataCategory.html#DataCategory-SURVEY_DATA' for "SURVEY_DATA" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-OtherSampleDiagnosis.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 181, column 82: The link 'http://hl7.org/fhir/R4/CodeSystem-OtherSampleDiagnosis.html' for "https://fhir.bbmri.de/CodeSystem/OtherSampleDiagnosis" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-OtherSampleDiagnosis.html#/html/body/div/div/div/div/div/div/p/a at Line 187, column 325: The link 'http://hl7.org/fhir/R4/CodeSystem-OtherSampleDiagnosis.html' for "https://fhir.bbmri.de/CodeSystem/OtherSampleDiagnosis" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-OtherSampleDiagnosis.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 187, column 707: The link 'http://hl7.org/fhir/R4/CodeSystem-OtherSampleDiagnosis.html#OtherSampleDiagnosis-healthy' for "healthy" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-OtherSampleDiagnosis.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 187, column 996: The link 'http://hl7.org/fhir/R4/CodeSystem-OtherSampleDiagnosis.html#OtherSampleDiagnosis-unknown' for "unknown" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-OtherSampleDiagnosis.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 187, column 1256: The link 'http://hl7.org/fhir/R4/CodeSystem-OtherSampleDiagnosis.html#OtherSampleDiagnosis-not-applicable' for "not-applicable" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-OtherSampleDiagnosis.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 187, column 1540: The link 'http://hl7.org/fhir/R4/CodeSystem-OtherSampleDiagnosis.html#OtherSampleDiagnosis-unspecified-tumor' for "unspecified-tumor" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-QualityStandard.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 180, column 82: The link 'http://hl7.org/fhir/R4/CodeSystem-QualityStandard.html' for "https://fhir.bbmri.de/CodeSystem/QualityStandard" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-QualityStandard.html#/html/body/div/div/div/div/div/div/p/a at Line 186, column 314: The link 'http://hl7.org/fhir/R4/CodeSystem-QualityStandard.html' for "https://fhir.bbmri.de/CodeSystem/QualityStandard" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-QualityStandard.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 186, column 683: The link 'http://hl7.org/fhir/R4/CodeSystem-QualityStandard.html#QualityStandard-iso-15189' for "iso-15189" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-QualityStandard.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 186, column 929: The link 'http://hl7.org/fhir/R4/CodeSystem-QualityStandard.html#QualityStandard-iso-15190' for "iso-15190" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-QualityStandard.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 186, column 1175: The link 'http://hl7.org/fhir/R4/CodeSystem-QualityStandard.html#QualityStandard-iso-17025' for "iso-17025" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-QualityStandard.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 186, column 1420: The link 'http://hl7.org/fhir/R4/CodeSystem-QualityStandard.html#QualityStandard-iso-9001' for "iso-9001" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-QualityStandard.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 186, column 1663: The link 'http://hl7.org/fhir/R4/CodeSystem-QualityStandard.html#QualityStandard-nfs96-900' for "nfs96-900" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-QualityStandard.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 186, column 1915: The link 'http://hl7.org/fhir/R4/CodeSystem-QualityStandard.html#QualityStandard-oecd-guidelines' for "oecd-guidelines" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-QualityStandard.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 186, column 2176: The link 'http://hl7.org/fhir/R4/CodeSystem-QualityStandard.html#QualityStandard-others' for "others" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-ResourceType.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 181, column 82: The link 'http://hl7.org/fhir/R4/CodeSystem-ResourceType.html' for "https://fhir.bbmri.de/CodeSystem/ResourceType" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-ResourceType.html#/html/body/div/div/div/div/div/div/p/a at Line 187, column 308: The link 'http://hl7.org/fhir/R4/CodeSystem-ResourceType.html' for "https://fhir.bbmri.de/CodeSystem/ResourceType" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-ResourceType.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 187, column 666: The link 'http://hl7.org/fhir/R4/CodeSystem-ResourceType.html#ResourceType-samples' for "samples" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-ResourceType.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 187, column 892: The link 'http://hl7.org/fhir/R4/CodeSystem-ResourceType.html#ResourceType-data' for "data" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-ResourceType.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 187, column 1111: The link 'http://hl7.org/fhir/R4/CodeSystem-ResourceType.html#ResourceType-images' for "images" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-SampleMaterialType.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 180, column 82: The link 'http://hl7.org/fhir/R4/CodeSystem-SampleMaterialType.html' for "https://fhir.bbmri.de/CodeSystem/SampleMaterialType" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-SampleMaterialType.html#/html/body/div/div/div/div/div/div/p/a at Line 186, column 322: The link 'http://hl7.org/fhir/R4/CodeSystem-SampleMaterialType.html' for "https://fhir.bbmri.de/CodeSystem/SampleMaterialType" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-SampleMaterialType.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 186, column 731: The link 'http://hl7.org/fhir/R4/CodeSystem-SampleMaterialType.html#SampleMaterialType-whole-blood' for "whole-blood" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-SampleMaterialType.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 186, column 1004: The link 'http://hl7.org/fhir/R4/CodeSystem-SampleMaterialType.html#SampleMaterialType-bone-marrow' for "bone-marrow" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-SampleMaterialType.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 186, column 1276: The link 'http://hl7.org/fhir/R4/CodeSystem-SampleMaterialType.html#SampleMaterialType-buffy-coat' for "buffy-coat" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-SampleMaterialType.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 186, column 1552: The link 'http://hl7.org/fhir/R4/CodeSystem-SampleMaterialType.html#SampleMaterialType-dried-whole-blood' for "dried-whole-blood" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-SampleMaterialType.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 186, column 1860: The link 'http://hl7.org/fhir/R4/CodeSystem-SampleMaterialType.html#SampleMaterialType-peripheral-blood-cells-vital' for "peripheral-blood-cells-vital" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-SampleMaterialType.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 186, column 2207: The link 'http://hl7.org/fhir/R4/CodeSystem-SampleMaterialType.html#SampleMaterialType-blood-plasma' for "blood-plasma" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-SampleMaterialType.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 186, column 2479: The link 'http://hl7.org/fhir/R4/CodeSystem-SampleMaterialType.html#SampleMaterialType-plasma-edta' for "plasma-edta" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-SampleMaterialType.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 186, column 2757: The link 'http://hl7.org/fhir/R4/CodeSystem-SampleMaterialType.html#SampleMaterialType-plasma-citrat' for "plasma-citrat" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-SampleMaterialType.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 186, column 3042: The link 'http://hl7.org/fhir/R4/CodeSystem-SampleMaterialType.html#SampleMaterialType-plasma-heparin' for "plasma-heparin" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-SampleMaterialType.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 186, column 3332: The link 'http://hl7.org/fhir/R4/CodeSystem-SampleMaterialType.html#SampleMaterialType-plasma-cell-free' for "plasma-cell-free" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-SampleMaterialType.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 186, column 3624: The link 'http://hl7.org/fhir/R4/CodeSystem-SampleMaterialType.html#SampleMaterialType-plasma-other' for "plasma-other" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-SampleMaterialType.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 186, column 3901: The link 'http://hl7.org/fhir/R4/CodeSystem-SampleMaterialType.html#SampleMaterialType-blood-serum' for "blood-serum" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-SampleMaterialType.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 186, column 4164: The link 'http://hl7.org/fhir/R4/CodeSystem-SampleMaterialType.html#SampleMaterialType-ascites' for "ascites" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-SampleMaterialType.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 186, column 4424: The link 'http://hl7.org/fhir/R4/CodeSystem-SampleMaterialType.html#SampleMaterialType-csf-liquor' for "csf-liquor" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-SampleMaterialType.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 186, column 4689: The link 'http://hl7.org/fhir/R4/CodeSystem-SampleMaterialType.html#SampleMaterialType-saliva' for "saliva" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-SampleMaterialType.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 186, column 4948: The link 'http://hl7.org/fhir/R4/CodeSystem-SampleMaterialType.html#SampleMaterialType-stool-faeces' for "stool-faeces" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-SampleMaterialType.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 186, column 5218: The link 'http://hl7.org/fhir/R4/CodeSystem-SampleMaterialType.html#SampleMaterialType-urine' for "urine" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-SampleMaterialType.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 186, column 5466: The link 'http://hl7.org/fhir/R4/CodeSystem-SampleMaterialType.html#SampleMaterialType-swab' for "swab" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-SampleMaterialType.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 186, column 5719: The link 'http://hl7.org/fhir/R4/CodeSystem-SampleMaterialType.html#SampleMaterialType-liquid-other' for "liquid-other" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-SampleMaterialType.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 186, column 6013: The link 'http://hl7.org/fhir/R4/CodeSystem-SampleMaterialType.html#SampleMaterialType-tissue-ffpe' for "tissue-ffpe" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-SampleMaterialType.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 186, column 6294: The link 'http://hl7.org/fhir/R4/CodeSystem-SampleMaterialType.html#SampleMaterialType-tumor-tissue-ffpe' for "tumor-tissue-ffpe" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-SampleMaterialType.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 186, column 6596: The link 'http://hl7.org/fhir/R4/CodeSystem-SampleMaterialType.html#SampleMaterialType-normal-tissue-ffpe' for "normal-tissue-ffpe" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-SampleMaterialType.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 186, column 6900: The link 'http://hl7.org/fhir/R4/CodeSystem-SampleMaterialType.html#SampleMaterialType-other-tissue-ffpe' for "other-tissue-ffpe" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-SampleMaterialType.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 186, column 7195: The link 'http://hl7.org/fhir/R4/CodeSystem-SampleMaterialType.html#SampleMaterialType-tissue-frozen' for "tissue-frozen" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-SampleMaterialType.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 186, column 7484: The link 'http://hl7.org/fhir/R4/CodeSystem-SampleMaterialType.html#SampleMaterialType-tumor-tissue-frozen' for "tumor-tissue-frozen" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-SampleMaterialType.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 186, column 7794: The link 'http://hl7.org/fhir/R4/CodeSystem-SampleMaterialType.html#SampleMaterialType-normal-tissue-frozen' for "normal-tissue-frozen" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-SampleMaterialType.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 186, column 8106: The link 'http://hl7.org/fhir/R4/CodeSystem-SampleMaterialType.html#SampleMaterialType-other-tissue-frozen' for "other-tissue-frozen" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-SampleMaterialType.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 186, column 8406: The link 'http://hl7.org/fhir/R4/CodeSystem-SampleMaterialType.html#SampleMaterialType-tissue-other' for "tissue-other" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-SampleMaterialType.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 186, column 8682: The link 'http://hl7.org/fhir/R4/CodeSystem-SampleMaterialType.html#SampleMaterialType-dna' for "dna" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-SampleMaterialType.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 186, column 8928: The link 'http://hl7.org/fhir/R4/CodeSystem-SampleMaterialType.html#SampleMaterialType-cf-dna' for "cf-dna" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-SampleMaterialType.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 186, column 9181: The link 'http://hl7.org/fhir/R4/CodeSystem-SampleMaterialType.html#SampleMaterialType-g-dna' for "g-dna" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-SampleMaterialType.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 186, column 9427: The link 'http://hl7.org/fhir/R4/CodeSystem-SampleMaterialType.html#SampleMaterialType-rna' for "rna" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-SampleMaterialType.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 186, column 9681: The link 'http://hl7.org/fhir/R4/CodeSystem-SampleMaterialType.html#SampleMaterialType-derivative-other' for "derivative-other" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-StorageTemperature.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 180, column 82: The link 'http://hl7.org/fhir/R4/CodeSystem-StorageTemperature.html' for "https://fhir.bbmri.de/CodeSystem/StorageTemperature" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-StorageTemperature.html#/html/body/div/div/div/div/div/div/p/a at Line 186, column 320: The link 'http://hl7.org/fhir/R4/CodeSystem-StorageTemperature.html' for "https://fhir.bbmri.de/CodeSystem/StorageTemperature" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-StorageTemperature.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 186, column 705: The link 'http://hl7.org/fhir/R4/CodeSystem-StorageTemperature.html#StorageTemperature-temperature2to10' for "temperature2to10" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-StorageTemperature.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 186, column 998: The link 'http://hl7.org/fhir/R4/CodeSystem-StorageTemperature.html#StorageTemperature-temperature-18to-35' for "temperature-18to-35" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-StorageTemperature.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 186, column 1300: The link 'http://hl7.org/fhir/R4/CodeSystem-StorageTemperature.html#StorageTemperature-temperature-60to-85' for "temperature-60to-85" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-StorageTemperature.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 186, column 1596: The link 'http://hl7.org/fhir/R4/CodeSystem-StorageTemperature.html#StorageTemperature-temperatureGN' for "temperatureGN" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-StorageTemperature.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 186, column 1870: The link 'http://hl7.org/fhir/R4/CodeSystem-StorageTemperature.html#StorageTemperature-temperatureLN' for "temperatureLN" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-StorageTemperature.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 186, column 2145: The link 'http://hl7.org/fhir/R4/CodeSystem-StorageTemperature.html#StorageTemperature-temperatureRoom' for "temperatureRoom" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-StorageTemperature.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 186, column 2426: The link 'http://hl7.org/fhir/R4/CodeSystem-StorageTemperature.html#StorageTemperature-temperatureOther' for "temperatureOther" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/referencedIGs.html#/html/body/div/div/div/div/div/h3/a at Line 172, column 46: The link 'https://simplifier.net/guide/basisprofil-de-r4/Home' for "Leitfaden Basis DE" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/support.html#/html/body/div/div/div/div/div/p/a at Line 187, column 159: The link 'http://hl7.org/fhir/uv/ips/2019Sep/validator.pack' for "here" cannot be resolved
-== /home/travis/build/samply/bbmri-fhir-ig/input/de.bbmri.fhir.json ==
-== /home/travis/build/samply/bbmri-fhir-ig/input/examples/exampleBiobank.json ==
-== /home/travis/build/samply/bbmri-fhir-ig/input/examples/exampleBmi.json ==
-== /home/travis/build/samply/bbmri-fhir-ig/input/examples/exampleBodyHeight.json ==
-== /home/travis/build/samply/bbmri-fhir-ig/input/examples/exampleBodyWeight.json ==
-== /home/travis/build/samply/bbmri-fhir-ig/input/examples/exampleCollection.json ==
-== /home/travis/build/samply/bbmri-fhir-ig/input/examples/exampleCollectionRD.json ==
-== /home/travis/build/samply/bbmri-fhir-ig/input/examples/exampleNetworkMembership.json ==
-== /home/travis/build/samply/bbmri-fhir-ig/input/examples/examplePatient.json ==
-== /home/travis/build/samply/bbmri-fhir-ig/input/examples/exampleSpecimen.json ==
-INFORMATION: Specimen/0-specimen: Specimen.collection.bodySite.coding[0]: Code System URI "urn:oid:1.3.6.1.4.1.19376.1.3.11.36" is unknown so the code cannot be validated
-== /home/travis/build/samply/bbmri-fhir-ig/input/examples/exampleTobaccoUse.json ==
-== /home/travis/build/samply/bbmri-fhir-ig/input/examples/transaction-0.json ==
-== /home/travis/build/samply/bbmri-fhir-ig/input/resources/AccessPolicy.StructureDefinition.json ==
-== /home/travis/build/samply/bbmri-fhir-ig/input/resources/Biobank.StructureDefinition.json ==
-== /home/travis/build/samply/bbmri-fhir-ig/input/resources/BiobankCapabilities.CodeSystem.json ==
-== /home/travis/build/samply/bbmri-fhir-ig/input/resources/BiobankCapabilities.ValueSet.json ==
-== /home/travis/build/samply/bbmri-fhir-ig/input/resources/Bmi.StructureDefinition.json ==
-== /home/travis/build/samply/bbmri-fhir-ig/input/resources/BodyHeight.StructureDefinition.json ==
-== /home/travis/build/samply/bbmri-fhir-ig/input/resources/BodyWeight.StructureDefinition.json ==
-== /home/travis/build/samply/bbmri-fhir-ig/input/resources/Capabilities.StructureDefinition.json ==
-WARNING: https://fhir.bbmri.de/StructureDefinition/Capabilities: The Implementation Guide contains no examples for this extension
-== /home/travis/build/samply/bbmri-fhir-ig/input/resources/CauseOfDeath.StructureDefinition.json ==
-WARNING: https://fhir.bbmri.de/StructureDefinition/CauseOfDeath: The Implementation Guide contains no examples for this profile
-== /home/travis/build/samply/bbmri-fhir-ig/input/resources/Collaboration.StructureDefinition.json ==
-WARNING: https://fhir.bbmri.de/StructureDefinition/Collaboration: The Implementation Guide contains no examples for this extension
-== /home/travis/build/samply/bbmri-fhir-ig/input/resources/Collection.StructureDefinition.json ==
-== /home/travis/build/samply/bbmri-fhir-ig/input/resources/CollectionType.CodeSystem.json ==
-== /home/travis/build/samply/bbmri-fhir-ig/input/resources/CollectionType.StructureDefinition.json ==
-== /home/travis/build/samply/bbmri-fhir-ig/input/resources/CollectionType.ValueSet.json ==
-== /home/travis/build/samply/bbmri-fhir-ig/input/resources/Condition.StructureDefinition.json ==
-WARNING: https://fhir.bbmri.de/StructureDefinition/Condition: The Implementation Guide contains no examples for this profile
-== /home/travis/build/samply/bbmri-fhir-ig/input/resources/ContactRole.StructureDefinition.json ==
-== /home/travis/build/samply/bbmri-fhir-ig/input/resources/ContactType.CodeSystem.json ==
-== /home/travis/build/samply/bbmri-fhir-ig/input/resources/Custodian.StructureDefinition.json ==
-== /home/travis/build/samply/bbmri-fhir-ig/input/resources/DataCategory.CodeSystem.json ==
-== /home/travis/build/samply/bbmri-fhir-ig/input/resources/DataCategory.StructureDefinition.json ==
-== /home/travis/build/samply/bbmri-fhir-ig/input/resources/DataCategory.ValueSet.json ==
-== /home/travis/build/samply/bbmri-fhir-ig/input/resources/Diagnosis.StructureDefinition.json ==
-== /home/travis/build/samply/bbmri-fhir-ig/input/resources/ITSupport.StructureDefinition.json ==
-WARNING: https://fhir.bbmri.de/StructureDefinition/ITSupport: The Implementation Guide contains no examples for this extension
-== /home/travis/build/samply/bbmri-fhir-ig/input/resources/IdCard.StructureDefinition.json ==
-== /home/travis/build/samply/bbmri-fhir-ig/input/resources/JuridicalPersion.StructureDefinition.json ==
-== /home/travis/build/samply/bbmri-fhir-ig/input/resources/NetworkMembership.StructureDefinition.json ==
-WARNING: https://fhir.bbmri.de/StructureDefinition/NetworkMembership: The Implementation Guide contains no examples for this profile
-== /home/travis/build/samply/bbmri-fhir-ig/input/resources/OrganizationDescription.StructureDefinition.json ==
-== /home/travis/build/samply/bbmri-fhir-ig/input/resources/OtherSampleDiagnosis.CodeSystem.json ==
-== /home/travis/build/samply/bbmri-fhir-ig/input/resources/OtherSampleDiagnosis.ValueSet.json ==
-== /home/travis/build/samply/bbmri-fhir-ig/input/resources/PartnerCharterSigned.StructureDefinition.json ==
-WARNING: https://fhir.bbmri.de/StructureDefinition/PartnerCharterSigned: The Implementation Guide contains no examples for this extension
-== /home/travis/build/samply/bbmri-fhir-ig/input/resources/Patient.StructureDefinition.json ==
-== /home/travis/build/samply/bbmri-fhir-ig/input/resources/PatientQualityReports.Library.json ==
-WARNING: Library/PatientQualityReports: Library: lib-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
-== /home/travis/build/samply/bbmri-fhir-ig/input/resources/PatientQualityReports.Measure.json ==
-WARNING: Measure/PatientQualityReports: Measure: mea-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
-== /home/travis/build/samply/bbmri-fhir-ig/input/resources/QualityStandard.CodeSystem.json ==
-== /home/travis/build/samply/bbmri-fhir-ig/input/resources/QualityStandard.StructureDefinition.json ==
-== /home/travis/build/samply/bbmri-fhir-ig/input/resources/QualityStandard.ValueSet.json ==
-== /home/travis/build/samply/bbmri-fhir-ig/input/resources/ResourceManagement.StructureDefinition.json ==
-WARNING: https://fhir.bbmri.de/StructureDefinition/ResourceManagement: The Implementation Guide contains no examples for this extension
-== /home/travis/build/samply/bbmri-fhir-ig/input/resources/ResourceType.CodeSystem.json ==
-== /home/travis/build/samply/bbmri-fhir-ig/input/resources/ResourceType.ValueSet.json ==
-== /home/travis/build/samply/bbmri-fhir-ig/input/resources/SampleMaterialType.CodeSystem.json ==
-== /home/travis/build/samply/bbmri-fhir-ig/input/resources/SampleMaterialType.ValueSet.json ==
-== /home/travis/build/samply/bbmri-fhir-ig/input/resources/Specimen.StructureDefinition.json ==
-== /home/travis/build/samply/bbmri-fhir-ig/input/resources/SpecimenQualityReports.Library.json ==
-WARNING: Library/SpecimenQualityReports: Library: lib-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
-== /home/travis/build/samply/bbmri-fhir-ig/input/resources/SpecimenQualityReports.Measure.json ==
-WARNING: Measure/SpecimenQualityReports: Measure: mea-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
-== /home/travis/build/samply/bbmri-fhir-ig/input/resources/StorageTemperature.CodeSystem.json ==
-== /home/travis/build/samply/bbmri-fhir-ig/input/resources/StorageTemperature.StructureDefinition.json ==
-== /home/travis/build/samply/bbmri-fhir-ig/input/resources/StorageTemperature.ValueSet.json ==
-== /home/travis/build/samply/bbmri-fhir-ig/input/resources/TobaccoUse.StructureDefinition.json ==
-== /home/travis/build/samply/bbmri-fhir-ig/input/resources/bioresourceReference.StructureDefinition.json ==
-== /home/travis/build/samply/bbmri-fhir-ig/input/resources/parentCollection.StructureDefinition.json ==
-WARNING: https://fhir.bbmri.de/StructureDefinition/ParentCollection: The Implementation Guide contains no examples for this extension
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/SampleDiagnosis.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/ITSupport.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/IdCard.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/OtherSampleDiagnosis.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/PartnerCharterSigned.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/QualityStandard.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/QualityStandard.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/ResourceManagement.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/ResourceType.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/SampleMaterialType.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/Specimen.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/StorageTemperature.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/StorageTemperature.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/StorageTemperature.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/BioresourceReference.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/ParentCollection.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Organization/exampleBiobank.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/0-bmi.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/0-body-height.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/0-body-weight.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Organization/exampleCollection.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Organization/exampleCollectionRD.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource OrganizationAffiliation/example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/0.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Specimen/0-specimen.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/0-tobacco-use.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/53ef12a3-1e31-4fc1-adf6-9d30dc6c4784.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/Bundle-53ef12a3-1e31-4fc1-adf6-9d30dc6c4784.change.history.html#/html/body/div/div/div/p/a at Line 249, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/Bundle-53ef12a3-1e31-4fc1-adf6-9d30dc6c4784.html#/html/body/div/div/div/p/a at Line 253, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/Bundle-53ef12a3-1e31-4fc1-adf6-9d30dc6c4784.json.html#/html/body/div/div/div/p/a at Line 525, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/Bundle-53ef12a3-1e31-4fc1-adf6-9d30dc6c4784.ttl.html#/html/body/div/div/div/p/a at Line 513, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/Bundle-53ef12a3-1e31-4fc1-adf6-9d30dc6c4784.xml.html#/html/body/div/div/div/p/a at Line 490, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/CodeSystem-BiobankCapabilities.change.history.html#/html/body/div/div/div/p/a at Line 249, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/CodeSystem-BiobankCapabilities.html#/html/body/div/div/div/p/a at Line 257, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/CodeSystem-BiobankCapabilities.json.html#/html/body/div/div/div/p/a at Line 313, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/CodeSystem-BiobankCapabilities.ttl.html#/html/body/div/div/div/p/a at Line 322, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/CodeSystem-BiobankCapabilities.xml.html#/html/body/div/div/div/p/a at Line 307, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/CodeSystem-CollectionType.change.history.html#/html/body/div/div/div/p/a at Line 249, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/CodeSystem-CollectionType.html#/html/body/div/div/div/p/a at Line 257, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/CodeSystem-CollectionType.json.html#/html/body/div/div/div/p/a at Line 330, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/CodeSystem-CollectionType.ttl.html#/html/body/div/div/div/p/a at Line 339, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/CodeSystem-CollectionType.xml.html#/html/body/div/div/div/p/a at Line 324, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/CodeSystem-ContactType.change.history.html#/html/body/div/div/div/p/a at Line 249, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/CodeSystem-ContactType.html#/html/body/div/div/div/p/a at Line 255, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/CodeSystem-ContactType.json.html#/html/body/div/div/div/p/a at Line 275, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/CodeSystem-ContactType.ttl.html#/html/body/div/div/div/p/a at Line 284, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/CodeSystem-ContactType.xml.html#/html/body/div/div/div/p/a at Line 269, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/CodeSystem-DataCategory.change.history.html#/html/body/div/div/div/p/a at Line 249, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/CodeSystem-DataCategory.html#/html/body/div/div/div/p/a at Line 257, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/CodeSystem-DataCategory.json.html#/html/body/div/div/div/p/a at Line 306, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/CodeSystem-DataCategory.ttl.html#/html/body/div/div/div/p/a at Line 315, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/CodeSystem-DataCategory.xml.html#/html/body/div/div/div/p/a at Line 300, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/CodeSystem-OtherSampleDiagnosis.change.history.html#/html/body/div/div/div/p/a at Line 249, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/CodeSystem-OtherSampleDiagnosis.html#/html/body/div/div/div/p/a at Line 259, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/CodeSystem-OtherSampleDiagnosis.json.html#/html/body/div/div/div/p/a at Line 289, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/CodeSystem-OtherSampleDiagnosis.ttl.html#/html/body/div/div/div/p/a at Line 298, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/CodeSystem-OtherSampleDiagnosis.xml.html#/html/body/div/div/div/p/a at Line 285, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/CodeSystem-QualityStandard.change.history.html#/html/body/div/div/div/p/a at Line 249, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/CodeSystem-QualityStandard.html#/html/body/div/div/div/p/a at Line 257, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/CodeSystem-QualityStandard.json.html#/html/body/div/div/div/p/a at Line 298, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/CodeSystem-QualityStandard.ttl.html#/html/body/div/div/div/p/a at Line 307, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/CodeSystem-QualityStandard.xml.html#/html/body/div/div/div/p/a at Line 292, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/CodeSystem-ResourceType.change.history.html#/html/body/div/div/div/p/a at Line 249, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/CodeSystem-ResourceType.html#/html/body/div/div/div/p/a at Line 259, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/CodeSystem-ResourceType.json.html#/html/body/div/div/div/p/a at Line 283, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/CodeSystem-ResourceType.ttl.html#/html/body/div/div/div/p/a at Line 292, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/CodeSystem-ResourceType.xml.html#/html/body/div/div/div/p/a at Line 279, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/CodeSystem-SampleMaterialType.change.history.html#/html/body/div/div/div/p/a at Line 249, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/CodeSystem-SampleMaterialType.html#/html/body/div/div/div/p/a at Line 259, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/CodeSystem-SampleMaterialType.json.html#/html/body/div/div/div/p/a at Line 412, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/CodeSystem-SampleMaterialType.ttl.html#/html/body/div/div/div/p/a at Line 404, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/CodeSystem-SampleMaterialType.xml.html#/html/body/div/div/div/p/a at Line 398, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/CodeSystem-StorageTemperature.change.history.html#/html/body/div/div/div/p/a at Line 249, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/CodeSystem-StorageTemperature.html#/html/body/div/div/div/p/a at Line 257, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/CodeSystem-StorageTemperature.json.html#/html/body/div/div/div/p/a at Line 297, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/CodeSystem-StorageTemperature.ttl.html#/html/body/div/div/div/p/a at Line 306, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/CodeSystem-StorageTemperature.xml.html#/html/body/div/div/div/p/a at Line 291, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/Library-PatientQualityReports.change.history.html#/html/body/div/div/div/p/a at Line 249, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/Library-PatientQualityReports.html#/html/body/div/div/div/p/a at Line 236, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/Library-PatientQualityReports.json.html#/html/body/div/div/div/p/a at Line 311, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/Library-PatientQualityReports.ttl.html#/html/body/div/div/div/p/a at Line 323, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/Library-PatientQualityReports.xml.html#/html/body/div/div/div/p/a at Line 302, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/Library-SpecimenQualityReports.change.history.html#/html/body/div/div/div/p/a at Line 249, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/Library-SpecimenQualityReports.html#/html/body/div/div/div/p/a at Line 236, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/Library-SpecimenQualityReports.json.html#/html/body/div/div/div/p/a at Line 431, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/Library-SpecimenQualityReports.ttl.html#/html/body/div/div/div/p/a at Line 438, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/Library-SpecimenQualityReports.xml.html#/html/body/div/div/div/p/a at Line 420, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/Measure-PatientQualityReports.change.history.html#/html/body/div/div/div/p/a at Line 249, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/Measure-PatientQualityReports.html#/html/body/div/div/div/p/a at Line 236, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/Measure-PatientQualityReports.json.html#/html/body/div/div/div/p/a at Line 335, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/Measure-PatientQualityReports.ttl.html#/html/body/div/div/div/p/a at Line 326, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/Measure-PatientQualityReports.xml.html#/html/body/div/div/div/p/a at Line 319, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/Measure-SpecimenQualityReports.change.history.html#/html/body/div/div/div/p/a at Line 249, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/Measure-SpecimenQualityReports.html#/html/body/div/div/div/p/a at Line 236, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/Measure-SpecimenQualityReports.json.html#/html/body/div/div/div/p/a at Line 434, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/Measure-SpecimenQualityReports.ttl.html#/html/body/div/div/div/p/a at Line 392, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/Measure-SpecimenQualityReports.xml.html#/html/body/div/div/div/p/a at Line 418, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/Observation-0-bmi.change.history.html#/html/body/div/div/div/p/a at Line 249, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/Observation-0-bmi.html#/html/body/div/div/div/p/a at Line 234, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/Observation-0-bmi.json.html#/html/body/div/div/div/p/a at Line 278, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/Observation-0-bmi.ttl.html#/html/body/div/div/div/p/a at Line 290, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/Observation-0-bmi.xml.html#/html/body/div/div/div/p/a at Line 270, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/Observation-0-body-height.change.history.html#/html/body/div/div/div/p/a at Line 249, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/Observation-0-body-height.html#/html/body/div/div/div/p/a at Line 234, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/Observation-0-body-height.json.html#/html/body/div/div/div/p/a at Line 278, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/Observation-0-body-height.ttl.html#/html/body/div/div/div/p/a at Line 290, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/Observation-0-body-height.xml.html#/html/body/div/div/div/p/a at Line 270, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/Observation-0-body-weight.change.history.html#/html/body/div/div/div/p/a at Line 249, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/Observation-0-body-weight.html#/html/body/div/div/div/p/a at Line 234, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/Observation-0-body-weight.json.html#/html/body/div/div/div/p/a at Line 278, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/Observation-0-body-weight.ttl.html#/html/body/div/div/div/p/a at Line 290, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/Observation-0-body-weight.xml.html#/html/body/div/div/div/p/a at Line 270, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/Observation-0-tobacco-use.change.history.html#/html/body/div/div/div/p/a at Line 249, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/Observation-0-tobacco-use.html#/html/body/div/div/div/p/a at Line 234, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/Observation-0-tobacco-use.json.html#/html/body/div/div/div/p/a at Line 270, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/Observation-0-tobacco-use.ttl.html#/html/body/div/div/div/p/a at Line 284, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/Observation-0-tobacco-use.xml.html#/html/body/div/div/div/p/a at Line 264, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/Organization-exampleBiobank.change.history.html#/html/body/div/div/div/p/a at Line 249, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/Organization-exampleBiobank.html#/html/body/div/div/div/p/a at Line 234, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/Organization-exampleBiobank.json.html#/html/body/div/div/div/p/a at Line 390, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/Organization-exampleBiobank.ttl.html#/html/body/div/div/div/p/a at Line 384, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/Organization-exampleBiobank.xml.html#/html/body/div/div/div/p/a at Line 345, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/Organization-exampleCollection.change.history.html#/html/body/div/div/div/p/a at Line 249, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/Organization-exampleCollection.html#/html/body/div/div/div/div/div/div/p/a at Line 207, column 340: The link 'Organization/exampleBiobank' for "Organization/exampleBiobank" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/Organization-exampleCollection.html#/html/body/div/div/div/p/a at Line 234, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/Organization-exampleCollection.json.html#/html/body/div/div/div/p/a at Line 373, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/Organization-exampleCollection.ttl.html#/html/body/div/div/div/p/a at Line 360, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/Organization-exampleCollection.xml.html#/html/body/div/div/div/p/a at Line 337, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/Organization-exampleCollectionRD.change.history.html#/html/body/div/div/div/p/a at Line 249, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/Organization-exampleCollectionRD.html#/html/body/div/div/div/div/div/div/p/a at Line 207, column 340: The link 'Organization/exampleBiobank' for "Organization/exampleBiobank" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/Organization-exampleCollectionRD.html#/html/body/div/div/div/p/a at Line 234, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/Organization-exampleCollectionRD.json.html#/html/body/div/div/div/p/a at Line 369, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/Organization-exampleCollectionRD.ttl.html#/html/body/div/div/div/p/a at Line 357, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/Organization-exampleCollectionRD.xml.html#/html/body/div/div/div/p/a at Line 333, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/OrganizationAffiliation-example.change.history.html#/html/body/div/div/div/p/a at Line 249, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/OrganizationAffiliation-example.html#/html/body/div/div/div/div/div/div/p/a at Line 207, column 205: The link 'Organization/exampleBiobank' for "Organization/exampleBiobank" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/OrganizationAffiliation-example.html#/html/body/div/div/div/p/a at Line 234, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/OrganizationAffiliation-example.json.html#/html/body/div/div/div/p/a at Line 264, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/OrganizationAffiliation-example.ttl.html#/html/body/div/div/div/p/a at Line 274, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/OrganizationAffiliation-example.xml.html#/html/body/div/div/div/p/a at Line 260, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/Patient-0.change.history.html#/html/body/div/div/div/p/a at Line 249, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/Patient-0.html#/html/body/div/div/div/p/a at Line 234, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/Patient-0.json.html#/html/body/div/div/div/p/a at Line 252, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/Patient-0.ttl.html#/html/body/div/div/div/p/a at Line 267, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/Patient-0.xml.html#/html/body/div/div/div/p/a at Line 250, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/Specimen-0-specimen.change.history.html#/html/body/div/div/div/p/a at Line 249, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/Specimen-0-specimen.html#/html/body/div/div/div/p/a at Line 234, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/Specimen-0-specimen.json.html#/html/body/div/div/div/p/a at Line 309, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/Specimen-0-specimen.ttl.html#/html/body/div/div/div/p/a at Line 308, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/Specimen-0-specimen.xml.html#/html/body/div/div/div/p/a at Line 292, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-AccessPolicy-definitions.html#/html/body/div/div/div/p/a at Line 673, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-AccessPolicy-mappings.html#/html/body/div/div/div/p/a at Line 332, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-AccessPolicy.html#/html/body/div/div/div/p/a at Line 1166, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-AccessPolicy.profile.history.html#/html/body/div/div/div/p/a at Line 270, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-AccessPolicy.profile.json.html#/html/body/div/div/div/p/a at Line 3427, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-AccessPolicy.profile.ttl.html#/html/body/div/div/div/p/a at Line 2779, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-AccessPolicy.profile.xml.html#/html/body/div/div/div/p/a at Line 3065, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Biobank-definitions.html#/html/body/div/div/div/p/a at Line 1765, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Biobank-examples.html#/html/body/div/div/div/p/a at Line 302, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Biobank-mappings.html#/html/body/div/div/div/p/a at Line 602, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Biobank.html#/html/body/div/div/div/p/a at Line 1421, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Biobank.profile.history.html#/html/body/div/div/div/p/a at Line 280, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Biobank.profile.json.html#/html/body/div/div/div/p/a at Line 8084, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Biobank.profile.ttl.html#/html/body/div/div/div/p/a at Line 6886, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Biobank.profile.xml.html#/html/body/div/div/div/p/a at Line 7100, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-BioresourceReference-definitions.html#/html/body/div/div/div/p/a at Line 322, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-BioresourceReference-mappings.html#/html/body/div/div/div/p/a at Line 288, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-BioresourceReference.html#/html/body/div/div/div/p/a at Line 515, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-BioresourceReference.profile.history.html#/html/body/div/div/div/p/a at Line 270, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-BioresourceReference.profile.json.html#/html/body/div/div/div/p/a at Line 568, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-BioresourceReference.profile.ttl.html#/html/body/div/div/div/p/a at Line 542, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-BioresourceReference.profile.xml.html#/html/body/div/div/div/p/a at Line 532, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Bmi-definitions.html#/html/body/div/div/div/p/a at Line 1163, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Bmi-examples.html#/html/body/div/div/div/p/a at Line 302, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Bmi-mappings.html#/html/body/div/div/div/p/a at Line 507, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Bmi.html#/html/body/div/div/div/p/a at Line 968, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Bmi.profile.history.html#/html/body/div/div/div/p/a at Line 280, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Bmi.profile.json.html#/html/body/div/div/div/p/a at Line 4605, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Bmi.profile.ttl.html#/html/body/div/div/div/p/a at Line 4027, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Bmi.profile.xml.html#/html/body/div/div/div/p/a at Line 4168, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-BodyHeight-definitions.html#/html/body/div/div/div/p/a at Line 1163, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-BodyHeight-examples.html#/html/body/div/div/div/p/a at Line 302, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-BodyHeight-mappings.html#/html/body/div/div/div/p/a at Line 507, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-BodyHeight.html#/html/body/div/div/div/p/a at Line 969, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-BodyHeight.profile.history.html#/html/body/div/div/div/p/a at Line 280, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-BodyHeight.profile.json.html#/html/body/div/div/div/p/a at Line 4615, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-BodyHeight.profile.ttl.html#/html/body/div/div/div/p/a at Line 4036, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-BodyHeight.profile.xml.html#/html/body/div/div/div/p/a at Line 4177, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-BodyWeight-definitions.html#/html/body/div/div/div/p/a at Line 1163, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-BodyWeight-examples.html#/html/body/div/div/div/p/a at Line 302, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-BodyWeight-mappings.html#/html/body/div/div/div/p/a at Line 507, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-BodyWeight.html#/html/body/div/div/div/p/a at Line 969, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-BodyWeight.profile.history.html#/html/body/div/div/div/p/a at Line 280, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-BodyWeight.profile.json.html#/html/body/div/div/div/p/a at Line 4615, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-BodyWeight.profile.ttl.html#/html/body/div/div/div/p/a at Line 4036, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-BodyWeight.profile.xml.html#/html/body/div/div/div/p/a at Line 4176, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Capabilities-definitions.html#/html/body/div/div/div/p/a at Line 321, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Capabilities-mappings.html#/html/body/div/div/div/p/a at Line 288, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Capabilities.html#/html/body/div/div/div/p/a at Line 508, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Capabilities.profile.history.html#/html/body/div/div/div/p/a at Line 270, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Capabilities.profile.json.html#/html/body/div/div/div/p/a at Line 573, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Capabilities.profile.ttl.html#/html/body/div/div/div/p/a at Line 549, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Capabilities.profile.xml.html#/html/body/div/div/div/p/a at Line 528, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-CauseOfDeath-definitions.html#/html/body/div/div/div/p/a at Line 1015, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-CauseOfDeath-examples.html#/html/body/div/div/div/p/a at Line 281, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-CauseOfDeath-mappings.html#/html/body/div/div/div/p/a at Line 444, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-CauseOfDeath.html#/html/body/div/div/div/p/a at Line 865, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-CauseOfDeath.profile.history.html#/html/body/div/div/div/p/a at Line 270, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-CauseOfDeath.profile.json.html#/html/body/div/div/div/p/a at Line 4068, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-CauseOfDeath.profile.ttl.html#/html/body/div/div/div/p/a at Line 3569, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-CauseOfDeath.profile.xml.html#/html/body/div/div/div/p/a at Line 3695, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Collaboration-definitions.html#/html/body/div/div/div/p/a at Line 459, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Collaboration-mappings.html#/html/body/div/div/div/p/a at Line 305, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Collaboration.html#/html/body/div/div/div/p/a at Line 765, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Collaboration.profile.history.html#/html/body/div/div/div/p/a at Line 270, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Collaboration.profile.json.html#/html/body/div/div/div/p/a at Line 1793, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Collaboration.profile.ttl.html#/html/body/div/div/div/p/a at Line 1487, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Collaboration.profile.xml.html#/html/body/div/div/div/p/a at Line 1626, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Collection-definitions.html#/html/body/div/div/div/p/a at Line 1703, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Collection-examples.html#/html/body/div/div/div/p/a at Line 308, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Collection-mappings.html#/html/body/div/div/div/p/a at Line 585, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Collection.html#/html/body/div/div/div/p/a at Line 1416, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Collection.profile.history.html#/html/body/div/div/div/p/a at Line 280, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Collection.profile.json.html#/html/body/div/div/div/p/a at Line 7764, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Collection.profile.ttl.html#/html/body/div/div/div/p/a at Line 6619, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Collection.profile.xml.html#/html/body/div/div/div/p/a at Line 6808, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-CollectionType-definitions.html#/html/body/div/div/div/p/a at Line 321, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-CollectionType-mappings.html#/html/body/div/div/div/p/a at Line 288, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-CollectionType.html#/html/body/div/div/div/p/a at Line 508, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-CollectionType.profile.history.html#/html/body/div/div/div/p/a at Line 270, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-CollectionType.profile.json.html#/html/body/div/div/div/p/a at Line 574, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-CollectionType.profile.ttl.html#/html/body/div/div/div/p/a at Line 550, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-CollectionType.profile.xml.html#/html/body/div/div/div/p/a at Line 528, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Condition-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 570, column 144: The link '' for "CodingICD10GM" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Condition-definitions.html#/html/body/div/div/div/p/a at Line 832, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Condition-examples.html#/html/body/div/div/div/p/a at Line 281, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Condition-mappings.html#/html/body/div/div/div/p/a at Line 436, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Condition.html#/html/body/div/div/div/div/div/div/div/div/div/ul/li/a at Line 286, column 7: The link '' for "http://fhir.de/StructureDefinition/CodingICD10GM" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Condition.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 315, column 1551: The link 'unknown.html' for "?pkp-2?" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Condition.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 364, column 1647: The link 'unknown.html' for "?pkp-2?" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Condition.html#/html/body/div/div/div/div/div/div/div/div/div/ul/li/a at Line 521, column 7: The link '' for "http://fhir.de/StructureDefinition/CodingICD10GM" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Condition.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 550, column 1551: The link 'unknown.html' for "?pkp-2?" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Condition.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 599, column 1647: The link 'unknown.html' for "?pkp-2?" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Condition.html#/html/body/div/div/div/p/a at Line 815, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Condition.profile.history.html#/html/body/div/div/div/p/a at Line 270, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Condition.profile.json.html#/html/body/div/div/div/p/a at Line 3357, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Condition.profile.ttl.html#/html/body/div/div/div/p/a at Line 2932, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Condition.profile.xml.html#/html/body/div/div/div/p/a at Line 3030, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-ContactRole-definitions.html#/html/body/div/div/div/p/a at Line 323, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-ContactRole-mappings.html#/html/body/div/div/div/p/a at Line 288, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-ContactRole.html#/html/body/div/div/div/p/a at Line 503, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-ContactRole.profile.history.html#/html/body/div/div/div/p/a at Line 270, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-ContactRole.profile.json.html#/html/body/div/div/div/p/a at Line 586, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-ContactRole.profile.ttl.html#/html/body/div/div/div/p/a at Line 554, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-ContactRole.profile.xml.html#/html/body/div/div/div/p/a at Line 535, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Custodian-definitions.html#/html/body/div/div/div/p/a at Line 320, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Custodian-mappings.html#/html/body/div/div/div/p/a at Line 288, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Custodian.html#/html/body/div/div/div/p/a at Line 517, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Custodian.profile.history.html#/html/body/div/div/div/p/a at Line 270, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Custodian.profile.json.html#/html/body/div/div/div/p/a at Line 570, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Custodian.profile.ttl.html#/html/body/div/div/div/p/a at Line 546, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Custodian.profile.xml.html#/html/body/div/div/div/p/a at Line 521, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-DataCategory-definitions.html#/html/body/div/div/div/p/a at Line 321, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-DataCategory-mappings.html#/html/body/div/div/div/p/a at Line 288, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-DataCategory.html#/html/body/div/div/div/p/a at Line 508, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-DataCategory.profile.history.html#/html/body/div/div/div/p/a at Line 270, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-DataCategory.profile.json.html#/html/body/div/div/div/p/a at Line 574, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-DataCategory.profile.ttl.html#/html/body/div/div/div/p/a at Line 550, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-DataCategory.profile.xml.html#/html/body/div/div/div/p/a at Line 528, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-ITSupport-definitions.html#/html/body/div/div/div/p/a at Line 601, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-ITSupport-mappings.html#/html/body/div/div/div/p/a at Line 323, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-ITSupport.html#/html/body/div/div/div/p/a at Line 1029, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-ITSupport.profile.history.html#/html/body/div/div/div/p/a at Line 270, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-ITSupport.profile.json.html#/html/body/div/div/div/p/a at Line 2875, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-ITSupport.profile.ttl.html#/html/body/div/div/div/p/a at Line 2339, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-ITSupport.profile.xml.html#/html/body/div/div/div/p/a at Line 2580, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-IdCard-definitions.html#/html/body/div/div/div/p/a at Line 320, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-IdCard-mappings.html#/html/body/div/div/div/p/a at Line 288, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-IdCard.html#/html/body/div/div/div/p/a at Line 512, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-IdCard.profile.history.html#/html/body/div/div/div/p/a at Line 270, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-IdCard.profile.json.html#/html/body/div/div/div/p/a at Line 581, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-IdCard.profile.ttl.html#/html/body/div/div/div/p/a at Line 552, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-IdCard.profile.xml.html#/html/body/div/div/div/p/a at Line 535, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-JuridicalPerson-definitions.html#/html/body/div/div/div/p/a at Line 320, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-JuridicalPerson-mappings.html#/html/body/div/div/div/p/a at Line 288, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-JuridicalPerson.html#/html/body/div/div/div/p/a at Line 503, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-JuridicalPerson.profile.history.html#/html/body/div/div/div/p/a at Line 270, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-JuridicalPerson.profile.json.html#/html/body/div/div/div/p/a at Line 566, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-JuridicalPerson.profile.ttl.html#/html/body/div/div/div/p/a at Line 540, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-JuridicalPerson.profile.xml.html#/html/body/div/div/div/p/a at Line 521, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-NetworkMembership-definitions.html#/html/body/div/div/div/p/a at Line 711, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-NetworkMembership-examples.html#/html/body/div/div/div/p/a at Line 281, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-NetworkMembership-mappings.html#/html/body/div/div/div/p/a at Line 331, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-NetworkMembership.html#/html/body/div/div/div/p/a at Line 724, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-NetworkMembership.profile.history.html#/html/body/div/div/div/p/a at Line 270, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-NetworkMembership.profile.json.html#/html/body/div/div/div/p/a at Line 2476, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-NetworkMembership.profile.ttl.html#/html/body/div/div/div/p/a at Line 2172, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-NetworkMembership.profile.xml.html#/html/body/div/div/div/p/a at Line 2220, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-OrganizationDescription-definitions.html#/html/body/div/div/div/p/a at Line 320, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-OrganizationDescription-mappings.html#/html/body/div/div/div/p/a at Line 288, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-OrganizationDescription.html#/html/body/div/div/div/p/a at Line 503, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-OrganizationDescription.profile.history.html#/html/body/div/div/div/p/a at Line 270, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-OrganizationDescription.profile.json.html#/html/body/div/div/div/p/a at Line 566, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-OrganizationDescription.profile.ttl.html#/html/body/div/div/div/p/a at Line 540, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-OrganizationDescription.profile.xml.html#/html/body/div/div/div/p/a at Line 521, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-ParentCollection-definitions.html#/html/body/div/div/div/p/a at Line 320, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-ParentCollection-mappings.html#/html/body/div/div/div/p/a at Line 288, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-ParentCollection.html#/html/body/div/div/div/p/a at Line 517, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-ParentCollection.profile.history.html#/html/body/div/div/div/p/a at Line 270, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-ParentCollection.profile.json.html#/html/body/div/div/div/p/a at Line 570, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-ParentCollection.profile.ttl.html#/html/body/div/div/div/p/a at Line 546, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-ParentCollection.profile.xml.html#/html/body/div/div/div/p/a at Line 523, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-PartnerCharterSigned-definitions.html#/html/body/div/div/div/p/a at Line 320, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-PartnerCharterSigned-mappings.html#/html/body/div/div/div/p/a at Line 288, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-PartnerCharterSigned.html#/html/body/div/div/div/p/a at Line 503, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-PartnerCharterSigned.profile.history.html#/html/body/div/div/div/p/a at Line 270, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-PartnerCharterSigned.profile.json.html#/html/body/div/div/div/p/a at Line 566, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-PartnerCharterSigned.profile.ttl.html#/html/body/div/div/div/p/a at Line 540, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-PartnerCharterSigned.profile.xml.html#/html/body/div/div/div/p/a at Line 523, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Patient-definitions.html#/html/body/div/div/div/p/a at Line 765, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Patient-examples.html#/html/body/div/div/div/p/a at Line 302, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Patient-mappings.html#/html/body/div/div/div/p/a at Line 344, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Patient.html#/html/body/div/div/div/p/a at Line 626, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Patient.profile.history.html#/html/body/div/div/div/p/a at Line 280, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Patient.profile.json.html#/html/body/div/div/div/p/a at Line 2594, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Patient.profile.ttl.html#/html/body/div/div/div/p/a at Line 2290, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Patient.profile.xml.html#/html/body/div/div/div/p/a at Line 2387, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-QualityStandard-definitions.html#/html/body/div/div/div/p/a at Line 321, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-QualityStandard-mappings.html#/html/body/div/div/div/p/a at Line 288, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-QualityStandard.html#/html/body/div/div/div/p/a at Line 508, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-QualityStandard.profile.history.html#/html/body/div/div/div/p/a at Line 270, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-QualityStandard.profile.json.html#/html/body/div/div/div/p/a at Line 573, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-QualityStandard.profile.ttl.html#/html/body/div/div/div/p/a at Line 549, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-QualityStandard.profile.xml.html#/html/body/div/div/div/p/a at Line 528, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-ResourceManagement-definitions.html#/html/body/div/div/div/p/a at Line 602, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-ResourceManagement-mappings.html#/html/body/div/div/div/p/a at Line 323, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-ResourceManagement.html#/html/body/div/div/div/p/a at Line 1034, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-ResourceManagement.profile.history.html#/html/body/div/div/div/p/a at Line 270, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-ResourceManagement.profile.json.html#/html/body/div/div/div/p/a at Line 2881, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-ResourceManagement.profile.ttl.html#/html/body/div/div/div/p/a at Line 2348, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-ResourceManagement.profile.xml.html#/html/body/div/div/div/p/a at Line 2589, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-SampleDiagnosis-definitions.html#/html/body/div/div/div/p/a at Line 675, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-SampleDiagnosis-mappings.html#/html/body/div/div/div/p/a at Line 324, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-SampleDiagnosis.html#/html/body/div/div/div/p/a at Line 713, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-SampleDiagnosis.profile.history.html#/html/body/div/div/div/p/a at Line 270, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-SampleDiagnosis.profile.json.html#/html/body/div/div/div/p/a at Line 2380, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-SampleDiagnosis.profile.ttl.html#/html/body/div/div/div/p/a at Line 2037, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-SampleDiagnosis.profile.xml.html#/html/body/div/div/div/p/a at Line 2135, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Specimen-definitions.html#/html/body/div/div/div/p/a at Line 1243, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Specimen-examples.html#/html/body/div/div/div/p/a at Line 302, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Specimen-mappings.html#/html/body/div/div/div/p/a at Line 468, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Specimen.html#/html/body/div/div/div/p/a at Line 1064, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Specimen.profile.history.html#/html/body/div/div/div/p/a at Line 280, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Specimen.profile.json.html#/html/body/div/div/div/p/a at Line 5253, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Specimen.profile.ttl.html#/html/body/div/div/div/p/a at Line 4505, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Specimen.profile.xml.html#/html/body/div/div/div/p/a at Line 4636, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-StorageTemperature-definitions.html#/html/body/div/div/div/p/a at Line 321, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-StorageTemperature-mappings.html#/html/body/div/div/div/p/a at Line 288, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-StorageTemperature.html#/html/body/div/div/div/p/a at Line 508, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-StorageTemperature.profile.history.html#/html/body/div/div/div/p/a at Line 270, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-StorageTemperature.profile.json.html#/html/body/div/div/div/p/a at Line 572, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-StorageTemperature.profile.ttl.html#/html/body/div/div/div/p/a at Line 548, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-StorageTemperature.profile.xml.html#/html/body/div/div/div/p/a at Line 527, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-TobaccoUse-definitions.html#/html/body/div/div/div/p/a at Line 916, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-TobaccoUse-examples.html#/html/body/div/div/div/p/a at Line 281, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-TobaccoUse-mappings.html#/html/body/div/div/div/p/a at Line 430, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-TobaccoUse.html#/html/body/div/div/div/p/a at Line 792, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-TobaccoUse.profile.history.html#/html/body/div/div/div/p/a at Line 270, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-TobaccoUse.profile.json.html#/html/body/div/div/div/p/a at Line 3557, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-TobaccoUse.profile.ttl.html#/html/body/div/div/div/p/a at Line 3155, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-TobaccoUse.profile.xml.html#/html/body/div/div/div/p/a at Line 3246, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-BiobankCapabilities.change.history.html#/html/body/div/div/div/p/a at Line 249, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-BiobankCapabilities.html#/html/body/div/div/div/p/a at Line 294, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-BiobankCapabilities.json.html#/html/body/div/div/div/p/a at Line 273, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-BiobankCapabilities.ttl.html#/html/body/div/div/div/p/a at Line 281, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-BiobankCapabilities.xml.html#/html/body/div/div/div/p/a at Line 267, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-CollectionType.change.history.html#/html/body/div/div/div/p/a at Line 249, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-CollectionType.html#/html/body/div/div/div/p/a at Line 294, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-CollectionType.json.html#/html/body/div/div/div/p/a at Line 273, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-CollectionType.ttl.html#/html/body/div/div/div/p/a at Line 281, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-CollectionType.xml.html#/html/body/div/div/div/p/a at Line 267, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-DataCategory.change.history.html#/html/body/div/div/div/p/a at Line 249, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-DataCategory.html#/html/body/div/div/div/p/a at Line 294, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-DataCategory.json.html#/html/body/div/div/div/p/a at Line 273, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-DataCategory.ttl.html#/html/body/div/div/div/p/a at Line 281, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-DataCategory.xml.html#/html/body/div/div/div/p/a at Line 267, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-OtherSampleDiagnosis.change.history.html#/html/body/div/div/div/p/a at Line 249, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-OtherSampleDiagnosis.html#/html/body/div/div/div/p/a at Line 295, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-OtherSampleDiagnosis.json.html#/html/body/div/div/div/p/a at Line 273, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-OtherSampleDiagnosis.ttl.html#/html/body/div/div/div/p/a at Line 281, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-OtherSampleDiagnosis.xml.html#/html/body/div/div/div/p/a at Line 267, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-QualityStandard.change.history.html#/html/body/div/div/div/p/a at Line 249, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-QualityStandard.html#/html/body/div/div/div/p/a at Line 294, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-QualityStandard.json.html#/html/body/div/div/div/p/a at Line 273, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-QualityStandard.ttl.html#/html/body/div/div/div/p/a at Line 281, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-QualityStandard.xml.html#/html/body/div/div/div/p/a at Line 267, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-ResourceType.change.history.html#/html/body/div/div/div/p/a at Line 249, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-ResourceType.html#/html/body/div/div/div/p/a at Line 295, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-ResourceType.json.html#/html/body/div/div/div/p/a at Line 273, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-ResourceType.ttl.html#/html/body/div/div/div/p/a at Line 281, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-ResourceType.xml.html#/html/body/div/div/div/p/a at Line 267, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-SampleMaterialType.change.history.html#/html/body/div/div/div/p/a at Line 249, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-SampleMaterialType.html#/html/body/div/div/div/p/a at Line 294, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-SampleMaterialType.json.html#/html/body/div/div/div/p/a at Line 273, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-SampleMaterialType.ttl.html#/html/body/div/div/div/p/a at Line 281, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-SampleMaterialType.xml.html#/html/body/div/div/div/p/a at Line 267, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-StorageTemperature.change.history.html#/html/body/div/div/div/p/a at Line 249, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-StorageTemperature.html#/html/body/div/div/div/p/a at Line 294, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-StorageTemperature.json.html#/html/body/div/div/div/p/a at Line 273, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-StorageTemperature.ttl.html#/html/body/div/div/div/p/a at Line 281, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/ValueSet-StorageTemperature.xml.html#/html/body/div/div/div/p/a at Line 267, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/artifacts.html#/html/body/div/div/div/p/a at Line 753, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/background.html#/html/body/div/div/div/p/a at Line 204, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/downloads.html#/html/body/div/div/div/p/a at Line 232, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/etlTalent.html#/html/body/div/div/div/p/a at Line 433, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/howtoJoin.html#/html/body/div/div/div/p/a at Line 282, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/index.html#/html/body/div/div/div/p/a at Line 231, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/mappings.html#/html/body/div/div/div/p/a at Line 945, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/overview.html#/html/body/div/div/div/p/a at Line 245, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/qualityMeasures.html#/html/body/div/div/div/p/a at Line 233, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/referencedIGs.html#/html/body/div/div/div/p/a at Line 216, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/support.html#/html/body/div/div/div/p/a at Line 243, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/toc.html#/html/body/div/div/div/p/a at Line 185, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+== /home/travis/build/samply/bbmri-fhir-ig/input/ImplementationGuide-de.bbmri.fhir.json ==
+ERROR: ImplementationGuide.where(url = 'https://fhir.bbmri.de/ImplementationGuide/de.bbmri.fhir/ImplementationGuide/de.bbmri.fhir'): Conformance resource /home/travis/build/samply/bbmri-fhir-ig/input/ImplementationGuide-de.bbmri.fhir.json - the canonical URL (https://fhir.bbmri.de/ImplementationGuide/de.bbmri.fhir) does not match the URL (https://fhir.bbmri.de/ImplementationGuide/de.bbmri.fhir/ImplementationGuide/de.bbmri.fhir)
+INFORMATION: ImplementationGuide/de.bbmri.fhir: ImplementationGuide: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/input/ImplementationGuide-de.bbmri.fhir: URL Mismatch https://fhir.bbmri.de/ImplementationGuide/de.bbmri.fhir vs https://fhir.bbmri.de/ImplementationGuide/de.bbmri.fhir/ImplementationGuide/de.bbmri.fhir
+== /home/travis/build/samply/bbmri-fhir-ig/input/examples/Bundle-53ef12a3-1e31-4fc1-adf6-9d30dc6c4784.json ==
+INFORMATION: Bundle/53ef12a3-1e31-4fc1-adf6-9d30dc6c4784: Bundle: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Bundle
+INFORMATION: Bundle/53ef12a3-1e31-4fc1-adf6-9d30dc6c4784: Bundle.entry[0].resource.ofType(Patient): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Patient
+INFORMATION: Bundle/53ef12a3-1e31-4fc1-adf6-9d30dc6c4784: Bundle.entry[0].resource.ofType(Patient): Validate resource against profile https://fhir.bbmri.de/StructureDefinition/Patient - listed in meta
+INFORMATION: Bundle/53ef12a3-1e31-4fc1-adf6-9d30dc6c4784: Bundle.entry[1].resource.ofType(Observation): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
+INFORMATION: Bundle/53ef12a3-1e31-4fc1-adf6-9d30dc6c4784: Bundle.entry[1].resource.ofType(Observation): Validate resource against profile https://fhir.bbmri.de/StructureDefinition/Bmi - listed in meta
+INFORMATION: Bundle/53ef12a3-1e31-4fc1-adf6-9d30dc6c4784: Bundle.entry[2].resource.ofType(Observation): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
+INFORMATION: Bundle/53ef12a3-1e31-4fc1-adf6-9d30dc6c4784: Bundle.entry[2].resource.ofType(Observation): Validate resource against profile https://fhir.bbmri.de/StructureDefinition/BodyHeight - listed in meta
+INFORMATION: Bundle/53ef12a3-1e31-4fc1-adf6-9d30dc6c4784: Bundle.entry[3].resource.ofType(Observation): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
+INFORMATION: Bundle/53ef12a3-1e31-4fc1-adf6-9d30dc6c4784: Bundle.entry[3].resource.ofType(Observation): Validate resource against profile https://fhir.bbmri.de/StructureDefinition/BodyWeight - listed in meta
+INFORMATION: Bundle/53ef12a3-1e31-4fc1-adf6-9d30dc6c4784: Bundle.entry[4].resource.ofType(Observation): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
+WARNING: Bundle/53ef12a3-1e31-4fc1-adf6-9d30dc6c4784: Bundle.entry[4].resource.ofType(Observation).meta.profile[0]: Profile reference 'https://fhir.bbmri.de/StructureDefinition/TobaccoUse' could not be resolved, so has not been checked
+INFORMATION: Bundle/53ef12a3-1e31-4fc1-adf6-9d30dc6c4784: Bundle.entry[5].resource.ofType(Specimen): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Specimen
+ERROR: Bundle/53ef12a3-1e31-4fc1-adf6-9d30dc6c4784: Bundle.entry[5].resource.ofType(Specimen).extension[1].value.ofType(Reference): Unable to resolve resource 'http://blaze.example.com/fhir/Organization/collection-2'
+INFORMATION: Bundle/53ef12a3-1e31-4fc1-adf6-9d30dc6c4784: Bundle.entry[5].resource.ofType(Specimen): Validate resource against profile https://fhir.bbmri.de/StructureDefinition/Specimen - listed in meta
+== /home/travis/build/samply/bbmri-fhir-ig/input/examples/Observation-0-bmi.json ==
+INFORMATION: Observation/0-bmi: Observation: Validate resource against profile https://fhir.bbmri.de/StructureDefinition/Bmi
+== /home/travis/build/samply/bbmri-fhir-ig/input/examples/Observation-0-body-height.json ==
+INFORMATION: Observation/0-body-height: Observation: Validate resource against profile https://fhir.bbmri.de/StructureDefinition/BodyHeight
+== /home/travis/build/samply/bbmri-fhir-ig/input/examples/Observation-0-body-weight.json ==
+INFORMATION: Observation/0-body-weight: Observation: Validate resource against profile https://fhir.bbmri.de/StructureDefinition/BodyWeight
+== /home/travis/build/samply/bbmri-fhir-ig/input/examples/Observation-0-tobacco-use.json ==
+INFORMATION: Observation/0-tobacco-use: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
+WARNING: Observation/0-tobacco-use: Observation.meta.profile[0]: Profile reference 'https://fhir.bbmri.de/StructureDefinition/TobaccoUse' could not be resolved, so has not been checked
+== /home/travis/build/samply/bbmri-fhir-ig/input/examples/Organization-exampleBiobank.json ==
+ERROR: Organization.text.div: Resource has provided narrative, but the narrative indicates that it is generated - remove the narrative or fix it up
+INFORMATION: Organization/exampleBiobank: Organization: Validate resource against profile https://fhir.bbmri.de/StructureDefinition/Biobank
+== /home/travis/build/samply/bbmri-fhir-ig/input/examples/Organization-exampleCollection.json ==
+ERROR: Organization.text.div: Resource has provided narrative, but the narrative indicates that it is generated - remove the narrative or fix it up
+INFORMATION: Organization/exampleCollection: Organization: Validate resource against profile https://fhir.bbmri.de/StructureDefinition/Collection
+== /home/travis/build/samply/bbmri-fhir-ig/input/examples/Organization-exampleCollectionRD.json ==
+ERROR: Organization.text.div: Resource has provided narrative, but the narrative indicates that it is generated - remove the narrative or fix it up
+INFORMATION: Organization/exampleCollectionRD: Organization: Validate resource against profile https://fhir.bbmri.de/StructureDefinition/Collection
+== /home/travis/build/samply/bbmri-fhir-ig/input/examples/OrganizationAffiliation-example.json ==
+ERROR: OrganizationAffiliation.text.div: Resource has provided narrative, but the narrative indicates that it is generated - remove the narrative or fix it up
+INFORMATION: OrganizationAffiliation/example: OrganizationAffiliation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/OrganizationAffiliation
+== /home/travis/build/samply/bbmri-fhir-ig/input/examples/Patient-0.json ==
+INFORMATION: Patient/0: Patient: Validate resource against profile https://fhir.bbmri.de/StructureDefinition/Patient
+== /home/travis/build/samply/bbmri-fhir-ig/input/examples/Specimen-0-specimen.json ==
+INFORMATION: Specimen/0-specimen: Specimen: Validate resource against profile https://fhir.bbmri.de/StructureDefinition/Specimen
+INFORMATION: Specimen/0-specimen: Specimen.collection.bodySite.coding[0]: Code System URI 'urn:oid:1.3.6.1.4.1.19376.1.3.11.36' is unknown so the code cannot be validated
+== /home/travis/build/samply/bbmri-fhir-ig/input/profiles/StructureDefinition-TobaccoUse.json ==
+INFORMATION: StructureDefinition/TobaccoUse: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition.where(url = 'https://fhir.bbmri.de/ImplementationGuide/de.bbmri.fhir/StructureDefinition/TobaccoUse'): The Implementation Guide contains no examples for this profile
+== /home/travis/build/samply/bbmri-fhir-ig/input/resources/CodeSystem-BiobankCapabilities.json ==
+INFORMATION: CodeSystem/BiobankCapabilities: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
+== /home/travis/build/samply/bbmri-fhir-ig/input/resources/CodeSystem-CollectionType.json ==
+INFORMATION: CodeSystem/CollectionType: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
+== /home/travis/build/samply/bbmri-fhir-ig/input/resources/CodeSystem-ContactType.json ==
+INFORMATION: CodeSystem/ContactType: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
+== /home/travis/build/samply/bbmri-fhir-ig/input/resources/CodeSystem-DataCategory.json ==
+INFORMATION: CodeSystem/DataCategory: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
+== /home/travis/build/samply/bbmri-fhir-ig/input/resources/CodeSystem-OtherSampleDiagnosis.json ==
+INFORMATION: CodeSystem/OtherSampleDiagnosis: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
+== /home/travis/build/samply/bbmri-fhir-ig/input/resources/CodeSystem-QualityStandard.json ==
+INFORMATION: CodeSystem/QualityStandard: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
+== /home/travis/build/samply/bbmri-fhir-ig/input/resources/CodeSystem-ResourceType.json ==
+INFORMATION: CodeSystem/ResourceType: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
+== /home/travis/build/samply/bbmri-fhir-ig/input/resources/CodeSystem-SampleMaterialType.json ==
+INFORMATION: CodeSystem/SampleMaterialType: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
+== /home/travis/build/samply/bbmri-fhir-ig/input/resources/CodeSystem-StorageTemperature.json ==
+INFORMATION: CodeSystem/StorageTemperature: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
+== /home/travis/build/samply/bbmri-fhir-ig/input/resources/Library-PatientQualityReports.json ==
+ERROR: patient-quality-reports.cql: CQL Processing failed with exception: Unknown FHIRAllTypes code 'AdministrativeGender'
+INFORMATION: Library/PatientQualityReports: Library: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Library
+ERROR: Library/PatientQualityReports: Library.relatedArtifact[0].resource: URL value 'http://hl7.org/fhir/Library/FHIR-ModelInfo|4.0.0' does not resolve
+ERROR: Library/PatientQualityReports: Library.relatedArtifact[1].resource: URL value 'http://hl7.org/fhir/Library/FHIRHelpers|4.0.0' does not resolve
+== /home/travis/build/samply/bbmri-fhir-ig/input/resources/Library-SpecimenQualityReports.json ==
+INFORMATION: Library/SpecimenQualityReports: Library: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Library
+ERROR: Library/SpecimenQualityReports: Library.relatedArtifact[0].resource: URL value 'http://hl7.org/fhir/Library/FHIR-ModelInfo|4.0.0' does not resolve
+ERROR: Library/SpecimenQualityReports: Library.relatedArtifact[1].resource: URL value 'http://hl7.org/fhir/Library/FHIRHelpers|4.0.0' does not resolve
+== /home/travis/build/samply/bbmri-fhir-ig/input/resources/Measure-PatientQualityReports.json ==
+INFORMATION: Measure/PatientQualityReports: Measure: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Measure
+== /home/travis/build/samply/bbmri-fhir-ig/input/resources/Measure-SpecimenQualityReports.json ==
+INFORMATION: Measure/SpecimenQualityReports: Measure: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Measure
+== /home/travis/build/samply/bbmri-fhir-ig/input/resources/StructureDefinition-AccessPolicy.json ==
+INFORMATION: StructureDefinition/AccessPolicy: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+== /home/travis/build/samply/bbmri-fhir-ig/input/resources/StructureDefinition-Biobank.json ==
+INFORMATION: StructureDefinition/Biobank: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+INFORMATION: StructureDefinition/Biobank: StructureDefinition.snapshot.element[24].constraint[1].human: The string value contains embedded HTML tags. Note that all inputs should be escaped when rendered to HTML as a matter of course
+INFORMATION: StructureDefinition/Biobank: StructureDefinition.differential.element[13].constraint[0].human: The string value contains embedded HTML tags. Note that all inputs should be escaped when rendered to HTML as a matter of course
+== /home/travis/build/samply/bbmri-fhir-ig/input/resources/StructureDefinition-BioresourceReference.json ==
+INFORMATION: StructureDefinition/BioresourceReference: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+== /home/travis/build/samply/bbmri-fhir-ig/input/resources/StructureDefinition-Bmi.json ==
+INFORMATION: StructureDefinition/Bmi: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+== /home/travis/build/samply/bbmri-fhir-ig/input/resources/StructureDefinition-BodyHeight.json ==
+INFORMATION: StructureDefinition/BodyHeight: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+== /home/travis/build/samply/bbmri-fhir-ig/input/resources/StructureDefinition-BodyWeight.json ==
+INFORMATION: StructureDefinition/BodyWeight: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+== /home/travis/build/samply/bbmri-fhir-ig/input/resources/StructureDefinition-Capabilities.json ==
+INFORMATION: StructureDefinition/Capabilities: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition.where(url = 'https://fhir.bbmri.de/StructureDefinition/Capabilities'): The Implementation Guide contains no examples for this extension
+== /home/travis/build/samply/bbmri-fhir-ig/input/resources/StructureDefinition-CauseOfDeath.json ==
+INFORMATION: StructureDefinition/CauseOfDeath: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition.where(url = 'https://fhir.bbmri.de/StructureDefinition/CauseOfDeath'): The Implementation Guide contains no examples for this profile
+== /home/travis/build/samply/bbmri-fhir-ig/input/resources/StructureDefinition-Collaboration.json ==
+INFORMATION: StructureDefinition/Collaboration: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition.where(url = 'https://fhir.bbmri.de/StructureDefinition/Collaboration'): The Implementation Guide contains no examples for this extension
+== /home/travis/build/samply/bbmri-fhir-ig/input/resources/StructureDefinition-Collection.json ==
+INFORMATION: StructureDefinition/Collection: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+== /home/travis/build/samply/bbmri-fhir-ig/input/resources/StructureDefinition-CollectionType.json ==
+INFORMATION: StructureDefinition/CollectionType: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+== /home/travis/build/samply/bbmri-fhir-ig/input/resources/StructureDefinition-Condition.json ==
+INFORMATION: StructureDefinition/Condition: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+ERROR: StructureDefinition/Condition: StructureDefinition.snapshot.element[29].fixed.ofType(uri): URL value 'http://hl7.org/fhir/sid/icd-9' does not resolve
+ERROR: StructureDefinition/Condition: StructureDefinition.differential.element[6].fixed.ofType(uri): URL value 'http://hl7.org/fhir/sid/icd-9' does not resolve
+WARNING: StructureDefinition.where(url = 'https://fhir.bbmri.de/StructureDefinition/Condition'): The Implementation Guide contains no examples for this profile
+== /home/travis/build/samply/bbmri-fhir-ig/input/resources/StructureDefinition-ContactRole.json ==
+INFORMATION: StructureDefinition/ContactRole: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+== /home/travis/build/samply/bbmri-fhir-ig/input/resources/StructureDefinition-Custodian.json ==
+INFORMATION: StructureDefinition/Custodian: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+== /home/travis/build/samply/bbmri-fhir-ig/input/resources/StructureDefinition-DataCategory.json ==
+INFORMATION: StructureDefinition/DataCategory: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+== /home/travis/build/samply/bbmri-fhir-ig/input/resources/StructureDefinition-ITSupport.json ==
+INFORMATION: StructureDefinition/ITSupport: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition.where(url = 'https://fhir.bbmri.de/StructureDefinition/ITSupport'): The Implementation Guide contains no examples for this extension
+== /home/travis/build/samply/bbmri-fhir-ig/input/resources/StructureDefinition-IdCard.json ==
+INFORMATION: StructureDefinition/IdCard: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+== /home/travis/build/samply/bbmri-fhir-ig/input/resources/StructureDefinition-JuridicalPerson.json ==
+INFORMATION: StructureDefinition/JuridicalPerson: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+== /home/travis/build/samply/bbmri-fhir-ig/input/resources/StructureDefinition-NetworkMembership.json ==
+INFORMATION: StructureDefinition/NetworkMembership: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition.where(url = 'https://fhir.bbmri.de/StructureDefinition/NetworkMembership'): The Implementation Guide contains no examples for this profile
+== /home/travis/build/samply/bbmri-fhir-ig/input/resources/StructureDefinition-OrganizationDescription.json ==
+INFORMATION: StructureDefinition/OrganizationDescription: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+== /home/travis/build/samply/bbmri-fhir-ig/input/resources/StructureDefinition-ParentCollection.json ==
+INFORMATION: StructureDefinition/ParentCollection: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition.where(url = 'https://fhir.bbmri.de/StructureDefinition/ParentCollection'): The Implementation Guide contains no examples for this extension
+== /home/travis/build/samply/bbmri-fhir-ig/input/resources/StructureDefinition-PartnerCharterSigned.json ==
+INFORMATION: StructureDefinition/PartnerCharterSigned: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition.where(url = 'https://fhir.bbmri.de/StructureDefinition/PartnerCharterSigned'): The Implementation Guide contains no examples for this extension
+== /home/travis/build/samply/bbmri-fhir-ig/input/resources/StructureDefinition-Patient.json ==
+INFORMATION: StructureDefinition/Patient: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+== /home/travis/build/samply/bbmri-fhir-ig/input/resources/StructureDefinition-QualityStandard.json ==
+INFORMATION: StructureDefinition/QualityStandard: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+== /home/travis/build/samply/bbmri-fhir-ig/input/resources/StructureDefinition-ResourceManagement.json ==
+INFORMATION: StructureDefinition/ResourceManagement: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition.where(url = 'https://fhir.bbmri.de/StructureDefinition/ResourceManagement'): The Implementation Guide contains no examples for this extension
+== /home/travis/build/samply/bbmri-fhir-ig/input/resources/StructureDefinition-SampleDiagnosis.json ==
+INFORMATION: StructureDefinition/SampleDiagnosis: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+ERROR: StructureDefinition/SampleDiagnosis: StructureDefinition.snapshot.element[27].fixed.ofType(uri): URL value 'http://hl7.org/fhir/sid/icd-9' does not resolve
+ERROR: StructureDefinition/SampleDiagnosis: StructureDefinition.differential.element[11].fixed.ofType(uri): URL value 'http://hl7.org/fhir/sid/icd-9' does not resolve
+== /home/travis/build/samply/bbmri-fhir-ig/input/resources/StructureDefinition-Specimen.json ==
+INFORMATION: StructureDefinition/Specimen: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+ERROR: StructureDefinition/Specimen: StructureDefinition.snapshot.element[36].fixed.ofType(uri): URL value 'http://hl7.org/fhir/sid/icd-9' does not resolve
+== /home/travis/build/samply/bbmri-fhir-ig/input/resources/StructureDefinition-StorageTemperature.json ==
+INFORMATION: StructureDefinition/StorageTemperature: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+== /home/travis/build/samply/bbmri-fhir-ig/input/resources/ValueSet-BiobankCapabilities.json ==
+INFORMATION: ValueSet/BiobankCapabilities: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+== /home/travis/build/samply/bbmri-fhir-ig/input/resources/ValueSet-CollectionType.json ==
+INFORMATION: ValueSet/CollectionType: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+== /home/travis/build/samply/bbmri-fhir-ig/input/resources/ValueSet-DataCategory.json ==
+INFORMATION: ValueSet/DataCategory: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+== /home/travis/build/samply/bbmri-fhir-ig/input/resources/ValueSet-OtherSampleDiagnosis.json ==
+INFORMATION: ValueSet/OtherSampleDiagnosis: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+== /home/travis/build/samply/bbmri-fhir-ig/input/resources/ValueSet-QualityStandard.json ==
+INFORMATION: ValueSet/QualityStandard: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+== /home/travis/build/samply/bbmri-fhir-ig/input/resources/ValueSet-ResourceType.json ==
+INFORMATION: ValueSet/ResourceType: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+== /home/travis/build/samply/bbmri-fhir-ig/input/resources/ValueSet-SampleMaterialType.json ==
+INFORMATION: ValueSet/SampleMaterialType: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+== /home/travis/build/samply/bbmri-fhir-ig/input/resources/ValueSet-StorageTemperature.json ==
+INFORMATION: ValueSet/StorageTemperature: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet

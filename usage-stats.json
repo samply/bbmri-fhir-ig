@@ -1,6 +1,6 @@
 {
   "package": "de.bbmri.fhir",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "fhirVersion": "4.0.1",
   "extensions": [
     {
@@ -1128,16 +1128,28 @@
     }
   ],
   "profiles": {
+    "Observation": [
+      {
+        "url": "https://fhir.bbmri.de/StructureDefinition/Bmi",
+        "title": "BMI"
+      },
+      {
+        "url": "https://fhir.bbmri.de/StructureDefinition/BodyHeight",
+        "title": "Body Height"
+      },
+      {
+        "url": "https://fhir.bbmri.de/StructureDefinition/BodyWeight",
+        "title": "Body Weight"
+      },
+      {
+        "url": "https://fhir.bbmri.de/StructureDefinition/CauseOfDeath",
+        "title": "Cause of Death"
+      }
+    ],
     "Organization": [
       {
         "url": "https://fhir.bbmri.de/StructureDefinition/Collection",
         "title": "Collection"
-      }
-    ],
-    "Observation": [
-      {
-        "url": "https://fhir.bbmri.de/StructureDefinition/TobaccoUse",
-        "title": "Tobacco Use"
       }
     ],
     "Condition": [
@@ -1187,6 +1199,9 @@
     "http://hl7.org/fhir/StructureDefinition/geolocation": [
       "Organization.address"
     ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
+      "StructureDefinition"
+    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
       "StructureDefinition.snapshot.element"
     ],
@@ -1199,6 +1214,9 @@
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
       "StructureDefinition.differential.element.type",
       "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category": [
+      "StructureDefinition"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
       "StructureDefinition.snapshot.element"

@@ -3,38 +3,38 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="de.bbmri.fhir"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>BBMRI_DE_IG</h2><p>The official URL for this implementation guide is: </p><pre>https://fhir.bbmri.de/ImplementationGuide/de.bbmri.fhir</pre><div><p>Profiles for the GBA/BBMRI.de project</p>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>BBMRI_DE_IG</h2><p>The official URL for this implementation guide is: </p><pre>https://fhir.bbmri.de/ImplementationGuide/de.bbmri.fhir/ImplementationGuide/de.bbmri.fhir</pre><div><p>Profiles for the BBMRI.de / GBA biobanking project.</p>
 </div></div>
   </text>
-  <url value="https://fhir.bbmri.de/ImplementationGuide/de.bbmri.fhir"/>
-  <version value="1.1.0"/>
+  <url value="https://fhir.bbmri.de/ImplementationGuide/de.bbmri.fhir/ImplementationGuide/de.bbmri.fhir"/>
+  <version value="1.2.0"/>
   <name value="BBMRI_DE_IG"/>
   <title value="BBMRI.de/GBA Implementation Guide"/>
   <status value="active"/>
-  <experimental value="false"/>
-  <date value="2020-05-28T14:12:37+00:00"/>
-  <publisher value="BBMRI.de"/>
+  <date value="2020-09-16T11:11:35+00:00"/>
+  <publisher value="bbmri.de"/>
   <contact>
+    <name value="bbmri.de"/>
     <telecom>
       <system value="url"/>
-      <value value="https://www.bbmri.de"/>
+      <value value="bbmri.de"/>
     </telecom>
     <telecom>
       <system value="email"/>
       <value value="feedback@germanbiobanknode.de"/>
     </telecom>
   </contact>
-  <description value="Profiles for the GBA/BBMRI.de project"/>
+  <description value="Profiles for the BBMRI.de / GBA biobanking project."/>
   <packageId value="de.bbmri.fhir"/>
   <license value="CC-BY-SA-4.0"/>
   <fhirVersion value="4.0.1"/>
-  <dependsOn>
+  <dependsOn id="hl7_fhir_uv_ips">
     <uri value="http://hl7.org/fhir/uv/ips/ImplementationGuide/hl7.fhir.uv.ips"/>
     <packageId value="hl7.fhir.uv.ips"/>
-    <version value="1.0.0"/>
+    <version value="0.3.0"/>
   </dependsOn>
-  <dependsOn>
-    <uri value="https://simplifier.net/guide/basisprofil-de-r4"/>
+  <dependsOn id="de_basisprofil_r4">
+    <uri value="https://simplifier.net/packages/de.basisprofil.r4/0.9.6/files/129540"/>
     <packageId value="de.basisprofil.r4"/>
     <version value="0.9.6"/>
   </dependsOn>
@@ -52,7 +52,15 @@
         <valueString value="releaselabel"/>
       </extension>
       <extension url="value">
-        <valueString value="Release"/>
+        <valueString value="CI Build"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="show-inherited-invariants"/>
+      </extension>
+      <extension url="value">
+        <valueString value="false"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -61,14 +69,6 @@
       </extension>
       <extension url="value">
         <valueString value="input/other"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="autoload-resources"/>
-      </extension>
-      <extension url="value">
-        <valueString value="true"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -209,144 +209,30 @@
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Bundle"/>
+        <valueString value="StructureDefinition:resource"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Bundle-53ef12a3-1e31-4fc1-adf6-9d30dc6c4784.html"/>
+        <valueUri value="StructureDefinition-TobaccoUse.html"/>
       </extension>
       <reference>
-        <reference value="Bundle/53ef12a3-1e31-4fc1-adf6-9d30dc6c4784"/>
+        <reference value="StructureDefinition/TobaccoUse"/>
       </reference>
-      <name value="Example Bundle - 53ef12a3-1e31-4fc1-adf6-9d30dc6c4784"/>
-      <exampleCanonical value="https://fhir.bbmri.de/StructureDefinition/BodyHeight"/>
+      <name value="TobaccoUse"/>
+      <description value="Tobacco use"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Organization"/>
+        <valueString value="StructureDefinition:extension"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Organization-exampleCollection.html"/>
+        <valueUri value="StructureDefinition-AccessPolicy.html"/>
       </extension>
       <reference>
-        <reference value="Organization/exampleCollection"/>
+        <reference value="StructureDefinition/AccessPolicy"/>
       </reference>
-      <name value="Example Organization - exampleCollection"/>
-      <exampleCanonical value="https://fhir.bbmri.de/StructureDefinition/Collection"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Specimen"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Specimen-0-specimen.html"/>
-      </extension>
-      <reference>
-        <reference value="Specimen/0-specimen"/>
-      </reference>
-      <name value="Example Specimen - 0-specimen"/>
-      <exampleCanonical value="https://fhir.bbmri.de/StructureDefinition/Specimen"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="OrganizationAffiliation"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="OrganizationAffiliation-example.html"/>
-      </extension>
-      <reference>
-        <reference value="OrganizationAffiliation/example"/>
-      </reference>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-0-body-weight.html"/>
-      </extension>
-      <reference>
-        <reference value="Observation/0-body-weight"/>
-      </reference>
-      <name value="Example Observation - 0-body-weight"/>
-      <exampleCanonical value="https://fhir.bbmri.de/StructureDefinition/BodyWeight"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Organization"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Organization-exampleBiobank.html"/>
-      </extension>
-      <reference>
-        <reference value="Organization/exampleBiobank"/>
-      </reference>
-      <name value="Example Organization - exampleBiobank"/>
-      <exampleCanonical value="https://fhir.bbmri.de/StructureDefinition/Biobank"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-0-tobacco-use.html"/>
-      </extension>
-      <reference>
-        <reference value="Observation/0-tobacco-use"/>
-      </reference>
-      <name value="Example Observation - 0-tobacco-use"/>
-      <exampleCanonical value="https://fhir.bbmri.de/StructureDefinition/TobaccoUse"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-0-body-height.html"/>
-      </extension>
-      <reference>
-        <reference value="Observation/0-body-height"/>
-      </reference>
-      <name value="Example Observation - 0-body-height"/>
-      <exampleCanonical value="https://fhir.bbmri.de/StructureDefinition/BodyHeight"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Organization"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Organization-exampleCollectionRD.html"/>
-      </extension>
-      <reference>
-        <reference value="Organization/exampleCollectionRD"/>
-      </reference>
-      <name value="Example Organization - exampleCollectionRD"/>
-      <exampleCanonical value="https://fhir.bbmri.de/StructureDefinition/Collection"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Patient"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Patient-0.html"/>
-      </extension>
-      <reference>
-        <reference value="Patient/0"/>
-      </reference>
-      <name value="Example Patient - 0"/>
-      <exampleCanonical value="https://fhir.bbmri.de/StructureDefinition/Patient"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-0-bmi.html"/>
-      </extension>
-      <reference>
-        <reference value="Observation/0-bmi"/>
-      </reference>
-      <name value="Example Observation - 0-bmi"/>
-      <exampleCanonical value="https://fhir.bbmri.de/StructureDefinition/Bmi"/>
+      <name value="Access Policy"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -359,80 +245,33 @@
         <reference value="StructureDefinition/Biobank"/>
       </reference>
       <name value="Biobank"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-BodyWeight.html"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/BodyWeight"/>
-      </reference>
-      <name value="Body Weight"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-BioresourceReference.html"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/BioresourceReference"/>
-      </reference>
-      <name value="Bioresource Reference"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-NetworkMembership.html"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/NetworkMembership"/>
-      </reference>
-      <name value="Network Membership"/>
-      <description value="Resource representing the membership of a biobank in a biobank network"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-OrganizationDescription.html"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/OrganizationDescription"/>
-      </reference>
-      <name value="Organization Description"/>
-      <description value="Description of the organization in English"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CodeSystem"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="CodeSystem-ContactType.html"/>
+        <valueUri value="CodeSystem-BiobankCapabilities.html"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/ContactType"/>
+        <reference value="CodeSystem/BiobankCapabilities"/>
       </reference>
-      <name value="Contact Type"/>
+      <name value="Biobank Capabilities"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
+        <valueString value="ValueSet"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-BodyHeight.html"/>
+        <valueUri value="ValueSet-BiobankCapabilities.html"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/BodyHeight"/>
+        <reference value="ValueSet/BiobankCapabilities"/>
       </reference>
-      <name value="Body Height"/>
+      <name value="Biobank Capabilities"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -445,18 +284,98 @@
         <reference value="StructureDefinition/Bmi"/>
       </reference>
       <name value="BMI"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
+        <valueString value="StructureDefinition:resource"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-SampleMaterialType.html"/>
+        <valueUri value="StructureDefinition-BodyHeight.html"/>
       </extension>
       <reference>
-        <reference value="ValueSet/SampleMaterialType"/>
+        <reference value="StructureDefinition/BodyHeight"/>
       </reference>
-      <name value="Sample Material Type"/>
+      <name value="Body Height"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-BodyWeight.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/BodyWeight"/>
+      </reference>
+      <name value="Body Weight"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-Capabilities.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/Capabilities"/>
+      </reference>
+      <name value="Capabilities"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-CauseOfDeath.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/CauseOfDeath"/>
+      </reference>
+      <name value="Cause of Death"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-Collaboration.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/Collaboration"/>
+      </reference>
+      <name value="Collaboration"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-Collection.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/Collection"/>
+      </reference>
+      <name value="Collection"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CodeSystem-CollectionType.html"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/CollectionType"/>
+      </reference>
+      <name value="Collection Type"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -470,6 +389,7 @@
       </reference>
       <name value="Collection Type"/>
       <description value="The type of sample collections governed by the Organization."/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -482,6 +402,46 @@
         <reference value="ValueSet/CollectionType"/>
       </reference>
       <name value="Collection Type"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-Condition.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/Condition"/>
+      </reference>
+      <name value="Condition"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-ContactRole.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ContactRole"/>
+      </reference>
+      <name value="Contact Role"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CodeSystem-ContactType.html"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/ContactType"/>
+      </reference>
+      <name value="Contact Type"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -494,81 +454,7 @@
         <reference value="StructureDefinition/Custodian"/>
       </reference>
       <name value="Custodian"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Measure"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Measure-SpecimenQualityReports.html"/>
-      </extension>
-      <reference>
-        <reference value="Measure/SpecimenQualityReports"/>
-      </reference>
-      <name value="Specimen Quality Reports"/>
-      <description value="This measure contains various specimen related stratifiers to help to evaluate data quality."/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-TobaccoUse.html"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/TobaccoUse"/>
-      </reference>
-      <name value="Tobacco Use"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="CodeSystem-ResourceType.html"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/ResourceType"/>
-      </reference>
-      <name value="Resource Type"/>
-      <description value="Types of resources that may be governed by a biobank or its collections"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-ResourceType.html"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/ResourceType"/>
-      </reference>
-      <name value="Resource Type"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Measure"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Measure-PatientQualityReports.html"/>
-      </extension>
-      <reference>
-        <reference value="Measure/PatientQualityReports"/>
-      </reference>
-      <name value="Patient Quality Reports"/>
-      <description value="This measure contains various patient related stratifiers to help to evaluate data quality."/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-Specimen.html"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/Specimen"/>
-      </reference>
-      <name value="Specimen"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -581,178 +467,7 @@
         <reference value="CodeSystem/DataCategory"/>
       </reference>
       <name value="Data Category"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="CodeSystem-QualityStandard.html"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/QualityStandard"/>
-      </reference>
-      <name value="Quality Standard"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-Collection.html"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/Collection"/>
-      </reference>
-      <name value="Collection"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-Collaboration.html"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/Collaboration"/>
-      </reference>
-      <name value="Collaboration"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="CodeSystem-StorageTemperature.html"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/StorageTemperature"/>
-      </reference>
-      <name value="Storage Temperature"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-OtherSampleDiagnosis.html"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/OtherSampleDiagnosis"/>
-      </reference>
-      <name value="other sample diagnosis"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-QualityStandard.html"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/QualityStandard"/>
-      </reference>
-      <name value="Quality Standard"/>
-      <description value="Organization quality assessment"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-PartnerCharterSigned.html"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/PartnerCharterSigned"/>
-      </reference>
-      <name value="Partner Charter Signed"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-CauseOfDeath.html"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/CauseOfDeath"/>
-      </reference>
-      <name value="Cause of Death"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-Capabilities.html"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/Capabilities"/>
-      </reference>
-      <name value="Capabilities"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Library"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Library-SpecimenQualityReports.html"/>
-      </extension>
-      <reference>
-        <reference value="Library/SpecimenQualityReports"/>
-      </reference>
-      <name value="Specimen Quality Reports"/>
-      <description value="This library contains various expressions used in different specimen related quality reports."/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-QualityStandard.html"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/QualityStandard"/>
-      </reference>
-      <name value="Quality Standard"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="CodeSystem-OtherSampleDiagnosis.html"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/OtherSampleDiagnosis"/>
-      </reference>
-      <name value="Other Sample Diagnosis"/>
-      <description value="Contains the additional (not contained in ICD-10) codes needed for coding the MIABIS Sample Diagnosis plus a non-MIABIS code for indicating tumor material without a specific diagnosis."/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-StorageTemperature.html"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/StorageTemperature"/>
-      </reference>
-      <name value="Storage Temperature"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-Patient.html"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/Patient"/>
-      </reference>
-      <name value="Patient"/>
-      <description value="Resoure representing a sample donor"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -766,6 +481,20 @@
       </reference>
       <name value="Data Category"/>
       <description value="The categories of data that are available as part of the collection"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-DataCategory.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/DataCategory"/>
+      </reference>
+      <name value="Data Category"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -778,67 +507,33 @@
         <reference value="StructureDefinition/SampleDiagnosis"/>
       </reference>
       <name value="Sample Diagnosis"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-AccessPolicy.html"/>
+        <valueUri value="StructureDefinition-ITSupport.html"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/AccessPolicy"/>
+        <reference value="StructureDefinition/ITSupport"/>
       </reference>
-      <name value="Access Policy"/>
+      <name value="IT Support"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-StorageTemperature.html"/>
+        <valueUri value="StructureDefinition-IdCard.html"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/StorageTemperature"/>
+        <reference value="StructureDefinition/IdCard"/>
       </reference>
-      <name value="Storage Temperature"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="CodeSystem-BiobankCapabilities.html"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/BiobankCapabilities"/>
-      </reference>
-      <name value="Biobank Capabilities"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-BiobankCapabilities.html"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/BiobankCapabilities"/>
-      </reference>
-      <name value="Biobank Capabilities"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="CodeSystem-SampleMaterialType.html"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/SampleMaterialType"/>
-      </reference>
-      <name value="Sample Material Type"/>
-      <description value="The type of material the sample consists of."/>
+      <name value="ID Card"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -852,30 +547,89 @@
       </reference>
       <name value="Juridical Person"/>
       <description value="Name of the legal entity of the organization"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-ParentCollection.html"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ParentCollection"/>
-      </reference>
-      <name value="Parent Collection"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-Condition.html"/>
+        <valueUri value="StructureDefinition-NetworkMembership.html"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/Condition"/>
+        <reference value="StructureDefinition/NetworkMembership"/>
       </reference>
-      <name value="Condition"/>
+      <name value="Network Membership"/>
+      <description value="Resource representing the membership of a biobank in a biobank network"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-OrganizationDescription.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/OrganizationDescription"/>
+      </reference>
+      <name value="Organization Description"/>
+      <description value="Description of the organization in English"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CodeSystem-OtherSampleDiagnosis.html"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/OtherSampleDiagnosis"/>
+      </reference>
+      <name value="Other Sample Diagnosis"/>
+      <description value="Contains the additional (not contained in ICD-10) codes needed for coding the MIABIS Sample Diagnosis plus a non-MIABIS code for indicating tumor material without a specific diagnosis."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-OtherSampleDiagnosis.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/OtherSampleDiagnosis"/>
+      </reference>
+      <name value="other sample diagnosis"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-PartnerCharterSigned.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/PartnerCharterSigned"/>
+      </reference>
+      <name value="Partner Charter Signed"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-Patient.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/Patient"/>
+      </reference>
+      <name value="Patient"/>
+      <description value="Resoure representing a sample donor"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -889,42 +643,61 @@
       </reference>
       <name value="Patient Quality Reports"/>
       <description value="This library contains various expressions used in different patient related quality reports."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Measure"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Measure-PatientQualityReports.html"/>
+      </extension>
+      <reference>
+        <reference value="Measure/PatientQualityReports"/>
+      </reference>
+      <name value="Patient Quality Reports"/>
+      <description value="This measure contains various patient related stratifiers to help to evaluate data quality."/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CodeSystem"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="CodeSystem-CollectionType.html"/>
+        <valueUri value="CodeSystem-QualityStandard.html"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/CollectionType"/>
+        <reference value="CodeSystem/QualityStandard"/>
       </reference>
-      <name value="Collection Type"/>
+      <name value="Quality Standard"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-ContactRole.html"/>
+        <valueUri value="StructureDefinition-QualityStandard.html"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/ContactRole"/>
+        <reference value="StructureDefinition/QualityStandard"/>
       </reference>
-      <name value="Contact Role"/>
+      <name value="Quality Standard"/>
+      <description value="Organization quality assessment"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
+        <valueString value="ValueSet"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-ITSupport.html"/>
+        <valueUri value="ValueSet-QualityStandard.html"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/ITSupport"/>
+        <reference value="ValueSet/QualityStandard"/>
       </reference>
-      <name value="IT Support"/>
+      <name value="Quality Standard"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -937,30 +710,310 @@
         <reference value="StructureDefinition/ResourceManagement"/>
       </reference>
       <name value="Resource Management"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
+        <valueString value="CodeSystem"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-IdCard.html"/>
+        <valueUri value="CodeSystem-ResourceType.html"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/IdCard"/>
+        <reference value="CodeSystem/ResourceType"/>
       </reference>
-      <name value="ID Card"/>
+      <name value="Resource Type"/>
+      <description value="Types of resources that may be governed by a biobank or its collections"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-DataCategory.html"/>
+        <valueUri value="ValueSet-ResourceType.html"/>
       </extension>
       <reference>
-        <reference value="ValueSet/DataCategory"/>
+        <reference value="ValueSet/ResourceType"/>
       </reference>
-      <name value="Data Category"/>
+      <name value="Resource Type"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CodeSystem-SampleMaterialType.html"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/SampleMaterialType"/>
+      </reference>
+      <name value="Sample Material Type"/>
+      <description value="The type of material the sample consists of."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-SampleMaterialType.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/SampleMaterialType"/>
+      </reference>
+      <name value="Sample Material Type"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-Specimen.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/Specimen"/>
+      </reference>
+      <name value="Specimen"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Library"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Library-SpecimenQualityReports.html"/>
+      </extension>
+      <reference>
+        <reference value="Library/SpecimenQualityReports"/>
+      </reference>
+      <name value="Specimen Quality Reports"/>
+      <description value="This library contains various expressions used in different specimen related quality reports."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Measure"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Measure-SpecimenQualityReports.html"/>
+      </extension>
+      <reference>
+        <reference value="Measure/SpecimenQualityReports"/>
+      </reference>
+      <name value="Specimen Quality Reports"/>
+      <description value="This measure contains various specimen related stratifiers to help to evaluate data quality."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CodeSystem-StorageTemperature.html"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/StorageTemperature"/>
+      </reference>
+      <name value="Storage Temperature"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-StorageTemperature.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/StorageTemperature"/>
+      </reference>
+      <name value="Storage Temperature"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-StorageTemperature.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/StorageTemperature"/>
+      </reference>
+      <name value="Storage Temperature"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-BioresourceReference.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/BioresourceReference"/>
+      </reference>
+      <name value="Bioresource Reference"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-ParentCollection.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ParentCollection"/>
+      </reference>
+      <name value="Parent Collection"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Organization-exampleBiobank.html"/>
+      </extension>
+      <reference>
+        <reference value="Organization/exampleBiobank"/>
+      </reference>
+      <name value="exampleBiobank"/>
+      <exampleCanonical value="https://fhir.bbmri.de/StructureDefinition/Biobank"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Observation-0-bmi.html"/>
+      </extension>
+      <reference>
+        <reference value="Observation/0-bmi"/>
+      </reference>
+      <name value="0-bmi"/>
+      <exampleCanonical value="https://fhir.bbmri.de/StructureDefinition/Bmi"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Observation-0-body-height.html"/>
+      </extension>
+      <reference>
+        <reference value="Observation/0-body-height"/>
+      </reference>
+      <name value="0-body-height"/>
+      <exampleCanonical value="https://fhir.bbmri.de/StructureDefinition/BodyHeight"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Observation-0-body-weight.html"/>
+      </extension>
+      <reference>
+        <reference value="Observation/0-body-weight"/>
+      </reference>
+      <name value="0-body-weight"/>
+      <exampleCanonical value="https://fhir.bbmri.de/StructureDefinition/BodyWeight"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Organization-exampleCollection.html"/>
+      </extension>
+      <reference>
+        <reference value="Organization/exampleCollection"/>
+      </reference>
+      <name value="exampleCollection"/>
+      <exampleCanonical value="https://fhir.bbmri.de/StructureDefinition/Collection"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Organization-exampleCollectionRD.html"/>
+      </extension>
+      <reference>
+        <reference value="Organization/exampleCollectionRD"/>
+      </reference>
+      <name value="exampleCollectionRD"/>
+      <exampleCanonical value="https://fhir.bbmri.de/StructureDefinition/Collection"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="OrganizationAffiliation"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="OrganizationAffiliation-example.html"/>
+      </extension>
+      <reference>
+        <reference value="OrganizationAffiliation/example"/>
+      </reference>
+      <name value="example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Patient-0.html"/>
+      </extension>
+      <reference>
+        <reference value="Patient/0"/>
+      </reference>
+      <name value="0"/>
+      <exampleCanonical value="https://fhir.bbmri.de/StructureDefinition/Patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Specimen"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Specimen-0-specimen.html"/>
+      </extension>
+      <reference>
+        <reference value="Specimen/0-specimen"/>
+      </reference>
+      <name value="0-specimen"/>
+      <exampleCanonical value="https://fhir.bbmri.de/StructureDefinition/Specimen"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Observation-0-tobacco-use.html"/>
+      </extension>
+      <reference>
+        <reference value="Observation/0-tobacco-use"/>
+      </reference>
+      <name value="0-tobacco-use"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Bundle-53ef12a3-1e31-4fc1-adf6-9d30dc6c4784.html"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/53ef12a3-1e31-4fc1-adf6-9d30dc6c4784"/>
+      </reference>
+      <name value="53ef12a3-1e31-4fc1-adf6-9d30dc6c4784"/>
+      <exampleBoolean value="true"/>
     </resource>
     <page>
       <nameUrl value="toc.html"/>
@@ -968,7 +1021,7 @@
       <generation value="html"/>
       <page>
         <nameUrl value="index.html"/>
-        <title value="BBMRI.de/GBA IG"/>
+        <title value="Home"/>
         <generation value="markdown"/>
       </page>
       <page>
@@ -983,7 +1036,7 @@
       </page>
       <page>
         <nameUrl value="howtoJoin.html"/>
-        <title value="How to join the Sample Locator"/>
+        <title value="Howto Join"/>
         <generation value="markdown"/>
       </page>
       <page>
@@ -993,7 +1046,7 @@
       </page>
       <page>
         <nameUrl value="referencedIGs.html"/>
-        <title value="Referenced IGs"/>
+        <title value="Referenced I Gs"/>
         <generation value="markdown"/>
       </page>
       <page>
@@ -1003,7 +1056,7 @@
       </page>
       <page>
         <nameUrl value="etlTalent.html"/>
-        <title value="Build ETL with Talent Open Studio and Hapi FHIR API to fill the Blaze Store"/>
+        <title value="Etl Talent"/>
         <generation value="markdown"/>
       </page>
       <page>
@@ -1013,12 +1066,7 @@
       </page>
       <page>
         <nameUrl value="downloads.html"/>
-        <title value="Useful Downloads"/>
-        <generation value="html"/>
-      </page>
-      <page>
-        <nameUrl value="changes.html"/>
-        <title value="IG Change History"/>
+        <title value="Downloads"/>
         <generation value="html"/>
       </page>
     </page>
@@ -1061,6 +1109,10 @@
     <parameter>
       <code value="path-resource"/>
       <value value="input/testing"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/history"/>
     </parameter>
     <parameter>
       <code value="path-pages"/>

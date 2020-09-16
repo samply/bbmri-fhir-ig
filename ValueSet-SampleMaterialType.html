@@ -4,16 +4,16 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
     <title>DE.BBMRI.FHIR\Sample Material Type - FHIR v4.0.1</title>
-  
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
 
     <link rel="stylesheet" href="fhir.css"/>
-     
+
       <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.css"/>
     <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
-  
+
       <!-- Project extras -->
     <link rel="stylesheet" href="assets/css/project.css"/>
     <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
@@ -28,7 +28,7 @@
     <script src="assets/js/html5shiv.js"></script>
     <script src="assets/js/respond.min.js"></script>
     <![endif] -->
-  
+
       <!-- Favicons -->
     <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
     <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
@@ -36,13 +36,14 @@
     <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
-  <body>
+  <body onload="document.body.style.opacity='1'">
 
-    <style type="text/css">h2{--heading-prefix:"12.30"}
-    h3,h4,h5,h6{--heading-prefix:"12.30"}</style>
+    <style type="text/css">h2{--heading-prefix:"11.36"}
+    h3,h4,h5,h6{--heading-prefix:"11.36"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
-        
+          <!-- Placeholder for child template header declarations -->
+
 	<div id="gba-nav">
 	  <a no-external="true" id="gba-logo" href="http://www.bbmri.de">
 	    <img src="assets/images/GBN_CMYK_schwarz.png" alt="GBA Logo" height="80"/>
@@ -52,16 +53,16 @@
 	</div>
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">BBMRI.de/GBA Implementation Guide</span><br/>1.1.0 - Release</p>
+          <p><span style="font-size:12pt;font-weight:bold">BBMRI.de/GBA Implementation Guide</span><br/>1.2.0 - CI Build</p>
         </div>
       </div>   <!-- /container -->
     </div>    <!-- /segment-header -->
-    
+
     <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
       <div id="stripe"> </div>
       <div class="container">    <!-- container -->
           <!-- HEADER CONTENT -->
-    
+
         <nav class="navbar navbar-inverse">
             <!-- status-bar -->
           <div class="container">
@@ -72,23 +73,36 @@
             </button>
             <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
             <div class="nav-collapse collapse navbar-inverse-collapse">
-              <ul class="nav navbar-nav">
-  <li><a href="index.html">IG Home</a></li>
-  <li><a href="toc.html">Table of Contents</a></li>
-  <li><a href="overview.html">Profile Overview</a></li>
-  <li><a href="howtoJoin.html">How to Join the Sample Locator</a></li>
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">IG Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifact Index</a>
+  </li>
+  <li>
+    <a href="overview.html">Profile Overview</a>
+  </li>
+  <li>
+    <a href="howtoJoin.html">How to Join the Sample Locator</a>
+  </li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Background<b class="caret">
-      </b>
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Background
+      <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-	  <li>
+      <li>
         <a href="background.html">Overview</a>
       </li>
       <li>
         <a href="mappings.html">Mappings</a>
       </li>
-	  <li>
+      <li>
         <a href="referencedIGs.html">Referenced IGs</a>
       </li>
       <li>
@@ -100,31 +114,22 @@
     </ul>
   </li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support<b class="caret">
-      </b>
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-	<li>
+      <li>
         <a href="support.html">Instructions</a>
       </li>
       <li>
         <a href="downloads.html">Downloads</a>
       </li>
-    </ul>
-  </li>
-  <li><a href="artifacts.html">Artifact Index</a></li>
-  <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Links<b class="caret">
-      </b>
-    </a>
-    <ul class="dropdown-menu">
       <li>
         <a href="http://hl7.org/fhir/R4/index.html" target="_blank">FHIR Spec <img src="external.png" style="text-align: baseline"/></a>
       </li>
     </ul>
   </li>
 </ul>
-
             </div>    <!-- /.nav-collapse -->
           </div>    <!-- /.container -->
         </nav>    <!-- /.navbar -->
@@ -133,19 +138,58 @@
     </div>    <!-- /segment-navbar -->
       <!-- status-bar -->
     <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
-      <div class="container">    <!-- container -->  
+      <div class="container">    <!-- container -->
         <ul class="breadcrumb">
           <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>Sample Material Type</b></li>
-        </ul>  
+        </ul>
       </div>    <!-- /container -->
     </div>    <!-- /segment-breadcrumb -->
-    
-    <div id="segment-content" class="segment">    <!-- segment-content -->
+
+    <div id="segment-content">    <!-- segment-content -->
       <div class="container">    <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
+
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">BBMRI.de/GBA Implementation Guide - Local Development build (v1.1.0). See the <a href="https://fhir.bbmri.de/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+    <!-- ReleaseHeader --><p id="publish-box">BBMRI.de/GBA Implementation Guide - Local Development build (v1.2.0). See the <a href="https://fhir.bbmri.de/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+  
+    <li>
+      <a href="ValueSet-SampleMaterialType.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-SampleMaterialType.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-SampleMaterialType.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
   <a name="root"> </a>
   <h2 id="root">ValueSet: Sample Material Type</h2>
   <p>
@@ -153,15 +197,15 @@
   </p>
   <table class="grid">
  <tbody><tr><td>Defining URL:</td><td>https://fhir.bbmri.de/ValueSet/SampleMaterialType</td></tr>
- <tr><td>Version:</td><td>1.1.0</td></tr>
+ <tr><td>Version:</td><td>1.2.0</td></tr>
  <tr><td>Name:</td><td>SampleMaterialType</td></tr>
  <tr><td>Status:</td><td>Active</td></tr>
  <tr><td>Title:</td><td>Sample Material Type</td></tr>
- <tr><td>Publisher:</td><td>BBMRI.de</td></tr>
+ <tr><td>Publisher:</td><td>bbmri.de</td></tr>
  <tr><td>Source Resource:</td><td><a href="ValueSet-SampleMaterialType.xml.html">XML</a> / <a href="ValueSet-SampleMaterialType.json.html">JSON</a> / <a href="ValueSet-SampleMaterialType.ttl.html">Turtle</a></td></tr>
 </tbody></table>
 
-  
+
   <p>
     <b>References</b>
   </p>
@@ -171,19 +215,22 @@
 </ul>
 
 
+    <!-- insert intro if present -->
   
-  
+
+
 
   <a name="definition"> </a>
 
+  <!-- Content Logical Definition heading in the fragment -->
   <h3>Logical Definition (CLD)</h3>
-<div><ul><li><a name="dfbc5a2e-2757-47a3-940c-4886c7c10ae0">​</a>Include all codes defined in <a href="http://hl7.org/fhir/R4/CodeSystem-SampleMaterialType.html"><code>https://fhir.bbmri.de/CodeSystem/SampleMaterialType</code></a></li></ul></div>
-  
+<div><ul><li>Include all codes defined in <a href="CodeSystem-SampleMaterialType.html"><code>https://fhir.bbmri.de/CodeSystem/SampleMaterialType</code></a></li></ul></div>
+
   <p>&nbsp;</p>
   <a name="expansion"> </a>
   <h3 id="expansion">Expansion</h3>
 
-  <div><p>This value set contains 33 concepts</p><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on <a href="CodeSystem-SampleMaterialType.html">Sample Material Type v1.1.0 (CodeSystem)</a></p><p><a name="96710b16-e3c6-4431-a8f0-0ef04d228ab3">​</a>All codes from system <a href="http://hl7.org/fhir/R4/CodeSystem-SampleMaterialType.html"><code>https://fhir.bbmri.de/CodeSystem/SampleMaterialType</code></a></p><table class="codes"><tr><td><b>Lvl</b></td><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-whole-blood"> </a>0</td><td style="white-space:nowrap"><a name="21243acd-3962-4841-9fee-051fac448e27">​</a><a href="http://hl7.org/fhir/R4/CodeSystem-SampleMaterialType.html#SampleMaterialType-whole-blood">whole-blood</a></td><td>Whole blood</td><td></td></tr><tr><td><a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-bone-marrow"> </a>0</td><td style="white-space:nowrap"><a name="7b912a17-24c1-4d23-ab8e-f389d1918ad8">​</a><a href="http://hl7.org/fhir/R4/CodeSystem-SampleMaterialType.html#SampleMaterialType-bone-marrow">bone-marrow</a></td><td>Bone marrow</td><td></td></tr><tr><td><a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-buffy-coat"> </a>0</td><td style="white-space:nowrap"><a name="e42735a1-96c1-4695-ad2d-b442dba6dda7">​</a><a href="http://hl7.org/fhir/R4/CodeSystem-SampleMaterialType.html#SampleMaterialType-buffy-coat">buffy-coat</a></td><td>Buffy-Coat</td><td></td></tr><tr><td><a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-dried-whole-blood"> </a>0</td><td style="white-space:nowrap"><a name="24c08044-024f-4b3a-beb2-d0aa3599ad1a">​</a><a href="http://hl7.org/fhir/R4/CodeSystem-SampleMaterialType.html#SampleMaterialType-dried-whole-blood">dried-whole-blood</a></td><td>Dried whole blood</td><td></td></tr><tr><td><a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-peripheral-blood-cells-vital"> </a>0</td><td style="white-space:nowrap"><a name="d89fc731-2117-4c23-afc8-549dc505790c">​</a><a href="http://hl7.org/fhir/R4/CodeSystem-SampleMaterialType.html#SampleMaterialType-peripheral-blood-cells-vital">peripheral-blood-cells-vital</a></td><td>Peripheral blood mononuclear cells (PBMCs, viable)</td><td></td></tr><tr><td><a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-blood-plasma"> </a>0</td><td style="white-space:nowrap"><a name="c7e443e5-6564-4497-997e-8c3d6b735108">​</a><a href="http://hl7.org/fhir/R4/CodeSystem-SampleMaterialType.html#SampleMaterialType-blood-plasma">blood-plasma</a></td><td>Plasma</td><td></td></tr><tr><td><a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-plasma-edta"> </a>1</td><td style="white-space:nowrap"><a name="2fa0bba6-ffa9-45b8-a0d1-11bebf8d5e82">​</a>&nbsp;&nbsp;<a href="http://hl7.org/fhir/R4/CodeSystem-SampleMaterialType.html#SampleMaterialType-plasma-edta">plasma-edta</a></td><td>Plasma, EDTA</td><td></td></tr><tr><td><a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-plasma-citrat"> </a>1</td><td style="white-space:nowrap"><a name="ec9987a2-2d12-439b-a1b1-41b1d05becc4">​</a>&nbsp;&nbsp;<a href="http://hl7.org/fhir/R4/CodeSystem-SampleMaterialType.html#SampleMaterialType-plasma-citrat">plasma-citrat</a></td><td>Plasma, Citrat</td><td></td></tr><tr><td><a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-plasma-heparin"> </a>1</td><td style="white-space:nowrap"><a name="991c0dd2-231e-44de-bccd-97f82700b7bd">​</a>&nbsp;&nbsp;<a href="http://hl7.org/fhir/R4/CodeSystem-SampleMaterialType.html#SampleMaterialType-plasma-heparin">plasma-heparin</a></td><td>Plasma, Heparin</td><td></td></tr><tr><td><a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-plasma-cell-free"> </a>1</td><td style="white-space:nowrap"><a name="38d4cbb9-dc24-4343-a01c-78b7b3293c48">​</a>&nbsp;&nbsp;<a href="http://hl7.org/fhir/R4/CodeSystem-SampleMaterialType.html#SampleMaterialType-plasma-cell-free">plasma-cell-free</a></td><td>Plasma, cell free</td><td></td></tr><tr><td><a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-plasma-other"> </a>1</td><td style="white-space:nowrap"><a name="86f1cd17-59dc-4b0e-91af-2b7599ad3ea4">​</a>&nbsp;&nbsp;<a href="http://hl7.org/fhir/R4/CodeSystem-SampleMaterialType.html#SampleMaterialType-plasma-other">plasma-other</a></td><td>Plasma, other</td><td></td></tr><tr><td><a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-blood-serum"> </a>0</td><td style="white-space:nowrap"><a name="ddbbd970-dddb-458b-a144-3a785f3faa3d">​</a><a href="http://hl7.org/fhir/R4/CodeSystem-SampleMaterialType.html#SampleMaterialType-blood-serum">blood-serum</a></td><td>Serum</td><td></td></tr><tr><td><a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-ascites"> </a>0</td><td style="white-space:nowrap"><a name="a384d4ba-a0a7-44a9-8dbb-c97875d5d3d1">​</a><a href="http://hl7.org/fhir/R4/CodeSystem-SampleMaterialType.html#SampleMaterialType-ascites">ascites</a></td><td>Ascites</td><td></td></tr><tr><td><a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-csf-liquor"> </a>0</td><td style="white-space:nowrap"><a name="ed891efd-385d-4644-a706-3d3b9812e52d">​</a><a href="http://hl7.org/fhir/R4/CodeSystem-SampleMaterialType.html#SampleMaterialType-csf-liquor">csf-liquor</a></td><td>CSF/Liquor</td><td></td></tr><tr><td><a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-saliva"> </a>0</td><td style="white-space:nowrap"><a name="d9166b14-6a7f-4508-b42a-80cf025c39ba">​</a><a href="http://hl7.org/fhir/R4/CodeSystem-SampleMaterialType.html#SampleMaterialType-saliva">saliva</a></td><td>Saliva</td><td></td></tr><tr><td><a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-stool-faeces"> </a>0</td><td style="white-space:nowrap"><a name="83ff16bc-a8b2-43a4-ac08-48ee05f64f0b">​</a><a href="http://hl7.org/fhir/R4/CodeSystem-SampleMaterialType.html#SampleMaterialType-stool-faeces">stool-faeces</a></td><td>Stool/Faeces</td><td></td></tr><tr><td><a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-urine"> </a>0</td><td style="white-space:nowrap"><a name="0bf0b5c5-46d1-4db0-b4b8-78de7e4fbbef">​</a><a href="http://hl7.org/fhir/R4/CodeSystem-SampleMaterialType.html#SampleMaterialType-urine">urine</a></td><td>Urine</td><td></td></tr><tr><td><a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-swab"> </a>0</td><td style="white-space:nowrap"><a name="d6b8307e-6db0-4ea9-80cb-12b0284905ba">​</a><a href="http://hl7.org/fhir/R4/CodeSystem-SampleMaterialType.html#SampleMaterialType-swab">swab</a></td><td>Swab</td><td></td></tr><tr><td><a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-liquid-other"> </a>0</td><td style="white-space:nowrap"><a name="ae03097b-66db-41fb-b44a-0e40352506eb">​</a><a href="http://hl7.org/fhir/R4/CodeSystem-SampleMaterialType.html#SampleMaterialType-liquid-other">liquid-other</a></td><td>Other liquid biosample/storage</td><td></td></tr><tr><td><a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-tissue-ffpe"> </a>0</td><td style="white-space:nowrap"><a name="328089fb-0476-420b-b4d9-f79d96033457">​</a><a href="http://hl7.org/fhir/R4/CodeSystem-SampleMaterialType.html#SampleMaterialType-tissue-ffpe">tissue-ffpe</a></td><td>Tissue FFPE</td><td></td></tr><tr><td><a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-tumor-tissue-ffpe"> </a>1</td><td style="white-space:nowrap"><a name="d1ba266b-d643-4e83-858b-cc5c74885029">​</a>&nbsp;&nbsp;<a href="http://hl7.org/fhir/R4/CodeSystem-SampleMaterialType.html#SampleMaterialType-tumor-tissue-ffpe">tumor-tissue-ffpe</a></td><td>Tumor tissue (FFPE)</td><td></td></tr><tr><td><a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-normal-tissue-ffpe"> </a>1</td><td style="white-space:nowrap"><a name="5768b5b4-17c9-48b4-b165-2aa9ca96feb1">​</a>&nbsp;&nbsp;<a href="http://hl7.org/fhir/R4/CodeSystem-SampleMaterialType.html#SampleMaterialType-normal-tissue-ffpe">normal-tissue-ffpe</a></td><td>Normal tissue (FFPE)</td><td></td></tr><tr><td><a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-other-tissue-ffpe"> </a>1</td><td style="white-space:nowrap"><a name="ea4d7cb1-530d-453b-86fc-a9161b799236">​</a>&nbsp;&nbsp;<a href="http://hl7.org/fhir/R4/CodeSystem-SampleMaterialType.html#SampleMaterialType-other-tissue-ffpe">other-tissue-ffpe</a></td><td>Other tissue (FFPE)</td><td></td></tr><tr><td><a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-tissue-frozen"> </a>0</td><td style="white-space:nowrap"><a name="3987a729-91ff-4c97-bfcb-78c6d1f628b9">​</a><a href="http://hl7.org/fhir/R4/CodeSystem-SampleMaterialType.html#SampleMaterialType-tissue-frozen">tissue-frozen</a></td><td>Tissue frozen</td><td></td></tr><tr><td><a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-tumor-tissue-frozen"> </a>1</td><td style="white-space:nowrap"><a name="4e88e610-166d-4e8f-a7eb-33c3b74d2094">​</a>&nbsp;&nbsp;<a href="http://hl7.org/fhir/R4/CodeSystem-SampleMaterialType.html#SampleMaterialType-tumor-tissue-frozen">tumor-tissue-frozen</a></td><td>Tumor tissue (frozen)</td><td></td></tr><tr><td><a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-normal-tissue-frozen"> </a>1</td><td style="white-space:nowrap"><a name="be7d1136-5e30-4515-90c5-7d3bba2ef4c2">​</a>&nbsp;&nbsp;<a href="http://hl7.org/fhir/R4/CodeSystem-SampleMaterialType.html#SampleMaterialType-normal-tissue-frozen">normal-tissue-frozen</a></td><td>Normal tissue (frozen)</td><td></td></tr><tr><td><a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-other-tissue-frozen"> </a>1</td><td style="white-space:nowrap"><a name="d2877094-b01f-4219-889d-b7c97fc5af6c">​</a>&nbsp;&nbsp;<a href="http://hl7.org/fhir/R4/CodeSystem-SampleMaterialType.html#SampleMaterialType-other-tissue-frozen">other-tissue-frozen</a></td><td>Other tissue (frozen)</td><td></td></tr><tr><td><a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-tissue-other"> </a>0</td><td style="white-space:nowrap"><a name="259876c3-b94c-409a-afc9-28d59f70655b">​</a><a href="http://hl7.org/fhir/R4/CodeSystem-SampleMaterialType.html#SampleMaterialType-tissue-other">tissue-other</a></td><td>Other tissue storage</td><td></td></tr><tr><td><a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-dna"> </a>0</td><td style="white-space:nowrap"><a name="a9efa7d5-811c-4122-8d3e-16f650843e15">​</a><a href="http://hl7.org/fhir/R4/CodeSystem-SampleMaterialType.html#SampleMaterialType-dna">dna</a></td><td>DNA</td><td></td></tr><tr><td><a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-cf-dna"> </a>1</td><td style="white-space:nowrap"><a name="b69847ec-6596-43fe-846c-a3836f217e6a">​</a>&nbsp;&nbsp;<a href="http://hl7.org/fhir/R4/CodeSystem-SampleMaterialType.html#SampleMaterialType-cf-dna">cf-dna</a></td><td>cfDNA</td><td></td></tr><tr><td><a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-g-dna"> </a>1</td><td style="white-space:nowrap"><a name="1360795e-1f6f-4903-8200-1b618aa0f40a">​</a>&nbsp;&nbsp;<a href="http://hl7.org/fhir/R4/CodeSystem-SampleMaterialType.html#SampleMaterialType-g-dna">g-dna</a></td><td>gDNA</td><td></td></tr><tr><td><a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-rna"> </a>0</td><td style="white-space:nowrap"><a name="d5419f25-2d80-4c98-beaa-7673b4dcda53">​</a><a href="http://hl7.org/fhir/R4/CodeSystem-SampleMaterialType.html#SampleMaterialType-rna">rna</a></td><td>RNA</td><td></td></tr><tr><td><a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-derivative-other"> </a>0</td><td style="white-space:nowrap"><a name="132add19-6e98-49ec-84a2-5c34de499c5c">​</a><a href="http://hl7.org/fhir/R4/CodeSystem-SampleMaterialType.html#SampleMaterialType-derivative-other">derivative-other</a></td><td>Other derivative</td><td></td></tr></table></div>
+  <div><p>This value set contains 33 concepts</p><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on <a href="CodeSystem-SampleMaterialType.html">Sample Material Type v1.2.0 (CodeSystem)</a></p><p>All codes from system <a href="CodeSystem-SampleMaterialType.html"><code>https://fhir.bbmri.de/CodeSystem/SampleMaterialType</code></a></p><table class="codes"><tr><td><b>Lvl</b></td><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-whole-blood"> </a>0</td><td style="white-space:nowrap"><a href="CodeSystem-SampleMaterialType.html#SampleMaterialType-whole-blood">whole-blood</a></td><td>Whole blood</td><td></td></tr><tr><td><a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-bone-marrow"> </a>0</td><td style="white-space:nowrap"><a href="CodeSystem-SampleMaterialType.html#SampleMaterialType-bone-marrow">bone-marrow</a></td><td>Bone marrow</td><td></td></tr><tr><td><a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-buffy-coat"> </a>0</td><td style="white-space:nowrap"><a href="CodeSystem-SampleMaterialType.html#SampleMaterialType-buffy-coat">buffy-coat</a></td><td>Buffy-Coat</td><td></td></tr><tr><td><a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-dried-whole-blood"> </a>0</td><td style="white-space:nowrap"><a href="CodeSystem-SampleMaterialType.html#SampleMaterialType-dried-whole-blood">dried-whole-blood</a></td><td>Dried whole blood</td><td></td></tr><tr><td><a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-peripheral-blood-cells-vital"> </a>0</td><td style="white-space:nowrap"><a href="CodeSystem-SampleMaterialType.html#SampleMaterialType-peripheral-blood-cells-vital">peripheral-blood-cells-vital</a></td><td>Peripheral blood mononuclear cells (PBMCs, viable)</td><td></td></tr><tr><td><a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-blood-plasma"> </a>0</td><td style="white-space:nowrap"><a href="CodeSystem-SampleMaterialType.html#SampleMaterialType-blood-plasma">blood-plasma</a></td><td>Plasma</td><td></td></tr><tr><td><a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-plasma-edta"> </a>1</td><td style="white-space:nowrap">&nbsp;&nbsp;<a href="CodeSystem-SampleMaterialType.html#SampleMaterialType-plasma-edta">plasma-edta</a></td><td>Plasma, EDTA</td><td></td></tr><tr><td><a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-plasma-citrat"> </a>1</td><td style="white-space:nowrap">&nbsp;&nbsp;<a href="CodeSystem-SampleMaterialType.html#SampleMaterialType-plasma-citrat">plasma-citrat</a></td><td>Plasma, Citrat</td><td></td></tr><tr><td><a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-plasma-heparin"> </a>1</td><td style="white-space:nowrap">&nbsp;&nbsp;<a href="CodeSystem-SampleMaterialType.html#SampleMaterialType-plasma-heparin">plasma-heparin</a></td><td>Plasma, Heparin</td><td></td></tr><tr><td><a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-plasma-cell-free"> </a>1</td><td style="white-space:nowrap">&nbsp;&nbsp;<a href="CodeSystem-SampleMaterialType.html#SampleMaterialType-plasma-cell-free">plasma-cell-free</a></td><td>Plasma, cell free</td><td></td></tr><tr><td><a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-plasma-other"> </a>1</td><td style="white-space:nowrap">&nbsp;&nbsp;<a href="CodeSystem-SampleMaterialType.html#SampleMaterialType-plasma-other">plasma-other</a></td><td>Plasma, other</td><td></td></tr><tr><td><a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-blood-serum"> </a>0</td><td style="white-space:nowrap"><a href="CodeSystem-SampleMaterialType.html#SampleMaterialType-blood-serum">blood-serum</a></td><td>Serum</td><td></td></tr><tr><td><a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-ascites"> </a>0</td><td style="white-space:nowrap"><a href="CodeSystem-SampleMaterialType.html#SampleMaterialType-ascites">ascites</a></td><td>Ascites</td><td></td></tr><tr><td><a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-csf-liquor"> </a>0</td><td style="white-space:nowrap"><a href="CodeSystem-SampleMaterialType.html#SampleMaterialType-csf-liquor">csf-liquor</a></td><td>CSF/Liquor</td><td></td></tr><tr><td><a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-saliva"> </a>0</td><td style="white-space:nowrap"><a href="CodeSystem-SampleMaterialType.html#SampleMaterialType-saliva">saliva</a></td><td>Saliva</td><td></td></tr><tr><td><a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-stool-faeces"> </a>0</td><td style="white-space:nowrap"><a href="CodeSystem-SampleMaterialType.html#SampleMaterialType-stool-faeces">stool-faeces</a></td><td>Stool/Faeces</td><td></td></tr><tr><td><a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-urine"> </a>0</td><td style="white-space:nowrap"><a href="CodeSystem-SampleMaterialType.html#SampleMaterialType-urine">urine</a></td><td>Urine</td><td></td></tr><tr><td><a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-swab"> </a>0</td><td style="white-space:nowrap"><a href="CodeSystem-SampleMaterialType.html#SampleMaterialType-swab">swab</a></td><td>Swab</td><td></td></tr><tr><td><a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-liquid-other"> </a>0</td><td style="white-space:nowrap"><a href="CodeSystem-SampleMaterialType.html#SampleMaterialType-liquid-other">liquid-other</a></td><td>Other liquid biosample/storage</td><td></td></tr><tr><td><a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-tissue-ffpe"> </a>0</td><td style="white-space:nowrap"><a href="CodeSystem-SampleMaterialType.html#SampleMaterialType-tissue-ffpe">tissue-ffpe</a></td><td>Tissue FFPE</td><td></td></tr><tr><td><a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-tumor-tissue-ffpe"> </a>1</td><td style="white-space:nowrap">&nbsp;&nbsp;<a href="CodeSystem-SampleMaterialType.html#SampleMaterialType-tumor-tissue-ffpe">tumor-tissue-ffpe</a></td><td>Tumor tissue (FFPE)</td><td></td></tr><tr><td><a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-normal-tissue-ffpe"> </a>1</td><td style="white-space:nowrap">&nbsp;&nbsp;<a href="CodeSystem-SampleMaterialType.html#SampleMaterialType-normal-tissue-ffpe">normal-tissue-ffpe</a></td><td>Normal tissue (FFPE)</td><td></td></tr><tr><td><a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-other-tissue-ffpe"> </a>1</td><td style="white-space:nowrap">&nbsp;&nbsp;<a href="CodeSystem-SampleMaterialType.html#SampleMaterialType-other-tissue-ffpe">other-tissue-ffpe</a></td><td>Other tissue (FFPE)</td><td></td></tr><tr><td><a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-tissue-frozen"> </a>0</td><td style="white-space:nowrap"><a href="CodeSystem-SampleMaterialType.html#SampleMaterialType-tissue-frozen">tissue-frozen</a></td><td>Tissue frozen</td><td></td></tr><tr><td><a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-tumor-tissue-frozen"> </a>1</td><td style="white-space:nowrap">&nbsp;&nbsp;<a href="CodeSystem-SampleMaterialType.html#SampleMaterialType-tumor-tissue-frozen">tumor-tissue-frozen</a></td><td>Tumor tissue (frozen)</td><td></td></tr><tr><td><a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-normal-tissue-frozen"> </a>1</td><td style="white-space:nowrap">&nbsp;&nbsp;<a href="CodeSystem-SampleMaterialType.html#SampleMaterialType-normal-tissue-frozen">normal-tissue-frozen</a></td><td>Normal tissue (frozen)</td><td></td></tr><tr><td><a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-other-tissue-frozen"> </a>1</td><td style="white-space:nowrap">&nbsp;&nbsp;<a href="CodeSystem-SampleMaterialType.html#SampleMaterialType-other-tissue-frozen">other-tissue-frozen</a></td><td>Other tissue (frozen)</td><td></td></tr><tr><td><a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-tissue-other"> </a>0</td><td style="white-space:nowrap"><a href="CodeSystem-SampleMaterialType.html#SampleMaterialType-tissue-other">tissue-other</a></td><td>Other tissue storage</td><td></td></tr><tr><td><a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-dna"> </a>0</td><td style="white-space:nowrap"><a href="CodeSystem-SampleMaterialType.html#SampleMaterialType-dna">dna</a></td><td>DNA</td><td></td></tr><tr><td><a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-cf-dna"> </a>1</td><td style="white-space:nowrap">&nbsp;&nbsp;<a href="CodeSystem-SampleMaterialType.html#SampleMaterialType-cf-dna">cf-dna</a></td><td>cfDNA</td><td></td></tr><tr><td><a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-g-dna"> </a>1</td><td style="white-space:nowrap">&nbsp;&nbsp;<a href="CodeSystem-SampleMaterialType.html#SampleMaterialType-g-dna">g-dna</a></td><td>gDNA</td><td></td></tr><tr><td><a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-rna"> </a>0</td><td style="white-space:nowrap"><a href="CodeSystem-SampleMaterialType.html#SampleMaterialType-rna">rna</a></td><td>RNA</td><td></td></tr><tr><td><a name="https---fhir.bbmri.de-CodeSystem-SampleMaterialType-derivative-other"> </a>0</td><td style="white-space:nowrap"><a href="CodeSystem-SampleMaterialType.html#SampleMaterialType-derivative-other">derivative-other</a></td><td>Other derivative</td><td></td></tr></table></div>
 
   <hr/>
   <p>
@@ -217,9 +264,13 @@
     </tr>
   </table>
 
+    <!-- insert notes if present -->
   
+
+
+
   
-  
+
 </div>
         </div>    <!-- /inner-wrapper -->
       </div>    <!-- /row -->
@@ -239,8 +290,8 @@
   <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
-        <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="https://www.bbmri.de">BBMRI.de</a>.  Package de.bbmri.fhir#1.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, May 28, 2020 14:12+0000">2020-05-28</span>
+        <p><a name="a09f49c7-489e-4599-8b45-8ff41de11c5d">​</a>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="bbmri.de">bbmri.de</a>.  Package de.bbmri.fhir#1.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 16, 2020 11:11+0000">2020-09-16</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

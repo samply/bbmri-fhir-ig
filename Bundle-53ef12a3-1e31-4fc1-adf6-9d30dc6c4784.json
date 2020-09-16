@@ -15,7 +15,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><h3>Ids</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><h3>Meta</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>gender</b>: male</p><p><b>birthDate</b>: 1989-11-18</p></div>"
         },
         "gender": "male",
         "birthDate": "1989-11-18"
@@ -37,7 +37,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><h3>Ids</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><h3>Meta</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 39156-5}\">Body mass index (BMI) [Ratio]</span></p><p><b>subject</b>: <a href=\"#Patient_0\">See above (Patient/0)</a></p><p><b>effective</b>: 2005-06-17</p><p><b>value</b>: 36.68645245341373 kg/m2</p></div>"
         },
         "status": "final",
         "category": [
@@ -86,7 +86,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><h3>Ids</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><h3>Meta</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 8302-2}\">Body height</span></p><p><b>subject</b>: <a href=\"#Patient_0\">See above (Patient/0)</a></p><p><b>effective</b>: 2005-06-17</p><p><b>value</b>: 198.58090348834853 cm</p></div>"
         },
         "status": "final",
         "category": [
@@ -135,7 +135,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><h3>Ids</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><h3>Meta</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 29463-7}\">Body weight</span></p><p><b>subject</b>: <a href=\"#Patient_0\">See above (Patient/0)</a></p><p><b>effective</b>: 2005-06-17</p><p><b>value</b>: 144.67073319145982 kg</p></div>"
         },
         "status": "final",
         "category": [
@@ -184,7 +184,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><h3>Ids</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><h3>Meta</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 72166-2}\">Tobacco smoking status</span></p><p><b>subject</b>: <a href=\"#Patient_0\">See above (Patient/0)</a></p><p><b>effective</b>: 2005-06-17</p><p><b>value</b>: <span title=\"Codes: {http://loinc.org LA18977-1}\">Current some day smoker</span></p></div>"
         },
         "status": "final",
         "code": {
@@ -224,8 +224,8 @@
           ]
         },
         "text": {
-          "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p></div>"
+          "status": "extensions",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><h3>Ids</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><h3>Meta</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>Storage Temperature</b>: </p><p><b>Custodian</b>: </p><p><b>Sample Diagnosis</b>: </p><p><b>type</b>: <span title=\"Codes: {https://fhir.bbmri.de/CodeSystem/SampleMaterialType whole-blood}\">Whole blood</span></p><p><b>subject</b>: <a href=\"#Patient_0\">See above (Patient/0)</a></p><h3>Collections</h3><table class=\"grid\"><tr><td>-</td><td><b>Collected[x]</b></td><td><b>FastingStatus[x]</b></td></tr><tr><td>*</td><td>2005-06-17</td><td><span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v2-0916 NF}\">The patient indicated they did not fast prior to the procedure.</span></td></tr></table></div>"
         },
         "extension": [
           {

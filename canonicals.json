@@ -1,0 +1,359 @@
+[
+  {
+    "id": "BiobankCapabilities",
+    "type": "CodeSystem",
+    "url": "https://fhir.bbmri.de/CodeSystem/BiobankCapabilities",
+    "version": "1.2.0",
+    "name": "BiobankCapabilities"
+  },
+  {
+    "id": "CollectionType",
+    "type": "CodeSystem",
+    "url": "https://fhir.bbmri.de/CodeSystem/CollectionType",
+    "version": "1.2.0",
+    "name": "CollectionType"
+  },
+  {
+    "id": "ContactType",
+    "type": "CodeSystem",
+    "url": "https://fhir.bbmri.de/CodeSystem/ContactType",
+    "version": "1.2.0",
+    "name": "ContactType"
+  },
+  {
+    "id": "DataCategory",
+    "type": "CodeSystem",
+    "url": "https://fhir.bbmri.de/CodeSystem/DataCategory",
+    "version": "1.2.0",
+    "name": "DataCategory"
+  },
+  {
+    "id": "OtherSampleDiagnosis",
+    "type": "CodeSystem",
+    "url": "https://fhir.bbmri.de/CodeSystem/OtherSampleDiagnosis",
+    "version": "1.2.0",
+    "name": "OtherSampleDiagnosis"
+  },
+  {
+    "id": "QualityStandard",
+    "type": "CodeSystem",
+    "url": "https://fhir.bbmri.de/CodeSystem/QualityStandard",
+    "version": "1.2.0",
+    "name": "QualityStandard"
+  },
+  {
+    "id": "ResourceType",
+    "type": "CodeSystem",
+    "url": "https://fhir.bbmri.de/CodeSystem/ResourceType",
+    "version": "1.2.0",
+    "name": "ResourceType"
+  },
+  {
+    "id": "SampleMaterialType",
+    "type": "CodeSystem",
+    "url": "https://fhir.bbmri.de/CodeSystem/SampleMaterialType",
+    "version": "1.2.0",
+    "name": "SampleMaterialType"
+  },
+  {
+    "id": "StorageTemperature",
+    "type": "CodeSystem",
+    "url": "https://fhir.bbmri.de/CodeSystem/StorageTemperature",
+    "version": "1.2.0",
+    "name": "StorageTemperature"
+  },
+  {
+    "id": "de.bbmri.fhir",
+    "type": "ImplementationGuide",
+    "url": "https://fhir.bbmri.de/ImplementationGuide/de.bbmri.fhir/ImplementationGuide/de.bbmri.fhir",
+    "version": "1.2.0",
+    "name": "BBMRI_DE_IG"
+  },
+  {
+    "id": "TobaccoUse",
+    "type": "StructureDefinition",
+    "url": "https://fhir.bbmri.de/ImplementationGuide/de.bbmri.fhir/StructureDefinition/TobaccoUse",
+    "version": "1.2.0",
+    "name": "TobaccoUse"
+  },
+  {
+    "id": "PatientQualityReports",
+    "type": "Library",
+    "url": "https://fhir.bbmri.de/Library/PatientQualityReports",
+    "version": "1.2.0",
+    "name": "PatientQualityReports"
+  },
+  {
+    "id": "SpecimenQualityReports",
+    "type": "Library",
+    "url": "https://fhir.bbmri.de/Library/SpecimenQualityReports",
+    "version": "1.2.0",
+    "name": "SpecimenQualityReports"
+  },
+  {
+    "id": "PatientQualityReports",
+    "type": "Measure",
+    "url": "https://fhir.bbmri.de/Measure/PatientQualityReports",
+    "version": "1.2.0",
+    "name": "PatientQualityReports"
+  },
+  {
+    "id": "SpecimenQualityReports",
+    "type": "Measure",
+    "url": "https://fhir.bbmri.de/Measure/SpecimenQualityReports",
+    "version": "1.2.0",
+    "name": "SpecimenQualityReports"
+  },
+  {
+    "id": "AccessPolicy",
+    "type": "StructureDefinition",
+    "url": "https://fhir.bbmri.de/StructureDefinition/AccessPolicy",
+    "version": "1.2.0",
+    "name": "AccessPolicy"
+  },
+  {
+    "id": "Biobank",
+    "type": "StructureDefinition",
+    "url": "https://fhir.bbmri.de/StructureDefinition/Biobank",
+    "version": "1.2.0",
+    "name": "Biobank"
+  },
+  {
+    "id": "BioresourceReference",
+    "type": "StructureDefinition",
+    "url": "https://fhir.bbmri.de/StructureDefinition/BioresourceReference",
+    "version": "1.2.0",
+    "name": "BioresourceReference"
+  },
+  {
+    "id": "Bmi",
+    "type": "StructureDefinition",
+    "url": "https://fhir.bbmri.de/StructureDefinition/Bmi",
+    "version": "1.2.0",
+    "name": "Bmi"
+  },
+  {
+    "id": "BodyHeight",
+    "type": "StructureDefinition",
+    "url": "https://fhir.bbmri.de/StructureDefinition/BodyHeight",
+    "version": "1.2.0",
+    "name": "BodyHeight"
+  },
+  {
+    "id": "BodyWeight",
+    "type": "StructureDefinition",
+    "url": "https://fhir.bbmri.de/StructureDefinition/BodyWeight",
+    "version": "1.2.0",
+    "name": "BodyWeight"
+  },
+  {
+    "id": "Capabilities",
+    "type": "StructureDefinition",
+    "url": "https://fhir.bbmri.de/StructureDefinition/Capabilities",
+    "version": "1.2.0",
+    "name": "Capabilities"
+  },
+  {
+    "id": "CauseOfDeath",
+    "type": "StructureDefinition",
+    "url": "https://fhir.bbmri.de/StructureDefinition/CauseOfDeath",
+    "version": "1.2.0",
+    "name": "CauseOfDeath"
+  },
+  {
+    "id": "Collaboration",
+    "type": "StructureDefinition",
+    "url": "https://fhir.bbmri.de/StructureDefinition/Collaboration",
+    "version": "1.2.0",
+    "name": "Collaboration"
+  },
+  {
+    "id": "Collection",
+    "type": "StructureDefinition",
+    "url": "https://fhir.bbmri.de/StructureDefinition/Collection",
+    "version": "1.2.0",
+    "name": "Collection"
+  },
+  {
+    "id": "CollectionType",
+    "type": "StructureDefinition",
+    "url": "https://fhir.bbmri.de/StructureDefinition/CollectionType",
+    "version": "1.2.0",
+    "name": "CollectionType"
+  },
+  {
+    "id": "Condition",
+    "type": "StructureDefinition",
+    "url": "https://fhir.bbmri.de/StructureDefinition/Condition",
+    "version": "1.2.0",
+    "name": "Condition"
+  },
+  {
+    "id": "ContactRole",
+    "type": "StructureDefinition",
+    "url": "https://fhir.bbmri.de/StructureDefinition/ContactRole",
+    "version": "1.2.0",
+    "name": "ContactRole"
+  },
+  {
+    "id": "Custodian",
+    "type": "StructureDefinition",
+    "url": "https://fhir.bbmri.de/StructureDefinition/Custodian",
+    "version": "1.2.0",
+    "name": "Custodian"
+  },
+  {
+    "id": "DataCategory",
+    "type": "StructureDefinition",
+    "url": "https://fhir.bbmri.de/StructureDefinition/DataCategory",
+    "version": "1.2.0",
+    "name": "DataCategory"
+  },
+  {
+    "id": "ITSupport",
+    "type": "StructureDefinition",
+    "url": "https://fhir.bbmri.de/StructureDefinition/ITSupport",
+    "version": "1.2.0",
+    "name": "ITSupport"
+  },
+  {
+    "id": "IdCard",
+    "type": "StructureDefinition",
+    "url": "https://fhir.bbmri.de/StructureDefinition/IdCard",
+    "version": "1.2.0",
+    "name": "IdCard"
+  },
+  {
+    "id": "JuridicalPerson",
+    "type": "StructureDefinition",
+    "url": "https://fhir.bbmri.de/StructureDefinition/JuridicalPerson",
+    "version": "1.2.0",
+    "name": "JuridicalPerson"
+  },
+  {
+    "id": "NetworkMembership",
+    "type": "StructureDefinition",
+    "url": "https://fhir.bbmri.de/StructureDefinition/NetworkMembership",
+    "version": "1.2.0",
+    "name": "NetworkMembership"
+  },
+  {
+    "id": "OrganizationDescription",
+    "type": "StructureDefinition",
+    "url": "https://fhir.bbmri.de/StructureDefinition/OrganizationDescription",
+    "version": "1.2.0",
+    "name": "OrganizationDescription"
+  },
+  {
+    "id": "ParentCollection",
+    "type": "StructureDefinition",
+    "url": "https://fhir.bbmri.de/StructureDefinition/ParentCollection",
+    "version": "1.2.0",
+    "name": "ParentCollection"
+  },
+  {
+    "id": "PartnerCharterSigned",
+    "type": "StructureDefinition",
+    "url": "https://fhir.bbmri.de/StructureDefinition/PartnerCharterSigned",
+    "version": "1.2.0",
+    "name": "PartnerCharterSigned"
+  },
+  {
+    "id": "Patient",
+    "type": "StructureDefinition",
+    "url": "https://fhir.bbmri.de/StructureDefinition/Patient",
+    "version": "1.2.0",
+    "name": "Patient"
+  },
+  {
+    "id": "QualityStandard",
+    "type": "StructureDefinition",
+    "url": "https://fhir.bbmri.de/StructureDefinition/QualityStandard",
+    "version": "1.2.0",
+    "name": "QualityStandard"
+  },
+  {
+    "id": "ResourceManagement",
+    "type": "StructureDefinition",
+    "url": "https://fhir.bbmri.de/StructureDefinition/ResourceManagement",
+    "version": "1.2.0",
+    "name": "ResourceManagement"
+  },
+  {
+    "id": "SampleDiagnosis",
+    "type": "StructureDefinition",
+    "url": "https://fhir.bbmri.de/StructureDefinition/SampleDiagnosis",
+    "version": "1.2.0",
+    "name": "SampleDiagnosis"
+  },
+  {
+    "id": "Specimen",
+    "type": "StructureDefinition",
+    "url": "https://fhir.bbmri.de/StructureDefinition/Specimen",
+    "version": "1.2.0",
+    "name": "Specimen"
+  },
+  {
+    "id": "StorageTemperature",
+    "type": "StructureDefinition",
+    "url": "https://fhir.bbmri.de/StructureDefinition/StorageTemperature",
+    "version": "1.2.0",
+    "name": "StorageTemperature"
+  },
+  {
+    "id": "BiobankCapabilities",
+    "type": "ValueSet",
+    "url": "https://fhir.bbmri.de/ValueSet/BiobankCapabilities",
+    "version": "1.2.0",
+    "name": "BiobankCapabilities"
+  },
+  {
+    "id": "CollectionType",
+    "type": "ValueSet",
+    "url": "https://fhir.bbmri.de/ValueSet/CollectionType",
+    "version": "1.2.0",
+    "name": "CollectionType"
+  },
+  {
+    "id": "DataCategory",
+    "type": "ValueSet",
+    "url": "https://fhir.bbmri.de/ValueSet/DataCategory",
+    "version": "1.2.0",
+    "name": "DataCategory"
+  },
+  {
+    "id": "OtherSampleDiagnosis",
+    "type": "ValueSet",
+    "url": "https://fhir.bbmri.de/ValueSet/OtherSampleDiagnosis",
+    "version": "1.2.0",
+    "name": "OtherSampleDiagnosis"
+  },
+  {
+    "id": "QualityStandard",
+    "type": "ValueSet",
+    "url": "https://fhir.bbmri.de/ValueSet/QualityStandard",
+    "version": "1.2.0",
+    "name": "QualityStandard"
+  },
+  {
+    "id": "ResourceType",
+    "type": "ValueSet",
+    "url": "https://fhir.bbmri.de/ValueSet/ResourceType",
+    "version": "1.2.0",
+    "name": "ResourceType"
+  },
+  {
+    "id": "SampleMaterialType",
+    "type": "ValueSet",
+    "url": "https://fhir.bbmri.de/ValueSet/SampleMaterialType",
+    "version": "1.2.0",
+    "name": "SampleMaterialType"
+  },
+  {
+    "id": "StorageTemperature",
+    "type": "ValueSet",
+    "url": "https://fhir.bbmri.de/ValueSet/StorageTemperature",
+    "version": "1.2.0",
+    "name": "StorageTemperature"
+  }
+]

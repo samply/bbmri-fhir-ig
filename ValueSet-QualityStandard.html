@@ -4,16 +4,16 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
     <title>DE.BBMRI.FHIR\Quality Standard - FHIR v4.0.1</title>
-  
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
 
     <link rel="stylesheet" href="fhir.css"/>
-     
+
       <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.css"/>
     <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
-  
+
       <!-- Project extras -->
     <link rel="stylesheet" href="assets/css/project.css"/>
     <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
@@ -28,7 +28,7 @@
     <script src="assets/js/html5shiv.js"></script>
     <script src="assets/js/respond.min.js"></script>
     <![endif] -->
-  
+
       <!-- Favicons -->
     <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
     <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
@@ -36,13 +36,14 @@
     <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
-  <body>
+  <body onload="document.body.style.opacity='1'">
 
-    <style type="text/css">h2{--heading-prefix:"12.34"}
-    h3,h4,h5,h6{--heading-prefix:"12.34"}</style>
+    <style type="text/css">h2{--heading-prefix:"11.34"}
+    h3,h4,h5,h6{--heading-prefix:"11.34"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
-        
+          <!-- Placeholder for child template header declarations -->
+
 	<div id="gba-nav">
 	  <a no-external="true" id="gba-logo" href="http://www.bbmri.de">
 	    <img src="assets/images/GBN_CMYK_schwarz.png" alt="GBA Logo" height="80"/>
@@ -52,16 +53,16 @@
 	</div>
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">BBMRI.de/GBA Implementation Guide</span><br/>1.1.0 - Release</p>
+          <p><span style="font-size:12pt;font-weight:bold">BBMRI.de/GBA Implementation Guide</span><br/>1.2.0 - CI Build</p>
         </div>
       </div>   <!-- /container -->
     </div>    <!-- /segment-header -->
-    
+
     <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
       <div id="stripe"> </div>
       <div class="container">    <!-- container -->
           <!-- HEADER CONTENT -->
-    
+
         <nav class="navbar navbar-inverse">
             <!-- status-bar -->
           <div class="container">
@@ -72,23 +73,36 @@
             </button>
             <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
             <div class="nav-collapse collapse navbar-inverse-collapse">
-              <ul class="nav navbar-nav">
-  <li><a href="index.html">IG Home</a></li>
-  <li><a href="toc.html">Table of Contents</a></li>
-  <li><a href="overview.html">Profile Overview</a></li>
-  <li><a href="howtoJoin.html">How to Join the Sample Locator</a></li>
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">IG Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifact Index</a>
+  </li>
+  <li>
+    <a href="overview.html">Profile Overview</a>
+  </li>
+  <li>
+    <a href="howtoJoin.html">How to Join the Sample Locator</a>
+  </li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Background<b class="caret">
-      </b>
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Background
+      <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-	  <li>
+      <li>
         <a href="background.html">Overview</a>
       </li>
       <li>
         <a href="mappings.html">Mappings</a>
       </li>
-	  <li>
+      <li>
         <a href="referencedIGs.html">Referenced IGs</a>
       </li>
       <li>
@@ -100,31 +114,22 @@
     </ul>
   </li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support<b class="caret">
-      </b>
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-	<li>
+      <li>
         <a href="support.html">Instructions</a>
       </li>
       <li>
         <a href="downloads.html">Downloads</a>
       </li>
-    </ul>
-  </li>
-  <li><a href="artifacts.html">Artifact Index</a></li>
-  <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Links<b class="caret">
-      </b>
-    </a>
-    <ul class="dropdown-menu">
       <li>
         <a href="http://hl7.org/fhir/R4/index.html" target="_blank">FHIR Spec <img src="external.png" style="text-align: baseline"/></a>
       </li>
     </ul>
   </li>
 </ul>
-
             </div>    <!-- /.nav-collapse -->
           </div>    <!-- /.container -->
         </nav>    <!-- /.navbar -->
@@ -133,19 +138,58 @@
     </div>    <!-- /segment-navbar -->
       <!-- status-bar -->
     <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
-      <div class="container">    <!-- container -->  
+      <div class="container">    <!-- container -->
         <ul class="breadcrumb">
           <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>Quality Standard</b></li>
-        </ul>  
+        </ul>
       </div>    <!-- /container -->
     </div>    <!-- /segment-breadcrumb -->
-    
-    <div id="segment-content" class="segment">    <!-- segment-content -->
+
+    <div id="segment-content">    <!-- segment-content -->
       <div class="container">    <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
+
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">BBMRI.de/GBA Implementation Guide - Local Development build (v1.1.0). See the <a href="https://fhir.bbmri.de/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+    <!-- ReleaseHeader --><p id="publish-box">BBMRI.de/GBA Implementation Guide - Local Development build (v1.2.0). See the <a href="https://fhir.bbmri.de/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+  
+    <li>
+      <a href="ValueSet-QualityStandard.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-QualityStandard.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-QualityStandard.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
   <a name="root"> </a>
   <h2 id="root">ValueSet: Quality Standard</h2>
   <p>
@@ -153,15 +197,15 @@
   </p>
   <table class="grid">
  <tbody><tr><td>Defining URL:</td><td>https://fhir.bbmri.de/ValueSet/QualityStandard</td></tr>
- <tr><td>Version:</td><td>1.1.0</td></tr>
+ <tr><td>Version:</td><td>1.2.0</td></tr>
  <tr><td>Name:</td><td>QualityStandard</td></tr>
  <tr><td>Status:</td><td>Active</td></tr>
  <tr><td>Title:</td><td>Quality Standard</td></tr>
- <tr><td>Publisher:</td><td>BBMRI.de</td></tr>
+ <tr><td>Publisher:</td><td>bbmri.de</td></tr>
  <tr><td>Source Resource:</td><td><a href="ValueSet-QualityStandard.xml.html">XML</a> / <a href="ValueSet-QualityStandard.json.html">JSON</a> / <a href="ValueSet-QualityStandard.ttl.html">Turtle</a></td></tr>
 </tbody></table>
 
-  
+
   <p>
     <b>References</b>
   </p>
@@ -171,19 +215,22 @@
 </ul>
 
 
+    <!-- insert intro if present -->
   
-  
+
+
 
   <a name="definition"> </a>
 
+  <!-- Content Logical Definition heading in the fragment -->
   <h3>Logical Definition (CLD)</h3>
-<div><ul><li><a name="6f5ad146-d236-4fda-a5e9-0a4467b52626">​</a>Include all codes defined in <a href="http://hl7.org/fhir/R4/CodeSystem-QualityStandard.html"><code>https://fhir.bbmri.de/CodeSystem/QualityStandard</code></a></li></ul></div>
-  
+<div><ul><li>Include all codes defined in <a href="CodeSystem-QualityStandard.html"><code>https://fhir.bbmri.de/CodeSystem/QualityStandard</code></a></li></ul></div>
+
   <p>&nbsp;</p>
   <a name="expansion"> </a>
   <h3 id="expansion">Expansion</h3>
 
-  <div><p>This value set contains 7 concepts</p><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on <a href="CodeSystem-QualityStandard.html">Quality Standard v1.1.0 (CodeSystem)</a></p><p><a name="cc2f6cf9-91ea-48af-90c0-1173b14d93f1">​</a>All codes from system <a href="http://hl7.org/fhir/R4/CodeSystem-QualityStandard.html"><code>https://fhir.bbmri.de/CodeSystem/QualityStandard</code></a></p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap"><a name="d2196463-8323-4c03-b7ff-b23e93b3c0b7">​</a><a name="https---fhir.bbmri.de-CodeSystem-QualityStandard-iso-15189"> </a><a href="http://hl7.org/fhir/R4/CodeSystem-QualityStandard.html#QualityStandard-iso-15189">iso-15189</a></td><td>ISO-15189</td><td></td></tr><tr><td style="white-space:nowrap"><a name="b91bc537-c021-41ca-9802-ec38361dbfb1">​</a><a name="https---fhir.bbmri.de-CodeSystem-QualityStandard-iso-15190"> </a><a href="http://hl7.org/fhir/R4/CodeSystem-QualityStandard.html#QualityStandard-iso-15190">iso-15190</a></td><td>ISO-15190</td><td></td></tr><tr><td style="white-space:nowrap"><a name="fddce089-5ff5-47e9-b355-734fd81fe7e7">​</a><a name="https---fhir.bbmri.de-CodeSystem-QualityStandard-iso-17025"> </a><a href="http://hl7.org/fhir/R4/CodeSystem-QualityStandard.html#QualityStandard-iso-17025">iso-17025</a></td><td>ISO-17025</td><td></td></tr><tr><td style="white-space:nowrap"><a name="afe43edc-1fff-4556-9d46-0d5f7dbc5dbe">​</a><a name="https---fhir.bbmri.de-CodeSystem-QualityStandard-iso-9001"> </a><a href="http://hl7.org/fhir/R4/CodeSystem-QualityStandard.html#QualityStandard-iso-9001">iso-9001</a></td><td>ISO-9001</td><td></td></tr><tr><td style="white-space:nowrap"><a name="19a36990-1abc-4684-8243-de5fd214a4f3">​</a><a name="https---fhir.bbmri.de-CodeSystem-QualityStandard-nfs96-900"> </a><a href="http://hl7.org/fhir/R4/CodeSystem-QualityStandard.html#QualityStandard-nfs96-900">nfs96-900</a></td><td>NFS96-900</td><td></td></tr><tr><td style="white-space:nowrap"><a name="65126de3-cf02-47e2-996b-8e16e0cfc0d9">​</a><a name="https---fhir.bbmri.de-CodeSystem-QualityStandard-oecd-guidelines"> </a><a href="http://hl7.org/fhir/R4/CodeSystem-QualityStandard.html#QualityStandard-oecd-guidelines">oecd-guidelines</a></td><td>OECD Guidelines</td><td></td></tr><tr><td style="white-space:nowrap"><a name="e6dba626-24fd-4451-be6f-f5135d6a93c1">​</a><a name="https---fhir.bbmri.de-CodeSystem-QualityStandard-others"> </a><a href="http://hl7.org/fhir/R4/CodeSystem-QualityStandard.html#QualityStandard-others">others</a></td><td>Others</td><td></td></tr></table></div>
+  <div><p>This value set contains 7 concepts</p><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on <a href="CodeSystem-QualityStandard.html">Quality Standard v1.2.0 (CodeSystem)</a></p><p>All codes from system <a href="CodeSystem-QualityStandard.html"><code>https://fhir.bbmri.de/CodeSystem/QualityStandard</code></a></p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap"><a name="https---fhir.bbmri.de-CodeSystem-QualityStandard-iso-15189"> </a><a href="CodeSystem-QualityStandard.html#QualityStandard-iso-15189">iso-15189</a></td><td>ISO-15189</td><td></td></tr><tr><td style="white-space:nowrap"><a name="https---fhir.bbmri.de-CodeSystem-QualityStandard-iso-15190"> </a><a href="CodeSystem-QualityStandard.html#QualityStandard-iso-15190">iso-15190</a></td><td>ISO-15190</td><td></td></tr><tr><td style="white-space:nowrap"><a name="https---fhir.bbmri.de-CodeSystem-QualityStandard-iso-17025"> </a><a href="CodeSystem-QualityStandard.html#QualityStandard-iso-17025">iso-17025</a></td><td>ISO-17025</td><td></td></tr><tr><td style="white-space:nowrap"><a name="https---fhir.bbmri.de-CodeSystem-QualityStandard-iso-9001"> </a><a href="CodeSystem-QualityStandard.html#QualityStandard-iso-9001">iso-9001</a></td><td>ISO-9001</td><td></td></tr><tr><td style="white-space:nowrap"><a name="https---fhir.bbmri.de-CodeSystem-QualityStandard-nfs96-900"> </a><a href="CodeSystem-QualityStandard.html#QualityStandard-nfs96-900">nfs96-900</a></td><td>NFS96-900</td><td></td></tr><tr><td style="white-space:nowrap"><a name="https---fhir.bbmri.de-CodeSystem-QualityStandard-oecd-guidelines"> </a><a href="CodeSystem-QualityStandard.html#QualityStandard-oecd-guidelines">oecd-guidelines</a></td><td>OECD Guidelines</td><td></td></tr><tr><td style="white-space:nowrap"><a name="https---fhir.bbmri.de-CodeSystem-QualityStandard-others"> </a><a href="CodeSystem-QualityStandard.html#QualityStandard-others">others</a></td><td>Others</td><td></td></tr></table></div>
 
   <hr/>
   <p>
@@ -217,9 +264,13 @@
     </tr>
   </table>
 
+    <!-- insert notes if present -->
   
+
+
+
   
-  
+
 </div>
         </div>    <!-- /inner-wrapper -->
       </div>    <!-- /row -->
@@ -239,8 +290,8 @@
   <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
-        <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="https://www.bbmri.de">BBMRI.de</a>.  Package de.bbmri.fhir#1.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, May 28, 2020 14:12+0000">2020-05-28</span>
+        <p><a name="baad50fb-186a-4ba2-8160-fc0573cb9ef4">​</a>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="bbmri.de">bbmri.de</a>.  Package de.bbmri.fhir#1.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 16, 2020 11:11+0000">2020-09-16</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

@@ -3,21 +3,22 @@
   "id": "CollectionType",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"http://hl7.org/fhir/R4/CodeSystem-CollectionType.html\"><code>https://fhir.bbmri.de/CodeSystem/CollectionType</code></a></li></ul></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-CollectionType.html\"><code>https://fhir.bbmri.de/CodeSystem/CollectionType</code></a></li></ul></div>"
   },
   "url": "https://fhir.bbmri.de/ValueSet/CollectionType",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "name": "CollectionType",
   "title": "Collection Type",
   "status": "active",
-  "date": "2020-05-28T14:12:37+00:00",
-  "publisher": "BBMRI.de",
+  "date": "2020-09-16T11:11:35+00:00",
+  "publisher": "bbmri.de",
   "contact": [
     {
+      "name": "bbmri.de",
       "telecom": [
         {
           "system": "url",
-          "value": "https://www.bbmri.de"
+          "value": "bbmri.de"
         },
         {
           "system": "email",

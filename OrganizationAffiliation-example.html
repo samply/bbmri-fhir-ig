@@ -3,17 +3,17 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>DE.BBMRI.FHIR\ - FHIR v4.0.1</title>
-  
+    <title>DE.BBMRI.FHIR\example - FHIR v4.0.1</title>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
 
     <link rel="stylesheet" href="fhir.css"/>
-     
+
       <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.css"/>
     <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
-  
+
       <!-- Project extras -->
     <link rel="stylesheet" href="assets/css/project.css"/>
     <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
@@ -28,7 +28,7 @@
     <script src="assets/js/html5shiv.js"></script>
     <script src="assets/js/respond.min.js"></script>
     <![endif] -->
-  
+
       <!-- Favicons -->
     <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
     <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
@@ -36,13 +36,14 @@
     <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
-  <body>
+  <body onload="document.body.style.opacity='1'">
 
-    <style type="text/css">h2{--heading-prefix:"12.57"}
-    h3,h4,h5,h6{--heading-prefix:"12.57"}</style>
+    <style type="text/css">h2{--heading-prefix:"11.53"}
+    h3,h4,h5,h6{--heading-prefix:"11.53"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
-        
+          <!-- Placeholder for child template header declarations -->
+
 	<div id="gba-nav">
 	  <a no-external="true" id="gba-logo" href="http://www.bbmri.de">
 	    <img src="assets/images/GBN_CMYK_schwarz.png" alt="GBA Logo" height="80"/>
@@ -52,16 +53,16 @@
 	</div>
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">BBMRI.de/GBA Implementation Guide</span><br/>1.1.0 - Release</p>
+          <p><span style="font-size:12pt;font-weight:bold">BBMRI.de/GBA Implementation Guide</span><br/>1.2.0 - CI Build</p>
         </div>
       </div>   <!-- /container -->
     </div>    <!-- /segment-header -->
-    
+
     <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
       <div id="stripe"> </div>
       <div class="container">    <!-- container -->
           <!-- HEADER CONTENT -->
-    
+
         <nav class="navbar navbar-inverse">
             <!-- status-bar -->
           <div class="container">
@@ -72,23 +73,36 @@
             </button>
             <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
             <div class="nav-collapse collapse navbar-inverse-collapse">
-              <ul class="nav navbar-nav">
-  <li><a href="index.html">IG Home</a></li>
-  <li><a href="toc.html">Table of Contents</a></li>
-  <li><a href="overview.html">Profile Overview</a></li>
-  <li><a href="howtoJoin.html">How to Join the Sample Locator</a></li>
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">IG Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifact Index</a>
+  </li>
+  <li>
+    <a href="overview.html">Profile Overview</a>
+  </li>
+  <li>
+    <a href="howtoJoin.html">How to Join the Sample Locator</a>
+  </li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Background<b class="caret">
-      </b>
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Background
+      <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-	  <li>
+      <li>
         <a href="background.html">Overview</a>
       </li>
       <li>
         <a href="mappings.html">Mappings</a>
       </li>
-	  <li>
+      <li>
         <a href="referencedIGs.html">Referenced IGs</a>
       </li>
       <li>
@@ -100,31 +114,22 @@
     </ul>
   </li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support<b class="caret">
-      </b>
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-	<li>
+      <li>
         <a href="support.html">Instructions</a>
       </li>
       <li>
         <a href="downloads.html">Downloads</a>
       </li>
-    </ul>
-  </li>
-  <li><a href="artifacts.html">Artifact Index</a></li>
-  <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Links<b class="caret">
-      </b>
-    </a>
-    <ul class="dropdown-menu">
       <li>
         <a href="http://hl7.org/fhir/R4/index.html" target="_blank">FHIR Spec <img src="external.png" style="text-align: baseline"/></a>
       </li>
     </ul>
   </li>
 </ul>
-
             </div>    <!-- /.nav-collapse -->
           </div>    <!-- /.container -->
         </nav>    <!-- /.navbar -->
@@ -133,58 +138,79 @@
     </div>    <!-- /segment-navbar -->
       <!-- status-bar -->
     <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
-      <div class="container">    <!-- container -->  
+      <div class="container">    <!-- container -->
         <ul class="breadcrumb">
-          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b></b></li>
-        </ul>  
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>example</b></li>
+        </ul>
       </div>    <!-- /container -->
     </div>    <!-- /segment-breadcrumb -->
-    
-    <div id="segment-content" class="segment">    <!-- segment-content -->
+
+    <div id="segment-content">    <!-- segment-content -->
       <div class="container">    <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
 
-
-
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">BBMRI.de/GBA Implementation Guide - Local Development build (v1.1.0). See the <a href="https://fhir.bbmri.de/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
-  <a name="root"> </a>
+    <!-- ReleaseHeader --><p id="publish-box">BBMRI.de/GBA Implementation Guide - Local Development build (v1.2.0). See the <a href="https://fhir.bbmri.de/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+
+  
 
 
-  <h2 id="root">OrganizationAffiliation: </h2>
-  <p>
-    Format(s):
-  </p>
-  <ul>
 
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+  
     <li>
       <a href="OrganizationAffiliation-example.xml.html">XML</a>
     </li>
+  
 
 
+  
     <li>
-      <a href="OrganizationAffiliation-example.json.html">JSON</a> 
+      <a href="OrganizationAffiliation-example.json.html">JSON</a>
     </li>
+  
 
 
+  
     <li>
-      <a href="OrganizationAffiliation-example.ttl.html">Turtle</a>
+      <a href="OrganizationAffiliation-example.ttl.html">TTL</a>
     </li>
-
-  </ul>
-
-  
   
 
-  <p>
-    <b>Narrative view</b>
-  </p>
-  <div><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example</p><p><b>organization</b>: German Biobank Alliance</p><p><a name="7abf075e-232c-41f2-9e15-c2119ab7a47f">​</a><b>participatingOrganization</b>: <a href="Organization/exampleBiobank">Organization/exampleBiobank</a></p><p><b>code</b>: member <span style="background: LightGoldenRodYellow ">(Details : {http://terminology.hl7.org/CodeSystem/organization-role code "member" := "member)</span></p></div>
 
+
+</ul>
+
+
+  <a name="root"> </a>
+
+
+  <h2 id="root">Example OrganizationAffiliation: example</h2>
+
+
+
+    <!-- insert intro if present -->
   
+
+
+
+  <div><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example</p><p><b>organization</b>: German Biobank Alliance</p><p><a name="7f6cec9f-49df-4085-9d95-9e7ac6626a2b">​</a><b>participatingOrganization</b>: <a href="Organization/exampleBiobank">Organization/exampleBiobank</a></p><p><b>code</b>: member <span style="background: LightGoldenRodYellow ">(Details : {http://terminology.hl7.org/CodeSystem/organization-role code "member" := "member)</span></p></div>
+
+    <!-- insert notes if present -->
   
-  
+
+
+
 </div>
         </div>    <!-- /inner-wrapper -->
       </div>    <!-- /row -->
@@ -204,8 +230,8 @@
   <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
-        <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="https://www.bbmri.de">BBMRI.de</a>.  Package de.bbmri.fhir#1.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, May 28, 2020 14:12+0000">2020-05-28</span>
+        <p><a name="e6f3a855-9dbb-4c7d-b706-4b9af865b383">​</a>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="bbmri.de">bbmri.de</a>.  Package de.bbmri.fhir#1.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 16, 2020 11:11+0000">2020-09-16</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

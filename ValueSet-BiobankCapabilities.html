@@ -4,16 +4,16 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
     <title>DE.BBMRI.FHIR\Biobank Capabilities - FHIR v4.0.1</title>
-  
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
 
     <link rel="stylesheet" href="fhir.css"/>
-     
+
       <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.css"/>
     <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
-  
+
       <!-- Project extras -->
     <link rel="stylesheet" href="assets/css/project.css"/>
     <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
@@ -28,7 +28,7 @@
     <script src="assets/js/html5shiv.js"></script>
     <script src="assets/js/respond.min.js"></script>
     <![endif] -->
-  
+
       <!-- Favicons -->
     <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
     <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
@@ -36,13 +36,14 @@
     <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
-  <body>
+  <body onload="document.body.style.opacity='1'">
 
-    <style type="text/css">h2{--heading-prefix:"12.36"}
-    h3,h4,h5,h6{--heading-prefix:"12.36"}</style>
+    <style type="text/css">h2{--heading-prefix:"11.30"}
+    h3,h4,h5,h6{--heading-prefix:"11.30"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
-        
+          <!-- Placeholder for child template header declarations -->
+
 	<div id="gba-nav">
 	  <a no-external="true" id="gba-logo" href="http://www.bbmri.de">
 	    <img src="assets/images/GBN_CMYK_schwarz.png" alt="GBA Logo" height="80"/>
@@ -52,16 +53,16 @@
 	</div>
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">BBMRI.de/GBA Implementation Guide</span><br/>1.1.0 - Release</p>
+          <p><span style="font-size:12pt;font-weight:bold">BBMRI.de/GBA Implementation Guide</span><br/>1.2.0 - CI Build</p>
         </div>
       </div>   <!-- /container -->
     </div>    <!-- /segment-header -->
-    
+
     <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
       <div id="stripe"> </div>
       <div class="container">    <!-- container -->
           <!-- HEADER CONTENT -->
-    
+
         <nav class="navbar navbar-inverse">
             <!-- status-bar -->
           <div class="container">
@@ -72,23 +73,36 @@
             </button>
             <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
             <div class="nav-collapse collapse navbar-inverse-collapse">
-              <ul class="nav navbar-nav">
-  <li><a href="index.html">IG Home</a></li>
-  <li><a href="toc.html">Table of Contents</a></li>
-  <li><a href="overview.html">Profile Overview</a></li>
-  <li><a href="howtoJoin.html">How to Join the Sample Locator</a></li>
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">IG Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifact Index</a>
+  </li>
+  <li>
+    <a href="overview.html">Profile Overview</a>
+  </li>
+  <li>
+    <a href="howtoJoin.html">How to Join the Sample Locator</a>
+  </li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Background<b class="caret">
-      </b>
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Background
+      <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-	  <li>
+      <li>
         <a href="background.html">Overview</a>
       </li>
       <li>
         <a href="mappings.html">Mappings</a>
       </li>
-	  <li>
+      <li>
         <a href="referencedIGs.html">Referenced IGs</a>
       </li>
       <li>
@@ -100,31 +114,22 @@
     </ul>
   </li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support<b class="caret">
-      </b>
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-	<li>
+      <li>
         <a href="support.html">Instructions</a>
       </li>
       <li>
         <a href="downloads.html">Downloads</a>
       </li>
-    </ul>
-  </li>
-  <li><a href="artifacts.html">Artifact Index</a></li>
-  <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Links<b class="caret">
-      </b>
-    </a>
-    <ul class="dropdown-menu">
       <li>
         <a href="http://hl7.org/fhir/R4/index.html" target="_blank">FHIR Spec <img src="external.png" style="text-align: baseline"/></a>
       </li>
     </ul>
   </li>
 </ul>
-
             </div>    <!-- /.nav-collapse -->
           </div>    <!-- /.container -->
         </nav>    <!-- /.navbar -->
@@ -133,19 +138,58 @@
     </div>    <!-- /segment-navbar -->
       <!-- status-bar -->
     <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
-      <div class="container">    <!-- container -->  
+      <div class="container">    <!-- container -->
         <ul class="breadcrumb">
           <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>Biobank Capabilities</b></li>
-        </ul>  
+        </ul>
       </div>    <!-- /container -->
     </div>    <!-- /segment-breadcrumb -->
-    
-    <div id="segment-content" class="segment">    <!-- segment-content -->
+
+    <div id="segment-content">    <!-- segment-content -->
       <div class="container">    <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
+
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">BBMRI.de/GBA Implementation Guide - Local Development build (v1.1.0). See the <a href="https://fhir.bbmri.de/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+    <!-- ReleaseHeader --><p id="publish-box">BBMRI.de/GBA Implementation Guide - Local Development build (v1.2.0). See the <a href="https://fhir.bbmri.de/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+  
+    <li>
+      <a href="ValueSet-BiobankCapabilities.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-BiobankCapabilities.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-BiobankCapabilities.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
   <a name="root"> </a>
   <h2 id="root">ValueSet: Biobank Capabilities</h2>
   <p>
@@ -153,15 +197,15 @@
   </p>
   <table class="grid">
  <tbody><tr><td>Defining URL:</td><td>https://fhir.bbmri.de/ValueSet/BiobankCapabilities</td></tr>
- <tr><td>Version:</td><td>1.1.0</td></tr>
+ <tr><td>Version:</td><td>1.2.0</td></tr>
  <tr><td>Name:</td><td>BiobankCapabilities</td></tr>
  <tr><td>Status:</td><td>Active</td></tr>
  <tr><td>Title:</td><td>Biobank Capabilities</td></tr>
- <tr><td>Publisher:</td><td>BBMRI.de</td></tr>
+ <tr><td>Publisher:</td><td>bbmri.de</td></tr>
  <tr><td>Source Resource:</td><td><a href="ValueSet-BiobankCapabilities.xml.html">XML</a> / <a href="ValueSet-BiobankCapabilities.json.html">JSON</a> / <a href="ValueSet-BiobankCapabilities.ttl.html">Turtle</a></td></tr>
 </tbody></table>
 
-  
+
   <p>
     <b>References</b>
   </p>
@@ -171,19 +215,22 @@
 </ul>
 
 
+    <!-- insert intro if present -->
   
-  
+
+
 
   <a name="definition"> </a>
 
+  <!-- Content Logical Definition heading in the fragment -->
   <h3>Logical Definition (CLD)</h3>
-<div><ul><li><a name="5b2a60d1-0ce7-460f-a8be-a05b9994639e">​</a>Include all codes defined in <a href="http://hl7.org/fhir/R4/CodeSystem-BiobankCapabilities.html"><code>https://fhir.bbmri.de/CodeSystem/BiobankCapabilities</code></a></li></ul></div>
-  
+<div><ul><li>Include all codes defined in <a href="CodeSystem-BiobankCapabilities.html"><code>https://fhir.bbmri.de/CodeSystem/BiobankCapabilities</code></a></li></ul></div>
+
   <p>&nbsp;</p>
   <a name="expansion"> </a>
   <h3 id="expansion">Expansion</h3>
 
-  <div><p>This value set contains 11 concepts</p><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on <a href="CodeSystem-BiobankCapabilities.html">Biobank Capabilities v1.1.0 (CodeSystem)</a></p><p><a name="2eaa8cb7-93d3-402c-b550-9da6b88bede8">​</a>All codes from system <a href="http://hl7.org/fhir/R4/CodeSystem-BiobankCapabilities.html"><code>https://fhir.bbmri.de/CodeSystem/BiobankCapabilities</code></a></p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap"><a name="eca56b7b-7bdc-410a-b32c-0682afe7343d">​</a><a name="https---fhir.bbmri.de-CodeSystem-BiobankCapabilities-biomaterial-storage"> </a><a href="http://hl7.org/fhir/R4/CodeSystem-BiobankCapabilities.html#BiobankCapabilities-biomaterial-storage">biomaterial-storage</a></td><td>Biological material storage</td><td></td></tr><tr><td style="white-space:nowrap"><a name="625b844f-85fc-4c71-8bcf-dfaea7756988">​</a><a name="https---fhir.bbmri.de-CodeSystem-BiobankCapabilities-cell-culture"> </a><a href="http://hl7.org/fhir/R4/CodeSystem-BiobankCapabilities.html#BiobankCapabilities-cell-culture">cell-culture</a></td><td>Cell culture</td><td></td></tr><tr><td style="white-space:nowrap"><a name="0b8264b2-f111-4d3f-8ab5-2d117e9b9b60">​</a><a name="https---fhir.bbmri.de-CodeSystem-BiobankCapabilities-data-analytics"> </a><a href="http://hl7.org/fhir/R4/CodeSystem-BiobankCapabilities.html#BiobankCapabilities-data-analytics">data-analytics</a></td><td>Data analytics</td><td></td></tr><tr><td style="white-space:nowrap"><a name="7d624ce1-c392-432f-b735-ad880e5638f3">​</a><a name="https---fhir.bbmri.de-CodeSystem-BiobankCapabilities-data-storage"> </a><a href="http://hl7.org/fhir/R4/CodeSystem-BiobankCapabilities.html#BiobankCapabilities-data-storage">data-storage</a></td><td>Data Storage</td><td></td></tr><tr><td style="white-space:nowrap"><a name="5c7ade8e-fe91-4695-bdf3-6b0ffc90931d">​</a><a name="https---fhir.bbmri.de-CodeSystem-BiobankCapabilities-digital-imaging"> </a><a href="http://hl7.org/fhir/R4/CodeSystem-BiobankCapabilities.html#BiobankCapabilities-digital-imaging">digital-imaging</a></td><td>Digital imaging</td><td></td></tr><tr><td style="white-space:nowrap"><a name="fb1b567a-0e19-45fa-b268-665c91ce9f81">​</a><a name="https---fhir.bbmri.de-CodeSystem-BiobankCapabilities-immunohistochemistry-scoring"> </a><a href="http://hl7.org/fhir/R4/CodeSystem-BiobankCapabilities.html#BiobankCapabilities-immunohistochemistry-scoring">immunohistochemistry-scoring</a></td><td>Immunohistochemistry scoring</td><td></td></tr><tr><td style="white-space:nowrap"><a name="98a0f715-330d-43e3-a201-8018cc6285fc">​</a><a name="https---fhir.bbmri.de-CodeSystem-BiobankCapabilities-immunohistochemistry-staining"> </a><a href="http://hl7.org/fhir/R4/CodeSystem-BiobankCapabilities.html#BiobankCapabilities-immunohistochemistry-staining">immunohistochemistry-staining</a></td><td>Immunohistochemistry staining</td><td></td></tr><tr><td style="white-space:nowrap"><a name="5c598ff1-6084-45a2-a524-c585bc7ae55c">​</a><a name="https---fhir.bbmri.de-CodeSystem-BiobankCapabilities-nucleic-acid-extraction"> </a><a href="http://hl7.org/fhir/R4/CodeSystem-BiobankCapabilities.html#BiobankCapabilities-nucleic-acid-extraction">nucleic-acid-extraction</a></td><td>Nucleic acid extraction</td><td></td></tr><tr><td style="white-space:nowrap"><a name="1a1ff54a-bdf6-4d4e-a1d4-a32377bd05fe">​</a><a name="https---fhir.bbmri.de-CodeSystem-BiobankCapabilities-pathology-archive-access"> </a><a href="http://hl7.org/fhir/R4/CodeSystem-BiobankCapabilities.html#BiobankCapabilities-pathology-archive-access">pathology-archive-access</a></td><td>Access to the full pathology archive</td><td></td></tr><tr><td style="white-space:nowrap"><a name="04908084-b275-47ce-973f-158060b4a61e">​</a><a name="https---fhir.bbmri.de-CodeSystem-BiobankCapabilities-recontact"> </a><a href="http://hl7.org/fhir/R4/CodeSystem-BiobankCapabilities.html#BiobankCapabilities-recontact">recontact</a></td><td>Ability to recontact</td><td></td></tr><tr><td style="white-space:nowrap"><a name="bcbde5d8-4797-40d5-a901-ed00eca5a882">​</a><a name="https---fhir.bbmri.de-CodeSystem-BiobankCapabilities-tma-creation"> </a><a href="http://hl7.org/fhir/R4/CodeSystem-BiobankCapabilities.html#BiobankCapabilities-tma-creation">tma-creation</a></td><td>Tissue micro array creation</td><td></td></tr></table></div>
+  <div><p>This value set contains 11 concepts</p><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on <a href="CodeSystem-BiobankCapabilities.html">Biobank Capabilities v1.2.0 (CodeSystem)</a></p><p>All codes from system <a href="CodeSystem-BiobankCapabilities.html"><code>https://fhir.bbmri.de/CodeSystem/BiobankCapabilities</code></a></p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap"><a name="https---fhir.bbmri.de-CodeSystem-BiobankCapabilities-biomaterial-storage"> </a><a href="CodeSystem-BiobankCapabilities.html#BiobankCapabilities-biomaterial-storage">biomaterial-storage</a></td><td>Biological material storage</td><td></td></tr><tr><td style="white-space:nowrap"><a name="https---fhir.bbmri.de-CodeSystem-BiobankCapabilities-cell-culture"> </a><a href="CodeSystem-BiobankCapabilities.html#BiobankCapabilities-cell-culture">cell-culture</a></td><td>Cell culture</td><td></td></tr><tr><td style="white-space:nowrap"><a name="https---fhir.bbmri.de-CodeSystem-BiobankCapabilities-data-analytics"> </a><a href="CodeSystem-BiobankCapabilities.html#BiobankCapabilities-data-analytics">data-analytics</a></td><td>Data analytics</td><td></td></tr><tr><td style="white-space:nowrap"><a name="https---fhir.bbmri.de-CodeSystem-BiobankCapabilities-data-storage"> </a><a href="CodeSystem-BiobankCapabilities.html#BiobankCapabilities-data-storage">data-storage</a></td><td>Data Storage</td><td></td></tr><tr><td style="white-space:nowrap"><a name="https---fhir.bbmri.de-CodeSystem-BiobankCapabilities-digital-imaging"> </a><a href="CodeSystem-BiobankCapabilities.html#BiobankCapabilities-digital-imaging">digital-imaging</a></td><td>Digital imaging</td><td></td></tr><tr><td style="white-space:nowrap"><a name="https---fhir.bbmri.de-CodeSystem-BiobankCapabilities-immunohistochemistry-scoring"> </a><a href="CodeSystem-BiobankCapabilities.html#BiobankCapabilities-immunohistochemistry-scoring">immunohistochemistry-scoring</a></td><td>Immunohistochemistry scoring</td><td></td></tr><tr><td style="white-space:nowrap"><a name="https---fhir.bbmri.de-CodeSystem-BiobankCapabilities-immunohistochemistry-staining"> </a><a href="CodeSystem-BiobankCapabilities.html#BiobankCapabilities-immunohistochemistry-staining">immunohistochemistry-staining</a></td><td>Immunohistochemistry staining</td><td></td></tr><tr><td style="white-space:nowrap"><a name="https---fhir.bbmri.de-CodeSystem-BiobankCapabilities-nucleic-acid-extraction"> </a><a href="CodeSystem-BiobankCapabilities.html#BiobankCapabilities-nucleic-acid-extraction">nucleic-acid-extraction</a></td><td>Nucleic acid extraction</td><td></td></tr><tr><td style="white-space:nowrap"><a name="https---fhir.bbmri.de-CodeSystem-BiobankCapabilities-pathology-archive-access"> </a><a href="CodeSystem-BiobankCapabilities.html#BiobankCapabilities-pathology-archive-access">pathology-archive-access</a></td><td>Access to the full pathology archive</td><td></td></tr><tr><td style="white-space:nowrap"><a name="https---fhir.bbmri.de-CodeSystem-BiobankCapabilities-recontact"> </a><a href="CodeSystem-BiobankCapabilities.html#BiobankCapabilities-recontact">recontact</a></td><td>Ability to recontact</td><td></td></tr><tr><td style="white-space:nowrap"><a name="https---fhir.bbmri.de-CodeSystem-BiobankCapabilities-tma-creation"> </a><a href="CodeSystem-BiobankCapabilities.html#BiobankCapabilities-tma-creation">tma-creation</a></td><td>Tissue micro array creation</td><td></td></tr></table></div>
 
   <hr/>
   <p>
@@ -217,9 +264,13 @@
     </tr>
   </table>
 
+    <!-- insert notes if present -->
   
+
+
+
   
-  
+
 </div>
         </div>    <!-- /inner-wrapper -->
       </div>    <!-- /row -->
@@ -239,8 +290,8 @@
   <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
-        <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="https://www.bbmri.de">BBMRI.de</a>.  Package de.bbmri.fhir#1.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, May 28, 2020 14:12+0000">2020-05-28</span>
+        <p><a name="920f16e1-eff9-4e98-9e14-36f556199b96">​</a>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="bbmri.de">bbmri.de</a>.  Package de.bbmri.fhir#1.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 16, 2020 11:11+0000">2020-09-16</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
