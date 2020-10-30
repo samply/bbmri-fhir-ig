@@ -1,6 +1,14 @@
 ### FHIR core profiles
 When appropriate, this IG uses profiles defined as part of FHIR core (in the "Profiles & Extensions" tab on some resource pages, e.g. https://www.hl7.org/fhir/observation-profiles.html ).
 
+### DKTK Implementation Guide(https://simplifier.net/guide/implementationguide4/home)
+For cancer-releated data, it is recommended to follow the [DKTK Implementation Guide](https://simplifier.net/guide/implementationguide4/home). Even though some profiles overlap, the profiles in this IG and the DKTK profiles can be used at the same time, as demonstarted in these examples:
+
+- [Donor and DKTK patient](Patient-gba-dktk-patient.html)
+- [Cancer Diagnosis](Condition-cancer-diag.html)
+- [Histology Observation](Observation-dktk-histo.html)
+- [Specimen](Specimen-gba-dktk-specimen.html)
+
 ### [Leitfaden Basis DE](https://simplifier.net/guide/basisprofil-de-r4/Home) (German Basis IG)
 As of now (July 2019) the R4 version of the Basis DE IG is still in early draft stages. Since many profiles will be based on existing FHIR core profiles, we expect some degree of compatibility.
 
