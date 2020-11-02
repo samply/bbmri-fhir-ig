@@ -27,7 +27,7 @@ Usage: #example
 * code.coding.code = #C43.6
 * code.coding.display = "Bösartiges Melanom der oberen Extremität, einschließlich Schulter"
 
-* bodySite.coding.system = "urn:oid:2.16.840.1.113883.6.43.1"
+* bodySite.coding.system = "urn:oid:1.3.6.1.4.1.19376.1.3.11.36"
 * bodySite.coding.version = "32"
 * bodySite.coding.code = #C44.6
 * bodySite.coding.display = "Haut der oberen Extremitäten und der Schulter"
@@ -75,8 +75,8 @@ Usage: #example
 * subject = Reference(gba-dktk-patient)
 
 * collection.collectedDateTime = "2018-04-14T14:30:00+01:00"
-* collection.bodySite.coding.system = "urn:oid:2.16.840.1.113883.6.43.1"
+* collection.bodySite.coding.system = "urn:oid:1.3.6.1.4.1.19376.1.3.11.36"
 * collection.bodySite.coding.version = "32"
 * collection.bodySite.coding.code = #C44.6
 * collection.bodySite.coding.display = "Haut der oberen Extremitäten und der Schulter"
-* collection.fastingStatusCodeableConcept = http://terminology.hl7.org/ValueSet/v2-0916#FNA "Fasting not asked of the patient at time of procedure."
+* collection.fastingStatusCodeableConcept = http://terminology.hl7.org/CodeSystem/v2-0916#FNA "Fasting not asked of the patient at time of procedure."
