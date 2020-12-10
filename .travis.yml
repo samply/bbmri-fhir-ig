@@ -5,7 +5,7 @@ node_js:
   - node
 install:
 - gem install jekyll
-- npm install -g fsh-sushi@0.16.0
+- npm install -g fsh-sushi@0.16.1
 before_script:
 - wget -q https://storage.googleapis.com/ig-build/org.hl7.fhir.validator.jar -O validator.jar
 script:
