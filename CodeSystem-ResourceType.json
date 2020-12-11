@@ -3,14 +3,14 @@
   "id": "ResourceType",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://fhir.bbmri.de/CodeSystem/ResourceType defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">samples<a name=\"ResourceType-samples\"> </a></td><td>Samples</td><td/></tr><tr><td style=\"white-space:nowrap\">data<a name=\"ResourceType-data\"> </a></td><td>Data</td><td/></tr><tr><td style=\"white-space:nowrap\">images<a name=\"ResourceType-images\"> </a></td><td>Images</td><td/></tr></table></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://fhir.bbmri.de/CodeSystem/ResourceType defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">samples<a name=\"ResourceType-samples\"> </a></td><td>Samples</td></tr><tr><td style=\"white-space:nowrap\">data<a name=\"ResourceType-data\"> </a></td><td>Data</td></tr><tr><td style=\"white-space:nowrap\">images<a name=\"ResourceType-images\"> </a></td><td>Images</td></tr></table></div>"
   },
   "url": "https://fhir.bbmri.de/CodeSystem/ResourceType",
   "version": "1.2.0",
   "name": "ResourceType",
   "title": "Resource Type",
   "status": "active",
-  "date": "2020-09-16T11:11:35+00:00",
+  "date": "2020-12-11T14:29:00+00:00",
   "publisher": "bbmri.de",
   "contact": [
     {

@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="assets/css/project.css"/>
     <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
     <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
       <!-- Placeholder for child template CSS declarations -->
 <link rel="stylesheet" href="assets/css/bbmri.de.css"/>
 
@@ -37,6 +38,8 @@
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
 
     <style type="text/css">h2{--heading-prefix:"11.41"}
     h3,h4,h5,h6{--heading-prefix:"11.41"}</style>
@@ -203,14 +206,13 @@
   </p>
 
   <table class="grid">
- <tbody><tr><td>Defining URL:</td><td>https://fhir.bbmri.de/CodeSystem/DataCategory</td></tr>
+<tbody>
+<tr><td>Defining URL:</td><td>https://fhir.bbmri.de/CodeSystem/DataCategory</td></tr>
  <tr><td>Version:</td><td>1.2.0</td></tr>
- <tr><td>Name:</td><td>DataCategory</td></tr>
- <tr><td>Title:</td><td>Data Category</td></tr>
- <tr><td>Status:</td><td>Active</td></tr>
- <tr><td>Content:</td><td>All the concepts defined by the code system are included in the code system resource</td></tr>
+ <tr><td>Name:</td><td>DataCategory ("Data Category")</td></tr>
+ <tr><td>Status:</td><td>Active as of 2020-12-11T14:29:00+00:00</td></tr>
  <tr><td>Publisher:</td><td>bbmri.de</td></tr>
- <tr><td>Content Mode:</td><td>Complete</td></tr>
+ <tr><td>Content:</td><td>Complete: All the concepts defined by the code system are included in the code system resource</td></tr>
  <tr><td>Source Resource:</td><td><a href="CodeSystem-DataCategory.xml.html">XML</a> / <a href="CodeSystem-DataCategory.json.html">JSON</a> / <a href="CodeSystem-DataCategory.ttl.html">Turtle</a></td></tr>
 </tbody></table>
 
@@ -225,7 +227,7 @@
 </ul>
 
 
-  <div><p>This code system https://fhir.bbmri.de/CodeSystem/DataCategory defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">BIOLOGICAL_SAMPLES<a name="DataCategory-BIOLOGICAL_SAMPLES"> </a></td><td>Biological samples</td><td></td></tr><tr><td style="white-space:nowrap">GENEALOGICAL_RECORDS<a name="DataCategory-GENEALOGICAL_RECORDS"> </a></td><td>Genealogical records</td><td></td></tr><tr><td style="white-space:nowrap">IMAGING_DATA<a name="DataCategory-IMAGING_DATA"> </a></td><td>Imaging data</td><td></td></tr><tr><td style="white-space:nowrap">MEDICAL_RECORDS<a name="DataCategory-MEDICAL_RECORDS"> </a></td><td>Medical records</td><td></td></tr><tr><td style="white-space:nowrap">NATIONAL_REGISTRIES<a name="DataCategory-NATIONAL_REGISTRIES"> </a></td><td>National registries</td><td></td></tr><tr><td style="white-space:nowrap">NAV<a name="DataCategory-NAV"> </a></td><td>Not available</td><td></td></tr><tr><td style="white-space:nowrap">OTHER<a name="DataCategory-OTHER"> </a></td><td>other</td><td></td></tr><tr><td style="white-space:nowrap">PHYSIOLOGICAL_BIOCHEMICAL_MEASUREMENTS<a name="DataCategory-PHYSIOLOGICAL_BIOCHEMICAL_MEASUREMENTS"> </a></td><td>Physiological/Biochemical measurements</td><td></td></tr><tr><td style="white-space:nowrap">SURVEY_DATA<a name="DataCategory-SURVEY_DATA"> </a></td><td>Survey data</td><td></td></tr></table></div>
+  <div><p>This code system https://fhir.bbmri.de/CodeSystem/DataCategory defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">BIOLOGICAL_SAMPLES<a name="DataCategory-BIOLOGICAL_SAMPLES"> </a></td><td>Biological samples</td></tr><tr><td style="white-space:nowrap">GENEALOGICAL_RECORDS<a name="DataCategory-GENEALOGICAL_RECORDS"> </a></td><td>Genealogical records</td></tr><tr><td style="white-space:nowrap">IMAGING_DATA<a name="DataCategory-IMAGING_DATA"> </a></td><td>Imaging data</td></tr><tr><td style="white-space:nowrap">MEDICAL_RECORDS<a name="DataCategory-MEDICAL_RECORDS"> </a></td><td>Medical records</td></tr><tr><td style="white-space:nowrap">NATIONAL_REGISTRIES<a name="DataCategory-NATIONAL_REGISTRIES"> </a></td><td>National registries</td></tr><tr><td style="white-space:nowrap">NAV<a name="DataCategory-NAV"> </a></td><td>Not available</td></tr><tr><td style="white-space:nowrap">OTHER<a name="DataCategory-OTHER"> </a></td><td>other</td></tr><tr><td style="white-space:nowrap">PHYSIOLOGICAL_BIOCHEMICAL_MEASUREMENTS<a name="DataCategory-PHYSIOLOGICAL_BIOCHEMICAL_MEASUREMENTS"> </a></td><td>Physiological/Biochemical measurements</td></tr><tr><td style="white-space:nowrap">SURVEY_DATA<a name="DataCategory-SURVEY_DATA"> </a></td><td>Survey data</td></tr></table></div>
 
     <!-- insert notes if present -->
   
@@ -253,8 +255,8 @@
   <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
-        <p><a name="bdca5880-126c-4f00-95a1-7fb7497f624a">​</a>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="bbmri.de">bbmri.de</a>.  Package de.bbmri.fhir#1.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 16, 2020 11:11+0000">2020-09-16</span>
+        <p><a name="d0fc87a2-571a-4bfe-aa4c-10624a9f76b7">​</a>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="bbmri.de">bbmri.de</a>.  Package de.bbmri.fhir#1.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Dec 11, 2020 14:29+0000">2020-12-11</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

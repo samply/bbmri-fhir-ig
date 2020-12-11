@@ -11,7 +11,7 @@
   <name value="BBMRI_DE_IG"/>
   <title value="BBMRI.de/GBA Implementation Guide"/>
   <status value="active"/>
-  <date value="2020-09-16T11:11:35+00:00"/>
+  <date value="2020-12-11T14:29:00+00:00"/>
   <publisher value="bbmri.de"/>
   <contact>
     <name value="bbmri.de"/>
@@ -1113,6 +1113,10 @@
     <parameter>
       <code value="path-resource"/>
       <value value="input/history"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="fsh-generated/resources"/>
     </parameter>
     <parameter>
       <code value="path-pages"/>

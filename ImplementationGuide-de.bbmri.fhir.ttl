@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "BBMRI_DE_IG"];
   fhir:ImplementationGuide.title [ fhir:value "BBMRI.de/GBA Implementation Guide"];
   fhir:ImplementationGuide.status [ fhir:value "active"];
-  fhir:ImplementationGuide.date [ fhir:value "2020-09-16T11:11:35+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2020-12-11T14:29:00+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "bbmri.de"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -1491,14 +1491,18 @@
        fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/history" ]
      ], [
        fhir:index 11;
-       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-pages" ];
-       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "template/config" ]
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "fsh-generated/resources" ]
      ], [
        fhir:index 12;
        fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-pages" ];
-       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/images" ]
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "template/config" ]
      ], [
        fhir:index 13;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-pages" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/images" ]
+     ], [
+       fhir:index 14;
        fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-tx-cache" ];
        fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input-cache/txcache" ]
      ]

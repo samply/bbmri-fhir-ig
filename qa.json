@@ -3,10 +3,10 @@
   "name": "BBMRI_DE_IG",
   "package-id": "de.bbmri.fhir",
   "ig-ver": "1.2.0",
-  "date": "Wed, 16 Sep, 2020 11:11:35 +0000",
+  "date": "Fri, 11 Dec, 2020 14:29:00 +0000",
   "errs": 18,
   "warnings": 59,
-  "hints": 3,
+  "hints": 4,
   "version": "4.0.1",
   "tool": "4.5.0 (3)"
 }

@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="assets/css/project.css"/>
     <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
     <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
       <!-- Placeholder for child template CSS declarations -->
 <link rel="stylesheet" href="assets/css/bbmri.de.css"/>
 
@@ -37,6 +38,8 @@
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
 
     <style type="text/css">h2{--heading-prefix:"11.46"}
     h3,h4,h5,h6{--heading-prefix:"11.46"}</style>
@@ -203,14 +206,13 @@
   </p>
 
   <table class="grid">
- <tbody><tr><td>Defining URL:</td><td>https://fhir.bbmri.de/CodeSystem/StorageTemperature</td></tr>
+<tbody>
+<tr><td>Defining URL:</td><td>https://fhir.bbmri.de/CodeSystem/StorageTemperature</td></tr>
  <tr><td>Version:</td><td>1.2.0</td></tr>
- <tr><td>Name:</td><td>StorageTemperature</td></tr>
- <tr><td>Title:</td><td>Storage Temperature</td></tr>
- <tr><td>Status:</td><td>Active</td></tr>
- <tr><td>Content:</td><td>All the concepts defined by the code system are included in the code system resource</td></tr>
+ <tr><td>Name:</td><td>StorageTemperature ("Storage Temperature")</td></tr>
+ <tr><td>Status:</td><td>Active as of 2020-12-11T14:29:00+00:00</td></tr>
  <tr><td>Publisher:</td><td>bbmri.de</td></tr>
- <tr><td>Content Mode:</td><td>Complete</td></tr>
+ <tr><td>Content:</td><td>Complete: All the concepts defined by the code system are included in the code system resource</td></tr>
  <tr><td>Source Resource:</td><td><a href="CodeSystem-StorageTemperature.xml.html">XML</a> / <a href="CodeSystem-StorageTemperature.json.html">JSON</a> / <a href="CodeSystem-StorageTemperature.ttl.html">Turtle</a></td></tr>
 </tbody></table>
 
@@ -225,7 +227,7 @@
 </ul>
 
 
-  <div><p>This code system https://fhir.bbmri.de/CodeSystem/StorageTemperature defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">temperature2to10<a name="StorageTemperature-temperature2to10"> </a></td><td>Degrees Celsius 2 to 10</td><td></td></tr><tr><td style="white-space:nowrap">temperature-18to-35<a name="StorageTemperature-temperature-18to-35"> </a></td><td>Degrees Celsius -18 to -35</td><td></td></tr><tr><td style="white-space:nowrap">temperature-60to-85<a name="StorageTemperature-temperature-60to-85"> </a></td><td>Degrees Celsius -60 to -85</td><td></td></tr><tr><td style="white-space:nowrap">temperatureGN<a name="StorageTemperature-temperatureGN"> </a></td><td>Gaseous nitrogen</td><td></td></tr><tr><td style="white-space:nowrap">temperatureLN<a name="StorageTemperature-temperatureLN"> </a></td><td>Liquid nitrogen</td><td></td></tr><tr><td style="white-space:nowrap">temperatureRoom<a name="StorageTemperature-temperatureRoom"> </a></td><td>Room temperature</td><td></td></tr><tr><td style="white-space:nowrap">temperatureOther<a name="StorageTemperature-temperatureOther"> </a></td><td>Other storage temperature</td><td></td></tr></table></div>
+  <div><p>This code system https://fhir.bbmri.de/CodeSystem/StorageTemperature defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">temperature2to10<a name="StorageTemperature-temperature2to10"> </a></td><td>Degrees Celsius 2 to 10</td></tr><tr><td style="white-space:nowrap">temperature-18to-35<a name="StorageTemperature-temperature-18to-35"> </a></td><td>Degrees Celsius -18 to -35</td></tr><tr><td style="white-space:nowrap">temperature-60to-85<a name="StorageTemperature-temperature-60to-85"> </a></td><td>Degrees Celsius -60 to -85</td></tr><tr><td style="white-space:nowrap">temperatureGN<a name="StorageTemperature-temperatureGN"> </a></td><td>Gaseous nitrogen</td></tr><tr><td style="white-space:nowrap">temperatureLN<a name="StorageTemperature-temperatureLN"> </a></td><td>Liquid nitrogen</td></tr><tr><td style="white-space:nowrap">temperatureRoom<a name="StorageTemperature-temperatureRoom"> </a></td><td>Room temperature</td></tr><tr><td style="white-space:nowrap">temperatureOther<a name="StorageTemperature-temperatureOther"> </a></td><td>Other storage temperature</td></tr></table></div>
 
     <!-- insert notes if present -->
   
@@ -253,8 +255,8 @@
   <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
-        <p><a name="d1f172cd-6336-4b4f-b289-7a12f67ca28c">​</a>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="bbmri.de">bbmri.de</a>.  Package de.bbmri.fhir#1.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 16, 2020 11:11+0000">2020-09-16</span>
+        <p><a name="7596c1a7-14cf-432a-9b79-55725791c17b">​</a>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="bbmri.de">bbmri.de</a>.  Package de.bbmri.fhir#1.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Dec 11, 2020 14:29+0000">2020-12-11</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

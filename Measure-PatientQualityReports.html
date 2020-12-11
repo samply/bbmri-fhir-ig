@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="assets/css/project.css"/>
     <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
     <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
       <!-- Placeholder for child template CSS declarations -->
 <link rel="stylesheet" href="assets/css/bbmri.de.css"/>
 
@@ -37,6 +38,8 @@
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
 
     <style type="text/css">h2{--heading-prefix:"11.59"}
     h3,h4,h5,h6{--heading-prefix:"11.59"}</style>
@@ -206,7 +209,7 @@
 
 
 
-  <div><p><b>Generated Narrative</b></p><h3>Ids</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>url</b>: <a href="https://fhir.bbmri.de/Measure/PatientQualityReports">https://fhir.bbmri.de/Measure/PatientQualityReports</a></p><p><b>version</b>: 1.2.0</p><p><b>name</b>: PatientQualityReports</p><p><b>title</b>: Patient Quality Reports</p><p><b>status</b>: active</p><p><b>subject</b>: <span title="Codes: {http://hl7.org/fhir/resource-types Patient}">Patient</span></p><p><b>date</b>: Sep 16, 2020, 11:11:35 AM</p><p><b>publisher</b>: bbmri.de</p><p><b>contact</b>: bbmri.de: bbmri.de,feedback@germanbiobanknode.de</p><p><b>description</b>: This measure contains various patient related stratifiers to help to evaluate data quality.</p><p><b>library</b>: <a href="https://fhir.bbmri.de/Library/PatientQualityReports">https://fhir.bbmri.de/Library/PatientQualityReports</a></p><p><b>scoring</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/measure-scoring cohort}">Cohort</span></p><blockquote><p><b>group</b></p><blockquote><p><b>population</b></p><p><b>code</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/measure-population initial-population}">Initial Population</span></p><h3>Criteria</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>stratifier</b></p><p><b>code</b>: <span title="Codes: ">Gender</span></p><h3>Criteria</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>stratifier</b></p><p><b>code</b>: <span title="Codes: ">AgeClass</span></p><h3>Criteria</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>stratifier</b></p><p><b>code</b>: <span title="Codes: ">HasCovid19</span></p><h3>Criteria</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote></blockquote></div>
+  <div><p><b>Generated Narrative</b></p><h3>Ids</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>url</b>: <a href="https://fhir.bbmri.de/Measure/PatientQualityReports">https://fhir.bbmri.de/Measure/PatientQualityReports</a></p><p><b>version</b>: 1.2.0</p><p><b>name</b>: PatientQualityReports</p><p><b>title</b>: Patient Quality Reports</p><p><b>status</b>: active</p><p><b>subject</b>: <span title="Codes: {http://hl7.org/fhir/resource-types Patient}">Patient</span></p><p><b>date</b>: Dec 11, 2020, 2:29:00 PM</p><p><b>publisher</b>: bbmri.de</p><p><b>contact</b>: bbmri.de: bbmri.de,feedback@germanbiobanknode.de</p><p><b>description</b>: This measure contains various patient related stratifiers to help to evaluate data quality.</p><p><b>library</b>: <a href="https://fhir.bbmri.de/Library/PatientQualityReports">https://fhir.bbmri.de/Library/PatientQualityReports</a></p><p><b>scoring</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/measure-scoring cohort}">Cohort</span></p><blockquote><p><b>group</b></p><blockquote><p><b>population</b></p><p><b>code</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/measure-population initial-population}">Initial Population</span></p><h3>Criteria</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>stratifier</b></p><p><b>code</b>: <span title="Codes: ">Gender</span></p><h3>Criteria</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>stratifier</b></p><p><b>code</b>: <span title="Codes: ">AgeClass</span></p><h3>Criteria</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>stratifier</b></p><p><b>code</b>: <span title="Codes: ">HasCovid19</span></p><h3>Criteria</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote></blockquote></div>
 
     <!-- insert notes if present -->
   
@@ -232,8 +235,8 @@
   <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
-        <p><a name="c4d1f422-b3f4-49d1-a444-64c34196f212">​</a>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="bbmri.de">bbmri.de</a>.  Package de.bbmri.fhir#1.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 16, 2020 11:11+0000">2020-09-16</span>
+        <p><a name="79f41e7e-2eec-4826-80d0-b95aa0c368b8">​</a>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="bbmri.de">bbmri.de</a>.  Package de.bbmri.fhir#1.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Dec 11, 2020 14:29+0000">2020-12-11</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

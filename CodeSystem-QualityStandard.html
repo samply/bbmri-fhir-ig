@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="assets/css/project.css"/>
     <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
     <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
       <!-- Placeholder for child template CSS declarations -->
 <link rel="stylesheet" href="assets/css/bbmri.de.css"/>
 
@@ -37,6 +38,8 @@
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
 
     <style type="text/css">h2{--heading-prefix:"11.43"}
     h3,h4,h5,h6{--heading-prefix:"11.43"}</style>
@@ -203,14 +206,13 @@
   </p>
 
   <table class="grid">
- <tbody><tr><td>Defining URL:</td><td>https://fhir.bbmri.de/CodeSystem/QualityStandard</td></tr>
+<tbody>
+<tr><td>Defining URL:</td><td>https://fhir.bbmri.de/CodeSystem/QualityStandard</td></tr>
  <tr><td>Version:</td><td>1.2.0</td></tr>
- <tr><td>Name:</td><td>QualityStandard</td></tr>
- <tr><td>Title:</td><td>Quality Standard</td></tr>
- <tr><td>Status:</td><td>Active</td></tr>
- <tr><td>Content:</td><td>All the concepts defined by the code system are included in the code system resource</td></tr>
+ <tr><td>Name:</td><td>QualityStandard ("Quality Standard")</td></tr>
+ <tr><td>Status:</td><td>Active as of 2020-12-11T14:29:00+00:00</td></tr>
  <tr><td>Publisher:</td><td>bbmri.de</td></tr>
- <tr><td>Content Mode:</td><td>Complete</td></tr>
+ <tr><td>Content:</td><td>Complete: All the concepts defined by the code system are included in the code system resource</td></tr>
  <tr><td>Source Resource:</td><td><a href="CodeSystem-QualityStandard.xml.html">XML</a> / <a href="CodeSystem-QualityStandard.json.html">JSON</a> / <a href="CodeSystem-QualityStandard.ttl.html">Turtle</a></td></tr>
 </tbody></table>
 
@@ -225,7 +227,7 @@
 </ul>
 
 
-  <div><p>This code system https://fhir.bbmri.de/CodeSystem/QualityStandard defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">iso-15189<a name="QualityStandard-iso-15189"> </a></td><td>ISO-15189</td><td></td></tr><tr><td style="white-space:nowrap">iso-15190<a name="QualityStandard-iso-15190"> </a></td><td>ISO-15190</td><td></td></tr><tr><td style="white-space:nowrap">iso-17025<a name="QualityStandard-iso-17025"> </a></td><td>ISO-17025</td><td></td></tr><tr><td style="white-space:nowrap">iso-9001<a name="QualityStandard-iso-9001"> </a></td><td>ISO-9001</td><td></td></tr><tr><td style="white-space:nowrap">nfs96-900<a name="QualityStandard-nfs96-900"> </a></td><td>NFS96-900</td><td></td></tr><tr><td style="white-space:nowrap">oecd-guidelines<a name="QualityStandard-oecd-guidelines"> </a></td><td>OECD Guidelines</td><td></td></tr><tr><td style="white-space:nowrap">others<a name="QualityStandard-others"> </a></td><td>Others</td><td></td></tr></table></div>
+  <div><p>This code system https://fhir.bbmri.de/CodeSystem/QualityStandard defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">iso-15189<a name="QualityStandard-iso-15189"> </a></td><td>ISO-15189</td></tr><tr><td style="white-space:nowrap">iso-15190<a name="QualityStandard-iso-15190"> </a></td><td>ISO-15190</td></tr><tr><td style="white-space:nowrap">iso-17025<a name="QualityStandard-iso-17025"> </a></td><td>ISO-17025</td></tr><tr><td style="white-space:nowrap">iso-9001<a name="QualityStandard-iso-9001"> </a></td><td>ISO-9001</td></tr><tr><td style="white-space:nowrap">nfs96-900<a name="QualityStandard-nfs96-900"> </a></td><td>NFS96-900</td></tr><tr><td style="white-space:nowrap">oecd-guidelines<a name="QualityStandard-oecd-guidelines"> </a></td><td>OECD Guidelines</td></tr><tr><td style="white-space:nowrap">others<a name="QualityStandard-others"> </a></td><td>Others</td></tr></table></div>
 
     <!-- insert notes if present -->
   
@@ -253,8 +255,8 @@
   <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
-        <p><a name="8f6e60f3-9982-4604-833e-3f4a0a93cc37">​</a>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="bbmri.de">bbmri.de</a>.  Package de.bbmri.fhir#1.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 16, 2020 11:11+0000">2020-09-16</span>
+        <p><a name="02bea1a2-b40b-48ab-ba18-bb3919020238">​</a>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="bbmri.de">bbmri.de</a>.  Package de.bbmri.fhir#1.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Dec 11, 2020 14:29+0000">2020-12-11</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "Collaboration"];
   fhir:StructureDefinition.title [ fhir:value "Collaboration"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2020-09-16T11:11:35+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2020-12-11T14:29:00+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "bbmri.de"];
   fhir:StructureDefinition.contact [
      fhir:index 0;

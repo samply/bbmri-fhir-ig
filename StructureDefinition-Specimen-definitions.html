@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="assets/css/project.css"/>
     <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
     <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
       <!-- Placeholder for child template CSS declarations -->
 <link rel="stylesheet" href="assets/css/bbmri.de.css"/>
 
@@ -37,6 +38,8 @@
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
 
     <style type="text/css">h2{--heading-prefix:"11.11"}
     h3,h4,h5,h6{--heading-prefix:"11.11"}</style>
@@ -1007,7 +1010,7 @@
   <tr><td>Definition</td><td><p>Abstinence or reduction from some or all food, drink, or both, for a period of time prior to sample collection.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="https://terminology.hl7.org/1.0.0//ValueSet-v2-0916.html">hl7VS-relevantClincialInformation</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="http://terminology.hl7.org/2.0.0/ValueSet-v2-0916.html">hl7VS-relevantClincialInformation</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
   <tr><td>[x] Note</td><td>See <a href="http://hl7.org/fhir/R4/formats.html#choice">Choice of Data Types</a> for further information about how to use [x]</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
@@ -1160,7 +1163,7 @@
   <tr><td>Definition</td><td><p>Introduced substance to preserve, maintain or enhance the specimen. Examples: Formalin, Citrate, EDTA.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>Substance added to specimen container.<br/>For example codes, see <a href="https://terminology.hl7.org/1.0.0//ValueSet-v2-0371.html">hl7VS-additivePreservative</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>Substance added to specimen container.<br/>For example codes, see <a href="http://terminology.hl7.org/2.0.0/ValueSet-v2-0371.html">hl7VS-additivePreservative</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td>Choice of: <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a>, <a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/R4/substance.html" title="http://hl7.org/fhir/StructureDefinition/Substance">Substance</a>)</td></tr>
   <tr><td>[x] Note</td><td>See <a href="http://hl7.org/fhir/R4/formats.html#choice">Choice of Data Types</a> for further information about how to use [x]</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -1169,7 +1172,7 @@
   <tr><td>Definition</td><td><p>A mode or state of being that describes the nature of the specimen.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>Codes describing the state of the specimen.<br/>The codes SHALL be taken from <a href="https://terminology.hl7.org/1.0.0//ValueSet-v2-0493.html">hl7VS-specimenCondition</a>; other codes may be used where these codes are not suitable</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>Codes describing the state of the specimen.<br/>The codes SHALL be taken from <a href="http://terminology.hl7.org/2.0.0/ValueSet-v2-0493.html">hl7VS-specimenCondition</a>; other codes may be used where these codes are not suitable</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
   <tr><td>Requirements</td><td><p>The specimen condition can be used to assess its quality or appropriateness for a specific test.</p>
 </td></tr>
@@ -1235,8 +1238,8 @@
   <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
-        <p><a name="c733739d-017e-43ce-98dd-03dbe33a9afd">​</a>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="bbmri.de">bbmri.de</a>.  Package de.bbmri.fhir#1.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 16, 2020 11:11+0000">2020-09-16</span>
+        <p><a name="d3a7f675-ef10-4b40-a82f-e742c436f5f0">​</a>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="bbmri.de">bbmri.de</a>.  Package de.bbmri.fhir#1.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Dec 11, 2020 14:29+0000">2020-12-11</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

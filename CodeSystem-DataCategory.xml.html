@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="assets/css/project.css"/>
     <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
     <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
       <!-- Placeholder for child template CSS declarations -->
 <link rel="stylesheet" href="assets/css/bbmri.de.css"/>
 
@@ -37,6 +38,8 @@
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
 
     <style type="text/css">h2{--heading-prefix:"11.41"}
     h3,h4,h5,h6{--heading-prefix:"11.41"}</style>
@@ -209,14 +212,14 @@
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="DataCategory"/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.text">text</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="generated"/&gt;
-    &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;p&gt;This code system https://fhir.bbmri.de/CodeSystem/DataCategory defines the following codes:&lt;/p&gt;&lt;table class="codes"&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;BIOLOGICAL_SAMPLES&lt;a name="DataCategory-BIOLOGICAL_SAMPLES"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Biological samples&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;GENEALOGICAL_RECORDS&lt;a name="DataCategory-GENEALOGICAL_RECORDS"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Genealogical records&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;IMAGING_DATA&lt;a name="DataCategory-IMAGING_DATA"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Imaging data&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;MEDICAL_RECORDS&lt;a name="DataCategory-MEDICAL_RECORDS"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Medical records&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;NATIONAL_REGISTRIES&lt;a name="DataCategory-NATIONAL_REGISTRIES"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;National registries&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;NAV&lt;a name="DataCategory-NAV"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Not available&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;OTHER&lt;a name="DataCategory-OTHER"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;other&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;PHYSIOLOGICAL_BIOCHEMICAL_MEASUREMENTS&lt;a name="DataCategory-PHYSIOLOGICAL_BIOCHEMICAL_MEASUREMENTS"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Physiological/Biochemical measurements&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;SURVEY_DATA&lt;a name="DataCategory-SURVEY_DATA"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Survey data&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+    &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;p&gt;This code system https://fhir.bbmri.de/CodeSystem/DataCategory defines the following codes:&lt;/p&gt;&lt;table class="codes"&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;BIOLOGICAL_SAMPLES&lt;a name="DataCategory-BIOLOGICAL_SAMPLES"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Biological samples&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;GENEALOGICAL_RECORDS&lt;a name="DataCategory-GENEALOGICAL_RECORDS"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Genealogical records&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;IMAGING_DATA&lt;a name="DataCategory-IMAGING_DATA"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Imaging data&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;MEDICAL_RECORDS&lt;a name="DataCategory-MEDICAL_RECORDS"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Medical records&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;NATIONAL_REGISTRIES&lt;a name="DataCategory-NATIONAL_REGISTRIES"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;National registries&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;NAV&lt;a name="DataCategory-NAV"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Not available&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;OTHER&lt;a name="DataCategory-OTHER"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;other&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;PHYSIOLOGICAL_BIOCHEMICAL_MEASUREMENTS&lt;a name="DataCategory-PHYSIOLOGICAL_BIOCHEMICAL_MEASUREMENTS"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Physiological/Biochemical measurements&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;SURVEY_DATA&lt;a name="DataCategory-SURVEY_DATA"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Survey data&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;<a name="end-xhtml"></a>
   &lt;/text&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.url">url</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="https://fhir.bbmri.de/CodeSystem/DataCategory"/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">version</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="1.2.0"/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="DataCategory"/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Data Category"/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="active"/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>="2020-09-16T11:11:35+00:00"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>="2020-12-11T14:29:00+00:00"/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.publisher">publisher</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="bbmri.de"/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.contact">contact</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="bbmri.de"/&gt;
@@ -294,8 +297,8 @@
   <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
-        <p><a name="f885c748-2020-4096-8389-e85c0178557f">​</a>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="bbmri.de">bbmri.de</a>.  Package de.bbmri.fhir#1.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 16, 2020 11:11+0000">2020-09-16</span>
+        <p><a name="0c7b1e3c-ce69-4dc1-a51e-4ea464e8a115">​</a>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="bbmri.de">bbmri.de</a>.  Package de.bbmri.fhir#1.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Dec 11, 2020 14:29+0000">2020-12-11</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="44bd84ee-8ac1-4d06-a7a9-08b9bea4d7fa"/>
+  <id value="b5a82b2e-815a-4ecb-8f9d-dcdbb7efc0da"/>
   <meta>
-    <lastUpdated value="2020-09-16T11:11:35.696+00:00"/>
+    <lastUpdated value="2020-12-11T14:29:00.398+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -131,7 +131,7 @@
         <name value="BiobankCapabilities"/>
         <title value="Biobank Capabilities"/>
         <status value="active"/>
-        <date value="2020-09-16T11:11:35+00:00"/>
+        <date value="2020-12-11T14:29:00+00:00"/>
         <publisher value="bbmri.de"/>
         <contact>
           <name value="bbmri.de"/>
@@ -145,8 +145,8 @@
           </telecom>
         </contact>
         <expansion>
-          <identifier value="urn:uuid:68f957cf-a45e-46a8-bf8b-a1201738f17f"/>
-          <timestamp value="2020-09-16T11:12:26+00:00"/>
+          <identifier value="urn:uuid:79b61e41-1d89-487e-873f-e4cc3b0a12c7"/>
+          <timestamp value="2020-12-11T14:29:47+00:00"/>
           <total value="11"/>
           <parameter>
             <name value="excludeNested"/>
@@ -372,7 +372,7 @@
         <name value="CollectionType"/>
         <title value="Collection Type"/>
         <status value="active"/>
-        <date value="2020-09-16T11:11:35+00:00"/>
+        <date value="2020-12-11T14:29:00+00:00"/>
         <publisher value="bbmri.de"/>
         <contact>
           <name value="bbmri.de"/>
@@ -386,8 +386,8 @@
           </telecom>
         </contact>
         <expansion>
-          <identifier value="urn:uuid:5fedad86-0fab-4cff-aa30-54a31bc2a86b"/>
-          <timestamp value="2020-09-16T11:12:34+00:00"/>
+          <identifier value="urn:uuid:9ffd4176-1f3a-4688-8a82-3b986f0d5a71"/>
+          <timestamp value="2020-12-11T14:29:55+00:00"/>
           <total value="15"/>
           <parameter>
             <name value="excludeNested"/>
@@ -585,7 +585,7 @@
         <name value="DataCategory"/>
         <title value="Data Category"/>
         <status value="active"/>
-        <date value="2020-09-16T11:11:35+00:00"/>
+        <date value="2020-12-11T14:29:00+00:00"/>
         <publisher value="bbmri.de"/>
         <contact>
           <name value="bbmri.de"/>
@@ -599,8 +599,8 @@
           </telecom>
         </contact>
         <expansion>
-          <identifier value="urn:uuid:97407dca-6ff8-4514-a23d-3352b0a7777f"/>
-          <timestamp value="2020-09-16T11:12:35+00:00"/>
+          <identifier value="urn:uuid:cf302be1-c3d9-4e0c-ba02-26dec32ad1e3"/>
+          <timestamp value="2020-12-11T14:29:56+00:00"/>
           <total value="9"/>
           <parameter>
             <name value="excludeNested"/>
@@ -728,7 +728,7 @@
         <name value="OtherSampleDiagnosis"/>
         <title value="other sample diagnosis"/>
         <status value="active"/>
-        <date value="2020-09-16T11:11:35+00:00"/>
+        <date value="2020-12-11T14:29:00+00:00"/>
         <publisher value="bbmri.de"/>
         <contact>
           <name value="bbmri.de"/>
@@ -742,8 +742,8 @@
           </telecom>
         </contact>
         <expansion>
-          <identifier value="urn:uuid:4b86ff42-5abe-4f0f-8b5f-3dbe5e67eef4"/>
-          <timestamp value="2020-09-16T11:12:38+00:00"/>
+          <identifier value="urn:uuid:62753c01-e687-4f71-8494-692278a2bceb"/>
+          <timestamp value="2020-12-11T14:29:58+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -870,7 +870,7 @@
         <name value="QualityStandard"/>
         <title value="Quality Standard"/>
         <status value="active"/>
-        <date value="2020-09-16T11:11:35+00:00"/>
+        <date value="2020-12-11T14:29:00+00:00"/>
         <publisher value="bbmri.de"/>
         <contact>
           <name value="bbmri.de"/>
@@ -884,8 +884,8 @@
           </telecom>
         </contact>
         <expansion>
-          <identifier value="urn:uuid:9acef9b0-cfad-45ca-9d8e-224ad9512d33"/>
-          <timestamp value="2020-09-16T11:12:39+00:00"/>
+          <identifier value="urn:uuid:65fe704b-53e8-4da9-b6e0-6120373b0512"/>
+          <timestamp value="2020-12-11T14:29:59+00:00"/>
           <total value="7"/>
           <parameter>
             <name value="excludeNested"/>
@@ -995,7 +995,7 @@
         <name value="ResourceType"/>
         <title value="Resource Type"/>
         <status value="active"/>
-        <date value="2020-09-16T11:11:35+00:00"/>
+        <date value="2020-12-11T14:29:00+00:00"/>
         <publisher value="bbmri.de"/>
         <contact>
           <name value="bbmri.de"/>
@@ -1009,8 +1009,8 @@
           </telecom>
         </contact>
         <expansion>
-          <identifier value="urn:uuid:886d5e7f-2842-4163-aaa3-fc17dc22700b"/>
-          <timestamp value="2020-09-16T11:12:39+00:00"/>
+          <identifier value="urn:uuid:82d504bc-bf30-4551-af39-25e4bd9d714a"/>
+          <timestamp value="2020-12-11T14:30:00+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1409,7 +1409,7 @@
         <name value="SampleMaterialType"/>
         <title value="Sample Material Type"/>
         <status value="active"/>
-        <date value="2020-09-16T11:11:35+00:00"/>
+        <date value="2020-12-11T14:29:00+00:00"/>
         <publisher value="bbmri.de"/>
         <contact>
           <name value="bbmri.de"/>
@@ -1423,8 +1423,8 @@
           </telecom>
         </contact>
         <expansion>
-          <identifier value="urn:uuid:e3b87599-b271-4f55-889c-d0f089e66cd7"/>
-          <timestamp value="2020-09-16T11:12:39+00:00"/>
+          <identifier value="urn:uuid:67615475-d68e-452e-8b70-aef32db03b6d"/>
+          <timestamp value="2020-12-11T14:30:00+00:00"/>
           <total value="33"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1696,7 +1696,7 @@
         <name value="StorageTemperature"/>
         <title value="Storage Temperature"/>
         <status value="active"/>
-        <date value="2020-09-16T11:11:35+00:00"/>
+        <date value="2020-12-11T14:29:00+00:00"/>
         <publisher value="bbmri.de"/>
         <contact>
           <name value="bbmri.de"/>
@@ -1710,8 +1710,8 @@
           </telecom>
         </contact>
         <expansion>
-          <identifier value="urn:uuid:c10e197e-26f3-49c7-b450-c2a98e917602"/>
-          <timestamp value="2020-09-16T11:12:41+00:00"/>
+          <identifier value="urn:uuid:170ea26b-3b2a-4d1b-8de4-c70a4721ba02"/>
+          <timestamp value="2020-12-11T14:30:01+00:00"/>
           <total value="7"/>
           <parameter>
             <name value="excludeNested"/>
