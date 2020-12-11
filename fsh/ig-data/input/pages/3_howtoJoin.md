@@ -45,7 +45,7 @@ We provide an **step-by-step installation guide** in the Bridgehead Deployment r
 
 #### Store documentations and tools:
 
-* The official Store documentation can be found [here](https://alexanderkiel.gitbook.io/blaze).
+* The official Store documentation can be found [here](https://github.com/samply/blaze#blaze).
 
 * Specification for the REST interface used by the Store can be found [here](https://www.hl7.org/fhir/http.html).
 
