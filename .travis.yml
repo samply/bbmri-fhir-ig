@@ -15,7 +15,7 @@ script:
 - wget -q https://github.com/HL7/fhir-ig-publisher/releases/download/1.1.25/publisher.jar -O input-cache/publisher.jar
 - JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF-8
 - java -jar input-cache/publisher.jar -ig ig.ini
-- java -jar validator.jar -ig output/validator-de.bbmri.fhir.pack -version 4.0.1 input/examples
+- java -jar validator.jar -tx n/a -ig output/validator-de.bbmri.fhir.pack -ig de.basisprofil.r4#0.9.6 -version 4.0.1 input/examples
 cache:
 - bundler
 deploy:
