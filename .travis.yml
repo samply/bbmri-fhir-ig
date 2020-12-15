@@ -5,12 +5,11 @@ node_js:
   - node
 install:
 - gem install jekyll
-- npm install -g fsh-sushi@0.16.1
+- npm install -g fsh-sushi@1.0.2
 before_script:
-- wget -q https://storage.googleapis.com/ig-build/org.hl7.fhir.validator.jar -O validator.jar
+- wget -q https://github.com/hapifhir/org.hl7.fhir.core/releases/download/5.2.11/validator_cli.jar -O validator.jar
 script:
 - sushi .
-- cp -a fsh/ig-data/input/other input/other
 - mkdir input-cache
 - wget -q https://github.com/HL7/fhir-ig-publisher/releases/download/1.1.25/publisher.jar -O input-cache/publisher.jar
 - JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF-8
