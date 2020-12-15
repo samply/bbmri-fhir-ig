@@ -21,7 +21,7 @@ To **install the bridgehead** we recommend a server that can run [docker](https:
 Read this [Data protection concept](https://www.bbmri.de/biobanking/it/data-protection-concept/?L=1) carefully and submit it to your data protection authorities. The **data protection concept must be approved** by your local data protection officer.
 
 3. Data access:  
-To fill the store of the bridgehead you need access to clinical data from your **local source systems**. An overview about the clinical data which we want to provide in the ferderated search can be found [here](overview.html).
+To fill the store of the bridgehead you need access to clinical data from your **local source systems**. An overview about the clinical data which we want to provide in the ferderated search can be found [here](1_overview.html).
 
 4. Data transformation:  
 The store of the bridgehead stores data as **HL7 FHIR® Bundles**. To import data into the Store, they must be harmonised and converted. Each site must build an ETL-process (extract, transform, load) to harmonise the structure of the data and translate them to fit predefined FHIR® profiles.
@@ -39,9 +39,9 @@ We provide an **step-by-step installation guide** in the Bridgehead Deployment r
 
 * The FHIR® oncology profiles can be found [here](https://simplifier.net/oncology). The related Implementation Guide can be found [here](https://simplifier.net/guide/implementationguide4/home).
 
-* An instruction how to build an ETL-process with Talend Open Studio for Data Integration and Hapi FHIR API can be found [here](etlTalent.html).
+* An instruction how to build an ETL-process with Talend Open Studio for Data Integration and Hapi FHIR API can be found [here](6_etlTalent.html).
 
-* An instruction how to validate your FHIR® resources can be found [here](support.html).
+* An instruction how to validate your FHIR® resources can be found [here](5_support.html).
 
 #### Store documentations and tools:
 

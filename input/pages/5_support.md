@@ -4,7 +4,7 @@ While there are [multiple ways](https://www.hl7.org/fhir/validation.html) to val
 
 This IG and all dependencies are published as packages. This means you do not have to download anything manually (except the validator JAR), the vaidator will install the nescessary packages for you (usually in a *.fhir* folder in your home directory).
 
-**1. Download the latest JAR from [here](https://storage.googleapis.com/ig-build/org.hl7.fhir.validator.jar).** Using the latest version is important since bug-fixing updates happen regularly.
+**1. Download the latest JAR from [here](https://github.com/hapifhir/org.hl7.fhir.core/releases/latest/download/validator_cli.jar).** Using the latest version is important since bug-fixing updates happen regularly.
 
 **2. Prepare your input** Move all resources you want to validate into a single flat directory and place it next to the validator JAR.
 
