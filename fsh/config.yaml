@@ -1,10 +1,5 @@
-# ╭─────────────────────────────ImplementationGuide-de.bbmri.fhir.json─────────────────────────────╮
-# │  The properties below are used to create the ImplementationGuide resource. For a list of       │
-# │  supported properties, see:                                                                    │
-# │  http://build.fhir.org/ig/HL7/fhir-shorthand/branches/beta/sushi.html#ig-development           │
-# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: de.bbmri.fhir
-canonical: https://fhir.bbmri.de/ImplementationGuide/de.bbmri.fhir
+canonical: https://fhir.bbmri.de
 version: 1.3.0-preview
 name: BBMRI_DE_IG
 title: BBMRI.de/GBA Implementation Guide
@@ -28,27 +23,19 @@ copyrightYear: 2020+
 releaseLabel: CI Build
 path-binary: input/other
 
-# ╭─────────────────────────────────────────────ig.ini─────────────────────────────────────────────╮
-# │  To use a provided ig-data/ig.ini file, delete the "template" property below.                  │
-# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-template: ./bbmri.deTemplate
 
-# ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
-# │  To use a provided ig-data/input/includes/menu.xml file, delete the "menu" property below.     │
-# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   IG Home: index.html
   Table of Contents: toc.html
   Artifact Index: artifacts.html
-  Profile Overview: overview.html
-  How to Join the Sample Locator: howtoJoin.html
+  Profile Overview: 1_overview.html
+  How to Join the Sample Locator: 2_howtoJoin.html
   Background:
-    Overview: background.html
-    Mappings: mappings.html
-    Referenced IGs: referencedIGs.html
-    Build ETL with TOS: etlTalent.html
-    Quality Measures: qualityMeasures.html
+    Mappings: 3_mappings.html
+    Referenced IGs: 4_referencedIGs.html
+    Build ETL with TOS: 6_etlTalent.html
+    Quality Measures: 7_qualityMeasures.html
   Support:
-    Instructions: support.html
-    Downloads: downloads.html
-    FHIR Spec: new-tab external http://hl7.org/fhir/R4/index.html
+    Instructions: 5_support.html
+    Downloads: 8_downloads.html
+    FHIR Spec: new-tab http://hl7.org/fhir/R4/index.html
