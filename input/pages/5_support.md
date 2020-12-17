@@ -35,4 +35,8 @@ In *create-as-update* Bundles, all entries need a *fullUrl*. This does not need 
 For example, using *http://example.com/* as a base is a working solution. Internal references to entries using the same base can be relative ([type]/[id]).
 External references on the other hand need to be absolute, resolveable URLs.
 
-If neither a absolute nor relative literal reference is possible, a [logical reference](https://www.hl7.org/fhir/references.html#logical) can be used to point to a resource e.g. by its Identifier. Note that servers will not necessarily resolve this references automatically, which may cause problems when trying to acess the referenced resource later on. 
+If neither a absolute nor relative literal reference is possible, a [logical reference](https://www.hl7.org/fhir/references.html#logical) can be used to point to a resource e.g. by its Identifier. Note that servers will not necessarily resolve this references automatically, which may cause problems when trying to acess the referenced resource later on.
+
+### Handling missing values
+
+Sometimes, even if a element is required, there is no value available e.g. because of corrupt source data. In this cases, the [data absent reason extension](https://www.hl7.org/fhir/extension-data-absent-reason.html) may be added to the element. Even without a value, the element will no longer be empty to the validator and the validation will succeed. The extension also allows to give the reason why no value is present, e.g. because of a not-a-number error.
