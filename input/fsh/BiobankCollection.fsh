@@ -56,7 +56,7 @@ Title: "Biobank"
 * contact ^slicing.rules = #open
 * contact contains
     head 1..1 MS and
-    contact 1..1
+    contact 1..1 MS
 * contact[head].extension contains $ContactRole named headRole ..1
 * contact[head].extension[headRole] ^short = "Head role"
 * contact[head].extension[headRole] ^definition = "Official role of the natural person in charge of the biobank: typically principal investigator or director"
