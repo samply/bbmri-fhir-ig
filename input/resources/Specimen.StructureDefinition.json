@@ -55,28 +55,6 @@
         "mustSupport": true
       },
       {
-        "id": "Specimen.extension:diagnosis.value[x].coding",
-        "path": "Specimen.extension.value[x].coding",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "system"
-            },
-            {
-              "type": "value",
-              "path": "version"
-            },
-            {
-              "type": "value",
-              "path": "$this"
-            }
-          ],
-          "rules": "closed"
-        },
-        "min": 1
-      },
-      {
         "id": "Specimen.extension:custodian",
         "path": "Specimen.extension",
         "sliceName": "custodian",

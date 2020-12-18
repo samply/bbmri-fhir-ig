@@ -1,9 +1,7 @@
+/fsh-generated
 /input-cache
-/input
 /output
-/temp
 /template
-.index.json
+/temp
 validator.jar
-SUSHI-GENERATED-FILES.md
-ig.ini
+.index.json
