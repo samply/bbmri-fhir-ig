@@ -7,11 +7,11 @@ A Bridgehead comprises of two primary components:
 * **The Blaze Store**. This holds the actual data being searched. This store must be filled by you, generally by running an ETL on your locally stored data to turn it into the standardized FHIR format that we require.
 * **The Connector**. This is the component that connects to the outside world. It collects the currently waiting queries from the Sample Locator, runs them against the Blaze Store, and returns aggregated results to the Sample Locator.
 
-In order to make the data at your site searchable by the Sample Locator, you must *install a Bridgehead at your site*, and *register the Connector with the Sample Locator*.
+In order to make the data at your site searchable by the Sample Locator, you must *install a Bridgehead at your site*, *fill the Store with data*, and *register the Connector with the Sample Locator*.
 
 More details about the functional principles of our IT infrastructure the can be found [here](https://www.bbmri.de/biobanking/it/functional-principle/?L=1).
 
-The developer team is self-organized under the [Samply community](https://samply.github.io/manifest). The **organization behind** the development is the [German Biobank Node](https://www.bbmri.de/?L=1) in cooperation with [BBMRI-ERIC](http://www.bbmri-eric.eu), sponsored by the [Federal Ministry of Education and Research](https://www.bmbf.de/en/index.html).
+The **organization behind** the development is the [German Biobank Node](https://www.bbmri.de/?L=1) in cooperation with [BBMRI-ERIC](http://www.bbmri-eric.eu), sponsored by the [Federal Ministry of Education and Research](https://www.bmbf.de/en/index.html).
 
 
 ### General Requirements
