@@ -43,9 +43,7 @@ You can find our FHIR® profile for the basic data set [here](https://simplifier
 ### Guides to install, fill and connect a Bridgehead
 We provide a step-by-step installation guide on the [Bridgehead Deployment GitHub page](https://github.com/samply/bridgehead-deployment).
 
-All of the components that make up the Bridgehead are open source. Non-technical descriptions of the components can be found [here](https://www.bbmri.de/biobanking/it/open-source-software/?L=1). The source code can be found in the [GitHub samply Repository](https://github.com/samply).
-
-If you wish to explore the source code of the components deployed, both locally at your site as well as centrally, please visit the [Component Finder](https://samply.github.io/samply-component-finder/).
+All of the components that make up the Bridgehead are open source. Non-technical descriptions of the components can be found [here](https://www.bbmri.de/biobanking/it/open-source-software/?L=1). If you wish to explore the source code of the components deployed, both locally at your site as well as centrally, please visit the [Component Finder](https://samply.github.io/samply-component-finder/). A complete list of our source code repositories can be found in the [GitHub samply Repository](https://github.com/samply).
 
 #### FHIR® profiles and ETL:
 
