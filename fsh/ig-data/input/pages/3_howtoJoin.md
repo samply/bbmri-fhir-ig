@@ -11,8 +11,6 @@ In order to make the data at your site searchable by the Sample Locator, you mus
 
 More details about the functional principles of our IT infrastructure the can be found [here](https://www.bbmri.de/biobanking/it/functional-principle/?L=1).
 
-If you wish to explore the source code of the components deployed, both locally at your site as well as centrally, please visit the [Component Finder](https://samply.github.io/samply-component-finder/).
-
 The **organization behind** the development is the [German Biobank Node](https://www.bbmri.de/?L=1) in cooperation with [BBMRI-ERIC](http://www.bbmri-eric.eu), sponsored by the [Federal Ministry of Education and Research](https://www.bmbf.de/en/index.html).
 
 
@@ -27,8 +25,9 @@ The **organization behind** the development is the [German Biobank Node](https:/
 * Firewall to restrict access from internal network is recommended.
 
 2. Software:
-* [git](https://www.atlassian.com/git/tutorials/install-git).
-* [docker](https://docs.docker.com/get-docker/). This recommended, because installation under Docker is very simple. Manual installation is also possible but entails significantly more work.
+We recommend using Docker for installing the Bridgehead components on your site, and we make this easy for you by providing a fully configured Docker bundle for this purpose. Manual installation is also possible but entails significantly more work. So you will need to install:
+* [git](https://www.atlassian.com/git/tutorials/install-git)
+* [docker](https://docs.docker.com/get-docker/)
 
 3. Data protection:  
 Read this [Data protection concept](https://www.bbmri.de/biobanking/it/data-protection-concept/?L=1) carefully and submit it to your data protection authorities. The **data protection concept must be approved** by your local data protection officer.
@@ -45,6 +44,8 @@ You can find our FHIR® profile for the basic data set [here](https://simplifier
 We provide a step-by-step installation guide on the [Bridgehead Deployment GitHub page](https://github.com/samply/bridgehead-deployment).
 
 All of the components that make up the Bridgehead are open source. Non-technical descriptions of the components can be found [here](https://www.bbmri.de/biobanking/it/open-source-software/?L=1). The source code can be found in the [GitHub samply Repository](https://github.com/samply).
+
+If you wish to explore the source code of the components deployed, both locally at your site as well as centrally, please visit the [Component Finder](https://samply.github.io/samply-component-finder/).
 
 #### FHIR® profiles and ETL:
 
