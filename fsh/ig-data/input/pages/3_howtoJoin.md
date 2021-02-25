@@ -11,11 +11,12 @@ In order to make the data at your site searchable by the Sample Locator, you mus
 
 More details about the functional principles of our IT infrastructure the can be found [here](https://www.bbmri.de/biobanking/it/functional-principle/?L=1).
 
+If you wish to explore the source code of the components deployed, both locally at your site as well as centrally, please visit the [Component Finder](https://samply.github.io/samply-component-finder/).
+
 The **organization behind** the development is the [German Biobank Node](https://www.bbmri.de/?L=1) in cooperation with [BBMRI-ERIC](http://www.bbmri-eric.eu), sponsored by the [Federal Ministry of Education and Research](https://www.bmbf.de/en/index.html).
 
 
 ### General Requirements
-To **install the Bridgehead** we recommend a server that can run [docker](https://docs.docker.com/get-docker/). Manual installation is also possible but entails significantly more work.
 1. Hardware:  
 * 16 GB RAM
 * 50 GB disk space (depends on amount of data)
@@ -25,13 +26,17 @@ To **install the Bridgehead** we recommend a server that can run [docker](https:
 * Proxies are supported. No VPN or incoming ports required. 
 * Firewall to restrict access from internal network is recommended.
 
-2. Data protection:  
+2. Software:
+* [git](https://www.atlassian.com/git/tutorials/install-git).
+* [docker](https://docs.docker.com/get-docker/). This recommended, because installation under Docker is very simple. Manual installation is also possible but entails significantly more work.
+
+3. Data protection:  
 Read this [Data protection concept](https://www.bbmri.de/biobanking/it/data-protection-concept/?L=1) carefully and submit it to your data protection authorities. The **data protection concept must be approved** by your local data protection officer.
 
-3. Data access:  
+4. Data access:  
 To fill the Store of the Bridgehead you need access to clinical data from your **local source systems**. An overview about the clinical data which we want to provide in the ferderated search can be found [here](overview.html).
 
-4. Data format:  
+5. Data format:  
 The Store of the Bridgehead stores data as **HL7 FHIR® Bundles**. To import data into the Store, they must be harmonised and converted. Each site must build an ETL-process (extract, transform, load) to harmonise the structure of the data and translate them to fit predefined FHIR® profiles.
 You can find our FHIR® profile for the basic data set [here](https://simplifier.net/bbmri.de) and for the oncology data set [here](https://simplifier.net/oncology).
 
