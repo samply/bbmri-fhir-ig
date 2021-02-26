@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "StorageTemperature"];
   fhir:StructureDefinition.title [ fhir:value "Storage Temperature"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2020-12-11T14:29:00+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-02-26T15:12:27+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "bbmri.de"];
   fhir:StructureDefinition.contact [
      fhir:index 0;

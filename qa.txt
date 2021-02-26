@@ -2,8 +2,8 @@
 =========================================
 
 err = 18, warn = 59, info = 4
-IG Publisher Version: 1.1.25 Out of date - current version is 1.1.51
-Generated Fri Dec 11 14:30:43 UTC 2020. FHIR version 4.0.1 for de.bbmri.fhir#1.2.0 (canonical = https://fhir.bbmri.de)
+IG Publisher Version: 1.1.25 Out of date - current version is 1.1.59
+Generated Fri Feb 26 15:14:07 UTC 2021. FHIR version 4.0.1 for de.bbmri.fhir#1.2.0 (canonical = https://fhir.bbmri.de)
 
  Build Errors : 398 / 47 / 1
  /home/travis/build/samply/bbmri-fhir-ig/input/ImplementationGuide-de.bbmri.fhir : 2 / 0 / 1
@@ -251,7 +251,7 @@ ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Access
 ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Biobank-definitions.html#/html/body/div/div/div/p/a at Line 1768, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
 ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Biobank-examples.html#/html/body/div/div/div/p/a at Line 305, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
 ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Biobank-mappings.html#/html/body/div/div/div/p/a at Line 605, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Biobank.html#/html/body/div/div/div/p/a at Line 1434, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Biobank.html#/html/body/div/div/div/p/a at Line 1436, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
 ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Biobank.profile.history.html#/html/body/div/div/div/p/a at Line 283, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
 ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Biobank.profile.json.html#/html/body/div/div/div/p/a at Line 8087, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
 ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Biobank.profile.ttl.html#/html/body/div/div/div/p/a at Line 6889, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
@@ -266,7 +266,7 @@ ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Biores
 ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Bmi-definitions.html#/html/body/div/div/div/p/a at Line 1166, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
 ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Bmi-examples.html#/html/body/div/div/div/p/a at Line 305, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
 ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Bmi-mappings.html#/html/body/div/div/div/p/a at Line 510, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Bmi.html#/html/body/div/div/div/p/a at Line 981, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Bmi.html#/html/body/div/div/div/p/a at Line 983, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
 ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Bmi.profile.history.html#/html/body/div/div/div/p/a at Line 283, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
 ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Bmi.profile.json.html#/html/body/div/div/div/p/a at Line 4608, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
 ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Bmi.profile.ttl.html#/html/body/div/div/div/p/a at Line 4030, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
@@ -274,7 +274,7 @@ ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Bmi.pr
 ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-BodyHeight-definitions.html#/html/body/div/div/div/p/a at Line 1166, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
 ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-BodyHeight-examples.html#/html/body/div/div/div/p/a at Line 305, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
 ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-BodyHeight-mappings.html#/html/body/div/div/div/p/a at Line 510, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-BodyHeight.html#/html/body/div/div/div/p/a at Line 982, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-BodyHeight.html#/html/body/div/div/div/p/a at Line 984, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
 ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-BodyHeight.profile.history.html#/html/body/div/div/div/p/a at Line 283, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
 ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-BodyHeight.profile.json.html#/html/body/div/div/div/p/a at Line 4618, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
 ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-BodyHeight.profile.ttl.html#/html/body/div/div/div/p/a at Line 4039, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
@@ -282,7 +282,7 @@ ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-BodyHe
 ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-BodyWeight-definitions.html#/html/body/div/div/div/p/a at Line 1166, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
 ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-BodyWeight-examples.html#/html/body/div/div/div/p/a at Line 305, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
 ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-BodyWeight-mappings.html#/html/body/div/div/div/p/a at Line 510, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-BodyWeight.html#/html/body/div/div/div/p/a at Line 982, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-BodyWeight.html#/html/body/div/div/div/p/a at Line 984, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
 ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-BodyWeight.profile.history.html#/html/body/div/div/div/p/a at Line 283, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
 ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-BodyWeight.profile.json.html#/html/body/div/div/div/p/a at Line 4618, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
 ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-BodyWeight.profile.ttl.html#/html/body/div/div/div/p/a at Line 4039, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
@@ -297,7 +297,7 @@ ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Capabi
 ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-CauseOfDeath-definitions.html#/html/body/div/div/div/p/a at Line 1018, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
 ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-CauseOfDeath-examples.html#/html/body/div/div/div/p/a at Line 284, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
 ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-CauseOfDeath-mappings.html#/html/body/div/div/div/p/a at Line 447, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-CauseOfDeath.html#/html/body/div/div/div/p/a at Line 878, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-CauseOfDeath.html#/html/body/div/div/div/p/a at Line 880, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
 ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-CauseOfDeath.profile.history.html#/html/body/div/div/div/p/a at Line 273, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
 ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-CauseOfDeath.profile.json.html#/html/body/div/div/div/p/a at Line 4071, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
 ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-CauseOfDeath.profile.ttl.html#/html/body/div/div/div/p/a at Line 3572, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
@@ -312,7 +312,7 @@ ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Collab
 ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Collection-definitions.html#/html/body/div/div/div/p/a at Line 1706, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
 ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Collection-examples.html#/html/body/div/div/div/p/a at Line 311, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
 ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Collection-mappings.html#/html/body/div/div/div/p/a at Line 588, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Collection.html#/html/body/div/div/div/p/a at Line 1429, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Collection.html#/html/body/div/div/div/p/a at Line 1431, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
 ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Collection.profile.history.html#/html/body/div/div/div/p/a at Line 283, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
 ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Collection.profile.json.html#/html/body/div/div/div/p/a at Line 7767, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
 ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Collection.profile.ttl.html#/html/body/div/div/div/p/a at Line 6622, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
@@ -334,7 +334,7 @@ ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Condit
 ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Condition.html#/html/body/div/div/div/div/div/div/div/div/div/ul/li/a at Line 534, column 7: The link '' for "http://fhir.de/StructureDefinition/CodingICD10GM" cannot be resolved
 ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Condition.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 563, column 1551: The link 'unknown.html' for "?pkp-2?" cannot be resolved
 ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Condition.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 612, column 1647: The link 'unknown.html' for "?pkp-2?" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Condition.html#/html/body/div/div/div/p/a at Line 828, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Condition.html#/html/body/div/div/div/p/a at Line 830, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
 ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Condition.profile.history.html#/html/body/div/div/div/p/a at Line 273, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
 ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Condition.profile.json.html#/html/body/div/div/div/p/a at Line 3360, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
 ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Condition.profile.ttl.html#/html/body/div/div/div/p/a at Line 2935, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
@@ -384,7 +384,7 @@ ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Juridi
 ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-NetworkMembership-definitions.html#/html/body/div/div/div/p/a at Line 714, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
 ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-NetworkMembership-examples.html#/html/body/div/div/div/p/a at Line 284, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
 ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-NetworkMembership-mappings.html#/html/body/div/div/div/p/a at Line 334, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-NetworkMembership.html#/html/body/div/div/div/p/a at Line 739, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-NetworkMembership.html#/html/body/div/div/div/p/a at Line 741, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
 ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-NetworkMembership.profile.history.html#/html/body/div/div/div/p/a at Line 273, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
 ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-NetworkMembership.profile.json.html#/html/body/div/div/div/p/a at Line 2479, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
 ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-NetworkMembership.profile.ttl.html#/html/body/div/div/div/p/a at Line 2175, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
@@ -413,7 +413,7 @@ ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Partne
 ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Patient-definitions.html#/html/body/div/div/div/p/a at Line 768, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
 ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Patient-examples.html#/html/body/div/div/div/p/a at Line 305, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
 ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Patient-mappings.html#/html/body/div/div/div/p/a at Line 347, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Patient.html#/html/body/div/div/div/p/a at Line 641, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Patient.html#/html/body/div/div/div/p/a at Line 643, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
 ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Patient.profile.history.html#/html/body/div/div/div/p/a at Line 283, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
 ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Patient.profile.json.html#/html/body/div/div/div/p/a at Line 2597, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
 ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Patient.profile.ttl.html#/html/body/div/div/div/p/a at Line 2293, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
@@ -442,7 +442,7 @@ ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Sample
 ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Specimen-definitions.html#/html/body/div/div/div/p/a at Line 1246, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
 ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Specimen-examples.html#/html/body/div/div/div/p/a at Line 305, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
 ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Specimen-mappings.html#/html/body/div/div/div/p/a at Line 471, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Specimen.html#/html/body/div/div/div/p/a at Line 1077, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Specimen.html#/html/body/div/div/div/p/a at Line 1079, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
 ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Specimen.profile.history.html#/html/body/div/div/div/p/a at Line 283, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
 ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Specimen.profile.json.html#/html/body/div/div/div/p/a at Line 5256, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
 ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Specimen.profile.ttl.html#/html/body/div/div/div/p/a at Line 4508, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
@@ -457,7 +457,7 @@ ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-Storag
 ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-TobaccoUse-definitions.html#/html/body/div/div/div/p/a at Line 919, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
 ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-TobaccoUse-examples.html#/html/body/div/div/div/p/a at Line 284, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
 ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-TobaccoUse-mappings.html#/html/body/div/div/div/p/a at Line 433, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-TobaccoUse.html#/html/body/div/div/div/p/a at Line 807, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-TobaccoUse.html#/html/body/div/div/div/p/a at Line 809, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
 ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-TobaccoUse.profile.history.html#/html/body/div/div/div/p/a at Line 273, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
 ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-TobaccoUse.profile.json.html#/html/body/div/div/div/p/a at Line 3560, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
 ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/StructureDefinition-TobaccoUse.profile.ttl.html#/html/body/div/div/div/p/a at Line 3158, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
@@ -506,7 +506,7 @@ ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/artifacts.html#/html/body/
 ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/background.html#/html/body/div/div/div/p/a at Line 207, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
 ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/downloads.html#/html/body/div/div/div/p/a at Line 235, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
 ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/etlTalent.html#/html/body/div/div/div/p/a at Line 436, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/howtoJoin.html#/html/body/div/div/div/p/a at Line 286, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/howtoJoin.html#/html/body/div/div/div/p/a at Line 313, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
 ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/index.html#/html/body/div/div/div/p/a at Line 234, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
 ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/mappings.html#/html/body/div/div/div/p/a at Line 948, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
 ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/overview.html#/html/body/div/div/div/p/a at Line 248, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved

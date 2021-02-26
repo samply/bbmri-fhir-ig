@@ -178,23 +178,32 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <ul id="markdown-toc">
   <li><a href="#about" id="markdown-toc-about">About</a></li>
   <li><a href="#general-requirements" id="markdown-toc-general-requirements">General Requirements</a></li>
-  <li><a href="#guides-to-install-fill-and-connect-a-bridgehead" id="markdown-toc-guides-to-install-fill-and-connect-a-bridgehead">Guides to install, fill and connect a bridgehead</a></li>
+  <li><a href="#guides-to-install-fill-and-connect-a-bridgehead" id="markdown-toc-guides-to-install-fill-and-connect-a-bridgehead">Guides to install, fill and connect a Bridgehead</a></li>
   <li><a href="#reinforcing-the-team" id="markdown-toc-reinforcing-the-team">Reinforcing the team</a></li>
 </ul>
 
 </div>
   <!-- howtoJoin.md -->
-<p>This section describes how to connect a biobank to the <a href="https://samplelocator.bbmri.de">Sample Locator</a> and what are the requirements to do so. This documentation is a central node with weblinks to important information and a step-by-step guidance.</p>
+<p>This section describes how to connect your biobank to the <a href="https://samplelocator.bbmri.de">Sample Locator</a> and what you need to have in place before you do so.</p>
 
 <h3 id="about">About</h3>
-<p>Biobanks need a network-IT infrastructure to exchange data efficiently. This allows to assort large multicentric collections of samples for research purposes. The <a href="https://samplelocator.bbmri.de">Sample Locator</a> is our central <strong>non-commercial and open source service</strong> which enables scientists to search for specific research-relevant biosamples and related data across multiple academic biobanks. The IT infrastructure consists of a federate network of so-called bridgeheads. These are data integration IT-modules installed at each biobank and filled with relevant data from the biobank and clinic systems on-site. More details about the functional principle of IT infrastructure the can be found <a href="https://www.bbmri.de/biobanking/it/functional-principle/?L=1">here</a>.</p>
+<p>The <a href="https://samplelocator.bbmri.de">Sample Locator</a> is our central <strong>non-commercial and open source service</strong>, which enables scientists to search for specific research-relevant biosamples and related data across multiple academic biobanks distributed across Europe. Each biobank hosts a so-called Bridgehead, which connects to the central Sample Locator.</p>
 
-<p>The developer team is self-organized as <a href="https://samply.github.io/manifest">Samply community</a>. The <strong>organization behind</strong> the development is the <a href="https://www.bbmri.de/?L=1">German Biobank Node</a> in cooperation with <a href="http://www.bbmri-eric.eu">BBMRI-ERIC</a>, sponsored by the <a href="https://www.bmbf.de/en/index.html">Federal Ministry of Education and Research</a>.</p>
+<p>A Bridgehead comprises of two primary components:</p>
+<ul>
+  <li><strong>The Blaze Store</strong>. This holds the actual data being searched. This store must be filled by you, generally by running an ETL on your locally stored data to turn it into the standardized FHIR format that we require.</li>
+  <li><strong>The Connector</strong>. This is the component that connects to the outside world. It collects the currently waiting queries from the Sample Locator, runs them against the Blaze Store, and returns aggregated results to the Sample Locator.</li>
+</ul>
+
+<p>In order to make the data at your site searchable by the Sample Locator, you must <em>install a Bridgehead at your site</em>, <em>fill the Store with data</em>, and <em>register the Connector with the Sample Locator</em>.</p>
+
+<p>More details about the functional principles of our IT infrastructure the can be found <a href="https://www.bbmri.de/biobanking/it/functional-principle/?L=1">here</a>.</p>
+
+<p>The <strong>organization behind</strong> the development is the <a href="https://www.bbmri.de/?L=1">German Biobank Node</a> in cooperation with <a href="http://www.bbmri-eric.eu">BBMRI-ERIC</a>, sponsored by the <a href="https://www.bmbf.de/en/index.html">Federal Ministry of Education and Research</a>.</p>
 
 <h3 id="general-requirements">General Requirements</h3>
 <ol>
-  <li>Hardware:<br/>
-To <strong>install the bridgehead</strong> we recommend a server that can run <a href="https://docs.docker.com/get-docker/">docker</a> (manual installation is also possible but not recommended) with the following requirements:
+  <li>Hardware:
     <ul>
       <li>16 GB RAM</li>
       <li>50 GB disk space (depends on amount of data)</li>
@@ -205,23 +214,30 @@ To <strong>install the bridgehead</strong> we recommend a server that can run <a
       <li>Firewall to restrict access from internal network is recommended.</li>
     </ul>
   </li>
+  <li>Software:
+We recommend using Docker for installing the Bridgehead components on your site, and we make this easy for you by providing a fully configured Docker bundle for this purpose. Manual installation is also possible but entails significantly more work. So you will need to install:
+    <ul>
+      <li><a href="https://www.atlassian.com/git/tutorials/install-git">git</a></li>
+      <li><a href="https://docs.docker.com/get-docker/">docker</a></li>
+    </ul>
+  </li>
   <li>
     <p>Data protection:<br/>
 Read this <a href="https://www.bbmri.de/biobanking/it/data-protection-concept/?L=1">Data protection concept</a> carefully and submit it to your data protection authorities. The <strong>data protection concept must be approved</strong> by your local data protection officer.</p>
   </li>
   <li>
     <p>Data access:<br/>
-To fill the store of the bridgehead you need access to clinical data from your <strong>local source systems</strong>. An overview about the clinical data which we want to provide in the ferderated search can be found <a href="overview.html">here</a>.</p>
+To fill the Store of the Bridgehead you need access to clinical data from your <strong>local source systems</strong>. An overview about the clinical data which we want to provide in the ferderated search can be found <a href="overview.html">here</a>.</p>
   </li>
-  <li>Data transformation:<br/>
-The store of the bridgehead stores data as <strong>HL7 FHIR&reg; Bundles</strong>. To import data into the Store, they must be harmonised and converted. Each site must build an ETL-process (extract, transform, load) to harmonise the structure of the data and translate them to fit predefined FHIR&reg; profiles.
+  <li>Data format:<br/>
+The Store of the Bridgehead stores data as <strong>HL7 FHIR&reg; Bundles</strong>. To import data into the Store, they must be harmonised and converted. Each site must build an ETL-process (extract, transform, load) to harmonise the structure of the data and translate them to fit predefined FHIR&reg; profiles.
 You can find our FHIR&reg; profile for the basic data set <a href="https://simplifier.net/bbmri.de">here</a> and for the oncology data set <a href="https://simplifier.net/oncology">here</a>.</li>
 </ol>
 
-<h3 id="guides-to-install-fill-and-connect-a-bridgehead">Guides to install, fill and connect a bridgehead</h3>
-<p>The needed software components are <a href="https://www.bbmri.de/biobanking/it/open-source-software/?L=1">open source</a> and available at the <a href="https://github.com/samply">GitHub samply Repository</a>.</p>
+<h3 id="guides-to-install-fill-and-connect-a-bridgehead">Guides to install, fill and connect a Bridgehead</h3>
+<p>We provide a step-by-step installation guide on the <a href="https://github.com/samply/bridgehead-deployment">Bridgehead Deployment GitHub page</a>.</p>
 
-<p>We provide an <strong>step-by-step installation guide</strong> in the Bridgehead Deployment readme <a href="https://github.com/samply/bridgehead-deployment">here</a>.</p>
+<p>All of the components that make up the Bridgehead are open source. Non-technical descriptions of the components can be found <a href="https://www.bbmri.de/biobanking/it/open-source-software/?L=1">here</a>. If you wish to explore the source code of the components deployed, both locally at your site as well as centrally, please visit the <a href="https://samply.github.io/samply-component-finder/">Component Finder</a>. A complete list of our source code repositories can be found in the <a href="https://github.com/samply">GitHub samply Repository</a>.</p>
 
 <h4 id="fhir-profiles-and-etl">FHIR&reg; profiles and ETL:</h4>
 
@@ -233,10 +249,10 @@ You can find our FHIR&reg; profile for the basic data set <a href="https://simpl
     <p>The FHIR&reg; oncology profiles can be found <a href="https://simplifier.net/oncology">here</a>. The related Implementation Guide can be found <a href="https://simplifier.net/guide/implementationguide4/home">here</a>.</p>
   </li>
   <li>
-    <p>An instruction how to build an ETL-process with Talend Open Studio for Data Integration and Hapi FHIR API can be found <a href="etlTalent.html">here</a>.</p>
+    <p>An example of how to build an ETL-process with Talend Open Studio for Data Integration and Hapi FHIR API can be found <a href="etlTalent.html">here</a>.</p>
   </li>
   <li>
-    <p>An instruction how to validate your FHIR&reg; resources can be found <a href="support.html">here</a>.</p>
+    <p>Instructions on how to validate your FHIR&reg; resources can be found <a href="support.html">here</a>.</p>
   </li>
 </ul>
 
@@ -257,8 +273,19 @@ You can find our FHIR&reg; profile for the basic data set <a href="https://simpl
   </li>
 </ul>
 
+<h4 id="connector-documentations-and-tools">Connector documentations and tools:</h4>
+
+<ul>
+  <li>
+    <p>The official Connector documentation can be found <a href="https://github.com/samply/blaze#connector">here</a>.</p>
+  </li>
+  <li>
+    <p>Specification for the REST interface used by the Connector can be found <a href="https://github.com/samply/share-client/blob/master/docs/diagram/Sequence_diagram_calls.md">here</a>.</p>
+  </li>
+</ul>
+
 <h3 id="reinforcing-the-team">Reinforcing the team</h3>
-<p>Interest in developing and enhancing the Sample Locator components or our other open source software? Read our <a href="https://samply.github.io/manifest">manifesto</a> and join the Samply community!</p>
+<p>Interested in developing and enhancing the Sample Locator components or our other open source software? Read our <a href="https://samply.github.io/manifest">manifesto</a> and join the Samply community!</p>
 
 
 
@@ -282,8 +309,8 @@ You can find our FHIR&reg; profile for the basic data set <a href="https://simpl
   <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
-        <p><a name="9e2acae5-3f1f-4432-831b-3e62849a7d32">​</a>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="bbmri.de">bbmri.de</a>.  Package de.bbmri.fhir#1.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Dec 11, 2020 14:29+0000">2020-12-11</span>
+        <p><a name="57f14564-0126-46c5-b161-9d3b243753dc">​</a>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="bbmri.de">bbmri.de</a>.  Package de.bbmri.fhir#1.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Feb 26, 2021 15:12+0000">2021-02-26</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
