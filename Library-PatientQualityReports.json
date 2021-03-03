@@ -3,7 +3,7 @@
   "id": "PatientQualityReports",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><h3>Ids</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>url</b>: <a href=\"https://fhir.bbmri.de/Library/PatientQualityReports\">https://fhir.bbmri.de/Library/PatientQualityReports</a></p><p><b>version</b>: 1.2.0</p><p><b>name</b>: PatientQualityReports</p><p><b>title</b>: Patient Quality Reports</p><p><b>status</b>: active</p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/library-type logic-library}\">Logic Library</span></p><p><b>subject</b>: <span title=\"Codes: {http://hl7.org/fhir/resource-types Patient}\">Patient</span></p><p><b>date</b>: Feb 26, 2021, 3:12:27 PM</p><p><b>publisher</b>: bbmri.de</p><p><b>contact</b>: bbmri.de: bbmri.de,feedback@germanbiobanknode.de</p><p><b>description</b>: This library contains various expressions used in different patient related quality reports.</p><h3>RelatedArtifacts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr></table><h3>Contents</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr><tr><td>*</td></tr></table></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><h3>Ids</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>url</b>: <a href=\"https://fhir.bbmri.de/Library/PatientQualityReports\">https://fhir.bbmri.de/Library/PatientQualityReports</a></p><p><b>version</b>: 1.2.0</p><p><b>name</b>: PatientQualityReports</p><p><b>title</b>: Patient Quality Reports</p><p><b>status</b>: active</p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/library-type logic-library}\">Logic Library</span></p><p><b>subject</b>: <span title=\"Codes: {http://hl7.org/fhir/resource-types Patient}\">Patient</span></p><p><b>date</b>: Mar 3, 2021, 8:01:39 AM</p><p><b>publisher</b>: bbmri.de</p><p><b>contact</b>: bbmri.de: bbmri.de,feedback@germanbiobanknode.de</p><p><b>description</b>: This library contains various expressions used in different patient related quality reports.</p><h3>RelatedArtifacts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr></table><h3>Contents</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr><tr><td>*</td></tr></table></div>"
   },
   "url": "https://fhir.bbmri.de/Library/PatientQualityReports",
   "version": "1.2.0",
@@ -26,7 +26,7 @@
       }
     ]
   },
-  "date": "2021-02-26T15:12:27+00:00",
+  "date": "2021-03-03T08:01:39+00:00",
   "publisher": "bbmri.de",
   "contact": [
     {

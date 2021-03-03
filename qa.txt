@@ -3,7 +3,7 @@
 
 err = 18, warn = 59, info = 4
 IG Publisher Version: 1.1.25 Out of date - current version is 1.1.59
-Generated Fri Feb 26 15:14:07 UTC 2021. FHIR version 4.0.1 for de.bbmri.fhir#1.2.0 (canonical = https://fhir.bbmri.de)
+Generated Wed Mar 03 08:03:24 UTC 2021. FHIR version 4.0.1 for de.bbmri.fhir#1.2.0 (canonical = https://fhir.bbmri.de)
 
  Build Errors : 398 / 47 / 1
  /home/travis/build/samply/bbmri-fhir-ig/input/ImplementationGuide-de.bbmri.fhir : 2 / 0 / 1
@@ -507,7 +507,7 @@ ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/background.html#/html/body
 ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/downloads.html#/html/body/div/div/div/p/a at Line 235, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
 ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/etlTalent.html#/html/body/div/div/div/p/a at Line 436, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
 ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/howtoJoin.html#/html/body/div/div/div/p/a at Line 313, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
-ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/index.html#/html/body/div/div/div/p/a at Line 234, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/index.html#/html/body/div/div/div/p/a at Line 232, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
 ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/mappings.html#/html/body/div/div/div/p/a at Line 948, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
 ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/overview.html#/html/body/div/div/div/p/a at Line 248, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
 ERROR: /home/travis/build/samply/bbmri-fhir-ig/output/qualityMeasures.html#/html/body/div/div/div/p/a at Line 236, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved

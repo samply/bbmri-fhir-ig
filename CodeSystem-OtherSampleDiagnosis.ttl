@@ -17,7 +17,7 @@
   fhir:CodeSystem.name [ fhir:value "OtherSampleDiagnosis"];
   fhir:CodeSystem.title [ fhir:value "Other Sample Diagnosis"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2021-02-26T15:12:27+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2021-03-03T08:01:39+00:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "bbmri.de"];
   fhir:CodeSystem.contact [
      fhir:index 0;

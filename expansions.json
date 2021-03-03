@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "eac460d6-94cc-444f-b819-0f73c844926f",
+  "id" : "d6b37eb2-1baa-4857-8143-37fdd670f499",
   "meta" : {
-    "lastUpdated" : "2021-02-26T15:12:27.737+00:00"
+    "lastUpdated" : "2021-03-03T08:01:39.297+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -19,7 +19,7 @@
       "name" : "BiobankCapabilities",
       "title" : "Biobank Capabilities",
       "status" : "active",
-      "date" : "2021-02-26T15:12:27+00:00",
+      "date" : "2021-03-03T08:01:39+00:00",
       "publisher" : "bbmri.de",
       "contact" : [{
         "name" : "bbmri.de",
@@ -33,8 +33,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:d7e7798d-0124-4b74-b145-2e157407192d",
-        "timestamp" : "2021-02-26T15:13:13+00:00",
+        "identifier" : "urn:uuid:62514699-3c98-49c1-b4da-f9ca0bcc2fbf",
+        "timestamp" : "2021-03-03T08:02:30+00:00",
         "total" : 11,
         "parameter" : [{
           "name" : "excludeNested",
@@ -116,7 +116,7 @@
       "name" : "CollectionType",
       "title" : "Collection Type",
       "status" : "active",
-      "date" : "2021-02-26T15:12:27+00:00",
+      "date" : "2021-03-03T08:01:39+00:00",
       "publisher" : "bbmri.de",
       "contact" : [{
         "name" : "bbmri.de",
@@ -130,8 +130,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:5e6a39d3-1eb1-4d17-be73-fee9a9254ca3",
-        "timestamp" : "2021-02-26T15:13:20+00:00",
+        "identifier" : "urn:uuid:16f5abaf-a700-4a84-b672-be630401991d",
+        "timestamp" : "2021-03-03T08:02:36+00:00",
         "total" : 15,
         "parameter" : [{
           "name" : "excludeNested",
@@ -233,7 +233,7 @@
       "name" : "DataCategory",
       "title" : "Data Category",
       "status" : "active",
-      "date" : "2021-02-26T15:12:27+00:00",
+      "date" : "2021-03-03T08:01:39+00:00",
       "publisher" : "bbmri.de",
       "contact" : [{
         "name" : "bbmri.de",
@@ -247,8 +247,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:bb0ea086-8005-42f8-8c19-921d0116e47a",
-        "timestamp" : "2021-02-26T15:13:22+00:00",
+        "identifier" : "urn:uuid:e7281b2f-4e3e-4846-80cd-36a0481b1a29",
+        "timestamp" : "2021-03-03T08:02:38+00:00",
         "total" : 9,
         "parameter" : [{
           "name" : "excludeNested",
@@ -320,7 +320,7 @@
       "name" : "OtherSampleDiagnosis",
       "title" : "other sample diagnosis",
       "status" : "active",
-      "date" : "2021-02-26T15:12:27+00:00",
+      "date" : "2021-03-03T08:01:39+00:00",
       "publisher" : "bbmri.de",
       "contact" : [{
         "name" : "bbmri.de",
@@ -334,8 +334,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:47e834c3-74bf-4612-92ee-032c850dc42e",
-        "timestamp" : "2021-02-26T15:13:24+00:00",
+        "identifier" : "urn:uuid:44268ba0-d5b2-44ec-b331-7775fedc82fa",
+        "timestamp" : "2021-03-03T08:02:40+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -382,7 +382,7 @@
       "name" : "QualityStandard",
       "title" : "Quality Standard",
       "status" : "active",
-      "date" : "2021-02-26T15:12:27+00:00",
+      "date" : "2021-03-03T08:01:39+00:00",
       "publisher" : "bbmri.de",
       "contact" : [{
         "name" : "bbmri.de",
@@ -396,8 +396,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:fe8bb8fe-7b70-42fc-8d61-b157cee4bc59",
-        "timestamp" : "2021-02-26T15:13:25+00:00",
+        "identifier" : "urn:uuid:4658de6c-6955-4a40-aba7-c2038720e1a2",
+        "timestamp" : "2021-03-03T08:02:40+00:00",
         "total" : 7,
         "parameter" : [{
           "name" : "excludeNested",
@@ -459,7 +459,7 @@
       "name" : "ResourceType",
       "title" : "Resource Type",
       "status" : "active",
-      "date" : "2021-02-26T15:12:27+00:00",
+      "date" : "2021-03-03T08:01:39+00:00",
       "publisher" : "bbmri.de",
       "contact" : [{
         "name" : "bbmri.de",
@@ -473,8 +473,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:95744405-f982-4810-916b-2c64855f9fa2",
-        "timestamp" : "2021-02-26T15:13:25+00:00",
+        "identifier" : "urn:uuid:c872a538-8519-4636-886a-f29ebc69b2e4",
+        "timestamp" : "2021-03-03T08:02:41+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -516,7 +516,7 @@
       "name" : "SampleMaterialType",
       "title" : "Sample Material Type",
       "status" : "active",
-      "date" : "2021-02-26T15:12:27+00:00",
+      "date" : "2021-03-03T08:01:39+00:00",
       "publisher" : "bbmri.de",
       "contact" : [{
         "name" : "bbmri.de",
@@ -530,8 +530,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:a7e40cfe-4cfb-4ab8-bb61-2a5f1e8b7d40",
-        "timestamp" : "2021-02-26T15:13:25+00:00",
+        "identifier" : "urn:uuid:fab0330f-e2c1-429a-8fc2-3a5a25a23972",
+        "timestamp" : "2021-03-03T08:02:41+00:00",
         "total" : 33,
         "parameter" : [{
           "name" : "excludeNested",
@@ -723,7 +723,7 @@
       "name" : "StorageTemperature",
       "title" : "Storage Temperature",
       "status" : "active",
-      "date" : "2021-02-26T15:12:27+00:00",
+      "date" : "2021-03-03T08:01:39+00:00",
       "publisher" : "bbmri.de",
       "contact" : [{
         "name" : "bbmri.de",
@@ -737,8 +737,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:f23deb93-eed8-4e39-a873-5288266d715a",
-        "timestamp" : "2021-02-26T15:13:26+00:00",
+        "identifier" : "urn:uuid:76994c7f-1c0e-4398-8569-5224424c4005",
+        "timestamp" : "2021-03-03T08:02:42+00:00",
         "total" : 7,
         "parameter" : [{
           "name" : "excludeNested",
