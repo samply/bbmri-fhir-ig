@@ -46,11 +46,7 @@ A sample, as undestood by the Sample Locator, should satisfy the following condi
 * Samples that differ in at least one parameter (central or not) are considered to be different samples and are both counted - or uploaded to the store.
 
 7. Directory collections: 
-If you are participating in the BBMRI Directory, you should create or assign a single collection specifically for use with the Locator. This is because, right now, the Locator can only handle a single collection.  
-
-If you only have a single collection, or if there is only one collection that you wish to make available to the Locator, then you should use that collection.  
-
-However, if you have samples across multiple collections, then you will need to create a new super-collection to be used with the Locator. Your existing collections will then become sub-collections of the new Locatro collection.
+If you are participating in the BBMRI Directory, you should create or assign a single collection specifically for use with the Locator. This is because, right now, the Locator can only handle a single collection.  If you only have a single collection, or if there is only one collection that you wish to make available to the Locator, then you should use that collection.  However, if you have samples across multiple collections, then you will need to create a new super-collection to be used with the Locator. Your existing collections will then become sub-collections of the new Locatro collection.
 
 
 ### Guides to install, fill and connect a Bridgehead
