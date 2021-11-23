@@ -36,8 +36,17 @@ Read this [Data protection concept](https://www.bbmri.de/biobanking/it/data-prot
 To fill the Store of the Bridgehead you need access to clinical data from your **local source systems**. An overview about the clinical data which we want to provide in the ferderated search can be found [here](overview.html).
 
 5. Data format:  
-The Store of the Bridgehead stores data as **HL7 FHIR® Bundles**. To import data into the Store, they must be harmonised and converted. Each site must build an ETL-process (extract, transform, load) to harmonise the structure of the data and translate them to fit predefined FHIR® profiles.
+The Store of the Bridgehead stores data as **HL7 FHIR® Resources**. To import data into the Store, they must be harmonised and converted. Each site must build an ETL-pipeline (extract, transform, load) to harmonise the structure of the data and translate them to fit predefined FHIR® profiles.
 You can find our FHIR® profile for the basic data set [here](https://simplifier.net/bbmri.de) and for the oncology data set [here](https://simplifier.net/oncology).
+
+6. Definition of "Sample": 
+A sample, as undestood by the Sample Locator, should satisfy the following conditions:
+
+* Samples for which all parameters are identical are considered to be a single sample and will counted only once - or- may only be loaded once into the store. & 
+* Aliquots for which all must-support parameters from the profile are identical are considered to be a single sample and should be loaded only one in the store.
+
+7. Directory collections: 
+If you are participating in the BBMRI Directory, you should create or assign a single collection specifically for use with the Locator. This is because, right now, the Locator can only present sample counts for a single collection.  If you only have a single collection, or if there is only one collection that you wish to make available to the Locator, then you should use that collection.
 
 
 ### Guides to install, fill and connect a Bridgehead
