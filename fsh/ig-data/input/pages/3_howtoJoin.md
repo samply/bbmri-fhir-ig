@@ -15,10 +15,12 @@ The **organization behind** the development is the [German Biobank Node](https:/
 
 
 ### General Requirements
-1. Hardware:  
+1. Hardware
+
+**_NOTE_**: For these specs the optimal number of samples is 500 000 or 700 000max!!
 * 16 GB RAM
 * 50 GB disk space (depends on amount of data)
-* 2 or 4 CPU cores
+* 4 CPU cores
 * OS with support for [docker](https://docs.docker.com/get-docker/) (e.g. Linux, Windows 10 with hyper-V, macOS)
 * Outgoing http and https
 * Proxies are supported. No VPN or incoming ports required. 
