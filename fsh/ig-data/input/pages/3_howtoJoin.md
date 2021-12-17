@@ -17,7 +17,7 @@ The **organization behind** the development is the [German Biobank Node](https:/
 ### General Requirements
 1. Hardware
 
-**_NOTE_**: For these specs the optimal number of samples is 500 000 or 700 000max!!
+**_NOTE_**: With these hardware specifications, the maximum number of samples that can be handled is about 700 000 for simple queries. If you want to be able to deal with more complex queries in reasonable time, then it is recommended that you limit your sample count to a maximum of 500 000.
 * 16 GB RAM
 * 50 GB disk space (depends on amount of data)
 * 4 CPU cores
