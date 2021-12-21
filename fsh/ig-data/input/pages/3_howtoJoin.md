@@ -71,5 +71,12 @@ All of the components that make up the Bridgehead are open source. Non-technical
 
 * Specification for the REST interface used by the Connector can be found [here](https://github.com/samply/share-client/blob/master/docs/diagram/Sequence_diagram_calls.md).
 
+### Staying in contact
+
+If you encounter problems or have further questions, you can contact us via the following email addresses:
+
+* For problems or questions regarding the GBA (Sample Locator) network, please send an email to: feedback@germanbiobanknode.de
+* For problems or questions regarding the BBMRI (Locator) network, please send an email to: federated-platform@helpdesk.bbmri-eric.eu
+
 ### Reinforcing the team
 Interested in developing and enhancing the Sample Locator components or our other open source software? Read our [manifesto](https://samply.github.io/manifest) and join the Samply community!
