@@ -23,7 +23,7 @@ jobs:
       run: mkdir input-cache
 
     - name: Download Publisher
-      run: wget -q https://github.com/HL7/fhir-ig-publisher/releases/download/1.1.25/publisher.jar -O input-cache/publisher.jar
+      run: wget -q https://github.com/HL7/fhir-ig-publisher/releases/download/1.1.93/publisher.jar -O input-cache/publisher.jar
 
     - name: List Dirs
       run: ls -lR
