@@ -58,7 +58,7 @@
         "constraint": [
           {
             "key": "slicing-1",
-            "severity": "error",
+            "severity": "warning",
             "human": "When slice no-icd is present, the other slices must not be present",
             "expression": "no-icd.exists().not() or (icd-10-who.exists() or icd-10-gm.exists() or icd-9.exists()).not()"
           }
