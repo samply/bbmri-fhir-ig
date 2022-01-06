@@ -53,7 +53,7 @@
       "coding": [
         {
           "code": "C26.8",
-          "system": "urn:oid:1.3.6.1.4.1.19376.1.3.11.36"
+          "system": "http://hl7.org/fhir/sid/icd-10"
         }
       ]
     },
