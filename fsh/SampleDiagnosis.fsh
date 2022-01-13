@@ -5,8 +5,8 @@ Title: "Sample Diagnosis"
 * ^context.expression = "Specimen"
 * value[x] 1..
 * value[x] only CodeableConcept
+* value[x] obeys slicing-1
 * value[x].coding 1..
-* value[x].coding obeys slicing-1
 * value[x].coding ^slicing.discriminator[0].type = #value
 * value[x].coding ^slicing.discriminator[=].path = "system"
 * value[x].coding ^slicing.discriminator[+].type = #value
@@ -31,4 +31,4 @@ Title: "Sample Diagnosis"
 Invariant: slicing-1
 Description: "When slice no-icd is present, the other slices must not be present"
 Severity: #error
-Expression: "no-icd.exists().not() or (icd-10-who.exists() or icd-10-gm.exists() or icd-9.exists()).not()"
+Expression: "$this.coding.where(system='https://fhir.bbmri.de/CodeSystem/OtherSampleDiagnosis').exists().not() or ($this.coding.where(system='http://hl7.org/fhir/sid/icd-10').exists() or $this.coding.where(system='http://fhir.de/CodeSystem/dimdi/icd-10-gm').exists() or $this.coding.where(system='http://hl7.org/fhir/sid/icd-9').exists()).not()"
