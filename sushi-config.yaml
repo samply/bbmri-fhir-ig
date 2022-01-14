@@ -1,10 +1,5 @@
-# ╭─────────────────────────────ImplementationGuide-de.bbmri.fhir.json─────────────────────────────╮
-# │  The properties below are used to create the ImplementationGuide resource. For a list of       │
-# │  supported properties, see:                                                                    │
-# │  http://build.fhir.org/ig/HL7/fhir-shorthand/branches/beta/sushi.html#ig-development           │
-# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: de.bbmri.fhir
-canonical: https://fhir.bbmri.de/ImplementationGuide/de.bbmri.fhir
+canonical: https://fhir.bbmri.de
 version: 1.2.0
 name: BBMRI_DE_IG
 title: BBMRI.de/GBA Implementation Guide
