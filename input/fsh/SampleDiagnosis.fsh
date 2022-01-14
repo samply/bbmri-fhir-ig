@@ -8,11 +8,11 @@ Title: "Sample Diagnosis"
 * value[x] obeys slicing-1
 * value[x].coding 1..
 * value[x].coding ^slicing.discriminator[0].type = #value
-* value[x].coding ^slicing.discriminator[=].path = "system"
-* value[x].coding ^slicing.discriminator[+].type = #value
-* value[x].coding ^slicing.discriminator[=].path = "version"
-* value[x].coding ^slicing.discriminator[+].type = #value
-* value[x].coding ^slicing.discriminator[=].path = "$this"
+* value[x].coding ^slicing.discriminator[0].path = "system"
+* value[x].coding ^slicing.discriminator[1].type = #value
+* value[x].coding ^slicing.discriminator[1].path = "version"
+* value[x].coding ^slicing.discriminator[2].type = #value
+* value[x].coding ^slicing.discriminator[2].path = "$this"
 * value[x].coding ^slicing.rules = #closed
 * value[x].coding contains icd-10-who 0..* and icd-10-gm 0..* and icd-9 0..* and no-icd 0..*
 * value[x].coding[icd-10-who].system 1..

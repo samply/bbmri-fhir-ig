@@ -28,11 +28,6 @@ copyrightYear: 2020+
 releaseLabel: CI Build
 path-binary: input/other
 
-# ╭─────────────────────────────────────────────ig.ini─────────────────────────────────────────────╮
-# │  To use a provided ig-data/ig.ini file, delete the "template" property below.                  │
-# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-template: ./bbmri.deTemplate
-
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │  To use a provided ig-data/input/includes/menu.xml file, delete the "menu" property below.     │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
@@ -51,4 +46,26 @@ menu:
   Support:
     Instructions: support.html
     Downloads: downloads.html
-    FHIR Spec: new-tab external http://hl7.org/fhir/R4/index.html
+    FHIR Spec: new-tab http://hl7.org/fhir/R4/index.html
+
+pages:
+  index.md:
+    title: IG Home
+  overview.md:
+    title: Overview
+  background.md:
+    title: Background
+  howtoJoin.md:
+    title: How To Join
+  mappings.md:
+    title: Mappings
+  referencedIGs.md:
+    title: Referenced IGs
+  support.md:
+    title: Instructions
+  etlTalend.md:
+    title: Build ETL with TOS
+  qualityMeasures.md:
+    title: Quality Measures
+  downloads.xml:
+    title: Downloads
