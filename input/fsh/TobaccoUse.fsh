@@ -16,7 +16,7 @@ Description:    "Tobacco use"
 * effective[x] only dateTime
 
 * value[x] only CodeableConcept
-* valueCodeableConcept from http://hl7.org/fhir/uv/ips/ValueSet/current-smoking-status-uv-ips (required)
+* value[x] from http://hl7.org/fhir/uv/ips/ValueSet/current-smoking-status-uv-ips (required)
 
 //Remove component for IPS compatibility
 * component 0..0
