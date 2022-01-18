@@ -1,0 +1,66 @@
+id: de.bbmri.fhir
+canonical: https://fhir.bbmri.de
+version: 1.2.0
+name: BBMRI_DE_IG
+title: BBMRI.de/GBA Implementation Guide
+status: active
+publisher:
+    name: bbmri.de
+    url: bbmri.de
+    email: feedback@germanbiobanknode.de
+description: Profiles for the BBMRI.de / GBA biobanking project.
+license: CC-BY-SA-4.0
+fhirVersion: 4.0.1
+dependencies:
+  hl7.fhir.uv.ips: 0.3.0
+  de.basisprofil.r4:
+    uri: https://simplifier.net/packages/de.basisprofil.r4/0.9.6/files/129540
+    version: 0.9.6
+parameters:
+  show-inherited-invariants: false
+  path-binary: input/other
+copyrightYear: 2020+
+releaseLabel: CI Build
+path-binary: input/other
+
+# ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
+# │  To use a provided ig-data/input/includes/menu.xml file, delete the "menu" property below.     │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+menu:
+  IG Home: index.html
+  Table of Contents: toc.html
+  Artifact Index: artifacts.html
+  Profile Overview: overview.html
+  How to Join the Sample Locator: howtoJoin.html
+  Background:
+    Overview: background.html
+    Mappings: mappings.html
+    Referenced IGs: referencedIGs.html
+    Build ETL with TOS: etlTalend.html
+    Quality Measures: qualityMeasures.html
+  Support:
+    Instructions: support.html
+    Downloads: downloads.html
+    FHIR Spec: new-tab http://hl7.org/fhir/R4/index.html
+
+pages:
+  index.md:
+    title: IG Home
+  overview.md:
+    title: Overview
+  background.md:
+    title: Background
+  howtoJoin.md:
+    title: How To Join
+  mappings.md:
+    title: Mappings
+  referencedIGs.md:
+    title: Referenced IGs
+  support.md:
+    title: Instructions
+  etlTalend.md:
+    title: Build ETL with TOS
+  qualityMeasures.md:
+    title: Quality Measures
+  downloads.xml:
+    title: Downloads
