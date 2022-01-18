@@ -1,0 +1,1164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library xmlns="urn:hl7-org:elm:r1" xmlns:t="urn:hl7-org:elm-types:r1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:fhir="http://hl7.org/fhir" xmlns:qdm43="urn:healthit-gov:qdm:v4_3" xmlns:qdm53="urn:healthit-gov:qdm:v5_3" xmlns:a="urn:hl7-org:cql-annotations:r1">
+   <annotation translatorOptions="EnableAnnotations,EnableLocators,DisableListDemotion,DisableListPromotion" xsi:type="a:CqlToElmInfo"/>
+   <identifier id="Retrieve" system="https://fhir.bbmri.de"/>
+   <schemaIdentifier id="urn:hl7-org:elm" version="r1"/>
+   <usings>
+      <def localIdentifier="System" uri="urn:hl7-org:elm-types:r1"/>
+      <def localId="1" locator="2:1-2:26" localIdentifier="FHIR" uri="http://hl7.org/fhir" version="4.0.0">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="1">
+               <a:s>using FHIR version '4.0.0'</a:s>
+            </a:s>
+         </annotation>
+      </def>
+   </usings>
+   <includes>
+      <def localId="2" locator="3:1-3:35" localIdentifier="FHIRHelpers" path="https://fhir.bbmri.de/FHIRHelpers" version="4.0.0">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="2">
+               <a:s>include </a:s>
+               <a:s>
+                  <a:s>FHIRHelpers</a:s>
+               </a:s>
+               <a:s> version '4.0.0'</a:s>
+            </a:s>
+         </annotation>
+      </def>
+   </includes>
+   <contexts>
+      <def locator="5:1-5:16" name="Specimen"/>
+   </contexts>
+   <statements>
+      <def locator="5:1-5:16" name="Specimen" context="Specimen">
+         <expression xsi:type="SingletonFrom">
+            <operand locator="5:1-5:16" dataType="fhir:Specimen" xsi:type="Retrieve"/>
+         </expression>
+      </def>
+      <def localId="4" locator="7:1-8:6" name="InInitialPopulation" context="Specimen" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="4">
+               <a:s r="3">define InInitialPopulation:
+  true</a:s>
+            </a:s>
+         </annotation>
+         <expression localId="3" locator="8:3-8:6" valueType="t:Boolean" value="true" xsi:type="Literal"/>
+      </def>
+      <def localId="16" locator="10:1-13:18" name="FirstSampleMaterialType" context="Specimen" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="16">
+               <a:s>define FirstSampleMaterialType:
+  </a:s>
+               <a:s r="15">
+                  <a:s>First(</a:s>
+                  <a:s r="14">
+                     <a:s>
+                        <a:s>from </a:s>
+                        <a:s r="6">
+                           <a:s r="5">
+                              <a:s>
+                                 <a:s>Specimen.type.coding</a:s>
+                              </a:s>
+                           </a:s>
+                           <a:s> C</a:s>
+                        </a:s>
+                     </a:s>
+                     <a:s>
+    </a:s>
+                     <a:s r="10">
+                        <a:s>where </a:s>
+                        <a:s r="10">
+                           <a:s r="8">
+                              <a:s r="7">
+                                 <a:s>C</a:s>
+                              </a:s>
+                              <a:s>.</a:s>
+                              <a:s r="8">
+                                 <a:s>system</a:s>
+                              </a:s>
+                           </a:s>
+                           <a:s> = </a:s>
+                           <a:s r="9">
+                              <a:s>'https://fhir.bbmri.de/CodeSystem/SampleMaterialType'</a:s>
+                           </a:s>
+                        </a:s>
+                     </a:s>
+                     <a:s>
+    </a:s>
+                     <a:s r="13">
+                        <a:s>return </a:s>
+                        <a:s r="12">
+                           <a:s r="11">
+                              <a:s>C</a:s>
+                           </a:s>
+                           <a:s>.</a:s>
+                           <a:s r="12">
+                              <a:s>code</a:s>
+                           </a:s>
+                        </a:s>
+                     </a:s>
+                  </a:s>
+                  <a:s>)</a:s>
+               </a:s>
+            </a:s>
+         </annotation>
+         <expression localId="15" locator="11:3-13:18" xsi:type="First">
+            <source localId="14" locator="11:9-13:17" xsi:type="Query">
+               <source localId="6" locator="11:14-11:35" alias="C">
+                  <expression localId="5" locator="11:14-11:33" path="coding" xsi:type="Property">
+                     <source path="type" xsi:type="Property">
+                        <source name="Specimen" xsi:type="ExpressionRef"/>
+                     </source>
+                  </expression>
+               </source>
+               <where localId="10" locator="12:5-12:74" xsi:type="Equal">
+                  <operand name="ToString" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                     <operand localId="8" locator="12:11-12:18" path="system" scope="C" xsi:type="Property"/>
+                  </operand>
+                  <operand localId="9" locator="12:22-12:74" valueType="t:String" value="https://fhir.bbmri.de/CodeSystem/SampleMaterialType" xsi:type="Literal"/>
+               </where>
+               <return localId="13" locator="13:5-13:17">
+                  <expression localId="12" locator="13:12-13:17" path="code" scope="C" xsi:type="Property"/>
+               </return>
+            </source>
+         </expression>
+      </def>
+      <def localId="28" locator="15:1-18:18" name="NumberOfSampleMaterialTypes" context="Specimen" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="28">
+               <a:s>define NumberOfSampleMaterialTypes:
+  </a:s>
+               <a:s r="27">
+                  <a:s>Count(</a:s>
+                  <a:s r="26">
+                     <a:s>
+                        <a:s>from </a:s>
+                        <a:s r="18">
+                           <a:s r="17">
+                              <a:s>
+                                 <a:s>Specimen.type.coding</a:s>
+                              </a:s>
+                           </a:s>
+                           <a:s> C</a:s>
+                        </a:s>
+                     </a:s>
+                     <a:s>
+    </a:s>
+                     <a:s r="22">
+                        <a:s>where </a:s>
+                        <a:s r="22">
+                           <a:s r="20">
+                              <a:s r="19">
+                                 <a:s>C</a:s>
+                              </a:s>
+                              <a:s>.</a:s>
+                              <a:s r="20">
+                                 <a:s>system</a:s>
+                              </a:s>
+                           </a:s>
+                           <a:s> = </a:s>
+                           <a:s r="21">
+                              <a:s>'https://fhir.bbmri.de/CodeSystem/SampleMaterialType'</a:s>
+                           </a:s>
+                        </a:s>
+                     </a:s>
+                     <a:s>
+    </a:s>
+                     <a:s r="25">
+                        <a:s>return </a:s>
+                        <a:s r="24">
+                           <a:s r="23">
+                              <a:s>C</a:s>
+                           </a:s>
+                           <a:s>.</a:s>
+                           <a:s r="24">
+                              <a:s>code</a:s>
+                           </a:s>
+                        </a:s>
+                     </a:s>
+                  </a:s>
+                  <a:s>)</a:s>
+               </a:s>
+            </a:s>
+         </annotation>
+         <expression localId="27" locator="16:3-18:18" xsi:type="Count">
+            <source localId="26" locator="16:9-18:17" xsi:type="Query">
+               <source localId="18" locator="16:14-16:35" alias="C">
+                  <expression localId="17" locator="16:14-16:33" path="coding" xsi:type="Property">
+                     <source path="type" xsi:type="Property">
+                        <source name="Specimen" xsi:type="ExpressionRef"/>
+                     </source>
+                  </expression>
+               </source>
+               <where localId="22" locator="17:5-17:74" xsi:type="Equal">
+                  <operand name="ToString" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                     <operand localId="20" locator="17:11-17:18" path="system" scope="C" xsi:type="Property"/>
+                  </operand>
+                  <operand localId="21" locator="17:22-17:74" valueType="t:String" value="https://fhir.bbmri.de/CodeSystem/SampleMaterialType" xsi:type="Literal"/>
+               </where>
+               <return localId="25" locator="18:5-18:17">
+                  <expression localId="24" locator="18:12-18:17" path="code" scope="C" xsi:type="Property"/>
+               </return>
+            </source>
+         </expression>
+      </def>
+      <def localId="35" locator="20:1-21:65" name="CollectedYear" context="Specimen" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="35">
+               <a:s>define CollectedYear:
+  </a:s>
+               <a:s r="34">
+                  <a:s>year from </a:s>
+                  <a:s r="33">
+                     <a:s r="29">
+                        <a:s>FHIRHelpers</a:s>
+                     </a:s>
+                     <a:s>.</a:s>
+                     <a:s r="33">
+                        <a:s>ToDateTime(</a:s>
+                        <a:s r="32">
+                           <a:s r="31">
+                              <a:s r="30">
+                                 <a:s>Specimen</a:s>
+                              </a:s>
+                              <a:s>.</a:s>
+                              <a:s r="31">
+                                 <a:s>collection</a:s>
+                              </a:s>
+                           </a:s>
+                           <a:s>.</a:s>
+                           <a:s r="32">
+                              <a:s>collected</a:s>
+                           </a:s>
+                        </a:s>
+                        <a:s>)</a:s>
+                     </a:s>
+                  </a:s>
+               </a:s>
+            </a:s>
+         </annotation>
+         <expression localId="34" locator="21:3-21:65" precision="Year" xsi:type="DateTimeComponentFrom">
+            <operand localId="33" locator="21:13-21:65" name="ToDateTime" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+               <operand asType="fhir:dateTime" xsi:type="As">
+                  <operand localId="32" locator="21:36-21:64" path="collected" xsi:type="Property">
+                     <source localId="31" locator="21:36-21:54" path="collection" xsi:type="Property">
+                        <source localId="30" locator="21:36-21:43" name="Specimen" xsi:type="ExpressionRef"/>
+                     </source>
+                  </operand>
+               </operand>
+            </operand>
+         </expression>
+      </def>
+      <def localId="42" locator="23:1-24:66" name="CollectedMonth" context="Specimen" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="42">
+               <a:s>define CollectedMonth:
+  </a:s>
+               <a:s r="41">
+                  <a:s>month from </a:s>
+                  <a:s r="40">
+                     <a:s r="36">
+                        <a:s>FHIRHelpers</a:s>
+                     </a:s>
+                     <a:s>.</a:s>
+                     <a:s r="40">
+                        <a:s>ToDateTime(</a:s>
+                        <a:s r="39">
+                           <a:s r="38">
+                              <a:s r="37">
+                                 <a:s>Specimen</a:s>
+                              </a:s>
+                              <a:s>.</a:s>
+                              <a:s r="38">
+                                 <a:s>collection</a:s>
+                              </a:s>
+                           </a:s>
+                           <a:s>.</a:s>
+                           <a:s r="39">
+                              <a:s>collected</a:s>
+                           </a:s>
+                        </a:s>
+                        <a:s>)</a:s>
+                     </a:s>
+                  </a:s>
+               </a:s>
+            </a:s>
+         </annotation>
+         <expression localId="41" locator="24:3-24:66" precision="Month" xsi:type="DateTimeComponentFrom">
+            <operand localId="40" locator="24:14-24:66" name="ToDateTime" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+               <operand asType="fhir:dateTime" xsi:type="As">
+                  <operand localId="39" locator="24:37-24:65" path="collected" xsi:type="Property">
+                     <source localId="38" locator="24:37-24:55" path="collection" xsi:type="Property">
+                        <source localId="37" locator="24:37-24:44" name="Specimen" xsi:type="ExpressionRef"/>
+                     </source>
+                  </operand>
+               </operand>
+            </operand>
+         </expression>
+      </def>
+      <def localId="49" locator="26:1-27:64" name="CollectedDay" context="Specimen" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="49">
+               <a:s>define CollectedDay:
+  </a:s>
+               <a:s r="48">
+                  <a:s>day from </a:s>
+                  <a:s r="47">
+                     <a:s r="43">
+                        <a:s>FHIRHelpers</a:s>
+                     </a:s>
+                     <a:s>.</a:s>
+                     <a:s r="47">
+                        <a:s>ToDateTime(</a:s>
+                        <a:s r="46">
+                           <a:s r="45">
+                              <a:s r="44">
+                                 <a:s>Specimen</a:s>
+                              </a:s>
+                              <a:s>.</a:s>
+                              <a:s r="45">
+                                 <a:s>collection</a:s>
+                              </a:s>
+                           </a:s>
+                           <a:s>.</a:s>
+                           <a:s r="46">
+                              <a:s>collected</a:s>
+                           </a:s>
+                        </a:s>
+                        <a:s>)</a:s>
+                     </a:s>
+                  </a:s>
+               </a:s>
+            </a:s>
+         </annotation>
+         <expression localId="48" locator="27:3-27:64" precision="Day" xsi:type="DateTimeComponentFrom">
+            <operand localId="47" locator="27:12-27:64" name="ToDateTime" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+               <operand asType="fhir:dateTime" xsi:type="As">
+                  <operand localId="46" locator="27:35-27:63" path="collected" xsi:type="Property">
+                     <source localId="45" locator="27:35-27:53" path="collection" xsi:type="Property">
+                        <source localId="44" locator="27:35-27:42" name="Specimen" xsi:type="ExpressionRef"/>
+                     </source>
+                  </operand>
+               </operand>
+            </operand>
+         </expression>
+      </def>
+      <def localId="56" locator="29:1-30:65" name="CollectedHour" context="Specimen" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="56">
+               <a:s>define CollectedHour:
+  </a:s>
+               <a:s r="55">
+                  <a:s>hour from </a:s>
+                  <a:s r="54">
+                     <a:s r="50">
+                        <a:s>FHIRHelpers</a:s>
+                     </a:s>
+                     <a:s>.</a:s>
+                     <a:s r="54">
+                        <a:s>ToDateTime(</a:s>
+                        <a:s r="53">
+                           <a:s r="52">
+                              <a:s r="51">
+                                 <a:s>Specimen</a:s>
+                              </a:s>
+                              <a:s>.</a:s>
+                              <a:s r="52">
+                                 <a:s>collection</a:s>
+                              </a:s>
+                           </a:s>
+                           <a:s>.</a:s>
+                           <a:s r="53">
+                              <a:s>collected</a:s>
+                           </a:s>
+                        </a:s>
+                        <a:s>)</a:s>
+                     </a:s>
+                  </a:s>
+               </a:s>
+            </a:s>
+         </annotation>
+         <expression localId="55" locator="30:3-30:65" precision="Hour" xsi:type="DateTimeComponentFrom">
+            <operand localId="54" locator="30:13-30:65" name="ToDateTime" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+               <operand asType="fhir:dateTime" xsi:type="As">
+                  <operand localId="53" locator="30:36-30:64" path="collected" xsi:type="Property">
+                     <source localId="52" locator="30:36-30:54" path="collection" xsi:type="Property">
+                        <source localId="51" locator="30:36-30:43" name="Specimen" xsi:type="ExpressionRef"/>
+                     </source>
+                  </operand>
+               </operand>
+            </operand>
+         </expression>
+      </def>
+      <def localId="69" locator="32:1-36:27" name="StorageTemperatureCodings" context="Specimen" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="69">
+               <a:s>define StorageTemperatureCodings:
+  </a:s>
+               <a:s r="68">
+                  <a:s>flatten
+    </a:s>
+                  <a:s r="67">
+                     <a:s>
+                        <a:s>from </a:s>
+                        <a:s r="58">
+                           <a:s r="57">
+                              <a:s>
+                                 <a:s>Specimen.extension</a:s>
+                              </a:s>
+                           </a:s>
+                           <a:s> E</a:s>
+                        </a:s>
+                     </a:s>
+                     <a:s>
+      </a:s>
+                     <a:s r="62">
+                        <a:s>where </a:s>
+                        <a:s r="62">
+                           <a:s r="60">
+                              <a:s r="59">
+                                 <a:s>E</a:s>
+                              </a:s>
+                              <a:s>.</a:s>
+                              <a:s r="60">
+                                 <a:s>url</a:s>
+                              </a:s>
+                           </a:s>
+                           <a:s> = </a:s>
+                           <a:s r="61">
+                              <a:s>'https://fhir.bbmri.de/StructureDefinition/StorageTemperature'</a:s>
+                           </a:s>
+                        </a:s>
+                     </a:s>
+                     <a:s>
+      </a:s>
+                     <a:s r="66">
+                        <a:s>return </a:s>
+                        <a:s r="65">
+                           <a:s r="64">
+                              <a:s r="63">
+                                 <a:s>E</a:s>
+                              </a:s>
+                              <a:s>.</a:s>
+                              <a:s r="64">
+                                 <a:s>value</a:s>
+                              </a:s>
+                           </a:s>
+                           <a:s>.</a:s>
+                           <a:s r="65">
+                              <a:s>coding</a:s>
+                           </a:s>
+                        </a:s>
+                     </a:s>
+                  </a:s>
+               </a:s>
+            </a:s>
+         </annotation>
+         <expression localId="68" locator="33:3-36:27" xsi:type="Flatten">
+            <operand localId="67" locator="34:5-36:27" xsi:type="Query">
+               <source localId="58" locator="34:10-34:29" alias="E">
+                  <expression localId="57" locator="34:10-34:27" path="extension" xsi:type="Property">
+                     <source name="Specimen" xsi:type="ExpressionRef"/>
+                  </expression>
+               </source>
+               <where localId="62" locator="35:7-35:82" xsi:type="Equal">
+                  <operand name="ToString" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                     <operand localId="60" locator="35:13-35:17" path="url" scope="E" xsi:type="Property"/>
+                  </operand>
+                  <operand localId="61" locator="35:21-35:82" valueType="t:String" value="https://fhir.bbmri.de/StructureDefinition/StorageTemperature" xsi:type="Literal"/>
+               </where>
+               <return localId="66" locator="36:7-36:27">
+                  <expression localId="65" locator="36:14-36:27" path="coding" xsi:type="Property">
+                     <source localId="64" locator="36:14-36:20" path="value" scope="E" xsi:type="Property"/>
+                  </expression>
+               </return>
+            </operand>
+         </expression>
+      </def>
+      <def localId="82" locator="38:1-41:24" name="StorageTemperatureCodes" context="Specimen" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="82">
+               <a:s>define StorageTemperatureCodes:
+  </a:s>
+               <a:s r="81">
+                  <a:s>Combine(</a:s>
+                  <a:s r="79">
+                     <a:s>
+                        <a:s>from </a:s>
+                        <a:s r="71">
+                           <a:s r="70">
+                              <a:s>
+                                 <a:s>StorageTemperatureCodings</a:s>
+                              </a:s>
+                           </a:s>
+                           <a:s> C</a:s>
+                        </a:s>
+                     </a:s>
+                     <a:s>
+    </a:s>
+                     <a:s r="75">
+                        <a:s>where </a:s>
+                        <a:s r="75">
+                           <a:s r="73">
+                              <a:s r="72">
+                                 <a:s>C</a:s>
+                              </a:s>
+                              <a:s>.</a:s>
+                              <a:s r="73">
+                                 <a:s>system</a:s>
+                              </a:s>
+                           </a:s>
+                           <a:s> = </a:s>
+                           <a:s r="74">
+                              <a:s>'https://fhir.bbmri.de/CodeSystem/StorageTemperature'</a:s>
+                           </a:s>
+                        </a:s>
+                     </a:s>
+                     <a:s>
+    </a:s>
+                     <a:s r="78">
+                        <a:s>return </a:s>
+                        <a:s r="77">
+                           <a:s r="76">
+                              <a:s>C</a:s>
+                           </a:s>
+                           <a:s>.</a:s>
+                           <a:s r="77">
+                              <a:s>code</a:s>
+                           </a:s>
+                        </a:s>
+                     </a:s>
+                  </a:s>
+                  <a:s>, </a:s>
+                  <a:s r="80">
+                     <a:s>', '</a:s>
+                  </a:s>
+                  <a:s>)</a:s>
+               </a:s>
+            </a:s>
+         </annotation>
+         <expression localId="81" locator="39:3-41:24" xsi:type="Combine">
+            <source xsi:type="Query">
+               <source alias="X">
+                  <expression localId="79" locator="39:11-41:17" xsi:type="Query">
+                     <source localId="71" locator="39:16-39:42" alias="C">
+                        <expression localId="70" locator="39:16-39:40" name="StorageTemperatureCodings" xsi:type="ExpressionRef"/>
+                     </source>
+                     <where localId="75" locator="40:5-40:74" xsi:type="Equal">
+                        <operand name="ToString" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                           <operand localId="73" locator="40:11-40:18" path="system" scope="C" xsi:type="Property"/>
+                        </operand>
+                        <operand localId="74" locator="40:22-40:74" valueType="t:String" value="https://fhir.bbmri.de/CodeSystem/StorageTemperature" xsi:type="Literal"/>
+                     </where>
+                     <return localId="78" locator="41:5-41:17">
+                        <expression localId="77" locator="41:12-41:17" path="code" scope="C" xsi:type="Property"/>
+                     </return>
+                  </expression>
+               </source>
+               <return distinct="false">
+                  <expression name="ToString" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                     <operand name="X" xsi:type="AliasRef"/>
+                  </expression>
+               </return>
+            </source>
+            <separator localId="80" locator="41:20-41:23" valueType="t:String" value=", " xsi:type="Literal"/>
+         </expression>
+      </def>
+      <def localId="91" locator="43:1-45:75" name="NumberOfStorageTemperatureCodes" context="Specimen" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="91">
+               <a:s>define NumberOfStorageTemperatureCodes:
+  </a:s>
+               <a:s r="90">
+                  <a:s>Count(</a:s>
+                  <a:s r="89">
+                     <a:s>
+                        <a:s>from </a:s>
+                        <a:s r="84">
+                           <a:s r="83">
+                              <a:s>
+                                 <a:s>StorageTemperatureCodings</a:s>
+                              </a:s>
+                           </a:s>
+                           <a:s> C</a:s>
+                        </a:s>
+                     </a:s>
+                     <a:s>
+    </a:s>
+                     <a:s r="88">
+                        <a:s>where </a:s>
+                        <a:s r="88">
+                           <a:s r="86">
+                              <a:s r="85">
+                                 <a:s>C</a:s>
+                              </a:s>
+                              <a:s>.</a:s>
+                              <a:s r="86">
+                                 <a:s>system</a:s>
+                              </a:s>
+                           </a:s>
+                           <a:s> = </a:s>
+                           <a:s r="87">
+                              <a:s>'https://fhir.bbmri.de/CodeSystem/StorageTemperature'</a:s>
+                           </a:s>
+                        </a:s>
+                     </a:s>
+                  </a:s>
+                  <a:s>)</a:s>
+               </a:s>
+            </a:s>
+         </annotation>
+         <expression localId="90" locator="44:3-45:75" xsi:type="Count">
+            <source localId="89" locator="44:9-45:74" xsi:type="Query">
+               <source localId="84" locator="44:14-44:40" alias="C">
+                  <expression localId="83" locator="44:14-44:38" name="StorageTemperatureCodings" xsi:type="ExpressionRef"/>
+               </source>
+               <where localId="88" locator="45:5-45:74" xsi:type="Equal">
+                  <operand name="ToString" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                     <operand localId="86" locator="45:11-45:18" path="system" scope="C" xsi:type="Property"/>
+                  </operand>
+                  <operand localId="87" locator="45:22-45:74" valueType="t:String" value="https://fhir.bbmri.de/CodeSystem/StorageTemperature" xsi:type="Literal"/>
+               </where>
+            </source>
+         </expression>
+      </def>
+      <def localId="104" locator="47:1-51:25" name="SampleDiagnosisCodings" context="Specimen" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="104">
+               <a:s>define SampleDiagnosisCodings:
+  </a:s>
+               <a:s r="103">
+                  <a:s>flatten
+    </a:s>
+                  <a:s r="102">
+                     <a:s>
+                        <a:s>from </a:s>
+                        <a:s r="93">
+                           <a:s r="92">
+                              <a:s>
+                                 <a:s>Specimen.extension</a:s>
+                              </a:s>
+                           </a:s>
+                           <a:s> E</a:s>
+                        </a:s>
+                     </a:s>
+                     <a:s>
+    </a:s>
+                     <a:s r="97">
+                        <a:s>where </a:s>
+                        <a:s r="97">
+                           <a:s r="95">
+                              <a:s r="94">
+                                 <a:s>E</a:s>
+                              </a:s>
+                              <a:s>.</a:s>
+                              <a:s r="95">
+                                 <a:s>url</a:s>
+                              </a:s>
+                           </a:s>
+                           <a:s> = </a:s>
+                           <a:s r="96">
+                              <a:s>'https://fhir.bbmri.de/StructureDefinition/SampleDiagnosis'</a:s>
+                           </a:s>
+                        </a:s>
+                     </a:s>
+                     <a:s>
+    </a:s>
+                     <a:s r="101">
+                        <a:s>return </a:s>
+                        <a:s r="100">
+                           <a:s r="99">
+                              <a:s r="98">
+                                 <a:s>E</a:s>
+                              </a:s>
+                              <a:s>.</a:s>
+                              <a:s r="99">
+                                 <a:s>value</a:s>
+                              </a:s>
+                           </a:s>
+                           <a:s>.</a:s>
+                           <a:s r="100">
+                              <a:s>coding</a:s>
+                           </a:s>
+                        </a:s>
+                     </a:s>
+                  </a:s>
+               </a:s>
+            </a:s>
+         </annotation>
+         <expression localId="103" locator="48:3-51:25" xsi:type="Flatten">
+            <operand localId="102" locator="49:5-51:25" xsi:type="Query">
+               <source localId="93" locator="49:10-49:29" alias="E">
+                  <expression localId="92" locator="49:10-49:27" path="extension" xsi:type="Property">
+                     <source name="Specimen" xsi:type="ExpressionRef"/>
+                  </expression>
+               </source>
+               <where localId="97" locator="50:5-50:77" xsi:type="Equal">
+                  <operand name="ToString" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                     <operand localId="95" locator="50:11-50:15" path="url" scope="E" xsi:type="Property"/>
+                  </operand>
+                  <operand localId="96" locator="50:19-50:77" valueType="t:String" value="https://fhir.bbmri.de/StructureDefinition/SampleDiagnosis" xsi:type="Literal"/>
+               </where>
+               <return localId="101" locator="51:5-51:25">
+                  <expression localId="100" locator="51:12-51:25" path="coding" xsi:type="Property">
+                     <source localId="99" locator="51:12-51:18" path="value" scope="E" xsi:type="Property"/>
+                  </expression>
+               </return>
+            </operand>
+         </expression>
+      </def>
+      <def localId="117" locator="53:1-56:24" name="SampleDiagnosisICD10Codes" context="Specimen" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="117">
+               <a:s>define SampleDiagnosisICD10Codes:
+  </a:s>
+               <a:s r="116">
+                  <a:s>Combine(</a:s>
+                  <a:s r="114">
+                     <a:s>
+                        <a:s>from </a:s>
+                        <a:s r="106">
+                           <a:s r="105">
+                              <a:s>
+                                 <a:s>SampleDiagnosisCodings</a:s>
+                              </a:s>
+                           </a:s>
+                           <a:s> C</a:s>
+                        </a:s>
+                     </a:s>
+                     <a:s>
+    </a:s>
+                     <a:s r="110">
+                        <a:s>where </a:s>
+                        <a:s r="110">
+                           <a:s r="108">
+                              <a:s r="107">
+                                 <a:s>C</a:s>
+                              </a:s>
+                              <a:s>.</a:s>
+                              <a:s r="108">
+                                 <a:s>system</a:s>
+                              </a:s>
+                           </a:s>
+                           <a:s> = </a:s>
+                           <a:s r="109">
+                              <a:s>'http://hl7.org/fhir/sid/icd-10'</a:s>
+                           </a:s>
+                        </a:s>
+                     </a:s>
+                     <a:s>
+    </a:s>
+                     <a:s r="113">
+                        <a:s>return </a:s>
+                        <a:s r="112">
+                           <a:s r="111">
+                              <a:s>C</a:s>
+                           </a:s>
+                           <a:s>.</a:s>
+                           <a:s r="112">
+                              <a:s>code</a:s>
+                           </a:s>
+                        </a:s>
+                     </a:s>
+                  </a:s>
+                  <a:s>, </a:s>
+                  <a:s r="115">
+                     <a:s>', '</a:s>
+                  </a:s>
+                  <a:s>)</a:s>
+               </a:s>
+            </a:s>
+         </annotation>
+         <expression localId="116" locator="54:3-56:24" xsi:type="Combine">
+            <source xsi:type="Query">
+               <source alias="X">
+                  <expression localId="114" locator="54:11-56:17" xsi:type="Query">
+                     <source localId="106" locator="54:16-54:39" alias="C">
+                        <expression localId="105" locator="54:16-54:37" name="SampleDiagnosisCodings" xsi:type="ExpressionRef"/>
+                     </source>
+                     <where localId="110" locator="55:5-55:53" xsi:type="Equal">
+                        <operand name="ToString" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                           <operand localId="108" locator="55:11-55:18" path="system" scope="C" xsi:type="Property"/>
+                        </operand>
+                        <operand localId="109" locator="55:22-55:53" valueType="t:String" value="http://hl7.org/fhir/sid/icd-10" xsi:type="Literal"/>
+                     </where>
+                     <return localId="113" locator="56:5-56:17">
+                        <expression localId="112" locator="56:12-56:17" path="code" scope="C" xsi:type="Property"/>
+                     </return>
+                  </expression>
+               </source>
+               <return distinct="false">
+                  <expression name="ToString" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                     <operand name="X" xsi:type="AliasRef"/>
+                  </expression>
+               </return>
+            </source>
+            <separator localId="115" locator="56:20-56:23" valueType="t:String" value=", " xsi:type="Literal"/>
+         </expression>
+      </def>
+      <def localId="126" locator="58:1-60:54" name="NumberOfSampleDiagnosesICD10Codes" context="Specimen" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="126">
+               <a:s>define NumberOfSampleDiagnosesICD10Codes:
+  </a:s>
+               <a:s r="125">
+                  <a:s>Count(</a:s>
+                  <a:s r="124">
+                     <a:s>
+                        <a:s>from </a:s>
+                        <a:s r="119">
+                           <a:s r="118">
+                              <a:s>
+                                 <a:s>SampleDiagnosisCodings</a:s>
+                              </a:s>
+                           </a:s>
+                           <a:s> C</a:s>
+                        </a:s>
+                     </a:s>
+                     <a:s>
+    </a:s>
+                     <a:s r="123">
+                        <a:s>where </a:s>
+                        <a:s r="123">
+                           <a:s r="121">
+                              <a:s r="120">
+                                 <a:s>C</a:s>
+                              </a:s>
+                              <a:s>.</a:s>
+                              <a:s r="121">
+                                 <a:s>system</a:s>
+                              </a:s>
+                           </a:s>
+                           <a:s> = </a:s>
+                           <a:s r="122">
+                              <a:s>'http://hl7.org/fhir/sid/icd-10'</a:s>
+                           </a:s>
+                        </a:s>
+                     </a:s>
+                  </a:s>
+                  <a:s>)</a:s>
+               </a:s>
+            </a:s>
+         </annotation>
+         <expression localId="125" locator="59:3-60:54" xsi:type="Count">
+            <source localId="124" locator="59:9-60:53" xsi:type="Query">
+               <source localId="119" locator="59:14-59:37" alias="C">
+                  <expression localId="118" locator="59:14-59:35" name="SampleDiagnosisCodings" xsi:type="ExpressionRef"/>
+               </source>
+               <where localId="123" locator="60:5-60:53" xsi:type="Equal">
+                  <operand name="ToString" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                     <operand localId="121" locator="60:11-60:18" path="system" scope="C" xsi:type="Property"/>
+                  </operand>
+                  <operand localId="122" locator="60:22-60:53" valueType="t:String" value="http://hl7.org/fhir/sid/icd-10" xsi:type="Literal"/>
+               </where>
+            </source>
+         </expression>
+      </def>
+      <def localId="139" locator="62:1-65:24" name="SampleDiagnosisICD10GMCodes" context="Specimen" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="139">
+               <a:s>define SampleDiagnosisICD10GMCodes:
+  </a:s>
+               <a:s r="138">
+                  <a:s>Combine(</a:s>
+                  <a:s r="136">
+                     <a:s>
+                        <a:s>from </a:s>
+                        <a:s r="128">
+                           <a:s r="127">
+                              <a:s>
+                                 <a:s>SampleDiagnosisCodings</a:s>
+                              </a:s>
+                           </a:s>
+                           <a:s> C</a:s>
+                        </a:s>
+                     </a:s>
+                     <a:s>
+    </a:s>
+                     <a:s r="132">
+                        <a:s>where </a:s>
+                        <a:s r="132">
+                           <a:s r="130">
+                              <a:s r="129">
+                                 <a:s>C</a:s>
+                              </a:s>
+                              <a:s>.</a:s>
+                              <a:s r="130">
+                                 <a:s>system</a:s>
+                              </a:s>
+                           </a:s>
+                           <a:s> = </a:s>
+                           <a:s r="131">
+                              <a:s>'http://fhir.de/CodeSystem/dimdi/icd-10-gm'</a:s>
+                           </a:s>
+                        </a:s>
+                     </a:s>
+                     <a:s>
+    </a:s>
+                     <a:s r="135">
+                        <a:s>return </a:s>
+                        <a:s r="134">
+                           <a:s r="133">
+                              <a:s>C</a:s>
+                           </a:s>
+                           <a:s>.</a:s>
+                           <a:s r="134">
+                              <a:s>code</a:s>
+                           </a:s>
+                        </a:s>
+                     </a:s>
+                  </a:s>
+                  <a:s>, </a:s>
+                  <a:s r="137">
+                     <a:s>', '</a:s>
+                  </a:s>
+                  <a:s>)</a:s>
+               </a:s>
+            </a:s>
+         </annotation>
+         <expression localId="138" locator="63:3-65:24" xsi:type="Combine">
+            <source xsi:type="Query">
+               <source alias="X">
+                  <expression localId="136" locator="63:11-65:17" xsi:type="Query">
+                     <source localId="128" locator="63:16-63:39" alias="C">
+                        <expression localId="127" locator="63:16-63:37" name="SampleDiagnosisCodings" xsi:type="ExpressionRef"/>
+                     </source>
+                     <where localId="132" locator="64:5-64:64" xsi:type="Equal">
+                        <operand name="ToString" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                           <operand localId="130" locator="64:11-64:18" path="system" scope="C" xsi:type="Property"/>
+                        </operand>
+                        <operand localId="131" locator="64:22-64:64" valueType="t:String" value="http://fhir.de/CodeSystem/dimdi/icd-10-gm" xsi:type="Literal"/>
+                     </where>
+                     <return localId="135" locator="65:5-65:17">
+                        <expression localId="134" locator="65:12-65:17" path="code" scope="C" xsi:type="Property"/>
+                     </return>
+                  </expression>
+               </source>
+               <return distinct="false">
+                  <expression name="ToString" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                     <operand name="X" xsi:type="AliasRef"/>
+                  </expression>
+               </return>
+            </source>
+            <separator localId="137" locator="65:20-65:23" valueType="t:String" value=", " xsi:type="Literal"/>
+         </expression>
+      </def>
+      <def localId="148" locator="67:1-69:65" name="NumberOfSampleDiagnosesICD10GMCodes" context="Specimen" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="148">
+               <a:s>define NumberOfSampleDiagnosesICD10GMCodes:
+  </a:s>
+               <a:s r="147">
+                  <a:s>Count(</a:s>
+                  <a:s r="146">
+                     <a:s>
+                        <a:s>from </a:s>
+                        <a:s r="141">
+                           <a:s r="140">
+                              <a:s>
+                                 <a:s>SampleDiagnosisCodings</a:s>
+                              </a:s>
+                           </a:s>
+                           <a:s> C</a:s>
+                        </a:s>
+                     </a:s>
+                     <a:s>
+    </a:s>
+                     <a:s r="145">
+                        <a:s>where </a:s>
+                        <a:s r="145">
+                           <a:s r="143">
+                              <a:s r="142">
+                                 <a:s>C</a:s>
+                              </a:s>
+                              <a:s>.</a:s>
+                              <a:s r="143">
+                                 <a:s>system</a:s>
+                              </a:s>
+                           </a:s>
+                           <a:s> = </a:s>
+                           <a:s r="144">
+                              <a:s>'http://fhir.de/CodeSystem/dimdi/icd-10-gm'</a:s>
+                           </a:s>
+                        </a:s>
+                     </a:s>
+                  </a:s>
+                  <a:s>)</a:s>
+               </a:s>
+            </a:s>
+         </annotation>
+         <expression localId="147" locator="68:3-69:65" xsi:type="Count">
+            <source localId="146" locator="68:9-69:64" xsi:type="Query">
+               <source localId="141" locator="68:14-68:37" alias="C">
+                  <expression localId="140" locator="68:14-68:35" name="SampleDiagnosisCodings" xsi:type="ExpressionRef"/>
+               </source>
+               <where localId="145" locator="69:5-69:64" xsi:type="Equal">
+                  <operand name="ToString" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                     <operand localId="143" locator="69:11-69:18" path="system" scope="C" xsi:type="Property"/>
+                  </operand>
+                  <operand localId="144" locator="69:22-69:64" valueType="t:String" value="http://fhir.de/CodeSystem/dimdi/icd-10-gm" xsi:type="Literal"/>
+               </where>
+            </source>
+         </expression>
+      </def>
+      <def localId="161" locator="71:1-74:24" name="BodySiteCodes" context="Specimen" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="161">
+               <a:s>define BodySiteCodes:
+  </a:s>
+               <a:s r="160">
+                  <a:s>Combine(</a:s>
+                  <a:s r="158">
+                     <a:s>
+                        <a:s>from </a:s>
+                        <a:s r="150">
+                           <a:s r="149">
+                              <a:s>
+                                 <a:s>Specimen.collection.bodySite.coding</a:s>
+                              </a:s>
+                           </a:s>
+                           <a:s> C</a:s>
+                        </a:s>
+                     </a:s>
+                     <a:s>
+    </a:s>
+                     <a:s r="154">
+                        <a:s>where </a:s>
+                        <a:s r="154">
+                           <a:s r="152">
+                              <a:s r="151">
+                                 <a:s>C</a:s>
+                              </a:s>
+                              <a:s>.</a:s>
+                              <a:s r="152">
+                                 <a:s>system</a:s>
+                              </a:s>
+                           </a:s>
+                           <a:s> = </a:s>
+                           <a:s r="153">
+                              <a:s>'urn:oid:1.3.6.1.4.1.19376.1.3.11.36'</a:s>
+                           </a:s>
+                        </a:s>
+                     </a:s>
+                     <a:s>
+    </a:s>
+                     <a:s r="157">
+                        <a:s>return </a:s>
+                        <a:s r="156">
+                           <a:s r="155">
+                              <a:s>C</a:s>
+                           </a:s>
+                           <a:s>.</a:s>
+                           <a:s r="156">
+                              <a:s>code</a:s>
+                           </a:s>
+                        </a:s>
+                     </a:s>
+                  </a:s>
+                  <a:s>, </a:s>
+                  <a:s r="159">
+                     <a:s>', '</a:s>
+                  </a:s>
+                  <a:s>)</a:s>
+               </a:s>
+            </a:s>
+         </annotation>
+         <expression localId="160" locator="72:3-74:24" xsi:type="Combine">
+            <source xsi:type="Query">
+               <source alias="X">
+                  <expression localId="158" locator="72:11-74:17" xsi:type="Query">
+                     <source localId="150" locator="72:16-72:52" alias="C">
+                        <expression localId="149" locator="72:16-72:50" path="coding" xsi:type="Property">
+                           <source path="bodySite" xsi:type="Property">
+                              <source path="collection" xsi:type="Property">
+                                 <source name="Specimen" xsi:type="ExpressionRef"/>
+                              </source>
+                           </source>
+                        </expression>
+                     </source>
+                     <where localId="154" locator="73:5-73:58" xsi:type="Equal">
+                        <operand name="ToString" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                           <operand localId="152" locator="73:11-73:18" path="system" scope="C" xsi:type="Property"/>
+                        </operand>
+                        <operand localId="153" locator="73:22-73:58" valueType="t:String" value="urn:oid:1.3.6.1.4.1.19376.1.3.11.36" xsi:type="Literal"/>
+                     </where>
+                     <return localId="157" locator="74:5-74:17">
+                        <expression localId="156" locator="74:12-74:17" path="code" scope="C" xsi:type="Property"/>
+                     </return>
+                  </expression>
+               </source>
+               <return distinct="false">
+                  <expression name="ToString" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                     <operand name="X" xsi:type="AliasRef"/>
+                  </expression>
+               </return>
+            </source>
+            <separator localId="159" locator="74:20-74:23" valueType="t:String" value=", " xsi:type="Literal"/>
+         </expression>
+      </def>
+      <def localId="170" locator="76:1-78:59" name="NumberOfBodySiteCodes" context="Specimen" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="170">
+               <a:s>define NumberOfBodySiteCodes:
+  </a:s>
+               <a:s r="169">
+                  <a:s>Count(</a:s>
+                  <a:s r="168">
+                     <a:s>
+                        <a:s>from </a:s>
+                        <a:s r="163">
+                           <a:s r="162">
+                              <a:s>
+                                 <a:s>Specimen.collection.bodySite.coding</a:s>
+                              </a:s>
+                           </a:s>
+                           <a:s> C</a:s>
+                        </a:s>
+                     </a:s>
+                     <a:s>
+    </a:s>
+                     <a:s r="167">
+                        <a:s>where </a:s>
+                        <a:s r="167">
+                           <a:s r="165">
+                              <a:s r="164">
+                                 <a:s>C</a:s>
+                              </a:s>
+                              <a:s>.</a:s>
+                              <a:s r="165">
+                                 <a:s>system</a:s>
+                              </a:s>
+                           </a:s>
+                           <a:s> = </a:s>
+                           <a:s r="166">
+                              <a:s>'urn:oid:1.3.6.1.4.1.19376.1.3.11.36'</a:s>
+                           </a:s>
+                        </a:s>
+                     </a:s>
+                  </a:s>
+                  <a:s>)</a:s>
+               </a:s>
+            </a:s>
+         </annotation>
+         <expression localId="169" locator="77:3-78:59" xsi:type="Count">
+            <source localId="168" locator="77:9-78:58" xsi:type="Query">
+               <source localId="163" locator="77:14-77:50" alias="C">
+                  <expression localId="162" locator="77:14-77:48" path="coding" xsi:type="Property">
+                     <source path="bodySite" xsi:type="Property">
+                        <source path="collection" xsi:type="Property">
+                           <source name="Specimen" xsi:type="ExpressionRef"/>
+                        </source>
+                     </source>
+                  </expression>
+               </source>
+               <where localId="167" locator="78:5-78:58" xsi:type="Equal">
+                  <operand name="ToString" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                     <operand localId="165" locator="78:11-78:18" path="system" scope="C" xsi:type="Property"/>
+                  </operand>
+                  <operand localId="166" locator="78:22-78:58" valueType="t:String" value="urn:oid:1.3.6.1.4.1.19376.1.3.11.36" xsi:type="Literal"/>
+               </where>
+            </source>
+         </expression>
+      </def>
+   </statements>
+</library>

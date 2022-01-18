@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="fhir.css"/>
 
       <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="assets/css/bootstrap.css"/>
     <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
 
       <!-- Project extras -->
@@ -41,8 +40,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"11.61"}
-    h3,h4,h5,h6{--heading-prefix:"11.61"}</style>
+    <style type="text/css">h2{--heading-prefix:"11.50"}
+    h3,h4,h5,h6{--heading-prefix:"11.50"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Placeholder for child template header declarations -->
@@ -109,7 +108,7 @@
         <a href="referencedIGs.html">Referenced IGs</a>
       </li>
       <li>
-        <a href="etlTalent.html">Build ETL with TOS</a>
+        <a href="etlTalend.html">Build ETL with TOS</a>
       </li>
       <li>
         <a href="qualityMeasures.html">Quality Measures</a>
@@ -128,7 +127,7 @@
         <a href="downloads.html">Downloads</a>
       </li>
       <li>
-        <a href="http://hl7.org/fhir/R4/index.html" target="_blank">FHIR Spec <img src="external.png" style="text-align: baseline"/></a>
+        <a href="http://hl7.org/fhir/R4/index.html" target="_blank">FHIR Spec</a>
       </li>
     </ul>
   </li>
@@ -140,15 +139,18 @@
       </div>    <!-- /container -->
     </div>    <!-- /segment-navbar -->
       <!-- status-bar -->
+
     <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
       <div class="container">    <!-- container -->
         <ul class="breadcrumb">
           <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>Specimen Quality Reports</b></li>
+
         </ul>
       </div>    <!-- /container -->
     </div>    <!-- /segment-breadcrumb -->
 
-    <div id="segment-content">    <!-- segment-content -->
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
       <div class="container">    <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
@@ -209,7 +211,7 @@
 
 
 
-  <div><p><b>Generated Narrative</b></p><h3>Ids</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>url</b>: <a href="https://fhir.bbmri.de/Measure/SpecimenQualityReports">https://fhir.bbmri.de/Measure/SpecimenQualityReports</a></p><p><b>version</b>: 1.2.0</p><p><b>name</b>: SpecimenQualityReports</p><p><b>title</b>: Specimen Quality Reports</p><p><b>status</b>: draft</p><p><b>subject</b>: <span title="Codes: {http://hl7.org/fhir/resource-types Specimen}">Specimen</span></p><p><b>date</b>: Mar 3, 2021, 8:01:39 AM</p><p><b>publisher</b>: bbmri.de</p><p><b>contact</b>: bbmri.de: bbmri.de,feedback@germanbiobanknode.de</p><p><b>description</b>: This measure contains various specimen related stratifiers to help to evaluate data quality.</p><p><b>library</b>: <a href="https://fhir.bbmri.de/Library/SpecimenQualityReports">https://fhir.bbmri.de/Library/SpecimenQualityReports</a></p><p><b>scoring</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/measure-scoring cohort}">Cohort</span></p><blockquote><p><b>group</b></p><blockquote><p><b>population</b></p><p><b>code</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/measure-population initial-population}">Initial Population</span></p><h3>Criteria</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>stratifier</b></p><p><b>code</b>: <span title="Codes: ">FirstSampleMaterialType</span></p><h3>Criteria</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>stratifier</b></p><p><b>code</b>: <span title="Codes: ">NumberOfSampleMaterialTypes</span></p><h3>Criteria</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>stratifier</b></p><p><b>code</b>: <span title="Codes: ">CollectedYear</span></p><h3>Criteria</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>stratifier</b></p><p><b>code</b>: <span title="Codes: ">CollectedMonth</span></p><h3>Criteria</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>stratifier</b></p><p><b>code</b>: <span title="Codes: ">CollectedDay</span></p><h3>Criteria</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>stratifier</b></p><p><b>code</b>: <span title="Codes: ">CollectedHour</span></p><h3>Criteria</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>stratifier</b></p><p><b>code</b>: <span title="Codes: ">StorageTemperatureCodes</span></p><h3>Criteria</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>stratifier</b></p><p><b>code</b>: <span title="Codes: ">NumberOfStorageTemperatureCodes</span></p><h3>Criteria</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>stratifier</b></p><p><b>code</b>: <span title="Codes: ">SampleDiagnosisICD10Codes</span></p><h3>Criteria</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>stratifier</b></p><p><b>code</b>: <span title="Codes: ">NumberOfSampleDiagnosesICD10Codes</span></p><h3>Criteria</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>stratifier</b></p><p><b>code</b>: <span title="Codes: ">SampleDiagnosisICD10GMCodes</span></p><h3>Criteria</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>stratifier</b></p><p><b>code</b>: <span title="Codes: ">NumberOfSampleDiagnosesICD10GMCodes</span></p><h3>Criteria</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>stratifier</b></p><p><b>code</b>: <span title="Codes: ">BodySiteCodes</span></p><h3>Criteria</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>stratifier</b></p><p><b>code</b>: <span title="Codes: ">NumberOfBodySiteCodes</span></p><h3>Criteria</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote></blockquote></div>
+  <div><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "SpecimenQualityReports" </p></div><p><b>url</b>: <code>https://fhir.bbmri.de/Measure/SpecimenQualityReports</code></p><p><b>version</b>: 1.2.0</p><p><b>name</b>: SpecimenQualityReports</p><p><b>title</b>: Specimen Quality Reports</p><p><b>status</b>: draft</p><p><b>subject</b>: Specimen <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://hl7.org/fhir/R4/codesystem-resource-types.html">ResourceType</a>#Specimen)</span></p><p><b>date</b>: 2022-01-18T15:55:49Z</p><p><b>publisher</b>: bbmri.de</p><p><a name="l394">​</a><b>contact</b>: bbmri.de: <a href="bbmri.de">bbmri.de</a>,<a href="mailto:feedback@germanbiobanknode.de">feedback@germanbiobanknode.de</a></p><p><b>description</b>: This measure contains various specimen related stratifiers to help to evaluate data quality.</p><p><b>library</b>: <a href="Library-SpecimenQualityReports.html">Specimen Quality Reports</a></p><p><b>scoring</b>: Cohort <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.0.0/CodeSystem-measure-scoring.html">MeasureScoring</a>#cohort)</span></p><blockquote><p><b>group</b></p><blockquote><p><b>population</b></p><p><b>code</b>: Initial Population <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.0.0/CodeSystem-measure-population.html">MeasurePopulationType</a>#initial-population)</span></p></blockquote><blockquote><p><b>stratifier</b></p><p><b>code</b>: FirstSampleMaterialType <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p></blockquote><blockquote><p><b>stratifier</b></p><p><b>code</b>: NumberOfSampleMaterialTypes <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p></blockquote><blockquote><p><b>stratifier</b></p><p><b>code</b>: CollectedYear <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p></blockquote><blockquote><p><b>stratifier</b></p><p><b>code</b>: CollectedMonth <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p></blockquote><blockquote><p><b>stratifier</b></p><p><b>code</b>: CollectedDay <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p></blockquote><blockquote><p><b>stratifier</b></p><p><b>code</b>: CollectedHour <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p></blockquote><blockquote><p><b>stratifier</b></p><p><b>code</b>: StorageTemperatureCodes <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p></blockquote><blockquote><p><b>stratifier</b></p><p><b>code</b>: NumberOfStorageTemperatureCodes <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p></blockquote><blockquote><p><b>stratifier</b></p><p><b>code</b>: SampleDiagnosisICD10Codes <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p></blockquote><blockquote><p><b>stratifier</b></p><p><b>code</b>: NumberOfSampleDiagnosesICD10Codes <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p></blockquote><blockquote><p><b>stratifier</b></p><p><b>code</b>: SampleDiagnosisICD10GMCodes <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p></blockquote><blockquote><p><b>stratifier</b></p><p><b>code</b>: NumberOfSampleDiagnosesICD10GMCodes <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p></blockquote><blockquote><p><b>stratifier</b></p><p><b>code</b>: BodySiteCodes <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p></blockquote><blockquote><p><b>stratifier</b></p><p><b>code</b>: NumberOfBodySiteCodes <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p></blockquote></blockquote></div>
 
     <!-- insert notes if present -->
   
@@ -232,17 +234,21 @@
       }
     });
   </script>
+  <a name="bottom"> </a>
   <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
     <div class="container">    <!-- container -->
+
       <div class="inner-wrapper">
-        <p><a name="2a20d2ef-1156-4ea2-bef2-a790dcff22b9">​</a>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="bbmri.de">bbmri.de</a>.  Package de.bbmri.fhir#1.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Mar 3, 2021 08:01+0000">2021-03-03</span>
+        <p><a name="l619">​</a>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="bbmri.de">bbmri.de</a>.  Package de.bbmri.fhir#1.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jan 18, 2022 15:55+0000">2022-01-18</span>
           <br/>
-          <span style="color: #FFFF77">
-                      Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
-                 <a style="color: #81BEF7" href="qa.html">QA Report</a>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
 | <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" alt="Creative Commons Lizenzvertrag" style="border-width:0"/></a>
-          </span>
+          
         </p>
       </div>    <!-- /inner-wrapper -->
     </div>    <!-- /container -->
@@ -263,6 +269,13 @@
   <script>anchors.options.visible = 'hover'
 anchors.add()</script>
   
+  <!-- feedback form - Google forms -->
+  <!-- v0.1, 2021-01-09 -->
+
+
+
+  <!-- / feedback form -->
+
     <!-- Analytics Below
   ================================================== -->
   </body>

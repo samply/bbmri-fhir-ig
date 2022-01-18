@@ -65,16 +65,9 @@
   {
     "id": "de.bbmri.fhir",
     "type": "ImplementationGuide",
-    "url": "https://fhir.bbmri.de/ImplementationGuide/de.bbmri.fhir/ImplementationGuide/de.bbmri.fhir",
+    "url": "https://fhir.bbmri.de/ImplementationGuide/de.bbmri.fhir",
     "version": "1.2.0",
     "name": "BBMRI_DE_IG"
-  },
-  {
-    "id": "TobaccoUse",
-    "type": "StructureDefinition",
-    "url": "https://fhir.bbmri.de/ImplementationGuide/de.bbmri.fhir/StructureDefinition/TobaccoUse",
-    "version": "1.2.0",
-    "name": "TobaccoUse"
   },
   {
     "id": "PatientQualityReports",
@@ -299,6 +292,13 @@
     "url": "https://fhir.bbmri.de/StructureDefinition/StorageTemperature",
     "version": "1.2.0",
     "name": "StorageTemperature"
+  },
+  {
+    "id": "TobaccoUse",
+    "type": "StructureDefinition",
+    "url": "https://fhir.bbmri.de/StructureDefinition/TobaccoUse",
+    "version": "1.2.0",
+    "name": "TobaccoUse"
   },
   {
     "id": "BiobankCapabilities",

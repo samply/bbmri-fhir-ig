@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="fhir.css"/>
 
       <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="assets/css/bootstrap.css"/>
     <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
 
       <!-- Project extras -->
@@ -109,7 +108,7 @@
         <a href="referencedIGs.html">Referenced IGs</a>
       </li>
       <li>
-        <a href="etlTalent.html">Build ETL with TOS</a>
+        <a href="etlTalend.html">Build ETL with TOS</a>
       </li>
       <li>
         <a href="qualityMeasures.html">Quality Measures</a>
@@ -128,7 +127,7 @@
         <a href="downloads.html">Downloads</a>
       </li>
       <li>
-        <a href="http://hl7.org/fhir/R4/index.html" target="_blank">FHIR Spec <img src="external.png" style="text-align: baseline"/></a>
+        <a href="http://hl7.org/fhir/R4/index.html" target="_blank">FHIR Spec</a>
       </li>
     </ul>
   </li>
@@ -140,15 +139,18 @@
       </div>    <!-- /container -->
     </div>    <!-- /segment-navbar -->
       <!-- status-bar -->
+
     <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
       <div class="container">    <!-- container -->
         <ul class="breadcrumb">
           <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>Artifacts Summary</b></li>
+
         </ul>
       </div>    <!-- /container -->
     </div>    <!-- /segment-breadcrumb -->
 
-    <div id="segment-content">    <!-- segment-content -->
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
       <div class="container">    <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
@@ -180,10 +182,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <a href="#4">Terminology: Code Systems</a>
       </li>
       <li>
-         <a href="#5">Example: Example Instances</a>
+         <a href="#5">Knowledge Artifacts: Libraries</a>
       </li>
       <li>
-         <a href="#6">Other</a>
+         <a href="#6">Knowledge Artifacts: Measure</a>
+      </li>
+      <li>
+         <a href="#7">Example: Example Instances</a>
       </li>
    </ul>
 </div>
@@ -300,7 +305,39 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
+                  <a href="StructureDefinition-SampleDiagnosis.html" title="StructureDefinition/SampleDiagnosis">Sample Diagnosis</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-JuridicalPerson.html" title="StructureDefinition/JuridicalPerson">Juridical Person</a>
+               </td>
+               <td>
+<p>Name of the legal entity of the organization</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-ParentCollection.html" title="StructureDefinition/ParentCollection">Parent Collection</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="StructureDefinition-AccessPolicy.html" title="StructureDefinition/AccessPolicy">Access Policy</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-BioresourceReference.html" title="StructureDefinition/BioresourceReference">Bioresource Reference</a>
                </td>
                <td>
 
@@ -356,14 +393,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-SampleDiagnosis.html" title="StructureDefinition/SampleDiagnosis">Sample Diagnosis</a>
-               </td>
-               <td>
-
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
                   <a href="StructureDefinition-ITSupport.html" title="StructureDefinition/ITSupport">IT Support</a>
                </td>
                <td>
@@ -376,14 +405,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </td>
                <td>
 
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-JuridicalPerson.html" title="StructureDefinition/JuridicalPerson">Juridical Person</a>
-               </td>
-               <td>
-<p>Name of the legal entity of the organization</p>
 </td>
             </tr>
             <tr>
@@ -421,22 +442,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             <tr>
                <td style="column-width:30%">
                   <a href="StructureDefinition-StorageTemperature.html" title="StructureDefinition/StorageTemperature">Storage Temperature</a>
-               </td>
-               <td>
-
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-BioresourceReference.html" title="StructureDefinition/BioresourceReference">Bioresource Reference</a>
-               </td>
-               <td>
-
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-ParentCollection.html" title="StructureDefinition/ParentCollection">Parent Collection</a>
                </td>
                <td>
 
@@ -582,6 +587,62 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       </table>
    </p>
    <a name="5"> </a>
+   <h3>Knowledge Artifacts: Libraries </h3>
+   <p>
+    <p>These define logic, asset collections and other libraries as part of content in this implementation guide</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Library-PatientQualityReports.html" title="Library/PatientQualityReports">Patient Quality Reports</a>
+               </td>
+               <td>
+<p>This library contains various expressions used in different patient related quality reports.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Library-SpecimenQualityReports.html" title="Library/SpecimenQualityReports">Specimen Quality Reports</a>
+               </td>
+               <td>
+<p>This library contains various expressions used in different specimen related quality reports.</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="6"> </a>
+   <h3>Knowledge Artifacts: Measure </h3>
+   <p>
+    <p>These define measures as part of content in this implementation guide</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Measure-PatientQualityReports.html" title="Measure/PatientQualityReports">Patient Quality Reports</a>
+               </td>
+               <td>
+<p>This measure contains various patient related stratifiers to help to evaluate data quality.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Measure-SpecimenQualityReports.html" title="Measure/SpecimenQualityReports">Specimen Quality Reports</a>
+               </td>
+               <td>
+<p>This measure contains various specimen related stratifiers to help to evaluate data quality.</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="7"> </a>
    <h3>Example: Example Instances </h3>
    <p>
     <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like</p>
@@ -592,7 +653,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="Organization-exampleBiobank.html" title="Organization/exampleBiobank">exampleBiobank</a>
+                  <a href="Bundle-53ef12a3-1e31-4fc1-adf6-9d30dc6c4784.html" title="Bundle/53ef12a3-1e31-4fc1-adf6-9d30dc6c4784">53ef12a3-1e31-4fc1-adf6-9d30dc6c4784</a>
                </td>
             </tr>
             <tr>
@@ -612,12 +673,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Organization-exampleCollection.html" title="Organization/exampleCollection">exampleCollection</a>
-               </td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Organization-exampleCollectionRD.html" title="Organization/exampleCollectionRD">exampleCollectionRD</a>
+                  <a href="Observation-0-tobacco-use.html" title="Observation/0-tobacco-use">0-tobacco-use</a>
                </td>
             </tr>
             <tr>
@@ -637,57 +693,18 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Observation-0-tobacco-use.html" title="Observation/0-tobacco-use">0-tobacco-use</a>
+                  <a href="Organization-exampleBiobank.html" title="Organization/exampleBiobank">exampleBiobank</a>
                </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Bundle-53ef12a3-1e31-4fc1-adf6-9d30dc6c4784.html" title="Bundle/53ef12a3-1e31-4fc1-adf6-9d30dc6c4784">53ef12a3-1e31-4fc1-adf6-9d30dc6c4784</a>
+                  <a href="Organization-exampleCollection.html" title="Organization/exampleCollection">exampleCollection</a>
                </td>
-            </tr>
-         </tbody>
-      </table>
-   </p>
-   <a name="6"> </a>
-   <h3>Other </h3>
-   <p>
-    <p>These are resources that are used within this implementation guide that do not fit into one of the other categories</p>
-</p>
-   <p>
-      <table class="grid">
-         <col style="width:20%"/>
-         <tbody>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Library-PatientQualityReports.html" title="Library/PatientQualityReports">Patient Quality Reports</a>
-               </td>
-               <td>
-<p>This library contains various expressions used in different patient related quality reports.</p>
-</td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Measure-PatientQualityReports.html" title="Measure/PatientQualityReports">Patient Quality Reports</a>
+                  <a href="Organization-exampleCollectionRD.html" title="Organization/exampleCollectionRD">exampleCollectionRD</a>
                </td>
-               <td>
-<p>This measure contains various patient related stratifiers to help to evaluate data quality.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Library-SpecimenQualityReports.html" title="Library/SpecimenQualityReports">Specimen Quality Reports</a>
-               </td>
-               <td>
-<p>This library contains various expressions used in different specimen related quality reports.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Measure-SpecimenQualityReports.html" title="Measure/SpecimenQualityReports">Specimen Quality Reports</a>
-               </td>
-               <td>
-<p>This measure contains various specimen related stratifiers to help to evaluate data quality.</p>
-</td>
             </tr>
          </tbody>
       </table>
@@ -710,17 +727,21 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       }
     });
   </script>
+  <a name="bottom"> </a>
   <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
     <div class="container">    <!-- container -->
+
       <div class="inner-wrapper">
-        <p><a name="8c0be5b5-38b2-4e3d-8474-22beaa3fbeaf">​</a>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="bbmri.de">bbmri.de</a>.  Package de.bbmri.fhir#1.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Mar 3, 2021 08:01+0000">2021-03-03</span>
+        <p><a name="l1291">​</a>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="bbmri.de">bbmri.de</a>.  Package de.bbmri.fhir#1.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jan 18, 2022 15:55+0000">2022-01-18</span>
           <br/>
-          <span style="color: #FFFF77">
-                      Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
-                 <a style="color: #81BEF7" href="qa.html">QA Report</a>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
 | <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" alt="Creative Commons Lizenzvertrag" style="border-width:0"/></a>
-          </span>
+          
         </p>
       </div>    <!-- /inner-wrapper -->
     </div>    <!-- /container -->
@@ -741,6 +762,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <script>anchors.options.visible = 'hover'
 anchors.add()</script>
   
+  <!-- feedback form - Google forms -->
+  <!-- v0.1, 2021-01-09 -->
+
+
+
+  <!-- / feedback form -->
+
     <!-- Analytics Below
   ================================================== -->
   </body>

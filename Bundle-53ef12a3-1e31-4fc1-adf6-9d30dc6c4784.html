@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="fhir.css"/>
 
       <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="assets/css/bootstrap.css"/>
     <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
 
       <!-- Project extras -->
@@ -41,8 +40,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"11.57"}
-    h3,h4,h5,h6{--heading-prefix:"11.57"}</style>
+    <style type="text/css">h2{--heading-prefix:"11.51"}
+    h3,h4,h5,h6{--heading-prefix:"11.51"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Placeholder for child template header declarations -->
@@ -109,7 +108,7 @@
         <a href="referencedIGs.html">Referenced IGs</a>
       </li>
       <li>
-        <a href="etlTalent.html">Build ETL with TOS</a>
+        <a href="etlTalend.html">Build ETL with TOS</a>
       </li>
       <li>
         <a href="qualityMeasures.html">Quality Measures</a>
@@ -128,7 +127,7 @@
         <a href="downloads.html">Downloads</a>
       </li>
       <li>
-        <a href="http://hl7.org/fhir/R4/index.html" target="_blank">FHIR Spec <img src="external.png" style="text-align: baseline"/></a>
+        <a href="http://hl7.org/fhir/R4/index.html" target="_blank">FHIR Spec</a>
       </li>
     </ul>
   </li>
@@ -140,15 +139,18 @@
       </div>    <!-- /container -->
     </div>    <!-- /segment-navbar -->
       <!-- status-bar -->
+
     <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
       <div class="container">    <!-- container -->
         <ul class="breadcrumb">
           <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>53ef12a3-1e31-4fc1-adf6-9d30dc6c4784</b></li>
+
         </ul>
       </div>    <!-- /container -->
     </div>    <!-- /segment-breadcrumb -->
 
-    <div id="segment-content">    <!-- segment-content -->
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
       <div class="container">    <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
@@ -208,25 +210,12 @@
 
 
   <div><p>Bundle 53ef12a3-1e31-4fc1-adf6-9d30dc6c4784 of type transaction</p><a name="http-//example.com/Patient/0"> </a><a name="Patient_0"> </a><hr/><p>Entry 1 - Full URL = http://example.com/Patient/0</p><p>Request:</p><pre>PUT Patient/0
-</pre><p>Resource Patient:</p><blockquote><p><b>Exception generating narrative: null</b>    <!-- org.hl7.fhir.r5.renderers.DataRenderer.display (DataRenderer.java:248
-org.hl7.fhir.r5.renderers.PatientRenderer.display (PatientRenderer.java:178
-org.hl7.fhir.r5.renderers.PatientRenderer.display (PatientRenderer.java:46
-org.hl7.fhir.r5.renderers.ResourceRenderer.describe (ResourceRenderer.java:99
-org.hl7.fhir.r5.renderers.PatientRenderer.render (PatientRenderer.java:31
-org.hl7.fhir.r5.renderers.ResourceRenderer.build (ResourceRenderer.java:55
-org.hl7.fhir.r5.renderers.BundleRenderer.render (BundleRenderer.java:296
-org.hl7.fhir.igtools.publisher.Publisher.getXhtml (Publisher.java:7768
-org.hl7.fhir.igtools.publisher.Publisher.saveDirectResourceOutputs (Publisher.java:7113
-org.hl7.fhir.igtools.publisher.Publisher.generateHtmlOutputs (Publisher.java:6562
-org.hl7.fhir.igtools.publisher.Publisher.generate (Publisher.java:4849
-org.hl7.fhir.igtools.publisher.Publisher.createIg (Publisher.java:871
-org.hl7.fhir.igtools.publisher.Publisher.execute (Publisher.java:717
-org.hl7.fhir.igtools.publisher.Publisher.main (Publisher.java:8277 --></p></blockquote><a name="http-//example.com/Observation/0-bmi"> </a><a name="Observation_0-bmi"> </a><hr/><p>Entry 2 - Full URL = http://example.com/Observation/0-bmi</p><p>Request:</p><pre>PUT Observation/0-bmi
-</pre><p>Resource Observation:</p><blockquote><p><b>Generated Narrative</b></p><h3>Ids</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><h3>Meta</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><h3>Texts</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><p></p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/observation-category vital-signs}">Vital Signs</span></p><p><b>code</b>: <span title="Codes: {http://loinc.org 39156-5}">Body mass index (BMI) [Ratio]</span></p><p><b>subject</b>: <a href="Patient-0.html">Generated Summary: gender: male; birthDate: 1989-11-18; deceased: 2009-01-27</a></p><p><b>effective</b>: 2005-06-17</p><p><b>value</b>: 36.68645245341373 kg/m2</p></blockquote><a name="http-//example.com/Observation/0-body-height"> </a><a name="Observation_0-body-height"> </a><hr/><p>Entry 3 - Full URL = http://example.com/Observation/0-body-height</p><p>Request:</p><pre>PUT Observation/0-body-height
-</pre><p>Resource Observation:</p><blockquote><p><b>Generated Narrative</b></p><h3>Ids</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><h3>Meta</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><h3>Texts</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><p></p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/observation-category vital-signs}">Vital Signs</span></p><p><b>code</b>: <span title="Codes: {http://loinc.org 8302-2}">Body height</span></p><p><b>subject</b>: <a href="Patient-0.html">Generated Summary: gender: male; birthDate: 1989-11-18; deceased: 2009-01-27</a></p><p><b>effective</b>: 2005-06-17</p><p><b>value</b>: 198.58090348834853 cm</p></blockquote><a name="http-//example.com/Observation/0-body-weight"> </a><a name="Observation_0-body-weight"> </a><hr/><p>Entry 4 - Full URL = http://example.com/Observation/0-body-weight</p><p>Request:</p><pre>PUT Observation/0-body-weight
-</pre><p>Resource Observation:</p><blockquote><p><b>Generated Narrative</b></p><h3>Ids</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><h3>Meta</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><h3>Texts</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><p></p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/observation-category vital-signs}">Vital Signs</span></p><p><b>code</b>: <span title="Codes: {http://loinc.org 29463-7}">Body weight</span></p><p><b>subject</b>: <a href="Patient-0.html">Generated Summary: gender: male; birthDate: 1989-11-18; deceased: 2009-01-27</a></p><p><b>effective</b>: 2005-06-17</p><p><b>value</b>: 144.67073319145982 kg</p></blockquote><a name="http-//example.com/Observation/0-tobacco-use"> </a><a name="Observation_0-tobacco-use"> </a><hr/><p>Entry 5 - Full URL = http://example.com/Observation/0-tobacco-use</p><p>Request:</p><pre>PUT Observation/0-tobacco-use
-</pre><p>Resource Observation:</p><blockquote><p><b>Generated Narrative</b></p><h3>Ids</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><h3>Meta</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><h3>Texts</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><p></p><p><b>code</b>: <span title="Codes: {http://loinc.org 72166-2}">Tobacco smoking status</span></p><p><b>subject</b>: <a href="Patient-0.html">Generated Summary: gender: male; birthDate: 1989-11-18; deceased: 2009-01-27</a></p><p><b>effective</b>: 2005-06-17</p><p><b>value</b>: <span title="Codes: {http://loinc.org LA18977-1}">Current some day smoker</span></p></blockquote><a name="http-//example.com/Specimen/0-specimen"> </a><a name="Specimen_0-specimen"> </a><hr/><p>Entry 6 - Full URL = http://example.com/Specimen/0-specimen</p><p>Request:</p><pre>PUT Specimen/0-specimen
-</pre><p>Resource Specimen:</p><blockquote><p><b>Generated Narrative</b></p><h3>Ids</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><h3>Meta</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><h3>Texts</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>Storage Temperature</b>: </p><p><b>Custodian</b>: </p><p><b>Sample Diagnosis</b>: </p><p><b>type</b>: <span title="Codes: {https://fhir.bbmri.de/CodeSystem/SampleMaterialType whole-blood}">Whole blood</span></p><p><b>subject</b>: <a href="Patient-0.html">Generated Summary: gender: male; birthDate: 1989-11-18; deceased: 2009-01-27</a></p><h3>Collections</h3><table class="grid"><tr><td>-</td><td><b>Collected[x]</b></td><td><b>FastingStatus[x]</b></td></tr><tr><td>*</td><td>2005-06-17</td><td><span title="Codes: {http://terminology.hl7.org/CodeSystem/v2-0916 NF}">The patient indicated they did not fast prior to the procedure.</span></td></tr></table></blockquote></div>
+</pre><p>Resource Patient:</p><blockquote> Male 1989-11-18</blockquote><a name="http-//example.com/Observation/0-bmi"> </a><a name="Observation_0-bmi"> </a><hr/><p>Entry 2 - Full URL = http://example.com/Observation/0-bmi</p><p>Request:</p><pre>PUT Observation/0-bmi
+</pre><p>Resource Observation:</p><blockquote><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "0-bmi" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Bmi.html">BMI</a></p></div><p><b>status</b>: FINAL</p><p><b>category</b>: Vital Signs <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.0.0/CodeSystem-observation-category.html">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Body mass index (BMI) [Ratio] <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#39156-5)</span></p><p><b>subject</b>: <a href="Patient-0.html">Patient/0</a></p><p><b>effective</b>: 2005-06-17</p><p><b>value</b>: 36.68645245341373 kg/m2<span style="background: LightGoldenRodYellow"> (Details: UCUM code kg/m2 = 'kg/m2')</span></p></blockquote><a name="http-//example.com/Observation/0-body-height"> </a><a name="Observation_0-body-height"> </a><hr/><p>Entry 3 - Full URL = http://example.com/Observation/0-body-height</p><p>Request:</p><pre>PUT Observation/0-body-height
+</pre><p>Resource Observation:</p><blockquote><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "0-body-height" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-BodyHeight.html">Body Height</a></p></div><p><b>status</b>: FINAL</p><p><b>category</b>: Vital Signs <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.0.0/CodeSystem-observation-category.html">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Body height <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#8302-2)</span></p><p><b>subject</b>: <a href="Patient-0.html">Patient/0</a></p><p><b>effective</b>: 2005-06-17</p><p><b>value</b>: 198.58090348834853 cm<span style="background: LightGoldenRodYellow"> (Details: UCUM code cm = 'cm')</span></p></blockquote><a name="http-//example.com/Observation/0-body-weight"> </a><a name="Observation_0-body-weight"> </a><hr/><p>Entry 4 - Full URL = http://example.com/Observation/0-body-weight</p><p>Request:</p><pre>PUT Observation/0-body-weight
+</pre><p>Resource Observation:</p><blockquote><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "0-body-weight" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-BodyWeight.html">Body Weight</a></p></div><p><b>status</b>: FINAL</p><p><b>category</b>: Vital Signs <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.0.0/CodeSystem-observation-category.html">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Body weight <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#29463-7)</span></p><p><b>subject</b>: <a href="Patient-0.html">Patient/0</a></p><p><b>effective</b>: 2005-06-17</p><p><b>value</b>: 144.67073319145982 kg<span style="background: LightGoldenRodYellow"> (Details: UCUM code kg = 'kg')</span></p></blockquote><a name="http-//example.com/Observation/0-tobacco-use"> </a><a name="Observation_0-tobacco-use"> </a><hr/><p>Entry 5 - Full URL = http://example.com/Observation/0-tobacco-use</p><p>Request:</p><pre>PUT Observation/0-tobacco-use
+</pre><p>Resource Observation:</p><blockquote><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "0-tobacco-use" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-TobaccoUse.html">TobaccoUse</a></p></div><p><b>status</b>: FINAL</p><p><b>code</b>: Tobacco smoking status <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#72166-2)</span></p><p><b>subject</b>: <a href="Patient-0.html">Patient/0</a></p><p><b>effective</b>: 2005-06-17</p><p><b>value</b>: Current some day smoker <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#LA18977-1)</span></p></blockquote><a name="http-//example.com/Specimen/0-specimen"> </a><a name="Specimen_0-specimen"> </a><hr/><p>Entry 6 - Full URL = http://example.com/Specimen/0-specimen</p><p>Request:</p><pre>PUT Specimen/0-specimen
+</pre><p>Resource Specimen:</p><blockquote><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "0-specimen" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Specimen.html">Specimen</a></p></div><p><b>Storage Temperature</b>: Degrees Celsius 2 to 10 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-StorageTemperature.html">Storage Temperature</a>#temperature2to10)</span></p><p><b>Custodian</b>: <a href="https://simplifier.net/resolve?scope=de.basisprofil.r4@0.9.6&amp;canonical=https://simplifier.net/packages/de.basisprofil.r4/0.9.6/files/129540/http://blaze.example.com/fhir/Organization/collection-2">http://blaze.example.com/fhir/Organization/collection-2</a></p><p><b>Sample Diagnosis</b>: Unknown <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-OtherSampleDiagnosis.html">Other Sample Diagnosis</a>#unknown)</span></p><p><b>type</b>: Whole blood <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-SampleMaterialType.html">Sample Material Type</a>#whole-blood)</span></p><p><b>subject</b>: <a href="Patient-0.html">Patient/0</a></p><h3>Collections</h3><table class="grid"><tr><td>-</td><td><b>Collected[x]</b></td><td><b>FastingStatus[x]</b></td></tr><tr><td>*</td><td>2005-06-17</td><td>The patient indicated they did not fast prior to the procedure. <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.0.0/CodeSystem-v2-0916.html">relevantClincialInformation</a>#NF)</span></td></tr></table></blockquote></div>
 
     <!-- insert notes if present -->
   
@@ -249,17 +238,21 @@ org.hl7.fhir.igtools.publisher.Publisher.main (Publisher.java:8277 --></p></bloc
       }
     });
   </script>
+  <a name="bottom"> </a>
   <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
     <div class="container">    <!-- container -->
+
       <div class="inner-wrapper">
-        <p><a name="8e2d6b17-4988-4100-9e30-37d8c6e562d1">​</a>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="bbmri.de">bbmri.de</a>.  Package de.bbmri.fhir#1.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Mar 3, 2021 08:01+0000">2021-03-03</span>
+        <p><a name="l735">​</a>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="bbmri.de">bbmri.de</a>.  Package de.bbmri.fhir#1.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jan 18, 2022 15:55+0000">2022-01-18</span>
           <br/>
-          <span style="color: #FFFF77">
-                      Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
-                 <a style="color: #81BEF7" href="qa.html">QA Report</a>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
 | <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" alt="Creative Commons Lizenzvertrag" style="border-width:0"/></a>
-          </span>
+          
         </p>
       </div>    <!-- /inner-wrapper -->
     </div>    <!-- /container -->
@@ -280,6 +273,13 @@ org.hl7.fhir.igtools.publisher.Publisher.main (Publisher.java:8277 --></p></bloc
   <script>anchors.options.visible = 'hover'
 anchors.add()</script>
   
+  <!-- feedback form - Google forms -->
+  <!-- v0.1, 2021-01-09 -->
+
+
+
+  <!-- / feedback form -->
+
     <!-- Analytics Below
   ================================================== -->
   </body>

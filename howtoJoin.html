@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>DE.BBMRI.FHIR\Howto Join - FHIR v4.0.1</title>
+    <title>DE.BBMRI.FHIR\How To Join - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="fhir.css"/>
 
       <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="assets/css/bootstrap.css"/>
     <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
 
       <!-- Project extras -->
@@ -109,7 +108,7 @@
         <a href="referencedIGs.html">Referenced IGs</a>
       </li>
       <li>
-        <a href="etlTalent.html">Build ETL with TOS</a>
+        <a href="etlTalend.html">Build ETL with TOS</a>
       </li>
       <li>
         <a href="qualityMeasures.html">Quality Measures</a>
@@ -128,7 +127,7 @@
         <a href="downloads.html">Downloads</a>
       </li>
       <li>
-        <a href="http://hl7.org/fhir/R4/index.html" target="_blank">FHIR Spec <img src="external.png" style="text-align: baseline"/></a>
+        <a href="http://hl7.org/fhir/R4/index.html" target="_blank">FHIR Spec</a>
       </li>
     </ul>
   </li>
@@ -140,15 +139,18 @@
       </div>    <!-- /container -->
     </div>    <!-- /segment-navbar -->
       <!-- status-bar -->
+
     <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
       <div class="container">    <!-- container -->
         <ul class="breadcrumb">
-          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>Howto Join</b></li>
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>How To Join</b></li>
+
         </ul>
       </div>    <!-- /container -->
     </div>    <!-- /segment-breadcrumb -->
 
-    <div id="segment-content">    <!-- segment-content -->
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
       <div class="container">    <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
@@ -162,7 +164,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </style>
 <div class="col-12">
     <!-- ReleaseHeader --><p id="publish-box">BBMRI.de/GBA Implementation Guide - Local Development build (v1.2.0). See the <a href="https://fhir.bbmri.de/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
-  <h2>Howto Join</h2>
+  <h2>How To Join</h2>
   
 
 
@@ -179,11 +181,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="#about" id="markdown-toc-about">About</a></li>
   <li><a href="#general-requirements" id="markdown-toc-general-requirements">General Requirements</a></li>
   <li><a href="#guides-to-install-fill-and-connect-a-bridgehead" id="markdown-toc-guides-to-install-fill-and-connect-a-bridgehead">Guides to install, fill and connect a Bridgehead</a></li>
+  <li><a href="#staying-in-contact" id="markdown-toc-staying-in-contact">Staying in contact</a></li>
   <li><a href="#reinforcing-the-team" id="markdown-toc-reinforcing-the-team">Reinforcing the team</a></li>
 </ul>
 
 </div>
-  <!-- howtoJoin.md -->
 <p>This section describes how to connect your biobank to the <a href="https://samplelocator.bbmri.de">Sample Locator</a> and what you need to have in place before you do so.</p>
 
 <h3 id="about">About</h3>
@@ -203,17 +205,21 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h3 id="general-requirements">General Requirements</h3>
 <ol>
-  <li>Hardware:
-    <ul>
-      <li>16 GB RAM</li>
-      <li>50 GB disk space (depends on amount of data)</li>
-      <li>2 or 4 CPU cores</li>
-      <li>OS with support for <a href="https://docs.docker.com/get-docker/">docker</a> (e.g. Linux, Windows 10 with hyper-V, macOS)</li>
-      <li>Outgoing http and https</li>
-      <li>Proxies are supported. No VPN or incoming ports required.</li>
-      <li>Firewall to restrict access from internal network is recommended.</li>
-    </ul>
-  </li>
+  <li>Hardware</li>
+</ol>
+
+<p><strong><em>NOTE</em></strong>: With these hardware specifications, the maximum number of samples that can be handled is about 700 000 for simple queries. If you want to be able to deal with more complex queries in reasonable time, then it is recommended that you limit your sample count to a maximum of 500 000.</p>
+<ul>
+  <li>16 GB RAM</li>
+  <li>50 GB disk space (depends on amount of data)</li>
+  <li>4 CPU cores</li>
+  <li>OS with support for <a href="https://docs.docker.com/get-docker/">docker</a> (e.g. Linux, Windows 10 with hyper-V, macOS)</li>
+  <li>Outgoing http and https</li>
+  <li>Proxies are supported. No VPN or incoming ports required.</li>
+  <li>Firewall to restrict access from internal network is recommended.</li>
+</ul>
+
+<ol>
   <li>Software:
 We recommend using Docker for installing the Bridgehead components on your site, and we make this easy for you by providing a fully configured Docker bundle for this purpose. Manual installation is also possible but entails significantly more work. So you will need to install:
     <ul>
@@ -229,9 +235,23 @@ Read this <a href="https://www.bbmri.de/biobanking/it/data-protection-concept/?L
     <p>Data access:<br/>
 To fill the Store of the Bridgehead you need access to clinical data from your <strong>local source systems</strong>. An overview about the clinical data which we want to provide in the ferderated search can be found <a href="overview.html">here</a>.</p>
   </li>
-  <li>Data format:<br/>
-The Store of the Bridgehead stores data as <strong>HL7 FHIR&reg; Bundles</strong>. To import data into the Store, they must be harmonised and converted. Each site must build an ETL-process (extract, transform, load) to harmonise the structure of the data and translate them to fit predefined FHIR&reg; profiles.
-You can find our FHIR&reg; profile for the basic data set <a href="https://simplifier.net/bbmri.de">here</a> and for the oncology data set <a href="https://simplifier.net/oncology">here</a>.</li>
+  <li>
+    <p>Data format:<br/>
+The Store of the Bridgehead stores data as <strong>HL7 FHIR&reg; Resources</strong>. To import data into the Store, they must be harmonised and converted. Each site must build an ETL-pipeline (extract, transform, load) to harmonise the structure of the data and translate them to fit predefined FHIR&reg; profiles.
+You can find our FHIR&reg; profile for the basic data set <a href="https://simplifier.net/bbmri.de">here</a> and for the oncology data set <a href="https://simplifier.net/oncology">here</a>.</p>
+  </li>
+  <li>Definition of “Sample”: 
+A sample, as undestood by the Sample Locator, should satisfy the following conditions:</li>
+</ol>
+
+<ul>
+  <li>Samples for which all parameters are identical are considered to be a single sample and will counted only once - or- may only be loaded once into the store. &amp;</li>
+  <li>Aliquots for which all must-support parameters from the profile are identical are considered to be a single sample and should be loaded only one in the store.</li>
+</ul>
+
+<ol>
+  <li>Directory collections: 
+If you are participating in the BBMRI Directory, you should create or assign a single collection specifically for use with the Locator. This is because, right now, the Locator can only present sample counts for a single collection.  If you only have a single collection, or if there is only one collection that you wish to make available to the Locator, then you should use that collection.</li>
 </ol>
 
 <h3 id="guides-to-install-fill-and-connect-a-bridgehead">Guides to install, fill and connect a Bridgehead</h3>
@@ -249,7 +269,7 @@ You can find our FHIR&reg; profile for the basic data set <a href="https://simpl
     <p>The FHIR&reg; oncology profiles can be found <a href="https://simplifier.net/oncology">here</a>. The related Implementation Guide can be found <a href="https://simplifier.net/guide/implementationguide4/home">here</a>.</p>
   </li>
   <li>
-    <p>An example of how to build an ETL-process with Talend Open Studio for Data Integration and Hapi FHIR API can be found <a href="etlTalent.html">here</a>.</p>
+    <p><a name="l585">​</a>An example of how to build an ETL-process with Talend Open Studio for Data Integration and Hapi FHIR API can be found <a href="etlTalent.html">here</a>.</p>
   </li>
   <li>
     <p>Instructions on how to validate your FHIR&reg; resources can be found <a href="support.html">here</a>.</p>
@@ -284,6 +304,15 @@ You can find our FHIR&reg; profile for the basic data set <a href="https://simpl
   </li>
 </ul>
 
+<h3 id="staying-in-contact">Staying in contact</h3>
+
+<p>If you encounter problems or have further questions, you can contact us via the following email addresses:</p>
+
+<ul>
+  <li>For problems or questions regarding the GBA (Sample Locator) network, please send an email to: feedback@germanbiobanknode.de</li>
+  <li>For problems or questions regarding the BBMRI (Locator) network, please send an email to: federated-platform@helpdesk.bbmri-eric.eu</li>
+</ul>
+
 <h3 id="reinforcing-the-team">Reinforcing the team</h3>
 <p>Interested in developing and enhancing the Sample Locator components or our other open source software? Read our <a href="https://samply.github.io/manifest">manifesto</a> and join the Samply community!</p>
 
@@ -306,17 +335,21 @@ You can find our FHIR&reg; profile for the basic data set <a href="https://simpl
       }
     });
   </script>
+  <a name="bottom"> </a>
   <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
     <div class="container">    <!-- container -->
+
       <div class="inner-wrapper">
-        <p><a name="4c605ced-3c11-45c5-99d6-864a790fdc99">​</a>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="bbmri.de">bbmri.de</a>.  Package de.bbmri.fhir#1.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Mar 3, 2021 08:01+0000">2021-03-03</span>
+        <p><a name="l729">​</a>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="bbmri.de">bbmri.de</a>.  Package de.bbmri.fhir#1.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jan 18, 2022 15:55+0000">2022-01-18</span>
           <br/>
-          <span style="color: #FFFF77">
-                      Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
-                 <a style="color: #81BEF7" href="qa.html">QA Report</a>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
 | <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" alt="Creative Commons Lizenzvertrag" style="border-width:0"/></a>
-          </span>
+          
         </p>
       </div>    <!-- /inner-wrapper -->
     </div>    <!-- /container -->
@@ -337,6 +370,13 @@ You can find our FHIR&reg; profile for the basic data set <a href="https://simpl
   <script>anchors.options.visible = 'hover'
 anchors.add()</script>
   
+  <!-- feedback form - Google forms -->
+  <!-- v0.1, 2021-01-09 -->
+
+
+
+  <!-- / feedback form -->
+
     <!-- Analytics Below
   ================================================== -->
   </body>

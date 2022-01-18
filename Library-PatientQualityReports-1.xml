@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library xmlns="urn:hl7-org:elm:r1" xmlns:t="urn:hl7-org:elm-types:r1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:fhir="http://hl7.org/fhir" xmlns:qdm43="urn:healthit-gov:qdm:v4_3" xmlns:qdm53="urn:healthit-gov:qdm:v5_3" xmlns:a="urn:hl7-org:cql-annotations:r1">
+   <annotation translatorOptions="EnableAnnotations,EnableLocators,DisableListDemotion,DisableListPromotion" xsi:type="a:CqlToElmInfo"/>
+   <identifier id="Retrieve" system="https://fhir.bbmri.de"/>
+   <schemaIdentifier id="urn:hl7-org:elm" version="r1"/>
+   <usings>
+      <def localIdentifier="System" uri="urn:hl7-org:elm-types:r1"/>
+      <def localId="1" locator="2:1-2:26" localIdentifier="FHIR" uri="http://hl7.org/fhir" version="4.0.0">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="1">
+               <a:s>using FHIR version '4.0.0'</a:s>
+            </a:s>
+         </annotation>
+      </def>
+   </usings>
+   <includes>
+      <def localId="2" locator="3:1-3:35" localIdentifier="FHIRHelpers" path="http://hl7.org/fhir/FHIRHelpers" version="4.0.0">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="2">
+               <a:s>include </a:s>
+               <a:s>
+                  <a:s>FHIRHelpers</a:s>
+               </a:s>
+               <a:s> version '4.0.0'</a:s>
+            </a:s>
+         </annotation>
+      </def>
+   </includes>
+   <codeSystems>
+      <def localId="3" locator="5:1-5:50" name="icd10" id="http://hl7.org/fhir/sid/icd-10" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="3">
+               <a:s>codesystem icd10: 'http://hl7.org/fhir/sid/icd-10'</a:s>
+            </a:s>
+         </annotation>
+      </def>
+      <def localId="4" locator="6:1-6:63" name="icd10Gm" id="http://fhir.de/CodeSystem/dimdi/icd-10-gm" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="4">
+               <a:s>codesystem icd10Gm: 'http://fhir.de/CodeSystem/dimdi/icd-10-gm'</a:s>
+            </a:s>
+         </annotation>
+      </def>
+   </codeSystems>
+   <contexts>
+      <def locator="8:1-8:15" name="Patient"/>
+   </contexts>
+   <statements>
+      <def locator="8:1-8:15" name="Patient" context="Patient">
+         <expression xsi:type="SingletonFrom">
+            <operand locator="8:1-8:15" dataType="fhir:Patient" xsi:type="Retrieve"/>
+         </expression>
+      </def>
+      <def localId="6" locator="10:1-11:6" name="InInitialPopulation" context="Patient" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="6">
+               <a:s r="5">define InInitialPopulation:
+  true</a:s>
+            </a:s>
+         </annotation>
+         <expression localId="5" locator="11:3-11:6" valueType="t:Boolean" value="true" xsi:type="Literal"/>
+      </def>
+      <def localId="12" locator="13:1-14:28" name="AgeClass" context="Patient" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="12">
+               <a:s>define AgeClass:
+  </a:s>
+               <a:s r="11">
+                  <a:s r="9">
+                     <a:s>(</a:s>
+                     <a:s r="9">
+                        <a:s r="7">
+                           <a:s>AgeInYears()</a:s>
+                        </a:s>
+                        <a:s r="8"> div 10</a:s>
+                     </a:s>
+                     <a:s>)</a:s>
+                  </a:s>
+                  <a:s r="10"> * 10</a:s>
+               </a:s>
+            </a:s>
+         </annotation>
+         <expression localId="11" locator="14:3-14:28" xsi:type="Multiply">
+            <operand localId="9" locator="14:3-14:23" xsi:type="TruncatedDivide">
+               <operand localId="7" locator="14:4-14:15" precision="Year" xsi:type="CalculateAge">
+                  <operand path="birthDate.value" xsi:type="Property">
+                     <source name="Patient" xsi:type="ExpressionRef"/>
+                  </operand>
+               </operand>
+               <operand localId="8" locator="14:21-14:22" valueType="t:Integer" value="10" xsi:type="Literal"/>
+            </operand>
+            <operand localId="10" locator="14:27-14:28" valueType="t:Integer" value="10" xsi:type="Literal"/>
+         </expression>
+      </def>
+      <def localId="15" locator="16:1-17:16" name="Gender" context="Patient" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="15">
+               <a:s>define Gender:
+  </a:s>
+               <a:s r="14">
+                  <a:s r="13">
+                     <a:s>Patient</a:s>
+                  </a:s>
+                  <a:s>.</a:s>
+                  <a:s r="14">
+                     <a:s>gender</a:s>
+                  </a:s>
+               </a:s>
+            </a:s>
+         </annotation>
+         <expression localId="14" locator="17:3-17:16" path="gender" xsi:type="Property">
+            <source localId="13" locator="17:3-17:9" name="Patient" xsi:type="ExpressionRef"/>
+         </expression>
+      </def>
+      <def localId="35" locator="19:1-23:48" name="HasCovid19" context="Patient" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="35">
+               <a:s>define HasCovid19:
+  </a:s>
+               <a:s r="34">
+                  <a:s r="29">
+                     <a:s r="24">
+                        <a:s r="19">
+                           <a:s>exists</a:s>
+                           <a:s r="18">
+                              <a:s>(</a:s>
+                              <a:s r="18">
+                                 <a:s>[Condition: </a:s>
+                                 <a:s r="17">
+                                    <a:s>Code 'U07.1' from </a:s>
+                                    <a:s r="16">
+                                       <a:s>icd10</a:s>
+                                    </a:s>
+                                 </a:s>
+                                 <a:s>]</a:s>
+                              </a:s>
+                              <a:s>)</a:s>
+                           </a:s>
+                        </a:s>
+                        <a:s> or
+  </a:s>
+                        <a:s r="23">
+                           <a:s>exists</a:s>
+                           <a:s r="22">
+                              <a:s>(</a:s>
+                              <a:s r="22">
+                                 <a:s>[Condition: </a:s>
+                                 <a:s r="21">
+                                    <a:s>Code 'U07.2' from </a:s>
+                                    <a:s r="20">
+                                       <a:s>icd10</a:s>
+                                    </a:s>
+                                 </a:s>
+                                 <a:s>]</a:s>
+                              </a:s>
+                              <a:s>)</a:s>
+                           </a:s>
+                        </a:s>
+                     </a:s>
+                     <a:s> or
+  </a:s>
+                     <a:s r="28">
+                        <a:s>exists</a:s>
+                        <a:s r="27">
+                           <a:s>(</a:s>
+                           <a:s r="27">
+                              <a:s>[Condition: </a:s>
+                              <a:s r="26">
+                                 <a:s>Code 'U07.1' from </a:s>
+                                 <a:s r="25">
+                                    <a:s>icd10Gm</a:s>
+                                 </a:s>
+                              </a:s>
+                              <a:s>]</a:s>
+                           </a:s>
+                           <a:s>)</a:s>
+                        </a:s>
+                     </a:s>
+                  </a:s>
+                  <a:s> or
+  </a:s>
+                  <a:s r="33">
+                     <a:s>exists</a:s>
+                     <a:s r="32">
+                        <a:s>(</a:s>
+                        <a:s r="32">
+                           <a:s>[Condition: </a:s>
+                           <a:s r="31">
+                              <a:s>Code 'U07.2' from </a:s>
+                              <a:s r="30">
+                                 <a:s>icd10Gm</a:s>
+                              </a:s>
+                           </a:s>
+                           <a:s>]</a:s>
+                        </a:s>
+                        <a:s>)</a:s>
+                     </a:s>
+                  </a:s>
+               </a:s>
+            </a:s>
+         </annotation>
+         <expression localId="34" locator="20:3-23:48" xsi:type="Or">
+            <operand localId="29" locator="20:3-22:48" xsi:type="Or">
+               <operand localId="24" locator="20:3-21:46" xsi:type="Or">
+                  <operand localId="19" locator="20:3-20:46" xsi:type="Exists">
+                     <operand localId="18" locator="20:9-20:46" dataType="fhir:Condition" codeProperty="code" codeComparator="~" xsi:type="Retrieve">
+                        <codes xsi:type="ToList">
+                           <operand localId="17" locator="20:22-20:44" code="U07.1" xsi:type="Code">
+                              <system localId="16" locator="20:40-20:44" name="icd10"/>
+                           </operand>
+                        </codes>
+                     </operand>
+                  </operand>
+                  <operand localId="23" locator="21:3-21:46" xsi:type="Exists">
+                     <operand localId="22" locator="21:9-21:46" dataType="fhir:Condition" codeProperty="code" codeComparator="~" xsi:type="Retrieve">
+                        <codes xsi:type="ToList">
+                           <operand localId="21" locator="21:22-21:44" code="U07.2" xsi:type="Code">
+                              <system localId="20" locator="21:40-21:44" name="icd10"/>
+                           </operand>
+                        </codes>
+                     </operand>
+                  </operand>
+               </operand>
+               <operand localId="28" locator="22:3-22:48" xsi:type="Exists">
+                  <operand localId="27" locator="22:9-22:48" dataType="fhir:Condition" codeProperty="code" codeComparator="~" xsi:type="Retrieve">
+                     <codes xsi:type="ToList">
+                        <operand localId="26" locator="22:22-22:46" code="U07.1" xsi:type="Code">
+                           <system localId="25" locator="22:40-22:46" name="icd10Gm"/>
+                        </operand>
+                     </codes>
+                  </operand>
+               </operand>
+            </operand>
+            <operand localId="33" locator="23:3-23:48" xsi:type="Exists">
+               <operand localId="32" locator="23:9-23:48" dataType="fhir:Condition" codeProperty="code" codeComparator="~" xsi:type="Retrieve">
+                  <codes xsi:type="ToList">
+                     <operand localId="31" locator="23:22-23:46" code="U07.2" xsi:type="Code">
+                        <system localId="30" locator="23:40-23:46" name="icd10Gm"/>
+                     </operand>
+                  </codes>
+               </operand>
+            </operand>
+         </expression>
+      </def>
+   </statements>
+</library>

@@ -10,7 +10,7 @@
   fhir:Resource.id [ fhir:value "PatientQualityReports"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><h3>Ids</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>url</b>: <a href=\"https://fhir.bbmri.de/Library/PatientQualityReports\">https://fhir.bbmri.de/Library/PatientQualityReports</a></p><p><b>version</b>: 1.2.0</p><p><b>name</b>: PatientQualityReports</p><p><b>title</b>: Patient Quality Reports</p><p><b>status</b>: active</p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/library-type logic-library}\">Logic Library</span></p><p><b>subject</b>: <span title=\"Codes: {http://hl7.org/fhir/resource-types Patient}\">Patient</span></p><p><b>date</b>: Mar 3, 2021, 8:01:39 AM</p><p><b>publisher</b>: bbmri.de</p><p><b>contact</b>: bbmri.de: bbmri.de,feedback@germanbiobanknode.de</p><p><b>description</b>: This library contains various expressions used in different patient related quality reports.</p><h3>RelatedArtifacts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr></table><h3>Contents</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr><tr><td>*</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Related Artifacts</h2><table class=\"grid\"><tr><td>depends-on</td><td><code>http://hl7.org/fhir/Library/FHIR-ModelInfo|4.0.0</code></td></tr><tr><td>depends-on</td><td><code>http://hl7.org/fhir/Library/FHIRHelpers|4.0.0</code></td></tr><tr><td>depends-on</td><td><a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-icd10.html\">ICD-10</a></td></tr><tr><td>depends-on</td><td><code>http://fhir.de/CodeSystem/dimdi/icd-10-gm</code></td></tr></table><h2>Contents</h2><p><code>text/cql</code></p><pre><code class=\"language-sql\">library Retrieve\nusing FHIR version '4.0.0'\ninclude FHIRHelpers version '4.0.0'\n\ncodesystem icd10: 'http://hl7.org/fhir/sid/icd-10'\ncodesystem icd10Gm: 'http://fhir.de/CodeSystem/dimdi/icd-10-gm'\n\ncontext Patient\n\ndefine InInitialPopulation:\n  true\n\ndefine AgeClass:\n  (AgeInYears() div 10) * 10\n\ndefine Gender:\n  Patient.gender\n\ndefine HasCovid19:\n  exists([Condition: Code 'U07.1' from icd10]) or\n  exists([Condition: Code 'U07.2' from icd10]) or\n  exists([Condition: Code 'U07.1' from icd10Gm]) or\n  exists([Condition: Code 'U07.2' from icd10Gm])\n</code></pre><p><code>Content not shown - (</code><code>application/elm+xml</code>, size = 10Kb)</p></div>"
   ];
   fhir:Library.url [ fhir:value "https://fhir.bbmri.de/Library/PatientQualityReports"];
   fhir:Library.version [ fhir:value "1.2.0"];
@@ -31,7 +31,7 @@
        fhir:Coding.code [ fhir:value "Patient" ]
      ]
   ];
-  fhir:Library.date [ fhir:value "2021-03-03T08:01:39+00:00"^^xsd:dateTime];
+  fhir:Library.date [ fhir:value "2022-01-18T15:55:49+00:00"^^xsd:dateTime];
   fhir:Library.publisher [ fhir:value "bbmri.de"];
   fhir:Library.contact [
      fhir:index 0;

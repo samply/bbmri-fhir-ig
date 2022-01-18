@@ -10,7 +10,7 @@
   "name": "BodyWeight",
   "title": "Body Weight",
   "status": "active",
-  "date": "2021-03-03T08:01:39+00:00",
+  "date": "2022-01-18T15:55:49+00:00",
   "publisher": "bbmri.de",
   "contact": [
     {
@@ -4260,7 +4260,7 @@
           "min": 0,
           "max": "*"
         },
-        "contentReference": "#Observation.referenceRange",
+        "contentReference": "http://hl7.org/fhir/StructureDefinition/Observation#Observation.referenceRange",
         "constraint": [
           {
             "key": "ele-1",

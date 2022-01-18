@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "BodyWeight"];
   fhir:StructureDefinition.title [ fhir:value "Body Weight"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-03-03T08:01:39+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-01-18T15:55:49+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "bbmri.de"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -4506,7 +4506,7 @@
          fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
          fhir:ElementDefinition.base.max [ fhir:value "*" ]
        ];
-       fhir:ElementDefinition.contentReference [ fhir:value "#Observation.referenceRange" ];
+       fhir:ElementDefinition.contentReference [ fhir:value "http://hl7.org/fhir/StructureDefinition/Observation#Observation.referenceRange" ];
        fhir:ElementDefinition.constraint [
          fhir:index 0;
          fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];

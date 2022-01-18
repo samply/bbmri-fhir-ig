@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="d6b37eb2-1baa-4857-8143-37fdd670f499"/>
+  <id value="e993a26f-47f7-4c9a-8963-e7e95e45e8d0"/>
   <meta>
-    <lastUpdated value="2021-03-03T08:01:39.297+00:00"/>
+    <lastUpdated value="2022-01-18T15:55:49.709+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -18,7 +18,7 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-BiobankCapabilities.html">Biobank Capabilities v1.2.0 (CodeSystem)</a>
             </p>
-            <p>All codes from system 
+            <p>All codes in this table are from the system 
               <a href="CodeSystem-BiobankCapabilities.html">
                 <code>https://fhir.bbmri.de/CodeSystem/BiobankCapabilities</code>
               </a>
@@ -131,7 +131,7 @@
         <name value="BiobankCapabilities"/>
         <title value="Biobank Capabilities"/>
         <status value="active"/>
-        <date value="2021-03-03T08:01:39+00:00"/>
+        <date value="2022-01-18T15:55:49+00:00"/>
         <publisher value="bbmri.de"/>
         <contact>
           <name value="bbmri.de"/>
@@ -145,8 +145,8 @@
           </telecom>
         </contact>
         <expansion>
-          <identifier value="urn:uuid:62514699-3c98-49c1-b4da-f9ca0bcc2fbf"/>
-          <timestamp value="2021-03-03T08:02:30+00:00"/>
+          <identifier value="urn:uuid:404e3eaf-60fe-4063-82a5-d7e9b88e7480"/>
+          <timestamp value="2022-01-18T15:56:25+00:00"/>
           <total value="11"/>
           <parameter>
             <name value="excludeNested"/>
@@ -227,7 +227,7 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-CollectionType.html">Collection Type v1.2.0 (CodeSystem)</a>
             </p>
-            <p>All codes from system 
+            <p>All codes in this table are from the system 
               <a href="CodeSystem-CollectionType.html">
                 <code>https://fhir.bbmri.de/CodeSystem/CollectionType</code>
               </a>
@@ -372,7 +372,7 @@
         <name value="CollectionType"/>
         <title value="Collection Type"/>
         <status value="active"/>
-        <date value="2021-03-03T08:01:39+00:00"/>
+        <date value="2022-01-18T15:55:49+00:00"/>
         <publisher value="bbmri.de"/>
         <contact>
           <name value="bbmri.de"/>
@@ -386,8 +386,8 @@
           </telecom>
         </contact>
         <expansion>
-          <identifier value="urn:uuid:16f5abaf-a700-4a84-b672-be630401991d"/>
-          <timestamp value="2021-03-03T08:02:36+00:00"/>
+          <identifier value="urn:uuid:cd4e56cf-a926-45f6-b3b0-6cb5562231c2"/>
+          <timestamp value="2022-01-18T15:56:25+00:00"/>
           <total value="15"/>
           <parameter>
             <name value="excludeNested"/>
@@ -488,7 +488,7 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-DataCategory.html">Data Category v1.2.0 (CodeSystem)</a>
             </p>
-            <p>All codes from system 
+            <p>All codes in this table are from the system 
               <a href="CodeSystem-DataCategory.html">
                 <code>https://fhir.bbmri.de/CodeSystem/DataCategory</code>
               </a>
@@ -585,7 +585,7 @@
         <name value="DataCategory"/>
         <title value="Data Category"/>
         <status value="active"/>
-        <date value="2021-03-03T08:01:39+00:00"/>
+        <date value="2022-01-18T15:55:49+00:00"/>
         <publisher value="bbmri.de"/>
         <contact>
           <name value="bbmri.de"/>
@@ -599,8 +599,8 @@
           </telecom>
         </contact>
         <expansion>
-          <identifier value="urn:uuid:e7281b2f-4e3e-4846-80cd-36a0481b1a29"/>
-          <timestamp value="2021-03-03T08:02:38+00:00"/>
+          <identifier value="urn:uuid:01689ca4-65fb-44e6-9ae5-df85c740ab4f"/>
+          <timestamp value="2022-01-18T15:56:25+00:00"/>
           <total value="9"/>
           <parameter>
             <name value="excludeNested"/>
@@ -671,7 +671,7 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-OtherSampleDiagnosis.html">Other Sample Diagnosis v1.2.0 (CodeSystem)</a>
             </p>
-            <p>All codes from system 
+            <p>All codes in this table are from the system 
               <a href="CodeSystem-OtherSampleDiagnosis.html">
                 <code>https://fhir.bbmri.de/CodeSystem/OtherSampleDiagnosis</code>
               </a>
@@ -728,7 +728,7 @@
         <name value="OtherSampleDiagnosis"/>
         <title value="other sample diagnosis"/>
         <status value="active"/>
-        <date value="2021-03-03T08:01:39+00:00"/>
+        <date value="2022-01-18T15:55:49+00:00"/>
         <publisher value="bbmri.de"/>
         <contact>
           <name value="bbmri.de"/>
@@ -742,8 +742,8 @@
           </telecom>
         </contact>
         <expansion>
-          <identifier value="urn:uuid:44268ba0-d5b2-44ec-b331-7775fedc82fa"/>
-          <timestamp value="2021-03-03T08:02:40+00:00"/>
+          <identifier value="urn:uuid:1fbebb36-35be-428b-ad0d-1ab7d68ac1d8"/>
+          <timestamp value="2022-01-18T15:56:25+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -789,7 +789,7 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-QualityStandard.html">Quality Standard v1.2.0 (CodeSystem)</a>
             </p>
-            <p>All codes from system 
+            <p>All codes in this table are from the system 
               <a href="CodeSystem-QualityStandard.html">
                 <code>https://fhir.bbmri.de/CodeSystem/QualityStandard</code>
               </a>
@@ -870,7 +870,7 @@
         <name value="QualityStandard"/>
         <title value="Quality Standard"/>
         <status value="active"/>
-        <date value="2021-03-03T08:01:39+00:00"/>
+        <date value="2022-01-18T15:55:49+00:00"/>
         <publisher value="bbmri.de"/>
         <contact>
           <name value="bbmri.de"/>
@@ -884,8 +884,8 @@
           </telecom>
         </contact>
         <expansion>
-          <identifier value="urn:uuid:4658de6c-6955-4a40-aba7-c2038720e1a2"/>
-          <timestamp value="2021-03-03T08:02:40+00:00"/>
+          <identifier value="urn:uuid:083d6106-c9b1-427a-9ade-3b4a04e68378"/>
+          <timestamp value="2022-01-18T15:56:25+00:00"/>
           <total value="7"/>
           <parameter>
             <name value="excludeNested"/>
@@ -946,7 +946,7 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-ResourceType.html">Resource Type v1.2.0 (CodeSystem)</a>
             </p>
-            <p>All codes from system 
+            <p>All codes in this table are from the system 
               <a href="CodeSystem-ResourceType.html">
                 <code>https://fhir.bbmri.de/CodeSystem/ResourceType</code>
               </a>
@@ -995,7 +995,7 @@
         <name value="ResourceType"/>
         <title value="Resource Type"/>
         <status value="active"/>
-        <date value="2021-03-03T08:01:39+00:00"/>
+        <date value="2022-01-18T15:55:49+00:00"/>
         <publisher value="bbmri.de"/>
         <contact>
           <name value="bbmri.de"/>
@@ -1009,8 +1009,8 @@
           </telecom>
         </contact>
         <expansion>
-          <identifier value="urn:uuid:c872a538-8519-4636-886a-f29ebc69b2e4"/>
-          <timestamp value="2021-03-03T08:02:41+00:00"/>
+          <identifier value="urn:uuid:1885e1b3-b5b6-47c4-b9a8-c4b144cdebe8"/>
+          <timestamp value="2022-01-18T15:56:25+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1051,7 +1051,7 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-SampleMaterialType.html">Sample Material Type v1.2.0 (CodeSystem)</a>
             </p>
-            <p>All codes from system 
+            <p>All codes in this table are from the system 
               <a href="CodeSystem-SampleMaterialType.html">
                 <code>https://fhir.bbmri.de/CodeSystem/SampleMaterialType</code>
               </a>
@@ -1409,7 +1409,7 @@
         <name value="SampleMaterialType"/>
         <title value="Sample Material Type"/>
         <status value="active"/>
-        <date value="2021-03-03T08:01:39+00:00"/>
+        <date value="2022-01-18T15:55:49+00:00"/>
         <publisher value="bbmri.de"/>
         <contact>
           <name value="bbmri.de"/>
@@ -1423,8 +1423,8 @@
           </telecom>
         </contact>
         <expansion>
-          <identifier value="urn:uuid:fab0330f-e2c1-429a-8fc2-3a5a25a23972"/>
-          <timestamp value="2021-03-03T08:02:41+00:00"/>
+          <identifier value="urn:uuid:e889ebef-1a4c-45ed-9c6f-00e7bb0a815b"/>
+          <timestamp value="2022-01-18T15:56:25+00:00"/>
           <total value="33"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1615,7 +1615,7 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-StorageTemperature.html">Storage Temperature v1.2.0 (CodeSystem)</a>
             </p>
-            <p>All codes from system 
+            <p>All codes in this table are from the system 
               <a href="CodeSystem-StorageTemperature.html">
                 <code>https://fhir.bbmri.de/CodeSystem/StorageTemperature</code>
               </a>
@@ -1696,7 +1696,7 @@
         <name value="StorageTemperature"/>
         <title value="Storage Temperature"/>
         <status value="active"/>
-        <date value="2021-03-03T08:01:39+00:00"/>
+        <date value="2022-01-18T15:55:49+00:00"/>
         <publisher value="bbmri.de"/>
         <contact>
           <name value="bbmri.de"/>
@@ -1710,8 +1710,8 @@
           </telecom>
         </contact>
         <expansion>
-          <identifier value="urn:uuid:76994c7f-1c0e-4398-8569-5224424c4005"/>
-          <timestamp value="2021-03-03T08:02:42+00:00"/>
+          <identifier value="urn:uuid:f22d9335-3e27-488b-ba7d-338b2959ab6c"/>
+          <timestamp value="2022-01-18T15:56:25+00:00"/>
           <total value="7"/>
           <parameter>
             <name value="excludeNested"/>

@@ -1128,28 +1128,16 @@
     }
   ],
   "profiles": {
-    "Observation": [
-      {
-        "url": "https://fhir.bbmri.de/StructureDefinition/Bmi",
-        "title": "BMI"
-      },
-      {
-        "url": "https://fhir.bbmri.de/StructureDefinition/BodyHeight",
-        "title": "Body Height"
-      },
-      {
-        "url": "https://fhir.bbmri.de/StructureDefinition/BodyWeight",
-        "title": "Body Weight"
-      },
-      {
-        "url": "https://fhir.bbmri.de/StructureDefinition/CauseOfDeath",
-        "title": "Cause of Death"
-      }
-    ],
     "Organization": [
       {
         "url": "https://fhir.bbmri.de/StructureDefinition/Collection",
         "title": "Collection"
+      }
+    ],
+    "Observation": [
+      {
+        "url": "https://fhir.bbmri.de/StructureDefinition/TobaccoUse",
+        "title": "TobaccoUse"
       }
     ],
     "Condition": [

@@ -10,14 +10,14 @@
   fhir:Resource.id [ fhir:value "de.bbmri.fhir"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>BBMRI_DE_IG</h2><p>The official URL for this implementation guide is: </p><pre>https://fhir.bbmri.de/ImplementationGuide/de.bbmri.fhir/ImplementationGuide/de.bbmri.fhir</pre><div><p>Profiles for the BBMRI.de / GBA biobanking project.</p>\n</div></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>BBMRI_DE_IG</h2><p>The official URL for this implementation guide is: </p><pre>https://fhir.bbmri.de/ImplementationGuide/de.bbmri.fhir</pre><div><p>Profiles for the BBMRI.de / GBA biobanking project.</p>\n</div></div>"
   ];
-  fhir:ImplementationGuide.url [ fhir:value "https://fhir.bbmri.de/ImplementationGuide/de.bbmri.fhir/ImplementationGuide/de.bbmri.fhir"];
+  fhir:ImplementationGuide.url [ fhir:value "https://fhir.bbmri.de/ImplementationGuide/de.bbmri.fhir"];
   fhir:ImplementationGuide.version [ fhir:value "1.2.0"];
   fhir:ImplementationGuide.name [ fhir:value "BBMRI_DE_IG"];
   fhir:ImplementationGuide.title [ fhir:value "BBMRI.de/GBA Implementation Guide"];
   fhir:ImplementationGuide.status [ fhir:value "active"];
-  fhir:ImplementationGuide.date [ fhir:value "2021-03-03T08:01:39+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-01-18T15:55:49+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "bbmri.de"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -318,10 +318,6 @@
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "StructureDefinition-TobaccoUse.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <https://fhir.bbmri.de/StructureDefinition/TobaccoUse>;
@@ -336,369 +332,6 @@
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "StructureDefinition-AccessPolicy.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.bbmri.de/StructureDefinition/AccessPolicy>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/AccessPolicy" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Access Policy" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 2;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "StructureDefinition-Biobank.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.bbmri.de/StructureDefinition/Biobank>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/Biobank" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Biobank" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 3;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "CodeSystem-BiobankCapabilities.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.bbmri.de/CodeSystem/BiobankCapabilities>;
-         fhir:Reference.reference [ fhir:value "CodeSystem/BiobankCapabilities" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Biobank Capabilities" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 4;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "ValueSet-BiobankCapabilities.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.bbmri.de/ValueSet/BiobankCapabilities>;
-         fhir:Reference.reference [ fhir:value "ValueSet/BiobankCapabilities" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Biobank Capabilities" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 5;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "StructureDefinition-Bmi.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.bbmri.de/StructureDefinition/Bmi>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/Bmi" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BMI" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 6;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "StructureDefinition-BodyHeight.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.bbmri.de/StructureDefinition/BodyHeight>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/BodyHeight" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Body Height" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 7;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "StructureDefinition-BodyWeight.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.bbmri.de/StructureDefinition/BodyWeight>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/BodyWeight" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Body Weight" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 8;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "StructureDefinition-Capabilities.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.bbmri.de/StructureDefinition/Capabilities>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/Capabilities" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Capabilities" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 9;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "StructureDefinition-CauseOfDeath.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.bbmri.de/StructureDefinition/CauseOfDeath>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/CauseOfDeath" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Cause of Death" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 10;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "StructureDefinition-Collaboration.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.bbmri.de/StructureDefinition/Collaboration>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/Collaboration" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Collaboration" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 11;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "StructureDefinition-Collection.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.bbmri.de/StructureDefinition/Collection>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/Collection" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Collection" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 12;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "CodeSystem-CollectionType.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.bbmri.de/CodeSystem/CollectionType>;
-         fhir:Reference.reference [ fhir:value "CodeSystem/CollectionType" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Collection Type" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 13;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "StructureDefinition-CollectionType.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.bbmri.de/StructureDefinition/CollectionType>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/CollectionType" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Collection Type" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The type of sample collections governed by the Organization." ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 14;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "ValueSet-CollectionType.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.bbmri.de/ValueSet/CollectionType>;
-         fhir:Reference.reference [ fhir:value "ValueSet/CollectionType" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Collection Type" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 15;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "StructureDefinition-Condition.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.bbmri.de/StructureDefinition/Condition>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/Condition" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Condition" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 16;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "StructureDefinition-ContactRole.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.bbmri.de/StructureDefinition/ContactRole>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/ContactRole" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Contact Role" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 17;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "CodeSystem-ContactType.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.bbmri.de/CodeSystem/ContactType>;
-         fhir:Reference.reference [ fhir:value "CodeSystem/ContactType" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Contact Type" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 18;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "StructureDefinition-Custodian.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.bbmri.de/StructureDefinition/Custodian>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/Custodian" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Custodian" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 19;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "CodeSystem-DataCategory.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.bbmri.de/CodeSystem/DataCategory>;
-         fhir:Reference.reference [ fhir:value "CodeSystem/DataCategory" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Data Category" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 20;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "StructureDefinition-DataCategory.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.bbmri.de/StructureDefinition/DataCategory>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/DataCategory" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Data Category" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The categories of data that are available as part of the collection" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 21;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "ValueSet-DataCategory.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.bbmri.de/ValueSet/DataCategory>;
-         fhir:Reference.reference [ fhir:value "ValueSet/DataCategory" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Data Category" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 22;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "StructureDefinition-SampleDiagnosis.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <https://fhir.bbmri.de/StructureDefinition/SampleDiagnosis>;
@@ -707,103 +340,63 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Sample Diagnosis" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 23;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "StructureDefinition-ITSupport.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.bbmri.de/StructureDefinition/ITSupport>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/ITSupport" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "IT Support" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 24;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "StructureDefinition-IdCard.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.bbmri.de/StructureDefinition/IdCard>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/IdCard" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ID Card" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 25;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "StructureDefinition-JuridicalPerson.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.bbmri.de/StructureDefinition/JuridicalPerson>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/JuridicalPerson" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Juridical Person" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Name of the legal entity of the organization" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 26;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "StructureDefinition-NetworkMembership.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.bbmri.de/StructureDefinition/NetworkMembership>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/NetworkMembership" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Network Membership" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Resource representing the membership of a biobank in a biobank network" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 27;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "StructureDefinition-OrganizationDescription.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.bbmri.de/StructureDefinition/OrganizationDescription>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/OrganizationDescription" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Organization Description" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Description of the organization in English" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 28;
+       fhir:index 2;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "CodeSystem-OtherSampleDiagnosis.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://fhir.bbmri.de/CodeSystem/BiobankCapabilities>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/BiobankCapabilities" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Biobank Capabilities" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 3;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://fhir.bbmri.de/CodeSystem/CollectionType>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/CollectionType" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Collection Type" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 4;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://fhir.bbmri.de/CodeSystem/ContactType>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/ContactType" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Contact Type" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 5;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://fhir.bbmri.de/CodeSystem/DataCategory>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/DataCategory" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Data Category" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 6;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <https://fhir.bbmri.de/CodeSystem/OtherSampleDiagnosis>;
@@ -813,103 +406,11 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Contains the additional (not contained in ICD-10) codes needed for coding the MIABIS Sample Diagnosis plus a non-MIABIS code for indicating tumor material without a specific diagnosis." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 29;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "ValueSet-OtherSampleDiagnosis.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.bbmri.de/ValueSet/OtherSampleDiagnosis>;
-         fhir:Reference.reference [ fhir:value "ValueSet/OtherSampleDiagnosis" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "other sample diagnosis" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 30;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "StructureDefinition-PartnerCharterSigned.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.bbmri.de/StructureDefinition/PartnerCharterSigned>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/PartnerCharterSigned" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Partner Charter Signed" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 31;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "StructureDefinition-Patient.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.bbmri.de/StructureDefinition/Patient>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/Patient" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Patient" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Resoure representing a sample donor" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 32;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Library" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "Library-PatientQualityReports.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.bbmri.de/Library/PatientQualityReports>;
-         fhir:Reference.reference [ fhir:value "Library/PatientQualityReports" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Patient Quality Reports" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This library contains various expressions used in different patient related quality reports." ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 33;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Measure" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "Measure-PatientQualityReports.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.bbmri.de/Measure/PatientQualityReports>;
-         fhir:Reference.reference [ fhir:value "Measure/PatientQualityReports" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Patient Quality Reports" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This measure contains various patient related stratifiers to help to evaluate data quality." ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 34;
+       fhir:index 7;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "CodeSystem-QualityStandard.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <https://fhir.bbmri.de/CodeSystem/QualityStandard>;
@@ -918,67 +419,11 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Quality Standard" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 35;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "StructureDefinition-QualityStandard.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.bbmri.de/StructureDefinition/QualityStandard>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/QualityStandard" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Quality Standard" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Organization quality assessment" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 36;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "ValueSet-QualityStandard.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.bbmri.de/ValueSet/QualityStandard>;
-         fhir:Reference.reference [ fhir:value "ValueSet/QualityStandard" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Quality Standard" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 37;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "StructureDefinition-ResourceManagement.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.bbmri.de/StructureDefinition/ResourceManagement>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/ResourceManagement" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Resource Management" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 38;
+       fhir:index 8;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "CodeSystem-ResourceType.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <https://fhir.bbmri.de/CodeSystem/ResourceType>;
@@ -988,32 +433,11 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Types of resources that may be governed by a biobank or its collections" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 39;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "ValueSet-ResourceType.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.bbmri.de/ValueSet/ResourceType>;
-         fhir:Reference.reference [ fhir:value "ValueSet/ResourceType" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Resource Type" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 40;
+       fhir:index 9;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "CodeSystem-SampleMaterialType.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <https://fhir.bbmri.de/CodeSystem/SampleMaterialType>;
@@ -1023,49 +447,52 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The type of material the sample consists of." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 41;
+       fhir:index 10;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "ValueSet-SampleMaterialType.html" ]
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.bbmri.de/ValueSet/SampleMaterialType>;
-         fhir:Reference.reference [ fhir:value "ValueSet/SampleMaterialType" ]
+         fhir:link <https://fhir.bbmri.de/CodeSystem/StorageTemperature>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/StorageTemperature" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Sample Material Type" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Storage Temperature" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 42;
+       fhir:index 11;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "StructureDefinition-Specimen.html" ]
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.bbmri.de/StructureDefinition/Specimen>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/Specimen" ]
+         fhir:link <https://fhir.bbmri.de/StructureDefinition/JuridicalPerson>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/JuridicalPerson" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Specimen" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Juridical Person" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Name of the legal entity of the organization" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 43;
+       fhir:index 12;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "Library" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "Library-SpecimenQualityReports.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://fhir.bbmri.de/Library/PatientQualityReports>;
+         fhir:Reference.reference [ fhir:value "Library/PatientQualityReports" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Patient Quality Reports" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This library contains various expressions used in different patient related quality reports." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 13;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Library" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <https://fhir.bbmri.de/Library/SpecimenQualityReports>;
@@ -1075,15 +502,25 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "This library contains various expressions used in different specimen related quality reports." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 44;
+       fhir:index 14;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "Measure" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "Measure-SpecimenQualityReports.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://fhir.bbmri.de/Measure/PatientQualityReports>;
+         fhir:Reference.reference [ fhir:value "Measure/PatientQualityReports" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Patient Quality Reports" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This measure contains various patient related stratifiers to help to evaluate data quality." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 15;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Measure" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <https://fhir.bbmri.de/Measure/SpecimenQualityReports>;
@@ -1093,83 +530,11 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "This measure contains various specimen related stratifiers to help to evaluate data quality." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 45;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "CodeSystem-StorageTemperature.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.bbmri.de/CodeSystem/StorageTemperature>;
-         fhir:Reference.reference [ fhir:value "CodeSystem/StorageTemperature" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Storage Temperature" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 46;
+       fhir:index 16;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "StructureDefinition-StorageTemperature.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.bbmri.de/StructureDefinition/StorageTemperature>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/StorageTemperature" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Storage Temperature" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 47;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "ValueSet-StorageTemperature.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.bbmri.de/ValueSet/StorageTemperature>;
-         fhir:Reference.reference [ fhir:value "ValueSet/StorageTemperature" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Storage Temperature" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 48;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "StructureDefinition-BioresourceReference.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.bbmri.de/StructureDefinition/BioresourceReference>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/BioresourceReference" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Bioresource Reference" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 49;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "StructureDefinition-ParentCollection.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <https://fhir.bbmri.de/StructureDefinition/ParentCollection>;
@@ -1178,35 +543,459 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Parent Collection" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
+       fhir:index 17;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://fhir.bbmri.de/StructureDefinition/AccessPolicy>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/AccessPolicy" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Access Policy" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 18;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://fhir.bbmri.de/StructureDefinition/Biobank>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Biobank" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Biobank" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 19;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://fhir.bbmri.de/StructureDefinition/BioresourceReference>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/BioresourceReference" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Bioresource Reference" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 20;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://fhir.bbmri.de/StructureDefinition/Bmi>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Bmi" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BMI" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 21;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://fhir.bbmri.de/StructureDefinition/BodyHeight>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/BodyHeight" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Body Height" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 22;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://fhir.bbmri.de/StructureDefinition/BodyWeight>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/BodyWeight" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Body Weight" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 23;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://fhir.bbmri.de/StructureDefinition/Capabilities>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Capabilities" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Capabilities" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 24;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://fhir.bbmri.de/StructureDefinition/CauseOfDeath>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/CauseOfDeath" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Cause of Death" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 25;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://fhir.bbmri.de/StructureDefinition/Collaboration>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Collaboration" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Collaboration" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 26;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://fhir.bbmri.de/StructureDefinition/Collection>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Collection" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Collection" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 27;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://fhir.bbmri.de/StructureDefinition/CollectionType>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/CollectionType" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Collection Type" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The type of sample collections governed by the Organization." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 28;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://fhir.bbmri.de/StructureDefinition/Condition>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Condition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Condition" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 29;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://fhir.bbmri.de/StructureDefinition/ContactRole>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ContactRole" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Contact Role" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 30;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://fhir.bbmri.de/StructureDefinition/Custodian>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Custodian" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Custodian" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 31;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://fhir.bbmri.de/StructureDefinition/DataCategory>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/DataCategory" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Data Category" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The categories of data that are available as part of the collection" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 32;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://fhir.bbmri.de/StructureDefinition/ITSupport>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ITSupport" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "IT Support" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 33;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://fhir.bbmri.de/StructureDefinition/IdCard>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/IdCard" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ID Card" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 34;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://fhir.bbmri.de/StructureDefinition/NetworkMembership>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/NetworkMembership" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Network Membership" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Resource representing the membership of a biobank in a biobank network" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 35;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://fhir.bbmri.de/StructureDefinition/OrganizationDescription>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/OrganizationDescription" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Organization Description" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Description of the organization in English" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 36;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://fhir.bbmri.de/StructureDefinition/PartnerCharterSigned>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/PartnerCharterSigned" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Partner Charter Signed" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 37;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://fhir.bbmri.de/StructureDefinition/Patient>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Patient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Patient" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Resoure representing a sample donor" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 38;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://fhir.bbmri.de/StructureDefinition/QualityStandard>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/QualityStandard" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Quality Standard" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Organization quality assessment" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 39;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://fhir.bbmri.de/StructureDefinition/ResourceManagement>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ResourceManagement" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Resource Management" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 40;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://fhir.bbmri.de/StructureDefinition/Specimen>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Specimen" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Specimen" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 41;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://fhir.bbmri.de/StructureDefinition/StorageTemperature>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/StorageTemperature" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Storage Temperature" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 42;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://fhir.bbmri.de/ValueSet/BiobankCapabilities>;
+         fhir:Reference.reference [ fhir:value "ValueSet/BiobankCapabilities" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Biobank Capabilities" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 43;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://fhir.bbmri.de/ValueSet/CollectionType>;
+         fhir:Reference.reference [ fhir:value "ValueSet/CollectionType" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Collection Type" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 44;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://fhir.bbmri.de/ValueSet/DataCategory>;
+         fhir:Reference.reference [ fhir:value "ValueSet/DataCategory" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Data Category" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 45;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://fhir.bbmri.de/ValueSet/OtherSampleDiagnosis>;
+         fhir:Reference.reference [ fhir:value "ValueSet/OtherSampleDiagnosis" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "other sample diagnosis" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 46;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://fhir.bbmri.de/ValueSet/QualityStandard>;
+         fhir:Reference.reference [ fhir:value "ValueSet/QualityStandard" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Quality Standard" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 47;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://fhir.bbmri.de/ValueSet/ResourceType>;
+         fhir:Reference.reference [ fhir:value "ValueSet/ResourceType" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Resource Type" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 48;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://fhir.bbmri.de/ValueSet/SampleMaterialType>;
+         fhir:Reference.reference [ fhir:value "ValueSet/SampleMaterialType" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Sample Material Type" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 49;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://fhir.bbmri.de/ValueSet/StorageTemperature>;
+         fhir:Reference.reference [ fhir:value "ValueSet/StorageTemperature" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Storage Temperature" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
        fhir:index 50;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Organization" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "Organization-exampleBiobank.html" ]
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.bbmri.de/Organization/exampleBiobank>;
-         fhir:Reference.reference [ fhir:value "Organization/exampleBiobank" ]
+         fhir:link <https://fhir.bbmri.de/Bundle/53ef12a3-1e31-4fc1-adf6-9d30dc6c4784>;
+         fhir:Reference.reference [ fhir:value "Bundle/53ef12a3-1e31-4fc1-adf6-9d30dc6c4784" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "exampleBiobank" ];
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://fhir.bbmri.de/StructureDefinition/Biobank";
-         fhir:link <https://fhir.bbmri.de/StructureDefinition/Biobank>
-       ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "53ef12a3-1e31-4fc1-adf6-9d30dc6c4784" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
        fhir:index 51;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "Observation" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "Observation-0-bmi.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <https://fhir.bbmri.de/Observation/0-bmi>;
@@ -1223,10 +1012,6 @@
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "Observation" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "Observation-0-body-height.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <https://fhir.bbmri.de/Observation/0-body-height>;
@@ -1243,10 +1028,6 @@
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "Observation" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "Observation-0-body-weight.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <https://fhir.bbmri.de/Observation/0-body-weight>;
@@ -1262,51 +1043,23 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Organization" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "Organization-exampleCollection.html" ]
+         fhir:Extension.valueString [ fhir:value "Observation" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.bbmri.de/Organization/exampleCollection>;
-         fhir:Reference.reference [ fhir:value "Organization/exampleCollection" ]
+         fhir:link <https://fhir.bbmri.de/Observation/0-tobacco-use>;
+         fhir:Reference.reference [ fhir:value "Observation/0-tobacco-use" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "exampleCollection" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "0-tobacco-use" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://fhir.bbmri.de/StructureDefinition/Collection";
-         fhir:link <https://fhir.bbmri.de/StructureDefinition/Collection>
+         fhir:value "https://fhir.bbmri.de/StructureDefinition/TobaccoUse";
+         fhir:link <https://fhir.bbmri.de/StructureDefinition/TobaccoUse>
        ]
      ], [
        fhir:index 55;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Organization" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "Organization-exampleCollectionRD.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.bbmri.de/Organization/exampleCollectionRD>;
-         fhir:Reference.reference [ fhir:value "Organization/exampleCollectionRD" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "exampleCollectionRD" ];
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://fhir.bbmri.de/StructureDefinition/Collection";
-         fhir:link <https://fhir.bbmri.de/StructureDefinition/Collection>
-       ]
-     ], [
-       fhir:index 56;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "OrganizationAffiliation" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "OrganizationAffiliation-example.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <https://fhir.bbmri.de/OrganizationAffiliation/example>;
@@ -1315,15 +1068,11 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "example" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 57;
+       fhir:index 56;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "Patient" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "Patient-0.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <https://fhir.bbmri.de/Patient/0>;
@@ -1335,15 +1084,11 @@
          fhir:link <https://fhir.bbmri.de/StructureDefinition/Patient>
        ]
      ], [
-       fhir:index 58;
+       fhir:index 57;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "Specimen" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "Specimen-0-specimen.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <https://fhir.bbmri.de/Specimen/0-specimen>;
@@ -1355,39 +1100,53 @@
          fhir:link <https://fhir.bbmri.de/StructureDefinition/Specimen>
        ]
      ], [
+       fhir:index 58;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Organization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://fhir.bbmri.de/Organization/exampleBiobank>;
+         fhir:Reference.reference [ fhir:value "Organization/exampleBiobank" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "exampleBiobank" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://fhir.bbmri.de/StructureDefinition/Biobank";
+         fhir:link <https://fhir.bbmri.de/StructureDefinition/Biobank>
+       ]
+     ], [
        fhir:index 59;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Observation" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "Observation-0-tobacco-use.html" ]
+         fhir:Extension.valueString [ fhir:value "Organization" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.bbmri.de/Observation/0-tobacco-use>;
-         fhir:Reference.reference [ fhir:value "Observation/0-tobacco-use" ]
+         fhir:link <https://fhir.bbmri.de/Organization/exampleCollection>;
+         fhir:Reference.reference [ fhir:value "Organization/exampleCollection" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "0-tobacco-use" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "exampleCollection" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://fhir.bbmri.de/StructureDefinition/Collection";
+         fhir:link <https://fhir.bbmri.de/StructureDefinition/Collection>
+       ]
      ], [
        fhir:index 60;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Bundle" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "Bundle-53ef12a3-1e31-4fc1-adf6-9d30dc6c4784.html" ]
+         fhir:Extension.valueString [ fhir:value "Organization" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.bbmri.de/Bundle/53ef12a3-1e31-4fc1-adf6-9d30dc6c4784>;
-         fhir:Reference.reference [ fhir:value "Bundle/53ef12a3-1e31-4fc1-adf6-9d30dc6c4784" ]
+         fhir:link <https://fhir.bbmri.de/Organization/exampleCollectionRD>;
+         fhir:Reference.reference [ fhir:value "Organization/exampleCollectionRD" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "53ef12a3-1e31-4fc1-adf6-9d30dc6c4784" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "exampleCollectionRD" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://fhir.bbmri.de/StructureDefinition/Collection";
+         fhir:link <https://fhir.bbmri.de/StructureDefinition/Collection>
+       ]
      ];
      fhir:ImplementationGuide.definition.page [
        fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "toc.html" ];
@@ -1396,7 +1155,7 @@
        fhir:ImplementationGuide.definition.page.page [
          fhir:index 0;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "index.html" ];
-         fhir:ImplementationGuide.definition.page.title [ fhir:value "Home" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "IG Home" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
          fhir:index 1;
@@ -1411,7 +1170,7 @@
        ], [
          fhir:index 3;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "howtoJoin.html" ];
-         fhir:ImplementationGuide.definition.page.title [ fhir:value "Howto Join" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "How To Join" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
          fhir:index 4;
@@ -1421,17 +1180,17 @@
        ], [
          fhir:index 5;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "referencedIGs.html" ];
-         fhir:ImplementationGuide.definition.page.title [ fhir:value "Referenced I Gs" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Referenced IGs" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
          fhir:index 6;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "support.html" ];
-         fhir:ImplementationGuide.definition.page.title [ fhir:value "Support" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Instructions" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
          fhir:index 7;
-         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "etlTalent.html" ];
-         fhir:ImplementationGuide.definition.page.title [ fhir:value "Etl Talent" ];
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "etlTalend.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Build ETL with TOS" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
          fhir:index 8;

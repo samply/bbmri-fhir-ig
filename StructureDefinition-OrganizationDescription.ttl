@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "OrganizationDescription"];
   fhir:StructureDefinition.title [ fhir:value "Organization Description"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-03-03T08:01:39+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-01-18T15:55:49+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "bbmri.de"];
   fhir:StructureDefinition.contact [
      fhir:index 0;

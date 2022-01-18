@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="fhir.css"/>
 
       <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="assets/css/bootstrap.css"/>
     <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
 
       <!-- Project extras -->
@@ -41,8 +40,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"11.60"}
-    h3,h4,h5,h6{--heading-prefix:"11.60"}</style>
+    <style type="text/css">h2{--heading-prefix:"11.48"}
+    h3,h4,h5,h6{--heading-prefix:"11.48"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Placeholder for child template header declarations -->
@@ -109,7 +108,7 @@
         <a href="referencedIGs.html">Referenced IGs</a>
       </li>
       <li>
-        <a href="etlTalent.html">Build ETL with TOS</a>
+        <a href="etlTalend.html">Build ETL with TOS</a>
       </li>
       <li>
         <a href="qualityMeasures.html">Quality Measures</a>
@@ -128,7 +127,7 @@
         <a href="downloads.html">Downloads</a>
       </li>
       <li>
-        <a href="http://hl7.org/fhir/R4/index.html" target="_blank">FHIR Spec <img src="external.png" style="text-align: baseline"/></a>
+        <a href="http://hl7.org/fhir/R4/index.html" target="_blank">FHIR Spec</a>
       </li>
     </ul>
   </li>
@@ -140,15 +139,18 @@
       </div>    <!-- /container -->
     </div>    <!-- /segment-navbar -->
       <!-- status-bar -->
+
     <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
       <div class="container">    <!-- container -->
         <ul class="breadcrumb">
           <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>Specimen Quality Reports</b></li>
+
         </ul>
       </div>    <!-- /container -->
     </div>    <!-- /segment-breadcrumb -->
 
-    <div id="segment-content">    <!-- segment-content -->
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
       <div class="container">    <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
@@ -209,7 +211,85 @@
 
 
 
-  <div><p><b>Generated Narrative</b></p><h3>Ids</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>url</b>: <a href="https://fhir.bbmri.de/Library/SpecimenQualityReports">https://fhir.bbmri.de/Library/SpecimenQualityReports</a></p><p><b>version</b>: 1.2.0</p><p><b>name</b>: SpecimenQualityReports</p><p><b>title</b>: Specimen Quality Reports</p><p><b>status</b>: active</p><p><b>type</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/library-type logic-library}">Logic Library</span></p><p><b>subject</b>: <span title="Codes: {http://hl7.org/fhir/resource-types Specimen}">Specimen</span></p><p><b>date</b>: Mar 3, 2021, 8:01:39 AM</p><p><b>publisher</b>: bbmri.de</p><p><b>contact</b>: bbmri.de: bbmri.de,feedback@germanbiobanknode.de</p><p><b>description</b>: This library contains various expressions used in different specimen related quality reports.</p><h3>RelatedArtifacts</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr><tr><td>*</td></tr></table><h3>Parameters</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr></table><h3>Contents</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr><tr><td>*</td></tr></table></div>
+  <div><h2>Related Artifacts</h2><table class="grid"><tr><td>depends-on</td><td><code>http://hl7.org/fhir/Library/FHIR-ModelInfo|4.0.0</code></td></tr><tr><td>depends-on</td><td><code>http://hl7.org/fhir/Library/FHIRHelpers|4.0.0</code></td></tr></table><h2>Parameters</h2><table class="grid"><tr><td>Specimen</td><td>out</td><td>0</td><td>1</td><td>Specimen</td></tr><tr><td>InInitialPopulation</td><td>out</td><td>0</td><td>1</td><td>boolean</td></tr><tr><td>FirstSampleMaterialType</td><td>out</td><td>0</td><td>1</td><td>code</td></tr><tr><td>NumberOfSampleMaterialTypes</td><td>out</td><td>0</td><td>1</td><td>integer</td></tr><tr><td>CollectedYear</td><td>out</td><td>0</td><td>1</td><td>integer</td></tr><tr><td>CollectedMonth</td><td>out</td><td>0</td><td>1</td><td>integer</td></tr><tr><td>CollectedDay</td><td>out</td><td>0</td><td>1</td><td>integer</td></tr><tr><td>CollectedHour</td><td>out</td><td>0</td><td>1</td><td>integer</td></tr><tr><td>StorageTemperatureCodings</td><td>out</td><td>0</td><td>*</td><td>Coding</td></tr><tr><td>StorageTemperatureCodes</td><td>out</td><td>0</td><td>1</td><td>string</td></tr><tr><td>NumberOfStorageTemperatureCodes</td><td>out</td><td>0</td><td>1</td><td>integer</td></tr><tr><td>SampleDiagnosisCodings</td><td>out</td><td>0</td><td>*</td><td>Coding</td></tr><tr><td>SampleDiagnosisICD10Codes</td><td>out</td><td>0</td><td>1</td><td>string</td></tr><tr><td>NumberOfSampleDiagnosesICD10Codes</td><td>out</td><td>0</td><td>1</td><td>integer</td></tr><tr><td>SampleDiagnosisICD10GMCodes</td><td>out</td><td>0</td><td>1</td><td>string</td></tr><tr><td>NumberOfSampleDiagnosesICD10GMCodes</td><td>out</td><td>0</td><td>1</td><td>integer</td></tr><tr><td>BodySiteCodes</td><td>out</td><td>0</td><td>1</td><td>string</td></tr><tr><td>NumberOfBodySiteCodes</td><td>out</td><td>0</td><td>1</td><td>integer</td></tr></table><h2>Contents</h2><p><code>text/cql</code></p><pre><code class="language-sql">library Retrieve
+using FHIR version '4.0.0'
+include FHIRHelpers version '4.0.0'
+
+context Specimen
+
+define InInitialPopulation:
+  true
+
+define FirstSampleMaterialType:
+  First(from Specimen.type.coding C
+    where C.system = 'https://fhir.bbmri.de/CodeSystem/SampleMaterialType'
+    return C.code)
+
+define NumberOfSampleMaterialTypes:
+  Count(from Specimen.type.coding C
+    where C.system = 'https://fhir.bbmri.de/CodeSystem/SampleMaterialType'
+    return C.code)
+
+define CollectedYear:
+  year from FHIRHelpers.ToDateTime(Specimen.collection.collected)
+
+define CollectedMonth:
+  month from FHIRHelpers.ToDateTime(Specimen.collection.collected)
+
+define CollectedDay:
+  day from FHIRHelpers.ToDateTime(Specimen.collection.collected)
+
+define CollectedHour:
+  hour from FHIRHelpers.ToDateTime(Specimen.collection.collected)
+
+define StorageTemperatureCodings:
+  flatten
+    from Specimen.extension E
+      where E.url = 'https://fhir.bbmri.de/StructureDefinition/StorageTemperature'
+      return E.value.coding
+
+define StorageTemperatureCodes:
+  Combine(from StorageTemperatureCodings C
+    where C.system = 'https://fhir.bbmri.de/CodeSystem/StorageTemperature'
+    return C.code, ', ')
+
+define NumberOfStorageTemperatureCodes:
+  Count(from StorageTemperatureCodings C
+    where C.system = 'https://fhir.bbmri.de/CodeSystem/StorageTemperature')
+
+define SampleDiagnosisCodings:
+  flatten
+    from Specimen.extension E
+    where E.url = 'https://fhir.bbmri.de/StructureDefinition/SampleDiagnosis'
+    return E.value.coding
+
+define SampleDiagnosisICD10Codes:
+  Combine(from SampleDiagnosisCodings C
+    where C.system = 'http://hl7.org/fhir/sid/icd-10'
+    return C.code, ', ')
+
+define NumberOfSampleDiagnosesICD10Codes:
+  Count(from SampleDiagnosisCodings C
+    where C.system = 'http://hl7.org/fhir/sid/icd-10')
+
+define SampleDiagnosisICD10GMCodes:
+  Combine(from SampleDiagnosisCodings C
+    where C.system = 'http://fhir.de/CodeSystem/dimdi/icd-10-gm'
+    return C.code, ', ')
+
+define NumberOfSampleDiagnosesICD10GMCodes:
+  Count(from SampleDiagnosisCodings C
+    where C.system = 'http://fhir.de/CodeSystem/dimdi/icd-10-gm')
+
+define BodySiteCodes:
+  Combine(from Specimen.collection.bodySite.coding C
+    where C.system = 'urn:oid:1.3.6.1.4.1.19376.1.3.11.36'
+    return C.code, ', ')
+
+define NumberOfBodySiteCodes:
+  Count(from Specimen.collection.bodySite.coding C
+    where C.system = 'urn:oid:1.3.6.1.4.1.19376.1.3.11.36')
+</code></pre><p><code>Content not shown - (</code><code>application/elm+xml</code>, size = 50Kb)</p></div>
 
     <!-- insert notes if present -->
   
@@ -232,17 +312,21 @@
       }
     });
   </script>
+  <a name="bottom"> </a>
   <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
     <div class="container">    <!-- container -->
+
       <div class="inner-wrapper">
-        <p><a name="3e224ef6-4487-486c-9e7c-9a5b30815a4c">​</a>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="bbmri.de">bbmri.de</a>.  Package de.bbmri.fhir#1.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Mar 3, 2021 08:01+0000">2021-03-03</span>
+        <p><a name="l619">​</a>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="bbmri.de">bbmri.de</a>.  Package de.bbmri.fhir#1.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jan 18, 2022 15:55+0000">2022-01-18</span>
           <br/>
-          <span style="color: #FFFF77">
-                      Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
-                 <a style="color: #81BEF7" href="qa.html">QA Report</a>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
 | <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" alt="Creative Commons Lizenzvertrag" style="border-width:0"/></a>
-          </span>
+          
         </p>
       </div>    <!-- /inner-wrapper -->
     </div>    <!-- /container -->
@@ -263,6 +347,13 @@
   <script>anchors.options.visible = 'hover'
 anchors.add()</script>
   
+  <!-- feedback form - Google forms -->
+  <!-- v0.1, 2021-01-09 -->
+
+
+
+  <!-- / feedback form -->
+
     <!-- Analytics Below
   ================================================== -->
   </body>

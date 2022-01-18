@@ -3,14 +3,14 @@
   "id": "de.bbmri.fhir",
   "text": {
     "status": "extensions",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>BBMRI_DE_IG</h2><p>The official URL for this implementation guide is: </p><pre>https://fhir.bbmri.de/ImplementationGuide/de.bbmri.fhir/ImplementationGuide/de.bbmri.fhir</pre><div><p>Profiles for the BBMRI.de / GBA biobanking project.</p>\n</div></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>BBMRI_DE_IG</h2><p>The official URL for this implementation guide is: </p><pre>https://fhir.bbmri.de/ImplementationGuide/de.bbmri.fhir</pre><div><p>Profiles for the BBMRI.de / GBA biobanking project.</p>\n</div></div>"
   },
-  "url": "https://fhir.bbmri.de/ImplementationGuide/de.bbmri.fhir/ImplementationGuide/de.bbmri.fhir",
+  "url": "https://fhir.bbmri.de/ImplementationGuide/de.bbmri.fhir",
   "version": "1.2.0",
   "name": "BBMRI_DE_IG",
   "title": "BBMRI.de/GBA Implementation Guide",
   "status": "active",
-  "date": "2021-03-03T08:01:39+00:00",
+  "date": "2022-01-18T15:55:49+00:00",
   "publisher": "bbmri.de",
   "contact": [
     {
@@ -329,10 +329,6 @@
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:resource"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-TobaccoUse.html"
           }
         ],
         "reference": {
@@ -347,369 +343,6 @@
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:extension"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-AccessPolicy.html"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/AccessPolicy"
-        },
-        "name": "Access Policy",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-Biobank.html"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/Biobank"
-        },
-        "name": "Biobank",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "CodeSystem-BiobankCapabilities.html"
-          }
-        ],
-        "reference": {
-          "reference": "CodeSystem/BiobankCapabilities"
-        },
-        "name": "Biobank Capabilities",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-BiobankCapabilities.html"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/BiobankCapabilities"
-        },
-        "name": "Biobank Capabilities",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-Bmi.html"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/Bmi"
-        },
-        "name": "BMI",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-BodyHeight.html"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/BodyHeight"
-        },
-        "name": "Body Height",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-BodyWeight.html"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/BodyWeight"
-        },
-        "name": "Body Weight",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-Capabilities.html"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/Capabilities"
-        },
-        "name": "Capabilities",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-CauseOfDeath.html"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/CauseOfDeath"
-        },
-        "name": "Cause of Death",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-Collaboration.html"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/Collaboration"
-        },
-        "name": "Collaboration",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-Collection.html"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/Collection"
-        },
-        "name": "Collection",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "CodeSystem-CollectionType.html"
-          }
-        ],
-        "reference": {
-          "reference": "CodeSystem/CollectionType"
-        },
-        "name": "Collection Type",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-CollectionType.html"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/CollectionType"
-        },
-        "name": "Collection Type",
-        "description": "The type of sample collections governed by the Organization.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-CollectionType.html"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/CollectionType"
-        },
-        "name": "Collection Type",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-Condition.html"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/Condition"
-        },
-        "name": "Condition",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-ContactRole.html"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/ContactRole"
-        },
-        "name": "Contact Role",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "CodeSystem-ContactType.html"
-          }
-        ],
-        "reference": {
-          "reference": "CodeSystem/ContactType"
-        },
-        "name": "Contact Type",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-Custodian.html"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/Custodian"
-        },
-        "name": "Custodian",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "CodeSystem-DataCategory.html"
-          }
-        ],
-        "reference": {
-          "reference": "CodeSystem/DataCategory"
-        },
-        "name": "Data Category",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-DataCategory.html"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/DataCategory"
-        },
-        "name": "Data Category",
-        "description": "The categories of data that are available as part of the collection",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-DataCategory.html"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/DataCategory"
-        },
-        "name": "Data Category",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-SampleDiagnosis.html"
           }
         ],
         "reference": {
@@ -722,88 +355,13 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-ITSupport.html"
+            "valueString": "CodeSystem"
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/ITSupport"
+          "reference": "CodeSystem/BiobankCapabilities"
         },
-        "name": "IT Support",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-IdCard.html"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/IdCard"
-        },
-        "name": "ID Card",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-JuridicalPerson.html"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/JuridicalPerson"
-        },
-        "name": "Juridical Person",
-        "description": "Name of the legal entity of the organization",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-NetworkMembership.html"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/NetworkMembership"
-        },
-        "name": "Network Membership",
-        "description": "Resource representing the membership of a biobank in a biobank network",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-OrganizationDescription.html"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/OrganizationDescription"
-        },
-        "name": "Organization Description",
-        "description": "Description of the organization in English",
+        "name": "Biobank Capabilities",
         "exampleBoolean": false
       },
       {
@@ -811,10 +369,45 @@
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "CodeSystem"
-          },
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/CollectionType"
+        },
+        "name": "Collection Type",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
           {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "CodeSystem-OtherSampleDiagnosis.html"
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/ContactType"
+        },
+        "name": "Contact Type",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/DataCategory"
+        },
+        "name": "Data Category",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
           }
         ],
         "reference": {
@@ -828,99 +421,7 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-OtherSampleDiagnosis.html"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/OtherSampleDiagnosis"
-        },
-        "name": "other sample diagnosis",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-PartnerCharterSigned.html"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/PartnerCharterSigned"
-        },
-        "name": "Partner Charter Signed",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-Patient.html"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/Patient"
-        },
-        "name": "Patient",
-        "description": "Resoure representing a sample donor",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Library"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "Library-PatientQualityReports.html"
-          }
-        ],
-        "reference": {
-          "reference": "Library/PatientQualityReports"
-        },
-        "name": "Patient Quality Reports",
-        "description": "This library contains various expressions used in different patient related quality reports.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Measure"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "Measure-PatientQualityReports.html"
-          }
-        ],
-        "reference": {
-          "reference": "Measure/PatientQualityReports"
-        },
-        "name": "Patient Quality Reports",
-        "description": "This measure contains various patient related stratifiers to help to evaluate data quality.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "CodeSystem"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "CodeSystem-QualityStandard.html"
           }
         ],
         "reference": {
@@ -933,63 +434,7 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-QualityStandard.html"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/QualityStandard"
-        },
-        "name": "Quality Standard",
-        "description": "Organization quality assessment",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-QualityStandard.html"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/QualityStandard"
-        },
-        "name": "Quality Standard",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-ResourceManagement.html"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/ResourceManagement"
-        },
-        "name": "Resource Management",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "CodeSystem"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "CodeSystem-ResourceType.html"
           }
         ],
         "reference": {
@@ -1003,28 +448,7 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-ResourceType.html"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/ResourceType"
-        },
-        "name": "Resource Type",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "CodeSystem"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "CodeSystem-SampleMaterialType.html"
           }
         ],
         "reference": {
@@ -1038,34 +462,27 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-SampleMaterialType.html"
+            "valueString": "CodeSystem"
           }
         ],
         "reference": {
-          "reference": "ValueSet/SampleMaterialType"
+          "reference": "CodeSystem/StorageTemperature"
         },
-        "name": "Sample Material Type",
+        "name": "Storage Temperature",
         "exampleBoolean": false
       },
       {
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-Specimen.html"
+            "valueString": "StructureDefinition:extension"
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/Specimen"
+          "reference": "StructureDefinition/JuridicalPerson"
         },
-        "name": "Specimen",
+        "name": "Juridical Person",
+        "description": "Name of the legal entity of the organization",
         "exampleBoolean": false
       },
       {
@@ -1073,10 +490,20 @@
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Library"
-          },
+          }
+        ],
+        "reference": {
+          "reference": "Library/PatientQualityReports"
+        },
+        "name": "Patient Quality Reports",
+        "description": "This library contains various expressions used in different patient related quality reports.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
           {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "Library-SpecimenQualityReports.html"
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Library"
           }
         ],
         "reference": {
@@ -1091,10 +518,20 @@
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Measure"
-          },
+          }
+        ],
+        "reference": {
+          "reference": "Measure/PatientQualityReports"
+        },
+        "name": "Patient Quality Reports",
+        "description": "This measure contains various patient related stratifiers to help to evaluate data quality.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
           {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "Measure-SpecimenQualityReports.html"
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Measure"
           }
         ],
         "reference": {
@@ -1108,17 +545,13 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "CodeSystem-StorageTemperature.html"
+            "valueString": "StructureDefinition:extension"
           }
         ],
         "reference": {
-          "reference": "CodeSystem/StorageTemperature"
+          "reference": "StructureDefinition/ParentCollection"
         },
-        "name": "Storage Temperature",
+        "name": "Parent Collection",
         "exampleBoolean": false
       },
       {
@@ -1126,10 +559,324 @@
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:extension"
-          },
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/AccessPolicy"
+        },
+        "name": "Access Policy",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
           {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-StorageTemperature.html"
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/Biobank"
+        },
+        "name": "Biobank",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/BioresourceReference"
+        },
+        "name": "Bioresource Reference",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/Bmi"
+        },
+        "name": "BMI",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/BodyHeight"
+        },
+        "name": "Body Height",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/BodyWeight"
+        },
+        "name": "Body Weight",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/Capabilities"
+        },
+        "name": "Capabilities",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/CauseOfDeath"
+        },
+        "name": "Cause of Death",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/Collaboration"
+        },
+        "name": "Collaboration",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/Collection"
+        },
+        "name": "Collection",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/CollectionType"
+        },
+        "name": "Collection Type",
+        "description": "The type of sample collections governed by the Organization.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/Condition"
+        },
+        "name": "Condition",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/ContactRole"
+        },
+        "name": "Contact Role",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/Custodian"
+        },
+        "name": "Custodian",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/DataCategory"
+        },
+        "name": "Data Category",
+        "description": "The categories of data that are available as part of the collection",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/ITSupport"
+        },
+        "name": "IT Support",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/IdCard"
+        },
+        "name": "ID Card",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/NetworkMembership"
+        },
+        "name": "Network Membership",
+        "description": "Resource representing the membership of a biobank in a biobank network",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/OrganizationDescription"
+        },
+        "name": "Organization Description",
+        "description": "Description of the organization in English",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/PartnerCharterSigned"
+        },
+        "name": "Partner Charter Signed",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/Patient"
+        },
+        "name": "Patient",
+        "description": "Resoure representing a sample donor",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/QualityStandard"
+        },
+        "name": "Quality Standard",
+        "description": "Organization quality assessment",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/ResourceManagement"
+        },
+        "name": "Resource Management",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/Specimen"
+        },
+        "name": "Specimen",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
           }
         ],
         "reference": {
@@ -1143,10 +890,97 @@
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "ValueSet"
-          },
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/BiobankCapabilities"
+        },
+        "name": "Biobank Capabilities",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
           {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-StorageTemperature.html"
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/CollectionType"
+        },
+        "name": "Collection Type",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/DataCategory"
+        },
+        "name": "Data Category",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/OtherSampleDiagnosis"
+        },
+        "name": "other sample diagnosis",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/QualityStandard"
+        },
+        "name": "Quality Standard",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/ResourceType"
+        },
+        "name": "Resource Type",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/SampleMaterialType"
+        },
+        "name": "Sample Material Type",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
           }
         ],
         "reference": {
@@ -1159,62 +993,20 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-BioresourceReference.html"
+            "valueString": "Bundle"
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/BioresourceReference"
+          "reference": "Bundle/53ef12a3-1e31-4fc1-adf6-9d30dc6c4784"
         },
-        "name": "Bioresource Reference",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-ParentCollection.html"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/ParentCollection"
-        },
-        "name": "Parent Collection",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Organization"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "Organization-exampleBiobank.html"
-          }
-        ],
-        "reference": {
-          "reference": "Organization/exampleBiobank"
-        },
-        "name": "exampleBiobank",
-        "exampleCanonical": "https://fhir.bbmri.de/StructureDefinition/Biobank"
+        "name": "53ef12a3-1e31-4fc1-adf6-9d30dc6c4784",
+        "exampleBoolean": true
       },
       {
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Observation"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "Observation-0-bmi.html"
           }
         ],
         "reference": {
@@ -1228,10 +1020,6 @@
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Observation"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "Observation-0-body-height.html"
           }
         ],
         "reference": {
@@ -1245,10 +1033,6 @@
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Observation"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "Observation-0-body-weight.html"
           }
         ],
         "reference": {
@@ -1261,45 +1045,20 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Organization"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "Organization-exampleCollection.html"
+            "valueString": "Observation"
           }
         ],
         "reference": {
-          "reference": "Organization/exampleCollection"
+          "reference": "Observation/0-tobacco-use"
         },
-        "name": "exampleCollection",
-        "exampleCanonical": "https://fhir.bbmri.de/StructureDefinition/Collection"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Organization"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "Organization-exampleCollectionRD.html"
-          }
-        ],
-        "reference": {
-          "reference": "Organization/exampleCollectionRD"
-        },
-        "name": "exampleCollectionRD",
-        "exampleCanonical": "https://fhir.bbmri.de/StructureDefinition/Collection"
+        "name": "0-tobacco-use",
+        "exampleCanonical": "https://fhir.bbmri.de/StructureDefinition/TobaccoUse"
       },
       {
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "OrganizationAffiliation"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "OrganizationAffiliation-example.html"
           }
         ],
         "reference": {
@@ -1313,10 +1072,6 @@
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Patient"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "Patient-0.html"
           }
         ],
         "reference": {
@@ -1330,10 +1085,6 @@
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Specimen"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "Specimen-0-specimen.html"
           }
         ],
         "reference": {
@@ -1346,35 +1097,40 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Observation"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "Observation-0-tobacco-use.html"
+            "valueString": "Organization"
           }
         ],
         "reference": {
-          "reference": "Observation/0-tobacco-use"
+          "reference": "Organization/exampleBiobank"
         },
-        "name": "0-tobacco-use",
-        "exampleBoolean": true
+        "name": "exampleBiobank",
+        "exampleCanonical": "https://fhir.bbmri.de/StructureDefinition/Biobank"
       },
       {
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Bundle"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "Bundle-53ef12a3-1e31-4fc1-adf6-9d30dc6c4784.html"
+            "valueString": "Organization"
           }
         ],
         "reference": {
-          "reference": "Bundle/53ef12a3-1e31-4fc1-adf6-9d30dc6c4784"
+          "reference": "Organization/exampleCollection"
         },
-        "name": "53ef12a3-1e31-4fc1-adf6-9d30dc6c4784",
-        "exampleBoolean": true
+        "name": "exampleCollection",
+        "exampleCanonical": "https://fhir.bbmri.de/StructureDefinition/Collection"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Organization"
+          }
+        ],
+        "reference": {
+          "reference": "Organization/exampleCollectionRD"
+        },
+        "name": "exampleCollectionRD",
+        "exampleCanonical": "https://fhir.bbmri.de/StructureDefinition/Collection"
       }
     ],
     "page": {
@@ -1384,7 +1140,7 @@
       "page": [
         {
           "nameUrl": "index.html",
-          "title": "Home",
+          "title": "IG Home",
           "generation": "markdown"
         },
         {
@@ -1399,7 +1155,7 @@
         },
         {
           "nameUrl": "howtoJoin.html",
-          "title": "Howto Join",
+          "title": "How To Join",
           "generation": "markdown"
         },
         {
@@ -1409,17 +1165,17 @@
         },
         {
           "nameUrl": "referencedIGs.html",
-          "title": "Referenced I Gs",
+          "title": "Referenced IGs",
           "generation": "markdown"
         },
         {
           "nameUrl": "support.html",
-          "title": "Support",
+          "title": "Instructions",
           "generation": "markdown"
         },
         {
-          "nameUrl": "etlTalent.html",
-          "title": "Etl Talent",
+          "nameUrl": "etlTalend.html",
+          "title": "Build ETL with TOS",
           "generation": "markdown"
         },
         {
