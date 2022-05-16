@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="e993a26f-47f7-4c9a-8963-e7e95e45e8d0"/>
+  <id value="8a31b476-d59f-45c7-b776-9d8c66a97a90"/>
   <meta>
-    <lastUpdated value="2022-01-18T15:55:49.709+00:00"/>
+    <lastUpdated value="2022-05-16T14:53:21.475+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -131,7 +131,7 @@
         <name value="BiobankCapabilities"/>
         <title value="Biobank Capabilities"/>
         <status value="active"/>
-        <date value="2022-01-18T15:55:49+00:00"/>
+        <date value="2022-05-16T14:53:21+00:00"/>
         <publisher value="bbmri.de"/>
         <contact>
           <name value="bbmri.de"/>
@@ -145,8 +145,8 @@
           </telecom>
         </contact>
         <expansion>
-          <identifier value="urn:uuid:404e3eaf-60fe-4063-82a5-d7e9b88e7480"/>
-          <timestamp value="2022-01-18T15:56:25+00:00"/>
+          <identifier value="urn:uuid:e70bfb40-4e1c-4d9c-b5e8-9c42b733c4aa"/>
+          <timestamp value="2022-05-16T14:53:57+00:00"/>
           <total value="11"/>
           <parameter>
             <name value="excludeNested"/>
@@ -372,7 +372,7 @@
         <name value="CollectionType"/>
         <title value="Collection Type"/>
         <status value="active"/>
-        <date value="2022-01-18T15:55:49+00:00"/>
+        <date value="2022-05-16T14:53:21+00:00"/>
         <publisher value="bbmri.de"/>
         <contact>
           <name value="bbmri.de"/>
@@ -386,8 +386,8 @@
           </telecom>
         </contact>
         <expansion>
-          <identifier value="urn:uuid:cd4e56cf-a926-45f6-b3b0-6cb5562231c2"/>
-          <timestamp value="2022-01-18T15:56:25+00:00"/>
+          <identifier value="urn:uuid:a883ccb1-b41b-480f-9820-ae60f300434b"/>
+          <timestamp value="2022-05-16T14:53:57+00:00"/>
           <total value="15"/>
           <parameter>
             <name value="excludeNested"/>
@@ -585,7 +585,7 @@
         <name value="DataCategory"/>
         <title value="Data Category"/>
         <status value="active"/>
-        <date value="2022-01-18T15:55:49+00:00"/>
+        <date value="2022-05-16T14:53:21+00:00"/>
         <publisher value="bbmri.de"/>
         <contact>
           <name value="bbmri.de"/>
@@ -599,8 +599,8 @@
           </telecom>
         </contact>
         <expansion>
-          <identifier value="urn:uuid:01689ca4-65fb-44e6-9ae5-df85c740ab4f"/>
-          <timestamp value="2022-01-18T15:56:25+00:00"/>
+          <identifier value="urn:uuid:5dad5379-228f-4eb5-913c-2ea60effedb3"/>
+          <timestamp value="2022-05-16T14:53:57+00:00"/>
           <total value="9"/>
           <parameter>
             <name value="excludeNested"/>
@@ -728,7 +728,7 @@
         <name value="OtherSampleDiagnosis"/>
         <title value="other sample diagnosis"/>
         <status value="active"/>
-        <date value="2022-01-18T15:55:49+00:00"/>
+        <date value="2022-05-16T14:53:21+00:00"/>
         <publisher value="bbmri.de"/>
         <contact>
           <name value="bbmri.de"/>
@@ -742,8 +742,8 @@
           </telecom>
         </contact>
         <expansion>
-          <identifier value="urn:uuid:1fbebb36-35be-428b-ad0d-1ab7d68ac1d8"/>
-          <timestamp value="2022-01-18T15:56:25+00:00"/>
+          <identifier value="urn:uuid:fce792bb-f168-46f6-abe6-9eb98e0baf09"/>
+          <timestamp value="2022-05-16T14:53:57+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -870,7 +870,7 @@
         <name value="QualityStandard"/>
         <title value="Quality Standard"/>
         <status value="active"/>
-        <date value="2022-01-18T15:55:49+00:00"/>
+        <date value="2022-05-16T14:53:21+00:00"/>
         <publisher value="bbmri.de"/>
         <contact>
           <name value="bbmri.de"/>
@@ -884,8 +884,8 @@
           </telecom>
         </contact>
         <expansion>
-          <identifier value="urn:uuid:083d6106-c9b1-427a-9ade-3b4a04e68378"/>
-          <timestamp value="2022-01-18T15:56:25+00:00"/>
+          <identifier value="urn:uuid:6b85e5ea-9fb7-47bc-bd1a-bda1c0cf5f85"/>
+          <timestamp value="2022-05-16T14:53:57+00:00"/>
           <total value="7"/>
           <parameter>
             <name value="excludeNested"/>
@@ -995,7 +995,7 @@
         <name value="ResourceType"/>
         <title value="Resource Type"/>
         <status value="active"/>
-        <date value="2022-01-18T15:55:49+00:00"/>
+        <date value="2022-05-16T14:53:21+00:00"/>
         <publisher value="bbmri.de"/>
         <contact>
           <name value="bbmri.de"/>
@@ -1009,8 +1009,8 @@
           </telecom>
         </contact>
         <expansion>
-          <identifier value="urn:uuid:1885e1b3-b5b6-47c4-b9a8-c4b144cdebe8"/>
-          <timestamp value="2022-01-18T15:56:25+00:00"/>
+          <identifier value="urn:uuid:066987f0-53cd-4686-9da0-bfe9dd0b7035"/>
+          <timestamp value="2022-05-16T14:53:57+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1409,7 +1409,7 @@
         <name value="SampleMaterialType"/>
         <title value="Sample Material Type"/>
         <status value="active"/>
-        <date value="2022-01-18T15:55:49+00:00"/>
+        <date value="2022-05-16T14:53:21+00:00"/>
         <publisher value="bbmri.de"/>
         <contact>
           <name value="bbmri.de"/>
@@ -1423,8 +1423,8 @@
           </telecom>
         </contact>
         <expansion>
-          <identifier value="urn:uuid:e889ebef-1a4c-45ed-9c6f-00e7bb0a815b"/>
-          <timestamp value="2022-01-18T15:56:25+00:00"/>
+          <identifier value="urn:uuid:e23774e5-43b8-4d7f-abf6-218ca16d9c06"/>
+          <timestamp value="2022-05-16T14:53:57+00:00"/>
           <total value="33"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1696,7 +1696,7 @@
         <name value="StorageTemperature"/>
         <title value="Storage Temperature"/>
         <status value="active"/>
-        <date value="2022-01-18T15:55:49+00:00"/>
+        <date value="2022-05-16T14:53:21+00:00"/>
         <publisher value="bbmri.de"/>
         <contact>
           <name value="bbmri.de"/>
@@ -1710,8 +1710,8 @@
           </telecom>
         </contact>
         <expansion>
-          <identifier value="urn:uuid:f22d9335-3e27-488b-ba7d-338b2959ab6c"/>
-          <timestamp value="2022-01-18T15:56:25+00:00"/>
+          <identifier value="urn:uuid:34fb0f33-f418-4d6c-8bba-6d1516dcc353"/>
+          <timestamp value="2022-05-16T14:53:57+00:00"/>
           <total value="7"/>
           <parameter>
             <name value="excludeNested"/>

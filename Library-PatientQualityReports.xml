@@ -3,7 +3,7 @@
 <Library xmlns="http://hl7.org/fhir">
   <id value="PatientQualityReports"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>Related Artifacts</h2><table class="grid"><tr><td>depends-on</td><td><code>http://hl7.org/fhir/Library/FHIR-ModelInfo|4.0.0</code></td></tr><tr><td>depends-on</td><td><code>http://hl7.org/fhir/Library/FHIRHelpers|4.0.0</code></td></tr><tr><td>depends-on</td><td><a href="http://terminology.hl7.org/3.0.0/CodeSystem-icd10.html">ICD-10</a></td></tr><tr><td>depends-on</td><td><code>http://fhir.de/CodeSystem/dimdi/icd-10-gm</code></td></tr></table><h2>Contents</h2><p><code>text/cql</code></p><pre><code class="language-sql">library Retrieve
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>Related Artifacts</h2><table class="grid"><tr><td>depends-on</td><td><code>http://hl7.org/fhir/Library/FHIR-ModelInfo|4.0.0</code></td></tr><tr><td>depends-on</td><td><code>http://hl7.org/fhir/Library/FHIRHelpers|4.0.0</code></td></tr><tr><td>depends-on</td><td><a href="http://terminology.hl7.org/3.1.0/CodeSystem-icd10.html">ICD-10</a></td></tr><tr><td>depends-on</td><td><code>http://fhir.de/CodeSystem/dimdi/icd-10-gm</code></td></tr></table><h2>Contents</h2><p><code>text/cql</code></p><pre><code class="language-sql">library Retrieve
 using FHIR version '4.0.0'
 include FHIRHelpers version '4.0.0'
 
@@ -45,7 +45,7 @@ define HasCovid19:
       <code value="Patient"/>
     </coding>
   </subjectCodeableConcept>
-  <date value="2022-01-18T15:55:49+00:00"/>
+  <date value="2022-05-16T14:53:21+00:00"/>
   <publisher value="bbmri.de"/>
   <contact>
     <name value="bbmri.de"/>

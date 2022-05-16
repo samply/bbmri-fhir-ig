@@ -31,7 +31,7 @@
        fhir:Coding.code [ fhir:value "Specimen" ]
      ]
   ];
-  fhir:Library.date [ fhir:value "2022-01-18T15:55:49+00:00"^^xsd:dateTime];
+  fhir:Library.date [ fhir:value "2022-05-16T14:53:21+00:00"^^xsd:dateTime];
   fhir:Library.publisher [ fhir:value "bbmri.de"];
   fhir:Library.contact [
      fhir:index 0;
