@@ -11,8 +11,6 @@
 
 This section lists the profiles defined in this IG and briefly highlights important aspects. Fields marked with *mustSupport* are used by the queries and shall be filled if the information is available. Information from other fields may used in future versions and can be provided optionally.
 
-![Overview profiles](GBA-DatamodellFHIR_V05.png)
-
 ### [Biobank](StructureDefinition-Biobank.html)
 A Biobank. Designed to contain all information necessary to populate a BBMRI Directory biobank entry, see Mappings page. Note that two contact slices exist, one for the biobank head (which only requires a name and no actual contact information) and one for the actual endpoint researches should contact for inquiries about data and samples (which requires an email address and a county, but does not require a name, although it should be provided where available). 
 
