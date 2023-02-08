@@ -1,28 +1,24 @@
 {
-  "resourceType": "OrganizationAffiliation",
-  "id": "example",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example</p><p><b>organization</b>: German Biobank Alliance</p><p><b>participatingOrganization</b>: <a href=\"Organization/exampleBiobank\">Organization/exampleBiobank</a></p><p><b>code</b>: member <span style=\"background: LightGoldenRodYellow \">(Details : {http://terminology.hl7.org/CodeSystem/organization-role code \"member\" := \"member)</span></p></div>"
+  "resourceType" : "OrganizationAffiliation",
+  "id" : "example",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example</p><p><b>organization</b>: German Biobank Alliance</p><p><b>participatingOrganization</b>: <a href=\"Organization/exampleBiobank\">Organization/exampleBiobank</a></p><p><b>code</b>: member <span style=\"background: LightGoldenRodYellow \">(Details : {http://terminology.hl7.org/CodeSystem/organization-role code \"member\" := \"member)</span></p></div>"
   },
-  "organization": {
-    "identifier": {
-      "system": "http://www.bbmri-eric.eu/",
-      "value": "bbmri-eric:networkID:de_GBA"
+  "organization" : {
+    "identifier" : {
+      "system" : "http://www.bbmri-eric.eu/",
+      "value" : "bbmri-eric:networkID:de_GBA"
     },
-    "display": "German Biobank Alliance"
+    "display" : "German Biobank Alliance"
   },
-  "participatingOrganization": {
-    "reference": "Organization/exampleBiobank"
+  "participatingOrganization" : {
+    "reference" : "Organization/exampleBiobank"
   },
-  "code": [
-    {
-      "coding": [
-        {
-          "system": "http://hl7.org/fhir/organization-role",
-          "code": "member"
-        }
-      ]
-    }
-  ]
+  "code" : [{
+    "coding" : [{
+      "system" : "http://hl7.org/fhir/organization-role",
+      "code" : "member"
+    }]
+  }]
 }

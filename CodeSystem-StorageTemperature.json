@@ -1,61 +1,55 @@
 {
-  "resourceType": "CodeSystem",
-  "id": "StorageTemperature",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://fhir.bbmri.de/CodeSystem/StorageTemperature defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">temperature2to10<a name=\"StorageTemperature-temperature2to10\"> </a></td><td>Degrees Celsius 2 to 10</td></tr><tr><td style=\"white-space:nowrap\">temperature-18to-35<a name=\"StorageTemperature-temperature-18to-35\"> </a></td><td>Degrees Celsius -18 to -35</td></tr><tr><td style=\"white-space:nowrap\">temperature-60to-85<a name=\"StorageTemperature-temperature-60to-85\"> </a></td><td>Degrees Celsius -60 to -85</td></tr><tr><td style=\"white-space:nowrap\">temperatureGN<a name=\"StorageTemperature-temperatureGN\"> </a></td><td>Gaseous nitrogen</td></tr><tr><td style=\"white-space:nowrap\">temperatureLN<a name=\"StorageTemperature-temperatureLN\"> </a></td><td>Liquid nitrogen</td></tr><tr><td style=\"white-space:nowrap\">temperatureRoom<a name=\"StorageTemperature-temperatureRoom\"> </a></td><td>Room temperature</td></tr><tr><td style=\"white-space:nowrap\">temperatureOther<a name=\"StorageTemperature-temperatureOther\"> </a></td><td>Other storage temperature</td></tr></table></div>"
+  "resourceType" : "CodeSystem",
+  "id" : "StorageTemperature",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://fhir.bbmri.de/CodeSystem/StorageTemperature</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">temperature2to10<a name=\"StorageTemperature-temperature2to10\"> </a></td><td>Degrees Celsius 2 to 10</td></tr><tr><td style=\"white-space:nowrap\">temperature-18to-35<a name=\"StorageTemperature-temperature-18to-35\"> </a></td><td>Degrees Celsius -18 to -35</td></tr><tr><td style=\"white-space:nowrap\">temperature-60to-85<a name=\"StorageTemperature-temperature-60to-85\"> </a></td><td>Degrees Celsius -60 to -85</td></tr><tr><td style=\"white-space:nowrap\">temperatureGN<a name=\"StorageTemperature-temperatureGN\"> </a></td><td>Gaseous nitrogen</td></tr><tr><td style=\"white-space:nowrap\">temperatureLN<a name=\"StorageTemperature-temperatureLN\"> </a></td><td>Liquid nitrogen</td></tr><tr><td style=\"white-space:nowrap\">temperatureRoom<a name=\"StorageTemperature-temperatureRoom\"> </a></td><td>Room temperature</td></tr><tr><td style=\"white-space:nowrap\">temperatureOther<a name=\"StorageTemperature-temperatureOther\"> </a></td><td>Other storage temperature</td></tr></table></div>"
   },
-  "url": "https://fhir.bbmri.de/CodeSystem/StorageTemperature",
-  "version": "1.2.0",
-  "name": "StorageTemperature",
-  "title": "Storage Temperature",
-  "status": "active",
-  "date": "2022-05-16T14:53:21+00:00",
-  "publisher": "bbmri.de",
-  "contact": [
-    {
-      "name": "bbmri.de",
-      "telecom": [
-        {
-          "system": "url",
-          "value": "bbmri.de"
-        },
-        {
-          "system": "email",
-          "value": "feedback@germanbiobanknode.de"
-        }
-      ]
-    }
-  ],
-  "content": "complete",
-  "concept": [
-    {
-      "code": "temperature2to10",
-      "display": "Degrees Celsius 2 to 10"
+  "url" : "https://fhir.bbmri.de/CodeSystem/StorageTemperature",
+  "version" : "1.2.0",
+  "name" : "StorageTemperature",
+  "title" : "Storage Temperature",
+  "status" : "active",
+  "date" : "2023-02-08T10:28:33+00:00",
+  "publisher" : "bbmri.de",
+  "contact" : [{
+    "name" : "bbmri.de",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "bbmri.de"
     },
     {
-      "code": "temperature-18to-35",
-      "display": "Degrees Celsius -18 to -35"
-    },
-    {
-      "code": "temperature-60to-85",
-      "display": "Degrees Celsius -60 to -85"
-    },
-    {
-      "code": "temperatureGN",
-      "display": "Gaseous nitrogen"
-    },
-    {
-      "code": "temperatureLN",
-      "display": "Liquid nitrogen"
-    },
-    {
-      "code": "temperatureRoom",
-      "display": "Room temperature"
-    },
-    {
-      "code": "temperatureOther",
-      "display": "Other storage temperature"
-    }
-  ]
+      "system" : "email",
+      "value" : "feedback@germanbiobanknode.de"
+    }]
+  }],
+  "content" : "complete",
+  "concept" : [{
+    "code" : "temperature2to10",
+    "display" : "Degrees Celsius 2 to 10"
+  },
+  {
+    "code" : "temperature-18to-35",
+    "display" : "Degrees Celsius -18 to -35"
+  },
+  {
+    "code" : "temperature-60to-85",
+    "display" : "Degrees Celsius -60 to -85"
+  },
+  {
+    "code" : "temperatureGN",
+    "display" : "Gaseous nitrogen"
+  },
+  {
+    "code" : "temperatureLN",
+    "display" : "Liquid nitrogen"
+  },
+  {
+    "code" : "temperatureRoom",
+    "display" : "Room temperature"
+  },
+  {
+    "code" : "temperatureOther",
+    "display" : "Other storage temperature"
+  }]
 }

@@ -40,8 +40,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"11.49"}
-    h3,h4,h5,h6{--heading-prefix:"11.49"}</style>
+    <style type="text/css">h2{--heading-prefix:"11.1"}
+    h3,h4,h5,h6{--heading-prefix:"11.1"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Placeholder for child template header declarations -->
@@ -179,6 +179,7 @@
   </li>
 
 
+
   
     <li>
       <a href="Measure-PatientQualityReports.xml.html">XML</a>
@@ -208,14 +209,14 @@
 
 
 <h2 id="root">: Patient Quality Reports - TTL Representation</h2>
-  <table class="colstu">
+  <table class="colsi">
     <tr>
 
       <td colspan="2">
         
           Active
           
-            as of 2022-05-16
+            as of 2023-02-08
           
         
       </td>
@@ -231,7 +232,7 @@
 
 
 
-  <pre class="rdf"><code class="language-turtle">
+  <pre style="white-space: pre; overflow: hidden" class="rdf"><code class="language-turtle">
 @prefix fhir: &lt;http://hl7.org/fhir/&gt; .
 @prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
 @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
@@ -241,24 +242,24 @@
 
  a fhir:Measure;
   <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot;
-  <a href="http://hl7.org/fhir/R4/measure.html#Measure.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "PatientQualityReports"];
+  <a href="http://hl7.org/fhir/R4/measure.html#Measure.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "PatientQualityReports"]; # 
   <a href="http://hl7.org/fhir/R4/measure.html#Measure.text">fhir:DomainResource.text</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "generated" ];
-     fhir:Narrative.div "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"&gt;&lt;p style=\"margin-bottom: 0px\"&gt;Resource \"PatientQualityReports\" &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;: &lt;code&gt;https://fhir.bbmri.de/Measure/PatientQualityReports&lt;/code&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;version&lt;/b&gt;: 1.2.0&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: PatientQualityReports&lt;/p&gt;&lt;p&gt;&lt;b&gt;title&lt;/b&gt;: Patient Quality Reports&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: Patient &lt;span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"&gt; (&lt;a href=\"http://hl7.org/fhir/R4/codesystem-resource-types.html\"&gt;ResourceType&lt;/a&gt;#Patient)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;date&lt;/b&gt;: 2022-05-16T14:53:21Z&lt;/p&gt;&lt;p&gt;&lt;b&gt;publisher&lt;/b&gt;: bbmri.de&lt;/p&gt;&lt;p&gt;&lt;b&gt;contact&lt;/b&gt;: bbmri.de: &lt;a href=\"bbmri.de\"&gt;bbmri.de&lt;/a&gt;,&lt;a href=\"mailto:feedback@germanbiobanknode.de\"&gt;feedback@germanbiobanknode.de&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: This measure contains various patient related stratifiers to help to evaluate data quality.&lt;/p&gt;&lt;p&gt;&lt;b&gt;library&lt;/b&gt;: &lt;a href=\"Library-PatientQualityReports.html\"&gt;Patient Quality Reports&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;scoring&lt;/b&gt;: Cohort &lt;span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"&gt; (&lt;a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-measure-scoring.html\"&gt;MeasureScoring&lt;/a&gt;#cohort)&lt;/span&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;group&lt;/b&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;population&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Initial Population &lt;span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"&gt; (&lt;a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-measure-population.html\"&gt;MeasurePopulationType&lt;/a&gt;#initial-population)&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;stratifier&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Gender &lt;span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"&gt; ()&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;stratifier&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: AgeClass &lt;span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"&gt; ()&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;stratifier&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: HasCovid19 &lt;span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"&gt; ()&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;/div&gt;"
-  ];
-  <a href="http://hl7.org/fhir/R4/measure.html#Measure.url">fhir:Measure.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> "https://fhir.bbmri.de/Measure/PatientQualityReports"];
-  <a href="http://hl7.org/fhir/R4/measure.html#Measure.version">fhir:Measure.version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "1.2.0"];
-  <a href="http://hl7.org/fhir/R4/measure.html#Measure.name">fhir:Measure.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "PatientQualityReports"];
-  <a href="http://hl7.org/fhir/R4/measure.html#Measure.title">fhir:Measure.title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "Patient Quality Reports"];
-  <a href="http://hl7.org/fhir/R4/measure.html#Measure.status">fhir:Measure.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "active"];
+     fhir:Narrative.div "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Measure&lt;/b&gt;&lt;a name=\"PatientQualityReports\"&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"&gt;&lt;p style=\"margin-bottom: 0px\"&gt;Resource Measure &amp;quot;PatientQualityReports&amp;quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;: &lt;code&gt;https://fhir.bbmri.de/Measure/PatientQualityReports&lt;/code&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;version&lt;/b&gt;: 1.2.0&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: PatientQualityReports&lt;/p&gt;&lt;p&gt;&lt;b&gt;title&lt;/b&gt;: Patient Quality Reports&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: Patient &lt;span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"&gt; (&lt;a href=\"http://hl7.org/fhir/R4/codesystem-resource-types.html\"&gt;ResourceType&lt;/a&gt;#Patient)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;date&lt;/b&gt;: 2023-02-08 10:28:33+0000&lt;/p&gt;&lt;p&gt;&lt;b&gt;publisher&lt;/b&gt;: bbmri.de&lt;/p&gt;&lt;p&gt;&lt;b&gt;contact&lt;/b&gt;: bbmri.de: &lt;a href=\"bbmri.de\"&gt;bbmri.de&lt;/a&gt;,&lt;a href=\"mailto:feedback@germanbiobanknode.de\"&gt;feedback@germanbiobanknode.de&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: This measure contains various patient related stratifiers to help to evaluate data quality.&lt;/p&gt;&lt;p&gt;&lt;b&gt;library&lt;/b&gt;: &lt;a href=\"Library-PatientQualityReports.html\"&gt;Patient Quality Reports&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;scoring&lt;/b&gt;: Cohort &lt;span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"&gt; (&lt;a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-measure-scoring.html\"&gt;MeasureScoring&lt;/a&gt;#cohort)&lt;/span&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;group&lt;/b&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;population&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Initial Population &lt;span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"&gt; (&lt;a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-measure-population.html\"&gt;MeasurePopulationType&lt;/a&gt;#initial-population)&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Criteria&lt;/h3&gt;&lt;table class=\"grid\"&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Language&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Expression&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;text/cql&lt;/td&gt;&lt;td&gt;InInitialPopulation&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;stratifier&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Gender &lt;span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"&gt; ()&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Criteria&lt;/h3&gt;&lt;table class=\"grid\"&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Language&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Expression&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;text/cql&lt;/td&gt;&lt;td&gt;Gender&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;stratifier&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: AgeClass &lt;span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"&gt; ()&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Criteria&lt;/h3&gt;&lt;table class=\"grid\"&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Language&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Expression&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;text/cql&lt;/td&gt;&lt;td&gt;AgeClass&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;stratifier&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: HasCovid19 &lt;span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"&gt; ()&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Criteria&lt;/h3&gt;&lt;table class=\"grid\"&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Language&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Expression&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;text/cql&lt;/td&gt;&lt;td&gt;HasCovid19&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;/div&gt;"
+  ]; # 
+  <a href="http://hl7.org/fhir/R4/measure.html#Measure.url">fhir:Measure.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> "https://fhir.bbmri.de/Measure/PatientQualityReports"]; # 
+  <a href="http://hl7.org/fhir/R4/measure.html#Measure.version">fhir:Measure.version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "1.2.0"]; # 
+  <a href="http://hl7.org/fhir/R4/measure.html#Measure.name">fhir:Measure.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "PatientQualityReports"]; # 
+  <a href="http://hl7.org/fhir/R4/measure.html#Measure.title">fhir:Measure.title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "Patient Quality Reports"]; # 
+  <a href="http://hl7.org/fhir/R4/measure.html#Measure.status">fhir:Measure.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "active"]; # 
   <a href="http://hl7.org/fhir/R4/measure.html#Measure.subject[x]">fhir:Measure.subjectCodeableConcept</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
        <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> "http://hl7.org/fhir/resource-types" ];
        <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "Patient" ]     ]
-  ];
-  <a href="http://hl7.org/fhir/R4/measure.html#Measure.date">fhir:Measure.date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> "2022-05-16T14:53:21+00:00"^^xsd:dateTime];
-  <a href="http://hl7.org/fhir/R4/measure.html#Measure.publisher">fhir:Measure.publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "bbmri.de"];
+  ]; # 
+  <a href="http://hl7.org/fhir/R4/measure.html#Measure.date">fhir:Measure.date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> "2023-02-08T10:28:33+00:00"^^xsd:dateTime]; # 
+  <a href="http://hl7.org/fhir/R4/measure.html#Measure.publisher">fhir:Measure.publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "bbmri.de"]; # 
   <a href="http://hl7.org/fhir/R4/measure.html#Measure.contact">fhir:Measure.contact</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
      <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:ContactDetail.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "bbmri.de" ];
@@ -269,19 +270,19 @@
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1;
        <a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">fhir:ContactPoint.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "email" ];
        <a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">fhir:ContactPoint.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "feedback@germanbiobanknode.de" ]     ]
-  ];
-  <a href="http://hl7.org/fhir/R4/measure.html#Measure.description">fhir:Measure.description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:value</a> "This measure contains various patient related stratifiers to help to evaluate data quality."];
+  ]; # 
+  <a href="http://hl7.org/fhir/R4/measure.html#Measure.description">fhir:Measure.description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:value</a> "This measure contains various patient related stratifiers to help to evaluate data quality."]; # 
   <a href="http://hl7.org/fhir/R4/measure.html#Measure.library">fhir:Measure.library</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> "https://fhir.bbmri.de/Library/PatientQualityReports";
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
      <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://fhir.bbmri.de/Library/PatientQualityReports&gt;
-  ];
+  ]; # 
   <a href="http://hl7.org/fhir/R4/measure.html#Measure.scoring">fhir:Measure.scoring</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
        <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> "http://terminology.hl7.org/CodeSystem/measure-scoring" ];
        <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "cohort" ]     ]
-  ];
+  ]; # 
   <a href="http://hl7.org/fhir/R4/measure.html#Measure.group">fhir:Measure.group</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
      <a href="http://hl7.org/fhir/R4/measure.html#Measure.group.population">fhir:Measure.group.population</a> [
@@ -313,7 +314,7 @@
        <a href="http://hl7.org/fhir/R4/measure.html#Measure.group.stratifier.criteria">fhir:Measure.group.stratifier.criteria</a> [
          <a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.language">fhir:Expression.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "text/cql" ];
          <a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.expression">fhir:Expression.expression</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "HasCovid19" ]       ]     ]
-  ].
+  ]. # 
 
 # - ontology header ------------------------------------------------------------
 
@@ -351,15 +352,15 @@
 
       <div class="inner-wrapper">
         <p><a name="l708">​</a>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="bbmri.de">bbmri.de</a>.  Package de.bbmri.fhir#1.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, May 16, 2022 14:53+0000">2022-05-16</span>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="bbmri.de">bbmri.de</a>.  Package de.bbmri.fhir#1.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Feb 8, 2023 10:28+0000">2023-02-08</span>
           <br/>
-          <span style="color: var(--footer-highlight-text-color)"></span>
+          <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                  
                 
 | <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" alt="Creative Commons Lizenzvertrag" style="border-width:0"/></a>
-          
+          </span>
         </p>
       </div>    <!-- /inner-wrapper -->
     </div>    <!-- /container -->

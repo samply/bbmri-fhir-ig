@@ -7,22 +7,22 @@
 
 <https://fhir.bbmri.de/OrganizationAffiliation/example> a fhir:OrganizationAffiliation;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "example"];
+  fhir:Resource.id [ fhir:value "example"]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example</p><p><b>organization</b>: German Biobank Alliance</p><p><b>participatingOrganization</b>: <a href=\"Organization/exampleBiobank\">Organization/exampleBiobank</a></p><p><b>code</b>: member <span style=\"background: LightGoldenRodYellow \">(Details : {http://terminology.hl7.org/CodeSystem/organization-role code \"member\" := \"member)</span></p></div>"
-  ];
+  ]; # 
   fhir:OrganizationAffiliation.organization [
      fhir:Reference.identifier [
        fhir:Identifier.system [ fhir:value "http://www.bbmri-eric.eu/" ];
        fhir:Identifier.value [ fhir:value "bbmri-eric:networkID:de_GBA" ]
      ];
      fhir:Reference.display [ fhir:value "German Biobank Alliance" ]
-  ];
+  ]; # 
   fhir:OrganizationAffiliation.participatingOrganization [
      fhir:link <https://fhir.bbmri.de/Organization/exampleBiobank>;
      fhir:Reference.reference [ fhir:value "Organization/exampleBiobank" ]
-  ];
+  ]; # 
   fhir:OrganizationAffiliation.code [
      fhir:index 0;
      fhir:CodeableConcept.coding [
@@ -30,7 +30,7 @@
        fhir:Coding.system [ fhir:value "http://hl7.org/fhir/organization-role" ];
        fhir:Coding.code [ fhir:value "member" ]
      ]
-  ] .
+  ] . # 
 
 # - ontology header ------------------------------------------------------------
 

@@ -1,39 +1,33 @@
 {
-  "resourceType": "CodeSystem",
-  "id": "ContactType",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://fhir.bbmri.de/CodeSystem/ContactType defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">RESEARCH<a name=\"ContactType-RESEARCH\"> </a></td><td>Research</td><td>Contact for researchers about sample and data requests</td></tr></table></div>"
+  "resourceType" : "CodeSystem",
+  "id" : "ContactType",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://fhir.bbmri.de/CodeSystem/ContactType</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">RESEARCH<a name=\"ContactType-RESEARCH\"> </a></td><td>Research</td><td>Contact for researchers about sample and data requests</td></tr></table></div>"
   },
-  "url": "https://fhir.bbmri.de/CodeSystem/ContactType",
-  "version": "1.2.0",
-  "name": "ContactType",
-  "title": "Contact Type",
-  "status": "active",
-  "date": "2022-05-16T14:53:21+00:00",
-  "publisher": "bbmri.de",
-  "contact": [
+  "url" : "https://fhir.bbmri.de/CodeSystem/ContactType",
+  "version" : "1.2.0",
+  "name" : "ContactType",
+  "title" : "Contact Type",
+  "status" : "active",
+  "date" : "2023-02-08T10:28:33+00:00",
+  "publisher" : "bbmri.de",
+  "contact" : [{
+    "name" : "bbmri.de",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "bbmri.de"
+    },
     {
-      "name": "bbmri.de",
-      "telecom": [
-        {
-          "system": "url",
-          "value": "bbmri.de"
-        },
-        {
-          "system": "email",
-          "value": "feedback@germanbiobanknode.de"
-        }
-      ]
-    }
-  ],
-  "caseSensitive": false,
-  "content": "complete",
-  "concept": [
-    {
-      "code": "RESEARCH",
-      "display": "Research",
-      "definition": "Contact for researchers about sample and data requests"
-    }
-  ]
+      "system" : "email",
+      "value" : "feedback@germanbiobanknode.de"
+    }]
+  }],
+  "caseSensitive" : false,
+  "content" : "complete",
+  "concept" : [{
+    "code" : "RESEARCH",
+    "display" : "Research",
+    "definition" : "Contact for researchers about sample and data requests"
+  }]
 }

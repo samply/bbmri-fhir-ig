@@ -1,37 +1,31 @@
 {
-  "resourceType": "ValueSet",
-  "id": "BiobankCapabilities",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-BiobankCapabilities.html\"><code>https://fhir.bbmri.de/CodeSystem/BiobankCapabilities</code></a></li></ul></div>"
+  "resourceType" : "ValueSet",
+  "id" : "BiobankCapabilities",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-BiobankCapabilities.html\"><code>https://fhir.bbmri.de/CodeSystem/BiobankCapabilities</code></a></li></ul></div>"
   },
-  "url": "https://fhir.bbmri.de/ValueSet/BiobankCapabilities",
-  "version": "1.2.0",
-  "name": "BiobankCapabilities",
-  "title": "Biobank Capabilities",
-  "status": "active",
-  "date": "2022-05-16T14:53:21+00:00",
-  "publisher": "bbmri.de",
-  "contact": [
+  "url" : "https://fhir.bbmri.de/ValueSet/BiobankCapabilities",
+  "version" : "1.2.0",
+  "name" : "BiobankCapabilities",
+  "title" : "Biobank Capabilities",
+  "status" : "active",
+  "date" : "2023-02-08T10:28:33+00:00",
+  "publisher" : "bbmri.de",
+  "contact" : [{
+    "name" : "bbmri.de",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "bbmri.de"
+    },
     {
-      "name": "bbmri.de",
-      "telecom": [
-        {
-          "system": "url",
-          "value": "bbmri.de"
-        },
-        {
-          "system": "email",
-          "value": "feedback@germanbiobanknode.de"
-        }
-      ]
-    }
-  ],
-  "compose": {
-    "include": [
-      {
-        "system": "https://fhir.bbmri.de/CodeSystem/BiobankCapabilities"
-      }
-    ]
+      "system" : "email",
+      "value" : "feedback@germanbiobanknode.de"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://fhir.bbmri.de/CodeSystem/BiobankCapabilities"
+    }]
   }
 }

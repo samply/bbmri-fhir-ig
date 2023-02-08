@@ -7,18 +7,18 @@
 
 <https://fhir.bbmri.de/CodeSystem/OtherSampleDiagnosis> a fhir:CodeSystem;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "OtherSampleDiagnosis"];
+  fhir:Resource.id [ fhir:value "OtherSampleDiagnosis"]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://fhir.bbmri.de/CodeSystem/OtherSampleDiagnosis defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">healthy<a name=\"OtherSampleDiagnosis-healthy\"> </a></td><td>Healthy</td><td>Sample contains healthy material</td></tr><tr><td style=\"white-space:nowrap\">unknown<a name=\"OtherSampleDiagnosis-unknown\"> </a></td><td>Unknown</td><td/></tr><tr><td style=\"white-space:nowrap\">not-applicable<a name=\"OtherSampleDiagnosis-not-applicable\"> </a></td><td>Not applicable</td><td/></tr><tr><td style=\"white-space:nowrap\">unspecified-tumor<a name=\"OtherSampleDiagnosis-unspecified-tumor\"> </a></td><td>Unspecified tumor</td><td>Sample contains tumor material, a specific diagnosis is not known</td></tr></table></div>"
-  ];
-  fhir:CodeSystem.url [ fhir:value "https://fhir.bbmri.de/CodeSystem/OtherSampleDiagnosis"];
-  fhir:CodeSystem.version [ fhir:value "1.2.0"];
-  fhir:CodeSystem.name [ fhir:value "OtherSampleDiagnosis"];
-  fhir:CodeSystem.title [ fhir:value "Other Sample Diagnosis"];
-  fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2022-05-16T14:53:21+00:00"^^xsd:dateTime];
-  fhir:CodeSystem.publisher [ fhir:value "bbmri.de"];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://fhir.bbmri.de/CodeSystem/OtherSampleDiagnosis</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">healthy<a name=\"OtherSampleDiagnosis-healthy\"> </a></td><td>Healthy</td><td>Sample contains healthy material</td></tr><tr><td style=\"white-space:nowrap\">unknown<a name=\"OtherSampleDiagnosis-unknown\"> </a></td><td>Unknown</td><td/></tr><tr><td style=\"white-space:nowrap\">not-applicable<a name=\"OtherSampleDiagnosis-not-applicable\"> </a></td><td>Not applicable</td><td/></tr><tr><td style=\"white-space:nowrap\">unspecified-tumor<a name=\"OtherSampleDiagnosis-unspecified-tumor\"> </a></td><td>Unspecified tumor</td><td>Sample contains tumor material, a specific diagnosis is not known</td></tr></table></div>"
+  ]; # 
+  fhir:CodeSystem.url [ fhir:value "https://fhir.bbmri.de/CodeSystem/OtherSampleDiagnosis"]; # 
+  fhir:CodeSystem.version [ fhir:value "1.2.0"]; # 
+  fhir:CodeSystem.name [ fhir:value "OtherSampleDiagnosis"]; # 
+  fhir:CodeSystem.title [ fhir:value "Other Sample Diagnosis"]; # 
+  fhir:CodeSystem.status [ fhir:value "active"]; # 
+  fhir:CodeSystem.date [ fhir:value "2023-02-08T10:28:33+00:00"^^xsd:dateTime]; # 
+  fhir:CodeSystem.publisher [ fhir:value "bbmri.de"]; # 
   fhir:CodeSystem.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "bbmri.de" ];
@@ -31,10 +31,10 @@
        fhir:ContactPoint.system [ fhir:value "email" ];
        fhir:ContactPoint.value [ fhir:value "feedback@germanbiobanknode.de" ]
      ]
-  ];
-  fhir:CodeSystem.description [ fhir:value "Contains the additional (not contained in ICD-10) codes needed for coding the MIABIS Sample Diagnosis plus a non-MIABIS code for indicating tumor material without a specific diagnosis."];
-  fhir:CodeSystem.compositional [ fhir:value "false"^^xsd:boolean];
-  fhir:CodeSystem.content [ fhir:value "complete"];
+  ]; # 
+  fhir:CodeSystem.description [ fhir:value "Contains the additional (not contained in ICD-10) codes needed for coding the MIABIS Sample Diagnosis plus a non-MIABIS code for indicating tumor material without a specific diagnosis."]; # 
+  fhir:CodeSystem.compositional [ fhir:value "false"^^xsd:boolean]; # 
+  fhir:CodeSystem.content [ fhir:value "complete"]; # 
   fhir:CodeSystem.concept [
      fhir:index 0;
      fhir:CodeSystem.concept.code [ fhir:value "healthy" ];
@@ -53,7 +53,7 @@
      fhir:CodeSystem.concept.code [ fhir:value "unspecified-tumor" ];
      fhir:CodeSystem.concept.display [ fhir:value "Unspecified tumor" ];
      fhir:CodeSystem.concept.definition [ fhir:value "Sample contains tumor material, a specific diagnosis is not known" ]
-  ] .
+  ] . # 
 
 # - ontology header ------------------------------------------------------------
 

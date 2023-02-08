@@ -1,53 +1,47 @@
 {
-  "resourceType": "CodeSystem",
-  "id": "OtherSampleDiagnosis",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://fhir.bbmri.de/CodeSystem/OtherSampleDiagnosis defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">healthy<a name=\"OtherSampleDiagnosis-healthy\"> </a></td><td>Healthy</td><td>Sample contains healthy material</td></tr><tr><td style=\"white-space:nowrap\">unknown<a name=\"OtherSampleDiagnosis-unknown\"> </a></td><td>Unknown</td><td/></tr><tr><td style=\"white-space:nowrap\">not-applicable<a name=\"OtherSampleDiagnosis-not-applicable\"> </a></td><td>Not applicable</td><td/></tr><tr><td style=\"white-space:nowrap\">unspecified-tumor<a name=\"OtherSampleDiagnosis-unspecified-tumor\"> </a></td><td>Unspecified tumor</td><td>Sample contains tumor material, a specific diagnosis is not known</td></tr></table></div>"
+  "resourceType" : "CodeSystem",
+  "id" : "OtherSampleDiagnosis",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://fhir.bbmri.de/CodeSystem/OtherSampleDiagnosis</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">healthy<a name=\"OtherSampleDiagnosis-healthy\"> </a></td><td>Healthy</td><td>Sample contains healthy material</td></tr><tr><td style=\"white-space:nowrap\">unknown<a name=\"OtherSampleDiagnosis-unknown\"> </a></td><td>Unknown</td><td/></tr><tr><td style=\"white-space:nowrap\">not-applicable<a name=\"OtherSampleDiagnosis-not-applicable\"> </a></td><td>Not applicable</td><td/></tr><tr><td style=\"white-space:nowrap\">unspecified-tumor<a name=\"OtherSampleDiagnosis-unspecified-tumor\"> </a></td><td>Unspecified tumor</td><td>Sample contains tumor material, a specific diagnosis is not known</td></tr></table></div>"
   },
-  "url": "https://fhir.bbmri.de/CodeSystem/OtherSampleDiagnosis",
-  "version": "1.2.0",
-  "name": "OtherSampleDiagnosis",
-  "title": "Other Sample Diagnosis",
-  "status": "active",
-  "date": "2022-05-16T14:53:21+00:00",
-  "publisher": "bbmri.de",
-  "contact": [
-    {
-      "name": "bbmri.de",
-      "telecom": [
-        {
-          "system": "url",
-          "value": "bbmri.de"
-        },
-        {
-          "system": "email",
-          "value": "feedback@germanbiobanknode.de"
-        }
-      ]
-    }
-  ],
-  "description": "Contains the additional (not contained in ICD-10) codes needed for coding the MIABIS Sample Diagnosis plus a non-MIABIS code for indicating tumor material without a specific diagnosis.",
-  "compositional": false,
-  "content": "complete",
-  "concept": [
-    {
-      "code": "healthy",
-      "display": "Healthy",
-      "definition": "Sample contains healthy material"
+  "url" : "https://fhir.bbmri.de/CodeSystem/OtherSampleDiagnosis",
+  "version" : "1.2.0",
+  "name" : "OtherSampleDiagnosis",
+  "title" : "Other Sample Diagnosis",
+  "status" : "active",
+  "date" : "2023-02-08T10:28:33+00:00",
+  "publisher" : "bbmri.de",
+  "contact" : [{
+    "name" : "bbmri.de",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "bbmri.de"
     },
     {
-      "code": "unknown",
-      "display": "Unknown"
-    },
-    {
-      "code": "not-applicable",
-      "display": "Not applicable"
-    },
-    {
-      "code": "unspecified-tumor",
-      "display": "Unspecified tumor",
-      "definition": "Sample contains tumor material, a specific diagnosis is not known"
-    }
-  ]
+      "system" : "email",
+      "value" : "feedback@germanbiobanknode.de"
+    }]
+  }],
+  "description" : "Contains the additional (not contained in ICD-10) codes needed for coding the MIABIS Sample Diagnosis plus a non-MIABIS code for indicating tumor material without a specific diagnosis.",
+  "compositional" : false,
+  "content" : "complete",
+  "concept" : [{
+    "code" : "healthy",
+    "display" : "Healthy",
+    "definition" : "Sample contains healthy material"
+  },
+  {
+    "code" : "unknown",
+    "display" : "Unknown"
+  },
+  {
+    "code" : "not-applicable",
+    "display" : "Not applicable"
+  },
+  {
+    "code" : "unspecified-tumor",
+    "display" : "Unspecified tumor",
+    "definition" : "Sample contains tumor material, a specific diagnosis is not known"
+  }]
 }

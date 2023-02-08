@@ -7,18 +7,18 @@
 
 <https://fhir.bbmri.de/Organization/exampleBiobank> a fhir:Organization;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "exampleBiobank"];
+  fhir:Resource.id [ fhir:value "exampleBiobank"]; # 
   fhir:Resource.meta [
      fhir:Meta.profile [
        fhir:value "https://fhir.bbmri.de/StructureDefinition/Biobank";
        fhir:index 0;
        fhir:link <https://fhir.bbmri.de/StructureDefinition/Biobank>
      ]
-  ];
+  ]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: exampleBiobank</p><p><b>meta</b>: </p><p><b>identifier</b>: bbmri-eric:ID:DE_12345</p><p><b>name</b>: Zentrale Biobank Neustadt</p><p><b>alias</b>: ZBBN</p><p><b>telecom</b>: http://biobank.klinikum-neustadt.de</p><p><b>address</b>: Krankenhausstr. 12 Neustadt 12345 DE </p></div>"
-  ];
+  ]; # 
   fhir:DomainResource.extension [
      fhir:index 0;
      fhir:Extension.url [ fhir:value "https://fhir.bbmri.de/StructureDefinition/OrganizationDescription" ];
@@ -49,22 +49,22 @@
          fhir:Coding.display [ fhir:value "ISO-15189" ]
        ]
      ]
-  ];
+  ]; # 
   fhir:Organization.identifier [
      fhir:index 0;
      fhir:Identifier.system [ fhir:value "http://www.bbmri-eric.eu/" ];
      fhir:Identifier.value [ fhir:value "bbmri-eric:ID:DE_12345" ]
-  ];
-  fhir:Organization.name [ fhir:value "Zentrale Biobank Neustadt"];
+  ]; # 
+  fhir:Organization.name [ fhir:value "Zentrale Biobank Neustadt"]; # 
   fhir:Organization.alias [
      fhir:value "ZBBN";
      fhir:index 0
-  ];
+  ]; # 
   fhir:Organization.telecom [
      fhir:index 0;
      fhir:ContactPoint.system [ fhir:value "url" ];
      fhir:ContactPoint.value [ fhir:value "http://biobank.klinikum-neustadt.de" ]
-  ];
+  ]; # 
   fhir:Organization.address [
      fhir:index 0;
      fhir:Address.line [
@@ -74,7 +74,7 @@
      fhir:Address.city [ fhir:value "Neustadt" ];
      fhir:Address.postalCode [ fhir:value "12345" ];
      fhir:Address.country [ fhir:value "DE" ]
-  ];
+  ]; # 
   fhir:Organization.contact [
      fhir:index 0;
      fhir:Element.extension [
@@ -165,7 +165,7 @@
        fhir:Address.postalCode [ fhir:value "12345" ];
        fhir:Address.country [ fhir:value "DE" ]
      ]
-  ] .
+  ] . # 
 
 # - ontology header ------------------------------------------------------------
 

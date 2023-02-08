@@ -1,37 +1,31 @@
 {
-  "resourceType": "ValueSet",
-  "id": "SampleMaterialType",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-SampleMaterialType.html\"><code>https://fhir.bbmri.de/CodeSystem/SampleMaterialType</code></a></li></ul></div>"
+  "resourceType" : "ValueSet",
+  "id" : "SampleMaterialType",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-SampleMaterialType.html\"><code>https://fhir.bbmri.de/CodeSystem/SampleMaterialType</code></a></li></ul></div>"
   },
-  "url": "https://fhir.bbmri.de/ValueSet/SampleMaterialType",
-  "version": "1.2.0",
-  "name": "SampleMaterialType",
-  "title": "Sample Material Type",
-  "status": "active",
-  "date": "2022-05-16T14:53:21+00:00",
-  "publisher": "bbmri.de",
-  "contact": [
+  "url" : "https://fhir.bbmri.de/ValueSet/SampleMaterialType",
+  "version" : "1.2.0",
+  "name" : "SampleMaterialType",
+  "title" : "Sample Material Type",
+  "status" : "active",
+  "date" : "2023-02-08T10:28:33+00:00",
+  "publisher" : "bbmri.de",
+  "contact" : [{
+    "name" : "bbmri.de",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "bbmri.de"
+    },
     {
-      "name": "bbmri.de",
-      "telecom": [
-        {
-          "system": "url",
-          "value": "bbmri.de"
-        },
-        {
-          "system": "email",
-          "value": "feedback@germanbiobanknode.de"
-        }
-      ]
-    }
-  ],
-  "compose": {
-    "include": [
-      {
-        "system": "https://fhir.bbmri.de/CodeSystem/SampleMaterialType"
-      }
-    ]
+      "system" : "email",
+      "value" : "feedback@germanbiobanknode.de"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://fhir.bbmri.de/CodeSystem/SampleMaterialType"
+    }]
   }
 }

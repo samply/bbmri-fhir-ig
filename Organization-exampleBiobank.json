@@ -1,154 +1,112 @@
 {
-  "resourceType": "Organization",
-  "id": "exampleBiobank",
-  "meta": {
-    "profile": [
-      "https://fhir.bbmri.de/StructureDefinition/Biobank"
-    ]
+  "resourceType" : "Organization",
+  "id" : "exampleBiobank",
+  "meta" : {
+    "profile" : ["https://fhir.bbmri.de/StructureDefinition/Biobank"]
   },
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: exampleBiobank</p><p><b>meta</b>: </p><p><b>identifier</b>: bbmri-eric:ID:DE_12345</p><p><b>name</b>: Zentrale Biobank Neustadt</p><p><b>alias</b>: ZBBN</p><p><b>telecom</b>: http://biobank.klinikum-neustadt.de</p><p><b>address</b>: Krankenhausstr. 12 Neustadt 12345 DE </p></div>"
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: exampleBiobank</p><p><b>meta</b>: </p><p><b>identifier</b>: bbmri-eric:ID:DE_12345</p><p><b>name</b>: Zentrale Biobank Neustadt</p><p><b>alias</b>: ZBBN</p><p><b>telecom</b>: http://biobank.klinikum-neustadt.de</p><p><b>address</b>: Krankenhausstr. 12 Neustadt 12345 DE </p></div>"
   },
-  "extension": [
-    {
-      "url": "https://fhir.bbmri.de/StructureDefinition/OrganizationDescription",
-      "valueString": "The Zentrale Biobank neustadt collects samples from patients at the Klinikum Neustadt."
+  "extension" : [{
+    "url" : "https://fhir.bbmri.de/StructureDefinition/OrganizationDescription",
+    "valueString" : "The Zentrale Biobank neustadt collects samples from patients at the Klinikum Neustadt."
+  },
+  {
+    "url" : "https://fhir.bbmri.de/StructureDefinition/JuridicalPerson",
+    "valueString" : "Klinikum Neustadt vertreten durch den Vorstand"
+  },
+  {
+    "url" : "https://fhir.bbmri.de/StructureDefinition/QualityStandard",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "https://fhir.bbmri.de/CodeSystem/QualityStandard",
+        "code" : "oecd-guidelines",
+        "display" : "OECD Guidelines"
+      }]
+    }
+  },
+  {
+    "url" : "https://fhir.bbmri.de/StructureDefinition/QualityStandard",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "https://fhir.bbmri.de/CodeSystem/QualityStandard",
+        "code" : "iso-15189",
+        "display" : "ISO-15189"
+      }]
+    }
+  }],
+  "identifier" : [{
+    "system" : "http://www.bbmri-eric.eu/",
+    "value" : "bbmri-eric:ID:DE_12345"
+  }],
+  "name" : "Zentrale Biobank Neustadt",
+  "alias" : ["ZBBN"],
+  "telecom" : [{
+    "system" : "url",
+    "value" : "http://biobank.klinikum-neustadt.de"
+  }],
+  "address" : [{
+    "line" : ["Krankenhausstr. 12"],
+    "city" : "Neustadt",
+    "postalCode" : "12345",
+    "country" : "DE"
+  }],
+  "contact" : [{
+    "extension" : [{
+      "url" : "https://fhir.bbmri.de/StructureDefinition/ContactRole",
+      "valueString" : "Director"
+    }],
+    "purpose" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/contactentity-type",
+        "code" : "ADMIN",
+        "display" : "Administrative"
+      }]
+    },
+    "name" : {
+      "family" : "Chef",
+      "given" : ["Claudia",
+      "Celine"],
+      "prefix" : ["Prof.",
+      "Dr.",
+      "Dr."]
+    },
+    "telecom" : [{
+      "system" : "phone",
+      "value" : "0452 4624-24"
+    }]
+  },
+  {
+    "purpose" : {
+      "coding" : [{
+        "system" : "https://fhir.bbmri.de/CodeSystem/ContactType",
+        "code" : "RESEARCH",
+        "display" : "Research"
+      }],
+      "text" : "Contact for research inquiries."
+    },
+    "name" : {
+      "family" : "Forschungsbeauftragter",
+      "given" : ["Friedrich"],
+      "prefix" : ["Freiherr",
+      "Dr."],
+      "suffix" : ["M.Sc."]
+    },
+    "telecom" : [{
+      "system" : "phone",
+      "value" : "0452 4624-28"
     },
     {
-      "url": "https://fhir.bbmri.de/StructureDefinition/JuridicalPerson",
-      "valueString": "Klinikum Neustadt vertreten durch den Vorstand"
-    },
-    {
-      "url": "https://fhir.bbmri.de/StructureDefinition/QualityStandard",
-      "valueCodeableConcept": {
-        "coding": [
-          {
-            "system": "https://fhir.bbmri.de/CodeSystem/QualityStandard",
-            "code": "oecd-guidelines",
-            "display": "OECD Guidelines"
-          }
-        ]
-      }
-    },
-    {
-      "url": "https://fhir.bbmri.de/StructureDefinition/QualityStandard",
-      "valueCodeableConcept": {
-        "coding": [
-          {
-            "system": "https://fhir.bbmri.de/CodeSystem/QualityStandard",
-            "code": "iso-15189",
-            "display": "ISO-15189"
-          }
-        ]
-      }
+      "system" : "email",
+      "value" : "forschungsanfragen@biobank.klinikum-neustadt.de"
+    }],
+    "address" : {
+      "line" : ["Gebäude 24a",
+      "Krankenhausstr. 12"],
+      "city" : "Neustadt",
+      "postalCode" : "12345",
+      "country" : "DE"
     }
-  ],
-  "identifier": [
-    {
-      "system": "http://www.bbmri-eric.eu/",
-      "value": "bbmri-eric:ID:DE_12345"
-    }
-  ],
-  "name": "Zentrale Biobank Neustadt",
-  "alias": [
-    "ZBBN"
-  ],
-  "telecom": [
-    {
-      "system": "url",
-      "value": "http://biobank.klinikum-neustadt.de"
-    }
-  ],
-  "address": [
-    {
-      "line": [
-        "Krankenhausstr. 12"
-      ],
-      "city": "Neustadt",
-      "postalCode": "12345",
-      "country": "DE"
-    }
-  ],
-  "contact": [
-    {
-      "extension": [
-        {
-          "url": "https://fhir.bbmri.de/StructureDefinition/ContactRole",
-          "valueString": "Director"
-        }
-      ],
-      "purpose": {
-        "coding": [
-          {
-            "system": "http://terminology.hl7.org/CodeSystem/contactentity-type",
-            "code": "ADMIN",
-            "display": "Administrative"
-          }
-        ]
-      },
-      "name": {
-        "family": "Chef",
-        "given": [
-          "Claudia",
-          "Celine"
-        ],
-        "prefix": [
-          "Prof.",
-          "Dr.",
-          "Dr."
-        ]
-      },
-      "telecom": [
-        {
-          "system": "phone",
-          "value": "0452 4624-24"
-        }
-      ]
-    },
-    {
-      "purpose": {
-        "coding": [
-          {
-            "system": "https://fhir.bbmri.de/CodeSystem/ContactType",
-            "code": "RESEARCH",
-            "display": "Research"
-          }
-        ],
-        "text": "Contact for research inquiries."
-      },
-      "name": {
-        "family": "Forschungsbeauftragter",
-        "given": [
-          "Friedrich"
-        ],
-        "prefix": [
-          "Freiherr",
-          "Dr."
-        ],
-        "suffix": [
-          "M.Sc."
-        ]
-      },
-      "telecom": [
-        {
-          "system": "phone",
-          "value": "0452 4624-28"
-        },
-        {
-          "system": "email",
-          "value": "forschungsanfragen@biobank.klinikum-neustadt.de"
-        }
-      ],
-      "address": {
-        "line": [
-          "Gebäude 24a",
-          "Krankenhausstr. 12"
-        ],
-        "city": "Neustadt",
-        "postalCode": "12345",
-        "country": "DE"
-      }
-    }
-  ]
+  }]
 }

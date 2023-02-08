@@ -7,18 +7,18 @@
 
 <https://fhir.bbmri.de/CodeSystem/StorageTemperature> a fhir:CodeSystem;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "StorageTemperature"];
+  fhir:Resource.id [ fhir:value "StorageTemperature"]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://fhir.bbmri.de/CodeSystem/StorageTemperature defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">temperature2to10<a name=\"StorageTemperature-temperature2to10\"> </a></td><td>Degrees Celsius 2 to 10</td></tr><tr><td style=\"white-space:nowrap\">temperature-18to-35<a name=\"StorageTemperature-temperature-18to-35\"> </a></td><td>Degrees Celsius -18 to -35</td></tr><tr><td style=\"white-space:nowrap\">temperature-60to-85<a name=\"StorageTemperature-temperature-60to-85\"> </a></td><td>Degrees Celsius -60 to -85</td></tr><tr><td style=\"white-space:nowrap\">temperatureGN<a name=\"StorageTemperature-temperatureGN\"> </a></td><td>Gaseous nitrogen</td></tr><tr><td style=\"white-space:nowrap\">temperatureLN<a name=\"StorageTemperature-temperatureLN\"> </a></td><td>Liquid nitrogen</td></tr><tr><td style=\"white-space:nowrap\">temperatureRoom<a name=\"StorageTemperature-temperatureRoom\"> </a></td><td>Room temperature</td></tr><tr><td style=\"white-space:nowrap\">temperatureOther<a name=\"StorageTemperature-temperatureOther\"> </a></td><td>Other storage temperature</td></tr></table></div>"
-  ];
-  fhir:CodeSystem.url [ fhir:value "https://fhir.bbmri.de/CodeSystem/StorageTemperature"];
-  fhir:CodeSystem.version [ fhir:value "1.2.0"];
-  fhir:CodeSystem.name [ fhir:value "StorageTemperature"];
-  fhir:CodeSystem.title [ fhir:value "Storage Temperature"];
-  fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2022-05-16T14:53:21+00:00"^^xsd:dateTime];
-  fhir:CodeSystem.publisher [ fhir:value "bbmri.de"];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://fhir.bbmri.de/CodeSystem/StorageTemperature</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">temperature2to10<a name=\"StorageTemperature-temperature2to10\"> </a></td><td>Degrees Celsius 2 to 10</td></tr><tr><td style=\"white-space:nowrap\">temperature-18to-35<a name=\"StorageTemperature-temperature-18to-35\"> </a></td><td>Degrees Celsius -18 to -35</td></tr><tr><td style=\"white-space:nowrap\">temperature-60to-85<a name=\"StorageTemperature-temperature-60to-85\"> </a></td><td>Degrees Celsius -60 to -85</td></tr><tr><td style=\"white-space:nowrap\">temperatureGN<a name=\"StorageTemperature-temperatureGN\"> </a></td><td>Gaseous nitrogen</td></tr><tr><td style=\"white-space:nowrap\">temperatureLN<a name=\"StorageTemperature-temperatureLN\"> </a></td><td>Liquid nitrogen</td></tr><tr><td style=\"white-space:nowrap\">temperatureRoom<a name=\"StorageTemperature-temperatureRoom\"> </a></td><td>Room temperature</td></tr><tr><td style=\"white-space:nowrap\">temperatureOther<a name=\"StorageTemperature-temperatureOther\"> </a></td><td>Other storage temperature</td></tr></table></div>"
+  ]; # 
+  fhir:CodeSystem.url [ fhir:value "https://fhir.bbmri.de/CodeSystem/StorageTemperature"]; # 
+  fhir:CodeSystem.version [ fhir:value "1.2.0"]; # 
+  fhir:CodeSystem.name [ fhir:value "StorageTemperature"]; # 
+  fhir:CodeSystem.title [ fhir:value "Storage Temperature"]; # 
+  fhir:CodeSystem.status [ fhir:value "active"]; # 
+  fhir:CodeSystem.date [ fhir:value "2023-02-08T10:28:33+00:00"^^xsd:dateTime]; # 
+  fhir:CodeSystem.publisher [ fhir:value "bbmri.de"]; # 
   fhir:CodeSystem.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "bbmri.de" ];
@@ -31,8 +31,8 @@
        fhir:ContactPoint.system [ fhir:value "email" ];
        fhir:ContactPoint.value [ fhir:value "feedback@germanbiobanknode.de" ]
      ]
-  ];
-  fhir:CodeSystem.content [ fhir:value "complete"];
+  ]; # 
+  fhir:CodeSystem.content [ fhir:value "complete"]; # 
   fhir:CodeSystem.concept [
      fhir:index 0;
      fhir:CodeSystem.concept.code [ fhir:value "temperature2to10" ];
@@ -61,7 +61,7 @@
      fhir:index 6;
      fhir:CodeSystem.concept.code [ fhir:value "temperatureOther" ];
      fhir:CodeSystem.concept.display [ fhir:value "Other storage temperature" ]
-  ] .
+  ] . # 
 
 # - ontology header ------------------------------------------------------------
 

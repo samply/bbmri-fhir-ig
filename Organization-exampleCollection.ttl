@@ -7,18 +7,18 @@
 
 <https://fhir.bbmri.de/Organization/exampleCollection> a fhir:Organization;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "exampleCollection"];
+  fhir:Resource.id [ fhir:value "exampleCollection"]; # 
   fhir:Resource.meta [
      fhir:Meta.profile [
        fhir:value "https://fhir.bbmri.de/StructureDefinition/Collection";
        fhir:index 0;
        fhir:link <https://fhir.bbmri.de/StructureDefinition/Collection>
      ]
-  ];
+  ]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: exampleCollection</p><p><b>meta</b>: </p><p><b>identifier</b>: bbmri-eric:ID:DE_12345:collection:vampir</p><p><b>name</b>: Venous and arterial blood from misc patients internal reserve </p><p><b>alias</b>: VAMPIR</p><p><b>partOf</b>: <a href=\"Organization/exampleBiobank\">Organization/exampleBiobank</a></p></div>"
-  ];
+  ]; # 
   fhir:DomainResource.extension [
      fhir:index 0;
      fhir:Extension.url [ fhir:value "https://fhir.bbmri.de/StructureDefinition/OrganizationDescription" ];
@@ -94,21 +94,21 @@
        fhir:Extension.valueString [ fhir:value "Access contract inluding data protection guidelines needs to be signed." ]
      ];
      fhir:Extension.url [ fhir:value "https://fhir.bbmri.de/StructureDefinition/AccessPolicy" ]
-  ];
+  ]; # 
   fhir:Organization.identifier [
      fhir:index 0;
      fhir:Identifier.system [ fhir:value "http://www.bbmri-eric.eu/" ];
      fhir:Identifier.value [ fhir:value "bbmri-eric:ID:DE_12345:collection:vampir" ]
-  ];
-  fhir:Organization.name [ fhir:value "Venous and arterial blood from misc patients internal reserve"];
+  ]; # 
+  fhir:Organization.name [ fhir:value "Venous and arterial blood from misc patients internal reserve"]; # 
   fhir:Organization.alias [
      fhir:value "VAMPIR";
      fhir:index 0
-  ];
+  ]; # 
   fhir:Organization.partOf [
      fhir:link <https://fhir.bbmri.de/Organization/exampleBiobank>;
      fhir:Reference.reference [ fhir:value "Organization/exampleBiobank" ]
-  ];
+  ]; # 
   fhir:Organization.contact [
      fhir:index 0;
      fhir:Organization.contact.purpose [
@@ -135,7 +135,7 @@
        fhir:ContactPoint.system [ fhir:value "fax" ];
        fhir:ContactPoint.value [ fhir:value "0452 4624-66" ]
      ]
-  ] .
+  ] . # 
 
 # - ontology header ------------------------------------------------------------
 

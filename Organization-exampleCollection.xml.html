@@ -179,6 +179,7 @@
   </li>
 
 
+
   
     <li class="active">
       <a href="#">XML</a>
@@ -208,7 +209,7 @@
 
 
 <h2 id="root">: exampleCollection - XML Representation</h2>
-  <table class="null">
+  <table class="colsi">
     <tr>
 
       <td colspan="2">
@@ -229,10 +230,10 @@
 
 
 
-  <pre class="xml"><code class="language-xml">
+  <pre style="white-space: pre; overflow: hidden" class="xml"><code class="language-xml">
 
 &lt;<a href="http://hl7.org/fhir/R4/organization.html#Organization">Organization</a> xmlns="http://hl7.org/fhir"&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/organization.html#Organization.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="exampleCollection"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/organization.html#Organization.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>="exampleCollection"/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/organization.html#Organization.meta">meta</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a> <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>="https://fhir.bbmri.de/StructureDefinition/Collection"/&gt;
   &lt;/meta&gt;
@@ -307,7 +308,8 @@
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://www.bbmri-eric.eu/"/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="bbmri-eric:ID:DE_12345:collection:vampir"/&gt;
   &lt;/identifier&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/organization.html#Organization.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Venous and arterial blood from misc patients internal reserve"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/organization.html#Organization.name">name</a>
+        <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Venous and arterial blood from misc patients internal reserve"/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/organization.html#Organization.alias">alias</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="VAMPIR"/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/organization.html#Organization.partOf">partOf</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Organization/exampleBiobank"/&gt;
@@ -315,7 +317,8 @@
   &lt;<a href="http://hl7.org/fhir/R4/organization.html#Organization.contact">contact</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/organization.html#Organization.contact.purpose">purpose</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://terminology.hl7.org/CodeSystem/contactentity-type"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://terminology.hl7.org/CodeSystem/contactentity-type"/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="ADMIN"/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Administrative"/&gt;
       &lt;/coding&gt;
@@ -360,15 +363,15 @@
 
       <div class="inner-wrapper">
         <p><a name="l743">​</a>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="bbmri.de">bbmri.de</a>.  Package de.bbmri.fhir#1.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, May 16, 2022 14:53+0000">2022-05-16</span>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="bbmri.de">bbmri.de</a>.  Package de.bbmri.fhir#1.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Feb 8, 2023 10:28+0000">2023-02-08</span>
           <br/>
-          <span style="color: var(--footer-highlight-text-color)"></span>
+          <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                  
                 
 | <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" alt="Creative Commons Lizenzvertrag" style="border-width:0"/></a>
-          
+          </span>
         </p>
       </div>    <!-- /inner-wrapper -->
     </div>    <!-- /container -->

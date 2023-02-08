@@ -7,18 +7,18 @@
 
 <https://fhir.bbmri.de/CodeSystem/ContactType> a fhir:CodeSystem;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "ContactType"];
+  fhir:Resource.id [ fhir:value "ContactType"]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://fhir.bbmri.de/CodeSystem/ContactType defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">RESEARCH<a name=\"ContactType-RESEARCH\"> </a></td><td>Research</td><td>Contact for researchers about sample and data requests</td></tr></table></div>"
-  ];
-  fhir:CodeSystem.url [ fhir:value "https://fhir.bbmri.de/CodeSystem/ContactType"];
-  fhir:CodeSystem.version [ fhir:value "1.2.0"];
-  fhir:CodeSystem.name [ fhir:value "ContactType"];
-  fhir:CodeSystem.title [ fhir:value "Contact Type"];
-  fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2022-05-16T14:53:21+00:00"^^xsd:dateTime];
-  fhir:CodeSystem.publisher [ fhir:value "bbmri.de"];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://fhir.bbmri.de/CodeSystem/ContactType</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">RESEARCH<a name=\"ContactType-RESEARCH\"> </a></td><td>Research</td><td>Contact for researchers about sample and data requests</td></tr></table></div>"
+  ]; # 
+  fhir:CodeSystem.url [ fhir:value "https://fhir.bbmri.de/CodeSystem/ContactType"]; # 
+  fhir:CodeSystem.version [ fhir:value "1.2.0"]; # 
+  fhir:CodeSystem.name [ fhir:value "ContactType"]; # 
+  fhir:CodeSystem.title [ fhir:value "Contact Type"]; # 
+  fhir:CodeSystem.status [ fhir:value "active"]; # 
+  fhir:CodeSystem.date [ fhir:value "2023-02-08T10:28:33+00:00"^^xsd:dateTime]; # 
+  fhir:CodeSystem.publisher [ fhir:value "bbmri.de"]; # 
   fhir:CodeSystem.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "bbmri.de" ];
@@ -31,15 +31,15 @@
        fhir:ContactPoint.system [ fhir:value "email" ];
        fhir:ContactPoint.value [ fhir:value "feedback@germanbiobanknode.de" ]
      ]
-  ];
-  fhir:CodeSystem.caseSensitive [ fhir:value "false"^^xsd:boolean];
-  fhir:CodeSystem.content [ fhir:value "complete"];
+  ]; # 
+  fhir:CodeSystem.caseSensitive [ fhir:value "false"^^xsd:boolean]; # 
+  fhir:CodeSystem.content [ fhir:value "complete"]; # 
   fhir:CodeSystem.concept [
      fhir:index 0;
      fhir:CodeSystem.concept.code [ fhir:value "RESEARCH" ];
      fhir:CodeSystem.concept.display [ fhir:value "Research" ];
      fhir:CodeSystem.concept.definition [ fhir:value "Contact for researchers about sample and data requests" ]
-  ] .
+  ] . # 
 
 # - ontology header ------------------------------------------------------------
 

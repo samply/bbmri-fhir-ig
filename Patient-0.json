@@ -1,16 +1,14 @@
 {
-  "resourceType": "Patient",
-  "id": "0",
-  "meta": {
-    "profile": [
-      "https://fhir.bbmri.de/StructureDefinition/Patient"
-    ]
+  "resourceType" : "Patient",
+  "id" : "0",
+  "meta" : {
+    "profile" : ["https://fhir.bbmri.de/StructureDefinition/Patient"]
   },
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"0\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Patient.html\">Patient</a></p></div><p><b>gender</b>: male</p><p><b>birthDate</b>: 1989-11-18</p><p><b>deceased</b>: 2009-01-27</p></div>"
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Anonymous Patient</b> male, DoB: 1989-11-18</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Known status of Patient\">Deceased:</td><td colspan=\"3\">2009-01-27</td></tr></table></div>"
   },
-  "gender": "male",
-  "birthDate": "1989-11-18",
-  "deceasedDateTime": "2009-01-27"
+  "gender" : "male",
+  "birthDate" : "1989-11-18",
+  "deceasedDateTime" : "2009-01-27"
 }

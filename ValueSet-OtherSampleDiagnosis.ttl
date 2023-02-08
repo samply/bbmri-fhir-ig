@@ -7,18 +7,18 @@
 
 <https://fhir.bbmri.de/ValueSet/OtherSampleDiagnosis> a fhir:ValueSet;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "OtherSampleDiagnosis"];
+  fhir:Resource.id [ fhir:value "OtherSampleDiagnosis"]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-OtherSampleDiagnosis.html\"><code>https://fhir.bbmri.de/CodeSystem/OtherSampleDiagnosis</code></a></li></ul></div>"
-  ];
-  fhir:ValueSet.url [ fhir:value "https://fhir.bbmri.de/ValueSet/OtherSampleDiagnosis"];
-  fhir:ValueSet.version [ fhir:value "1.2.0"];
-  fhir:ValueSet.name [ fhir:value "OtherSampleDiagnosis"];
-  fhir:ValueSet.title [ fhir:value "other sample diagnosis"];
-  fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2022-05-16T14:53:21+00:00"^^xsd:dateTime];
-  fhir:ValueSet.publisher [ fhir:value "bbmri.de"];
+  ]; # 
+  fhir:ValueSet.url [ fhir:value "https://fhir.bbmri.de/ValueSet/OtherSampleDiagnosis"]; # 
+  fhir:ValueSet.version [ fhir:value "1.2.0"]; # 
+  fhir:ValueSet.name [ fhir:value "OtherSampleDiagnosis"]; # 
+  fhir:ValueSet.title [ fhir:value "other sample diagnosis"]; # 
+  fhir:ValueSet.status [ fhir:value "active"]; # 
+  fhir:ValueSet.date [ fhir:value "2023-02-08T10:28:33+00:00"^^xsd:dateTime]; # 
+  fhir:ValueSet.publisher [ fhir:value "bbmri.de"]; # 
   fhir:ValueSet.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "bbmri.de" ];
@@ -31,13 +31,13 @@
        fhir:ContactPoint.system [ fhir:value "email" ];
        fhir:ContactPoint.value [ fhir:value "feedback@germanbiobanknode.de" ]
      ]
-  ];
+  ]; # 
   fhir:ValueSet.compose [
      fhir:ValueSet.compose.include [
        fhir:index 0;
        fhir:ValueSet.compose.include.system [ fhir:value "https://fhir.bbmri.de/CodeSystem/OtherSampleDiagnosis" ]
      ]
-  ] .
+  ] . # 
 
 # - ontology header ------------------------------------------------------------
 

@@ -7,18 +7,18 @@
 
 <https://fhir.bbmri.de/CodeSystem/ResourceType> a fhir:CodeSystem;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "ResourceType"];
+  fhir:Resource.id [ fhir:value "ResourceType"]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://fhir.bbmri.de/CodeSystem/ResourceType defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">samples<a name=\"ResourceType-samples\"> </a></td><td>Samples</td></tr><tr><td style=\"white-space:nowrap\">data<a name=\"ResourceType-data\"> </a></td><td>Data</td></tr><tr><td style=\"white-space:nowrap\">images<a name=\"ResourceType-images\"> </a></td><td>Images</td></tr></table></div>"
-  ];
-  fhir:CodeSystem.url [ fhir:value "https://fhir.bbmri.de/CodeSystem/ResourceType"];
-  fhir:CodeSystem.version [ fhir:value "1.2.0"];
-  fhir:CodeSystem.name [ fhir:value "ResourceType"];
-  fhir:CodeSystem.title [ fhir:value "Resource Type"];
-  fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2022-05-16T14:53:21+00:00"^^xsd:dateTime];
-  fhir:CodeSystem.publisher [ fhir:value "bbmri.de"];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://fhir.bbmri.de/CodeSystem/ResourceType</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">samples<a name=\"ResourceType-samples\"> </a></td><td>Samples</td></tr><tr><td style=\"white-space:nowrap\">data<a name=\"ResourceType-data\"> </a></td><td>Data</td></tr><tr><td style=\"white-space:nowrap\">images<a name=\"ResourceType-images\"> </a></td><td>Images</td></tr></table></div>"
+  ]; # 
+  fhir:CodeSystem.url [ fhir:value "https://fhir.bbmri.de/CodeSystem/ResourceType"]; # 
+  fhir:CodeSystem.version [ fhir:value "1.2.0"]; # 
+  fhir:CodeSystem.name [ fhir:value "ResourceType"]; # 
+  fhir:CodeSystem.title [ fhir:value "Resource Type"]; # 
+  fhir:CodeSystem.status [ fhir:value "active"]; # 
+  fhir:CodeSystem.date [ fhir:value "2023-02-08T10:28:33+00:00"^^xsd:dateTime]; # 
+  fhir:CodeSystem.publisher [ fhir:value "bbmri.de"]; # 
   fhir:CodeSystem.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "bbmri.de" ];
@@ -31,10 +31,10 @@
        fhir:ContactPoint.system [ fhir:value "email" ];
        fhir:ContactPoint.value [ fhir:value "feedback@germanbiobanknode.de" ]
      ]
-  ];
-  fhir:CodeSystem.description [ fhir:value "Types of resources that may be governed by a biobank or its collections"];
-  fhir:CodeSystem.purpose [ fhir:value "This CodeSystem provides the different types of resources distinguished by the BBMRI-ERIC Directory"];
-  fhir:CodeSystem.content [ fhir:value "complete"];
+  ]; # 
+  fhir:CodeSystem.description [ fhir:value "Types of resources that may be governed by a biobank or its collections"]; # 
+  fhir:CodeSystem.purpose [ fhir:value "This CodeSystem provides the different types of resources distinguished by the BBMRI-ERIC Directory"]; # 
+  fhir:CodeSystem.content [ fhir:value "complete"]; # 
   fhir:CodeSystem.concept [
      fhir:index 0;
      fhir:CodeSystem.concept.code [ fhir:value "samples" ];
@@ -47,7 +47,7 @@
      fhir:index 2;
      fhir:CodeSystem.concept.code [ fhir:value "images" ];
      fhir:CodeSystem.concept.display [ fhir:value "Images" ]
-  ] .
+  ] . # 
 
 # - ontology header ------------------------------------------------------------
 

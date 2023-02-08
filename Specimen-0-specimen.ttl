@@ -7,18 +7,18 @@
 
 <https://fhir.bbmri.de/Specimen/0-specimen> a fhir:Specimen;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "0-specimen"];
+  fhir:Resource.id [ fhir:value "0-specimen"]; # 
   fhir:Resource.meta [
      fhir:Meta.profile [
        fhir:value "https://fhir.bbmri.de/StructureDefinition/Specimen";
        fhir:index 0;
        fhir:link <https://fhir.bbmri.de/StructureDefinition/Specimen>
      ]
-  ];
+  ]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"0-specimen\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Specimen.html\">Specimen</a></p></div><p><b>Storage Temperature</b>: Degrees Celsius 2 to 10 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-StorageTemperature.html\">Storage Temperature</a>#temperature2to10)</span></p><p><b>Custodian</b>: <a href=\"Organization-exampleCollection.html\">Organization/exampleCollection</a> \"Venous and arterial blood from misc patients internal reserve\"</p><p><b>Sample Diagnosis</b>: Unknown <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-OtherSampleDiagnosis.html\">Other Sample Diagnosis</a>#unknown)</span></p><p><b>type</b>: Whole blood <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-SampleMaterialType.html\">Sample Material Type</a>#whole-blood)</span></p><p><b>subject</b>: <a href=\"Patient-0.html\">Patient/0</a></p><h3>Collections</h3><table class=\"grid\"><tr><td>-</td><td><b>Collected[x]</b></td><td><b>BodySite</b></td><td><b>FastingStatus[x]</b></td></tr><tr><td>*</td><td>2005-06-17</td><td>C26.8 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#C26.8)</span></td><td>The patient indicated they did not fast prior to the procedure. <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v2-0916.html\">relevantClincialInformation</a>#NF)</span></td></tr></table></div>"
-  ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Specimen</b><a name=\"0-specimen\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Specimen &quot;0-specimen&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Specimen.html\">Specimen</a></p></div><p><b>Storage Temperature</b>: Degrees Celsius 2 to 10 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-StorageTemperature.html\">Storage Temperature</a>#temperature2to10)</span></p><p><b>Custodian</b>: <a href=\"Organization-exampleCollection.html\">Organization/exampleCollection</a> &quot;Venous and arterial blood from misc patients internal reserve&quot;</p><p><b>Sample Diagnosis</b>: Unknown <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-OtherSampleDiagnosis.html\">Other Sample Diagnosis</a>#unknown)</span></p><p><b>type</b>: Whole blood <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-SampleMaterialType.html\">Sample Material Type</a>#whole-blood)</span></p><p><b>subject</b>: <a href=\"Patient-0.html\">Patient/0</a></p><h3>Collections</h3><table class=\"grid\"><tr><td>-</td><td><b>Collected[x]</b></td><td><b>BodySite</b></td><td><b>FastingStatus[x]</b></td></tr><tr><td>*</td><td>2005-06-17</td><td>C26.8 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#C26.8)</span></td><td>The patient indicated they did not fast prior to the procedure. <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v2-0916.html\">relevantClincialInformation</a>#NF)</span></td></tr></table></div>"
+  ]; # 
   fhir:DomainResource.extension [
      fhir:index 0;
      fhir:Extension.url [ fhir:value "https://fhir.bbmri.de/StructureDefinition/StorageTemperature" ];
@@ -46,18 +46,18 @@
          fhir:Coding.code [ fhir:value "unknown" ]
        ]
      ]
-  ];
+  ]; # 
   fhir:Specimen.type [
      fhir:CodeableConcept.coding [
        fhir:index 0;
        fhir:Coding.system [ fhir:value "https://fhir.bbmri.de/CodeSystem/SampleMaterialType" ];
        fhir:Coding.code [ fhir:value "whole-blood" ]
      ]
-  ];
+  ]; # 
   fhir:Specimen.subject [
      fhir:link <https://fhir.bbmri.de/Patient/0>;
      fhir:Reference.reference [ fhir:value "Patient/0" ]
-  ];
+  ]; # 
   fhir:Specimen.collection [
      fhir:Specimen.collection.collectedDateTime [ fhir:value "2005-06-17"^^xsd:date ];
      fhir:Specimen.collection.bodySite [
@@ -74,7 +74,7 @@
          fhir:Coding.code [ fhir:value "NF" ]
        ]
      ]
-  ] .
+  ] . # 
 
 # - ontology header ------------------------------------------------------------
 

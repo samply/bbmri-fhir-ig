@@ -7,25 +7,25 @@
 
 <https://fhir.bbmri.de/Measure/PatientQualityReports> a fhir:Measure;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "PatientQualityReports"];
+  fhir:Resource.id [ fhir:value "PatientQualityReports"]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"PatientQualityReports\" </p></div><p><b>url</b>: <code>https://fhir.bbmri.de/Measure/PatientQualityReports</code></p><p><b>version</b>: 1.2.0</p><p><b>name</b>: PatientQualityReports</p><p><b>title</b>: Patient Quality Reports</p><p><b>status</b>: active</p><p><b>subject</b>: Patient <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/R4/codesystem-resource-types.html\">ResourceType</a>#Patient)</span></p><p><b>date</b>: 2022-05-16T14:53:21Z</p><p><b>publisher</b>: bbmri.de</p><p><b>contact</b>: bbmri.de: <a href=\"bbmri.de\">bbmri.de</a>,<a href=\"mailto:feedback@germanbiobanknode.de\">feedback@germanbiobanknode.de</a></p><p><b>description</b>: This measure contains various patient related stratifiers to help to evaluate data quality.</p><p><b>library</b>: <a href=\"Library-PatientQualityReports.html\">Patient Quality Reports</a></p><p><b>scoring</b>: Cohort <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-measure-scoring.html\">MeasureScoring</a>#cohort)</span></p><blockquote><p><b>group</b></p><blockquote><p><b>population</b></p><p><b>code</b>: Initial Population <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-measure-population.html\">MeasurePopulationType</a>#initial-population)</span></p></blockquote><blockquote><p><b>stratifier</b></p><p><b>code</b>: Gender <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p></blockquote><blockquote><p><b>stratifier</b></p><p><b>code</b>: AgeClass <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p></blockquote><blockquote><p><b>stratifier</b></p><p><b>code</b>: HasCovid19 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p></blockquote></blockquote></div>"
-  ];
-  fhir:Measure.url [ fhir:value "https://fhir.bbmri.de/Measure/PatientQualityReports"];
-  fhir:Measure.version [ fhir:value "1.2.0"];
-  fhir:Measure.name [ fhir:value "PatientQualityReports"];
-  fhir:Measure.title [ fhir:value "Patient Quality Reports"];
-  fhir:Measure.status [ fhir:value "active"];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Measure</b><a name=\"PatientQualityReports\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Measure &quot;PatientQualityReports&quot; </p></div><p><b>url</b>: <code>https://fhir.bbmri.de/Measure/PatientQualityReports</code></p><p><b>version</b>: 1.2.0</p><p><b>name</b>: PatientQualityReports</p><p><b>title</b>: Patient Quality Reports</p><p><b>status</b>: active</p><p><b>subject</b>: Patient <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/R4/codesystem-resource-types.html\">ResourceType</a>#Patient)</span></p><p><b>date</b>: 2023-02-08 10:28:33+0000</p><p><b>publisher</b>: bbmri.de</p><p><b>contact</b>: bbmri.de: <a href=\"bbmri.de\">bbmri.de</a>,<a href=\"mailto:feedback@germanbiobanknode.de\">feedback@germanbiobanknode.de</a></p><p><b>description</b>: This measure contains various patient related stratifiers to help to evaluate data quality.</p><p><b>library</b>: <a href=\"Library-PatientQualityReports.html\">Patient Quality Reports</a></p><p><b>scoring</b>: Cohort <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-measure-scoring.html\">MeasureScoring</a>#cohort)</span></p><blockquote><p><b>group</b></p><blockquote><p><b>population</b></p><p><b>code</b>: Initial Population <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-measure-population.html\">MeasurePopulationType</a>#initial-population)</span></p><h3>Criteria</h3><table class=\"grid\"><tr><td>-</td><td><b>Language</b></td><td><b>Expression</b></td></tr><tr><td>*</td><td>text/cql</td><td>InInitialPopulation</td></tr></table></blockquote><blockquote><p><b>stratifier</b></p><p><b>code</b>: Gender <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><h3>Criteria</h3><table class=\"grid\"><tr><td>-</td><td><b>Language</b></td><td><b>Expression</b></td></tr><tr><td>*</td><td>text/cql</td><td>Gender</td></tr></table></blockquote><blockquote><p><b>stratifier</b></p><p><b>code</b>: AgeClass <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><h3>Criteria</h3><table class=\"grid\"><tr><td>-</td><td><b>Language</b></td><td><b>Expression</b></td></tr><tr><td>*</td><td>text/cql</td><td>AgeClass</td></tr></table></blockquote><blockquote><p><b>stratifier</b></p><p><b>code</b>: HasCovid19 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><h3>Criteria</h3><table class=\"grid\"><tr><td>-</td><td><b>Language</b></td><td><b>Expression</b></td></tr><tr><td>*</td><td>text/cql</td><td>HasCovid19</td></tr></table></blockquote></blockquote></div>"
+  ]; # 
+  fhir:Measure.url [ fhir:value "https://fhir.bbmri.de/Measure/PatientQualityReports"]; # 
+  fhir:Measure.version [ fhir:value "1.2.0"]; # 
+  fhir:Measure.name [ fhir:value "PatientQualityReports"]; # 
+  fhir:Measure.title [ fhir:value "Patient Quality Reports"]; # 
+  fhir:Measure.status [ fhir:value "active"]; # 
   fhir:Measure.subjectCodeableConcept [
      fhir:CodeableConcept.coding [
        fhir:index 0;
        fhir:Coding.system [ fhir:value "http://hl7.org/fhir/resource-types" ];
        fhir:Coding.code [ fhir:value "Patient" ]
      ]
-  ];
-  fhir:Measure.date [ fhir:value "2022-05-16T14:53:21+00:00"^^xsd:dateTime];
-  fhir:Measure.publisher [ fhir:value "bbmri.de"];
+  ]; # 
+  fhir:Measure.date [ fhir:value "2023-02-08T10:28:33+00:00"^^xsd:dateTime]; # 
+  fhir:Measure.publisher [ fhir:value "bbmri.de"]; # 
   fhir:Measure.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "bbmri.de" ];
@@ -38,20 +38,20 @@
        fhir:ContactPoint.system [ fhir:value "email" ];
        fhir:ContactPoint.value [ fhir:value "feedback@germanbiobanknode.de" ]
      ]
-  ];
-  fhir:Measure.description [ fhir:value "This measure contains various patient related stratifiers to help to evaluate data quality."];
+  ]; # 
+  fhir:Measure.description [ fhir:value "This measure contains various patient related stratifiers to help to evaluate data quality."]; # 
   fhir:Measure.library [
      fhir:value "https://fhir.bbmri.de/Library/PatientQualityReports";
      fhir:index 0;
      fhir:link <https://fhir.bbmri.de/Library/PatientQualityReports>
-  ];
+  ]; # 
   fhir:Measure.scoring [
      fhir:CodeableConcept.coding [
        fhir:index 0;
        fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-scoring" ];
        fhir:Coding.code [ fhir:value "cohort" ]
      ]
-  ];
+  ]; # 
   fhir:Measure.group [
      fhir:index 0;
      fhir:Measure.group.population [
@@ -96,7 +96,7 @@
          fhir:Expression.expression [ fhir:value "HasCovid19" ]
        ]
      ]
-  ] .
+  ] . # 
 
 # - ontology header ------------------------------------------------------------
 

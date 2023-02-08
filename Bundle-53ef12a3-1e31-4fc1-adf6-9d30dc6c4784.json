@@ -1,289 +1,243 @@
 {
-  "resourceType": "Bundle",
-  "id": "53ef12a3-1e31-4fc1-adf6-9d30dc6c4784",
-  "type": "transaction",
-  "entry": [
-    {
-      "fullUrl": "http://example.com/Patient/0",
-      "resource": {
-        "resourceType": "Patient",
-        "id": "0",
-        "meta": {
-          "profile": [
-            "https://fhir.bbmri.de/StructureDefinition/Patient"
-          ]
-        },
-        "text": {
-          "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"0\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Patient.html\">Patient</a></p></div><p><b>gender</b>: male</p><p><b>birthDate</b>: 1989-11-18</p></div>"
-        },
-        "gender": "male",
-        "birthDate": "1989-11-18"
+  "resourceType" : "Bundle",
+  "id" : "53ef12a3-1e31-4fc1-adf6-9d30dc6c4784",
+  "type" : "transaction",
+  "entry" : [{
+    "fullUrl" : "http://example.com/Patient/0",
+    "resource" : {
+      "resourceType" : "Patient",
+      "id" : "0",
+      "meta" : {
+        "profile" : ["https://fhir.bbmri.de/StructureDefinition/Patient"]
       },
-      "request": {
-        "method": "PUT",
-        "url": "Patient/0"
-      }
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Patient</b><a name=\"0\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Patient &quot;0&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Patient.html\">Patient</a></p></div><p><b>gender</b>: male</p><p><b>birthDate</b>: 1989-11-18</p></div>"
+      },
+      "gender" : "male",
+      "birthDate" : "1989-11-18"
     },
-    {
-      "fullUrl": "http://example.com/Observation/0-bmi",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "0-bmi",
-        "meta": {
-          "profile": [
-            "https://fhir.bbmri.de/StructureDefinition/Bmi"
-          ]
-        },
-        "text": {
-          "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"0-bmi\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Bmi.html\">BMI</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Body mass index (BMI) [Ratio] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#39156-5)</span></p><p><b>subject</b>: <a href=\"#Patient_0\">See above (Patient/0)</a></p><p><b>effective</b>: 2005-06-17</p><p><b>value</b>: 36.68645245341373 kg/m2<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code kg/m2 = 'kg/m2')</span></p></div>"
-        },
-        "status": "final",
-        "category": [
-          {
-            "coding": [
-              {
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                "code": "vital-signs"
-              }
-            ]
-          }
-        ],
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "39156-5"
-            }
-          ]
-        },
-        "subject": {
-          "reference": "Patient/0"
-        },
-        "effectiveDateTime": "2005-06-17",
-        "valueQuantity": {
-          "value": 36.68645245341373,
-          "unit": "kg/m2",
-          "system": "http://unitsofmeasure.org",
-          "code": "kg/m2"
-        }
-      },
-      "request": {
-        "method": "PUT",
-        "url": "Observation/0-bmi"
-      }
-    },
-    {
-      "fullUrl": "http://example.com/Observation/0-body-height",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "0-body-height",
-        "meta": {
-          "profile": [
-            "https://fhir.bbmri.de/StructureDefinition/BodyHeight"
-          ]
-        },
-        "text": {
-          "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"0-body-height\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-BodyHeight.html\">Body Height</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Body height <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#8302-2)</span></p><p><b>subject</b>: <a href=\"#Patient_0\">See above (Patient/0)</a></p><p><b>effective</b>: 2005-06-17</p><p><b>value</b>: 198.58090348834853 cm<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code cm = 'cm')</span></p></div>"
-        },
-        "status": "final",
-        "category": [
-          {
-            "coding": [
-              {
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                "code": "vital-signs"
-              }
-            ]
-          }
-        ],
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "8302-2"
-            }
-          ]
-        },
-        "subject": {
-          "reference": "Patient/0"
-        },
-        "effectiveDateTime": "2005-06-17",
-        "valueQuantity": {
-          "value": 198.58090348834853,
-          "unit": "cm",
-          "system": "http://unitsofmeasure.org",
-          "code": "cm"
-        }
-      },
-      "request": {
-        "method": "PUT",
-        "url": "Observation/0-body-height"
-      }
-    },
-    {
-      "fullUrl": "http://example.com/Observation/0-body-weight",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "0-body-weight",
-        "meta": {
-          "profile": [
-            "https://fhir.bbmri.de/StructureDefinition/BodyWeight"
-          ]
-        },
-        "text": {
-          "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"0-body-weight\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-BodyWeight.html\">Body Weight</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Body weight <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#29463-7)</span></p><p><b>subject</b>: <a href=\"#Patient_0\">See above (Patient/0)</a></p><p><b>effective</b>: 2005-06-17</p><p><b>value</b>: 144.67073319145982 kg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code kg = 'kg')</span></p></div>"
-        },
-        "status": "final",
-        "category": [
-          {
-            "coding": [
-              {
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                "code": "vital-signs"
-              }
-            ]
-          }
-        ],
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "29463-7"
-            }
-          ]
-        },
-        "subject": {
-          "reference": "Patient/0"
-        },
-        "effectiveDateTime": "2005-06-17",
-        "valueQuantity": {
-          "value": 144.67073319145982,
-          "unit": "kg",
-          "system": "http://unitsofmeasure.org",
-          "code": "kg"
-        }
-      },
-      "request": {
-        "method": "PUT",
-        "url": "Observation/0-body-weight"
-      }
-    },
-    {
-      "fullUrl": "http://example.com/Observation/0-tobacco-use",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "0-tobacco-use",
-        "meta": {
-          "profile": [
-            "https://fhir.bbmri.de/StructureDefinition/TobaccoUse"
-          ]
-        },
-        "text": {
-          "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"0-tobacco-use\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-TobaccoUse.html\">TobaccoUse</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Tobacco smoking status <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#72166-2)</span></p><p><b>subject</b>: <a href=\"#Patient_0\">See above (Patient/0)</a></p><p><b>effective</b>: 2005-06-17</p><p><b>value</b>: Current some day smoker <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#LA18977-1)</span></p></div>"
-        },
-        "status": "final",
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "72166-2"
-            }
-          ]
-        },
-        "subject": {
-          "reference": "Patient/0"
-        },
-        "effectiveDateTime": "2005-06-17",
-        "valueCodeableConcept": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "LA18977-1"
-            }
-          ]
-        }
-      },
-      "request": {
-        "method": "PUT",
-        "url": "Observation/0-tobacco-use"
-      }
-    },
-    {
-      "fullUrl": "http://example.com/Specimen/0-specimen",
-      "resource": {
-        "resourceType": "Specimen",
-        "id": "0-specimen",
-        "meta": {
-          "profile": [
-            "https://fhir.bbmri.de/StructureDefinition/Specimen"
-          ]
-        },
-        "text": {
-          "status": "extensions",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"0-specimen\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Specimen.html\">Specimen</a></p></div><p><b>Storage Temperature</b>: Degrees Celsius 2 to 10 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-StorageTemperature.html\">Storage Temperature</a>#temperature2to10)</span></p><p><b>Custodian</b>: <a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@0.9.6&amp;canonical=https://simplifier.net/packages/de.basisprofil.r4/0.9.6/files/129540/http://blaze.example.com/fhir/Organization/collection-2\">http://blaze.example.com/fhir/Organization/collection-2</a></p><p><b>Sample Diagnosis</b>: Unknown <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-OtherSampleDiagnosis.html\">Other Sample Diagnosis</a>#unknown)</span></p><p><b>type</b>: Whole blood <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-SampleMaterialType.html\">Sample Material Type</a>#whole-blood)</span></p><p><b>subject</b>: <a href=\"#Patient_0\">See above (Patient/0)</a></p><h3>Collections</h3><table class=\"grid\"><tr><td>-</td><td><b>Collected[x]</b></td><td><b>FastingStatus[x]</b></td></tr><tr><td>*</td><td>2005-06-17</td><td>The patient indicated they did not fast prior to the procedure. <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v2-0916.html\">relevantClincialInformation</a>#NF)</span></td></tr></table></div>"
-        },
-        "extension": [
-          {
-            "url": "https://fhir.bbmri.de/StructureDefinition/StorageTemperature",
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "system": "https://fhir.bbmri.de/CodeSystem/StorageTemperature",
-                  "code": "temperature2to10"
-                }
-              ]
-            }
-          },
-          {
-            "url": "https://fhir.bbmri.de/StructureDefinition/Custodian",
-            "valueReference": {
-              "reference": "http://blaze.example.com/fhir/Organization/collection-2"
-            }
-          },
-          {
-            "url": "https://fhir.bbmri.de/StructureDefinition/SampleDiagnosis",
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "system": "https://fhir.bbmri.de/CodeSystem/OtherSampleDiagnosis",
-                  "code": "unknown"
-                }
-              ]
-            }
-          }
-        ],
-        "type": {
-          "coding": [
-            {
-              "system": "https://fhir.bbmri.de/CodeSystem/SampleMaterialType",
-              "code": "whole-blood"
-            }
-          ]
-        },
-        "subject": {
-          "reference": "Patient/0"
-        },
-        "collection": {
-          "collectedDateTime": "2005-06-17",
-          "fastingStatusCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://terminology.hl7.org/CodeSystem/v2-0916",
-                "code": "NF"
-              }
-            ]
-          }
-        }
-      },
-      "request": {
-        "method": "PUT",
-        "url": "Specimen/0-specimen"
-      }
+    "request" : {
+      "method" : "PUT",
+      "url" : "Patient/0"
     }
-  ]
+  },
+  {
+    "fullUrl" : "http://example.com/Observation/0-bmi",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "0-bmi",
+      "meta" : {
+        "profile" : ["https://fhir.bbmri.de/StructureDefinition/Bmi"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"0-bmi\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;0-bmi&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Bmi.html\">BMI</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Body mass index (BMI) [Ratio] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#39156-5)</span></p><p><b>subject</b>: <a href=\"#Patient_0\">See above (Patient/0)</a></p><p><b>effective</b>: 2005-06-17</p><p><b>value</b>: 36.68645245341373 kg/m2<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code kg/m2 = 'kg/m2')</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "39156-5"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/0"
+      },
+      "effectiveDateTime" : "2005-06-17",
+      "valueQuantity" : {
+        "value" : 36.68645245341373,
+        "unit" : "kg/m2",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "kg/m2"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/0-bmi"
+    }
+  },
+  {
+    "fullUrl" : "http://example.com/Observation/0-body-height",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "0-body-height",
+      "meta" : {
+        "profile" : ["https://fhir.bbmri.de/StructureDefinition/BodyHeight"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"0-body-height\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;0-body-height&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-BodyHeight.html\">Body Height</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Body height <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#8302-2)</span></p><p><b>subject</b>: <a href=\"#Patient_0\">See above (Patient/0)</a></p><p><b>effective</b>: 2005-06-17</p><p><b>value</b>: 198.58090348834853 cm<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code cm = 'cm')</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "8302-2"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/0"
+      },
+      "effectiveDateTime" : "2005-06-17",
+      "valueQuantity" : {
+        "value" : 198.58090348834853,
+        "unit" : "cm",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "cm"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/0-body-height"
+    }
+  },
+  {
+    "fullUrl" : "http://example.com/Observation/0-body-weight",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "0-body-weight",
+      "meta" : {
+        "profile" : ["https://fhir.bbmri.de/StructureDefinition/BodyWeight"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"0-body-weight\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;0-body-weight&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-BodyWeight.html\">Body Weight</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Body weight <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#29463-7)</span></p><p><b>subject</b>: <a href=\"#Patient_0\">See above (Patient/0)</a></p><p><b>effective</b>: 2005-06-17</p><p><b>value</b>: 144.67073319145982 kg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code kg = 'kg')</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "29463-7"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/0"
+      },
+      "effectiveDateTime" : "2005-06-17",
+      "valueQuantity" : {
+        "value" : 144.67073319145982,
+        "unit" : "kg",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "kg"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/0-body-weight"
+    }
+  },
+  {
+    "fullUrl" : "http://example.com/Observation/0-tobacco-use",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "0-tobacco-use",
+      "meta" : {
+        "profile" : ["https://fhir.bbmri.de/StructureDefinition/TobaccoUse"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"0-tobacco-use\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;0-tobacco-use&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-TobaccoUse.html\">TobaccoUse</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Tobacco smoking status <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#72166-2)</span></p><p><b>subject</b>: <a href=\"#Patient_0\">See above (Patient/0)</a></p><p><b>effective</b>: 2005-06-17</p><p><b>value</b>: Current some day smoker <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#LA18977-1)</span></p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "72166-2"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/0"
+      },
+      "effectiveDateTime" : "2005-06-17",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "LA18977-1"
+        }]
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/0-tobacco-use"
+    }
+  },
+  {
+    "fullUrl" : "http://example.com/Specimen/0-specimen",
+    "resource" : {
+      "resourceType" : "Specimen",
+      "id" : "0-specimen",
+      "meta" : {
+        "profile" : ["https://fhir.bbmri.de/StructureDefinition/Specimen"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Specimen</b><a name=\"0-specimen\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Specimen &quot;0-specimen&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Specimen.html\">Specimen</a></p></div><p><b>Storage Temperature</b>: Degrees Celsius 2 to 10 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-StorageTemperature.html\">Storage Temperature</a>#temperature2to10)</span></p><p><b>Custodian</b>: <a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@0.9.6&amp;canonical=http://blaze.example.com/fhir/Organization/collection-2\">http://blaze.example.com/fhir/Organization/collection-2</a></p><p><b>Sample Diagnosis</b>: Unknown <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-OtherSampleDiagnosis.html\">Other Sample Diagnosis</a>#unknown)</span></p><p><b>type</b>: Whole blood <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-SampleMaterialType.html\">Sample Material Type</a>#whole-blood)</span></p><p><b>subject</b>: <a href=\"#Patient_0\">See above (Patient/0)</a></p><h3>Collections</h3><table class=\"grid\"><tr><td>-</td><td><b>Collected[x]</b></td><td><b>FastingStatus[x]</b></td></tr><tr><td>*</td><td>2005-06-17</td><td>The patient indicated they did not fast prior to the procedure. <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v2-0916.html\">relevantClincialInformation</a>#NF)</span></td></tr></table></div>"
+      },
+      "extension" : [{
+        "url" : "https://fhir.bbmri.de/StructureDefinition/StorageTemperature",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "https://fhir.bbmri.de/CodeSystem/StorageTemperature",
+            "code" : "temperature2to10"
+          }]
+        }
+      },
+      {
+        "url" : "https://fhir.bbmri.de/StructureDefinition/Custodian",
+        "valueReference" : {
+          "reference" : "http://blaze.example.com/fhir/Organization/collection-2"
+        }
+      },
+      {
+        "url" : "https://fhir.bbmri.de/StructureDefinition/SampleDiagnosis",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "https://fhir.bbmri.de/CodeSystem/OtherSampleDiagnosis",
+            "code" : "unknown"
+          }]
+        }
+      }],
+      "type" : {
+        "coding" : [{
+          "system" : "https://fhir.bbmri.de/CodeSystem/SampleMaterialType",
+          "code" : "whole-blood"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/0"
+      },
+      "collection" : {
+        "collectedDateTime" : "2005-06-17",
+        "fastingStatusCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0916",
+            "code" : "NF"
+          }]
+        }
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Specimen/0-specimen"
+    }
+  }]
 }
