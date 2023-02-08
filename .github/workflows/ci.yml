@@ -4,14 +4,15 @@ on: push
 
 jobs:
   build:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
 
     steps:
     - name: Install Jekyll
       run: sudo gem install jekyll
 
     - name: Install Sushi
-      run: sudo npm install -g fsh-sushi@2.2.3
+      #run: sudo npm install -g fsh-sushi@2.2.3
+      run: sudo npm install -g fsh-sushi@2.8.0
 
     - name: Check out Git repository
       uses: actions/checkout@v2.3.4
@@ -23,7 +24,7 @@ jobs:
       run: mkdir input-cache
 
     - name: Download Publisher
-      run: wget -q https://github.com/HL7/fhir-ig-publisher/releases/download/1.1.95/publisher.jar -O input-cache/publisher.jar
+      run: wget -q https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -O input-cache/publisher.jar
 
     - name: List Dirs
       run: ls -lR
