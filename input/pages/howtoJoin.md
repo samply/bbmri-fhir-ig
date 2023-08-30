@@ -5,9 +5,9 @@ The [Sample Locator](https://samplelocator.bbmri.de) is our central **non-commer
 
 A Bridgehead comprises of two primary components:
 * **The Blaze Store**. This holds the actual data being searched. This store must be filled by you, generally by running an ETL on your locally stored data to turn it into the standardized FHIR format that we require.
-* **The Connector**. This is the component that connects to the outside world. It collects the currently waiting queries from the Sample Locator, runs them against the Blaze Store, and returns aggregated results to the Sample Locator.
+* **Spot and Beam**. These are the components that connect to the outside world. They collect the currently waiting queries from the Sample Locator, run them against the Blaze Store, and return aggregated results to the Sample Locator.
 
-In order to make the data at your site searchable by the Sample Locator, you must *install a Bridgehead at your site*, *fill the Store with data*, and *register the Connector with the Sample Locator*.
+In order to make the data at your site searchable by the Sample Locator, you must *install a Bridgehead at your site*, *fill the Store with data*, and *register Beam with the central Beam Broker*.
 
 More details about the functional principles of our IT infrastructure the can be found [here](https://www.bbmri.de/biobanking/it/functional-principle/?L=1).
 
@@ -15,40 +15,34 @@ The **organization behind** the development is the [German Biobank Node](https:/
 
 
 ### General Requirements
-1. Hardware
+1. Installing and running a Bridgehead
 
-**_NOTE_**: With these hardware specifications, the maximum number of samples that can be handled is about 700 000 for simple queries. If you want to be able to deal with more complex queries in reasonable time, then it is recommended that you limit your sample count to a maximum of 500 000.
-* 16 GB RAM
-* 50 GB disk space (depends on amount of data)
-* 4 CPU cores
-* OS with support for [docker](https://docs.docker.com/get-docker/) (e.g. Linux, Windows 10 with hyper-V, macOS)
-* Outgoing http and https
-* Proxies are supported. No VPN or incoming ports required. 
-* Firewall to restrict access from internal network is recommended.
+The **Bridgehead** is the part of the federated search system that runs at your site locally. All requirements for installing and running a Bridgehead are documented [here](https://github.com/samply/bridgehead).
 
-2. Software:
-We recommend using Docker for installing the Bridgehead components on your site, and we make this easy for you by providing a fully configured Docker bundle for this purpose. Manual installation is also possible but entails significantly more work. So you will need to install:
-* [git](https://www.atlassian.com/git/tutorials/install-git)
-* [docker](https://docs.docker.com/get-docker/)
-
-3. Data protection:  
+2. Data protection:  
 Read this [Data protection concept](https://www.bbmri.de/biobanking/it/data-protection-concept/?L=1) carefully and submit it to your data protection authorities. The **data protection concept must be approved** by your local data protection officer.
 
-4. Data access:  
+3. Data access:  
 To fill the Store of the Bridgehead you need access to clinical data from your **local source systems**. An overview about the clinical data which we want to provide in the ferderated search can be found [here](overview.html).
 
-5. Data format:  
+4. Data format:  
 The Store of the Bridgehead stores data as **HL7 FHIR® Resources**. To import data into the Store, they must be harmonised and converted. Each site must build an ETL-pipeline (extract, transform, load) to harmonise the structure of the data and translate them to fit predefined FHIR® profiles.
 You can find our FHIR® profile for the basic data set [here](https://simplifier.net/bbmri.de) and for the oncology data set [here](https://simplifier.net/oncology).
 
-6. Definition of "Sample": 
+5. Definition of "Sample": 
 A sample, as undestood by the Sample Locator, should satisfy the following conditions:
 
 * Samples for which all parameters are identical are considered to be a single sample and will counted only once - or- may only be loaded once into the store. & 
 * Aliquots for which all must-support parameters from the profile are identical are considered to be a single sample and should be loaded only one in the store.
 
-7. Directory collections: 
-If you are participating in the BBMRI Directory, you should create or assign a single collection specifically for use with the Locator. This is because, right now, the Locator can only present sample counts for a single collection.  If you only have a single collection, or if there is only one collection that you wish to make available to the Locator, then you should use that collection.
+6. Directory collections: 
+The [BBMRI Directory](https://directory.bbmri-eric.eu) is a central resource that provides users standardized information about Biobanks in Europe. You will need to be registered with the Directory in order to be able to participate in the Sample Locator.
+
+If possible, each sample that you wish to add to the Sample Locator should be assigned to a collection. Your collections should be registered with the Directory. Your ETL can be used to insert the relevant collection ID into each sample.
+
+If this is **not** possible, then you should create or assign a single (default) collection specifically for use with the Locator. This collection should be registered with the Directory. Please let us know your default collection ID when you set up your Bridgehead.
+
+A hybrid situation, where some of your samples have collections and some don't, is also possible. In this case, you will also need to let us know your default collection ID.
 
 
 ### Guides to install, fill and connect a Bridgehead
@@ -62,7 +56,9 @@ All of the components that make up the Bridgehead are open source. Non-technical
 
 * The FHIR® oncology profiles can be found [here](https://simplifier.net/oncology). The related Implementation Guide can be found [here](https://simplifier.net/guide/implementationguide4/home).
 
-* An example of how to build an ETL-process with Talend Open Studio for Data Integration and Hapi FHIR API can be found [here](etlTalent.html).
+* For implementing ETL, we recommend starting with the [Reference Implementation](https://github.com/BBMRI-cz/fhir-module).
+
+* Alternatively, an example of how to build an ETL-process with Talend Open Studio for Data Integration and Hapi FHIR API can be found [here](etlTalent.html).
 
 * Instructions on how to validate your FHIR® resources can be found [here](support.html).
 
