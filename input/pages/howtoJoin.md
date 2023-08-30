@@ -9,7 +9,7 @@ A Bridgehead comprises of two primary components:
 
 In order to make the data at your site searchable by the Sample Locator, you must *install a Bridgehead at your site*, *fill the Store with data*, and *register Beam with the central Beam Broker*.
 
-More details about the functional principles of our IT infrastructure the can be found [here](https://www.bbmri.de/biobanking/it/functional-principle/?L=1).
+More details about the functional principles of our IT infrastructure the can be found [here](https://github.com/samply/bridgehead).
 
 The **organization behind** the development is the [German Biobank Node](https://www.bbmri.de/?L=1) in cooperation with [BBMRI-ERIC](http://www.bbmri-eric.eu), sponsored by the [Federal Ministry of Education and Research](https://www.bmbf.de/en/index.html).
 
