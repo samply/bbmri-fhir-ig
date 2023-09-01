@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "BodyWeight"] ; # 
   fhir:title [ fhir:v "Body Weight"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-09-01T08:46:52+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-09-01T11:58:43+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "bbmri.de"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "bbmri.de" ] ;

@@ -3,8 +3,8 @@
 
 err = 19, warn = 98, info = 9
 IG Publisher Version: 1.4.2
-Generated Fri Sep 01 08:50:03 UTC 2023. FHIR version 4.0.1 for de.bbmri.fhir#1.2.0 (canonical = https://fhir.bbmri.de)
- Build Errors : 442 / 51 / 0
+Generated Fri Sep 01 12:02:06 UTC 2023. FHIR version 4.0.1 for de.bbmri.fhir#1.2.0 (canonical = https://fhir.bbmri.de)
+ Build Errors : 444 / 51 / 0
  /home/runner/work/bbmri-fhir-ig/bbmri-fhir-ig/fsh-generated/resources/ImplementationGuide-de.bbmri.fhir : 0 / 0 / 1
  /home/runner/work/bbmri-fhir-ig/bbmri-fhir-ig/fsh-generated/resources/StructureDefinition-SampleDiagnosis : 0 / 0 / 1
  /home/runner/work/bbmri-fhir-ig/bbmri-fhir-ig/fsh-generated/resources/StructureDefinition-TobaccoUse : 0 / 0 / 2
@@ -553,6 +553,8 @@ ERROR: /home/runner/work/bbmri-fhir-ig/bbmri-fhir-ig/output/howtoJoin.html#/html
 ERROR: /home/runner/work/bbmri-fhir-ig/bbmri-fhir-ig/output/howtoJoin.html#/html/body/div/div/div/p/a at Line 341, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
 ERROR: /home/runner/work/bbmri-fhir-ig/bbmri-fhir-ig/output/index.html#/html/body/div/div/div/p/a at Line 283, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
 ERROR: /home/runner/work/bbmri-fhir-ig/bbmri-fhir-ig/output/mappings.html#/html/body/div/div/div/p/a at Line 960, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
+ERROR: /home/runner/work/bbmri-fhir-ig/bbmri-fhir-ig/output/overview.html#/html/body/div/div/div/div/div/p/a at Line 207, column 111: The link 'mappings.md' for "Mappings page" cannot be resolved
+ERROR: /home/runner/work/bbmri-fhir-ig/bbmri-fhir-ig/output/overview.html#/html/body/div/div/div/div/div/p/a at Line 212, column 134: The link 'mappings.md' for "Mappings page" cannot be resolved
 ERROR: /home/runner/work/bbmri-fhir-ig/bbmri-fhir-ig/output/overview.html#/html/body/div/div/div/p/a at Line 268, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
 ERROR: /home/runner/work/bbmri-fhir-ig/bbmri-fhir-ig/output/qualityMeasures.html#/html/body/div/div/div/p/a at Line 248, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved
 ERROR: /home/runner/work/bbmri-fhir-ig/bbmri-fhir-ig/output/referencedIGs.html#/html/body/div/div/div/p/a at Line 231, column 28: The link 'bbmri.de' for "bbmri.de" cannot be resolved

@@ -79,4 +79,4 @@ BBMRI_DE_IG : Validation Results
 
 err = 19, warn = 98, info = 9
 IG Publisher Version: 1.4.2
-Generated Fri Sep 01 08:50:03 UTC 2023. FHIR version 4.0.1 for de.bbmri.fhir#1.2.0 (canonical = https://fhir.bbmri.de)
+Generated Fri Sep 01 12:02:06 UTC 2023. FHIR version 4.0.1 for de.bbmri.fhir#1.2.0 (canonical = https://fhir.bbmri.de)
