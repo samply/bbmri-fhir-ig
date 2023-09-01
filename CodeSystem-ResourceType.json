@@ -3,14 +3,14 @@
   "id" : "ResourceType",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://fhir.bbmri.de/CodeSystem/ResourceType</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">samples<a name=\"ResourceType-samples\"> </a></td><td>Samples</td></tr><tr><td style=\"white-space:nowrap\">data<a name=\"ResourceType-data\"> </a></td><td>Data</td></tr><tr><td style=\"white-space:nowrap\">images<a name=\"ResourceType-images\"> </a></td><td>Images</td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
   },
   "url" : "https://fhir.bbmri.de/CodeSystem/ResourceType",
   "version" : "1.2.0",
   "name" : "ResourceType",
   "title" : "Resource Type",
   "status" : "active",
-  "date" : "2023-02-08T10:28:33+00:00",
+  "date" : "2023-09-01T08:46:52+00:00",
   "publisher" : "bbmri.de",
   "contact" : [{
     "name" : "bbmri.de",

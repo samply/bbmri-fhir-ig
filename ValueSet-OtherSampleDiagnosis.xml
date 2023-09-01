@@ -3,14 +3,14 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="OtherSampleDiagnosis"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-OtherSampleDiagnosis.html"><code>https://fhir.bbmri.de/CodeSystem/OtherSampleDiagnosis</code></a></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
   </text>
   <url value="https://fhir.bbmri.de/ValueSet/OtherSampleDiagnosis"/>
   <version value="1.2.0"/>
   <name value="OtherSampleDiagnosis"/>
   <title value="other sample diagnosis"/>
   <status value="active"/>
-  <date value="2023-02-08T10:28:33+00:00"/>
+  <date value="2023-09-01T08:46:52+00:00"/>
   <publisher value="bbmri.de"/>
   <contact>
     <name value="bbmri.de"/>

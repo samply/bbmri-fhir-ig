@@ -5,142 +5,113 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://fhir.bbmri.de/Organization/exampleCollection> a fhir:Organization;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "exampleCollection"]; # 
-  fhir:Resource.meta [
-     fhir:Meta.profile [
-       fhir:value "https://fhir.bbmri.de/StructureDefinition/Collection";
-       fhir:index 0;
+<https://fhir.bbmri.de/Organization/exampleCollection> a fhir:Organization ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "exampleCollection"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://fhir.bbmri.de/StructureDefinition/Collection"^^xsd:anyURI ;
        fhir:link <https://fhir.bbmri.de/StructureDefinition/Collection>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: exampleCollection</p><p><b>meta</b>: </p><p><b>identifier</b>: bbmri-eric:ID:DE_12345:collection:vampir</p><p><b>name</b>: Venous and arterial blood from misc patients internal reserve </p><p><b>alias</b>: VAMPIR</p><p><b>partOf</b>: <a href=\"Organization/exampleBiobank\">Organization/exampleBiobank</a></p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "https://fhir.bbmri.de/StructureDefinition/OrganizationDescription"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "The Collection consists of blood from patients at the Klinikum Neustadt." ]
+  ] [
+     fhir:url [ fhir:v "https://fhir.bbmri.de/StructureDefinition/BioresourceReference"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "ISBN 3-458-34803-4" ]
+  ] [
+     fhir:url [ fhir:v "https://fhir.bbmri.de/StructureDefinition/CollectionType"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://fhir.bbmri.de/CodeSystem/CollectionType"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "HOSPITAL" ] ;
+         fhir:display [ fhir:v "Hospital" ]
+       ] )
      ]
-  ]; # 
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: exampleCollection</p><p><b>meta</b>: </p><p><b>identifier</b>: bbmri-eric:ID:DE_12345:collection:vampir</p><p><b>name</b>: Venous and arterial blood from misc patients internal reserve </p><p><b>alias</b>: VAMPIR</p><p><b>partOf</b>: <a href=\"Organization/exampleBiobank\">Organization/exampleBiobank</a></p></div>"
-  ]; # 
-  fhir:DomainResource.extension [
-     fhir:index 0;
-     fhir:Extension.url [ fhir:value "https://fhir.bbmri.de/StructureDefinition/OrganizationDescription" ];
-     fhir:Extension.valueString [ fhir:value "The Collection consists of blood from patients at the Klinikum Neustadt." ]
-  ], [
-     fhir:index 1;
-     fhir:Extension.url [ fhir:value "https://fhir.bbmri.de/StructureDefinition/BioresourceReference" ];
-     fhir:Extension.valueString [ fhir:value "ISBN 3-458-34803-4" ]
-  ], [
-     fhir:index 2;
-     fhir:Extension.url [ fhir:value "https://fhir.bbmri.de/StructureDefinition/CollectionType" ];
-     fhir:Extension.valueCodeableConcept [
-       fhir:CodeableConcept.coding [
-         fhir:index 0;
-         fhir:Coding.system [ fhir:value "https://fhir.bbmri.de/CodeSystem/CollectionType" ];
-         fhir:Coding.code [ fhir:value "HOSPITAL" ];
-         fhir:Coding.display [ fhir:value "Hospital" ]
-       ]
+  ] [
+     fhir:url [ fhir:v "https://fhir.bbmri.de/StructureDefinition/CollectionType"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://fhir.bbmri.de/CodeSystem/CollectionType"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "SAMPLE" ] ;
+         fhir:display [ fhir:v "Sample collection" ]
+       ] )
      ]
-  ], [
-     fhir:index 3;
-     fhir:Extension.url [ fhir:value "https://fhir.bbmri.de/StructureDefinition/CollectionType" ];
-     fhir:Extension.valueCodeableConcept [
-       fhir:CodeableConcept.coding [
-         fhir:index 0;
-         fhir:Coding.system [ fhir:value "https://fhir.bbmri.de/CodeSystem/CollectionType" ];
-         fhir:Coding.code [ fhir:value "SAMPLE" ];
-         fhir:Coding.display [ fhir:value "Sample collection" ]
-       ]
+  ] [
+     fhir:url [ fhir:v "https://fhir.bbmri.de/StructureDefinition/DataCategory"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://fhir.bbmri.de/CodeSystem/DataCategory"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "BIOLOGICAL_SAMPLES" ] ;
+         fhir:display [ fhir:v "Biological samples" ]
+       ] )
      ]
-  ], [
-     fhir:index 4;
-     fhir:Extension.url [ fhir:value "https://fhir.bbmri.de/StructureDefinition/DataCategory" ];
-     fhir:Extension.valueCodeableConcept [
-       fhir:CodeableConcept.coding [
-         fhir:index 0;
-         fhir:Coding.system [ fhir:value "https://fhir.bbmri.de/CodeSystem/DataCategory" ];
-         fhir:Coding.code [ fhir:value "BIOLOGICAL_SAMPLES" ];
-         fhir:Coding.display [ fhir:value "Biological samples" ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "resource"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://fhir.bbmri.de/CodeSystem/ResourceType"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "samples" ] ;
+           fhir:display [ fhir:v "Samples" ]
+         ] )
        ]
-     ]
-  ], [
-     fhir:index 5;
-     fhir:Element.extension [
-       fhir:index 0;
-       fhir:Extension.url [ fhir:value "resource" ];
-       fhir:Extension.valueCodeableConcept [
-         fhir:CodeableConcept.coding [
-           fhir:index 0;
-           fhir:Coding.system [ fhir:value "https://fhir.bbmri.de/CodeSystem/ResourceType" ];
-           fhir:Coding.code [ fhir:value "samples" ];
-           fhir:Coding.display [ fhir:value "Samples" ]
-         ]
+     ] [
+       fhir:url [ fhir:v "resource"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://fhir.bbmri.de/CodeSystem/ResourceType"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "data" ] ;
+           fhir:display [ fhir:v "Data" ]
+         ] )
        ]
-     ], [
-       fhir:index 1;
-       fhir:Extension.url [ fhir:value "resource" ];
-       fhir:Extension.valueCodeableConcept [
-         fhir:CodeableConcept.coding [
-           fhir:index 0;
-           fhir:Coding.system [ fhir:value "https://fhir.bbmri.de/CodeSystem/ResourceType" ];
-           fhir:Coding.code [ fhir:value "data" ];
-           fhir:Coding.display [ fhir:value "Data" ]
-         ]
-       ]
-     ], [
-       fhir:index 2;
-       fhir:Extension.url [ fhir:value "fee" ];
-       fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
-     ], [
-       fhir:index 3;
-       fhir:Extension.url [ fhir:value "description" ];
-       fhir:Extension.valueString [ fhir:value "Access contract inluding data protection guidelines needs to be signed." ]
-     ];
-     fhir:Extension.url [ fhir:value "https://fhir.bbmri.de/StructureDefinition/AccessPolicy" ]
-  ]; # 
-  fhir:Organization.identifier [
-     fhir:index 0;
-     fhir:Identifier.system [ fhir:value "http://www.bbmri-eric.eu/" ];
-     fhir:Identifier.value [ fhir:value "bbmri-eric:ID:DE_12345:collection:vampir" ]
-  ]; # 
-  fhir:Organization.name [ fhir:value "Venous and arterial blood from misc patients internal reserve"]; # 
-  fhir:Organization.alias [
-     fhir:value "VAMPIR";
-     fhir:index 0
-  ]; # 
-  fhir:Organization.partOf [
-     fhir:link <https://fhir.bbmri.de/Organization/exampleBiobank>;
-     fhir:Reference.reference [ fhir:value "Organization/exampleBiobank" ]
-  ]; # 
-  fhir:Organization.contact [
-     fhir:index 0;
-     fhir:Organization.contact.purpose [
-       fhir:CodeableConcept.coding [
-         fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/contactentity-type" ];
-         fhir:Coding.code [ fhir:value "ADMIN" ];
-         fhir:Coding.display [ fhir:value "Administrative" ]
-       ]
-     ];
-     fhir:Organization.contact.name [
-       fhir:HumanName.family [ fhir:value "Dracula" ];
-       fhir:HumanName.given [
-         fhir:value "Vladimir";
-         fhir:index 0
-       ];
-       fhir:HumanName.prefix [
-         fhir:value "Graf";
-         fhir:index 0
-       ]
-     ];
-     fhir:Organization.contact.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "fax" ];
-       fhir:ContactPoint.value [ fhir:value "0452 4624-66" ]
-     ]
-  ] . # 
-
-# - ontology header ------------------------------------------------------------
-
-<https://fhir.bbmri.de/Organization/exampleCollection.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+     ] [
+       fhir:url [ fhir:v "fee"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:url [ fhir:v "description"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Access contract inluding data protection guidelines needs to be signed." ]
+     ] ) ;
+     fhir:url [ fhir:v "https://fhir.bbmri.de/StructureDefinition/AccessPolicy"^^xsd:anyURI ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://www.bbmri-eric.eu/"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "bbmri-eric:ID:DE_12345:collection:vampir" ]
+  ] ) ; # 
+  fhir:name [ fhir:v "Venous and arterial blood from misc patients internal reserve"] ; # 
+  fhir:alias ( [ fhir:v "VAMPIR"] ) ; # 
+  fhir:partOf [
+     fhir:link <https://fhir.bbmri.de/Organization/exampleBiobank> ;
+     fhir:reference [ fhir:v "Organization/exampleBiobank" ]
+  ] ; # 
+  fhir:contact ( [
+     fhir:purpose [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/contactentity-type"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "ADMIN" ] ;
+         fhir:display [ fhir:v "Administrative" ]
+       ] )
+     ] ;
+     fhir:name [
+       fhir:family [ fhir:v "Dracula" ] ;
+       fhir:given ( [ fhir:v "Vladimir" ] ) ;
+       fhir:prefix ( [ fhir:v "Graf" ] )
+     ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "fax" ] ;
+       fhir:value [ fhir:v "0452 4624-66" ]
+     ] )
+  ] ) . # 
 
 # -------------------------------------------------------------------------------------
 

@@ -3,14 +3,14 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="ContactType"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>https://fhir.bbmri.de/CodeSystem/ContactType</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">RESEARCH<a name="ContactType-RESEARCH"> </a></td><td>Research</td><td>Contact for researchers about sample and data requests</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
   </text>
   <url value="https://fhir.bbmri.de/CodeSystem/ContactType"/>
   <version value="1.2.0"/>
   <name value="ContactType"/>
   <title value="Contact Type"/>
   <status value="active"/>
-  <date value="2023-02-08T10:28:33+00:00"/>
+  <date value="2023-09-01T08:46:52+00:00"/>
   <publisher value="bbmri.de"/>
   <contact>
     <name value="bbmri.de"/>

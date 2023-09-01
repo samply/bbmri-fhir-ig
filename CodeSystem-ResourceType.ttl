@@ -5,54 +5,43 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://fhir.bbmri.de/CodeSystem/ResourceType> a fhir:CodeSystem;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "ResourceType"]; # 
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://fhir.bbmri.de/CodeSystem/ResourceType</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">samples<a name=\"ResourceType-samples\"> </a></td><td>Samples</td></tr><tr><td style=\"white-space:nowrap\">data<a name=\"ResourceType-data\"> </a></td><td>Data</td></tr><tr><td style=\"white-space:nowrap\">images<a name=\"ResourceType-images\"> </a></td><td>Images</td></tr></table></div>"
-  ]; # 
-  fhir:CodeSystem.url [ fhir:value "https://fhir.bbmri.de/CodeSystem/ResourceType"]; # 
-  fhir:CodeSystem.version [ fhir:value "1.2.0"]; # 
-  fhir:CodeSystem.name [ fhir:value "ResourceType"]; # 
-  fhir:CodeSystem.title [ fhir:value "Resource Type"]; # 
-  fhir:CodeSystem.status [ fhir:value "active"]; # 
-  fhir:CodeSystem.date [ fhir:value "2023-02-08T10:28:33+00:00"^^xsd:dateTime]; # 
-  fhir:CodeSystem.publisher [ fhir:value "bbmri.de"]; # 
-  fhir:CodeSystem.contact [
-     fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "bbmri.de" ];
-     fhir:ContactDetail.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "bbmri.de" ]
-     ], [
-       fhir:index 1;
-       fhir:ContactPoint.system [ fhir:value "email" ];
-       fhir:ContactPoint.value [ fhir:value "feedback@germanbiobanknode.de" ]
-     ]
-  ]; # 
-  fhir:CodeSystem.description [ fhir:value "Types of resources that may be governed by a biobank or its collections"]; # 
-  fhir:CodeSystem.purpose [ fhir:value "This CodeSystem provides the different types of resources distinguished by the BBMRI-ERIC Directory"]; # 
-  fhir:CodeSystem.content [ fhir:value "complete"]; # 
-  fhir:CodeSystem.concept [
-     fhir:index 0;
-     fhir:CodeSystem.concept.code [ fhir:value "samples" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Samples" ]
-  ], [
-     fhir:index 1;
-     fhir:CodeSystem.concept.code [ fhir:value "data" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Data" ]
-  ], [
-     fhir:index 2;
-     fhir:CodeSystem.concept.code [ fhir:value "images" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Images" ]
-  ] . # 
-
-# - ontology header ------------------------------------------------------------
-
-<https://fhir.bbmri.de/CodeSystem/ResourceType.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+<https://fhir.bbmri.de/CodeSystem/ResourceType> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ResourceType"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://fhir.bbmri.de/CodeSystem/ResourceType"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.2.0"] ; # 
+  fhir:name [ fhir:v "ResourceType"] ; # 
+  fhir:title [ fhir:v "Resource Type"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2023-09-01T08:46:52+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "bbmri.de"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "bbmri.de" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "bbmri.de" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "feedback@germanbiobanknode.de" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Types of resources that may be governed by a biobank or its collections"] ; # 
+  fhir:purpose [ fhir:v "This CodeSystem provides the different types of resources distinguished by the BBMRI-ERIC Directory"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "samples" ] ;
+     fhir:display [ fhir:v "Samples" ]
+  ] [
+     fhir:code [ fhir:v "data" ] ;
+     fhir:display [ fhir:v "Data" ]
+  ] [
+     fhir:code [ fhir:v "images" ] ;
+     fhir:display [ fhir:v "Images" ]
+  ] ) . # 
 
 # -------------------------------------------------------------------------------------
 

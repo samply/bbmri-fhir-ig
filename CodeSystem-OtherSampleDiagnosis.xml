@@ -3,14 +3,14 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="OtherSampleDiagnosis"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>https://fhir.bbmri.de/CodeSystem/OtherSampleDiagnosis</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">healthy<a name="OtherSampleDiagnosis-healthy"> </a></td><td>Healthy</td><td>Sample contains healthy material</td></tr><tr><td style="white-space:nowrap">unknown<a name="OtherSampleDiagnosis-unknown"> </a></td><td>Unknown</td><td/></tr><tr><td style="white-space:nowrap">not-applicable<a name="OtherSampleDiagnosis-not-applicable"> </a></td><td>Not applicable</td><td/></tr><tr><td style="white-space:nowrap">unspecified-tumor<a name="OtherSampleDiagnosis-unspecified-tumor"> </a></td><td>Unspecified tumor</td><td>Sample contains tumor material, a specific diagnosis is not known</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
   </text>
   <url value="https://fhir.bbmri.de/CodeSystem/OtherSampleDiagnosis"/>
   <version value="1.2.0"/>
   <name value="OtherSampleDiagnosis"/>
   <title value="Other Sample Diagnosis"/>
   <status value="active"/>
-  <date value="2023-02-08T10:28:33+00:00"/>
+  <date value="2023-09-01T08:46:52+00:00"/>
   <publisher value="bbmri.de"/>
   <contact>
     <name value="bbmri.de"/>

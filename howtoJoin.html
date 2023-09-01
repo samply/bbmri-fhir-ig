@@ -30,10 +30,10 @@
     <![endif] -->
 
       <!-- Favicons -->
-    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
-    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
-    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link sizes="144x144" rel="fhir-logo" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="fhir-logo" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="fhir-logo" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
@@ -203,38 +203,20 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>A Bridgehead comprises of two primary components:</p>
 <ul>
   <li><strong>The Blaze Store</strong>. This holds the actual data being searched. This store must be filled by you, generally by running an ETL on your locally stored data to turn it into the standardized FHIR format that we require.</li>
-  <li><strong>The Connector</strong>. This is the component that connects to the outside world. It collects the currently waiting queries from the Sample Locator, runs them against the Blaze Store, and returns aggregated results to the Sample Locator.</li>
+  <li><strong>Focus and Beam</strong>. These are the components that connect to the outside world. They collect the currently waiting queries from the Sample Locator, run them against the Blaze Store, and return aggregated results to the Sample Locator.</li>
 </ul>
 
-<p>In order to make the data at your site searchable by the Sample Locator, you must <em>install a Bridgehead at your site</em>, <em>fill the Store with data</em>, and <em>register the Connector with the Sample Locator</em>.</p>
+<p>In order to make the data at your site searchable by the Sample Locator, you must <em>install a Bridgehead at your site</em>, <em>fill the Store with data</em>, and <em>register Beam with the central Beam Broker</em>.</p>
 
-<p>More details about the functional principles of our IT infrastructure the can be found <a href="https://www.bbmri.de/biobanking/it/functional-principle/?L=1">here</a>.</p>
+<p>More details about the functional principles of our IT infrastructure the can be found <a href="https://github.com/samply/bridgehead">here</a>.</p>
 
 <p>The <strong>organization behind</strong> the development is the <a href="https://www.bbmri.de/?L=1">German Biobank Node</a> in cooperation with <a href="http://www.bbmri-eric.eu">BBMRI-ERIC</a>, sponsored by the <a href="https://www.bmbf.de/en/index.html">Federal Ministry of Education and Research</a>.</p>
 
 <h3 id="general-requirements">General Requirements</h3>
 <ol>
-  <li>Hardware</li>
-</ol>
-
-<p><strong><em>NOTE</em></strong>: With these hardware specifications, the maximum number of samples that can be handled is about 700 000 for simple queries. If you want to be able to deal with more complex queries in reasonable time, then it is recommended that you limit your sample count to a maximum of 500 000.</p>
-<ul>
-  <li>16 GB RAM</li>
-  <li>50 GB disk space (depends on amount of data)</li>
-  <li>4 CPU cores</li>
-  <li>OS with support for <a href="https://docs.docker.com/get-docker/">docker</a> (e.g. Linux, Windows 10 with hyper-V, macOS)</li>
-  <li>Outgoing http and https</li>
-  <li>Proxies are supported. No VPN or incoming ports required.</li>
-  <li>Firewall to restrict access from internal network is recommended.</li>
-</ul>
-
-<ol>
-  <li>Software:
-We recommend using Docker for installing the Bridgehead components on your site, and we make this easy for you by providing a fully configured Docker bundle for this purpose. Manual installation is also possible but entails significantly more work. So you will need to install:
-    <ul>
-      <li><a href="https://www.atlassian.com/git/tutorials/install-git">git</a></li>
-      <li><a href="https://docs.docker.com/get-docker/">docker</a></li>
-    </ul>
+  <li>
+    <p>Installing and running a Bridgehead:
+All requirements for installing and running a Bridgehead are documented <a href="https://github.com/samply/bridgehead#requirements">here</a>.</p>
   </li>
   <li>
     <p>Data protection:<br/>
@@ -249,8 +231,10 @@ To fill the Store of the Bridgehead you need access to clinical data from your <
 The Store of the Bridgehead stores data as <strong>HL7 FHIR&reg; Resources</strong>. To import data into the Store, they must be harmonised and converted. Each site must build an ETL-pipeline (extract, transform, load) to harmonise the structure of the data and translate them to fit predefined FHIR&reg; profiles.
 You can find our FHIR&reg; profile for the basic data set <a href="https://simplifier.net/bbmri.de">here</a> and for the oncology data set <a href="https://simplifier.net/oncology">here</a>.</p>
   </li>
-  <li>Definition of “Sample”: 
-A sample, as undestood by the Sample Locator, should satisfy the following conditions:</li>
+  <li>
+    <p>Definition of “Sample”: 
+A sample, as undestood by the Sample Locator, should satisfy the following conditions:</p>
+  </li>
 </ol>
 
 <ul>
@@ -260,13 +244,19 @@ A sample, as undestood by the Sample Locator, should satisfy the following condi
 
 <ol>
   <li>Directory collections: 
-If you are participating in the BBMRI Directory, you should create or assign a single collection specifically for use with the Locator. This is because, right now, the Locator can only present sample counts for a single collection.  If you only have a single collection, or if there is only one collection that you wish to make available to the Locator, then you should use that collection.</li>
+The <a href="https://directory.bbmri-eric.eu">BBMRI Directory</a> is a central resource that provides users standardized information about Biobanks in Europe. You will need to be registered with the Directory in order to be able to participate in the Sample Locator.</li>
 </ol>
 
-<h3 id="guides-to-install-fill-and-connect-a-bridgehead">Guides to install, fill and connect a Bridgehead</h3>
-<p>We provide a step-by-step installation guide on the <a href="https://github.com/samply/bridgehead-deployment">Bridgehead Deployment GitHub page</a>.</p>
+<p>If possible, each sample that you wish to add to the Sample Locator should be assigned to a collection. Your collections should be registered with the Directory. Your ETL can be used to insert the relevant collection ID into each sample.</p>
 
-<p>All of the components that make up the Bridgehead are open source. Non-technical descriptions of the components can be found <a href="https://www.bbmri.de/biobanking/it/open-source-software/?L=1">here</a>. If you wish to explore the source code of the components deployed, both locally at your site as well as centrally, please visit the <a href="https://samply.github.io/samply-component-finder/">Component Finder</a>. A complete list of our source code repositories can be found in the <a href="https://github.com/samply">GitHub samply Repository</a>.</p>
+<p>If this is <strong>not</strong> possible, then you should create or assign a single (default) collection specifically for use with the Locator. This collection should be registered with the Directory. Please let us know your default collection ID when you set up your Bridgehead.</p>
+
+<p>A hybrid situation, where some of your samples have collections and some don’t, is also possible. In this case, you will also need to let us know your default collection ID.</p>
+
+<h3 id="guides-to-install-fill-and-connect-a-bridgehead">Guides to install, fill and connect a Bridgehead</h3>
+<p>We provide a step-by-step installation guide on the <a href="https://github.com/samply/bridgehead">Bridgehead GitHub page</a>.</p>
+
+<p>All of the components that make up the Bridgehead are open source. A complete list of our source code repositories can be found in the <a href="https://github.com/samply">GitHub samply Repository</a>.</p>
 
 <h4 id="fhir-profiles-and-etl">FHIR&reg; profiles and ETL:</h4>
 
@@ -278,7 +268,10 @@ If you are participating in the BBMRI Directory, you should create or assign a s
     <p>The FHIR&reg; oncology profiles can be found <a href="https://simplifier.net/oncology">here</a>. The related Implementation Guide can be found <a href="https://simplifier.net/guide/implementationguide4/home">here</a>.</p>
   </li>
   <li>
-    <p><a name="l589">​</a>An example of how to build an ETL-process with Talend Open Studio for Data Integration and Hapi FHIR API can be found <a href="etlTalent.html">here</a>.</p>
+    <p>For implementing ETL, we recommend starting with the <a href="https://github.com/BBMRI-cz/fhir-module">Reference Implementation</a>.</p>
+  </li>
+  <li>
+    <p><a name="l566">​</a>Alternatively, an example of how to build an ETL-process with Talend Open Studio for Data Integration and Hapi FHIR API can be found <a href="etlTalent.html">here</a>.</p>
   </li>
   <li>
     <p>Instructions on how to validate your FHIR&reg; resources can be found <a href="support.html">here</a>.</p>
@@ -302,15 +295,10 @@ If you are participating in the BBMRI Directory, you should create or assign a s
   </li>
 </ul>
 
-<h4 id="connector-documentations-and-tools">Connector documentations and tools:</h4>
+<h4 id="focus-and-beam-documentations-and-tools">Focus and Beam documentations and tools:</h4>
 
 <ul>
-  <li>
-    <p>The official Connector documentation can be found <a href="https://github.com/samply/blaze#connector">here</a>.</p>
-  </li>
-  <li>
-    <p>Specification for the REST interface used by the Connector can be found <a href="https://github.com/samply/share-client/blob/master/docs/diagram/Sequence_diagram_calls.md">here</a>.</p>
-  </li>
+  <li>The official documentation can be found <a href="https://github.com/samply/focus">here</a> and <a href="https://github.com/samply/beam">here</a>.</li>
 </ul>
 
 <h3 id="staying-in-contact">Staying in contact</h3>
@@ -349,8 +337,8 @@ If you are participating in the BBMRI Directory, you should create or assign a s
     <div class="container">    <!-- container -->
 
       <div class="inner-wrapper">
-        <p><a name="l733">​</a>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="bbmri.de">bbmri.de</a>.  Package de.bbmri.fhir#1.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Feb 8, 2023 10:28+0000">2023-02-08</span>
+        <p><a name="l701">​</a>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="bbmri.de">bbmri.de</a>.  Package de.bbmri.fhir#1.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Sep 1, 2023 08:46+0000">2023-09-01</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

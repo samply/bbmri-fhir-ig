@@ -5,77 +5,60 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://fhir.bbmri.de/CodeSystem/DataCategory> a fhir:CodeSystem;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "DataCategory"]; # 
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://fhir.bbmri.de/CodeSystem/DataCategory</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">BIOLOGICAL_SAMPLES<a name=\"DataCategory-BIOLOGICAL_SAMPLES\"> </a></td><td>Biological samples</td></tr><tr><td style=\"white-space:nowrap\">GENEALOGICAL_RECORDS<a name=\"DataCategory-GENEALOGICAL_RECORDS\"> </a></td><td>Genealogical records</td></tr><tr><td style=\"white-space:nowrap\">IMAGING_DATA<a name=\"DataCategory-IMAGING_DATA\"> </a></td><td>Imaging data</td></tr><tr><td style=\"white-space:nowrap\">MEDICAL_RECORDS<a name=\"DataCategory-MEDICAL_RECORDS\"> </a></td><td>Medical records</td></tr><tr><td style=\"white-space:nowrap\">NATIONAL_REGISTRIES<a name=\"DataCategory-NATIONAL_REGISTRIES\"> </a></td><td>National registries</td></tr><tr><td style=\"white-space:nowrap\">NAV<a name=\"DataCategory-NAV\"> </a></td><td>Not available</td></tr><tr><td style=\"white-space:nowrap\">OTHER<a name=\"DataCategory-OTHER\"> </a></td><td>other</td></tr><tr><td style=\"white-space:nowrap\">PHYSIOLOGICAL_BIOCHEMICAL_MEASUREMENTS<a name=\"DataCategory-PHYSIOLOGICAL_BIOCHEMICAL_MEASUREMENTS\"> </a></td><td>Physiological/Biochemical measurements</td></tr><tr><td style=\"white-space:nowrap\">SURVEY_DATA<a name=\"DataCategory-SURVEY_DATA\"> </a></td><td>Survey data</td></tr></table></div>"
-  ]; # 
-  fhir:CodeSystem.url [ fhir:value "https://fhir.bbmri.de/CodeSystem/DataCategory"]; # 
-  fhir:CodeSystem.version [ fhir:value "1.2.0"]; # 
-  fhir:CodeSystem.name [ fhir:value "DataCategory"]; # 
-  fhir:CodeSystem.title [ fhir:value "Data Category"]; # 
-  fhir:CodeSystem.status [ fhir:value "active"]; # 
-  fhir:CodeSystem.date [ fhir:value "2023-02-08T10:28:33+00:00"^^xsd:dateTime]; # 
-  fhir:CodeSystem.publisher [ fhir:value "bbmri.de"]; # 
-  fhir:CodeSystem.contact [
-     fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "bbmri.de" ];
-     fhir:ContactDetail.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "bbmri.de" ]
-     ], [
-       fhir:index 1;
-       fhir:ContactPoint.system [ fhir:value "email" ];
-       fhir:ContactPoint.value [ fhir:value "feedback@germanbiobanknode.de" ]
-     ]
-  ]; # 
-  fhir:CodeSystem.caseSensitive [ fhir:value "false"^^xsd:boolean]; # 
-  fhir:CodeSystem.content [ fhir:value "complete"]; # 
-  fhir:CodeSystem.concept [
-     fhir:index 0;
-     fhir:CodeSystem.concept.code [ fhir:value "BIOLOGICAL_SAMPLES" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Biological samples" ]
-  ], [
-     fhir:index 1;
-     fhir:CodeSystem.concept.code [ fhir:value "GENEALOGICAL_RECORDS" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Genealogical records" ]
-  ], [
-     fhir:index 2;
-     fhir:CodeSystem.concept.code [ fhir:value "IMAGING_DATA" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Imaging data" ]
-  ], [
-     fhir:index 3;
-     fhir:CodeSystem.concept.code [ fhir:value "MEDICAL_RECORDS" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Medical records" ]
-  ], [
-     fhir:index 4;
-     fhir:CodeSystem.concept.code [ fhir:value "NATIONAL_REGISTRIES" ];
-     fhir:CodeSystem.concept.display [ fhir:value "National registries" ]
-  ], [
-     fhir:index 5;
-     fhir:CodeSystem.concept.code [ fhir:value "NAV" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Not available" ]
-  ], [
-     fhir:index 6;
-     fhir:CodeSystem.concept.code [ fhir:value "OTHER" ];
-     fhir:CodeSystem.concept.display [ fhir:value "other" ]
-  ], [
-     fhir:index 7;
-     fhir:CodeSystem.concept.code [ fhir:value "PHYSIOLOGICAL_BIOCHEMICAL_MEASUREMENTS" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Physiological/Biochemical measurements" ]
-  ], [
-     fhir:index 8;
-     fhir:CodeSystem.concept.code [ fhir:value "SURVEY_DATA" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Survey data" ]
-  ] . # 
-
-# - ontology header ------------------------------------------------------------
-
-<https://fhir.bbmri.de/CodeSystem/DataCategory.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+<https://fhir.bbmri.de/CodeSystem/DataCategory> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "DataCategory"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://fhir.bbmri.de/CodeSystem/DataCategory"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.2.0"] ; # 
+  fhir:name [ fhir:v "DataCategory"] ; # 
+  fhir:title [ fhir:v "Data Category"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2023-09-01T08:46:52+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "bbmri.de"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "bbmri.de" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "bbmri.de" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "feedback@germanbiobanknode.de" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "BIOLOGICAL_SAMPLES" ] ;
+     fhir:display [ fhir:v "Biological samples" ]
+  ] [
+     fhir:code [ fhir:v "GENEALOGICAL_RECORDS" ] ;
+     fhir:display [ fhir:v "Genealogical records" ]
+  ] [
+     fhir:code [ fhir:v "IMAGING_DATA" ] ;
+     fhir:display [ fhir:v "Imaging data" ]
+  ] [
+     fhir:code [ fhir:v "MEDICAL_RECORDS" ] ;
+     fhir:display [ fhir:v "Medical records" ]
+  ] [
+     fhir:code [ fhir:v "NATIONAL_REGISTRIES" ] ;
+     fhir:display [ fhir:v "National registries" ]
+  ] [
+     fhir:code [ fhir:v "NAV" ] ;
+     fhir:display [ fhir:v "Not available" ]
+  ] [
+     fhir:code [ fhir:v "OTHER" ] ;
+     fhir:display [ fhir:v "other" ]
+  ] [
+     fhir:code [ fhir:v "PHYSIOLOGICAL_BIOCHEMICAL_MEASUREMENTS" ] ;
+     fhir:display [ fhir:v "Physiological/Biochemical measurements" ]
+  ] [
+     fhir:code [ fhir:v "SURVEY_DATA" ] ;
+     fhir:display [ fhir:v "Survey data" ]
+  ] ) . # 
 
 # -------------------------------------------------------------------------------------
 

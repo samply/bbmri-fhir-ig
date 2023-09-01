@@ -3,14 +3,14 @@
   "id" : "BiobankCapabilities",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://fhir.bbmri.de/CodeSystem/BiobankCapabilities</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">biomaterial-storage<a name=\"BiobankCapabilities-biomaterial-storage\"> </a></td><td>Biological material storage</td></tr><tr><td style=\"white-space:nowrap\">cell-culture<a name=\"BiobankCapabilities-cell-culture\"> </a></td><td>Cell culture</td></tr><tr><td style=\"white-space:nowrap\">data-analytics<a name=\"BiobankCapabilities-data-analytics\"> </a></td><td>Data analytics</td></tr><tr><td style=\"white-space:nowrap\">data-storage<a name=\"BiobankCapabilities-data-storage\"> </a></td><td>Data Storage</td></tr><tr><td style=\"white-space:nowrap\">digital-imaging<a name=\"BiobankCapabilities-digital-imaging\"> </a></td><td>Digital imaging</td></tr><tr><td style=\"white-space:nowrap\">immunohistochemistry-scoring<a name=\"BiobankCapabilities-immunohistochemistry-scoring\"> </a></td><td>Immunohistochemistry scoring</td></tr><tr><td style=\"white-space:nowrap\">immunohistochemistry-staining<a name=\"BiobankCapabilities-immunohistochemistry-staining\"> </a></td><td>Immunohistochemistry staining</td></tr><tr><td style=\"white-space:nowrap\">nucleic-acid-extraction<a name=\"BiobankCapabilities-nucleic-acid-extraction\"> </a></td><td>Nucleic acid extraction</td></tr><tr><td style=\"white-space:nowrap\">pathology-archive-access<a name=\"BiobankCapabilities-pathology-archive-access\"> </a></td><td>Access to the full pathology archive</td></tr><tr><td style=\"white-space:nowrap\">recontact<a name=\"BiobankCapabilities-recontact\"> </a></td><td>Ability to recontact</td></tr><tr><td style=\"white-space:nowrap\">tma-creation<a name=\"BiobankCapabilities-tma-creation\"> </a></td><td>Tissue micro array creation</td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
   },
   "url" : "https://fhir.bbmri.de/CodeSystem/BiobankCapabilities",
   "version" : "1.2.0",
   "name" : "BiobankCapabilities",
   "title" : "Biobank Capabilities",
   "status" : "active",
-  "date" : "2023-02-08T10:28:33+00:00",
+  "date" : "2023-09-01T08:46:52+00:00",
   "publisher" : "bbmri.de",
   "contact" : [{
     "name" : "bbmri.de",

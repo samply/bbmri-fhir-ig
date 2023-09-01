@@ -3,14 +3,14 @@
   "id" : "DataCategory",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://fhir.bbmri.de/CodeSystem/DataCategory</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">BIOLOGICAL_SAMPLES<a name=\"DataCategory-BIOLOGICAL_SAMPLES\"> </a></td><td>Biological samples</td></tr><tr><td style=\"white-space:nowrap\">GENEALOGICAL_RECORDS<a name=\"DataCategory-GENEALOGICAL_RECORDS\"> </a></td><td>Genealogical records</td></tr><tr><td style=\"white-space:nowrap\">IMAGING_DATA<a name=\"DataCategory-IMAGING_DATA\"> </a></td><td>Imaging data</td></tr><tr><td style=\"white-space:nowrap\">MEDICAL_RECORDS<a name=\"DataCategory-MEDICAL_RECORDS\"> </a></td><td>Medical records</td></tr><tr><td style=\"white-space:nowrap\">NATIONAL_REGISTRIES<a name=\"DataCategory-NATIONAL_REGISTRIES\"> </a></td><td>National registries</td></tr><tr><td style=\"white-space:nowrap\">NAV<a name=\"DataCategory-NAV\"> </a></td><td>Not available</td></tr><tr><td style=\"white-space:nowrap\">OTHER<a name=\"DataCategory-OTHER\"> </a></td><td>other</td></tr><tr><td style=\"white-space:nowrap\">PHYSIOLOGICAL_BIOCHEMICAL_MEASUREMENTS<a name=\"DataCategory-PHYSIOLOGICAL_BIOCHEMICAL_MEASUREMENTS\"> </a></td><td>Physiological/Biochemical measurements</td></tr><tr><td style=\"white-space:nowrap\">SURVEY_DATA<a name=\"DataCategory-SURVEY_DATA\"> </a></td><td>Survey data</td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
   },
   "url" : "https://fhir.bbmri.de/CodeSystem/DataCategory",
   "version" : "1.2.0",
   "name" : "DataCategory",
   "title" : "Data Category",
   "status" : "active",
-  "date" : "2023-02-08T10:28:33+00:00",
+  "date" : "2023-09-01T08:46:52+00:00",
   "publisher" : "bbmri.de",
   "contact" : [{
     "name" : "bbmri.de",

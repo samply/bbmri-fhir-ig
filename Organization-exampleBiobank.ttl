@@ -5,172 +5,112 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://fhir.bbmri.de/Organization/exampleBiobank> a fhir:Organization;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "exampleBiobank"]; # 
-  fhir:Resource.meta [
-     fhir:Meta.profile [
-       fhir:value "https://fhir.bbmri.de/StructureDefinition/Biobank";
-       fhir:index 0;
+<https://fhir.bbmri.de/Organization/exampleBiobank> a fhir:Organization ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "exampleBiobank"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://fhir.bbmri.de/StructureDefinition/Biobank"^^xsd:anyURI ;
        fhir:link <https://fhir.bbmri.de/StructureDefinition/Biobank>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: exampleBiobank</p><p><b>meta</b>: </p><p><b>identifier</b>: bbmri-eric:ID:DE_12345</p><p><b>name</b>: Zentrale Biobank Neustadt</p><p><b>alias</b>: ZBBN</p><p><b>telecom</b>: http://biobank.klinikum-neustadt.de</p><p><b>address</b>: Krankenhausstr. 12 Neustadt 12345 DE </p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "https://fhir.bbmri.de/StructureDefinition/OrganizationDescription"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "The Zentrale Biobank neustadt collects samples from patients at the Klinikum Neustadt." ]
+  ] [
+     fhir:url [ fhir:v "https://fhir.bbmri.de/StructureDefinition/JuridicalPerson"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "Klinikum Neustadt vertreten durch den Vorstand" ]
+  ] [
+     fhir:url [ fhir:v "https://fhir.bbmri.de/StructureDefinition/QualityStandard"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://fhir.bbmri.de/CodeSystem/QualityStandard"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "oecd-guidelines" ] ;
+         fhir:display [ fhir:v "OECD Guidelines" ]
+       ] )
      ]
-  ]; # 
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: exampleBiobank</p><p><b>meta</b>: </p><p><b>identifier</b>: bbmri-eric:ID:DE_12345</p><p><b>name</b>: Zentrale Biobank Neustadt</p><p><b>alias</b>: ZBBN</p><p><b>telecom</b>: http://biobank.klinikum-neustadt.de</p><p><b>address</b>: Krankenhausstr. 12 Neustadt 12345 DE </p></div>"
-  ]; # 
-  fhir:DomainResource.extension [
-     fhir:index 0;
-     fhir:Extension.url [ fhir:value "https://fhir.bbmri.de/StructureDefinition/OrganizationDescription" ];
-     fhir:Extension.valueString [ fhir:value "The Zentrale Biobank neustadt collects samples from patients at the Klinikum Neustadt." ]
-  ], [
-     fhir:index 1;
-     fhir:Extension.url [ fhir:value "https://fhir.bbmri.de/StructureDefinition/JuridicalPerson" ];
-     fhir:Extension.valueString [ fhir:value "Klinikum Neustadt vertreten durch den Vorstand" ]
-  ], [
-     fhir:index 2;
-     fhir:Extension.url [ fhir:value "https://fhir.bbmri.de/StructureDefinition/QualityStandard" ];
-     fhir:Extension.valueCodeableConcept [
-       fhir:CodeableConcept.coding [
-         fhir:index 0;
-         fhir:Coding.system [ fhir:value "https://fhir.bbmri.de/CodeSystem/QualityStandard" ];
-         fhir:Coding.code [ fhir:value "oecd-guidelines" ];
-         fhir:Coding.display [ fhir:value "OECD Guidelines" ]
-       ]
+  ] [
+     fhir:url [ fhir:v "https://fhir.bbmri.de/StructureDefinition/QualityStandard"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://fhir.bbmri.de/CodeSystem/QualityStandard"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "iso-15189" ] ;
+         fhir:display [ fhir:v "ISO-15189" ]
+       ] )
      ]
-  ], [
-     fhir:index 3;
-     fhir:Extension.url [ fhir:value "https://fhir.bbmri.de/StructureDefinition/QualityStandard" ];
-     fhir:Extension.valueCodeableConcept [
-       fhir:CodeableConcept.coding [
-         fhir:index 0;
-         fhir:Coding.system [ fhir:value "https://fhir.bbmri.de/CodeSystem/QualityStandard" ];
-         fhir:Coding.code [ fhir:value "iso-15189" ];
-         fhir:Coding.display [ fhir:value "ISO-15189" ]
-       ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://www.bbmri-eric.eu/"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "bbmri-eric:ID:DE_12345" ]
+  ] ) ; # 
+  fhir:name [ fhir:v "Zentrale Biobank Neustadt"] ; # 
+  fhir:alias ( [ fhir:v "ZBBN"] ) ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "url" ] ;
+     fhir:value [ fhir:v "http://biobank.klinikum-neustadt.de" ]
+  ] ) ; # 
+  fhir:address ( [
+     fhir:line ( [ fhir:v "Krankenhausstr. 12" ] ) ;
+     fhir:city [ fhir:v "Neustadt" ] ;
+     fhir:postalCode [ fhir:v "12345" ] ;
+     fhir:country [ fhir:v "DE" ]
+  ] ) ; # 
+  fhir:contact ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "https://fhir.bbmri.de/StructureDefinition/ContactRole"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Director" ]
+     ] ) ;
+     fhir:purpose [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/contactentity-type"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "ADMIN" ] ;
+         fhir:display [ fhir:v "Administrative" ]
+       ] )
+     ] ;
+     fhir:name [
+       fhir:family [ fhir:v "Chef" ] ;
+       fhir:given ( [ fhir:v "Claudia" ] [ fhir:v "Celine" ] ) ;
+       fhir:prefix ( [ fhir:v "Prof." ] [ fhir:v "Dr." ] [ fhir:v "Dr." ] )
+     ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "phone" ] ;
+       fhir:value [ fhir:v "0452 4624-24" ]
+     ] )
+  ] [
+     fhir:purpose [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://fhir.bbmri.de/CodeSystem/ContactType"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "RESEARCH" ] ;
+         fhir:display [ fhir:v "Research" ]
+       ] ) ;
+       fhir:text [ fhir:v "Contact for research inquiries." ]
+     ] ;
+     fhir:name [
+       fhir:family [ fhir:v "Forschungsbeauftragter" ] ;
+       fhir:given ( [ fhir:v "Friedrich" ] ) ;
+       fhir:prefix ( [ fhir:v "Freiherr" ] [ fhir:v "Dr." ] ) ;
+       fhir:suffix ( [ fhir:v "M.Sc." ] )
+     ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "phone" ] ;
+       fhir:value [ fhir:v "0452 4624-28" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "forschungsanfragen@biobank.klinikum-neustadt.de" ]
+     ] ) ;
+     fhir:address [
+       fhir:line ( [ fhir:v "Gebäude 24a" ] [ fhir:v "Krankenhausstr. 12" ] ) ;
+       fhir:city [ fhir:v "Neustadt" ] ;
+       fhir:postalCode [ fhir:v "12345" ] ;
+       fhir:country [ fhir:v "DE" ]
      ]
-  ]; # 
-  fhir:Organization.identifier [
-     fhir:index 0;
-     fhir:Identifier.system [ fhir:value "http://www.bbmri-eric.eu/" ];
-     fhir:Identifier.value [ fhir:value "bbmri-eric:ID:DE_12345" ]
-  ]; # 
-  fhir:Organization.name [ fhir:value "Zentrale Biobank Neustadt"]; # 
-  fhir:Organization.alias [
-     fhir:value "ZBBN";
-     fhir:index 0
-  ]; # 
-  fhir:Organization.telecom [
-     fhir:index 0;
-     fhir:ContactPoint.system [ fhir:value "url" ];
-     fhir:ContactPoint.value [ fhir:value "http://biobank.klinikum-neustadt.de" ]
-  ]; # 
-  fhir:Organization.address [
-     fhir:index 0;
-     fhir:Address.line [
-       fhir:value "Krankenhausstr. 12";
-       fhir:index 0
-     ];
-     fhir:Address.city [ fhir:value "Neustadt" ];
-     fhir:Address.postalCode [ fhir:value "12345" ];
-     fhir:Address.country [ fhir:value "DE" ]
-  ]; # 
-  fhir:Organization.contact [
-     fhir:index 0;
-     fhir:Element.extension [
-       fhir:index 0;
-       fhir:Extension.url [ fhir:value "https://fhir.bbmri.de/StructureDefinition/ContactRole" ];
-       fhir:Extension.valueString [ fhir:value "Director" ]
-     ];
-     fhir:Organization.contact.purpose [
-       fhir:CodeableConcept.coding [
-         fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/contactentity-type" ];
-         fhir:Coding.code [ fhir:value "ADMIN" ];
-         fhir:Coding.display [ fhir:value "Administrative" ]
-       ]
-     ];
-     fhir:Organization.contact.name [
-       fhir:HumanName.family [ fhir:value "Chef" ];
-       fhir:HumanName.given [
-         fhir:value "Claudia";
-         fhir:index 0
-       ], [
-         fhir:value "Celine";
-         fhir:index 1
-       ];
-       fhir:HumanName.prefix [
-         fhir:value "Prof.";
-         fhir:index 0
-       ], [
-         fhir:value "Dr.";
-         fhir:index 1
-       ], [
-         fhir:value "Dr.";
-         fhir:index 2
-       ]
-     ];
-     fhir:Organization.contact.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "phone" ];
-       fhir:ContactPoint.value [ fhir:value "0452 4624-24" ]
-     ]
-  ], [
-     fhir:index 1;
-     fhir:Organization.contact.purpose [
-       fhir:CodeableConcept.coding [
-         fhir:index 0;
-         fhir:Coding.system [ fhir:value "https://fhir.bbmri.de/CodeSystem/ContactType" ];
-         fhir:Coding.code [ fhir:value "RESEARCH" ];
-         fhir:Coding.display [ fhir:value "Research" ]
-       ];
-       fhir:CodeableConcept.text [ fhir:value "Contact for research inquiries." ]
-     ];
-     fhir:Organization.contact.name [
-       fhir:HumanName.family [ fhir:value "Forschungsbeauftragter" ];
-       fhir:HumanName.given [
-         fhir:value "Friedrich";
-         fhir:index 0
-       ];
-       fhir:HumanName.prefix [
-         fhir:value "Freiherr";
-         fhir:index 0
-       ], [
-         fhir:value "Dr.";
-         fhir:index 1
-       ];
-       fhir:HumanName.suffix [
-         fhir:value "M.Sc.";
-         fhir:index 0
-       ]
-     ];
-     fhir:Organization.contact.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "phone" ];
-       fhir:ContactPoint.value [ fhir:value "0452 4624-28" ]
-     ], [
-       fhir:index 1;
-       fhir:ContactPoint.system [ fhir:value "email" ];
-       fhir:ContactPoint.value [ fhir:value "forschungsanfragen@biobank.klinikum-neustadt.de" ]
-     ];
-     fhir:Organization.contact.address [
-       fhir:Address.line [
-         fhir:value "Gebäude 24a";
-         fhir:index 0
-       ], [
-         fhir:value "Krankenhausstr. 12";
-         fhir:index 1
-       ];
-       fhir:Address.city [ fhir:value "Neustadt" ];
-       fhir:Address.postalCode [ fhir:value "12345" ];
-       fhir:Address.country [ fhir:value "DE" ]
-     ]
-  ] . # 
-
-# - ontology header ------------------------------------------------------------
-
-<https://fhir.bbmri.de/Organization/exampleBiobank.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+  ] ) . # 
 
 # -------------------------------------------------------------------------------------
 

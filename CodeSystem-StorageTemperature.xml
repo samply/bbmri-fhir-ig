@@ -3,14 +3,14 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="StorageTemperature"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>https://fhir.bbmri.de/CodeSystem/StorageTemperature</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">temperature2to10<a name="StorageTemperature-temperature2to10"> </a></td><td>Degrees Celsius 2 to 10</td></tr><tr><td style="white-space:nowrap">temperature-18to-35<a name="StorageTemperature-temperature-18to-35"> </a></td><td>Degrees Celsius -18 to -35</td></tr><tr><td style="white-space:nowrap">temperature-60to-85<a name="StorageTemperature-temperature-60to-85"> </a></td><td>Degrees Celsius -60 to -85</td></tr><tr><td style="white-space:nowrap">temperatureGN<a name="StorageTemperature-temperatureGN"> </a></td><td>Gaseous nitrogen</td></tr><tr><td style="white-space:nowrap">temperatureLN<a name="StorageTemperature-temperatureLN"> </a></td><td>Liquid nitrogen</td></tr><tr><td style="white-space:nowrap">temperatureRoom<a name="StorageTemperature-temperatureRoom"> </a></td><td>Room temperature</td></tr><tr><td style="white-space:nowrap">temperatureOther<a name="StorageTemperature-temperatureOther"> </a></td><td>Other storage temperature</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
   </text>
   <url value="https://fhir.bbmri.de/CodeSystem/StorageTemperature"/>
   <version value="1.2.0"/>
   <name value="StorageTemperature"/>
   <title value="Storage Temperature"/>
   <status value="active"/>
-  <date value="2023-02-08T10:28:33+00:00"/>
+  <date value="2023-09-01T08:46:52+00:00"/>
   <publisher value="bbmri.de"/>
   <contact>
     <name value="bbmri.de"/>

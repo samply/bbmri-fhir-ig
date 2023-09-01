@@ -3,14 +3,14 @@
   "id" : "DataCategory",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-DataCategory.html\"><code>https://fhir.bbmri.de/CodeSystem/DataCategory</code></a></li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
   },
   "url" : "https://fhir.bbmri.de/ValueSet/DataCategory",
   "version" : "1.2.0",
   "name" : "DataCategory",
   "title" : "Data Category",
   "status" : "active",
-  "date" : "2023-02-08T10:28:33+00:00",
+  "date" : "2023-09-01T08:46:52+00:00",
   "publisher" : "bbmri.de",
   "contact" : [{
     "name" : "bbmri.de",

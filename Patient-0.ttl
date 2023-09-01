@@ -5,28 +5,22 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://fhir.bbmri.de/Patient/0> a fhir:Patient;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "0"]; # 
-  fhir:Resource.meta [
-     fhir:Meta.profile [
-       fhir:value "https://fhir.bbmri.de/StructureDefinition/Patient";
-       fhir:index 0;
+<https://fhir.bbmri.de/Patient/0> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "0"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://fhir.bbmri.de/StructureDefinition/Patient"^^xsd:anyURI ;
        fhir:link <https://fhir.bbmri.de/StructureDefinition/Patient>
-     ]
-  ]; # 
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Anonymous Patient</b> male, DoB: 1989-11-18</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Known status of Patient\">Deceased:</td><td colspan=\"3\">2009-01-27</td></tr></table></div>"
-  ]; # 
-  fhir:Patient.gender [ fhir:value "male"]; # 
-  fhir:Patient.birthDate [ fhir:value "1989-11-18"^^xsd:date]; # 
-  fhir:Patient.deceasedDateTime [ fhir:value "2009-01-27"^^xsd:date] . # 
-
-# - ontology header ------------------------------------------------------------
-
-<https://fhir.bbmri.de/Patient/0.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Anonymous Patient</b> male, DoB: 1989-11-18</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Known status of Patient\">Deceased:</td><td colspan=\"3\">2009-01-27</td></tr></table></div>"
+  ] ; # 
+  fhir:gender [ fhir:v "male"] ; # 
+  fhir:birthDate [ fhir:v "1989-11-18"^^xsd:date] ; # 
+  fhir:deceased [ fhir:v "2009-01-27"^^xsd:date] . # 
 
 # -------------------------------------------------------------------------------------
 
