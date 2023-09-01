@@ -15,7 +15,7 @@ The **organization behind** the development is the [German Biobank Node](https:/
 
 
 ### General Requirements
-1. Installing and running a Bridgehead
+1. Installing and running a Bridgehead:
 All requirements for installing and running a Bridgehead are documented [here](https://github.com/samply/bridgehead#requirements).
 
 2. Data protection:  
