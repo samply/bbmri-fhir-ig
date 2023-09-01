@@ -35,7 +35,7 @@ A sample, as undestood by the Sample Locator, should satisfy the following condi
 * Aliquots for which all must-support parameters from the profile are identical are considered to be a single sample and should be loaded only one in the store.
 
 6. Directory collections: 
-The [BBMRI Directory](https://directory.bbmri-eric.eu) is a central resource that provides users standardized information about Biobanks in Europe. You will need to be registered with the Directory in order to be able to participate in the Sample Locator.
+The [BBMRI Directory](https://directory.bbmri-eric.eu) is a central resource that provides users standardized information about Biobanks in Europe. You will need to be registered with the Directory in order to be able to participate in the Sample Locator. If you run a biobank, you should be listed together with your collections in the Directory, a BBMRI-ERIC project that catalogs biobanks.
 
 If possible, each sample that you wish to add to the Sample Locator should be assigned to a collection. Your collections should be registered with the Directory. Your ETL can be used to insert the relevant collection ID into each sample.
 
