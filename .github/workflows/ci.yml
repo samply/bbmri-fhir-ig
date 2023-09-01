@@ -1,3 +1,5 @@
+# Validate profiles and push IG pages to website
+
 name: CI
 
 on: push
@@ -33,7 +35,7 @@ jobs:
       run: java -jar input-cache/publisher.jar -ig ig.ini
 
     - name: Download Validator
-      run: wget -q https://github.com/hapifhir/org.hl7.fhir.core/releases/download/5.3.11/validator_cli.jar -O validator.jar
+      run: wget -q https://github.com/hapifhir/org.hl7.fhir.core/releases/download/6.1.1/validator_cli.jar -O validator.jar
 
     - name: Run Validator
       run: java -jar validator.jar -tx n/a -ig output/validator-de.bbmri.fhir.pack -ig de.basisprofil.r4#0.9.6 -version 4.0.1 input/examples
