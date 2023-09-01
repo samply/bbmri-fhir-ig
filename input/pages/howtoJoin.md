@@ -5,7 +5,7 @@ The [Sample Locator](https://samplelocator.bbmri.de) is our central **non-commer
 
 A Bridgehead comprises of two primary components:
 * **The Blaze Store**. This holds the actual data being searched. This store must be filled by you, generally by running an ETL on your locally stored data to turn it into the standardized FHIR format that we require.
-* **Spot and Beam**. These are the components that connect to the outside world. They collect the currently waiting queries from the Sample Locator, run them against the Blaze Store, and return aggregated results to the Sample Locator.
+* **Focus and Beam**. These are the components that connect to the outside world. They collect the currently waiting queries from the Sample Locator, run them against the Blaze Store, and return aggregated results to the Sample Locator.
 
 In order to make the data at your site searchable by the Sample Locator, you must *install a Bridgehead at your site*, *fill the Store with data*, and *register Beam with the central Beam Broker*.
 
@@ -16,8 +16,7 @@ The **organization behind** the development is the [German Biobank Node](https:/
 
 ### General Requirements
 1. Installing and running a Bridgehead
-
-The **Bridgehead** is the part of the federated search system that runs at your site locally. All requirements for installing and running a Bridgehead are documented [here](https://github.com/samply/bridgehead).
+All requirements for installing and running a Bridgehead are documented [here](https://github.com/samply/bridgehead#requirements).
 
 2. Data protection:  
 Read this [Data protection concept](https://www.bbmri.de/biobanking/it/data-protection-concept/?L=1) carefully and submit it to your data protection authorities. The **data protection concept must be approved** by your local data protection officer.
@@ -46,9 +45,9 @@ A hybrid situation, where some of your samples have collections and some don't, 
 
 
 ### Guides to install, fill and connect a Bridgehead
-We provide a step-by-step installation guide on the [Bridgehead Deployment GitHub page](https://github.com/samply/bridgehead-deployment).
+We provide a step-by-step installation guide on the [Bridgehead GitHub page](https://github.com/samply/bridgehead).
 
-All of the components that make up the Bridgehead are open source. Non-technical descriptions of the components can be found [here](https://www.bbmri.de/biobanking/it/open-source-software/?L=1). If you wish to explore the source code of the components deployed, both locally at your site as well as centrally, please visit the [Component Finder](https://samply.github.io/samply-component-finder/). A complete list of our source code repositories can be found in the [GitHub samply Repository](https://github.com/samply).
+All of the components that make up the Bridgehead are open source. A complete list of our source code repositories can be found in the [GitHub samply Repository](https://github.com/samply).
 
 #### FHIR® profiles and ETL:
 
@@ -72,11 +71,9 @@ All of the components that make up the Bridgehead are open source. Non-technical
 
 * A tool to control and fill your FHIR® Store from the Command Line can be found [here](https://github.com/samply/blazectl).
 
-#### Connector documentations and tools:
+#### Focus and Beam documentations and tools:
 
-* The official Connector documentation can be found [here](https://github.com/samply/blaze#connector).
-
-* Specification for the REST interface used by the Connector can be found [here](https://github.com/samply/share-client/blob/master/docs/diagram/Sequence_diagram_calls.md).
+* The official documentation can be found [here](https://github.com/samply/focus) and [here](https://github.com/samply/beam).
 
 ### Staying in contact
 
