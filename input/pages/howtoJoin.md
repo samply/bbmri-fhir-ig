@@ -11,7 +11,7 @@ In order to make the data at your site searchable by the Sample Locator, you mus
 
 More details about the functional principles of our IT infrastructure the can be found [here](https://github.com/samply/bridgehead).
 
-The **organization behind** the development is the [German Biobank Node](https://www.bbmri.de/?L=1) in cooperation with [BBMRI-ERIC](http://www.bbmri-eric.eu), sponsored by the [Federal Ministry of Education and Research](https://www.bmbf.de/en/index.html).
+The **organization behind** the development is the [German Biobank Network](https://www.netzwerk-universitaetsmedizin.de/plattformen/gbn) in cooperation with [BBMRI-ERIC](http://www.bbmri-eric.eu), sponsored by the [Federal Ministry of Education and Research](https://www.bmbf.de/en/index.html).
 
 
 ### General Requirements
@@ -19,7 +19,7 @@ The **organization behind** the development is the [German Biobank Node](https:/
 All requirements for installing and running a Bridgehead are documented [here](https://github.com/samply/bridgehead#requirements).
 
 2. Data protection:  
-Read this [Data protection concept](https://www.bbmri.de/biobanking/it/data-protection-concept/?L=1) carefully and submit it to your data protection authorities. The **data protection concept must be approved** by your local data protection officer.
+Read this [Data protection concept](https://www.netzwerk-universitaetsmedizin.de/plattformen/gbn/biobanking/it/infrastruktur/datenschutzkonzept) carefully and submit it to your data protection authorities. The **data protection concept must be approved** by your local data protection officer.
 
 3. Data access:  
 To fill the Store of the Bridgehead you need access to clinical data from your **local source systems**. An overview about the clinical data which we want to provide in the ferderated search can be found [here](overview.html).
